@@ -1,0 +1,94 @@
+\section{Methods}
+
+The algorithm we developed can be utilised to identify regions of parameter space capable of producing a desired stability while handling uncertainty in biochemical rate constants and initial conditions. It can be used to design new systems of desired stability or study the stability of existing systems. The method we are presenting here is based on the Approximate Bayesian Computation, Sequential Monte Carlo method, a statistical inference method developed by \textcite{Toni:2009tr}. This simulation-based method, using an iterative process can arrive at a distribution of parameter values that can give rise to a desired system behaviour. Given a prior distribution of values for each parameter in the model $\pi(\theta)$, and a desired behaviour, which in our case is model stability, can arrive at the posterior distributions $\pi(\theta|d(s_0, s*)\leq \epsilon_T)$. The tolerance $\epsilon$ represents the distance between the target behaviour and the current simulated behaviour. As this $\epsilon$ gradually becomes smaller, the distributions get nearer to the target distribution capable of giving rise to the desired behaviour \autocite{Toni:2009tr}. The advantages of this method is that it can handle stochastic as well as deterministic models, and can inherently handle parameter uncertainty \autocite{Barnes:2011hh}. The algorithm can be summarised as seen in Figure~\ref{fig:flowchart}.
+
+\begin{figure}[p]
+	\centering
+	\includegraphics[scale=0.5]{images/StabilityChecker_flowchart-01}
+	\caption{Flowchart of the algorithm used in StabilityChecker. $\epsilon$ stands for the threshold for the distance from the desired value.}	
+	\label{fig:flowchart}
+\end{figure}
+
+ The user provides the model file, in the form of SBML of cuda as well as the input file. The user input file contains all the necessary information to run the algorithm that is not contained in the model itself. The user specifies the desired stability, the total variance as well as the variance within each cluster that . In addition the user provides the tolerance for the distance from the desired behaviour necessary for the algorithm to terminate. 
+
+ The algorithm begins by sampling from the prior, by selecting a random value from within the user-specified range. Each sample from the priors is called a particle. The number of particles is specified in the user input file. The algorithm then proceeds by sampling initial conditions using Latin Hypercube sampling that ensures an even coverage of values from within the specified range. The model is then simulated for each parameter sample set, for each initial condition set.  It uses cuda-sim software \autocite{Zhou:2011hp} to simulate the models thus taking full advantage of GPUs.  As soon as the simulations are complete, the steady state values for the two species of interest are clustered in order to determine the stability achieved by each parameter sample set. Whether the model has been simulated using ODEs or the Gillespie algorithm dictates the method of clustering used. The two algorithms are summarised in the Appendix. Once the number of clusters present for each parameter set has been determined, the distance from the desired values is measured. If the distance between the simulation and the target behaviour is greater than a predefined threshold distance $\epsilon$, then the parameter values that produced that simulation are rejected. The tolerated distance is first calculated from the samples taken, and then decreased at each iteration until it reaches the final accepted tolerance. This is repeated for a predefined number of samples which are collectively referred to as a population. Each particle in a population has a weight associated with it, which represents the probability of it producing the desired behaviour.At subsequent iterations the new samples are obtained from the previous populations and the $\epsilon$ is set to smaller value, thus eventually reaching the desired behaviour. The algorithm's pseudocode is shown in Algorithm~\ref{alg:StabilityChecker}. 
+
+\begin{algorithm}
+	\label{alg:StabilityChecker}
+  \caption{StabilityChecker}
+ \begin{algorithmic}[1]
+    \Statex
+	\State Initialise $\epsilon$ 
+	\Let{population p}{1}
+	\If{p $= 1$}
+		\State Sample particles ($\theta$) from priors
+		\Else
+			\State sample particles from previous population
+			\State  Perturb each particle by $\pm$ half the range of the previous population (j) to obtain new perturbed population (i).
+	\EndIf
+    \State Simulate each particle to obtain steady state values.
+    \State Cluster steady state
+	\State Reject particles if d $\textgreater$ $\epsilon$.
+    \State Calculate weight for each accepted $\theta$
+	\State $w_{t}^{(i)} = \begin{cases} 1, & \mbox{if } p = 0 \\\frac{\pi(\theta_{t}^{(i)})}{\sum_{j=1}^N w_{t-1}^{(j)} K_{t}(\theta_{t-1}^{(j)}, \theta_{t}^{(i)})}, & \mbox{if } p \geq  0. \end{cases}$
+	\State Normalise weights
+	\Repeat {steps 3 - 15} \Until{$\epsilon \leq \epsilon_T$}
+  \end{algorithmic}
+\end{algorithm}
+
+\newpage
+\subsection{Calculating robustness}
+
+Estimation of system robustness arises naturally from Bayesian methods. By comparing the volume of the posterior to the volume of the prior in a model, one can calculate the robustness of a given model. 
+Here we are calculating it using a Monte Carlo sampling accept reject algorithm. Taking a number of random samples from the prior, it keeps track of how many are also found in the posterior. The once that are found in the posterior are accepted and the rest rejected. Robustness is then defined as the number of accepted samples divided by the total number of samples.
+\begin{algorithm}
+	\label{alg:robustness}
+  \caption{Calculating robustness via Monte Carlo sampling rejection }
+ \begin{algorithmic}[1]
+    \Statex
+    \Function{Sample priors}{$n\_samp$} \Comment{$n\_samp$ represents the number of samples to take}
+      \For{$i$ in range($n\_samp$)}
+      	\For{$j$ in range($parameters$)}
+        	\State $sample$ = random between (low, high)  \Comment{low and high limits of the priors}
+      	\EndFor
+      \EndFor
+      \State \Return $samples$
+    \EndFunction
+    \Statex
+    
+    \Function{Rejection}{$samples$}
+    	
+    	\For{$j$ in range($parameters$)}
+    		\Let{$min$}{minimum[$j$]}
+    		\Let{$max$}{maximum[$j$]}
+    	\EndFor
+    	\Let{$posterior\_range$}{[$min, max$]}
+    	
+    	\For{$s$ in $samples$}
+    		\For{$j$ in range(length($s$))}
+    			\If{ $posterior\_range[max] \geq s[j] \geq posterior\_range[min]  s[j]$ } 
+    				\Let{flag}{$1$}
+    			\Else
+    				\Let{flag}{$0$}
+    			\EndIf
+    		\EndFor
+    		\If{$0$ not in $flag$}
+    			\State $accepted += 1$
+    		\EndIf
+    	\EndFor
+    	\State $acceptance\_rate$ = $\frac{accep
+    	ted}{n\_samp}$
+    \State \Return $acceptance\_rate$
+    \EndFunction
+    
+  \end{algorithmic}
+
+\end{algorithm}
+
+
+
+
+
+
+
+

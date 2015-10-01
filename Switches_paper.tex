@@ -1,0 +1,186 @@
+\documentclass[10pt,a4paper]{memoir}
+
+\usepackage{PhDstyle}
+
+\usepackage{algpseudocode,algorithm,algorithmicx}
+\newcommand*\Let[2]{\State #1 $\gets$ #2}
+\algrenewcommand\algorithmicrequire{\textbf{Precondition:}}
+\algrenewcommand\algorithmicensure{\textbf{Postcondition:}}
+
+\addbibresource{switches_ref.bib}
+
+\begin{document}
+\title{Using computational modelling to build robust synthetic genetic switches}
+\author{Miriam Leon, Mae Woods and Chris P Barnes\\ Department of Cell and Developmental
+ Biology \\ University College London}
+\date{}
+\maketitle
+
+%\begin{abstract}
+%Creating synthetic devices that are robust to changing cellular contexts will be key to the success of 
+%synthetic biology. When faced with a set of competing designs for a given genetic circuit one is likely 
+%to choose the simplest possible model that can achieve the desired behaviour. However simple systems are 
+%often the least robust and it is known that additional feedback interactions can increase robustness to 
+%extrinsic noise sources. The genetic toggle switch is examined, consisting of two mutually repressing 
+%transcription factors. It is known for exhibiting bistability, and is found in natural systems when 
+%binary fate decisions need to be made, such as in a developmental pathway. It can also be used in 
+%synthetic systems to sense and respond to different environments.
+%\noindent
+%Here a new tool is presented, called StabilityChecker, that takes advantage of sequential Monte Carlo to 
+%identify regions of parameter space capable of producing the desired stability while handling uncertainty 
+%in biochemical rate constants and initial conditions. StabilityChecker is tested against known systems. A 
+%collection of networks are examined, ranging from the simple genetic toggle switch to those containing different 
+%positive feedback connections. 
+%\noindent
+%We verify StabilityChecker against known results of the simple toggle switch. We find that positive feedback 
+%and other regulatory interactions can significantly increase the robustness of these switching systems. 
+%\end{abstract}
+
+%--------%
+\include{introduction}
+\include{methods}
+\include{results}
+\include{discussion}
+
+%%--------%
+%\newpage
+%\section{Stability analysis in natural examples}
+%\subsubsection{Trophectoderm differentiation}
+%
+%Reciprocal inhibition between lineage-specific transcription factors, Oct3/4 in pluripotent cells
+%and Cdx2 in trophectoderm, might be involved in the segregation of these cell lineages.
+%
+%Both downregulation of Oct3/4 and upregulation of Cdx2 can trigger differentiation of ES cells toward TE.
+%
+%Cdx2 is not required for the differentiation of TE induced by downregulation of Oct3/4. Continuous Cdx2 function is essential for TS cell propagation (no memory?). Loss of Cdx2 function in TS cells cannot be compensated for by ectopic activation of Eomeso. Either downregulation of Oct3/4 or upregulation of Cdx2 is able to act as a trigger of TE differentiation 
+%
+%The regulation of Eomeso expression and function not understood. Data suggest that it might lack positive autoregulation. Speculate that the putative apical signal that activates Cdx2 expression may also stimulate Eomeso in the outer cells. qPCR analysis reveals that the copy number of Eomeso mRNA is ten times higher than that of Cdx2 in ES cells. Eomeso function might be interfered with by Oct3/4 or other transctiption factors in ES cells and embryos. 
+%
+%
+%Cdx2 interacts with 
+%\begin{figure}[H]
+%\centering
+%\includegraphics[scale=0.6]{images/Trophect_diff.png}
+%\label{fig:Trophect_diff}
+%\end{figure}
+%
+%~\cite{Niwa:2005fz}.
+%
+%\subsubsection{Hematopoietic erythroid-myeloid differentiation}
+%
+%They propose the existence of an additional gene X, which
+%is regulated by one of the mutually antagonistic partners, and
+%furthermore is recruited by it, to bind to the other, as a repressor.
+%This mechanism provides the necessary feedback required for
+%bistable behaviour. On the other hand, suppression of X (see
+%Figure 1A), leads to a loss of the cooperativity and hence switch-like
+%state, and therefore leads to a primed state. This is given the parameter values they used (and provide).
+%
+%
+%Other modelling attempts have assumed dimerization and cooperativity, but there is no experimental evidence for this. This is why they introduce X, in order to make it bistable.
+%
+%We can determine if this is true but running models with and without X, and we can figure out whether adding X is really necessary.
+%
+%\begin{figure}[H]
+%\centering
+%\includegraphics[scale=0.6]{images/erythr_myeloid.png}
+%\label{fig:erythr_myeloid}
+%\end{figure}
+%
+%~\cite{Chickarmane:2009by} 
+%
+%\subsubsection{Salmonella motility}
+%\paragraph{}
+%In the paper: Experimentally they found that FliA is necessary for bistability. The made FliA knockouts and found that the behaviour was not observed. When modelling their system they found that the models with and without FliA were both bistable.
+%
+%By running it through Stability Checker we wish to clear out the contradiction in their results. We can elucidate which parameters in the FliA pathway are important in bistability and how their experimental results can be explained. 
+%\begin{figure}[H]
+%\centering
+%\includegraphics[scale=0.6]{images/Salm_mot.jpg}
+%\label{fig:Salm_mot}
+%\end{figure}
+%
+%~\cite{Koirala:2014cn}
+%
+%
+%\subsubsection{Sleep-wake cycle}
+%(Sapper, 2001)
+%
+%red: inhibitory, green: excitatory
+%bistable, no intermediate states
+%switch loses balance: narcolepsy
+%orexin helps maintain wakefulness
+%
+%
+%\begin{figure}[ht!]
+%\centering
+%\includegraphics[scale=0.6]{images/sleep_wake}
+%\label{fig:sleep-wake}
+%\end{figure}
+%
+%
+%(Chiu, 2013)
+%Flip flop appealing model. But inherently unstable so might be supplemented by additional elements. Mammals: Hcrt stabilises by promoting arousal. Loss of Hcrt -> narcolepsy.
+%
+%
+%other model: regulated by two main drives, homeostatic drive and circadian drive. But it remains unclear how the circadian system regulates behaviours associated with sleep and wakefulness. 
+%
+%Priors???
+%
+
+
+%\subsubsection{Bcl-2 apoptotic switch}
+%Parameter values and ODEs supplied. They compare (A), (C) and (D). Vary all parameters +/- 20\% to generate 2000 random sets using Latin Hypercube Sampling. Percentage of existence of bistability monitored. Search for bistability by the 'coming up and going down' method.
+%
+%Results:
+%
+%Direct Model no bistable behaviour.
+%Direct Model I shows desired bistable behaviour of Bax activation. Three steady
+%	states, two stable and one unstable. Toggle switch governed by production rate 
+%	of Activator. Inhibition of Bcl2 brings 'inhibitor ultrasensitivity', AcBax and Bcl2 can form a postivie (double negative) feedback. Direct Model II (Bax auto-activation) also bistable. Lower threshold for activation and larger bistable domain than Direct Model I. Also level of on state lifted higher. Evaluated robustness by Monte Carlo based method. 2000 parameter sets, count how many bistable. They find that Direct II more robust.
+%Stochastic modelling:
+%Intrinsic noise can change ultrasensitive Bax activation switches into gradual responses in cell populations.
+%
+%What we could do:
+%
+%Which parameter values make the Direct model bistable?
+%Can any of these models be tristable?
+
+
+%Findings make it unlikely that direct
+%activation of Bax or Bak by BH3-only proteins
+%(Figure 3a) is the major physiological pathway to
+%apoptosis. Nevertheless, it remains possible that direct
+%activation can occur in some circumstances, to account
+%for the ability of tBid or a Bid BH3 peptide with a
+%chemically stabilized a-helix or one targeted to membranes
+%to cooperate with Bax in the lysis of protein-free liposomes
+
+%Remaining unaswered questions: What is the critical signal that
+%drives Bax to the mitochondria? Is a portion of Bax and
+%Bak molecules primed for death duty in healthy cells?
+%What is the nature of the putative complexes between
+%the pro-survival family members and Bax or Bak? Can
+%the pro-survival proteins prevent cell death in a fashion
+%independent of binding Bax or Bak? Do non-family
+%members have any role? Finally, what is the nature of
+%the homo-oligomers of Bax and Bak and how do they
+%permeabilize the outer mitochondrial membrane?
+
+%\begin{figure}[H]
+%\centering
+%\includegraphics[scale=0.6]{images/Bcl2_apoptotic.png}
+%\label{fig:Bcl2_apoptotic}
+%\end{figure}
+
+%~\cite{Cui:2008ba}.
+
+%Reference: Adams, J.M., and Cory, S. (2007) The Bcl-2 apoptotic
+% switch in cancer development and therapy. Oncogene, 26, 1324-1337.
+%--------%
+%\section{Discussion}
+%\paragraph{}
+
+\printbibliography
+\include{appendix}
+\end{document}
