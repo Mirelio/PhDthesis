@@ -10,11 +10,11 @@
 \PassOptionsToPackage{final}{graphicx}
 
 % AMS packages
-\RequirePackage[fleqn]{mathtools}	% more symbols
+\RequirePackage{mathtools}	% more symbols
 \RequirePackage{amssymb}
 \RequirePackage{amsfonts}
 
-% high-level packages
+% high-level packages`f
 \RequirePackage{fontspec}
 \RequirePackage{xcolor}
 \RequirePackage{tikz}				% tikz
@@ -56,7 +56,6 @@
 \RequirePackage{hyperref}			% hyperlinks
 \RequirePackage[noabbrev]{cleveref} % cref
 
-
 %% --------------------------------------------------------------
 %% FONT SETUP
 %% --------------------------------------------------------------
@@ -64,7 +63,9 @@
 % LuaLaTeX fonts
 \defaultfontfeatures{Scale=MatchLowercase}
 \setmainfont[Ligatures={Common, TeX}]{Linux Libertine O}
+%\setmainfont[Ligatures={Common, TeX}]{Paloma}
 \setmathfont{TeX Gyre Pagella Math}
+
 
 % microtype.sty
 \microtypesetup{final, babel=true, factor=1200} %tracking=true, 
@@ -191,7 +192,7 @@
 \allowdisplaybreaks
 
 % set indent to paragraph indent
-\setlength{\mathindent}{\parindent}
+%\setlength{\mathindent}{\parindent}
 
 %% --------------------------------------------------------------
 %% UNITS
@@ -218,11 +219,11 @@
 \makeatletter\renewcommand\p@subfigure{\thefigure}\makeatother
 
 % setup captions
-\captionsetup{indention=\parindent, textfont=sf, labelfont={bf, sf},
+\captionsetup{indention=\parindent, textfont=rm, labelfont={bf, rm},
 			  labelsep=quad} %, singlelinecheck=off}
 
 % setup subcaptions
-\captionsetup[subfigure]{font=sf, labelformat=simple, labelsep=quad,
+\captionsetup[subfigure]{font={scriptsize,sf}, labelformat=simple, labelsep=quad,
 						 labelfont=bf, singlelinecheck=off,
 						 justification=raggedright}
 					
@@ -241,5 +242,19 @@
 %% PhD HYPHENATION
 %% --------------------------------------------------------------
 %\hyphenation{Python, ABC}
+
+
+%% --------------------------------------------------------------
+%% TITLES
+%% --------------------------------------------------------------
+
+\hangsecnum
+\chapterstyle{hangnum}
+
+% fonts
+\renewcommand*{\chaptitlefont}{\Huge\bfseries\raggedright}
+\setsecheadstyle{\LARGE\bfseries\raggedright}
+\setsubsecheadstyle{\Large\bfseries\raggedright}
+\setsubsubsecheadstyle{\large\bfseries\raggedright}
 
 \endinput

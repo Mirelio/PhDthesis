@@ -1,0 +1,87 @@
+\documentclass[11pt,a4paper, twoside, openright]{memoir}
+
+\usepackage{PhDstyle}
+
+\usepackage{algpseudocode,algorithm,algorithmicx}
+\newcommand*\Let[2]{\State #1 $\gets$ #2}
+\algrenewcommand\algorithmicrequire{\textbf{Precondition:}}
+\algrenewcommand\algorithmicensure{\textbf{Postcondition:}}
+
+\def\rightarrowfill@@{\arrowfill@@\relax\relbar\rightarrow}
+
+
+\addbibresource{switches_ref.bib}
+
+\begin{document}
+\title{Using computational modelling to build robust synthetic genetic switches}
+\author{Miriam Leon \\ Supervisor: Chris P Barnes\\ Department of Cell and Developmental
+ Biology \\ University College London}
+\date{}
+\maketitle
+
+%\newpage
+%\section{Declaration}
+
+%I, Miriam Leon, confirm that the work presented in this thesis is my own. Where information has been derived from other sources, I confirm that this has been indicated in the thesis.
+
+\newpage
+\section{Abstract}
+Creating synthetic devices that are robust to changing cellular contexts will be key to the success of 
+synthetic biology. When faced with a set of competing designs for a given genetic circuit one is likely 
+to choose the simplest possible model that can achieve the desired behaviour. However simple systems are 
+often the least robust and it is known that additional feedback interactions can increase robustness to 
+extrinsic noise sources. The genetic toggle switch is examined, consisting of two mutually repressing 
+transcription factors. It is known for exhibiting bistability, and is found in natural systems when 
+binary fate decisions need to be made, such as in a developmental pathway. It can also be used in 
+synthetic systems to sense and respond to different environments.
+\noindent
+Here a new tool is presented, called StabilityChecker, that takes advantage of sequential Monte Carlo to 
+identify regions of parameter space capable of producing the desired stability while handling uncertainty 
+in biochemical rate constants and initial conditions. StabilityChecker is tested against known systems. A 
+collection of networks are examined, ranging from the simple genetic toggle switch to those containing different 
+positive feedback connections. 
+\noindent
+We verify StabilityChecker against known results of the simple toggle switch. We find that positive feedback 
+and other regulatory interactions can significantly increase the robustness of these switching systems. 
+
+
+\newpage
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+\tableofcontents* 
+\newpage
+\listoffigures
+\newpage
+\listoftables
+\pagestyle{plain}
+
+%% --------------------------------------------------------------
+%% CHAPTERS
+%% --------------------------------------------------------------
+
+%% Introduction -----------------------------------------------%%
+%\mainmatter*
+%chapter{Introdution}
+
+%% StabilityChecker -------------------------------------------%%
+\mainmatter*
+\chapter{Modelling switches}
+\input{chapterModelling/introduction}
+\input{chapterModelling/methods}
+\input{chapterModelling/results}
+\input{chapterModelling/discussion}
+%%-------------------------------------------------------------%%
+
+
+
+\printbibliography
+
+
+
+%% --------------------------------------------------------------
+%% APPENDIX
+%% --------------------------------------------------------------
+\chapter{Appendix}
+%\addcontentsline{toc}{chapter}{Appendix} 
+\include{appendices/appendix}
+\end{document}
