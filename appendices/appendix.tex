@@ -5,56 +5,35 @@
 \begin{algorithm}
   \caption{Clustering the steady state deterministic simulation results}
  \begin{algorithmic}[1]
- 
     \Statex
-        
-    \Function{Distance}{$data, delta$}
-      \Let{$line\_counter$}{0}
-      %\Let{$reach\_end$}{0}
       
-      \For{$i$ in($data$)}
-      	\If{$line\_counter == 1$}
+      \For{each data point}
+      	\If{first point}
       		\State Make first cluster
-      		%\Let{$clusters\_means$[Cluster 1]}{$i$}
-      		%\Let{$clusters\_data$[Cluster 1]}{$i$}
-      		\Let{$cluster\_counter$}{$1$}
+      		\State cluster counter = 1
       	\Else
-      		%\For{$cluster$ in $Clusters$}
       		\For{each cluster}
-      			\If{ $cluster[x,y] + delta \geq i[x,y] \geq cluster[x,y] - delta$}      			
-      					\Let{flag}{True}
+      			\If{cluster within cluster means $\pm$ delta}      			
       					\State Add to existing cluster \\
-      					%\Let{$clusters\_data[cluster]$}{$i$}\\
-      					%\Call{Update Means}{$clusters\_means, cluster, i$}
-      					\State \Call{Update Means}{cluster means, current data}
-      			%\Else
-      			%	\Let{$reach\_end$}{$reach\_end + 1$}
+      					\State Update means of clusters
       			\EndIf
-      			%\If{$reach\_end == length(clusters\_means$) and $flag$ is $False$}
-      			\If{reached\_end and $flag$ is $False$}
-      				\State $cluster\_counter$ +=  $1$
+      			\If{reached\_end and not assigned to cluster}
+      				\State cluster counter +=  1
       				\State Add new cluster
-      				%\Let{$clusters\_means$[$cluster\_counter$]}{$i$}
-      				%\Let{$clusters\_data$[$cluster\_counter$]}{$i$}
+
       			\EndIf
       		\EndFor
       	\EndIf
 	
       \EndFor
-      \State \Return $cluster\_counter$
-    \EndFunction
-    
-    \Statex
-    \Function{Update Means}{(clusters\_means, current data)}
-    	\Let{$clusters\_means$}{$\frac{clusters\_means + i}{2}$}
-    	\State \Return $clusters\_means$
-    \EndFunction   
+
         
   \end{algorithmic}
 \end{algorithm}
 
 \subsection{Stochastic case}
 \subsubsection{Gap statistic}
+
 \begin{algorithm}
 \caption{Choosing the optimal number of clusters}
  \begin{algorithmic}[1]
@@ -65,7 +44,7 @@
     		\For{each point in cluster}
     			\State $a = $ matrix norm $(cluster\_centre - point)$    			
     		\EndFor
-    		\State $dk = \sum((a)^2 )\times (2 \times )$ number of points in cluster
+    		\State $dk = \sum((a)^2 )\times (2 \times $ number of points in cluster)
     	\EndFor
     	\State $wk = \frac{ \sum(dk)}{2 \times (number of points in cluster)} $
     	\State \Return $wk$
@@ -76,15 +55,16 @@
     	\State $ymin, ymax = $ min and max of y axis in data
     	\State \Return $((xmin, xmax), (ymin, ymax)) $
     \EndFunction
+    
     \Statex
     \Function{Gap\_statistic}{$data, cutoff$}
-    	$(xmin, xmax), (ymin, ymax)$ = \Call{bounding\_box}{$data$}%\Comment{variance of data}
-    	\State $ks = [1,2,3,4]$\Comment{ number of clusters to try}
+    	\State $(xmin, xmax), (ymin, ymax)$ = \Call{bounding\_box}{$data$}
+    	 	\State $ks = [1,2,3,4]$
     	\For{$k$ in $ks$}
    			\State $cluster_centres, clusters = $ \Call{K\-means}{$data, k, cutoff$}
    			\State $Wk = \log($\Call{Wk}{$clusters, cluster_centres$}$)$
    			
-   			\State Create references datasets
+   			\State Create references datasets:
    			\For{$i in range(10)$}
    				\For{$n in range ($length of data$)$}
    					\State $Xb = $ random value between $xmin, xmax$ and $ymin, ymax$
@@ -99,9 +79,9 @@
     	\State $sk = sk \times \sqrt{1=\frac{1}{B}}$
     	\State \Return $ks, Wk, Wkb, sk, data_centres, clusters$
     \EndFunction
-    
+
     \Statex
-	\Function{Distance}{$data, cut-off)$}
+	\Function{Distance}{data, cutoff}
 		    \State $ks, logWks, logWkbs, sk, clusters\_means, clusts = $\Call{gap\_statistic}{$data, cut-off$}
 		    \For{$i$ in range $ks$}
 		    	\State $gaps = logWks - logWkbs$
@@ -110,10 +90,10 @@
 		    \For{$i$ in range $gaps$}
 		    	\State $cluster\_counter += 1$ 
 		    	\If{end}
-		    		\Let{$cluster\_counter$}{no clustering}
+		    		no clustering
 		    	\EndIf
 		    	\If{$gaps[i] \geq (gaps[i+1]-sk[i+1])$}
-		    		\State Break \Comment{This is the optimal number of clusters}
+		    		\State Break 
 		    	\EndIf
 		    \EndFor
 	\State \Return $cluster\_counter, clusters\_means[cluster_counter]$

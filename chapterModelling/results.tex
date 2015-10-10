@@ -43,7 +43,7 @@ This successful test demonstrates that StabilityChecker can be used to find the 
     
 There are two main ways of modelling a system, deterministically and stochastically. Deterministic modelling utilises ordinary differential equations (ODE) and models the concentrations of the species (proteins or other molecules) by time-dependent variables~\autocite{deJong:2002ft}. Rate equations are used to model gene regulation where the rate of production of a species is a function of the concentrations of the other species~\autocite{deJong:2002ft}. When modelling deterministically the model is viewed as a system which, with sufficient knowledge of the system, its behaviour is entirely predictable. Nevertheless we are still a long way away from having complete knowledge of a system of interesting size~\autocite{wilkinson:2006}. Deterministic modelling also assumes a homogenous mixture where species concentrations vary continuously and deterministically, assumptions that often are not met \textit{in vivo}. A cell is spatially and temporally separated, due to small molecule numbers and fluctuations in the timing of processes~\autocite{deJong:2002ft}.  
    
-In stochastic modelling, species are measured in discrete amounts rather than concentrations and a joint probability distribution is used to express the probability that at time \textit{t} the cell contains a number of molecules of each species~\autocite{deJong:2002ft}. It takes uncertainty into account and does not assume a homogenous mix. It is thus often more appropriate for modelling cellular systems, although more computationally intensive. In stochastic systems the Gillespie algorithm is widely used to simulate the time-evolution of the state of the system~\autocite{Warren:2005kea}.
+In stochastic modelling, species are measured in discrete amounts rather than concentrations and a joint probability distribution is used to express the probability that at time \textit{t} the cell contains a number of molecules of each species~\autocite{deJong:2002ft}. It takes uncertainty into account and is thus often more appropriate for modelling cellular systems, although more computationally intensive. In stochastic systems the Gillespie algorithm is widely used to simulate the time-evolution of the state of the system~\autocite{Warren:2005kea}.
 
 The toggle switch has been modelled both deterministically and stochastically, with the two methods producing different results. Thus here we use StabilityChecker to compare the stabilities that the model is capable of, under the different simulation types. By using the same framework, and the same prior distributions for the models, one can directly compare the posterior distributions produced by the deterministic and the stochastic case, and uncover the effects that are due to the stochasticity of the system. This is relevant in a a biological model in which small molecule numbers and external noise are not negligible. Using StabilityChecker and using the same priors for the two models (Table~\ref{tab:gard_det_stoch}), we calculated the posterior for each both bistable models. The results are shown in Figures~\ref{fig:Gard_post_det_high},~\ref{fig:Gard_post_stch}. The prior ranges used are much wider than in the test case in order to allow more flexibility in both models and have a greater range over which to compare the models. 
 
@@ -62,7 +62,7 @@ $a_1$   & $\beta$   & $a_2$   & $\gamma$  &   $s_1$      &       $s_2$   \\
 
 \begin{figure}[p]
 \centering
-\includegraphics[scale=0.7 ]{chapterModelling/images/Gardner/posterior_det_high_mean.pdf}
+\includegraphics[scale=0.7 ]{chapterModelling/images/Gardner/wide_var/posterior_deter_high_mean.pdf}
 \caption{The posterior distribution of the deterministic model of the Gardner toggle switch.}
 \label{fig:Gard_post_det_high}
 \end{figure}
@@ -70,16 +70,17 @@ $a_1$   & $\beta$   & $a_2$   & $\gamma$  &   $s_1$      &       $s_2$   \\
 
 \begin{figure}[p]
 \centering
-\includegraphics[scale=0.7]{chapterModelling/images/Gardner/posterior_stch_high_mean.pdf}
+\includegraphics[scale=0.7]{chapterModelling/images/Gardner/wide_var/posterior_stch_high_mean.pdf}
 \caption{The posterior distribution of the stochastic model of the Gardner toggle switch.}
 \label{fig:Gard_post_stch}
 \end{figure}
 
 As can be seen in the above results, stochasticity has a big effect on the posterior. Firstly, a greater parameter range can produce a bistable behaviour when stochastic effects are taken into account. The condition set by T.~S Gardner~\autocite{Gardner:2000vha} for the values of $a_1$ and $a_2$ to be balanced holds in both the deterministic and stochastic cases but in the stochastic case this is met by a wider range of values. The second conditions of $\beta$  and $\gamma$ \textgreater 1 also needs to be met in the stochastic case. 
 
+\clearpage
 \begin{figure}[p]
 \centering
-\includegraphics[scale=0.2]{chapterModelling/images/Gardner/robustness_comparison_high_mean.pdf}
+\includegraphics[scale=0.8]{chapterModelling/images/Gardner/wide_var/robustness_comparison.pdf}
 \caption{Comparing the robustness of the deterministic and stochastic Gardner switch models}
 \label{fig:Gard_robst}
 \end{figure}
@@ -113,7 +114,7 @@ For the classical model, in which no self-activation is present, the system redu
 \dot{x}=f_{x}(x,y) &= g_{x}H^{S}_{xy}(y)-k_{x}x,\label{eq:lu_cl_1}\\
 \dot{y}=f_{y}(x,y) &= g_{y}H^{S}_{yx}(x)-k_{y}y\label{eq:lu_cl_2}
 \end{align}
-For the parameter values used in the Lu study, as shown in Table ~\ref{tab:lu_cl_bi}, the system exhibits three positive steady states (Figure ~\ref{fig:lu_bis_class}), of which two are stable and one is unstable. 
+For the parameter values used in the Lu study, as shown in Table ~\ref{tab:lu_cl_bi}, the system exhibits three steady states (Figure ~\ref{fig:lu_bis_class}), of which two are stable and one is unstable. 
 
 \clearpage
 \begin{figure}[p]
@@ -161,7 +162,7 @@ gx    & gy    & kx    & ky    & nxy & nyx & xxy     & xyx     & Ixy   & Iyx \\
 \end{tabular}
 \end{table}
 
-If self-activation is included, then the system is that presented in equations \eqref{eq:lu_both_1, eq:lu_both_2} . When values that are presented in table 1 are assigned to the parameters for the self-activating model, the system exhibits five positive steady states~\ref{fig:lu_tri_phse}. 
+If self-activation is included, then the system is that presented in equations \eqref{eq:lu_both_1, eq:lu_both_2} . When values that are presented in table 1 are assigned to the parameters for the self-activating model, the system exhibits five steady states~\ref{fig:lu_tri_phse}. 
 
 \clearpage
 \begin{table}[p]

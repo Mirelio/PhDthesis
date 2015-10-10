@@ -357,6 +357,31 @@
       \field{pages}{248107}
       \range{pages}{1}
     \endentry
+    \entry{Marjoram:2003up}{article}{}
+      \name{author}{4}{}{%
+        {{hash=8975150812eeabfb3955083a402560e1}{Marjoram}{M\bibinitperiod}{Paul}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=9557976d10e3a1cedaea0829bc261066}{Molitor}{M\bibinitperiod}{John}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=8fac4e88e17173616e8df6a01b02b83e}{Plagnol}{P\bibinitperiod}{Vincent}{V\bibinitperiod}{}{}{}{}}%
+        {{hash=197c820c18cedd85ebe1d06a783fc9c3}{Tavare}{T\bibinitperiod}{Simon}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{2701f5eb6f456f52e3b732678437d117}
+      \strng{fullhash}{795bd81c3fa8f8a254ad757ea4c20f00}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelyear}{2003}
+      \field{labelmonth}{12}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the National Academy of Sciences of the United States of America}
+      \field{month}{12}
+      \field{number}{26}
+      \field{title}{{Markov chain Monte Carlo without likelihoods.}}
+      \field{volume}{100}
+      \field{year}{2003}
+      \field{pages}{15324\bibrangedash 15328}
+      \range{pages}{5}
+    \endentry
     \entry{Niwa:2005fz}{article}{}
       \name{author}{7}{}{%
         {{hash=751960630b061e7bc5e29ae5c694eaed}{Niwa}{N\bibinitperiod}{Hitoshi}{H\bibinitperiod}{}{}{}{}}%
@@ -384,6 +409,31 @@
       \field{year}{2005}
       \field{pages}{13\bibrangedash 13}
       \range{pages}{1}
+    \endentry
+    \entry{Pritchard:1999td}{article}{}
+      \name{author}{4}{}{%
+        {{hash=266cd21e144746b40df03af11a567b97}{Pritchard}{P\bibinitperiod}{J\bibnamedelima K}{J\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+        {{hash=057f547fa074c23ff0dbb9d6669978b1}{Seielstad}{S\bibinitperiod}{M\bibnamedelima T}{M\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
+        {{hash=9fab8794f764470a439350a827ba882d}{Perez-Lezaun}{P\bibinithyphendelim L\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=5326a9cc8d8ee7a4ccceac986dd0dd0d}{Feldman}{F\bibinitperiod}{M\bibnamedelima W}{M\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{54a8b9ab025b8ecf5d3f37c0e7bfab10}
+      \strng{fullhash}{cf8ff912d9a65b09939a87c8e81f2612}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelyear}{1999}
+      \field{labelmonth}{12}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Molecular Biology and Evolution}
+      \field{month}{12}
+      \field{number}{12}
+      \field{title}{{Population growth of human Y chromosomes: A study of Y chromosome microsatellites}}
+      \field{volume}{16}
+      \field{year}{1999}
+      \field{pages}{1791\bibrangedash 1798}
+      \range{pages}{8}
     \endentry
     \entry{Salis:2009gk}{article}{}
       \name{author}{3}{}{%
