@@ -7,7 +7,6 @@
   \caption{Clustering the steady state deterministic simulation results}
  \begin{algorithmic}[1]
     \Statex
-      
       \For{each data point}
       	\If{first point}
       		\State Make first cluster
@@ -15,22 +14,19 @@
       	\Else
       		\For{each cluster}
       			\If{cluster within cluster means $\pm$ delta}      			
-      					\State Add to existing cluster \\
+      					\State Add to existing cluster
       					\State Update means of clusters
       			\EndIf
       			\If{reached\_end and not assigned to cluster}
       				\State cluster counter +=  1
       				\State Add new cluster
-
       			\EndIf
       		\EndFor
       	\EndIf
-	
       \EndFor
-
-        
   \end{algorithmic}
 \end{algorithm}
+
 \newpage
 \subsection{Stochastic case}
 \subsubsection{Gap statistic}
@@ -40,68 +36,48 @@
 \caption{Choosing the optimal number of clusters}
  \begin{algorithmic}[1]
     \Statex
-    
-    \Function{Wk}{$clusters, cluster\_centres$}
+    \Function{Wk}{clusters, cluster\_centres}
     	\For{each cluster}
     		\For{each point in cluster}
-    			\State $a = $ matrix norm $(cluster\_centre - point)$    			
+    			\State a = $matrix norm$ (cluster\_centre $-$ point)
     		\EndFor
     		\State $dk = \sum((a)^2 )\times (2 \times $ number of points in cluster)
     	\EndFor
-    	\State $wk = \frac{ \sum(dk)}{2 \times (number of points in cluster)} $
-    	\State \Return $wk$
+    	\State $wk = \frac{ \sum(dk)}{2 \times (number of points in cluster)}$
+    	\State \Return wk
     \EndFunction
-    \Statex  
-    \Function{bounding\_box}{$data$}
-    	\State $xmin, xmax = $ min and max of x axis in data
-    	\State $ymin, ymax = $ min and max of y axis in data
-    	\State \Return $((xmin, xmax), (ymin, ymax)) $
-    \EndFunction
+    %\Statex  
+    %\Function{bounding\_box}{data}
+    %	\State $xmin, xmax = $ min and max of x axis in data
+    %	\State $ymin, ymax = $ min and max of y axis in data
+    %	\State \Return $((xmin, xmax), (ymin, ymax)) $
+    %\EndFunction
     
     \Statex
-    \Function{Gap\_statistic}{$data, cutoff$}
-    	\State $(xmin, xmax), (ymin, ymax)$ = \Call{bounding\_box}{$data$}
-    	 	\State $ks = [1,2,3,4]$
-    	\For{$k$ in $ks$}
-   			\State $cluster_centres, clusters = $ \Call{K\-means}{$data, k, cutoff$}
-   			\State $Wk = \log($\Call{Wk}{$clusters, cluster_centres$}$)$
-   			
-   			\State Create references datasets:
-   			\For{$i in range(10)$}
-   				\For{$n in range ($length of data$)$}
-   					\State $Xb = $ random value between $xmin, xmax$ and $ymin, ymax$
-   				\EndFor
-				\State $cluster_centres, clusters = $ \Call{K\-means}{$data, k, cut-off$}
-  				\State $BWk = \log($\Call{Wk}{$clusters, cluster_centres$}$)$
+    \Function{Gap\_statistic}{data, cutoff}
+    	%\State $(xmin, xmax), (ymin, ymax)$ = \Call{bounding\_box}{data}
+    	 	\State ks = [1,2,3,4]
+    	\For{k in ks}
+   			\State cluster\_centres, clusters = \Call{Kmeans}{data, k, cutoff}
+   			\State $Wk = \log$(\Call{Wk}{clusters, cluster\_centres})   			
+   			\State Create references datasets
+   			\For{each references dataset}
+			\State cluster\_centres, clusters =  \Call{Kmeans}{data, k, cutoff}
+  			\State $BWk = \log$(\Call{Wk}{clusters, cluster\_centres})
    			\EndFor   
    			\State $Wkb = \frac{\sum(BWk)}{10} $	
    			\State $sk = \sqrt{\sum(\frac{(BWk - Wkb)^2}{10})}$	
-   				
     	\EndFor
-    	\State $sk = sk \times \sqrt{1=\frac{1}{B}}$
-    	\State \Return $ks, Wk, Wkb, sk, data_centres, clusters$
+    \State $sk = sk \times \sqrt{1+\frac{1}{B}}$
+    \State \Return ks, Wk, Wkb, sk, data\_centres, clusters
     \EndFunction
-
-%    \Statex
-%	\Function{Distance}{data, cutoff}
-%		    \State $ks, logWks, logWkbs, sk, clusters\_means, clusts = $\Call{gap\_statistic}{$data, cut-off$}
-%		    \For{$i$ in range $ks$}
-%		    	\State $gaps = logWks - logWkbs$
-%		    \EndFor
-%		    \Let{$cluster\_counter$}{$0$}
-%		    \For{$i$ in range $gaps$}
-%		    	\State $cluster\_counter += 1$ 
-%		    	\If{end}
-%		    		no clustering
-%		    	\EndIf
-%		    	\If{$gaps[i] \geq (gaps[i+1]-sk[i+1])$}
-%		    		\State Break 
-%		    	\EndIf
-%		    \EndFor
-%	\State \Return $cluster\_counter, clusters\_means[cluster_counter]$
-%	\EndFunction
-
-
+    \Statex
+	\Function{Distance}{data, cutoff}
+		    \State ks, logWks, logWkbs, sk, clusters\_means, clusts = \Call{gap\_statistic}{data, cutoff}
+		    \State gaps = logWks $-$ logWkbs
+		    \State optimum number of clusters = $gaps[i] \geq (gaps[i+1]-sk[i+1])$
+	\State \Return cluster\_counter, clusters\_means
+	\EndFunction
   \end{algorithmic}
 \end{algorithm}
 

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.10.1)  14 OCT 2015 14:03
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.10.1)  14 OCT 2015 14:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2563,12 +2563,12 @@ File: chapterModelling/images/MA_robustness_cartoon.png Graphic file (type QTm)
 
 ]
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(1)/m/n' will be
-(Font)              scaled to size 11.00111pt on input line 67.
+(Font)              scaled to size 11.00111pt on input line 62.
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(1)/m/n' will be
-(Font)              scaled to size 8.03735pt on input line 67.
+(Font)              scaled to size 8.03735pt on input line 62.
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(1)/m/n' will be
-(Font)              scaled to size 6.02802pt on input line 67.
- [41] [42]) [43]
+(Font)              scaled to size 6.02802pt on input line 62.
+ [41]) [42]
 
 Package caption Warning: Unused \captionsetup[subfigure] on input line 229.
 See the caption package documentation for explanation.
@@ -2598,10 +2598,10 @@ Package logreq Info: Writing requests to 'central.run.xml'.
 Here is how much of TeX's memory you used:
  56197 strings out of 493706
  1065546 string characters out of 6145769
- 1584405 words of memory out of 5000000
+ 1583404 words of memory out of 5000000
  58783 multiletter control sequences out of 15000+600000
  11626 words of font info for 82 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  68i,13n,109p,10382b,2530s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on central.pdf (43 pages).
+Output written on central.pdf (42 pages).
