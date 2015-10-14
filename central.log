@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.10.1)  9 OCT 2015 19:55
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.10.1)  14 OCT 2015 14:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1889,7 +1889,7 @@ Package cleveref Info: no abbreviation of names on input line 7493.
 . 
 .................................................
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 10.04669pt on input line 65.
+(Font)              scaled to size 10.04669pt on input line 66.
 .................................................
 . fontspec info: "set-scale"
 . 
@@ -1984,11 +1984,11 @@ LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
 . 
 .................................................
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmr/m/n --> EU1/LinuxLibertineO(1)/m/n on input line 65.
+(Font)                  OT1/cmr/m/n --> EU1/LinuxLibertineO(1)/m/n on input line 66.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> EU1/LinuxLibertineO(1)/m/it on input line 65.
+(Font)                  OT1/cmr/m/it --> EU1/LinuxLibertineO(1)/m/it on input line 66.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> EU1/LinuxLibertineO(1)/bx/n on input line 65.
+(Font)                  OT1/cmr/bx/n --> EU1/LinuxLibertineO(1)/bx/n on input line 66.
 .................................................
 . fontspec info: "set-scale"
 . 
@@ -2016,7 +2016,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 . TeX Gyre Pagella Math scale = 0.9189820538514595.
 .................................................
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 11.00111pt on input line 67.
+(Font)              scaled to size 11.00111pt on input line 68.
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -2041,20 +2041,20 @@ LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
 . 
 .................................................
 LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(0)/m/n' will be
-(Font)              scaled to size 9.18976pt on input line 67.
+(Font)              scaled to size 9.18976pt on input line 68.
 .................................................
 . fontspec info: "set-scale"
 . 
 . TeX Gyre Pagella Math scale = 0.9189820538514595.
 .................................................
 LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `normal' on input line 67.
+(Font)              `operators' in the math version `normal' on input line 68.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> EU1/TeXGyrePagellaMath(0)/m/n on input line 67.
+(Font)                  OT1/cmr/m/n --> EU1/TeXGyrePagellaMath(0)/m/n on input line 68.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `bold' on input line 67.
+(Font)              `operators' in the math version `bold' on input line 68.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> EU1/TeXGyrePagellaMath(0)/bx/n on input line 67.
+(Font)                  OT1/cmr/bx/n --> EU1/TeXGyrePagellaMath(0)/bx/n on input line 68.
 .................................................
 . fontspec info: "set-scale"
 . 
@@ -2118,13 +2118,13 @@ LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 . \fontdimen 21\font =0pt\relax \fontdimen 22\font =2.5pt\relax \relax 
 .................................................
 LaTeX Font Info:    Encoding `OMS' has changed to `EU1' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 67.
+(Font)              `symbols' in the math version `normal' on input line 68.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> EU1/TeXGyrePagellaMath(1)/m/n on input line 67.
+(Font)                  OMS/cmsy/m/n --> EU1/TeXGyrePagellaMath(1)/m/n on input line 68.
 LaTeX Font Info:    Encoding `OMS' has changed to `EU1' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 67.
+(Font)              `symbols' in the math version `bold' on input line 68.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> EU1/TeXGyrePagellaMath(1)/bx/n on input line 67.
+(Font)                  OMS/cmsy/b/n --> EU1/TeXGyrePagellaMath(1)/bx/n on input line 68.
 .................................................
 . fontspec info: "set-scale"
 . 
@@ -2179,20 +2179,20 @@ LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 . 
 .................................................
 LaTeX Font Info:    Encoding `OMX' has changed to `EU1' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 67.
+(Font)              `largesymbols' in the math version `normal' on input line 68.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> EU1/TeXGyrePagellaMath(2)/m/n on input line 67.
+(Font)                  OMX/cmex/m/n --> EU1/TeXGyrePagellaMath(2)/m/n on input line 68.
 LaTeX Font Info:    Encoding `OMX' has changed to `EU1' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 67.
+(Font)              `largesymbols' in the math version `bold' on input line 68.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> EU1/TeXGyrePagellaMath(2)/bx/n on input line 67.
-Package hyperref Info: Option `final' set `true' on input line 89.
-Package hyperref Info: Option `colorlinks' set `true' on input line 89.
+(Font)                  OMX/cmex/m/n --> EU1/TeXGyrePagellaMath(2)/bx/n on input line 68.
+Package hyperref Info: Option `final' set `true' on input line 90.
+Package hyperref Info: Option `colorlinks' set `true' on input line 90.
 \pagenumpadd=\skip219
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 24.99617pt on input line 252.
+(Font)              scaled to size 24.99617pt on input line 253.
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/bx/n' will be
-(Font)              scaled to size 23.16023pt on input line 252.
+(Font)              scaled to size 23.16023pt on input line 253.
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
 Package: algpseudocode 
  (./algorithmicx.sty
@@ -2237,14 +2237,7 @@ Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2015/04/19 v3.0 biblatex localization (PK/JW/AB)
-)) (./central.aux
-
-LaTeX Warning: Label `fig:lu_bi_tri' multiply defined.
-
-
-LaTeX Warning: Label `fig:lu_bi_tri@cref' multiply defined.
-
-(./appendices/appendix.aux))
+)) (./central.aux (./appendices/appendix.aux))
 \openout1 = `central.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
@@ -2446,183 +2439,138 @@ Underfull \vbox (badness 5217) has occurred while \output is active []
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8]) (./chapterModelling/methods.tex
+ [8]) (./chapterModelling/methods.tex [9]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 9.
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
 (Font)              scaled to size 9.04202pt on input line 12.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[9]
+ [10]
 File: chapterModelling/images/StabilityChecker_flowchart-01.png Graphic file (type QTm)
  <use  "chapterModelling/images/StabilityChecker_flowchart-01.png" >
-Overfull \hbox (44.2211pt too wide) in paragraph at lines 27--28
+Overfull \hbox (127.04753pt too wide) in paragraph at lines 28--29
  [][] 
  []
 
+[11
 
-Package caption Warning: \label without proper \caption on input line 37.
+]
+
+Package caption Warning: \label without proper \caption on input line 38.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `alg:StabilityChecker' on page 10 undefined on input line 34.
+LaTeX Warning: Reference `alg:StabilityChecker' on page 12 undefined on input line 35.
 
+[12
 
-Underfull \vbox (badness 2644) has occurred while \output is active []
+]
 
- [10] [11] [12]
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 52.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 53.
 
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 14.46722pt on input line 60.
+(Font)              scaled to size 14.46722pt on input line 61.
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/bx/n' will be
-(Font)              scaled to size 13.40463pt on input line 60.
+(Font)              scaled to size 13.40463pt on input line 61.
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 8.03735pt on input line 74.
+(Font)              scaled to size 8.03735pt on input line 75.
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 6.02802pt on input line 74.
+(Font)              scaled to size 6.02802pt on input line 75.
 [13
 
 ]) (./chapterModelling/results.tex
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/it' will be
 (Font)              scaled to size 11.00111pt on input line 10.
+ [14]
 File: chapterModelling/images/Gardner/posterior.pdf Graphic file (type QTm)
- <use  "chapterModelling/images/Gardner/posterior.pdf" > [14] [15]
+ <use  "chapterModelling/images/Gardner/posterior.pdf" >
 File: chapterModelling/images/Gardner/phase_plots.png Graphic file (type QTm)
- <use  "chapterModelling/images/Gardner/phase_plots.png" >
-Overfull \hbox (60.91606pt too wide) in paragraph at lines 22--23
- [][] 
- []
+ <use  "chapterModelling/images/Gardner/phase_plots.png" > [15
 
-[16
-
-] [17]
+]
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/bx/n' will be
-(Font)              scaled to size 11.17053pt on input line 42.
+(Font)              scaled to size 11.17053pt on input line 43.
 
-Overfull \hbox (2.15237pt too wide) in paragraph at lines 48--49
+Overfull \hbox (2.15237pt too wide) in paragraph at lines 49--50
 \EU1/LinuxLibertineO(0)/m/n/10.95 with the two methods producing different results. Thus here we use StabilityChecker
  []
 
-[18]
+[16]
 File: chapterModelling/images/Gardner/wide_var/posterior_deter_high_mean.pdf Graphic file (type QTm)
  <use  "chapterModelling/images/Gardner/wide_var/posterior_deter_high_mean.pdf" >
 File: chapterModelling/images/Gardner/wide_var/posterior_stch_high_mean.pdf Graphic file (type QTm)
- <use  "chapterModelling/images/Gardner/wide_var/posterior_stch_high_mean.pdf" > [19
-
-] [20] [21]
+ <use  "chapterModelling/images/Gardner/wide_var/posterior_stch_high_mean.pdf" > [17] [18]
 File: chapterModelling/images/Gardner/wide_var/robustness_comparison.pdf Graphic file (type QTm)
- <use  "chapterModelling/images/Gardner/wide_var/robustness_comparison.pdf" > [22
+ <use  "chapterModelling/images/Gardner/wide_var/robustness_comparison.pdf" > [19
 
-] [23] [24]
+]
 File: chapterModelling/images/Lu/mae/classic.pdf Graphic file (type QTm)
- <use  "chapterModelling/images/Lu/mae/classic.pdf" >
+ <use  "chapterModelling/images/Lu/mae/classic.pdf" > [20] [21]
 File: chapterModelling/images/Lu/posterior_100p_narrow.pdf Graphic file (type QTm)
  <use  "chapterModelling/images/Lu/posterior_100p_narrow.pdf" >
-Overfull \hbox (34.8267pt too wide) in paragraph at lines 141--142
- [][] 
- []
-
-[25
-
-] [26] [27]
 File: chapterModelling/images/Lu/phase_plot.png Graphic file (type QTm)
- <use  "chapterModelling/images/Lu/phase_plot.png" >
-Overfull \hbox (61.71902pt too wide) in paragraph at lines 150--151
- [][] 
- []
+ <use  "chapterModelling/images/Lu/phase_plot.png" > [22
 
-
-LaTeX Warning: Reference `eq:lu_both_1, eq:lu_both_2' on page 28 undefined on input line 165.
-
-[28
-
-] [29]
+]
 File: chapterModelling/images/Lu/mae/selfactivation.pdf Graphic file (type QTm)
- <use  "chapterModelling/images/Lu/mae/selfactivation.pdf" > [30
-
-] [31]
+ <use  "chapterModelling/images/Lu/mae/selfactivation.pdf" > [23]
 File: chapterModelling/images/Lu/tri/posterior_1000p_1.pdf Graphic file (type QTm)
  <use  "chapterModelling/images/Lu/tri/posterior_1000p_1.pdf" >
-Overfull \hbox (63.73752pt too wide) in paragraph at lines 200--201
- [][] 
- []
-
 File: chapterModelling/images/Lu/tri/phase_plots.png Graphic file (type QTm)
-<use  "chapterModelling/images/Lu/tri/phase_plots.png" >
-Overfull \hbox (61.71902pt too wide) in paragraph at lines 208--209
- [][] 
- []
+ <use  "chapterModelling/images/Lu/tri/phase_plots.png" >
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 214.
+Underfull \vbox (badness 3525) has occurred while \output is active []
 
-[32
+ [24
 
-] [33] [34]
+]
 File: chapterModelling/images/design_principles/res_all_tri_biyp.png Graphic file (type QTm)
  <use  "chapterModelling/images/design_principles/res_all_tri_biyp.png" >
-Overfull \hbox (103.05064pt too wide) in paragraph at lines 221--222
+Overfull \hbox (43.9302pt too wide) in paragraph at lines 218--219
  [][] 
  []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 File: chapterModelling/images/Lu/tri/phase_plot_tri_bi.png Graphic file (type QTm)
-<use  "chapterModelling/images/Lu/tri/phase_plot_tri_bi.png" >
-Overfull \hbox (100.66385pt too wide) in paragraph at lines 230--231
- [][] 
- []
-
-[35
-
-] [36]
+<use  "chapterModelling/images/Lu/tri/phase_plot_tri_bi.png" > [25] [26]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [37] [38]
+ [27
+
+]
 File: chapterModelling/images/posterior_ma_cl_bi.pdf Graphic file (type QTm)
  <use  "chapterModelling/images/posterior_ma_cl_bi.pdf" >
 File: chapterModelling/images/ma_cl_bi_phase_plot.png Graphic file (type QTm)
  <use  "chapterModelling/images/ma_cl_bi_phase_plot.png" >
-Overfull \hbox (101.46681pt too wide) in paragraph at lines 303--304
- [][] 
- []
-
 File: chapterModelling/images/posterior_ma_dp_bi.pdf Graphic file (type QTm)
-<use  "chapterModelling/images/posterior_ma_dp_bi.pdf" >
+ <use  "chapterModelling/images/posterior_ma_dp_bi.pdf" >
 File: chapterModelling/images/ma_dp_bi_phase_plot.png Graphic file (type QTm)
- <use  "chapterModelling/images/ma_dp_bi_phase_plot.png" >
-Overfull \hbox (101.46681pt too wide) in paragraph at lines 317--318
- [][] 
- []
+ <use  "chapterModelling/images/ma_dp_bi_phase_plot.png" > [28] [29] [30]
+File: chapterModelling/images/MA_robustness_cartoon.png Graphic file (type QTm)
+ <use  "chapterModelling/images/MA_robustness_cartoon.png" >) (./chapterModelling/discussion.tex [31
 
-File: chapterModelling/images/robustness_comparison.pdf Graphic file (type QTm)
-<use  "chapterModelling/images/robustness_comparison.pdf" >) (./chapterModelling/discussion.tex [39
+] [32]) [33] [34
 
-] [40] [41] [42]) [43] [44
+] [35] [36] [37] [38
 
-] [45] [46] [47] [48
-
-] [49]
+] [39]
 \openout2 = `appendices/appendix.aux'.
 
- (./appendices/appendix.tex
+ (./appendices/appendix.tex [40
+
+]
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(1)/m/n' will be
-(Font)              scaled to size 11.00111pt on input line 65.
+(Font)              scaled to size 11.00111pt on input line 67.
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(1)/m/n' will be
-(Font)              scaled to size 8.03735pt on input line 65.
+(Font)              scaled to size 8.03735pt on input line 67.
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(1)/m/n' will be
-(Font)              scaled to size 6.02802pt on input line 65.
+(Font)              scaled to size 6.02802pt on input line 67.
+ [41] [42]) [43]
 
-
-LaTeX Warning: Float too large for page by 162.87894pt on input line 104.
-
-[50
-
-] [51]) [52]
-
-Package caption Warning: Unused \captionsetup[subfigure] on input line 228.
+Package caption Warning: Unused \captionsetup[subfigure] on input line 229.
 See the caption package documentation for explanation.
 
 \tf@toc=\write8
@@ -2643,20 +2591,17 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 88.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package logreq Info: Writing requests to 'central.run.xml'.
 \openout1 = `central.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 56185 strings out of 493706
- 1065344 string characters out of 6145769
- 1591871 words of memory out of 5000000
- 58772 multiletter control sequences out of 15000+600000
+ 56197 strings out of 493706
+ 1065546 string characters out of 6145769
+ 1584405 words of memory out of 5000000
+ 58783 multiletter control sequences out of 15000+600000
  11626 words of font info for 82 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 68i,13n,109p,10382b,2471s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,13n,109p,10382b,2530s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on central.pdf (52 pages).
+Output written on central.pdf (43 pages).

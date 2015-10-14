@@ -3,6 +3,7 @@
 
 \subsection{Deterministic case}
 \begin{algorithm}
+\label{alg:DetClustering}
   \caption{Clustering the steady state deterministic simulation results}
  \begin{algorithmic}[1]
     \Statex
@@ -30,11 +31,12 @@
         
   \end{algorithmic}
 \end{algorithm}
-
+\newpage
 \subsection{Stochastic case}
 \subsubsection{Gap statistic}
 
 \begin{algorithm}
+\label{alg:GapStatistic}
 \caption{Choosing the optimal number of clusters}
  \begin{algorithmic}[1]
     \Statex
@@ -80,32 +82,34 @@
     	\State \Return $ks, Wk, Wkb, sk, data_centres, clusters$
     \EndFunction
 
-    \Statex
-	\Function{Distance}{data, cutoff}
-		    \State $ks, logWks, logWkbs, sk, clusters\_means, clusts = $\Call{gap\_statistic}{$data, cut-off$}
-		    \For{$i$ in range $ks$}
-		    	\State $gaps = logWks - logWkbs$
-		    \EndFor
-		    \Let{$cluster\_counter$}{$0$}
-		    \For{$i$ in range $gaps$}
-		    	\State $cluster\_counter += 1$ 
-		    	\If{end}
-		    		no clustering
-		    	\EndIf
-		    	\If{$gaps[i] \geq (gaps[i+1]-sk[i+1])$}
-		    		\State Break 
-		    	\EndIf
-		    \EndFor
-	\State \Return $cluster\_counter, clusters\_means[cluster_counter]$
-	\EndFunction
+%    \Statex
+%	\Function{Distance}{data, cutoff}
+%		    \State $ks, logWks, logWkbs, sk, clusters\_means, clusts = $\Call{gap\_statistic}{$data, cut-off$}
+%		    \For{$i$ in range $ks$}
+%		    	\State $gaps = logWks - logWkbs$
+%		    \EndFor
+%		    \Let{$cluster\_counter$}{$0$}
+%		    \For{$i$ in range $gaps$}
+%		    	\State $cluster\_counter += 1$ 
+%		    	\If{end}
+%		    		no clustering
+%		    	\EndIf
+%		    	\If{$gaps[i] \geq (gaps[i+1]-sk[i+1])$}
+%		    		\State Break 
+%		    	\EndIf
+%		    \EndFor
+%	\State \Return $cluster\_counter, clusters\_means[cluster_counter]$
+%	\EndFunction
 
 
   \end{algorithmic}
 \end{algorithm}
 
-\subsubsection{K-means clustering}
 \newpage
+\subsubsection{K-means clustering}
+
 \begin{algorithm}
+\label{alg:KMeans}
 \caption{Clustering stochastic case}
  \begin{algorithmic}[1]
     \Statex

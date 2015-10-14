@@ -9,22 +9,23 @@ This toggle switch model was developed by T.~S. Gardner~\autocite{Gardner:2000vh
 \end{align}
 Where $a_1$ and $a_2$ are the effective rates of synthesis of repressors 1 and 2 respectively. \textit{u} is the concentration of repressor 1 and \textit{v} the concentration of repressor 2. \textit{$\beta$} is the cooperativity of repression of promoter 1 and \textit{$\gamma$} of repressor 2. In their paper,  T.~S. Gardner~\autocite{Gardner:2000vha} state that there are two conditions for bistability of this toggle switch model. That $a_1$ and $a_2$ are balanced and that $\beta$ and $\gamma$ are \textgreater 1. In order to test our methodology, we used StabilityChecker to find the posterior distribution for which this model exhibits bistable behaviour. So setting the desired behaviour to bistable, and using for priors a wide range of values that includes the values used in the Gardner paper, we test StabilityChecker to see if it finds the same conditions as the ones set by T.~S. Gardner. The prior distributions used are shown in Table~\ref{tab:gard}. The posterior distribution calculated by StabilityChecker is shown in Figure~\ref{fig:Gard_post}.
 
-\begin{figure}[p]
+\cleardoublepage
+\begin{figure}[t]
 \centering
 \includegraphics[scale=0.7]{chapterModelling/images/Gardner/posterior.pdf}
 \caption[The posterior distribution of the bistable Gardner toggle switch]{The posterior distribution of the bistable Gardner toggle switch. The parameters $a_1$, $a_2$ represent to the effective synthesis rate of repressors 1 and 2 respectively. Parameters $\beta$, $\gamma$ represent the cooperativity on repressors 1 and 2 respectively. The marginal distributions of each parameter are found on the diagonal and pairwise joint distributions along the sides.}
 \label{fig:Gard_post}
 \end{figure}
 
-\clearpage
-\begin{figure}[p]
+
+\begin{figure}[t]
 \centering
-\includegraphics[scale=0.4]{chapterModelling/images/Gardner/phase_plots.png}
+\includegraphics[scale=0.3]{chapterModelling/images/Gardner/phase_plots.png}
 \caption{A sample of the phase plots produced from the final population of the Gardner switch.}
 \label{fig:det_gard_phase}
 \end{figure}
 
-\begin{table}[p]
+\begin{table}[b]
 \centering
 \caption{Gardner switch priors}
 \label{tab:gard}
@@ -38,7 +39,7 @@ $a_1$   & $\beta$   & $a_2$   & $\gamma$  &   $s_1$      &       $s_2$   \\
 These results agree with the results reported by the original paper~\autocite{Gardner:2000vha} . For this switch to be bistable $a_1$ and $a_2$ must be balanced while $\beta$ and $\gamma$ must both be \textgreater 1, as can be seen in the marginal distributions of $\beta$ and $\gamma$ in Figure~\ref{fig:Gard_post}. The conditions set by the original paper for parameters $a_1$ and $a_2$ are met, as the joint distribution shown in Figure~\ref{fig:Gard_post} matches the bifurcation lines calculated in the original paper. 
 This successful test demonstrates that StabilityChecker can be used to find the stability a model is capable of as well as the parameter ranges that can produce that. This allows us to confidently apply the methodology to further models.
 %-%-%-%-%-%-%%-%-%-%-%-%-%%-%-%-%-%-%-%
-\newpage
+
 \subsubsection{Comparing the deterministic and stochastic cases} 
     
 There are two main ways of modelling a system, deterministically and stochastically. Deterministic modelling utilises ordinary differential equations (ODE) and models the concentrations of the species (proteins or other molecules) by time-dependent variables~\autocite{deJong:2002ft}. Rate equations are used to model gene regulation where the rate of production of a species is a function of the concentrations of the other species~\autocite{deJong:2002ft}. When modelling deterministically the model is viewed as a system which, with sufficient knowledge of the system, its behaviour is entirely predictable. Nevertheless we are still a long way away from having complete knowledge of a system of interesting size~\autocite{wilkinson:2006}. Deterministic modelling also assumes a homogenous mixture where species concentrations vary continuously and deterministically, assumptions that often are not met \textit{in vivo}. A cell is spatially and temporally separated, due to small molecule numbers and fluctuations in the timing of processes~\autocite{deJong:2002ft}.  
@@ -47,8 +48,8 @@ In stochastic modelling, species are measured in discrete amounts rather than co
 
 The toggle switch has been modelled both deterministically and stochastically, with the two methods producing different results. Thus here we use StabilityChecker to compare the stabilities that the model is capable of, under the different simulation types. By using the same framework, and the same prior distributions for the models, one can directly compare the posterior distributions produced by the deterministic and the stochastic case, and uncover the effects that are due to the stochasticity of the system. This is relevant in a a biological model in which small molecule numbers and external noise are not negligible. Using StabilityChecker and using the same priors for the two models (Table~\ref{tab:gard_det_stoch}), we calculated the posterior for each both bistable models. The results are shown in Figures~\ref{fig:Gard_post_det_high},~\ref{fig:Gard_post_stch}. The prior ranges used are much wider than in the test case in order to allow more flexibility in both models and have a greater range over which to compare the models. 
 
-\clearpage
-\begin{table}[p]
+
+\begin{table}[h]
 \centering
 \caption{Gardner switch priors}
 \label{tab:gard_det_stoch}
@@ -62,25 +63,23 @@ $a_1$   & $\beta$   & $a_2$   & $\gamma$  &   $s_1$      &       $s_2$   \\
 
 \begin{figure}[p]
 \centering
-\includegraphics[scale=0.7 ]{chapterModelling/images/Gardner/wide_var/posterior_deter_high_mean.pdf}
+\includegraphics[scale=0.5]{chapterModelling/images/Gardner/wide_var/posterior_deter_high_mean.pdf}
 \caption{The posterior distribution of the deterministic model of the Gardner toggle switch.}
 \label{fig:Gard_post_det_high}
 \end{figure}
-\newpage
 
 \begin{figure}[p]
 \centering
-\includegraphics[scale=0.7]{chapterModelling/images/Gardner/wide_var/posterior_stch_high_mean.pdf}
+\includegraphics[scale=0.5]{chapterModelling/images/Gardner/wide_var/posterior_stch_high_mean.pdf}
 \caption{The posterior distribution of the stochastic model of the Gardner toggle switch.}
 \label{fig:Gard_post_stch}
 \end{figure}
-
-As can be seen in the above results, stochasticity has a big effect on the posterior. Firstly, a greater parameter range can produce a bistable behaviour when stochastic effects are taken into account. The condition set by T.~S Gardner~\autocite{Gardner:2000vha} for the values of $a_1$ and $a_2$ to be balanced holds in both the deterministic and stochastic cases but in the stochastic case this is met by a wider range of values. The second conditions of $\beta$  and $\gamma$ \textgreater 1 also needs to be met in the stochastic case. 
-
 \clearpage
-\begin{figure}[p]
+As can be seen in the above results, stochasticity has a big effect on the posterior. Firstly, a greater parameter range can produce a bistable behaviour when stochastic effects are taken into account. The condition set by T.~S Gardner~\autocite{Gardner:2000vha} for the values of $a_1$ and $a_2$ to be balanced holds in both the deterministic and stochastic cases but in the stochastic case this is met by a wider range of values. The second conditions of $\beta$, $\gamma$ \textgreater 1 also needs to be met in the stochastic case. 
+
+\begin{figure}[h]
 \centering
-\includegraphics[scale=0.8]{chapterModelling/images/Gardner/wide_var/robustness_comparison.pdf}
+\includegraphics[scale=0.6]{chapterModelling/images/Gardner/wide_var/robustness_comparison.pdf}
 \caption{Comparing the robustness of the deterministic and stochastic Gardner switch models}
 \label{fig:Gard_robst}
 \end{figure}
@@ -107,7 +106,7 @@ H^{+}_{x}(x) &= 1-H^{-}_{x}(x)\label{eq:lu_hmx}
 %\begin{align*}%
 %	\left\{S^3_\text{this} \frac{1}{2}\right.
 %\end{align*}
-
+\subsection{Classical model}
 For the classical model, in which no self-activation is present, the system reduces to the following equations:
 
 \begin{align}
@@ -116,7 +115,7 @@ For the classical model, in which no self-activation is present, the system redu
 \end{align}
 For the parameter values used in the Lu study, as shown in Table ~\ref{tab:lu_cl_bi}, the system exhibits three steady states (Figure ~\ref{fig:lu_bis_class}), of which two are stable and one is unstable. 
 
-\clearpage
+
 \begin{figure}[p]
 \centering
 \includegraphics[scale=0.7]{chapterModelling/images/Lu/mae/classic.pdf}
@@ -133,26 +132,10 @@ gx    & gy    & kx    & ky    & nxy & nyx & xxy     & xyx     & Ixy   & Iyx \\
 40&40     &0.1   & 0.1   &  3  &  3  &  200    &  200    & 0.1    &   0.1
 \end{tabular}
 \end{table}
-
-Using StabilityChecker with priors centred around the parameter values used in the original paper (Table ~\ref{tab:lu}), we can find the robustness of this bistable behaviour, as well as identify the most important parameters for bistability. The posterior distribution of this model is shown in Figure ~\ref{fig:lu_bistable}. As can be seen from the posterior, the most restrained parameters are kx and ky, the parameters responsible for the degradation of the species involved. This indicates that the rate of degradation of the species is critical for the desired dynamic to occur. 
-
-\begin{figure}[p]
-\centering
-\includegraphics[scale=0.8]{chapterModelling/images/Lu/posterior_100p_narrow.pdf}
-\caption[The posterior distribution of the Lu classical model with no self activation]{The posterior distribution of the Lu classical model with no self activation. kx and ky are the most constrained parameters.}
-\label{fig:lu_bistable}
-\end{figure}
-
-
 \clearpage
-\begin{figure}[p]
-\centering
-\includegraphics[scale=0.4]{chapterModelling/images/Lu/phase_plot.png}
-\caption{A sample of the phase plots produced from the final population of the Lu classical model.}
-\label{fig:lu_phase}
-\end{figure}
 
-\begin{table}[p]
+Using StabilityChecker with priors centred around the parameter values used in the original paper (Table ~\ref{tab:lu}), we can find the robustness of this bistable behaviour, as well as identify the most important parameters for bistability. 
+\begin{table}[h]
 \centering
 \caption{Lu classical model priors}
 \label{tab:lu}
@@ -162,10 +145,26 @@ gx    & gy    & kx    & ky    & nxy & nyx & xxy     & xyx     & Ixy   & Iyx \\
 \end{tabular}
 \end{table}
 
-If self-activation is included, then the system is that presented in equations \eqref{eq:lu_both_1, eq:lu_both_2} . When values that are presented in table 1 are assigned to the parameters for the self-activating model, the system exhibits five steady states~\ref{fig:lu_tri_phse}. 
+The posterior distribution of this model is shown in Figure~\ref{fig:lu_bistable}. As can be seen from the posterior, the most restrained parameters are kx and ky, the parameters responsible for the degradation of the species involved. This indicates that the rate of degradation of the species is critical for the desired dynamic to occur. 
 
-\clearpage
-\begin{table}[p]
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7]{chapterModelling/images/Lu/posterior_100p_narrow.pdf}
+\caption[The posterior distribution of the Lu classical model with no self activation]{The posterior distribution of the Lu classical model with no self activation. kx and ky are the most constrained parameters.}
+\label{fig:lu_bistable}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics[scale=0.3]{chapterModelling/images/Lu/phase_plot.png}
+\caption{A sample of the phase plots produced from the final population of the Lu classical model.}
+\label{fig:lu_phase}
+\end{figure}
+
+\subsection{Self-activation}
+If self-activation is included, then the system is that presented in equations \ref{eq:lu_both_1} and \ref{eq:lu_both_2} . When values that are presented in Table~\ref{tab:lu_dp_tri} are assigned to the parameters for the self-activating model, the system exhibits five steady states as seen in Figure~\ref{fig:lu_tri_phse}. 
+
+\begin{table}[h]
 \centering
 \caption{Lu model with self-activation parameter values}
 \label{tab:lu_dp_tri}
@@ -175,17 +174,15 @@ gx    & gy    & kx    & ky    & nxy & nyx & xxy     & xyx     & Ixy   & Iyx \\
 \end{tabular}
 \end{table}
 
-\begin{figure}[p]
+\begin{figure}[h]
 \centering
 \includegraphics[scale=0.7]{chapterModelling/images/Lu/mae/selfactivation.pdf}
 \caption[Phase portrait of the Lu model including double self-activation]{Phase portrait of the Lu model including double self-activation. The model had three stable steady states and two unstable steady states.}
 \label{fig:lu_tri_phse}
 \end{figure}
-
-Using StabilityChecker and priors centred around the original values, shown in Table~\ref{tab:lu_dp_pr}, we can explore the robustness of this behaviour, in a similar way as done for the classical model. The posterior is shown in Figure~\ref{fig:lu_tristable}. The most constrained parameters are kx and ky, similar as in the classic toggle switch case.
-
 \clearpage
-\begin{table}[p]
+Using StabilityChecker and priors centred around the original values, shown in Table~\ref{tab:lu_dp_pr}, we can explore the robustness of this behaviour, in a similar way as done for the classical model. 
+\begin{table}[h]
 \centering
 \caption{Lu model with double self-activation priors}
 \label{tab:lu_dp_pr}
@@ -195,51 +192,48 @@ gx    & gy    & kx    & ky    & nxy & nyx & xxy     & xyx     & Ixy   & Iyx \\
 \end{tabular}
 \end{table}
 
-\begin{figure}[p]
+The posterior is shown in Figure~\ref{fig:lu_tristable}. The most constrained parameters are kx and ky, similar as in the classic toggle switch case.
+
+\begin{figure}[h]
 \centering
-\includegraphics[scale=0.3]{chapterModelling/images/Lu/tri/posterior_1000p_1.pdf}
+\includegraphics[scale=0.25]{chapterModelling/images/Lu/tri/posterior_1000p_1.pdf}
 \caption[The posterior distribution of the Lu model with double self activation]{The posterior distribution of the Lu model with double self activation. kx and ky are the most constrained parameters.}
 \label{fig:lu_tristable}
 \end{figure}
 
 
-\begin{figure}[p]
+\begin{figure}[h]
 \centering
-\includegraphics[scale=0.4]{chapterModelling/images/Lu/tri/phase_plots.png}
+\includegraphics[scale=0.3]{chapterModelling/images/Lu/tri/phase_plots.png}
 \caption{A sample of the phase plots produced from the final population of the Lu tristable model.}
 \label{fig:lu_tri_phase_pl}
 \end{figure}
 
 
-\subsubsection{Extracting switch design principles}
-Next, we went on to study the design principles that make a switch tristable vs bistable. To do this we implemented an algorithm, as shown in the Appendix. Samples were taken from posterior distribution of the Lu tristable switch. Then we separate the values, for each parameter, that were also found in the posterior of the bistable switch. The same procedure was done but taking samples from the bistable posterior and looking for them in the tristable posterior. This can give an indication of the separation of parameter values that can give rise to a bistable vs a tristable switch. 
+\subsection{Extracting the design principles of a tristable switch}
+Next, we went on to study the design principles that make a switch tristable vs bistable. To do this we implemented an algorithm, as shown in the Appendix. Samples were taken from posterior distribution of the Lu tristable switch. Then we separate the values, for each parameter, that were also found in the posterior of the bistable switch. The same procedure was done but taking samples from the bistable posterior and looking for them in the tristable posterior. This can give an indication of the separation of parameter values that can give rise to a bistable vs a tristable switch. The results are shown in Figure ~\ref{fig:des_princ}.
 
-The results are shown in Figure ~\ref{fig:lu_bi_tri}.
-\clearpage
-\begin{figure}[p]
+\begin{figure}[h]
 \centering
-\includegraphics[scale=0.8]{chapterModelling/images/design_principles/res_all_tri_biyp.png}
+\includegraphics[scale=0.7]{chapterModelling/images/design_principles/res_all_tri_biyp.png}
 \caption{Extracting the tristable versus bistable switch design principles}
-\label{fig:lu_bi_tri}
+\label{fig:des_princ}
 \end{figure}
 
 It is clear from the above results that the values for gx and gy are very different for producing a bistable versus a tristable switch. In order to further test this result, we used the model with self activation, with the same priors as used in the tristable case (Table~\ref{tab:lu_dp_tri}), except for the values of gx and gy, which we swapped for the values found to produce a bistable switch. This new model was then analysed using StabilityChecker and was found to be bistable. This indicates that the values of gx and gy, representing gene expression, are critical for the design of a switch with a given stability, and changing their values can make a tristable switch bistable. This can be seen in the phase plots produced, shown in Figure~\ref{fig:lu_bi_tri}
 
-\begin{figure}[p]
+\begin{figure}[t]
 \centering
-\includegraphics[scale=0.4]{chapterModelling/images/Lu/tri/phase_plot_tri_bi.png}
+\includegraphics[scale=0.3]{chapterModelling/images/Lu/tri/phase_plot_tri_bi.png}
 \caption{The phase plots produced by the last population of StabilityChecker. By changing only the parameters gx and gy in the Lu model with self-activation, the switch became a bistable switch, instead of a tristable switch.}
 \label{fig:lu_bi_tri}
 \end{figure}
-
-
-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%
-\newpage
+\clearpage
 \subsection{Positive auto-regulation increases robustness to parameter fluctuations}
 
-When faced with a set of competing designs for a given genetic circuit, one is likely to choose the simplest possible model that can achieve the desired behaviour. However, simple systems are often the least robust. Feedback loops are well known key regulatory motifs \autocite{Brandman:2005ci}. Negative feedback loops are essential for homeostasis and buffering \autocite{Thomas:1995id} thus increasing robustness to extrinsic noise sources and positive feedback loops can generate multistationarity in a system \autocite{Thomas:1995id}. Incorporating this kind of additional feedback interactions can make a design more robust and reliable. 
+When faced with a set of competing designs for a given genetic circuit, one is likely to choose the simplest possible model that can achieve the desired behaviour. However, simple systems are often the least robust. Here we define a robust device as a device that can withstand fluctuations in parameter values and still produce the desired behaviour. Feedback loops are well known key regulatory motifs \autocite{Brandman:2005ci}. Negative feedback loops are essential for homeostasis and buffering \autocite{Thomas:1995id} thus increasing robustness to extrinsic noise sources and positive feedback loops can generate multistationarity in a system \autocite{Thomas:1995id}. Incorporating this kind of additional feedback interactions can make a design more robust and reliable. Here we use StabilityChecker to compare the robustness of two switches, a simple toggle switch and a switch with added positive auto-regulation. 
 
-Building robust devices is critical for the success of synthetic biology. A robust device is a device that can withstand fluctuations in parameter values and still produce the desired behaviour. Here we use StabilityChecker to compare the robustness of two switches, a simple toggle switch and a switch with added positive auto-regulation. These models avoid the quasi-steady state approximation (QSSA) often used in modelling the toggle switch. Since StabilityChekcker is able to analyse models with numerous equations and parameters, there is no need for this assumption, which approximates a solution. Using Mass Action, the two models used are shown below:
+In order to study this system in the most realistic way, we avoid using the quasi-steady state approximation (QSSA) that is often used in modelling the toggle switch. The QSSA assumes that the binding/unbinding processes are much faster than any other process \autocite{Loinger:2007vma} thus the bound intermediate is assumed to always be in steady state. The QSSA is often used since it reduces the dimensions of the system thus reducing computational time \autocite{Pedersen:2007ke}. The QSSA assumption is met in vitro but often does not hold in vivo. Its misuse can lead to large errors and incorrectly estimated parameters \autocite{Pedersen:2007ke}. Parameter estimation is central to this project and since StabilityChekcker is able to analyse models with numerous equations and parameters, there is no need for this assumption, which approximates a solution. Using Mass Action, the two models used are shown below:
 
 Standard toggle switch:
 $$
@@ -277,9 +271,8 @@ $$
 \end{array}
 $$
 
-Using the same priors for their shared parameters, we used StabilityChecker for both models in order to compare their robustness. The corresponding posterioir distributions can be seen in Figures~\ref{fig:det_std} and ~\ref{fig:doub_pos}.
+Using the same priors for their shared parameters, we used StabilityChecker for both models in order to compare their robustness. The corresponding posterior distributions can be seen in Figures~\ref{fig:det_std} and ~\ref{fig:doub_pos}.
 
-\clearpage
 \begin{table}[p]
 \centering
 \caption{Mass Action switches priors}
@@ -300,7 +293,7 @@ ge   & rep  & rep\_r & dim  & dim\_r & deg & deg\_dim & aut\_1 & aut\_2 & aut\_3
 
 \begin{figure}[p]
 \centering
-\includegraphics[scale=0.4]{chapterModelling/images/ma_cl_bi_phase_plot.png}
+\includegraphics[scale=0.3]{chapterModelling/images/ma_cl_bi_phase_plot.png}
 \caption{A sample of the phase plots produced from the final population of the mass action simple toggle switch.}
 \label{fig:det_std_phase}
 \end{figure}
@@ -314,16 +307,16 @@ ge   & rep  & rep\_r & dim  & dim\_r & deg & deg\_dim & aut\_1 & aut\_2 & aut\_3
 
 \begin{figure}[p]
 \centering
-\includegraphics[scale=0.4]{chapterModelling/images/ma_dp_bi_phase_plot.png}
+\includegraphics[scale=0.3]{chapterModelling/images/ma_dp_bi_phase_plot.png}
 \caption{A sample of the phase plots produced from the final population of the mass action double positive feedback toggle switch.}
 \label{fig:det_dp_phase}
 \end{figure}
-
+\clearpage
 In order to directly compare the robustness of the two models, we used the algorithm outlined in the Methods as a measure of how wide each posterior is given the priors. The results are shown in Figure~\ref{fig:robust_std_doubpos}. 
 
-\begin{figure}[p]
+\begin{figure}[h]
 \centering
-\includegraphics[scale=0.5]{chapterModelling/images/robustness_comparison.pdf}
+\includegraphics[scale=0.5]{chapterModelling/images/MA_robustness_cartoon.png}
 \caption[The robustness of the double positive and the simple switch mass action models]{The switch with double positive autoregulation is more robust to parameter fluctuations that the simple switch. This is evident from the fact that the switch with added feedback has a larger posterior distribution under which it is bistable, compare to the simple switch. Robustness was calculated using a Monte Carlo accept reject algorithm. }
 \label{fig:robust_std_doubpos}
 \end{figure}

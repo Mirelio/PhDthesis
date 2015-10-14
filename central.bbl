@@ -306,6 +306,25 @@
       \field{pages}{188101}
       \range{pages}{1}
     \endentry
+    \entry{Loinger:2007vma}{article}{}
+      \name{author}{4}{}{%
+        {{hash=9743d507aa3c838fda730dd9256253f1}{Loinger}{L\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=45f15f23972a5ae2150785186913eb12}{Lipshtat}{L\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=77404ca5ab85fd860cbf5e696447907c}{Balaban}{B\bibinitperiod}{N\bibnamedelima Q}{N\bibinitperiod\bibinitdelim Q\bibinitperiod}{}{}{}{}}%
+        {{hash=d16e55c3840023a5045e4bd75df3e437}{Biham}{B\bibinitperiod}{O}{O\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{1bb6960d63deeb19c312bff34c59ccf7}
+      \strng{fullhash}{a6e9ebe0c7d1f9e4d1160f9fcae64329}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelyear}{2007}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review E}
+      \field{title}{{Stochastic simulations of genetic switch systems}}
+      \field{year}{2007}
+    \endentry
     \entry{Lu:2013br}{article}{}
       \name{author}{6}{}{%
         {{hash=5e483448d0cf28193ac760624950a7ee}{Lu}{L\bibinitperiod}{Mingyang}{M\bibinitperiod}{}{}{}{}}%
@@ -357,31 +376,6 @@
       \field{pages}{248107}
       \range{pages}{1}
     \endentry
-    \entry{Marjoram:2003up}{article}{}
-      \name{author}{4}{}{%
-        {{hash=8975150812eeabfb3955083a402560e1}{Marjoram}{M\bibinitperiod}{Paul}{P\bibinitperiod}{}{}{}{}}%
-        {{hash=9557976d10e3a1cedaea0829bc261066}{Molitor}{M\bibinitperiod}{John}{J\bibinitperiod}{}{}{}{}}%
-        {{hash=8fac4e88e17173616e8df6a01b02b83e}{Plagnol}{P\bibinitperiod}{Vincent}{V\bibinitperiod}{}{}{}{}}%
-        {{hash=197c820c18cedd85ebe1d06a783fc9c3}{Tavare}{T\bibinitperiod}{Simon}{S\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{2701f5eb6f456f52e3b732678437d117}
-      \strng{fullhash}{795bd81c3fa8f8a254ad757ea4c20f00}
-      \field{sortinit}{M}
-      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
-      \field{labelyear}{2003}
-      \field{labelmonth}{12}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Proceedings of the National Academy of Sciences of the United States of America}
-      \field{month}{12}
-      \field{number}{26}
-      \field{title}{{Markov chain Monte Carlo without likelihoods.}}
-      \field{volume}{100}
-      \field{year}{2003}
-      \field{pages}{15324\bibrangedash 15328}
-      \range{pages}{5}
-    \endentry
     \entry{Niwa:2005fz}{article}{}
       \name{author}{7}{}{%
         {{hash=751960630b061e7bc5e29ae5c694eaed}{Niwa}{N\bibinitperiod}{Hitoshi}{H\bibinitperiod}{}{}{}{}}%
@@ -409,6 +403,30 @@
       \field{year}{2005}
       \field{pages}{13\bibrangedash 13}
       \range{pages}{1}
+    \endentry
+    \entry{Pedersen:2007ke}{article}{}
+      \name{author}{3}{}{%
+        {{hash=a90d0190ce757e8253e682125a2b7a9c}{Pedersen}{P\bibinitperiod}{Morten\bibnamedelima Gram}{M\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+        {{hash=6190b8c46341b44e92ea1d2ce54aa425}{Bersani}{B\bibinitperiod}{Alberto\bibnamedelima Maria}{A\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{hash=40ca42ab37bfc964f6d582549b428e2e}{Bersani}{B\bibinitperiod}{Enrico}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{6e5205cb92e38082b992b1446bd04608}
+      \strng{fullhash}{d2f03f89ac860ce3d43282265fc8b797}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelyear}{2007}
+      \field{labelmonth}{06}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Mathematical Chemistry}
+      \field{month}{06}
+      \field{number}{4}
+      \field{title}{{Quasi steady-state approximations in complex intracellular signal transduction networks -- a word of caution}}
+      \field{volume}{43}
+      \field{year}{2007}
+      \field{pages}{1318\bibrangedash 1344}
+      \range{pages}{27}
     \endentry
     \entry{Pritchard:1999td}{article}{}
       \name{author}{4}{}{%
