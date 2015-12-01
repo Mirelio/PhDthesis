@@ -1,15 +1,15 @@
-[0] Config.pm:324> INFO - This is Biber 2.1
-[0] Config.pm:327> INFO - Logfile is '/Users/miriam/work/PhD/Manuscripts/PhDthesis/central.blg'
-[53] biber-darwin:276> INFO - === Wed Oct 14, 2015, 14:53:29
-[53] Biber.pm:333> INFO - Reading '/Users/miriam/work/PhD/Manuscripts/PhDthesis/central.bcf'
-[174] Biber.pm:645> INFO - Found 25 citekeys in bib section 0
-[195] Biber.pm:2977> INFO - Processing section 0
-[214] Biber.pm:3115> INFO - Looking for bibtex format file 'switches_ref.bib' for section 0
-[221] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
-[228] bibtex.pm:895> INFO - Found BibTeX data source 'switches_ref.bib'
-[666] UCollate.pm:66> INFO - Overriding locale 'en-GB' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[666] UCollate.pm:66> INFO - Overriding locale 'en-GB' defaults 'variable = shifted' with 'variable = non-ignorable'
-[666] Biber.pm:2854> INFO - Sorting list 'nyt' of type 'entry' with scheme 'nyt' and locale 'en-GB'
-[666] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-GB'
-[757] bbl.pm:505> INFO - Writing '/Users/miriam/work/PhD/Manuscripts/PhDthesis/central.bbl' with encoding 'UTF-8'
-[760] bbl.pm:596> INFO - Output to /Users/miriam/work/PhD/Manuscripts/PhDthesis/central.bbl
+[1] Config.pm:324> INFO - This is Biber 2.1
+[1] Config.pm:327> INFO - Logfile is '/Users/miriam/work/PhD/Manuscripts/PhDthesis/central.blg'
+[105] biber-darwin:276> INFO - === Tue Dec  1, 2015, 13:34:41
+[106] Biber.pm:333> INFO - Reading '/Users/miriam/work/PhD/Manuscripts/PhDthesis/central.bcf'
+[332] Biber.pm:645> INFO - Found 25 citekeys in bib section 0
+[406] Biber.pm:2977> INFO - Processing section 0
+[470] Biber.pm:3115> INFO - Looking for bibtex format file 'switches_ref.bib' for section 0
+[479] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
+[488] bibtex.pm:895> INFO - Found BibTeX data source 'switches_ref.bib'
+[1241] UCollate.pm:66> INFO - Overriding locale 'en-GB' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1241] UCollate.pm:66> INFO - Overriding locale 'en-GB' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1241] Biber.pm:2854> INFO - Sorting list 'nyt' of type 'entry' with scheme 'nyt' and locale 'en-GB'
+[1241] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-GB'
+[1415] bbl.pm:505> INFO - Writing '/Users/miriam/work/PhD/Manuscripts/PhDthesis/central.bbl' with encoding 'UTF-8'
+[1420] bbl.pm:596> INFO - Output to /Users/miriam/work/PhD/Manuscripts/PhDthesis/central.bbl

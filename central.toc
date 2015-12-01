@@ -2,25 +2,31 @@
 \defcounter {refsection}{0}\relax 
 \select@language {british}
 \contentsline {section}{\numberline {0.1}Abstract}{2}{section.0.1}
-\contentsline {chapter}{List of Figures}{4}{section*.1}
-\contentsline {chapter}{List of Tables}{6}{section*.2}
-\contentsline {chapter}{\chapternumberline {1}Modelling switches}{7}{chapter.1}
-\contentsline {section}{\numberline {1.1}Introduction}{7}{section.1.1}
-\contentsline {section}{\numberline {1.2}Methods}{9}{section.1.2}
-\contentsline {subsection}{Calculating robustness}{13}{section*.4}
-\contentsline {section}{\numberline {1.3}Results}{14}{section.1.3}
-\contentsline {subsection}{Testing StabilityChecker: The Gardner toggle switch}{14}{section*.5}
-\contentsline {subsubsection}{Comparing the deterministic and stochastic cases}{16}{section*.9}
-\contentsline {section}{\numberline {1.4}Lu toggle switch models}{20}{section.1.4}
-\contentsline {subsection}{Classical model}{20}{section*.14}
-\contentsline {subsection}{Self-activation}{23}{section*.20}
-\contentsline {subsection}{Extracting the design principles of a tristable switch}{25}{section*.26}
-\contentsline {subsection}{Positive auto-regulation increases robustness to parameter fluctuations}{27}{section*.29}
-\contentsline {section}{\numberline {1.5}Discussion}{32}{section.1.5}
-\contentsline {chapter}{Bibliography}{35}{section*.37}
-\contentsline {appendix}{\chapternumberline {A}Appendix}{39}{appendix.A}
-\contentsline {section}{\numberline {A.1}Clustering algorithms}{39}{section.A.1}
-\contentsline {subsection}{Deterministic case}{39}{section*.38}
-\contentsline {subsection}{Stochastic case}{40}{section*.39}
-\contentsline {subsubsection}{Gap statistic}{40}{section*.40}
-\contentsline {subsubsection}{K-means clustering}{41}{section*.41}
+\contentsline {chapter}{List of Figures}{5}{section*.1}
+\contentsline {chapter}{List of Tables}{7}{section*.2}
+\contentsline {chapter}{\chapternumberline {1}Modelling switches}{9}{chapter.1}
+\contentsline {section}{\numberline {1.1}Introduction}{9}{section.1.1}
+\contentsline {section}{\numberline {1.2}Methods}{13}{section.1.2}
+\contentsline {subsection}{Calculating robustness}{17}{section*.5}
+\contentsline {section}{\numberline {1.3}Results}{18}{section.1.3}
+\contentsline {subsection}{Testing StabilityFinder: The Gardner toggle switch}{18}{section*.6}
+\contentsline {subsubsection}{Comparing the deterministic and stochastic cases}{20}{section*.10}
+\contentsline {section}{\numberline {1.4}Lu toggle switch models}{26}{section.1.4}
+\contentsline {subsection}{Classical model}{27}{section*.17}
+\contentsline {subsection}{Single positive autoregulation}{29}{section*.23}
+\contentsline {subsection}{Double positive autoregulation}{31}{section*.27}
+\contentsline {subsection}{Extracting the design principles of a tristable switch}{34}{section*.33}
+\contentsline {section}{\numberline {1.5}Mass Action switches}{36}{section.1.5}
+\contentsline {subsection}{Deterministic case}{38}{section*.37}
+\contentsline {subsection}{Stochastic case}{42}{section*.44}
+\contentsline {subsubsection}{Bistable}{42}{section*.45}
+\contentsline {subsubsection}{Tristable}{44}{section*.50}
+\contentsline {subsubsection}{Extracting the design principles of a tristable switch}{47}{section*.56}
+\contentsline {section}{\numberline {1.6}Discussion}{48}{section.1.6}
+\contentsline {chapter}{Bibliography}{51}{section*.59}
+\contentsline {appendix}{\chapternumberline {A}Appendix}{55}{appendix.A}
+\contentsline {section}{\numberline {A.1}Clustering algorithms}{55}{section.A.1}
+\contentsline {subsection}{Deterministic case}{55}{section*.60}
+\contentsline {subsection}{Stochastic case}{56}{section*.61}
+\contentsline {subsubsection}{Gap statistic}{56}{section*.62}
+\contentsline {subsubsection}{K-means clustering}{57}{section*.63}

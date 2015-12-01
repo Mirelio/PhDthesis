@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.10.1)  14 OCT 2015 14:53
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.10.1)  1 DEC 2015 13:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1407,7 +1407,9 @@ File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
- (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/xspace.sty
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen313
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 ) (/usr/local/texlive/2015/texmf-dist/tex/generic/xstring/xstring.sty (/usr/local/texlive/2015/texmf-dist/tex/generic/xstring/xstring.tex
 \@xs@message=\write5
@@ -1714,7 +1716,7 @@ Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen313
+\@linkdim=\dimen314
 \Hy@linkcounter=\count433
 \Hy@pagecounter=\count434
  (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/pd1enc.def
@@ -1733,10 +1735,10 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
 \c@Hy@tempcnt=\count436
 LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen314
+\XeTeXLinkMargin=\dimen315
 \Fld@menulength=\count437
-\Field@Width=\dimen315
-\Fld@charsize=\dimen316
+\Field@Width=\dimen316
+\Fld@charsize=\dimen317
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -1889,7 +1891,7 @@ Package cleveref Info: no abbreviation of names on input line 7493.
 . 
 .................................................
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 10.04669pt on input line 66.
+(Font)              scaled to size 10.04669pt on input line 68.
 .................................................
 . fontspec info: "set-scale"
 . 
@@ -1984,11 +1986,11 @@ LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
 . 
 .................................................
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmr/m/n --> EU1/LinuxLibertineO(1)/m/n on input line 66.
+(Font)                  OT1/cmr/m/n --> EU1/LinuxLibertineO(1)/m/n on input line 68.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> EU1/LinuxLibertineO(1)/m/it on input line 66.
+(Font)                  OT1/cmr/m/it --> EU1/LinuxLibertineO(1)/m/it on input line 68.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> EU1/LinuxLibertineO(1)/bx/n on input line 66.
+(Font)                  OT1/cmr/bx/n --> EU1/LinuxLibertineO(1)/bx/n on input line 68.
 .................................................
 . fontspec info: "set-scale"
 . 
@@ -2016,7 +2018,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 . TeX Gyre Pagella Math scale = 0.9189820538514595.
 .................................................
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 11.00111pt on input line 68.
+(Font)              scaled to size 11.00111pt on input line 70.
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -2041,20 +2043,20 @@ LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
 . 
 .................................................
 LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(0)/m/n' will be
-(Font)              scaled to size 9.18976pt on input line 68.
+(Font)              scaled to size 9.18976pt on input line 70.
 .................................................
 . fontspec info: "set-scale"
 . 
 . TeX Gyre Pagella Math scale = 0.9189820538514595.
 .................................................
 LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `normal' on input line 68.
+(Font)              `operators' in the math version `normal' on input line 70.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> EU1/TeXGyrePagellaMath(0)/m/n on input line 68.
+(Font)                  OT1/cmr/m/n --> EU1/TeXGyrePagellaMath(0)/m/n on input line 70.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `bold' on input line 68.
+(Font)              `operators' in the math version `bold' on input line 70.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> EU1/TeXGyrePagellaMath(0)/bx/n on input line 68.
+(Font)                  OT1/cmr/bx/n --> EU1/TeXGyrePagellaMath(0)/bx/n on input line 70.
 .................................................
 . fontspec info: "set-scale"
 . 
@@ -2118,13 +2120,13 @@ LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 . \fontdimen 21\font =0pt\relax \fontdimen 22\font =2.5pt\relax \relax 
 .................................................
 LaTeX Font Info:    Encoding `OMS' has changed to `EU1' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 68.
+(Font)              `symbols' in the math version `normal' on input line 70.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> EU1/TeXGyrePagellaMath(1)/m/n on input line 68.
+(Font)                  OMS/cmsy/m/n --> EU1/TeXGyrePagellaMath(1)/m/n on input line 70.
 LaTeX Font Info:    Encoding `OMS' has changed to `EU1' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 68.
+(Font)              `symbols' in the math version `bold' on input line 70.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> EU1/TeXGyrePagellaMath(1)/bx/n on input line 68.
+(Font)                  OMS/cmsy/b/n --> EU1/TeXGyrePagellaMath(1)/bx/n on input line 70.
 .................................................
 . fontspec info: "set-scale"
 . 
@@ -2179,20 +2181,20 @@ LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 . 
 .................................................
 LaTeX Font Info:    Encoding `OMX' has changed to `EU1' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 68.
+(Font)              `largesymbols' in the math version `normal' on input line 70.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> EU1/TeXGyrePagellaMath(2)/m/n on input line 68.
+(Font)                  OMX/cmex/m/n --> EU1/TeXGyrePagellaMath(2)/m/n on input line 70.
 LaTeX Font Info:    Encoding `OMX' has changed to `EU1' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 68.
+(Font)              `largesymbols' in the math version `bold' on input line 70.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> EU1/TeXGyrePagellaMath(2)/bx/n on input line 68.
-Package hyperref Info: Option `final' set `true' on input line 90.
-Package hyperref Info: Option `colorlinks' set `true' on input line 90.
+(Font)                  OMX/cmex/m/n --> EU1/TeXGyrePagellaMath(2)/bx/n on input line 70.
+Package hyperref Info: Option `final' set `true' on input line 92.
+Package hyperref Info: Option `colorlinks' set `true' on input line 92.
 \pagenumpadd=\skip219
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 24.99617pt on input line 253.
+(Font)              scaled to size 24.99617pt on input line 255.
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/bx/n' will be
-(Font)              scaled to size 23.16023pt on input line 253.
+(Font)              scaled to size 23.16023pt on input line 255.
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
 Package: algpseudocode 
  (./algorithmicx.sty
@@ -2237,7 +2239,20 @@ Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2015/04/19 v3.0 biblatex localization (PK/JW/AB)
-)) (./central.aux)
+)) (./central.aux
+
+LaTeX Warning: Label `fig:Gard_robst' multiply defined.
+
+
+LaTeX Warning: Label `fig:Gard_robst@cref' multiply defined.
+
+
+LaTeX Warning: Label `q' multiply defined.
+
+
+LaTeX Warning: Label `q@cref' multiply defined.
+
+)
 \openout1 = `central.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
@@ -2427,120 +2442,155 @@ LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/bx/n' will be
  [2] (./central.toc
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/bx/n' will be
 (Font)              scaled to size 10.1931pt on input line 5.
-) [3] (./central.lof
-Underfull \vbox (badness 10000) has occurred while \output is active []
+ [3]) [4] (./central.lof
+Underfull \vbox (badness 2970) has occurred while \output is active []
 
- [4]) [5] (./central.lot) [6] (./chapterModelling/introduction.tex
+ [5]) [6] (./central.lot) [7] [8
+
+] (./chapterModelling/introduction.tex
 Underfull \vbox (badness 5217) has occurred while \output is active []
 
- [7
-
+ [9
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8]) (./chapterModelling/methods.tex [9]
+ [10]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 14.
+
+LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/it' will be
+(Font)              scaled to size 11.00111pt on input line 34.
+[11] [12]) (./chapterModelling/methods.tex
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 9.
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
 (Font)              scaled to size 9.04202pt on input line 12.
- [10]
-File: chapterModelling/images/StabilityChecker_flowchart-01.png Graphic file (type QTm)
- <use  "chapterModelling/images/StabilityChecker_flowchart-01.png" >
-Overfull \hbox (127.04753pt too wide) in paragraph at lines 28--29
- [][] 
- []
 
-[11
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[13
 
 ]
 
-Package caption Warning: \label without proper \caption on input line 38.
+Package caption Warning: \label without proper \caption on input line 27.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `alg:StabilityChecker' on page 12 undefined on input line 35.
+LaTeX Warning: Reference `alg:StabilityFinder' on page 14 undefined on input line 24.
 
-[12
 
-]
+LaTeX Warning: Command \textgreater invalid in math mode on input line 42.
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 53.
+[14] [15]
+File: chapterModelling/images/StabilityChecker_flowchart-01.png Graphic file (type QTm)
+ <use  "chapterModelling/images/StabilityChecker_flowchart-01.png" >
+Overfull \hbox (127.04753pt too wide) in paragraph at lines 59--60
+ [][] 
+ []
 
+[16]
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 14.46722pt on input line 61.
+(Font)              scaled to size 14.46722pt on input line 67.
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/bx/n' will be
-(Font)              scaled to size 13.40463pt on input line 61.
+(Font)              scaled to size 13.40463pt on input line 67.
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 8.03735pt on input line 75.
+(Font)              scaled to size 8.03735pt on input line 81.
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 6.02802pt on input line 75.
-[13
+(Font)              scaled to size 6.02802pt on input line 81.
+ [17
 
-]) (./chapterModelling/results.tex
-LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/it' will be
-(Font)              scaled to size 11.00111pt on input line 10.
- [14]
+
+]) (./chapterModelling/results.tex [18]
 File: chapterModelling/images/Gardner/posterior.pdf Graphic file (type QTm)
  <use  "chapterModelling/images/Gardner/posterior.pdf" >
 File: chapterModelling/images/Gardner/phase_plots.png Graphic file (type QTm)
- <use  "chapterModelling/images/Gardner/phase_plots.png" > [15
+ <use  "chapterModelling/images/Gardner/phase_plots.png" > [19
 
 ]
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/bx/n' will be
 (Font)              scaled to size 11.17053pt on input line 43.
-
-Overfull \hbox (2.15237pt too wide) in paragraph at lines 49--50
-\EU1/LinuxLibertineO(0)/m/n/10.95 with the two methods producing different results. Thus here we use StabilityChecker
- []
-
-[16]
-File: chapterModelling/images/Gardner/wide_var/posterior_deter_high_mean.pdf Graphic file (type QTm)
- <use  "chapterModelling/images/Gardner/wide_var/posterior_deter_high_mean.pdf" >
-File: chapterModelling/images/Gardner/wide_var/posterior_stch_high_mean.pdf Graphic file (type QTm)
- <use  "chapterModelling/images/Gardner/wide_var/posterior_stch_high_mean.pdf" > [17] [18]
-File: chapterModelling/images/Gardner/wide_var/robustness_comparison.pdf Graphic file (type QTm)
- <use  "chapterModelling/images/Gardner/wide_var/robustness_comparison.pdf" > [19
-
-]
-File: chapterModelling/images/Lu/mae/classic.pdf Graphic file (type QTm)
- <use  "chapterModelling/images/Lu/mae/classic.pdf" > [20] [21]
-File: chapterModelling/images/Lu/posterior_100p_narrow.pdf Graphic file (type QTm)
- <use  "chapterModelling/images/Lu/posterior_100p_narrow.pdf" >
-File: chapterModelling/images/Lu/phase_plot.png Graphic file (type QTm)
- <use  "chapterModelling/images/Lu/phase_plot.png" > [22
-
-]
-File: chapterModelling/images/Lu/mae/selfactivation.pdf Graphic file (type QTm)
- <use  "chapterModelling/images/Lu/mae/selfactivation.pdf" > [23]
-File: chapterModelling/images/Lu/tri/posterior_1000p_1.pdf Graphic file (type QTm)
- <use  "chapterModelling/images/Lu/tri/posterior_1000p_1.pdf" >
-File: chapterModelling/images/Lu/tri/phase_plots.png Graphic file (type QTm)
- <use  "chapterModelling/images/Lu/tri/phase_plots.png" >
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \vbox (badness 3525) has occurred while \output is active []
-
- [24
-
-]
-File: chapterModelling/images/design_principles/res_all_tri_biyp.png Graphic file (type QTm)
- <use  "chapterModelling/images/design_principles/res_all_tri_biyp.png" >
-Overfull \hbox (43.9302pt too wide) in paragraph at lines 218--219
+ [20]
+File: chapterModelling/images/Gardner/summary.png Graphic file (type QTm)
+ <use  "chapterModelling/images/Gardner/summary.png" >
+Overfull \hbox (72.18655pt too wide) in paragraph at lines 65--66
  [][] 
  []
 
+[21] [22]
+File: chapterModelling/images/Gardner/gardner_solve_roots_a1a2_big.pdf Graphic file (type QTm)
+ <use  "chapterModelling/images/Gardner/gardner_solve_roots_a1a2_big.pdf" >
+Underfull \vbox (badness 1360) has occurred while \output is active []
+
+ [23
+
+]
+File: chapterModelling/images/Gardner/wide_var/robustness_comparison.pdf Graphic file (type QTm)
+ <use  "chapterModelling/images/Gardner/wide_var/robustness_comparison.pdf" >
+File: chapterModelling/images/Gardner/robustness_comparison_gard_stoch_determ_kmeans.pdf Graphic file (type QTm)
+ <use  "chapterModelling/images/Gardner/robustness_comparison_gard_stoch_determ_kmeans.pdf" >
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-File: chapterModelling/images/Lu/tri/phase_plot_tri_bi.png Graphic file (type QTm)
-<use  "chapterModelling/images/Lu/tri/phase_plot_tri_bi.png" > [25] [26]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [27
+[24] [25]) (./chapterModelling/Lu_switches/lu_switches_summary.tex
+File: chapterModelling/Lu_switches/images/lu_three_switches_sketch.png Graphic file (type QTm)
+ <use  "chapterModelling/Lu_switches/images/lu_three_switches_sketch.png" > [26
 
 ]
+File: chapterModelling/Lu_switches/images/Lu/mae/classic.pdf Graphic file (type QTm)
+ <use  "chapterModelling/Lu_switches/images/Lu/mae/classic.pdf" > [27
+
+]
+File: chapterModelling/Lu_switches/images/Lu/posterior_100p_narrow.pdf Graphic file (type QTm)
+ <use  "chapterModelling/Lu_switches/images/Lu/posterior_100p_narrow.pdf" >
+File: chapterModelling/Lu_switches/images/Lu/phase_plot.png Graphic file (type QTm)
+ <use  "chapterModelling/Lu_switches/images/Lu/phase_plot.png" > [28
+
+] [29]
+File: chapterModelling/Lu_switches/images/single_pos/posterior.pdf Graphic file (type QTm)
+ <use  "chapterModelling/Lu_switches/images/single_pos/posterior.pdf" >
+File: chapterModelling/Lu_switches/images/single_pos/phase_plot.png Graphic file (type QTm)
+ <use  "chapterModelling/Lu_switches/images/single_pos/phase_plot.png" > [30]
+File: chapterModelling/Lu_switches/images/Lu/mae/selfactivation.pdf Graphic file (type QTm)
+ <use  "chapterModelling/Lu_switches/images/Lu/mae/selfactivation.pdf" > [31
+
+
+]
+Overfull \hbox (9.23099pt too wide) in paragraph at lines 150--151
+[]\EU1/LinuxLibertineO(0)/m/n/10.95 Using StabilityFinder and wide priors around the original values, shown in Table [][]1.8[][],
+ []
+
+File: chapterModelling/Lu_switches/images/Lu/tri/posterior_tri_wide_params.pdf Graphic file (type QTm)
+<use  "chapterModelling/Lu_switches/images/Lu/tri/posterior_tri_wide_params.pdf" >
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: chapterModelling/Lu_switches/images/Lu/tri/phase_plots.png Graphic file (type QTm)
+<use  "chapterModelling/Lu_switches/images/Lu/tri/phase_plots.png" >
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[32
+
+] [33]
+File: chapterModelling/Lu_switches/images/lu_bi_tri_cartoon.png Graphic file (type QTm)
+ <use  "chapterModelling/Lu_switches/images/lu_bi_tri_cartoon.png" >
+File: chapterModelling/Lu_switches/images/posterior_comparison_bi_tri.pdf Graphic file (type QTm)
+ <use  "chapterModelling/Lu_switches/images/posterior_comparison_bi_tri.pdf" >
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[34
+
+] [35]
+File: chapterModelling/Lu_switches/images/design_principles_bi_tri.pdf Graphic file (type QTm)
+ <use  "chapterModelling/Lu_switches/images/design_principles_bi_tri.pdf" >) (./chapterModelling/mass_action_stochastic_switches/Stochastic_mass_action_switch_summary.tex [36
+
+]
+Underfull \vbox (badness 1783) has occurred while \output is active []
+
+ [37]
 File: chapterModelling/images/posterior_ma_cl_bi.pdf Graphic file (type QTm)
  <use  "chapterModelling/images/posterior_ma_cl_bi.pdf" >
 File: chapterModelling/images/ma_cl_bi_phase_plot.png Graphic file (type QTm)
@@ -2548,27 +2598,49 @@ File: chapterModelling/images/ma_cl_bi_phase_plot.png Graphic file (type QTm)
 File: chapterModelling/images/posterior_ma_dp_bi.pdf Graphic file (type QTm)
  <use  "chapterModelling/images/posterior_ma_dp_bi.pdf" >
 File: chapterModelling/images/ma_dp_bi_phase_plot.png Graphic file (type QTm)
- <use  "chapterModelling/images/ma_dp_bi_phase_plot.png" > [28] [29] [30]
+ <use  "chapterModelling/images/ma_dp_bi_phase_plot.png" > [38] [39] [40]
 File: chapterModelling/images/MA_robustness_cartoon.png Graphic file (type QTm)
- <use  "chapterModelling/images/MA_robustness_cartoon.png" >) (./chapterModelling/discussion.tex [31
+ <use  "chapterModelling/images/MA_robustness_cartoon.png" > [41
 
-] [32]) [33] [34
+]
+File: chapterModelling/mass_action_stochastic_switches/bi_stoch_images/phase_plt.png Graphic file (type QTm)
+ <use  "chapterModelling/mass_action_stochastic_switches/bi_stoch_images/phase_plt.png" >
+File: chapterModelling/mass_action_stochastic_switches/bi_stoch_images/posterior_std.pdf Graphic file (type QTm)
+ <use  "chapterModelling/mass_action_stochastic_switches/bi_stoch_images/posterior_std.pdf" >
+File: chapterModelling/mass_action_stochastic_switches/bi_tri_same_priors/posterior_pos_ab_bi.pdf Graphic file (type QTm)
+ <use  "chapterModelling/mass_action_stochastic_switches/bi_tri_same_priors/posterior_pos_ab_bi.pdf" > [42] [43]
+File: chapterModelling/mass_action_stochastic_switches/tri_stoch_images/phase_plot_tri.png Graphic file (type QTm)
+ <use  "chapterModelling/mass_action_stochastic_switches/tri_stoch_images/phase_plot_tri.png" >
+File: chapterModelling/mass_action_stochastic_switches/bi_tri_same_priors/posterior_std_tri.pdf Graphic file (type QTm)
+ <use  "chapterModelling/mass_action_stochastic_switches/bi_tri_same_priors/posterior_std_tri.pdf" >
+File: chapterModelling/mass_action_stochastic_switches/bi_tri_same_priors/posterior_pos_ab_tri.pdf Graphic file (type QTm)
+ <use  "chapterModelling/mass_action_stochastic_switches/bi_tri_same_priors/posterior_pos_ab_tri.pdf" > [44
 
-] [35] [36] [37] [38
+] [45]
+File: chapterModelling/mass_action_stochastic_switches/bi_tri_same_priors/robustness_comparison_tri.pdf Graphic file (type QTm)
+ <use  "chapterModelling/mass_action_stochastic_switches/bi_tri_same_priors/robustness_comparison_tri.pdf" > [46
 
-] (./appendices/appendix.tex [39]
+]
+File: chapterModelling/mass_action_stochastic_switches/bi_tri_same_priors/design_principles_pos_ab.pdf Graphic file (type QTm)
+ <use  "chapterModelling/mass_action_stochastic_switches/bi_tri_same_priors/design_principles_pos_ab.pdf" >) (./chapterModelling/discussion.tex [47
+
+] [48]) [49] [50
+
+] [51] [52] [53] [54
+
+] (./appendices/appendix.tex [55]
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(1)/m/n' will be
 (Font)              scaled to size 11.00111pt on input line 62.
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(1)/m/n' will be
 (Font)              scaled to size 8.03735pt on input line 62.
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(1)/m/n' will be
 (Font)              scaled to size 6.02802pt on input line 62.
- [40])
+ [56])
 
-Package caption Warning: Unused \captionsetup[subfigure] on input line 229.
+Package caption Warning: Unused \captionsetup[subfigure] on input line 231.
 See the caption package documentation for explanation.
 
-[41]
+[57]
 \tf@toc=\write8
 \openout8 = `central.toc'.
 
@@ -2578,26 +2650,29 @@ See the caption package documentation for explanation.
 \tf@lot=\write10
 \openout10 = `central.lot'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 91.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 91.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 93.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 93.
  (./central.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 91.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 91.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 93.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 93.
 
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
 
 Package logreq Info: Writing requests to 'central.run.xml'.
 \openout1 = `central.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 56192 strings out of 493706
- 1065421 string characters out of 6145769
- 1580224 words of memory out of 5000000
- 58782 multiletter control sequences out of 15000+600000
+ 56277 strings out of 493706
+ 1068573 string characters out of 6145769
+ 1582647 words of memory out of 5000000
+ 58840 multiletter control sequences out of 15000+600000
  11626 words of font info for 82 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 68i,13n,109p,10382b,2530s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,15n,109p,10382b,2530s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on central.pdf (41 pages).
+Output written on central.pdf (57 pages).
