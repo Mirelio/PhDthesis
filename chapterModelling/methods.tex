@@ -17,7 +17,7 @@ ABC methods are used for inferring the posterior distribution in cases where it 
 \end{algorithm}
 
 
-The simplest ABC algorithm is the ABC rejection sampler \autocite{Pritchard:1999td}. In this method, parameters are sampled and simulated, and for each sample if the distance from that to the desired behaviour is greater than a threshold, the sample is rejected, otherwise accepted. The main disadvantage of this method is that if the prior distribution is very different from the posterior, the acceptance rate is very low \autocite{Toni:2009tr}. %An alternative method is the ABC Markov Chain Monte Carlo (MCMC) developed by \textcite{Marjoram:2003up}. The disadvantage of this method is that if it gets stuck in an area of low probability it can be very slow to converge.
+The simplest ABC algorithm is the ABC rejection sampler \autocite{Pritchard:1999td}. In this method, parameters are sampled and simulated, and for each sample if the distance from that to the desired behaviour is greater than a threshold, the sample is rejected, otherwise accepted. The main disadvantage of this method is that if the prior distribution is very different from the posterior, the acceptance rate is very low \autocite{Toni:2009tr}. An alternative method is the ABC Markov Chain Monte Carlo (MCMC) developed by \textcite{Marjoram:2003up}. The disadvantage of this method is that if it gets stuck in an area of low probability it can be very slow to converge.
 
 The method used here, developed by \textcite{Toni:2009tr} is the ABC SMC method that avoids both these issues faced by the above methods. It propagates the prior through a series of intermediate distributions in order to arrive to an approximation of the posterior. The tolerance, $\epsilon$ for the distance of the simulated data to the desired data is made smaller at each iteration. When $\epsilon$ is sufficiently small, the result will approximate the posterior distribution \autocite{Toni:2009tr}. 
 
@@ -43,7 +43,7 @@ In the algorithm we developed the desired behaviour in ABC SMC is replaced by a 
     \State Calculate weight for each accepted $\theta$
 	\State $w_{t}^{(i)} = \begin{cases} 1, & \mbox{if } p = 0 \\\frac{\pi(\theta_{t}^{(i)})}{\sum_{j=1}^N w_{t-1}^{(j)} K_{t}(\theta_{t-1}^{(j)}, \theta_{t}^{(i)})}, & \mbox{if } p \geq  0. \end{cases}$
 	\State Normalise weights
-	\Repeat {steps 3 - 15} \Until{$\epsilon \leq \epsilon_T$}
+	\Repeat{steps 3 - 15} \Until{$\epsilon \leq \epsilon_T$}
   \end{algorithmic}
 \end{algorithm}
 

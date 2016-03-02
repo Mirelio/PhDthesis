@@ -49,7 +49,7 @@ gx    & gy    & kx    & ky    & nxy & nyx & xxy     & xyx     & Ixy   & Iyx \\
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[scale=0.7]{chapterModelling/Lu_switches/images/Lu/mae/classic.pdf}
+\includegraphics[scale=0.4]{chapterModelling/Lu_switches/images/mae/classical_bistable.png}
 \caption[Phase portrait of the Lu classical model with no self activation]{Phase portrait of the Lu classical model with no self activation. There are two stable steady states and one unstable steady state.}
 \label{fig:lu_bis_class}
 \end{figure}
@@ -70,25 +70,27 @@ gx    & gy    & kx    & ky    & nxy & nyx & xxy     & xyx     & Ixy   & Iyx \\
 
 The posterior distribution of this model is shown in Figure~\ref{fig:lu_bistable}. As can be seen from the posterior, the most restrained parameters are kx and ky, the parameters responsible for the degradation of the species involved. This indicates that the rate of degradation of the species is critical for the desired dynamic to occur. 
 
-\begin{figure}[h]
+\begin{figure}[htbp]
 \centering
-\includegraphics[scale=0.7]{chapterModelling/Lu_switches/images/Lu/posterior_100p_narrow.pdf}
+\includegraphics[scale=0.25]{chapterModelling/Lu_switches/images/classic/posterior_lu_cl.png}
 \caption[The posterior distribution of the Lu classical model with no self activation]{The posterior distribution of the Lu classical model with no self activation. kx and ky are the most constrained parameters.}
 \label{fig:lu_bistable}
 \end{figure}
 
-\begin{figure}[t]
+\begin{figure}[htbp]
 \centering
-\includegraphics[scale=0.2]{chapterModelling/Lu_switches/images/Lu/phase_plot.png}
+\includegraphics[scale=0.2]{chapterModelling/Lu_switches/images/classic/phase_plot.png}
 \caption{A sample of the phase plots produced from the final population of the Lu classical model.}
 \label{fig:lu_phase}
 \end{figure}
+\clearpage
 
 \subsection{Single positive autoregulation}
+
+If single self-activation is included, then the system is that presented in equations \ref{eq:lu_both_1} - \ref{eq:lu_hmx}. Using the priors used in Table~\ref{tab:lu_sp_pr}, the posterior distribution of for this bistable switch is that shown in Figure~\ref{fig:lu_sp_pos}. 
+
 \begin{table}[htbp]
 \centering
-
-%\begin{tabularx}{\linewidth}{lX}
 \caption{Lu model with single self-activation priors}
 \label{tab:lu_sp_pr}
 \begin{tabular}{cc}
@@ -111,24 +113,25 @@ lXX & 65-72 \\
 lYY & 0.02-0.04
 \end{tabular}
 \end{table}
-\clearpage
+
+
 \begin{figure}[t]
 \centering
-\includegraphics[scale=0.41]{chapterModelling/Lu_switches/images/single_pos/posterior.pdf}
+\includegraphics[scale=0.35]{chapterModelling/Lu_switches/images/single_pos/posterior_lu_sp_bis.png}
 \caption[The posterior distribution of the Lu model with asymmetric self activation]{The posterior distribution of the Lu model with asymmetric self activation}
-\label{q}
+\label{fig:lu_sp_pos}
 \end{figure}
 
 \begin{figure}[t]
 \centering
 \includegraphics[scale=0.2]{chapterModelling/Lu_switches/images/single_pos/phase_plot.png}
 \caption{Phase plot of asymmetric Lu toggle switch}
-\label{q}
+\label{fig:lu_sp_phase}
 \end{figure}
 \clearpage
 
 \subsection{Double positive autoregulation}
-If self-activation is included, then the system is that presented in equations \ref{eq:lu_both_1} and \ref{eq:lu_both_2} . When values that are presented in Table~\ref{tab:lu_dp_tri} are assigned to the parameters for the self-activating model, the system exhibits three stable and two unstable steady states as seen in Figure~\ref{fig:lu_tri_phse}. 
+If self-activation is included, then the system is that presented in equations \ref{eq:lu_both_1} - \ref{eq:lu_hmx}. When values that are presented in Table~\ref{tab:lu_dp_tri} are assigned to the parameters for the self-activating model, the system exhibits three stable and two unstable steady states as seen in Figure~\ref{fig:lu_tri_phse}. 
 
 \begin{table}[h]
 \centering
@@ -142,7 +145,7 @@ gx    & gy    & kx    & ky    & nxy & nyx & xxy     & xyx     & Ixy   & Iyx \\
 
 \begin{figure}[h]
 \centering
-\includegraphics[scale=0.7]{chapterModelling/Lu_switches/images/Lu/mae/selfactivation.pdf}
+\includegraphics[scale=0.3]{chapterModelling/Lu_switches/images/mae/tristable_db.png}
 \caption[Phase portrait of the Lu model including double self-activation]{Phase portrait of the Lu model including double self-activation. The model had three stable steady states and two unstable steady states.}
 \label{fig:lu_tri_phse}
 \end{figure}
@@ -177,7 +180,7 @@ lYY & 1-20
 The posterior is shown in Figure~\ref{fig:lu_tristable}. 
 \begin{figure}[h]
 \centering
-\includegraphics[scale=0.4]{chapterModelling/Lu_switches/images/Lu/tri/posterior_tri_wide_params.pdf}
+\includegraphics[scale=0.4]{chapterModelling/Lu_switches/images/double_pos/posterior_tri_wide_params.png}
 \caption[The posterior distribution of the Lu model with double self activation]{The posterior distribution of the Lu model with double self activation.}
 \label{fig:lu_tristable}
 \end{figure}
@@ -185,7 +188,7 @@ The posterior is shown in Figure~\ref{fig:lu_tristable}.
 
 \begin{figure}[h]
 \centering
-\includegraphics[scale=0.3]{chapterModelling/Lu_switches/images/Lu/tri/phase_plots.png}
+\includegraphics[scale=0.3]{chapterModelling/Lu_switches/images/double_pos/phase_plots.png}
 \caption{A sample of the phase plots produced from the final population of the Lu tristable model.}
 \label{fig:lu_tri_phase_pl}
 \end{figure}
@@ -196,7 +199,7 @@ Next, we went on to study the design principles that make a switch tristable vs 
 
 \begin{figure}[h]
 \centering
-\includegraphics[scale=0.5]{chapterModelling/Lu_switches/images/lu_bi_tri_cartoon.png}
+\includegraphics[scale=0.5]{chapterModelling/Lu_switches/images/double_pos/lu_bi_tri_cartoon.png}
 \caption{Finding the parameter spaces that make the Lu double positive model bistable and tristable. }
 \label{fig:lu_bi_tri_cartoon}
 \end{figure}
@@ -205,7 +208,7 @@ By plotting the resulting posterior with that of the tristable switch shown in F
 
 \begin{figure}[h]
 \centering
-\includegraphics[scale=0.23]{chapterModelling/Lu_switches/images/posterior_comparison_bi_tri.pdf}
+\includegraphics[scale=0.4]{chapterModelling/Lu_switches/images/double_pos/posterior_comparison_bi_tri.png}
 \caption{Comparing the posteriors of the tristable Vs bistable Lu switch.}
 \label{fig:pos_comp_lu}
 \end{figure}
@@ -216,7 +219,7 @@ In order to separate the values in a more meaningful way, we implement an algori
 
 \begin{figure}[h]
 \centering
-\includegraphics[scale=0.5]{chapterModelling/Lu_switches/images/design_principles_bi_tri.pdf}
+\includegraphics[scale=0.2]{chapterModelling/Lu_switches/images/double_pos/design_principles_bi_tri.png}
 \caption{Design principles of the tristable Lu switch.}
 \label{fig:design_princip_lu}
 \end{figure}

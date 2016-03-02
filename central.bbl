@@ -95,7 +95,7 @@
         {{hash=d0283c6dc4c0510cb49d943cbfb1bab9}{Labno}{L\bibinitperiod}{Anna}{A\bibinitperiod}{}{}{}{}}%
         {{hash=56bcc611788a8cec916f128ba7c4f04b}{Endy}{E\bibinitperiod}{Drew}{D\bibinitperiod}{}{}{}{}}%
       }
-      \strng{namehash}{a855ab9315c66f77234e9154fecb5444}
+      \strng{namehash}{bdebb415e5cee92e987e7f94df7373dc}
       \strng{fullhash}{bdebb415e5cee92e987e7f94df7373dc}
       \field{sortinit}{C}
       \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
@@ -119,7 +119,7 @@
         {{hash=c785f481ffa6a8d2fa0e31189a94f872}{Chang}{C\bibinitperiod}{Chia-Hung}{C\bibinithyphendelim H\bibinitperiod}{}{}{}{}}%
         {{hash=e14f39138008f4e9de84d8633457fe69}{Lee}{L\bibinitperiod}{Hsiao-Ching}{H\bibinithyphendelim C\bibinitperiod}{}{}{}{}}%
       }
-      \strng{namehash}{ae6bbeeb3099a11ed4ae7fbfe7595dde}
+      \strng{namehash}{cc27f60f354c85727405389484be7b3d}
       \strng{fullhash}{cc27f60f354c85727405389484be7b3d}
       \field{sortinit}{C}
       \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
@@ -143,7 +143,7 @@
         {{hash=95dd1b1267a448d3b936c448967a5e67}{Enver}{E\bibinitperiod}{Tariq}{T\bibinitperiod}{}{}{}{}}%
         {{hash=ad87a70ecc77b218415882f256cc1c91}{Peterson}{P\bibinitperiod}{Carsten}{C\bibinitperiod}{}{}{}{}}%
       }
-      \strng{namehash}{3eaf2c6ad7c3c1697d741c84deda9896}
+      \strng{namehash}{20615088659caa1defdad6c1376d7c91}
       \strng{fullhash}{20615088659caa1defdad6c1376d7c91}
       \field{sortinit}{C}
       \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
@@ -211,7 +211,7 @@
         {{hash=c5672d98769b1a72fb353f3597a0cd07}{Cantor}{C\bibinitperiod}{C\bibnamedelima R}{C\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
         {{hash=6605a954dd214f66b2fe169d6dc4acef}{Collins}{C\bibinitperiod}{J\bibnamedelima J}{J\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
       }
-      \strng{namehash}{f61f53e31d0e2bd143c5af1438309c8a}
+      \strng{namehash}{b585ec9edd4b1b4d1fc1feeb357ff20f}
       \strng{fullhash}{b585ec9edd4b1b4d1fc1feeb357ff20f}
       \field{sortinit}{G}
       \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
@@ -376,6 +376,31 @@
       \field{pages}{248107}
       \range{pages}{1}
     \endentry
+    \entry{Marjoram:2003up}{article}{}
+      \name{author}{4}{}{%
+        {{hash=8975150812eeabfb3955083a402560e1}{Marjoram}{M\bibinitperiod}{Paul}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=9557976d10e3a1cedaea0829bc261066}{Molitor}{M\bibinitperiod}{John}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=8fac4e88e17173616e8df6a01b02b83e}{Plagnol}{P\bibinitperiod}{Vincent}{V\bibinitperiod}{}{}{}{}}%
+        {{hash=197c820c18cedd85ebe1d06a783fc9c3}{Tavare}{T\bibinitperiod}{Simon}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{2701f5eb6f456f52e3b732678437d117}
+      \strng{fullhash}{795bd81c3fa8f8a254ad757ea4c20f00}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelyear}{2003}
+      \field{labelmonth}{12}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the National Academy of Sciences of the United States of America}
+      \field{month}{12}
+      \field{number}{26}
+      \field{title}{{Markov chain Monte Carlo without likelihoods.}}
+      \field{volume}{100}
+      \field{year}{2003}
+      \field{pages}{15324\bibrangedash 15328}
+      \range{pages}{5}
+    \endentry
     \entry{Niwa:2005fz}{article}{}
       \name{author}{7}{}{%
         {{hash=751960630b061e7bc5e29ae5c694eaed}{Niwa}{N\bibinitperiod}{Hitoshi}{H\bibinitperiod}{}{}{}{}}%
@@ -410,7 +435,7 @@
         {{hash=6190b8c46341b44e92ea1d2ce54aa425}{Bersani}{B\bibinitperiod}{Alberto\bibnamedelima Maria}{A\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
         {{hash=40ca42ab37bfc964f6d582549b428e2e}{Bersani}{B\bibinitperiod}{Enrico}{E\bibinitperiod}{}{}{}{}}%
       }
-      \strng{namehash}{6e5205cb92e38082b992b1446bd04608}
+      \strng{namehash}{d2f03f89ac860ce3d43282265fc8b797}
       \strng{fullhash}{d2f03f89ac860ce3d43282265fc8b797}
       \field{sortinit}{P}
       \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
@@ -459,7 +484,7 @@
         {{hash=62518cbecde8bb67378728df31cf765d}{Mirsky}{M\bibinitperiod}{Ethan\bibnamedelima A}{E\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
         {{hash=65ff41dbe5274be5e583c56228f77524}{Voigt}{V\bibinitperiod}{Christopher\bibnamedelima A}{C\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
       }
-      \strng{namehash}{a473280435a6bebbc568ea5d9b4d0d32}
+      \strng{namehash}{b7df97998b5efd9ce15aabe80776c70a}
       \strng{fullhash}{b7df97998b5efd9ce15aabe80776c70a}
       \field{sortinit}{S}
       \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
@@ -483,7 +508,7 @@
         {{hash=f916afff59bbda24080f2824841f920f}{Thieffry}{T\bibinitperiod}{D}{D\bibinitperiod}{}{}{}{}}%
         {{hash=0c58e4cf5a8622f6bab57c2cab8033b6}{Kaufman}{K\bibinitperiod}{M}{M\bibinitperiod}{}{}{}{}}%
       }
-      \strng{namehash}{c88afe082f7f9bd1643e6ebe801562c5}
+      \strng{namehash}{292d0b82679e7fd407ee6acad60f8dfd}
       \strng{fullhash}{292d0b82679e7fd407ee6acad60f8dfd}
       \field{sortinit}{T}
       \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
@@ -574,7 +599,7 @@
         {{hash=e14f39138008f4e9de84d8633457fe69}{Lee}{L\bibinitperiod}{Hsiao-Ching}{H\bibinithyphendelim C\bibinitperiod}{}{}{}{}}%
         {{hash=bb996adb2c7a36362192c885c8772dab}{Chen}{C\bibinitperiod}{Bor-Sen}{B\bibinithyphendelim S\bibinitperiod}{}{}{}{}}%
       }
-      \strng{namehash}{161ae35cc7ca8a6bf43cdc5955020644}
+      \strng{namehash}{1f0f790f36423397c2101645758f666f}
       \strng{fullhash}{1f0f790f36423397c2101645758f666f}
       \field{sortinit}{W}
       \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
