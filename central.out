@@ -28,10 +28,9 @@
 \BOOKMARK [1][-]{section.4.6}{Discussion}{chapter.4}% 28
 \BOOKMARK [0][-]{chapter.5}{Designing\040new\040switches}{}% 29
 \BOOKMARK [0][-]{chapter.6}{Conclusions}{}% 30
-\BOOKMARK [0][-]{section*.55}{Bibliography}{}% 31
-\BOOKMARK [0][-]{appendix.A}{Appendix}{}% 32
-\BOOKMARK [1][-]{section.A.1}{Clustering\040algorithms}{appendix.A}% 33
-\BOOKMARK [2][-]{subsection.A.1.1}{Deterministic\040case}{section.A.1}% 34
-\BOOKMARK [2][-]{subsection.A.1.2}{Stochastic\040case}{section.A.1}% 35
-\BOOKMARK [3][-]{subsubsection.A.1.2.1}{Gap\040statistic}{subsection.A.1.2}% 36
-\BOOKMARK [3][-]{subsubsection.A.1.2.2}{K-means\040clustering}{subsection.A.1.2}% 37
+\BOOKMARK [0][-]{appendix.A}{Appendix}{}% 31
+\BOOKMARK [1][-]{section.A.1}{Clustering\040algorithms}{appendix.A}% 32
+\BOOKMARK [2][-]{subsection.A.1.1}{Deterministic\040case}{section.A.1}% 33
+\BOOKMARK [2][-]{subsection.A.1.2}{Stochastic\040case}{section.A.1}% 34
+\BOOKMARK [3][-]{subsubsection.A.1.2.1}{Gap\040statistic}{subsection.A.1.2}% 35
+\BOOKMARK [3][-]{subsubsection.A.1.2.2}{K-means\040clustering}{subsection.A.1.2}% 36

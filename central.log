@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.10.1)  21 APR 2016 14:15
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.10.1)  21 APR 2016 14:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1703,14 +1703,7 @@ Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2015/04/19 v3.0 biblatex localization (PK/JW/AB)
-)) (./central.aux
-
-LaTeX Warning: Label `fig:Gard_robst' multiply defined.
-
-
-LaTeX Warning: Label `fig:Gard_robst@cref' multiply defined.
-
-)
+)) (./central.aux)
 \openout1 = `central.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
@@ -1876,7 +1869,7 @@ File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 
 ]
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/sc' will be
-(Font)              scaled to size 11.00111pt on input line 22.
+(Font)              scaled to size 11.00111pt on input line 19.
  [4] (./central.toc
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
 (Font)              scaled to size 12.05603pt on input line 7.
@@ -1884,14 +1877,11 @@ LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/bx/n' will be
 (Font)              scaled to size 10.1931pt on input line 7.
  [5
 
-]) [6] (./central.lof
-Underfull \vbox (badness 1515) has occurred while \output is active []
+]) [6] (./central.lof) [7
 
- [7
+] [8
 
-]) [8] (./central.lot) [9
-
-] [10
+] (./central.lot) [9] [10
 
 ] (./chapterIntroduction/ChIntro_introduction.tex) [11
 
@@ -1905,230 +1895,36 @@ Underfull \vbox (badness 1515) has occurred while \output is active []
 
 ] [16
 
-] (./chapterStabilityFinder/ChSF_introduction.tex
-Underfull \vbox (badness 5217) has occurred while \output is active []
+] (./chapterStabilityFinder/ChSF_introduction.tex) (./chapterStabilityFinder/methods.tex
+LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
+(Font)              scaled to size 14.46722pt on input line 5.
+) (./chapterStabilityFinder/results.tex) (./chapterStabilityFinder/Lu_switches/lu_switches_summary.tex) (./chapterStabilityFinder/mass_action_switches/mass_action_switch_summary.tex) (./chapterStabilityFinder/discussion.tex)
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [17
 
 ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \vbox (163.46259pt too high) has occurred while \output is active []
 
- [18]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 14.
-
-[19] [20]) (./chapterStabilityFinder/methods.tex
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 9.
-LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 9.04202pt on input line 12.
+ [18] (./chapterDesignSwitches/ChDesSw_introduction.tex) [19
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+] [20
+
+]
+
+LaTeX Warning: Empty bibliography on input line 65.
 
 [21
 
-]
+] [22
 
-Package caption Warning: \label without proper \caption on input line 27.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `alg:StabilityFinder' on page 22 undefined on input line 24.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 42.
-
-[22] [23]
-File: chapterStabilityFinder/images/StabilityChecker_flowchart-01.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/images/StabilityChecker_flowchart-01.png" >
-Overfull \hbox (127.04753pt too wide) in paragraph at lines 59--60
- [][] 
- []
-
-[24]
-LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 14.46722pt on input line 67.
-LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 8.03735pt on input line 81.
-LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 6.02802pt on input line 81.
- [25
-
-
-]) (./chapterStabilityFinder/results.tex [26]
-File: chapterStabilityFinder/images/Gardner/posterior.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/images/Gardner/posterior.png" >
-File: chapterStabilityFinder/images/Gardner/phase_plots.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/images/Gardner/phase_plots.png" > [27
-
-] [28]
-File: chapterStabilityFinder/images/Gardner/summary.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/images/Gardner/summary.png" >
-Overfull \hbox (72.18655pt too wide) in paragraph at lines 65--66
- [][] 
- []
-
-[29] [30]
-File: chapterStabilityFinder/images/Gardner/gardner_solve_roots_a1a2_big.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/images/Gardner/gardner_solve_roots_a1a2_big.png" >
-File: chapterStabilityFinder/images/Gardner/robustness_comparison_det_stch.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/images/Gardner/robustness_comparison_det_stch.png" >
-Underfull \vbox (badness 1033) has occurred while \output is active []
-
- [31
-
-]
-File: chapterStabilityFinder/images/Gardner/robustness_comparison_gard_stoch_determ_kmeans.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/images/Gardner/robustness_comparison_gard_stoch_determ_kmeans.png" >
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[32] [33]) (./chapterStabilityFinder/Lu_switches/lu_switches_summary.tex
-File: chapterStabilityFinder/Lu_switches/images/lu_three_switches_sketch.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/Lu_switches/images/lu_three_switches_sketch.png" > [34
-
-]
-File: chapterStabilityFinder/Lu_switches/images/mae/classical_bistable.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/Lu_switches/images/mae/classical_bistable.png" > [35
-
-]
-File: chapterStabilityFinder/Lu_switches/images/classic/posterior_lu_cl.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/Lu_switches/images/classic/posterior_lu_cl.png" >
-File: chapterStabilityFinder/Lu_switches/images/classic/phase_plot.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/Lu_switches/images/classic/phase_plot.png" > [36
-
-]
-File: chapterStabilityFinder/Lu_switches/images/single_pos/posterior_lu_sp_bis.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/Lu_switches/images/single_pos/posterior_lu_sp_bis.png" >
-File: chapterStabilityFinder/Lu_switches/images/single_pos/phase_plot.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/Lu_switches/images/single_pos/phase_plot.png" > [37
-
-] [38]
-File: chapterStabilityFinder/Lu_switches/images/mae/tristable_db.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/Lu_switches/images/mae/tristable_db.png" > [39
-
-]
-Overfull \hbox (9.23099pt too wide) in paragraph at lines 153--154
-[]\EU1/LinuxLibertineO(0)/m/n/10.95 Using StabilityFinder and wide priors around the original values, shown in Table [][]4.8[][],
- []
-
-File: chapterStabilityFinder/Lu_switches/images/double_pos/posterior_tri_wide_params.png Graphic file (type QTm)
-<use  "chapterStabilityFinder/Lu_switches/images/double_pos/posterior_tri_wide_params.png" >
-Overfull \hbox (23.5772pt too wide) in paragraph at lines 183--184
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-File: chapterStabilityFinder/Lu_switches/images/double_pos/phase_plots.png Graphic file (type QTm)
-<use  "chapterStabilityFinder/Lu_switches/images/double_pos/phase_plots.png" >
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[40
-
-] [41]
-File: chapterStabilityFinder/Lu_switches/images/double_pos/lu_bi_tri_cartoon.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/Lu_switches/images/double_pos/lu_bi_tri_cartoon.png" >
-File: chapterStabilityFinder/Lu_switches/images/double_pos/posterior_comparison_bi_tri.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/Lu_switches/images/double_pos/posterior_comparison_bi_tri.png" >
-Overfull \hbox (23.5772pt too wide) in paragraph at lines 211--212
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[42
-
-] [43]
-File: chapterStabilityFinder/Lu_switches/images/double_pos/design_principles_bi_tri.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/Lu_switches/images/double_pos/design_principles_bi_tri.png" >) (./chapterStabilityFinder/mass_action_switches/mass_action_switch_summary.tex [44
-
-] [45]
-File: chapterStabilityFinder/mass_action_switches/deterministic/posterior_ma_cl_bi.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/mass_action_switches/deterministic/posterior_ma_cl_bi.png" >
-File: chapterStabilityFinder/mass_action_switches/deterministic/ma_cl_bi_phase_plot.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/mass_action_switches/deterministic/ma_cl_bi_phase_plot.png" >
-File: chapterStabilityFinder/mass_action_switches/deterministic/posterior_ma_dp_bi.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/mass_action_switches/deterministic/posterior_ma_dp_bi.png" >
-File: chapterStabilityFinder/mass_action_switches/deterministic/ma_dp_bi_phase_plot.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/mass_action_switches/deterministic/ma_dp_bi_phase_plot.png" >
-File: chapterStabilityFinder/mass_action_switches/deterministic/MA_robustness_cartoon.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/mass_action_switches/deterministic/MA_robustness_cartoon.png" >
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[46] [47] [48] [49]
-File: chapterStabilityFinder/mass_action_switches/deterministic/asym/posterior_cl.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/mass_action_switches/deterministic/asym/posterior_cl.png" >
-File: chapterStabilityFinder/mass_action_switches/deterministic/asym/cl_det_phase.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/mass_action_switches/deterministic/asym/cl_det_phase.png" >
-File: chapterStabilityFinder/mass_action_switches/deterministic/asym/posterior_dp.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/mass_action_switches/deterministic/asym/posterior_dp.png" >
-File: chapterStabilityFinder/mass_action_switches/deterministic/asym/dp_det_phase.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/mass_action_switches/deterministic/asym/dp_det_phase.png" > [50
-
-] [51]
-File: chapterStabilityFinder/mass_action_switches/deterministic/asym/posterior_cl_rna.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/mass_action_switches/deterministic/asym/posterior_cl_rna.png" >
-File: chapterStabilityFinder/mass_action_switches/deterministic/asym/posterior_dp_rna.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/mass_action_switches/deterministic/asym/posterior_dp_rna.png" > [52
-
-] [53]
-File: chapterStabilityFinder/mass_action_switches/bi_stoch_images/phase_plt.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/mass_action_switches/bi_stoch_images/phase_plt.png" >
-File: chapterStabilityFinder/mass_action_switches/bi_stoch_images/posterior_std.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/mass_action_switches/bi_stoch_images/posterior_std.png" >
-File: chapterStabilityFinder/mass_action_switches/bi_tri_same_priors/posterior_pos_ab_bi.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/mass_action_switches/bi_tri_same_priors/posterior_pos_ab_bi.png" > [54
-
-] [55]
-File: chapterStabilityFinder/mass_action_switches/tri_stoch_images/phase_plot_tri.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/mass_action_switches/tri_stoch_images/phase_plot_tri.png" >
-File: chapterStabilityFinder/mass_action_switches/bi_tri_same_priors/posterior_std_tri.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/mass_action_switches/bi_tri_same_priors/posterior_std_tri.png" >
-File: chapterStabilityFinder/mass_action_switches/bi_tri_same_priors/posterior_pos_ab_tri.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/mass_action_switches/bi_tri_same_priors/posterior_pos_ab_tri.png" > [56
-
-] [57]
-File: chapterStabilityFinder/mass_action_switches/bi_tri_same_priors/robustness_comparison_tri.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/mass_action_switches/bi_tri_same_priors/robustness_comparison_tri.png" > [58
-
-]
-File: chapterStabilityFinder/mass_action_switches/bi_tri_same_priors/design_principles_pos_ab.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/mass_action_switches/bi_tri_same_priors/design_principles_pos_ab.png" >) (./chapterStabilityFinder/discussion.tex
-Underfull \vbox (badness 3803) has occurred while \output is active []
-
- [59
-
-] [60]) [61] [62
-
-] (./chapterDesignSwitches/ChDesSw_introduction.tex) [63
-
-] [64
-
-] [65
-
-] [66
-
-] [67] [68] [69] [70
-
-] (./appendices/appendix.tex [71]
-LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(1)/m/n' will be
-(Font)              scaled to size 11.00111pt on input line 62.
-LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(1)/m/n' will be
-(Font)              scaled to size 8.03735pt on input line 62.
-LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(1)/m/n' will be
-(Font)              scaled to size 6.02802pt on input line 62.
- [72])
+] (./appendices/appendix.tex)
 
 Package caption Warning: Unused \captionsetup[subfigure] on input line 188.
 See the caption package documentation for explanation.
 
-[73]
+[23]
 \tf@toc=\write6
 \openout6 = `central.toc'.
 
@@ -2138,29 +1934,22 @@ See the caption package documentation for explanation.
 \tf@lot=\write8
 \openout8 = `central.lot'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 80.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 80.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 73.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
  (./central.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 80.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 80.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 73.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 73.
 Package logreq Info: Writing requests to 'central.run.xml'.
 \openout1 = `central.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41663 strings out of 493706
- 743041 string characters out of 6145769
- 1282926 words of memory out of 5000000
- 44523 multiletter control sequences out of 15000+600000
- 8764 words of font info for 66 fonts, out of 8000000 for 9000
+ 41133 strings out of 493706
+ 730550 string characters out of 6145769
+ 1265053 words of memory out of 5000000
+ 44055 multiletter control sequences out of 15000+600000
+ 8374 words of font info for 60 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 64i,15n,109p,10437b,2458s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,13n,109p,10437b,1913s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on central.pdf (73 pages).
+Output written on central.pdf (23 pages).

@@ -1,15 +1,9 @@
 [0] Config.pm:324> INFO - This is Biber 2.1
 [0] Config.pm:327> INFO - Logfile is '/Users/miriam/work/PhD/Manuscripts/PhDthesis/central.blg'
-[152] biber-darwin:276> INFO - === Thu Apr 21, 2016, 14:15:11
-[152] Biber.pm:333> INFO - Reading '/Users/miriam/work/PhD/Manuscripts/PhDthesis/central.bcf'
-[318] Biber.pm:645> INFO - Found 26 citekeys in bib section 0
-[434] Biber.pm:2977> INFO - Processing section 0
-[506] Biber.pm:3115> INFO - Looking for bibtex format file 'switches_ref.bib' for section 0
-[513] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
-[519] bibtex.pm:895> INFO - Found BibTeX data source 'switches_ref.bib'
-[971] UCollate.pm:66> INFO - Overriding locale 'en-GB' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[971] UCollate.pm:66> INFO - Overriding locale 'en-GB' defaults 'variable = shifted' with 'variable = non-ignorable'
-[971] Biber.pm:2854> INFO - Sorting list 'nyt' of type 'entry' with scheme 'nyt' and locale 'en-GB'
-[971] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-GB'
-[1067] bbl.pm:505> INFO - Writing '/Users/miriam/work/PhD/Manuscripts/PhDthesis/central.bbl' with encoding 'UTF-8'
-[1070] bbl.pm:596> INFO - Output to /Users/miriam/work/PhD/Manuscripts/PhDthesis/central.bbl
+[52] biber-darwin:276> INFO - === Thu Apr 21, 2016, 14:40:14
+[53] Biber.pm:333> INFO - Reading '/Users/miriam/work/PhD/Manuscripts/PhDthesis/central.bcf'
+[172] Biber.pm:645> INFO - Found 0 citekeys in bib section 0
+[172] Utils.pm:146> WARN - The file '/Users/miriam/work/PhD/Manuscripts/PhDthesis/central.bcf' does not contain any citations!
+[198] bbl.pm:505> INFO - Writing '/Users/miriam/work/PhD/Manuscripts/PhDthesis/central.bbl' with encoding 'UTF-8'
+[198] bbl.pm:596> INFO - Output to /Users/miriam/work/PhD/Manuscripts/PhDthesis/central.bbl
+[198] Biber.pm:106> INFO - WARNINGS: 1
