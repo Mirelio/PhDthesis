@@ -15,7 +15,7 @@
 
 \begin{document}
 
-\title{Computational design and characterisation of synthetic genetic switches}
+\title{Computational design and\\characterisation of synthetic\\ genetic switches}
 \author{Miriam Leon \\ Supervisor: Chris P Barnes\\ Department of Cell and Developmental
  Biology \\ University College London}
 \date{}
@@ -28,23 +28,23 @@
 
 \newpage
 \section{Abstract}
-Creating synthetic devices that are robust to changing cellular contexts will be key to the success of 
-synthetic biology. When faced with a set of competing designs for a given genetic circuit one is likely 
-to choose the simplest possible model that can achieve the desired behaviour. However simple systems are 
-often the least robust and it is known that additional feedback interactions can increase robustness to 
-extrinsic noise sources. The genetic toggle switch is examined, consisting of two mutually repressing 
-transcription factors. It is known for exhibiting bistability, and is found in natural systems when 
-binary fate decisions need to be made, such as in a developmental pathway. It can also be used in 
-synthetic systems to sense and respond to different environments.
-\noindent
-Here a new tool is presented, called StabilityChecker, that takes advantage of sequential Monte Carlo to 
-identify regions of parameter space capable of producing the desired stability while handling uncertainty 
-in biochemical rate constants and initial conditions. StabilityChecker is tested against known systems. A 
-collection of networks are examined, ranging from the simple genetic toggle switch to those containing different 
-positive feedback connections. 
-\noindent
-We verify StabilityChecker against known results of the simple toggle switch. We find that positive feedback 
-and other regulatory interactions can significantly increase the robustness of these switching systems. 
+%Creating synthetic devices that are robust to changing cellular contexts will be key to the success of 
+%synthetic biology. When faced with a set of competing designs for a given genetic circuit one is likely 
+%to choose the simplest possible model that can achieve the desired behaviour. However simple systems are 
+%often the least robust and it is known that additional feedback interactions can increase robustness to 
+%extrinsic noise sources. The genetic toggle switch is examined, consisting of two mutually repressing 
+%transcription factors. It is known for exhibiting bistability, and is found in natural systems when 
+%binary fate decisions need to be made, such as in a developmental pathway. It can also be used in 
+%synthetic systems to sense and respond to different environments.
+%\noindent
+%Here a new tool is presented, called StabilityChecker, that takes advantage of sequential Monte Carlo to 
+%identify regions of parameter space capable of producing the desired stability while handling uncertainty 
+%in biochemical rate constants and initial conditions. StabilityChecker is tested against known systems. A 
+%collection of networks are examined, ranging from the simple genetic toggle switch to those containing different 
+%positive feedback connections. 
+%\noindent
+%We verify StabilityChecker against known results of the simple toggle switch. We find that positive feedback 
+%and other regulatory interactions can significantly increase the robustness of these switching systems. 
 
 
 \newpage
@@ -62,26 +62,42 @@ and other regulatory interactions can significantly increase the robustness of t
 %% CHAPTERS
 %% --------------------------------------------------------------
 
-%% Introduction -----------------------------------------------%%
-%\mainmatter*
-%chapter{Introdution}
+%% Chapter-1 Introduction -------------------------------------%%
+\mainmatter*
+\chapter{Introduction}
+\input{chapterIntroduction/ChIntro_introduction}
 
-%% StabilityChecker -------------------------------------------%%
+%% Chapter-2 ABC-SysBio ---------------------------------------%%
+\mainmatter*
+\chapter{ABC-SysBio}
+\input{chapterABCSysBio/ChAbcSys_introduction}
+
+%% Chapter-3 Characterising the toggle switch -----------------%%
+\mainmatter*
+\chapter{Characterising the toggle switch}
+\input{chapterCharacterisation/ChChar_introduction}
+
+
+%% Chapter-4 StabilityFinder ----------------------------------%%
 \mainmatter*
 \chapter{Modelling switches}
-\input{chapterModelling/introduction}
-\input{chapterModelling/methods}
-\input{chapterModelling/results}
-\input{chapterModelling/Lu_switches/lu_switches_summary}
-\input{chapterModelling/mass_action_switches/mass_action_switch_summary}
-\input{chapterModelling/discussion}
-%%-------------------------------------------------------------%%
+\input{chapterStabilityFinder/ChSF_introduction}
+\input{chapterStabilityFinder/methods}
+\input{chapterStabilityFinder/results}
+\input{chapterStabilityFinder/Lu_switches/lu_switches_summary}
+\input{chapterStabilityFinder/mass_action_switches/mass_action_switch_summary}
+\input{chapterStabilityFinder/discussion}
 
+%% Chapter-5 Designing new switches ---------------------------%%
+\mainmatter*
+\chapter{Designing new switches}
+\input{chapterDesignSwitches/ChDesSw_introduction}
 
+%% Chapter-6 Conclusions --------------------------------------%%
+\mainmatter*
+\chapter{Conclusions}
 
 \printbibliography
-
-
 
 %% --------------------------------------------------------------
 %% APPENDIX

@@ -8,60 +8,70 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{List of Tables}{9}{section*.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {1}Modelling switches}{11}{chapter.1}
+\contentsline {chapter}{\chapternumberline {1}Introduction}{11}{chapter.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Introduction}{11}{section.1.1}
+\contentsline {chapter}{\chapternumberline {2}ABC-SysBio}{13}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Methods}{14}{section.1.2}
+\contentsline {chapter}{\chapternumberline {3}Characterising the toggle switch}{15}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.1}Calculating robustness}{18}{subsection.1.2.1}
+\contentsline {chapter}{\chapternumberline {4}Modelling switches}{17}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}Results}{19}{section.1.3}
+\contentsline {section}{\numberline {4.1}Introduction}{17}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.1}Testing StabilityFinder: The Gardner toggle switch}{19}{subsection.1.3.1}
+\contentsline {section}{\numberline {4.2}Methods}{21}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.3.1.1}Comparing the deterministic and stochastic cases}{22}{subsubsection.1.3.1.1}
+\contentsline {subsection}{\numberline {4.2.1}Calculating robustness}{25}{subsection.4.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}Lu toggle switch models}{28}{section.1.4}
+\contentsline {section}{\numberline {4.3}Results}{26}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.1}Classical model}{29}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {4.3.1}Testing StabilityFinder: The Gardner toggle switch}{26}{subsection.4.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.2}Single positive autoregulation}{31}{subsection.1.4.2}
+\contentsline {subsubsection}{\numberline {4.3.1.1}Comparing the deterministic and stochastic cases}{28}{subsubsection.4.3.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.3}Double positive autoregulation}{33}{subsection.1.4.3}
+\contentsline {section}{\numberline {4.4}Lu toggle switch models}{34}{section.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.4}Extracting the design principles of a tristable switch}{36}{subsection.1.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Classical model}{35}{subsection.4.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.5}Mass Action switches}{38}{section.1.5}
+\contentsline {subsection}{\numberline {4.4.2}Single positive autoregulation}{37}{subsection.4.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.5.1}Deterministic case}{40}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {4.4.3}Double positive autoregulation}{39}{subsection.4.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.5.1.1}Symmetric switch}{40}{subsubsection.1.5.1.1}
+\contentsline {subsection}{\numberline {4.4.4}Extracting the design principles of a tristable switch}{42}{subsection.4.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.5.1.2}Asymmetric switch}{44}{subsubsection.1.5.1.2}
+\contentsline {section}{\numberline {4.5}Mass Action switches}{44}{section.4.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.5.1.3}Including transcription and translation}{46}{subsubsection.1.5.1.3}
+\contentsline {subsection}{\numberline {4.5.1}Deterministic case}{46}{subsection.4.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.5.2}Stochastic case}{48}{subsection.1.5.2}
+\contentsline {subsubsection}{\numberline {4.5.1.1}Symmetric switch}{46}{subsubsection.4.5.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.5.2.1}Bistable}{48}{subsubsection.1.5.2.1}
+\contentsline {subsubsection}{\numberline {4.5.1.2}Asymmetric switch}{50}{subsubsection.4.5.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.5.2.2}Tristable}{50}{subsubsection.1.5.2.2}
+\contentsline {subsubsection}{\numberline {4.5.1.3}Including transcription and translation}{52}{subsubsection.4.5.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.5.2.3}Extracting the design principles of a tristable switch}{53}{subsubsection.1.5.2.3}
+\contentsline {subsection}{\numberline {4.5.2}Stochastic case}{54}{subsection.4.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.6}Discussion}{54}{section.1.6}
+\contentsline {subsubsection}{\numberline {4.5.2.1}Bistable}{54}{subsubsection.4.5.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{57}{section*.55}
+\contentsline {subsubsection}{\numberline {4.5.2.2}Tristable}{56}{subsubsection.4.5.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {appendix}{\chapternumberline {A}Appendix}{61}{appendix.A}
+\contentsline {subsubsection}{\numberline {4.5.2.3}Extracting the design principles of a tristable switch}{59}{subsubsection.4.5.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Clustering algorithms}{61}{section.A.1}
+\contentsline {section}{\numberline {4.6}Discussion}{60}{section.4.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.1.1}Deterministic case}{61}{subsection.A.1.1}
+\contentsline {chapter}{\chapternumberline {5}Designing new switches}{63}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.1.2}Stochastic case}{62}{subsection.A.1.2}
+\contentsline {chapter}{\chapternumberline {6}Conclusions}{65}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {A.1.2.1}Gap statistic}{62}{subsubsection.A.1.2.1}
+\contentsline {chapter}{Bibliography}{67}{section*.55}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {A.1.2.2}K-means clustering}{63}{subsubsection.A.1.2.2}
+\contentsline {appendix}{\chapternumberline {A}Appendix}{71}{appendix.A}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.1}Clustering algorithms}{71}{section.A.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.1.1}Deterministic case}{71}{subsection.A.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.1.2}Stochastic case}{72}{subsection.A.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {A.1.2.1}Gap statistic}{72}{subsubsection.A.1.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {A.1.2.2}K-means clustering}{73}{subsubsection.A.1.2.2}

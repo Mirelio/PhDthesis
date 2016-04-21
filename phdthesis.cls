@@ -1,20 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{phdthesis}[2015/11/54 PhD thesis class for LaTeX]
 
-%-------------------------------------------------------------------------------
-% Information
-%-------------------------------------------------------------------------------
-% By Rob Stanley, robert.stanley.10@ucl.ac.uk
-% Latest version at: http://github.com/robjstan/latex-phdthesis
-
-% A PhD thesis class for \LaTeX that attempts to follow the UCL thesis requirements.
-
-% Currently only compilation with XeLaTeX/LuaLaTeX is supported.
-
-%-------------------------------------------------------------------------------
-% Declare options
-%-------------------------------------------------------------------------------
-
 \RequirePackage{xkeyval}
 
 \DeclareOptionX{11pt}{

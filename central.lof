@@ -4,80 +4,90 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10pt}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Flowchart of the algorithm used in StabilityFinder}}{17}{figure.caption.4}
+\addvspace {10pt}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.2}{\ignorespaces The posterior distribution of the bistable Gardner toggle switch}}{21}{figure.caption.5}
+\addvspace {10pt}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.3}{\ignorespaces A sample of the phase plots produced from the final population of the Gardner switch.\relax }}{21}{figure.caption.6}
+\addvspace {10pt}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.4}{\ignorespaces The stochastic and deterministic cases of the Gardner toggle switch}}{24}{figure.caption.9}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Flowchart of the algorithm used in StabilityFinder}}{24}{figure.caption.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.5}{\ignorespaces Solving the Gardner toggle switch.}}{25}{figure.caption.10}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces The posterior distribution of the bistable Gardner toggle switch}}{27}{figure.caption.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.6}{\ignorespaces Comparing the robustness of the deterministic and stochastic Gardner switch models\relax }}{26}{figure.caption.11}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces A sample of the phase plots produced from the final population of the Gardner switch.\relax }}{27}{figure.caption.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.7}{\ignorespaces The effect of the clustering methods on robustness measurements\relax }}{27}{figure.caption.12}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces The stochastic and deterministic cases of the Gardner toggle switch}}{30}{figure.caption.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.8}{\ignorespaces Lu switches}}{28}{figure.caption.13}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Solving the Gardner toggle switch.}}{31}{figure.caption.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.9}{\ignorespaces Phase portrait of the Lu classical model with no self activation}}{29}{figure.caption.15}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Comparing the robustness of the deterministic and stochastic Gardner switch models\relax }}{32}{figure.caption.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.10}{\ignorespaces The posterior distribution of the Lu classical model with no self activation}}{30}{figure.caption.17}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces The effect of the clustering methods on robustness measurements\relax }}{33}{figure.caption.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.11}{\ignorespaces A sample of the phase plots produced from the final population of the Lu classical model.\relax }}{30}{figure.caption.18}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Lu switches}}{34}{figure.caption.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.12}{\ignorespaces The posterior distribution of the Lu model with asymmetric self activation}}{32}{figure.caption.20}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Phase portrait of the Lu classical model with no self activation}}{35}{figure.caption.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.13}{\ignorespaces Phase plot of asymmetric Lu toggle switch\relax }}{32}{figure.caption.21}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces The posterior distribution of the Lu classical model with no self activation}}{36}{figure.caption.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.14}{\ignorespaces Phase portrait of the Lu model including double self-activation}}{33}{figure.caption.23}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces A sample of the phase plots produced from the final population of the Lu classical model.\relax }}{36}{figure.caption.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.15}{\ignorespaces The posterior distribution of the Lu model with double self activation}}{35}{figure.caption.25}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces The posterior distribution of the Lu model with asymmetric self activation}}{38}{figure.caption.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.16}{\ignorespaces A sample of the phase plots produced from the final population of the Lu tristable model.\relax }}{35}{figure.caption.26}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Phase plot of asymmetric Lu toggle switch\relax }}{38}{figure.caption.21}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.17}{\ignorespaces Finding the parameter spaces that make the Lu double positive model bistable and tristable. \relax }}{36}{figure.caption.27}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Phase portrait of the Lu model including double self-activation}}{39}{figure.caption.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.18}{\ignorespaces Comparing the posteriors of the tristable Vs bistable Lu switch.\relax }}{37}{figure.caption.28}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces The posterior distribution of the Lu model with double self activation}}{41}{figure.caption.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.19}{\ignorespaces Design principles of the tristable Lu switch.\relax }}{38}{figure.caption.29}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces A sample of the phase plots produced from the final population of the Lu tristable model.\relax }}{41}{figure.caption.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.20}{\ignorespaces The posterior distribution of the mass action simple toggle switch\relax }}{41}{figure.caption.31}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Finding the parameter spaces that make the Lu double positive model bistable and tristable. \relax }}{42}{figure.caption.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.21}{\ignorespaces A sample of the phase plots produced from the final population of the mass action simple toggle switch.\relax }}{41}{figure.caption.32}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Comparing the posteriors of the tristable Vs bistable Lu switch.\relax }}{43}{figure.caption.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.22}{\ignorespaces The posterior distribution of the Mass action double positive feedback loop switch\relax }}{42}{figure.caption.33}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Design principles of the tristable Lu switch.\relax }}{44}{figure.caption.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.23}{\ignorespaces A sample of the phase plots produced from the final population of the mass action double positive feedback toggle switch.\relax }}{42}{figure.caption.34}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces The posterior distribution of the mass action simple toggle switch\relax }}{47}{figure.caption.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.24}{\ignorespaces The robustness of the double positive and the simple switch mass action models}}{43}{figure.caption.35}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces A sample of the phase plots produced from the final population of the mass action simple toggle switch.\relax }}{47}{figure.caption.32}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.25}{\ignorespaces Posterior of simple asymmetric deterministic switch\relax }}{44}{figure.caption.37}
+\contentsline {figure}{\numberline {4.22}{\ignorespaces The posterior distribution of the Mass action double positive feedback loop switch\relax }}{48}{figure.caption.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.26}{\ignorespaces Phase plot of simple asymmetric deterministic switch\relax }}{45}{figure.caption.38}
+\contentsline {figure}{\numberline {4.23}{\ignorespaces A sample of the phase plots produced from the final population of the mass action double positive feedback toggle switch.\relax }}{48}{figure.caption.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.27}{\ignorespaces Posterior of double positive asymmetric deterministic switch\relax }}{45}{figure.caption.39}
+\contentsline {figure}{\numberline {4.24}{\ignorespaces The robustness of the double positive and the simple switch mass action models}}{49}{figure.caption.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.28}{\ignorespaces Phase plot of double positive asymmetric deterministic switch\relax }}{45}{figure.caption.40}
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Posterior of simple asymmetric deterministic switch\relax }}{50}{figure.caption.37}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.29}{\ignorespaces Posterior of simple asymmetric RNA deterministic switch\relax }}{47}{figure.caption.42}
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Phase plot of simple asymmetric deterministic switch\relax }}{51}{figure.caption.38}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.30}{\ignorespaces Posterior of double positive asymmetric RNA deterministic switch\relax }}{47}{figure.caption.43}
+\contentsline {figure}{\numberline {4.27}{\ignorespaces Posterior of double positive asymmetric deterministic switch\relax }}{51}{figure.caption.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.31}{\ignorespaces Phase plot of the bistable switch.\relax }}{48}{figure.caption.45}
+\contentsline {figure}{\numberline {4.28}{\ignorespaces Phase plot of double positive asymmetric deterministic switch\relax }}{51}{figure.caption.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.32}{\ignorespaces Posterior of simple switch\relax }}{49}{figure.caption.46}
+\contentsline {figure}{\numberline {4.29}{\ignorespaces Posterior of simple asymmetric RNA deterministic switch\relax }}{53}{figure.caption.42}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.33}{\ignorespaces Posterior of switch with double positive autoregulation\relax }}{49}{figure.caption.47}
+\contentsline {figure}{\numberline {4.30}{\ignorespaces Posterior of double positive asymmetric RNA deterministic switch\relax }}{53}{figure.caption.43}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.34}{\ignorespaces Phase plot of the tristable switch.\relax }}{50}{figure.caption.49}
+\contentsline {figure}{\numberline {4.31}{\ignorespaces Phase plot of the bistable switch.\relax }}{54}{figure.caption.45}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.35}{\ignorespaces Posterior of simple switch\relax }}{51}{figure.caption.50}
+\contentsline {figure}{\numberline {4.32}{\ignorespaces Posterior of simple switch\relax }}{55}{figure.caption.46}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.36}{\ignorespaces Posterior of switch with double positive autoregulation\relax }}{51}{figure.caption.51}
+\contentsline {figure}{\numberline {4.33}{\ignorespaces Posterior of switch with double positive autoregulation\relax }}{55}{figure.caption.47}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.37}{\ignorespaces Robustness comparison of the tristable switches. There is no significant difference between the two.\relax }}{52}{figure.caption.52}
+\contentsline {figure}{\numberline {4.34}{\ignorespaces Phase plot of the tristable switch.\relax }}{56}{figure.caption.49}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.38}{\ignorespaces Extracting the tristable versus bistable switch design principles. Yellow represents a bistable switch and red a tristable\relax }}{53}{figure.caption.53}
+\contentsline {figure}{\numberline {4.35}{\ignorespaces Posterior of simple switch\relax }}{57}{figure.caption.50}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.36}{\ignorespaces Posterior of switch with double positive autoregulation\relax }}{57}{figure.caption.51}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.37}{\ignorespaces Robustness comparison of the tristable switches. There is no significant difference between the two.\relax }}{58}{figure.caption.52}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.38}{\ignorespaces Extracting the tristable versus bistable switch design principles. Yellow represents a bistable switch and red a tristable\relax }}{59}{figure.caption.53}
+\defcounter {refsection}{0}\relax 
+\addvspace {10pt}
+\defcounter {refsection}{0}\relax 
+\addvspace {10pt}
 \defcounter {refsection}{0}\relax 
 \addvspace {10pt}
