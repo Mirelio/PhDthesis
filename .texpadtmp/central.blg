@@ -1,0 +1,30 @@
+[0] Config.pm:324> INFO - This is Biber 2.1
+[0] Config.pm:327> INFO - Logfile is '/Users/miriam/work/PhD/Manuscripts/PhDthesis/.texpadtmp/central.blg'
+[52] biber-darwin:276> INFO - === Thu Apr 28, 2016, 14:58:23
+[52] Biber.pm:333> INFO - Reading '/Users/miriam/work/PhD/Manuscripts/PhDthesis/.texpadtmp/central.bcf'
+[165] Biber.pm:645> INFO - Found 35 citekeys in bib section 0
+[188] Biber.pm:2977> INFO - Processing section 0
+[205] Biber.pm:3115> INFO - Looking for bibtex format file '/Users/miriam/work/PhD/Manuscripts/PhDthesis/switches_ref.bib' for section 0
+[214] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
+[221] bibtex.pm:895> INFO - Found BibTeX data source '/Users/miriam/work/PhD/Manuscripts/PhDthesis/switches_ref.bib'
+[259] Utils.pm:146> WARN - I didn't find a database entry for 'Lu:2009ez' (section 0)
+[259] Utils.pm:146> WARN - I didn't find a database entry for 'Andrianantoandro:2006bi' (section 0)
+[260] Utils.pm:146> WARN - I didn't find a database entry for 'Heinemann:2006ht' (section 0)
+[260] Utils.pm:146> WARN - I didn't find a database entry for 'Agapakis:2009bt' (section 0)
+[260] Utils.pm:146> WARN - I didn't find a database entry for 'Batt:2007jl' (section 0)
+[260] Utils.pm:146> WARN - I didn't find a database entry for 'Chen:2011hj' (section 0)
+[260] Utils.pm:146> WARN - I didn't find a database entry for 'alon:2007b' (section 0)
+[260] Utils.pm:146> WARN - I didn't find a database entry for 'kaplan:1959' (section 0)
+[260] Utils.pm:146> WARN - I didn't find a database entry for 'konopka:2007' (section 0)
+[261] Utils.pm:146> WARN - I didn't find a database entry for 'Biancalani:2015vya' (section 0)
+[261] Utils.pm:146> WARN - I didn't find a database entry for 'Sisson:wf' (section 0)
+[261] Utils.pm:146> WARN - I didn't find a database entry for 'XXX' (section 0)
+[261] Utils.pm:146> WARN - I didn't find a database entry for 'Ghaffarizadeh:2014bt' (section 0)
+[261] Utils.pm:146> WARN - I didn't find a database entry for 'Cinquin:2005go' (section 0)
+[539] UCollate.pm:66> INFO - Overriding locale 'en-GB' defaults 'variable = shifted' with 'variable = non-ignorable'
+[539] UCollate.pm:66> INFO - Overriding locale 'en-GB' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[539] Biber.pm:2854> INFO - Sorting list 'nyt' of type 'entry' with scheme 'nyt' and locale 'en-GB'
+[539] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-GB'
+[607] bbl.pm:505> INFO - Writing '/Users/miriam/work/PhD/Manuscripts/PhDthesis/.texpadtmp/central.bbl' with encoding 'UTF-8'
+[610] bbl.pm:596> INFO - Output to /Users/miriam/work/PhD/Manuscripts/PhDthesis/.texpadtmp/central.bbl
+[610] Biber.pm:106> INFO - WARNINGS: 14

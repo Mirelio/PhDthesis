@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.10.1)  21 APR 2016 14:40
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.10.1)  28 APR 2016 18:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -972,7 +972,7 @@ File: babel.def 2015/08/03 3.9m Babel common definitions
 . 
 .................................................
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 10.04669pt on input line 61.
+(Font)              scaled to size 10.04669pt on input line 66.
 .................................................
 . fontspec info: "set-scale"
 . 
@@ -1067,11 +1067,11 @@ LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
 . 
 .................................................
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmr/m/n --> EU1/LinuxLibertineO(1)/m/n on input line 61.
+(Font)                  OT1/cmr/m/n --> EU1/LinuxLibertineO(1)/m/n on input line 66.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> EU1/LinuxLibertineO(1)/m/it on input line 61.
+(Font)                  OT1/cmr/m/it --> EU1/LinuxLibertineO(1)/m/it on input line 66.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> EU1/LinuxLibertineO(1)/bx/n on input line 61.
+(Font)                  OT1/cmr/bx/n --> EU1/LinuxLibertineO(1)/bx/n on input line 66.
 .................................................
 . fontspec info: "set-scale"
 . 
@@ -1099,7 +1099,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 . TeX Gyre Pagella Math scale = 0.9189820538514595.
 .................................................
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 11.00111pt on input line 63.
+(Font)              scaled to size 11.00111pt on input line 68.
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1124,20 +1124,20 @@ LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
 . 
 .................................................
 LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(0)/m/n' will be
-(Font)              scaled to size 9.18976pt on input line 63.
+(Font)              scaled to size 9.18976pt on input line 68.
 .................................................
 . fontspec info: "set-scale"
 . 
 . TeX Gyre Pagella Math scale = 0.9189820538514595.
 .................................................
 LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `normal' on input line 63.
+(Font)              `operators' in the math version `normal' on input line 68.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> EU1/TeXGyrePagellaMath(0)/m/n on input line 63.
+(Font)                  OT1/cmr/m/n --> EU1/TeXGyrePagellaMath(0)/m/n on input line 68.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `bold' on input line 63.
+(Font)              `operators' in the math version `bold' on input line 68.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> EU1/TeXGyrePagellaMath(0)/bx/n on input line 63.
+(Font)                  OT1/cmr/bx/n --> EU1/TeXGyrePagellaMath(0)/bx/n on input line 68.
 .................................................
 . fontspec info: "set-scale"
 . 
@@ -1201,13 +1201,13 @@ LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 . \fontdimen 21\font =0pt\relax \fontdimen 22\font =2.5pt\relax \relax 
 .................................................
 LaTeX Font Info:    Encoding `OMS' has changed to `EU1' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 63.
+(Font)              `symbols' in the math version `normal' on input line 68.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> EU1/TeXGyrePagellaMath(1)/m/n on input line 63.
+(Font)                  OMS/cmsy/m/n --> EU1/TeXGyrePagellaMath(1)/m/n on input line 68.
 LaTeX Font Info:    Encoding `OMS' has changed to `EU1' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 63.
+(Font)              `symbols' in the math version `bold' on input line 68.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> EU1/TeXGyrePagellaMath(1)/bx/n on input line 63.
+(Font)                  OMS/cmsy/b/n --> EU1/TeXGyrePagellaMath(1)/bx/n on input line 68.
 .................................................
 . fontspec info: "set-scale"
 . 
@@ -1262,13 +1262,13 @@ LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 . 
 .................................................
 LaTeX Font Info:    Encoding `OMX' has changed to `EU1' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 63.
+(Font)              `largesymbols' in the math version `normal' on input line 68.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> EU1/TeXGyrePagellaMath(2)/m/n on input line 63.
+(Font)                  OMX/cmex/m/n --> EU1/TeXGyrePagellaMath(2)/m/n on input line 68.
 LaTeX Font Info:    Encoding `OMX' has changed to `EU1' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 63.
+(Font)              `largesymbols' in the math version `bold' on input line 68.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> EU1/TeXGyrePagellaMath(2)/bx/n on input line 63.
+(Font)                  OMX/cmex/m/n --> EU1/TeXGyrePagellaMath(2)/bx/n on input line 68.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
 \MT@toks=\toks32
@@ -1286,9 +1286,9 @@ Package microtype Info: Loading configuration file microtype.cfg.
 File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
 ))
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 24.99617pt on input line 99.
+(Font)              scaled to size 24.99617pt on input line 103.
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/bx/n' will be
-(Font)              scaled to size 23.16023pt on input line 99.
+(Font)              scaled to size 23.16023pt on input line 103.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
  (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifvtex.sty
@@ -1642,8 +1642,8 @@ Package rerunfilecheck Info: Feature \pdfmdfivesum is not available
 )
 \Hy@SectionHShift=\skip214
 )
-Package hyperref Info: Option `final' set `true' on input line 240.
-Package hyperref Info: Option `colorlinks' set `true' on input line 240.
+Package hyperref Info: Option `final' set `true' on input line 244.
+Package hyperref Info: Option `colorlinks' set `true' on input line 244.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/cleveref/cleveref.sty
 Package: cleveref 2013/12/28 v0.19 Intelligent cross-referencing
 LaTeX Info: Redefining \Cref on input line 955.
@@ -1659,22 +1659,205 @@ LaTeX Info: Redefining \Cpagerefrange on input line 2230.
 LaTeX Info: Redefining \labelcref on input line 2230.
 LaTeX Info: Redefining \labelcpageref on input line 2230.
 Package cleveref Info: no abbreviation of names on input line 7493.
-)) (/usr/local/texlive/2015/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/glossaries/base/glossaries.sty
+Package: glossaries 2015/09/09 v4.18 (NLCT)
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/mfirstuc/mfirstuc.sty
+Package: mfirstuc 2015/09/09 v2.0 (NLCT)
+\@glsmfirst=\toks35
+\@glsmrest=\toks36
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/textcase/textcase.sty
+Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
+LaTeX Info: Redefining \MakeTextUppercase on input line 47.
+LaTeX Info: Redefining \MakeTextLowercase on input line 50.
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/xfor/xfor.sty
+Package: xfor 2009/02/05 v1.05 (NLCT)
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/datatool/datatool-base.sty
+Package: datatool-base 2015/07/11 v2.23 (NLCT)
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/substr/substr.sty
+Package: substr 2009/10/20 v1.2 Handle substrings
+\c@su@anzahl=\count375
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/datatool/datatool-fp.sty
+Package: datatool-fp 2015/07/11 v2.23 (NLCT)
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/fp/fp.sty
+Package: fp 1995/04/02
+ `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich (/usr/local/texlive/2015/texmf-dist/tex/latex/fp/defpattern.sty
+Package: defpattern 1994/10/12
+\actioncount=\count376
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/fp/fp-basic.sty
+Package: fp-basic 1996/05/13
+\FP@xs=\count377
+\FP@xia=\count378
+\FP@xib=\count379
+\FP@xfa=\count380
+\FP@xfb=\count381
+\FP@rega=\count382
+\FP@regb=\count383
+\FP@regs=\count384
+\FP@times=\count385
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/fp/fp-addons.sty
+Package: fp-addons 1995/03/15
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/fp/fp-snap.sty
+Package: fp-snap 1995/04/05
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/fp/fp-exp.sty
+Package: fp-exp 1995/04/03
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/fp/fp-trigo.sty
+Package: fp-trigo 1995/04/14
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/fp/fp-pas.sty
+Package: fp-pas 1994/08/29
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/fp/fp-random.sty
+Package: fp-random 1995/02/23
+\FPseed=\count386
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/fp/fp-eqn.sty
+Package: fp-eqn 1995/04/03
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/fp/fp-upn.sty
+Package: fp-upn 1996/10/21
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/fp/fp-eval.sty
+Package: fp-eval 1995/04/03
+)))
+\@dtl@toks=\toks37
+\@dtl@tmpcount=\count387
+\dtl@tmplength=\skip215
+\dtl@sortresult=\count388
+\@dtl@numgrpsepcount=\count389
+\@dtl@datatype=\count390
+\dtl@codeA=\count391
+\dtl@codeB=\count392
+\@dtl@foreach@level=\count393
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/glossaries/base/glossaries-compatible-307.sty
+Package: glossaries-compatible-307 2015/09/09 v4.18 (NLCT)
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/tracklang/tracklang.sty
+Package: tracklang 2015/03/23 v1.2 (NLCT) Track Languages
+ (/usr/local/texlive/2015/texmf-dist/tex/generic/tracklang/tracklang.tex)) (/usr/local/texlive/2015/texmf-dist/tex/latex/beamer/translator/translator.sty
+Package: translator 2010/06/12 ver 1.10
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/beamer/translator/translator-language-mappings.tex)) (/usr/local/texlive/2015/texmf-dist/tex/latex/glossaries-english/glossaries-english.ldf
+File: glossaries-english.ldf 2014/11/23 v1.0
+)
+\gls@level=\count394
+\@gls@tmpb=\toks38
+\gls@tmplen=\skip216
+
+
+Package glossaries Warning: Overriding \printglossary on input line 5201.
+
+
+Package glossaries Warning: Overriding `theglossary' environment on input line 5840.
+
+\glskeylisttok=\toks39
+\glslabeltok=\toks40
+\glsshorttok=\toks41
+\glslongtok=\toks42
+(/usr/local/texlive/2015/texmf-dist/tex/latex/glossaries/styles/glossary-hypernav.sty
+Package: glossary-hypernav 2015/09/09 v4.18 (NLCT)
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/glossaries/styles/glossary-list.sty
+Package: glossary-list 2015/09/09 v4.18 (NLCT)
+\glslistdottedwidth=\skip217
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/glossaries/styles/glossary-long.sty
+Package: glossary-long 2015/09/09 v4.18 (NLCT)
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip218
+\LTright=\skip219
+\LTpre=\skip220
+\LTpost=\skip221
+\LTchunksize=\count395
+\LTcapwidth=\dimen223
+\LT@head=\box48
+\LT@firsthead=\box49
+\LT@foot=\box50
+\LT@lastfoot=\box51
+\LT@cols=\count396
+\LT@rows=\count397
+\c@LT@tables=\count398
+\c@LT@chunks=\count399
+\LT@p@ftn=\toks43
+)
+\glsdescwidth=\skip222
+\glspagelistwidth=\skip223
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/glossaries/styles/glossary-super.sty
+Package: glossary-super 2015/09/09 v4.18 (NLCT)
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/supertabular/supertabular.sty
+Package: supertabular 2004/02/20 v4.1e the supertabular environment
+\c@tracingst=\count400
+\ST@wd=\dimen224
+\ST@rightskip=\skip224
+\ST@leftskip=\skip225
+\ST@parfillskip=\skip226
+\ST@pageleft=\dimen225
+\ST@headht=\dimen226
+\ST@tailht=\dimen227
+\ST@pagesofar=\dimen228
+\ST@pboxht=\dimen256
+\ST@lineht=\dimen257
+\ST@stretchht=\dimen258
+\ST@prevht=\dimen259
+\ST@toadd=\dimen260
+\ST@dimen=\dimen261
+\ST@pbox=\box52
+)) (/usr/local/texlive/2015/texmf-dist/tex/latex/glossaries/styles/glossary-tree.sty
+Package: glossary-tree 2015/09/09 v4.18 (NLCT)
+\glstreeindent=\skip227
+)) (/usr/local/texlive/2015/texmf-dist/tex/latex/texshade/texshade.sty
+Package: texshade 2011/05/13 LaTeX TeXshade (v1.24)
+ Package `texshade', Version 1.24 of 2011/12/01.
+\structurefile=\read4
+\featurefile=\write5
+\alignfile=\read5
+\sublogofile=\read6
+\exp@rtfile=\write6
+\symalphahelix=\mathgroup7
+\loopcount=\count401
+\innerloopcount=\count402
+\outerloopcount=\count403
+\seq@count=\count404
+\killseq@count=\count405
+\seq@percent=\count406
+\res@count=\count407
+\seq@pointer=\count408
+\pos@count=\count409
+\res@perline=\count410
+\end@count=\count411
+\cons@count=\count412
+\total@count=\count413
+\temp@count=\count414
+\triple@count=\count415
+\temp@@count=\count416
+\pos@sum=\count417
+\box@width=\skip228
+\name@width=\skip256
+\box@depth=\skip257
+\width@tmp=\skip258
+\box@height=\skip259
+\number@width=\skip260
+\line@stretch=\skip261
+\center@fill=\skip262
+\arrow@width=\skip263
+\arrow@height=\skip264
+\rule@thick=\skip265
+\arrow@thick=\skip266
+\logo@height=\skip267
+\equal@width=\skip268
+\equal@tmp=\skip269
+\equal@height=\skip270
+\temp@@length=\skip271
+\vspace@legend=\skip272
+\hspace@legend=\skip273
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
 Package: algpseudocode 
  (./algorithmicx.sty
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count375
-\c@ALG@rem=\count376
-\c@ALG@nested=\count377
-\ALG@tlm=\skip215
-\ALG@thistlm=\skip216
-\c@ALG@Lnr=\count378
-\c@ALG@blocknr=\count379
-\c@ALG@storecount=\count380
-\c@ALG@tmpcounter=\count381
-\ALG@tmplength=\skip217
+\c@ALG@line=\count418
+\c@ALG@rem=\count419
+\c@ALG@nested=\count420
+\ALG@tlm=\skip274
+\ALG@thistlm=\skip275
+\c@ALG@Lnr=\count421
+\c@ALG@blocknr=\count422
+\c@ALG@storecount=\count423
+\c@ALG@tmpcounter=\count424
+\ALG@tmplength=\skip276
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/algorithms/algorithm.sty
@@ -1682,15 +1865,21 @@ Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
  (/usr/local/texlive/2015/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count382
-\float@exts=\toks35
-\float@box=\box48
-\@float@everytoks=\toks36
-\@floatcapt=\box49
+\c@float@type=\count425
+\float@exts=\toks44
+\float@box=\box53
+\@float@everytoks=\toks45
+\@floatcapt=\box54
 )
-\@float@every@algorithm=\toks37
-\c@algorithm=\count383
-)
+\@float@every@algorithm=\toks46
+\c@algorithm=\count426
+))
+\glswrite=\write7
+\glo@acronym@file=\write8
+\openout8 = `central.acn'.
+
+Package glossaries Info: Writing glossary file central.acn on input line 13.
+ (./glossary.tex)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
@@ -1706,32 +1895,32 @@ File: english.lbx 2015/04/19 v3.0 biblatex localization (PK/JW/AB)
 )) (./central.aux)
 \openout1 = `central.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 8.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 8.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 17.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 17.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
 
 *************************************************
 * unicode-math warning: "mathtools-overbracket"
@@ -1740,7 +1929,7 @@ LaTeX Font Info:    ... okay on input line 8.
 * 
 * Use \Uoverbracket and \Uunderbracket for original `unicode-math' definition.
 *************************************************
-LaTeX Info: Redefining \microtypecontext on input line 8.
+LaTeX Info: Redefining \microtypecontext on input line 17.
 Package microtype Info: Character protrusion enabled (level 2),
 (microtype)             factor: 1200.
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1789,6 +1978,11 @@ Package microtype Info: Loading generic settings for font family
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
+)
+Package caption Info: supertabular package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package biblatex Info: XeTeX detected.
 (biblatex)             Assuming input encoding 'utf8'.
@@ -1798,63 +1992,267 @@ Package biblatex Info: Data encoding 'utf8' specified.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'central.bbl' found.
-(./central.bbl)
-Package biblatex Info: Reference section=0 on input line 8.
-Package biblatex Info: Reference segment=0 on input line 8.
-\AtBeginShipoutBox=\box50
-Package hyperref Info: Link coloring ON on input line 8.
+ (./central.bbl
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Ham:2008hh
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Tigges:2009jx
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Andrianantoandro:2006bi
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Ghaffarizadeh:2014bt
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                konopka:2007
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Heinemann:2006ht
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Khalil:2010hm
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                alon:2007b
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                kaplan:1959
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Basu:2004gn
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Deans:2007cya
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Conradi:2007jo
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Sisson:wf
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Kramer:2004kq
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Walczak:2005ds
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Chen:2011hj
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Agapakis:2009bt
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Atkinson:2003tu
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Lu:2009ez
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                XXX
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Ellis:2009hka
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Stricker:2008jqa
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Feliu:2013dz
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Friedland:2009ce
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Biancalani:2015vya
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Cinquin:2005go
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Fung:2005jd
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Batt:2007jl
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Banaji:2010fh
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+)
+Package biblatex Info: Reference section=0 on input line 17.
+Package biblatex Info: Reference segment=0 on input line 17.
+\AtBeginShipoutBox=\box55
+Package hyperref Info: Link coloring ON on input line 17.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
  (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count384
+\c@section@level=\count427
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 8.
-LaTeX Info: Redefining \ref on input line 8.
-LaTeX Info: Redefining \pageref on input line 8.
-LaTeX Info: Redefining \nameref on input line 8.
+LaTeX Info: Redefining \nameref on input line 17.
+LaTeX Info: Redefining \ref on input line 17.
+LaTeX Info: Redefining \pageref on input line 17.
+LaTeX Info: Redefining \nameref on input line 17.
 (./central.out) (./central.out)
-\@outlinefile=\write5
-\openout5 = `central.out'.
+\@outlinefile=\write9
+\openout9 = `central.out'.
 
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/it' will be
-(Font)              scaled to size 11.00111pt on input line 14.
+(Font)              scaled to size 11.00111pt on input line 20.
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/it' will be
-(Font)              scaled to size 17.36067pt on input line 14.
+(Font)              scaled to size 17.36067pt on input line 20.
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 17.36067pt on input line 14.
+(Font)              scaled to size 17.36067pt on input line 20.
 LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(0)/m/n' will be
-(Font)              scaled to size 10.06277pt on input line 14.
+(Font)              scaled to size 10.06277pt on input line 20.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `TeXGyrePagellaMath' (encoding: EU1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(0)/m/n' will be
-(Font)              scaled to size 7.3518pt on input line 14.
+(Font)              scaled to size 7.3518pt on input line 20.
 LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(0)/m/n' will be
-(Font)              scaled to size 5.51385pt on input line 14.
+(Font)              scaled to size 5.51385pt on input line 20.
 LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(1)/m/n' will be
-(Font)              scaled to size 10.95015pt on input line 14.
+(Font)              scaled to size 10.95015pt on input line 20.
 LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(1)/m/n' will be
-(Font)              scaled to size 8.00012pt on input line 14.
+(Font)              scaled to size 8.00012pt on input line 20.
 LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(1)/m/n' will be
-(Font)              scaled to size 6.00009pt on input line 14.
+(Font)              scaled to size 6.00009pt on input line 20.
 LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(2)/m/n' will be
-(Font)              scaled to size 10.94983pt on input line 14.
+(Font)              scaled to size 10.94983pt on input line 20.
 LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(2)/m/n' will be
-(Font)              scaled to size 7.99988pt on input line 14.
+(Font)              scaled to size 7.99988pt on input line 20.
 LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(2)/m/n' will be
-(Font)              scaled to size 5.99991pt on input line 14.
-LaTeX Font Info:    Try loading font information for U+msa on input line 14.
+(Font)              scaled to size 5.99991pt on input line 20.
+LaTeX Font Info:    Try loading font information for U+msa on input line 20.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 14.
+LaTeX Font Info:    Try loading font information for U+msb on input line 20.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/mt-msb.cfg
@@ -1863,93 +2261,353 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 ) [1
 
+\openout7 = `central.ist'.
+
 ] [2
 
 ] [3
 
-]
-LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/sc' will be
-(Font)              scaled to size 11.00111pt on input line 19.
- [4] (./central.toc
+] [4
+
+] [5
+
+] [6
+
+] (./central.toc
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 12.05603pt on input line 7.
+(Font)              scaled to size 12.05603pt on input line 5.
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/bx/n' will be
-(Font)              scaled to size 10.1931pt on input line 7.
- [5
+(Font)              scaled to size 10.1931pt on input line 5.
+ [7]
+LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/sc' will be
+(Font)              scaled to size 11.00111pt on input line 121.
+ [8]) [9] [10
 
-]) [6] (./central.lof) [7
+] (./central.lof) [11] [12
 
-] [8
+] (./central.lot)
 
-] (./central.lot) [9] [10
+Package glossaries Warning: Deprecated command \glossarystyle.
+ I recommend you switch to \setglossarystyle unless you want to maintain backward compatibility on input line 28.
 
-] (./chapterIntroduction/ChIntro_introduction.tex) [11
+(./central.acr [13] [14
 
-] [12
-
-] (./chapterABCSysBio/ChAbcSys_introduction.tex) [13
-
-] [14
-
-] (./chapterCharacterisation/ChChar_introduction.tex) [15
+]) [15
 
 ] [16
 
-] (./chapterStabilityFinder/ChSF_introduction.tex) (./chapterStabilityFinder/methods.tex
-LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 14.46722pt on input line 5.
-) (./chapterStabilityFinder/results.tex) (./chapterStabilityFinder/Lu_switches/lu_switches_summary.tex) (./chapterStabilityFinder/mass_action_switches/mass_action_switch_summary.tex) (./chapterStabilityFinder/discussion.tex)
+] [17] [18
+
+] (./chapterIntroduction/ChIntro_introduction.tex
+Overfull \hbox (2.10728pt too wide) in paragraph at lines 3--4
+\EU1/LinuxLibertineO(0)/m/n/10.95 devices, and systems in order to engineer organisms to perform new tasks ([];
+ []
+
+[19
+
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [17
+ [20]
+LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
+(Font)              scaled to size 14.46722pt on input line 19.
+
+
+LaTeX Warning: Reference `fig:Toggle switch example' on page 21 undefined on input line 21.
+
+[21]) [22] (./chapterABCSysBio/ChAbcSys_introduction.tex) [23
+
+
+] [24
+
+] (./chapterStabilityFinder/ChSF_introduction.tex
+Overfull \hbox (33.89041pt too wide) in paragraph at lines 3--4
+\EU1/LinuxLibertineO(0)/m/n/10.95 built, such as toggle switches ([]; []; []; [];
+ []
+
+
+Overfull \hbox (2.50931pt too wide) in paragraph at lines 3--4
+\EU1/LinuxLibertineO(0)/m/n/10.95 plagued by intra-circuit crosstalk and incompatibility, as well as cellular noise, which
+ []
+
+
+Underfull \vbox (badness 5217) has occurred while \output is active []
+
+ [25
 
 ]
-Overfull \vbox (163.46259pt too high) has occurred while \output is active []
+Overfull \hbox (10.5893pt too wide) in paragraph at lines 11--12
+\EU1/LinuxLibertineO(0)/m/n/10.95 switch has been used for the regulation of mammalian gene expression ([];
+ []
 
- [18] (./chapterDesignSwitches/ChDesSw_introduction.tex) [19
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [26]
+Overfull \hbox (17.81355pt too wide) in paragraph at lines 17--18
+\EU1/LinuxLibertineO(0)/m/n/10.95 cluded that cooperativity is a necessary condition for bistability to arise ([];
+ []
 
 
-] [20
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [27]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 21.
+
+
+LaTeX Warning: Float too large for page by 145.63217pt on input line 42.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [28] [29]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 52.
+LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
+(Font)              scaled to size 9.04202pt on input line 55.
+ [30]
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 81.
+
+LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
+(Font)              scaled to size 8.03735pt on input line 104.
+LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
+(Font)              scaled to size 6.02802pt on input line 104.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [31] [32]
+Overfull \hbox (24.4712pt too wide) in paragraph at lines 122--124
+[]\EU1/LinuxLibertineO(0)/m/n/10.95 These results agree with the results reported by []Gardner, Cantor, & Collins ([][]2000[][]) ([]Gard-
+ []
+
+
+Overfull \hbox (8.97433pt too wide) in paragraph at lines 140--141
+\EU1/LinuxLibertineO(0)/m/n/10.95 We next analyzed an extension of the Gardner switch model developed by []Lu, Onuchic,
+ []
+
+[33] [34] [35] [36] [37]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 238.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [38] [39] [40]
+File: chapterStabilityFinder/images/figure-01.png Graphic file (type QTm)
+ <use  "chapterStabilityFinder/images/figure-01.png" >
+Overfull \hbox (84.76144pt too wide) in paragraph at lines 263--264
+ [] 
+ []
+
+[41]
+File: chapterStabilityFinder/images/figure-02.png Graphic file (type QTm)
+ <use  "chapterStabilityFinder/images/figure-02.png" > [42
+
+]
+File: chapterStabilityFinder/images/figure-03.png Graphic file (type QTm)
+ <use  "chapterStabilityFinder/images/figure-03.png" > [43]
+File: chapterStabilityFinder/images/figure-04.png Graphic file (type QTm)
+ <use  "chapterStabilityFinder/images/figure-04.png" >
+Overfull \hbox (53.37527pt too wide) in paragraph at lines 287--288
+ [] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[44]
+File: chapterStabilityFinder/images/figure-05.png Graphic file (type QTm)
+ <use  "chapterStabilityFinder/images/figure-05.png" >
+File: chapterStabilityFinder/images/figure-06-alt.png Graphic file (type QTm)
+ <use  "chapterStabilityFinder/images/figure-06-alt.png" >
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: chapterStabilityFinder/images/figure-07.png Graphic file (type QTm)
+<use  "chapterStabilityFinder/images/figure-07.png" >
+Overfull \hbox (34.97466pt too wide) in paragraph at lines 311--312
+ [] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[45
+
+
+
+] [46] [47]
+File: chapterStabilityFinder/images/figure-08.png Graphic file (type QTm)
+ <use  "chapterStabilityFinder/images/figure-08.png" >) [48
+
+] (./chapterCharacterisation/ChChar_introduction.tex) [49
+
+
+] [50
+
+] (./chapterABCFlow/ChFlow_introduction.tex
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 16.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 37.
+
+[51
+
+] [52]
+File: chapterABCFlow/images/normal_sigma_example.png Graphic file (type QTm)
+ <use  "chapterABCFlow/images/normal_sigma_example.png" > [53
+
+]
+File: chapterABCFlow/images/epsil_var.png Graphic file (type QTm)
+ <use  "chapterABCFlow/images/epsil_var.png" >
+File: chapterABCFlow/images/ns.png Graphic file (type QTm)
+ <use  "chapterABCFlow/images/ns.png" > [54]
+File: chapterABCFlow/images/ngrid.png Graphic file (type QTm)
+ <use  "chapterABCFlow/images/ngrid.png" >
+File: chapterABCFlow/images/mus_sigmas_same.png Graphic file (type QTm)
+ <use  "chapterABCFlow/images/mus_sigmas_same.png" > [55] [56]
+File: chapterABCFlow/images/mus_sigmas_diff.png Graphic file (type QTm)
+ <use  "chapterABCFlow/images/mus_sigmas_diff.png" >
+Overfull \hbox (62.16814pt too wide) in paragraph at lines 138--139
+ [][] 
+ []
+
+[57
+
+]
+File: chapterABCFlow/images/epsilon0-1.png Graphic file (type QTm)
+ <use  "chapterABCFlow/images/epsilon0-1.png" >
+File: chapterABCFlow/images/accept_rate_2d_1d.pdf Graphic file (type QTm)
+ <use  "chapterABCFlow/images/accept_rate_2d_1d.pdf" > [58
+
+] [59]
+File: chapterABCFlow/images/epsilon_uniform.png Graphic file (type QTm)
+ <use  "chapterABCFlow/images/epsilon_uniform.png" >
+File: chapterABCFlow/images/uni_v_normal.png Graphic file (type QTm)
+ <use  "chapterABCFlow/images/uni_v_normal.png" > [60
+
+] [61]
+File: chapterABCFlow/images/multimodal.png Graphic file (type QTm)
+ <use  "chapterABCFlow/images/multimodal.png" >
+File: chapterABCFlow/images/multimodal_musd.png Graphic file (type QTm)
+ <use  "chapterABCFlow/images/multimodal_musd.png" >
+Overfull \hbox (54.34319pt too wide) in paragraph at lines 205--206
+ [][] 
+ []
+
+[62
+
+] [63]
+File: chapterABCFlow/images/multimodal_v_normal.png Graphic file (type QTm)
+ <use  "chapterABCFlow/images/multimodal_v_normal.png" >
+File: chapterABCFlow/images/posterior_comparison_1D_2D.pdf Graphic file (type QTm)
+ <use  "chapterABCFlow/images/posterior_comparison_1D_2D.pdf" > [64
+
+] [65]
+File: chapterABCFlow/images/posterior_2d_4.pdf Graphic file (type QTm)
+ <use  "chapterABCFlow/images/posterior_2d_4.pdf" > [66
 
 ]
 
-LaTeX Warning: Empty bibliography on input line 65.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\acrshort' on input line 249.
 
-[21
+File: chapterABCFlow/images/real_dat/real_dat_2D.png Graphic file (type QTm)
+<use  "chapterABCFlow/images/real_dat/real_dat_2D.png" >
+Overfull \hbox (48.19594pt too wide) in paragraph at lines 254--255
+ [][] 
+ []
 
-] [22
+[67
 
-] (./appendices/appendix.tex)
+]) [68
 
-Package caption Warning: Unused \captionsetup[subfigure] on input line 188.
+
+] (./chapterDesignSwitches/ChDesSw_introduction.tex) [69
+
+] [70
+
+] (./chapterConclusions/ChConc.tex) [71
+
+] [72
+
+] [73] [74] [75] [76
+
+] (./appendices/appendix.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\acrlong' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\acrshort' on input line 3.
+
+LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(1)/m/n' will be
+(Font)              scaled to size 11.00111pt on input line 6.
+LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(1)/m/n' will be
+(Font)              scaled to size 8.03735pt on input line 6.
+LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(1)/m/n' will be
+(Font)              scaled to size 6.02802pt on input line 6.
+
+Overfull \hbox (191.90219pt too wide) detected at line 34
+[]
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\acrshort' on input line 36.
+
+
+Overfull \hbox (224.43005pt too wide) detected at line 83
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [77]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [78] [79] [80] [81
+
+])
+
+Package caption Warning: Unused \captionsetup[subfigure] on input line 192.
 See the caption package documentation for explanation.
 
-[23]
-\tf@toc=\write6
-\openout6 = `central.toc'.
+\tf@toc=\write10
+\openout10 = `central.toc'.
 
-\tf@lof=\write7
-\openout7 = `central.lof'.
+\tf@lof=\write11
+\openout11 = `central.lof'.
 
-\tf@lot=\write8
-\openout8 = `central.lot'.
+\tf@lot=\write12
+\openout12 = `central.lot'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 73.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
- (./central.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 73.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 73.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 90.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 90.
+(./central.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 90.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 90.
+
+
+LaTeX Warning: There were undefined references.
+
 Package logreq Info: Writing requests to 'central.run.xml'.
 \openout1 = `central.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41133 strings out of 493706
- 730550 string characters out of 6145769
- 1265053 words of memory out of 5000000
- 44055 multiletter control sequences out of 15000+600000
- 8374 words of font info for 60 fonts, out of 8000000 for 9000
+ 49944 strings out of 493706
+ 852550 string characters out of 6145769
+ 1586875 words of memory out of 5000000
+ 52711 multiletter control sequences out of 15000+600000
+ 8764 words of font info for 66 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 64i,13n,109p,10437b,1913s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,15n,109p,10421b,3227s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on central.pdf (23 pages).
+Output written on central.pdf (81 pages).

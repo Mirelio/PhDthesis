@@ -29,6 +29,11 @@
 \LoadClass{memoir}
 
 
+
+
+
+
+
 %-------------------------------------------------------------------------------
 % Required packages
 %-------------------------------------------------------------------------------
@@ -85,7 +90,6 @@
 % double spacing
 \RequirePackage{setspace}
 \OnehalfSpacing
-
 \setlength{\parindent}{1em} % paragraph indent
 \setlength{\parskip}{0pt plus 0.1em} % stop parskip
 \setlength{\mathindent}{\parindent} % set indent to paragraph indent
@@ -243,6 +247,28 @@
 \RequirePackage[noabbrev]{cleveref}
 \creflabelformat{equation}{#2#1#3}
 \crefrangelabelformat{equation}{#3#1#4 to #5#2#6}
+   
+%-------------------------------------------------------------------------------
+% Abbreviations
+%-------------------------------------------------------------------------------
+\usepackage[acronym, toc, nonumberlist, nomain]{glossaries}
+   
+%-------------------------------------------------------------------------------
+% Sequences
+%-------------------------------------------------------------------------------                      
+                           
+\RequirePackage{texshade}           
+        
+%-------------------------------------------------------------------------------
+% Algorithms and roman numerals
+%-------------------------------------------------------------------------------       
+\usepackage{algpseudocode,algorithm,algorithmicx}
+\newcommand*\Let[2]{\State #1 $\gets$ #2}
+\algrenewcommand\algorithmicrequire{\textbf{Precondition:}}
+\algrenewcommand\algorithmicensure{\textbf{Postcondition:}}
+\def\rightarrowfill@@{\arrowfill@@\relax\relbar\rightarrow}
+\newcommand{\RNum}[1]{\uppercase\expandafter{\romannumeral #1\relax}}     
+        
                                		
 %-------------------------------------------------------------------------------
 % Table of contents
