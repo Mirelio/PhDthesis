@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.10.1)  28 APR 2016 18:50
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.10.1)  17 MAY 2016 19:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1892,7 +1892,32 @@ Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2015/04/19 v3.0 biblatex localization (PK/JW/AB)
-)) (./central.aux)
+)) (./central.aux
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `@cref' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `@cref' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `@cref' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `@cref' multiply defined.
+
+)
 \openout1 = `central.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
@@ -1996,6 +2021,174 @@ Package biblatex Info: ... file 'central.bbl' found.
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
+(biblatex)                Ghaffarizadeh:2014bt
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Batt:2007jl
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Cinquin:2005go
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Chen:2011hj
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Stricker:2008jqa
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Fung:2005jd
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Kramer:2004kq
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                alon:2007b
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Ellis:2009hka
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Lu:2009ez
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Agapakis:2009bt
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Feliu:2013dz
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Walczak:2005ds
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Friedland:2009ce
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Basu:2004gn
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                kaplan:1959
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Conradi:2007jo
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Banaji:2010fh
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Andrianantoandro:2006bi
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Biancalani:2015vya
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Deans:2007cya
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                XXX
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Khalil:2010hm
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Atkinson:2003tu
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
 (biblatex)                Ham:2008hh
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
@@ -2010,70 +2203,7 @@ Package biblatex Warning: The following entry could not be found
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
-(biblatex)                Andrianantoandro:2006bi
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Ghaffarizadeh:2014bt
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                konopka:2007
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
 (biblatex)                Heinemann:2006ht
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Khalil:2010hm
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                alon:2007b
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                kaplan:1959
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Basu:2004gn
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Deans:2007cya
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Conradi:2007jo
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
@@ -2087,112 +2217,7 @@ Package biblatex Warning: The following entry could not be found
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
-(biblatex)                Kramer:2004kq
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Walczak:2005ds
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Chen:2011hj
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Agapakis:2009bt
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Atkinson:2003tu
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Lu:2009ez
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                XXX
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Ellis:2009hka
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Stricker:2008jqa
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Feliu:2013dz
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Friedland:2009ce
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Biancalani:2015vya
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Cinquin:2005go
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Fung:2005jd
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Batt:2007jl
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Banaji:2010fh
+(biblatex)                konopka:2007
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
@@ -2280,17 +2305,17 @@ LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/bx/n' will be
 (Font)              scaled to size 10.1931pt on input line 5.
  [7]
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/sc' will be
-(Font)              scaled to size 11.00111pt on input line 121.
+(Font)              scaled to size 11.00111pt on input line 129.
  [8]) [9] [10
 
-] (./central.lof) [11] [12
-
-] (./central.lot)
+] (./central.lof [11]) [12] (./central.lot)
 
 Package glossaries Warning: Deprecated command \glossarystyle.
  I recommend you switch to \setglossarystyle unless you want to maintain backward compatibility on input line 28.
 
-(./central.acr [13] [14
+(./central.acr [13
+
+] [14
 
 ]) [15
 
@@ -2315,112 +2340,141 @@ LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
 
 LaTeX Warning: Reference `fig:Toggle switch example' on page 21 undefined on input line 21.
 
-[21]) [22] (./chapterABCSysBio/ChAbcSys_introduction.tex) [23
+[21] [22] [23]
+Overfull \hbox (17.81355pt too wide) in paragraph at lines 55--56
+\EU1/LinuxLibertineO(0)/m/n/10.95 cluded that cooperativity is a necessary condition for bistability to arise ([];
+ []
+
+[24]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 58.
 
 
-] [24
+LaTeX Warning: Float too large for page by 145.63217pt on input line 79.
+
+[25] [26]) [27
+
+] [28
+
+] (./chapterABCSysBio/ChAbcSys_introduction.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\acrshort' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\acrshort' on input line 4.
+
+) [29
+
+] [30
 
 ] (./chapterStabilityFinder/ChSF_introduction.tex
-Overfull \hbox (33.89041pt too wide) in paragraph at lines 3--4
+Overfull \hbox (33.89041pt too wide) in paragraph at lines 9--10
 \EU1/LinuxLibertineO(0)/m/n/10.95 built, such as toggle switches ([]; []; []; [];
  []
 
 
-Overfull \hbox (2.50931pt too wide) in paragraph at lines 3--4
+Overfull \hbox (2.50931pt too wide) in paragraph at lines 9--10
 \EU1/LinuxLibertineO(0)/m/n/10.95 plagued by intra-circuit crosstalk and incompatibility, as well as cellular noise, which
  []
 
-
-Underfull \vbox (badness 5217) has occurred while \output is active []
-
- [25
+[31
 
 ]
-Overfull \hbox (10.5893pt too wide) in paragraph at lines 11--12
-\EU1/LinuxLibertineO(0)/m/n/10.95 switch has been used for the regulation of mammalian gene expression ([];
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [26]
-Overfull \hbox (17.81355pt too wide) in paragraph at lines 17--18
-\EU1/LinuxLibertineO(0)/m/n/10.95 cluded that cooperativity is a necessary condition for bistability to arise ([];
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [27]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 21.
-
-
-LaTeX Warning: Float too large for page by 145.63217pt on input line 42.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [28] [29]
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 52.
+ [32]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 26.
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 9.04202pt on input line 55.
- [30]
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 81.
-
-LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 8.03735pt on input line 104.
-LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 6.02802pt on input line 104.
+(Font)              scaled to size 9.04202pt on input line 29.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [31] [32]
-Overfull \hbox (24.4712pt too wide) in paragraph at lines 122--124
+ [33]
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 55.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [34] [35]
+Overfull \hbox (24.4712pt too wide) in paragraph at lines 74--76
 []\EU1/LinuxLibertineO(0)/m/n/10.95 These results agree with the results reported by []Gardner, Cantor, & Collins ([][]2000[][]) ([]Gard-
  []
 
+[36]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Overfull \hbox (8.97433pt too wide) in paragraph at lines 140--141
+ [37] [38]
+File: chapterStabilityFinder/images/robustness_calc_norm.png Graphic file (type QTm)
+ <use  "chapterStabilityFinder/images/robustness_calc_norm.png" > [39
+
+]
+File: chapterStabilityFinder/images/normal_correl.png Graphic file (type QTm)
+ <use  "chapterStabilityFinder/images/normal_correl.png" > [40
+
+]
+File: chapterStabilityFinder/images/robustness_s_normal_dimens.pdf Graphic file (type QTm)
+ <use  "chapterStabilityFinder/images/robustness_s_normal_dimens.pdf" > [41
+
+]
+File: chapterStabilityFinder/images/robustness_calc_unif.png Graphic file (type QTm)
+ <use  "chapterStabilityFinder/images/robustness_calc_unif.png" > [42
+
+]
+File: chapterStabilityFinder/images/robustness_s_uniform_dimens.pdf Graphic file (type QTm)
+ <use  "chapterStabilityFinder/images/robustness_s_uniform_dimens.pdf" > [43
+
+]
+Overfull \hbox (8.97433pt too wide) in paragraph at lines 195--196
 \EU1/LinuxLibertineO(0)/m/n/10.95 We next analyzed an extension of the Gardner switch model developed by []Lu, Onuchic,
  []
 
-[33] [34] [35] [36] [37]
+[44
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 238.
-
-
+] [45]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [38] [39] [40]
+ [46] [47] [48]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 293.
+
+[49]
 File: chapterStabilityFinder/images/figure-01.png Graphic file (type QTm)
  <use  "chapterStabilityFinder/images/figure-01.png" >
-Overfull \hbox (84.76144pt too wide) in paragraph at lines 263--264
- [] 
- []
-
-[41]
-File: chapterStabilityFinder/images/figure-02.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/images/figure-02.png" > [42
-
-]
-File: chapterStabilityFinder/images/figure-03.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/images/figure-03.png" > [43]
-File: chapterStabilityFinder/images/figure-04.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/images/figure-04.png" >
-Overfull \hbox (53.37527pt too wide) in paragraph at lines 287--288
+Overfull \hbox (84.76144pt too wide) in paragraph at lines 318--319
  [] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[44]
+[50] [51]
+File: chapterStabilityFinder/images/figure-02.png Graphic file (type QTm)
+ <use  "chapterStabilityFinder/images/figure-02.png" > [52
+
+]
+File: chapterStabilityFinder/images/figure-03.png Graphic file (type QTm)
+ <use  "chapterStabilityFinder/images/figure-03.png" > [53]
+File: chapterStabilityFinder/images/figure-04.png Graphic file (type QTm)
+ <use  "chapterStabilityFinder/images/figure-04.png" >
+Overfull \hbox (53.37527pt too wide) in paragraph at lines 342--343
+ [] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[54]
 File: chapterStabilityFinder/images/figure-05.png Graphic file (type QTm)
  <use  "chapterStabilityFinder/images/figure-05.png" >
+LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
+(Font)              scaled to size 8.03735pt on input line 352.
+LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
+(Font)              scaled to size 6.02802pt on input line 352.
 File: chapterStabilityFinder/images/figure-06-alt.png Graphic file (type QTm)
  <use  "chapterStabilityFinder/images/figure-06-alt.png" >
 
@@ -2428,25 +2482,25 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 File: chapterStabilityFinder/images/figure-07.png Graphic file (type QTm)
 <use  "chapterStabilityFinder/images/figure-07.png" >
-Overfull \hbox (34.97466pt too wide) in paragraph at lines 311--312
+Overfull \hbox (34.97466pt too wide) in paragraph at lines 366--367
  [] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[45
+[55
 
 
 
-] [46] [47]
+] [56] [57]
 File: chapterStabilityFinder/images/figure-08.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/images/figure-08.png" >) [48
+ <use  "chapterStabilityFinder/images/figure-08.png" >) [58
 
-] (./chapterCharacterisation/ChChar_introduction.tex) [49
+] (./chapterCharacterisation/ChChar_introduction.tex) [59
 
 
-] [50
+] [60
 
 ] (./chapterABCFlow/ChFlow_introduction.tex
 
@@ -2455,42 +2509,42 @@ LaTeX Warning: Command \textgreater invalid in math mode on input line 16.
 
 LaTeX Warning: Command \textgreater invalid in math mode on input line 37.
 
-[51
+[61
 
-] [52]
+] [62]
 File: chapterABCFlow/images/normal_sigma_example.png Graphic file (type QTm)
- <use  "chapterABCFlow/images/normal_sigma_example.png" > [53
+ <use  "chapterABCFlow/images/normal_sigma_example.png" > [63
 
 ]
 File: chapterABCFlow/images/epsil_var.png Graphic file (type QTm)
  <use  "chapterABCFlow/images/epsil_var.png" >
 File: chapterABCFlow/images/ns.png Graphic file (type QTm)
- <use  "chapterABCFlow/images/ns.png" > [54]
+ <use  "chapterABCFlow/images/ns.png" > [64]
 File: chapterABCFlow/images/ngrid.png Graphic file (type QTm)
  <use  "chapterABCFlow/images/ngrid.png" >
 File: chapterABCFlow/images/mus_sigmas_same.png Graphic file (type QTm)
- <use  "chapterABCFlow/images/mus_sigmas_same.png" > [55] [56]
+ <use  "chapterABCFlow/images/mus_sigmas_same.png" > [65] [66]
 File: chapterABCFlow/images/mus_sigmas_diff.png Graphic file (type QTm)
  <use  "chapterABCFlow/images/mus_sigmas_diff.png" >
 Overfull \hbox (62.16814pt too wide) in paragraph at lines 138--139
  [][] 
  []
 
-[57
+[67
 
 ]
 File: chapterABCFlow/images/epsilon0-1.png Graphic file (type QTm)
  <use  "chapterABCFlow/images/epsilon0-1.png" >
 File: chapterABCFlow/images/accept_rate_2d_1d.pdf Graphic file (type QTm)
- <use  "chapterABCFlow/images/accept_rate_2d_1d.pdf" > [58
+ <use  "chapterABCFlow/images/accept_rate_2d_1d.pdf" > [68
 
-] [59]
+] [69]
 File: chapterABCFlow/images/epsilon_uniform.png Graphic file (type QTm)
  <use  "chapterABCFlow/images/epsilon_uniform.png" >
 File: chapterABCFlow/images/uni_v_normal.png Graphic file (type QTm)
- <use  "chapterABCFlow/images/uni_v_normal.png" > [60
+ <use  "chapterABCFlow/images/uni_v_normal.png" > [70
 
-] [61]
+] [71]
 File: chapterABCFlow/images/multimodal.png Graphic file (type QTm)
  <use  "chapterABCFlow/images/multimodal.png" >
 File: chapterABCFlow/images/multimodal_musd.png Graphic file (type QTm)
@@ -2499,17 +2553,17 @@ Overfull \hbox (54.34319pt too wide) in paragraph at lines 205--206
  [][] 
  []
 
-[62
+[72
 
-] [63]
+] [73]
 File: chapterABCFlow/images/multimodal_v_normal.png Graphic file (type QTm)
  <use  "chapterABCFlow/images/multimodal_v_normal.png" >
 File: chapterABCFlow/images/posterior_comparison_1D_2D.pdf Graphic file (type QTm)
- <use  "chapterABCFlow/images/posterior_comparison_1D_2D.pdf" > [64
+ <use  "chapterABCFlow/images/posterior_comparison_1D_2D.pdf" > [74
 
-] [65]
+] [75]
 File: chapterABCFlow/images/posterior_2d_4.pdf Graphic file (type QTm)
- <use  "chapterABCFlow/images/posterior_2d_4.pdf" > [66
+ <use  "chapterABCFlow/images/posterior_2d_4.pdf" > [76
 
 ]
 
@@ -2522,20 +2576,25 @@ Overfull \hbox (48.19594pt too wide) in paragraph at lines 254--255
  [][] 
  []
 
-[67
+[77
 
-]) [68
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\acrshort' on input line 259.
+
+) [78
+
+] (./chapterDesignSwitches/ChDesSw_introduction.tex) [79
 
 
-] (./chapterDesignSwitches/ChDesSw_introduction.tex) [69
+] [80
 
-] [70
+] (./chapterConclusions/ChConc.tex) [81
 
-] (./chapterConclusions/ChConc.tex) [71
+] [82
 
-] [72
-
-] [73] [74] [75] [76
+] [83] [84] [85] [86
 
 ] (./appendices/appendix.tex
 
@@ -2569,10 +2628,10 @@ Overfull \hbox (224.43005pt too wide) detected at line 83
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [77]
+ [87]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [78] [79] [80] [81
+ [88] [89] [90] [91
 
 ])
 
@@ -2597,17 +2656,20 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 90.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package logreq Info: Writing requests to 'central.run.xml'.
 \openout1 = `central.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 49944 strings out of 493706
- 852550 string characters out of 6145769
- 1586875 words of memory out of 5000000
- 52711 multiletter control sequences out of 15000+600000
+ 50005 strings out of 493706
+ 853684 string characters out of 6145769
+ 1587367 words of memory out of 5000000
+ 52767 multiletter control sequences out of 15000+600000
  8764 words of font info for 66 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  64i,15n,109p,10421b,3227s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on central.pdf (81 pages).
+Output written on central.pdf (91 pages).

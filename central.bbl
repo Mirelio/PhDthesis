@@ -140,6 +140,30 @@
       \field{pages}{117\bibrangedash 133}
       \range{pages}{17}
     \endentry
+    \entry{Chickarmane:2009by}{article}{}
+      \name{author}{3}{}{%
+        {{hash=2079252a9f9e1216da47586ca7d6d92f}{Chickarmane}{C\bibinitperiod}{Vijay}{V\bibinitperiod}{}{}{}{}}%
+        {{hash=95dd1b1267a448d3b936c448967a5e67}{Enver}{E\bibinitperiod}{Tariq}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=ad87a70ecc77b218415882f256cc1c91}{Peterson}{P\bibinitperiod}{Carsten}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{20615088659caa1defdad6c1376d7c91}
+      \strng{fullhash}{20615088659caa1defdad6c1376d7c91}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelyear}{2009}
+      \field{labelmonth}{01}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PLoS Computational Biology}
+      \field{month}{01}
+      \field{number}{1}
+      \field{title}{{Computational modeling of the hematopoietic erythroid-myeloid switch reveals insights into cooperativity, priming, and irreversibility.}}
+      \field{volume}{5}
+      \field{year}{2009}
+      \field{pages}{e1000268\bibrangedash e1000268}
+      \range{pages}{-1}
+    \endentry
     \entry{deJong:2002ft}{article}{}
       \name{author}{1}{}{%
         {{hash=87b772ddd15df031c67c11578d98a22d}{Jong}{J\bibinitperiod}{Hidde}{H\bibinitperiod}{de}{d\bibinitperiod}{}{}}%
@@ -161,6 +185,28 @@
       \field{year}{2002}
       \field{pages}{67\bibrangedash 103}
       \range{pages}{37}
+    \endentry
+    \entry{FerrellJr:2002fh}{article}{}
+      \name{author}{1}{}{%
+        {{hash=304583f570fdb67ec6ad04414b0c8766}{Ferrell}{F\bibinitperiod}{James\bibnamedelima E}{J\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{Jr}{J\bibinitperiod}}%
+      }
+      \strng{namehash}{304583f570fdb67ec6ad04414b0c8766}
+      \strng{fullhash}{304583f570fdb67ec6ad04414b0c8766}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labelyear}{2002}
+      \field{labelmonth}{04}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Current opinion in cell biology}
+      \field{month}{04}
+      \field{number}{2}
+      \field{title}{{Self-perpetuating states in signal transduction: positive feedback, double-negative feedback and bistability}}
+      \field{volume}{14}
+      \field{year}{2002}
+      \field{pages}{140\bibrangedash 148}
+      \range{pages}{9}
     \endentry
     \entry{Gardner:2000vha}{article}{}
       \name{author}{3}{}{%
@@ -450,6 +496,34 @@
       \field{pages}{15324\bibrangedash 15328}
       \range{pages}{5}
     \endentry
+    \entry{Niwa:2005fz}{article}{}
+      \name{author}{7}{}{%
+        {{hash=751960630b061e7bc5e29ae5c694eaed}{Niwa}{N\bibinitperiod}{Hitoshi}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=4286a4ea805f12cc6ca8bc8e4ec773f7}{Toyooka}{T\bibinitperiod}{Yayoi}{Y\bibinitperiod}{}{}{}{}}%
+        {{hash=b7214653376ec883d35d0b7ec32b8554}{Shimosato}{S\bibinitperiod}{Daisuke}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=7dfa543bca5b17fa49b06d29ae29c032}{Strumpf}{S\bibinitperiod}{Dan}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=c5b5fd0672e01e2f63755fa1e0b1ab14}{Takahashi}{T\bibinitperiod}{Kadue}{K\bibinitperiod}{}{}{}{}}%
+        {{hash=6bfc3ec8df05bf2ec6376017a14a0aa0}{Yagi}{Y\bibinitperiod}{Rika}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=8bf30f93b11d5194993116767e929c5e}{Rossant}{R\bibinitperiod}{Janet}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{57822f09fd27b7873bc5b310400c4946}
+      \strng{fullhash}{bb587685c97c0b10297e16b1a4fd1353}
+      \field{sortinit}{N}
+      \field{sortinithash}{925374ca63e7594de7fafdb83e64d41d}
+      \field{labelyear}{2005}
+      \field{labelmonth}{12}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Cell}
+      \field{month}{12}
+      \field{number}{5}
+      \field{title}{{Interaction between Oct3/4 and Cdx2 Determines Trophectoderm Differentiation}}
+      \field{volume}{123}
+      \field{year}{2005}
+      \field{pages}{13\bibrangedash 13}
+      \range{pages}{1}
+    \endentry
     \entry{Pedersen:2007ke}{article}{}
       \name{author}{3}{}{%
         {{hash=a90d0190ce757e8253e682125a2b7a9c}{Pedersen}{P\bibinitperiod}{Morten\bibnamedelima Gram}{M\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
@@ -684,35 +758,35 @@
       \range{pages}{7}
     \endentry
   \endsortlist
+  \missing{Ghaffarizadeh:2014bt}
+  \missing{Batt:2007jl}
+  \missing{Cinquin:2005go}
+  \missing{Chen:2011hj}
+  \missing{Stricker:2008jqa}
+  \missing{Fung:2005jd}
+  \missing{Kramer:2004kq}
+  \missing{alon:2007b}
+  \missing{Ellis:2009hka}
+  \missing{Lu:2009ez}
+  \missing{Agapakis:2009bt}
+  \missing{Feliu:2013dz}
+  \missing{Walczak:2005ds}
+  \missing{Friedland:2009ce}
+  \missing{Basu:2004gn}
+  \missing{kaplan:1959}
+  \missing{Conradi:2007jo}
+  \missing{Banaji:2010fh}
+  \missing{Andrianantoandro:2006bi}
+  \missing{Biancalani:2015vya}
+  \missing{Deans:2007cya}
+  \missing{XXX}
+  \missing{Khalil:2010hm}
+  \missing{Atkinson:2003tu}
   \missing{Ham:2008hh}
   \missing{Tigges:2009jx}
-  \missing{Andrianantoandro:2006bi}
-  \missing{Ghaffarizadeh:2014bt}
-  \missing{konopka:2007}
   \missing{Heinemann:2006ht}
-  \missing{Khalil:2010hm}
-  \missing{alon:2007b}
-  \missing{kaplan:1959}
-  \missing{Basu:2004gn}
-  \missing{Deans:2007cya}
-  \missing{Conradi:2007jo}
   \missing{Sisson:wf}
-  \missing{Kramer:2004kq}
-  \missing{Walczak:2005ds}
-  \missing{Chen:2011hj}
-  \missing{Agapakis:2009bt}
-  \missing{Atkinson:2003tu}
-  \missing{Lu:2009ez}
-  \missing{XXX}
-  \missing{Ellis:2009hka}
-  \missing{Stricker:2008jqa}
-  \missing{Feliu:2013dz}
-  \missing{Friedland:2009ce}
-  \missing{Biancalani:2015vya}
-  \missing{Cinquin:2005go}
-  \missing{Fung:2005jd}
-  \missing{Batt:2007jl}
-  \missing{Banaji:2010fh}
+  \missing{konopka:2007}
 \endrefsection
 \endinput
 
