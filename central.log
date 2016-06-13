@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.10.1)  17 MAY 2016 19:23
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.10.1)  6 JUN 2016 15:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -454,7 +454,9 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (/usr/local/texlive/2015/texmf-dist/tex/latex/fontspec/fontspec.sty
+)) (/usr/local/texlive/2015/texmf-dist/tex/latex/cancel/cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/fontspec/fontspec.sty
 Package: fontspec 2015/09/24 v2.4e Font selection for XeLaTeX and LuaLaTeX
  (/usr/local/texlive/2015/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2015/09/27 v6111 L3 programming layer (loader) 
@@ -748,10 +750,10 @@ Package: unicode-math 2015/09/24 v0.8c Unicode maths in XeLaTeX and LuaLaTeX
 Package: ucharcat 2015/08/23 v0.02 ucharcat for luaLaTeX (DPC)
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 Package: l3keys2e 2015/09/27 v6111 LaTeX2e option processing using LaTeX3 keys
-) (/usr/local/texlive/2015/texmf-dist/tex/latex/base/fix-cm.sty
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/fix-cm.sty
 Package: fix-cm 2015/01/14 v1.1t fixes to LaTeX
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1enc.def
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 )) (/usr/local/texlive/2015/texmf-dist/tex/latex/filehook/filehook.sty
 Package: filehook 2011/10/12 v0.5d Hooks for input files
@@ -972,7 +974,7 @@ File: babel.def 2015/08/03 3.9m Babel common definitions
 . 
 .................................................
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 10.04669pt on input line 66.
+(Font)              scaled to size 10.04669pt on input line 67.
 .................................................
 . fontspec info: "set-scale"
 . 
@@ -1067,11 +1069,11 @@ LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
 . 
 .................................................
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmr/m/n --> EU1/LinuxLibertineO(1)/m/n on input line 66.
+(Font)                  OT1/cmr/m/n --> EU1/LinuxLibertineO(1)/m/n on input line 67.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> EU1/LinuxLibertineO(1)/m/it on input line 66.
+(Font)                  OT1/cmr/m/it --> EU1/LinuxLibertineO(1)/m/it on input line 67.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> EU1/LinuxLibertineO(1)/bx/n on input line 66.
+(Font)                  OT1/cmr/bx/n --> EU1/LinuxLibertineO(1)/bx/n on input line 67.
 .................................................
 . fontspec info: "set-scale"
 . 
@@ -1099,7 +1101,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 . TeX Gyre Pagella Math scale = 0.9189820538514595.
 .................................................
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 11.00111pt on input line 68.
+(Font)              scaled to size 11.00111pt on input line 71.
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1124,20 +1126,20 @@ LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
 . 
 .................................................
 LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(0)/m/n' will be
-(Font)              scaled to size 9.18976pt on input line 68.
+(Font)              scaled to size 9.18976pt on input line 71.
 .................................................
 . fontspec info: "set-scale"
 . 
 . TeX Gyre Pagella Math scale = 0.9189820538514595.
 .................................................
 LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `normal' on input line 68.
+(Font)              `operators' in the math version `normal' on input line 71.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> EU1/TeXGyrePagellaMath(0)/m/n on input line 68.
+(Font)                  OT1/cmr/m/n --> EU1/TeXGyrePagellaMath(0)/m/n on input line 71.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `bold' on input line 68.
+(Font)              `operators' in the math version `bold' on input line 71.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> EU1/TeXGyrePagellaMath(0)/bx/n on input line 68.
+(Font)                  OT1/cmr/bx/n --> EU1/TeXGyrePagellaMath(0)/bx/n on input line 71.
 .................................................
 . fontspec info: "set-scale"
 . 
@@ -1201,13 +1203,13 @@ LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 . \fontdimen 21\font =0pt\relax \fontdimen 22\font =2.5pt\relax \relax 
 .................................................
 LaTeX Font Info:    Encoding `OMS' has changed to `EU1' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 68.
+(Font)              `symbols' in the math version `normal' on input line 71.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> EU1/TeXGyrePagellaMath(1)/m/n on input line 68.
+(Font)                  OMS/cmsy/m/n --> EU1/TeXGyrePagellaMath(1)/m/n on input line 71.
 LaTeX Font Info:    Encoding `OMS' has changed to `EU1' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 68.
+(Font)              `symbols' in the math version `bold' on input line 71.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> EU1/TeXGyrePagellaMath(1)/bx/n on input line 68.
+(Font)                  OMS/cmsy/b/n --> EU1/TeXGyrePagellaMath(1)/bx/n on input line 71.
 .................................................
 . fontspec info: "set-scale"
 . 
@@ -1262,13 +1264,13 @@ LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 . 
 .................................................
 LaTeX Font Info:    Encoding `OMX' has changed to `EU1' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 68.
+(Font)              `largesymbols' in the math version `normal' on input line 71.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> EU1/TeXGyrePagellaMath(2)/m/n on input line 68.
+(Font)                  OMX/cmex/m/n --> EU1/TeXGyrePagellaMath(2)/m/n on input line 71.
 LaTeX Font Info:    Encoding `OMX' has changed to `EU1' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 68.
+(Font)              `largesymbols' in the math version `bold' on input line 71.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> EU1/TeXGyrePagellaMath(2)/bx/n on input line 68.
+(Font)                  OMX/cmex/m/n --> EU1/TeXGyrePagellaMath(2)/bx/n on input line 71.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
 \MT@toks=\toks32
@@ -1286,9 +1288,9 @@ Package microtype Info: Loading configuration file microtype.cfg.
 File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
 ))
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 24.99617pt on input line 103.
+(Font)              scaled to size 24.99617pt on input line 106.
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/bx/n' will be
-(Font)              scaled to size 23.16023pt on input line 103.
+(Font)              scaled to size 23.16023pt on input line 106.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
  (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifvtex.sty
@@ -1642,8 +1644,8 @@ Package rerunfilecheck Info: Feature \pdfmdfivesum is not available
 )
 \Hy@SectionHShift=\skip214
 )
-Package hyperref Info: Option `final' set `true' on input line 244.
-Package hyperref Info: Option `colorlinks' set `true' on input line 244.
+Package hyperref Info: Option `final' set `true' on input line 247.
+Package hyperref Info: Option `colorlinks' set `true' on input line 247.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/cleveref/cleveref.sty
 Package: cleveref 2013/12/28 v0.19 Intelligent cross-referencing
 LaTeX Info: Redefining \Cref on input line 955.
@@ -1892,32 +1894,7 @@ Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2015/04/19 v3.0 biblatex localization (PK/JW/AB)
-)) (./central.aux
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `@cref' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `@cref' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `@cref' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `@cref' multiply defined.
-
-)
+)) (./central.aux)
 \openout1 = `central.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
@@ -2021,6 +1998,48 @@ Package biblatex Info: ... file 'central.bbl' found.
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
+(biblatex)                Biancalani:2015vya
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                XXX
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Ellis:2009hka
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                alon:2007b
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Walczak:2005ds
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Agapakis:2009bt
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
 (biblatex)                Ghaffarizadeh:2014bt
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
@@ -2035,91 +2054,7 @@ Package biblatex Warning: The following entry could not be found
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
-(biblatex)                Cinquin:2005go
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Chen:2011hj
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Stricker:2008jqa
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Fung:2005jd
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
 (biblatex)                Kramer:2004kq
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                alon:2007b
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Ellis:2009hka
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Lu:2009ez
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Agapakis:2009bt
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Feliu:2013dz
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Walczak:2005ds
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Friedland:2009ce
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Basu:2004gn
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
@@ -2133,28 +2068,7 @@ Package biblatex Warning: The following entry could not be found
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
-(biblatex)                Conradi:2007jo
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Banaji:2010fh
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Andrianantoandro:2006bi
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Biancalani:2015vya
+(biblatex)                Atkinson:2003tu
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
@@ -2168,21 +2082,14 @@ Package biblatex Warning: The following entry could not be found
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
-(biblatex)                XXX
+(biblatex)                Conradi:2007jo
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
-(biblatex)                Khalil:2010hm
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Atkinson:2003tu
+(biblatex)                Friedland:2009ce
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
@@ -2203,7 +2110,7 @@ Package biblatex Warning: The following entry could not be found
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
-(biblatex)                Heinemann:2006ht
+(biblatex)                Chen:2011hj
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
@@ -2218,6 +2125,83 @@ Package biblatex Warning: The following entry could not be found
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
 (biblatex)                konopka:2007
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Stricker:2008jqa
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Mckay:2000lhs
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Heinemann:2006ht
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Fung:2005jd
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Cinquin:2005go
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Khalil:2010hm
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Basu:2004gn
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Andrianantoandro:2006bi
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Feliu:2013dz
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Banaji:2010fh
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Lu:2009ez
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
@@ -2305,10 +2289,20 @@ LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/bx/n' will be
 (Font)              scaled to size 10.1931pt on input line 5.
  [7]
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/sc' will be
-(Font)              scaled to size 11.00111pt on input line 129.
- [8]) [9] [10
+(Font)              scaled to size 11.00111pt on input line 125.
+ [8] [9]) [10] (./central.lof
+Overfull \hbox (6.30458pt too wide) in paragraph at lines 13--13
+ \EU1/LinuxLibertineO(0)/m/n/10.95 Each graph represents the steady state values of one dimer plotted against 
+ []
 
-] (./central.lof [11]) [12] (./central.lot)
+
+Overfull \hbox (3.83302pt too wide) in paragraph at lines 15--15
+ [][] [][][]\EU1/LinuxLibertineO(0)/m/n/10.95 The distribution of parameter values that resulted in monostable, bistable 
+ []
+
+[11
+
+]) [12] (./central.lot)
 
 Package glossaries Warning: Deprecated command \glossarystyle.
  I recommend you switch to \setglossarystyle unless you want to maintain backward compatibility on input line 28.
@@ -2323,41 +2317,43 @@ Package glossaries Warning: Deprecated command \glossarystyle.
 
 ] [17] [18
 
-] (./chapterIntroduction/ChIntro_introduction.tex
-Overfull \hbox (2.10728pt too wide) in paragraph at lines 3--4
+] (./chapterIntroduction/ChIntro_introduction.tex) [19
+
+] [20
+
+] (./chapterBackgr/ChBackground.tex
+Overfull \hbox (2.10728pt too wide) in paragraph at lines 4--5
 \EU1/LinuxLibertineO(0)/m/n/10.95 devices, and systems in order to engineer organisms to perform new tasks ([];
  []
 
-[19
+[21
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [20]
+ [22]
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 14.46722pt on input line 19.
+(Font)              scaled to size 14.46722pt on input line 20.
 
 
-LaTeX Warning: Reference `fig:Toggle switch example' on page 21 undefined on input line 21.
+LaTeX Warning: Reference `fig:Toggle switch example' on page 23 undefined on input line 22.
 
-[21] [22] [23]
-Overfull \hbox (17.81355pt too wide) in paragraph at lines 55--56
+[23] [24] [25]
+Overfull \hbox (17.81355pt too wide) in paragraph at lines 56--57
 \EU1/LinuxLibertineO(0)/m/n/10.95 cluded that cooperativity is a necessary condition for bistability to arise ([];
  []
 
-[24]
+[26]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 58.
+               Default added (so using `tbp') on input line 59.
 
 
-LaTeX Warning: Float too large for page by 145.63217pt on input line 79.
+LaTeX Warning: Float too large for page by 145.63217pt on input line 80.
 
-[25] [26]) [27
+[27] [28]) [29
 
-] [28
-
-] (./chapterABCSysBio/ChAbcSys_introduction.tex
+] [30] (./chapterABCSysBio/ChAbcSys_introduction.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\acrshort' on input line 3.
@@ -2366,115 +2362,113 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\acrshort' on input line 4.
 
-) [29
+) [31
 
-] [30
+
+] [32
 
 ] (./chapterStabilityFinder/ChSF_introduction.tex
-Overfull \hbox (33.89041pt too wide) in paragraph at lines 9--10
+
+LaTeX Warning: Reference `fig:Toggle switch example' on page 33 undefined on input line 8.
+
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 12.
+LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
+(Font)              scaled to size 9.04202pt on input line 15.
+File: chapterStabilityFinder/images/switch_stbility_examples.pdf Graphic file (type QTm)
+<use  "chapterStabilityFinder/images/switch_stbility_examples.pdf" >
+Overfull \hbox (85.41096pt too wide) in paragraph at lines 47--48
+ [][] 
+ []
+
+[33
+
+]
+File: chapterStabilityFinder/images/param_stability_hist.pdf Graphic file (type QTm)
+ <use  "chapterStabilityFinder/images/param_stability_hist.pdf" >
+Overfull \hbox (18.4954pt too wide) in paragraph at lines 59--60
+ [][] 
+ []
+
+[34] [35]
+Overfull \hbox (33.89041pt too wide) in paragraph at lines 110--111
 \EU1/LinuxLibertineO(0)/m/n/10.95 built, such as toggle switches ([]; []; []; [];
  []
 
 
-Overfull \hbox (2.50931pt too wide) in paragraph at lines 9--10
+Overfull \hbox (2.50931pt too wide) in paragraph at lines 110--111
 \EU1/LinuxLibertineO(0)/m/n/10.95 plagued by intra-circuit crosstalk and incompatibility, as well as cellular noise, which
  []
 
-[31
+[36
 
 ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [32]
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 26.
-LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 9.04202pt on input line 29.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [33]
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 55.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [34] [35]
-Overfull \hbox (24.4712pt too wide) in paragraph at lines 74--76
-[]\EU1/LinuxLibertineO(0)/m/n/10.95 These results agree with the results reported by []Gardner, Cantor, & Collins ([][]2000[][]) ([]Gard-
- []
-
-[36]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [37] [38]
-File: chapterStabilityFinder/images/robustness_calc_norm.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/images/robustness_calc_norm.png" > [39
 
-]
-File: chapterStabilityFinder/images/normal_correl.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/images/normal_correl.png" > [40
+LaTeX Warning: Command \textgreater invalid in math mode on input line 156.
 
-]
-File: chapterStabilityFinder/images/robustness_s_normal_dimens.pdf Graphic file (type QTm)
- <use  "chapterStabilityFinder/images/robustness_s_normal_dimens.pdf" > [41
 
-]
-File: chapterStabilityFinder/images/robustness_calc_unif.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/images/robustness_calc_unif.png" > [42
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-]
-File: chapterStabilityFinder/images/robustness_s_uniform_dimens.pdf Graphic file (type QTm)
- <use  "chapterStabilityFinder/images/robustness_s_uniform_dimens.pdf" > [43
+ [39] [40]
+Overfull \hbox (24.4712pt too wide) in paragraph at lines 175--177
+[]\EU1/LinuxLibertineO(0)/m/n/10.95 These results agree with the results reported by []Gardner, Cantor, & Collins ([][]2000[][]) ([]Gard-
+ []
 
-]
-Overfull \hbox (8.97433pt too wide) in paragraph at lines 195--196
+[41] [42]
+File: chapterStabilityFinder/images/ex1_sum.png Graphic file (type QTm)
+ <use  "chapterStabilityFinder/images/ex1_sum.png" >
+File: chapterStabilityFinder/images/Example4_summ.png Graphic file (type QTm)
+ <use  "chapterStabilityFinder/images/Example4_summ.png" > [43] [44]
+Overfull \hbox (8.97433pt too wide) in paragraph at lines 253--254
 \EU1/LinuxLibertineO(0)/m/n/10.95 We next analyzed an extension of the Gardner switch model developed by []Lu, Onuchic,
  []
 
-[44
+[45
 
-] [45]
+
+] [46]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [46] [47] [48]
+ [47] [48] [49]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 293.
+               Default added (so using `tbp') on input line 351.
 
-[49]
+[50]
 File: chapterStabilityFinder/images/figure-01.png Graphic file (type QTm)
  <use  "chapterStabilityFinder/images/figure-01.png" >
-Overfull \hbox (84.76144pt too wide) in paragraph at lines 318--319
+Overfull \hbox (84.76144pt too wide) in paragraph at lines 376--377
  [] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[50] [51]
+[51] [52]
 File: chapterStabilityFinder/images/figure-02.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/images/figure-02.png" > [52
+ <use  "chapterStabilityFinder/images/figure-02.png" > [53
 
 ]
 File: chapterStabilityFinder/images/figure-03.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/images/figure-03.png" > [53]
+ <use  "chapterStabilityFinder/images/figure-03.png" > [54]
 File: chapterStabilityFinder/images/figure-04.png Graphic file (type QTm)
  <use  "chapterStabilityFinder/images/figure-04.png" >
-Overfull \hbox (53.37527pt too wide) in paragraph at lines 342--343
+Overfull \hbox (53.37527pt too wide) in paragraph at lines 400--401
  [] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[54]
+[55]
 File: chapterStabilityFinder/images/figure-05.png Graphic file (type QTm)
  <use  "chapterStabilityFinder/images/figure-05.png" >
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 8.03735pt on input line 352.
+(Font)              scaled to size 8.03735pt on input line 410.
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 6.02802pt on input line 352.
+(Font)              scaled to size 6.02802pt on input line 410.
 File: chapterStabilityFinder/images/figure-06-alt.png Graphic file (type QTm)
  <use  "chapterStabilityFinder/images/figure-06-alt.png" >
 
@@ -2482,69 +2476,75 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 File: chapterStabilityFinder/images/figure-07.png Graphic file (type QTm)
 <use  "chapterStabilityFinder/images/figure-07.png" >
-Overfull \hbox (34.97466pt too wide) in paragraph at lines 366--367
+Overfull \hbox (34.97466pt too wide) in paragraph at lines 424--425
  [] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[55
+[56
 
 
 
-] [56] [57]
+] [57] [58]
 File: chapterStabilityFinder/images/figure-08.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/images/figure-08.png" >) [58
-
-] (./chapterCharacterisation/ChChar_introduction.tex) [59
-
+ <use  "chapterStabilityFinder/images/figure-08.png" >) [59
 
 ] [60
 
-] (./chapterABCFlow/ChFlow_introduction.tex
+] (./chapterCharacterisation/ChChar_introduction.tex)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [61
+
+]
+Overfull \vbox (212.72166pt too high) has occurred while \output is active []
+
+ [62] (./chapterABCFlow/ChFlow_introduction.tex
 
 LaTeX Warning: Command \textgreater invalid in math mode on input line 16.
 
 
 LaTeX Warning: Command \textgreater invalid in math mode on input line 37.
 
-[61
+[63
 
-] [62]
+
+] [64]
 File: chapterABCFlow/images/normal_sigma_example.png Graphic file (type QTm)
- <use  "chapterABCFlow/images/normal_sigma_example.png" > [63
+ <use  "chapterABCFlow/images/normal_sigma_example.png" > [65
 
 ]
 File: chapterABCFlow/images/epsil_var.png Graphic file (type QTm)
  <use  "chapterABCFlow/images/epsil_var.png" >
 File: chapterABCFlow/images/ns.png Graphic file (type QTm)
- <use  "chapterABCFlow/images/ns.png" > [64]
+ <use  "chapterABCFlow/images/ns.png" > [66]
 File: chapterABCFlow/images/ngrid.png Graphic file (type QTm)
  <use  "chapterABCFlow/images/ngrid.png" >
 File: chapterABCFlow/images/mus_sigmas_same.png Graphic file (type QTm)
- <use  "chapterABCFlow/images/mus_sigmas_same.png" > [65] [66]
+ <use  "chapterABCFlow/images/mus_sigmas_same.png" > [67] [68]
 File: chapterABCFlow/images/mus_sigmas_diff.png Graphic file (type QTm)
  <use  "chapterABCFlow/images/mus_sigmas_diff.png" >
 Overfull \hbox (62.16814pt too wide) in paragraph at lines 138--139
  [][] 
  []
 
-[67
+[69
 
 ]
 File: chapterABCFlow/images/epsilon0-1.png Graphic file (type QTm)
  <use  "chapterABCFlow/images/epsilon0-1.png" >
 File: chapterABCFlow/images/accept_rate_2d_1d.pdf Graphic file (type QTm)
- <use  "chapterABCFlow/images/accept_rate_2d_1d.pdf" > [68
+ <use  "chapterABCFlow/images/accept_rate_2d_1d.pdf" > [70
 
-] [69]
+] [71]
 File: chapterABCFlow/images/epsilon_uniform.png Graphic file (type QTm)
  <use  "chapterABCFlow/images/epsilon_uniform.png" >
 File: chapterABCFlow/images/uni_v_normal.png Graphic file (type QTm)
- <use  "chapterABCFlow/images/uni_v_normal.png" > [70
+ <use  "chapterABCFlow/images/uni_v_normal.png" > [72
 
-] [71]
+] [73]
 File: chapterABCFlow/images/multimodal.png Graphic file (type QTm)
  <use  "chapterABCFlow/images/multimodal.png" >
 File: chapterABCFlow/images/multimodal_musd.png Graphic file (type QTm)
@@ -2553,17 +2553,17 @@ Overfull \hbox (54.34319pt too wide) in paragraph at lines 205--206
  [][] 
  []
 
-[72
+[74
 
-] [73]
+] [75]
 File: chapterABCFlow/images/multimodal_v_normal.png Graphic file (type QTm)
  <use  "chapterABCFlow/images/multimodal_v_normal.png" >
 File: chapterABCFlow/images/posterior_comparison_1D_2D.pdf Graphic file (type QTm)
- <use  "chapterABCFlow/images/posterior_comparison_1D_2D.pdf" > [74
+ <use  "chapterABCFlow/images/posterior_comparison_1D_2D.pdf" > [76
 
-] [75]
+] [77]
 File: chapterABCFlow/images/posterior_2d_4.pdf Graphic file (type QTm)
- <use  "chapterABCFlow/images/posterior_2d_4.pdf" > [76
+ <use  "chapterABCFlow/images/posterior_2d_4.pdf" > [78
 
 ]
 
@@ -2576,25 +2576,25 @@ Overfull \hbox (48.19594pt too wide) in paragraph at lines 254--255
  [][] 
  []
 
-[77
+[79
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\acrshort' on input line 259.
 
-) [78
+) [80
 
-] (./chapterDesignSwitches/ChDesSw_introduction.tex) [79
+] (./chapterDesignSwitches/ChDesSw_introduction.tex) [81
 
-
-] [80
-
-] (./chapterConclusions/ChConc.tex) [81
 
 ] [82
 
-] [83] [84] [85] [86
+] (./chapterConclusions/ChConc.tex) [83
+
+] [84
+
+] [85] [86] [87] [88
 
 ] (./appendices/appendix.tex
 
@@ -2628,14 +2628,14 @@ Overfull \hbox (224.43005pt too wide) detected at line 83
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [87]
+ [89]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [88] [89] [90] [91
+ [90] [91] [92] [93
 
 ])
 
-Package caption Warning: Unused \captionsetup[subfigure] on input line 192.
+Package caption Warning: Unused \captionsetup[subfigure] on input line 195.
 See the caption package documentation for explanation.
 
 \tf@toc=\write10
@@ -2647,29 +2647,26 @@ See the caption package documentation for explanation.
 \tf@lot=\write12
 \openout12 = `central.lot'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 90.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 90.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 95.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 95.
 (./central.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 90.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 90.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 95.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 95.
 
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
 
 Package logreq Info: Writing requests to 'central.run.xml'.
 \openout1 = `central.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 50005 strings out of 493706
- 853684 string characters out of 6145769
- 1587367 words of memory out of 5000000
- 52767 multiletter control sequences out of 15000+600000
+ 50050 strings out of 493706
+ 854404 string characters out of 6145769
+ 1589517 words of memory out of 5000000
+ 52805 multiletter control sequences out of 15000+600000
  8764 words of font info for 66 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  64i,15n,109p,10421b,3227s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on central.pdf (91 pages).
+Output written on central.pdf (93 pages).

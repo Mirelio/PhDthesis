@@ -8,67 +8,67 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10pt}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces LoF caption}}{39}{figure.caption.9}
+\addvspace {10pt}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces LoF caption}}{40}{figure.caption.11}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces An example for each type of switch found during the parameter scan. Each graph represents the steady state values of one dimer plotted against the other, from one parameter set and 100 initial conditions.\relax }}{34}{figure.caption.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces LoF caption}}{41}{figure.caption.13}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces The distribution of parameter values that resulted in monostable, bistable and tristable switches in the parameter scan. Each graph represents the distribution of the values of one parameter. \relax }}{35}{figure.caption.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.4}{\ignorespaces LoF caption}}{42}{figure.caption.14}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces LoF caption}}{43}{figure.caption.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.5}{\ignorespaces LoF caption}}{43}{figure.caption.16}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces LoF caption}}{44}{figure.caption.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.6}{\ignorespaces LoF caption}}{51}{figure.caption.20}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces LoF caption}}{52}{figure.caption.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.7}{\ignorespaces LoF caption}}{52}{figure.caption.21}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces LoF caption}}{53}{figure.caption.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.8}{\ignorespaces LoF caption}}{53}{figure.caption.22}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces LoF caption}}{54}{figure.caption.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.9}{\ignorespaces LoF caption}}{54}{figure.caption.23}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces LoF caption}}{55}{figure.caption.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.10}{\ignorespaces LoF caption}}{55}{figure.caption.24}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces LoF caption}}{56}{figure.caption.21}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.11}{\ignorespaces LoF caption}}{56}{figure.caption.25}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces LoF caption}}{57}{figure.caption.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.12}{\ignorespaces LoF caption}}{57}{figure.caption.26}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces LoF caption}}{58}{figure.caption.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.13}{\ignorespaces LoF caption}}{58}{figure.caption.27}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces LoF caption}}{59}{figure.caption.24}
 \defcounter {refsection}{0}\relax 
 \addvspace {10pt}
 \defcounter {refsection}{0}\relax 
 \addvspace {10pt}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Comparing 1D and 2D distributions.\relax }}{63}{figure.caption.28}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Comparing 1D and 2D distributions.\relax }}{65}{figure.caption.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Epsilon distribution for 1D (blue) and 2D (green) distances.\relax }}{64}{figure.caption.29}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Epsilon distribution for 1D (blue) and 2D (green) distances.\relax }}{66}{figure.caption.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Epsilon distribution medians and variance over number of data points.\relax }}{64}{figure.caption.30}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Epsilon distribution medians and variance over number of data points.\relax }}{66}{figure.caption.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Epsilon distribution medians and variance vary with the size of bins used. \relax }}{65}{figure.caption.31}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Epsilon distribution medians and variance vary with the size of bins used. \relax }}{67}{figure.caption.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces LoF caption}}{66}{figure.caption.32}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces LoF caption}}{68}{figure.caption.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces LoF caption}}{67}{figure.caption.33}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces LoF caption}}{69}{figure.caption.30}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.7}{\ignorespaces The difference in distributions when epsilon median is smaller than 0.1 in 1D and 2D \relax }}{68}{figure.caption.34}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces The difference in distributions when epsilon median is smaller than 0.1 in 1D and 2D \relax }}{70}{figure.caption.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Acceptance rate drops rapidly in the 1D case\relax }}{69}{figure.caption.35}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Acceptance rate drops rapidly in the 1D case\relax }}{71}{figure.caption.32}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.9}{\ignorespaces LoF caption}}{70}{figure.caption.36}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces LoF caption}}{72}{figure.caption.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Comparing normally distributed data to uniformly distributed simulations.\relax }}{71}{figure.caption.37}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Comparing normally distributed data to uniformly distributed simulations.\relax }}{73}{figure.caption.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Comparing the 1D and 2D distances between bimodal distributions. \relax }}{72}{figure.caption.38}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Comparing the 1D and 2D distances between bimodal distributions. \relax }}{74}{figure.caption.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.12}{\ignorespaces LoF caption}}{73}{figure.caption.39}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces LoF caption}}{75}{figure.caption.36}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.13}{\ignorespaces LoF caption}}{74}{figure.caption.40}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces LoF caption}}{76}{figure.caption.37}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Comparing the fit in 1D (red) Vs 2D (blue) in ABC-Flow, when $\mitvarepsilon $=0.1. \relax }}{75}{figure.caption.41}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Comparing the fit in 1D (red) Vs 2D (blue) in ABC-Flow, when $\mitvarepsilon $=0.1. \relax }}{77}{figure.caption.38}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.15}{\ignorespaces LoF caption}}{76}{figure.caption.42}
+\contentsline {figure}{\numberline {6.15}{\ignorespaces LoF caption}}{78}{figure.caption.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.16}{\ignorespaces LoF caption}}{77}{figure.caption.43}
+\contentsline {figure}{\numberline {6.16}{\ignorespaces LoF caption}}{79}{figure.caption.40}
 \defcounter {refsection}{0}\relax 
 \addvspace {10pt}
 \defcounter {refsection}{0}\relax 

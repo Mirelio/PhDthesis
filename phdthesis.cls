@@ -49,6 +49,7 @@
 \RequirePackage[fleqn]{mathtools}
 \RequirePackage{amssymb}
 \RequirePackage{amsfonts}
+\RequirePackage[makeroom]{cancel}
 
 % allow page breaks in math mode
 \allowdisplaybreaks
@@ -64,6 +65,8 @@
 
 \defaultfontfeatures{Scale=MatchLowercase}
 \setmainfont[Ligatures={Common, TeX}]{Linux Libertine O}
+%\setmainfont[Ligatures={Common, TeX}]{Lora}
+%\usepackage[T1]{fontenc}
 %\setmainfont[Ligatures={Common, TeX}]{TeX Gyre Pagella}
 \setmathfont{TeX Gyre Pagella Math}
 
@@ -307,6 +310,7 @@
     \vspace*{\fill}%
 \end{titlingpage*}%
 \cleardoublepage%
+
 \thispagestyle{chapter}%
 \vspace*{\fill}%
 \begin{quote}
@@ -319,6 +323,14 @@ I confirm that this has been indicated in the thesis.}
 %-------------------------------------------------------------------------------
 % Other preamble
 %-------------------------------------------------------------------------------
+
+
+%have greek letters in text mode
+\usepackage{textgreek}
+
+
+%Avoids the problem of latex trying to fill a page vertically before a float (and leaving massive blank spaces between paragraphs)
+\raggedbottom
 
 \renewenvironment{abstract}{\cleardoublepage\chapter*{Abstract}\itshape}{}
 \newenvironment{acknowledgements}{\thispagestyle{chapter}\chapter*{Acknowledgements}\markboth{Acknowledgements}{}}{}
