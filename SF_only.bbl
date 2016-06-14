@@ -138,29 +138,6 @@
       \field{pages}{e1000235}
       \range{pages}{-1}
     \endentry
-    \entry{Isaacs:2003ht}{article}{}
-      \name{author}{4}{}{%
-        {{hash=c05dfa5abe9b67acd85264fb32eb70f7}{Isaacs}{I\bibinitperiod}{F\bibnamedelima J}{F\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
-        {{hash=378816c02359a42cc6f39cd7ca923866}{Hasty}{H\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
-        {{hash=c5672d98769b1a72fb353f3597a0cd07}{Cantor}{C\bibinitperiod}{C\bibnamedelima R}{C\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
-        {{hash=6605a954dd214f66b2fe169d6dc4acef}{Collins}{C\bibinitperiod}{J\bibnamedelima J}{J\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{ab9b3c2ceb6e20a7845d31169c791ccd}
-      \strng{fullhash}{9a5cd812ca0037bdf646036655c0e655}
-      \field{sortinit}{I}
-      \field{sortinithash}{25e99d37ba90f7c4fb20baf4e310faf3}
-      \field{labelyear}{2003}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Proceedings of the National Academy of Sciences of the United States of America}
-      \field{number}{13}
-      \field{title}{{Prediction and measurement of an autoregulatory genetic module}}
-      \field{volume}{100}
-      \field{year}{2003}
-      \field{pages}{7714\bibrangedash 7719}
-      \range{pages}{6}
-    \endentry
     \entry{Kelly:2009bj}{article}{}
       \name{author}{10}{}{%
         {{hash=74ea9436c188b71bde450069e0beb7c2}{Kelly}{K\bibinitperiod}{Jason\bibnamedelima R}{J\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
@@ -433,22 +410,14 @@
       \range{pages}{7}
     \endentry
   \endsortlist
-  \missing{XXX}
   \missing{Feliu:2013dz}
-  \missing{Stricker:2008jqa}
-  \missing{Ghaffarizadeh:2014bt}
-  \missing{Conradi:2007jo}
-  \missing{Banaji:2010fh}
-  \missing{Fung:2005jd}
-  \missing{Cinquin:2005go}
-  \missing{Deans:2007cya}
-  \missing{Lu:2009ez}
-  \missing{Tigges:2009jx}
-  \missing{Kramer:2004kq}
-  \missing{Basu:2004gn}
+  \missing{XXX}
   \missing{Sisson:wf}
-  \missing{Friedland:2009ce}
-  \missing{Ham:2008hh}
+  \missing{Lu:2009ez}
+  \missing{Banaji:2010fh}
+  \missing{Cinquin:2005go}
+  \missing{Conradi:2007jo}
+  \missing{Ghaffarizadeh:2014bt}
 \endrefsection
 \endinput
 
