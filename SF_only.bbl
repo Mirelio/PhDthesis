@@ -44,31 +44,6 @@
       \field{pages}{15190\bibrangedash 15195}
       \range{pages}{6}
     \endentry
-    \entry{Brandman:2005ci}{article}{}
-      \name{author}{4}{}{%
-        {{hash=dc18873fecc146db1f7797f81235ab1c}{Brandman}{B\bibinitperiod}{Onn}{O\bibinitperiod}{}{}{}{}}%
-        {{hash=db4712cc30768c3afc4d6baa251d03ab}{Ferrell}{F\bibinitperiod}{James\bibnamedelima E}{J\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
-        {{hash=fd81853acdb66a971c271e27ba65e198}{Li}{L\bibinitperiod}{Rong}{R\bibinitperiod}{}{}{}{}}%
-        {{hash=1737b7d3638109b026b61af342e3555b}{Meyer}{M\bibinitperiod}{Tobias}{T\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{7874b4cf8fd6ce77e5cf5b3b6eca517c}
-      \strng{fullhash}{aca096549c0b977de76a78dc41e99c9c}
-      \field{sortinit}{B}
-      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
-      \field{labelyear}{2005}
-      \field{labelmonth}{10}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Science}
-      \field{month}{10}
-      \field{number}{5747}
-      \field{title}{{Interlinked fast and slow positive feedback loops drive reliable cell decisions.}}
-      \field{volume}{310}
-      \field{year}{2005}
-      \field{pages}{496\bibrangedash 498}
-      \range{pages}{3}
-    \endentry
     \entry{Canton:2008fv}{article}{}
       \name{author}{3}{}{%
         {{hash=b4d08056b58dbc7971eed4ac4c0638ca}{Canton}{C\bibinitperiod}{Barry}{B\bibinitperiod}{}{}{}{}}%
@@ -335,30 +310,6 @@
       \field{pages}{946\bibrangedash 950}
       \range{pages}{5}
     \endentry
-    \entry{Thomas:1995id}{article}{}
-      \name{author}{3}{}{%
-        {{hash=b6267a76fcb8ecc22612effb6d2142a7}{Thomas}{T\bibinitperiod}{R}{R\bibinitperiod}{}{}{}{}}%
-        {{hash=f916afff59bbda24080f2824841f920f}{Thieffry}{T\bibinitperiod}{D}{D\bibinitperiod}{}{}{}{}}%
-        {{hash=0c58e4cf5a8622f6bab57c2cab8033b6}{Kaufman}{K\bibinitperiod}{M}{M\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{292d0b82679e7fd407ee6acad60f8dfd}
-      \strng{fullhash}{292d0b82679e7fd407ee6acad60f8dfd}
-      \field{sortinit}{T}
-      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
-      \field{labelyear}{1995}
-      \field{labelmonth}{03}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Bulletin of mathematical biology}
-      \field{month}{03}
-      \field{number}{2}
-      \field{title}{{Dynamical behaviour of biological regulatory networks--I. Biological role of feedback loops and practical use of the concept of the loop-characteristic state.}}
-      \field{volume}{57}
-      \field{year}{1995}
-      \field{pages}{247\bibrangedash 276}
-      \range{pages}{30}
-    \endentry
     \entry{Toni:2009tr}{article}{}
       \name{author}{5}{}{%
         {{hash=199d095d48e61cde3962f614838314a2}{Toni}{T\bibinitperiod}{Tina}{T\bibinitperiod}{}{}{}{}}%
@@ -413,11 +364,11 @@
   \missing{Feliu:2013dz}
   \missing{XXX}
   \missing{Sisson:wf}
-  \missing{Lu:2009ez}
-  \missing{Banaji:2010fh}
-  \missing{Cinquin:2005go}
   \missing{Conradi:2007jo}
   \missing{Ghaffarizadeh:2014bt}
+  \missing{Cinquin:2005go}
+  \missing{Banaji:2010fh}
+  \missing{Lu:2009ez}
 \endrefsection
 \endinput
 

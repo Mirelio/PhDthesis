@@ -195,10 +195,60 @@ Figure~\ref{fig:myABC true 1} demonstrates, using a simple example, that \acrsho
 
 
 \subsection{Robustness}
+\label{sec:rob_back}
+During this thesis I use robustness in its parametric sense. I examine the robustness of a model to fluctuations in parameter values. The robustness of a model can be calculated by dividing the volume of its functional region by the volume of its priors. This is a measure of how big the posterior distribution is compared to the priors.   
 
-During this thesis I use robustness in its parametric sense. I examine the robustness of a model to fluctuations in parameter values. 
+For a given model design D and objective O we define the functional region $F$ as the region within the prior where O is satisfied. So within the prior we can assign 1 to any region that falls within $F$ and 0 to any region outside that. It comes from Bayes rule that:
 
---- TO DO ---
+\begin{align}
+p(O|D_1) = \int p(O|\theta,D_1)p(\theta|D_1)d\theta,
+\end{align}
+
+\noindent where $p(x|\theta)$ is the likelihood, $p(\theta)$ is the prior, and $\displaystyle \int p(x|\theta)p(\theta)d\theta$ is the evidence. For a design with three parameters this becomes:
+
+\begin{align}
+p(O|D_1) &= \displaystyle \iiint_{\underline{\Theta}} p(O|\underline{\Theta})p(\underline{\Theta}|D_1)d\underline{\Theta},
+\end{align}
+
+\noindent where $\underline{\Theta}$ is a vector containing the three parameters $ = \theta_1, \theta_2,\theta_3$. To calculate the robustness, or model evidence, we integrate this with respect to $\underline{\Theta}$. We assume  all parameters $\theta_1, \theta_2,\theta_3$ are uniform, $p(\underline{\Theta}|D_1) \sim U(a, b)$. If we assume a = 0 this integral becomes:
+
+\begin{align}
+p(O|D_1) &= \displaystyle \iiint_{\underline{\Theta}} p(O|\underline{\Theta})\frac{1}{b_1}\frac{1}{b_2}\frac{1}{b_3}d\underline{\Theta} \text{ , and }\\
+p(O|D_1) &= \frac{1}{b_1}\frac{1}{b_2}\frac{1}{b_3} \displaystyle \iiint_{\underline{\Theta}}p(O|\underline{\Theta})d\underline{\Theta} \label{eq:1.6}
+\end{align}
+
+\noindent since $\frac{1}{b_1}\frac{1}{b_2}\frac{1}{b_3} $ is a constant. Then assuming that the likelihood is uniform Equation\ref{eq:1.6} becomes:
+
+\begin{align}
+p(O|D_1) &= \frac{1}{b_1}\frac{1}{b_2}\frac{1}{b_3} \bigg[\displaystyle \iiint_{\underline{\Theta}_F} 1 d\underline{\Theta} +\cancelto{0}{\displaystyle \iiint_{\underline{\Theta}_{\cancel{F} }} 0 d\underline{\Theta}}\bigg]  \\
+\end{align}
+\noindent since we assign 1 to any region within $F$ and 0 to any region outside it. This becomes:
+\begin{align}
+p(O|D_1) &= \overbrace{\frac{1}{b_1}\frac{1}{b_2}\frac{1}{b_3}}^{|P|} \underbrace{\displaystyle \iiint_{\underline{\Theta}_F} 1 d\underline{\Theta}}_{|F|}, \\
+\therefore p(O|D_1) &= \frac{|F|}{|P|},
+\end{align}
+where |P| is the volume of the prior P and |F| the volume of the functional region F. Therefore, in the case where both the prior and the likelihood are uniform, the robustness $R$ of the design is the ratio of the volumes of the two.
+%normal
+%\begin{align*}
+%p(O|\underline{\Theta}) = c \times exp\bigg(-\frac{(O-\mu)^2}{2\sigma^2}\bigg)
+%\end{align*}
+
+If on the other hand we assume the likelihood is multivariate normal, with priors remaining uniform, Equation\ref{eq:1.6} becomes: 
+\begin{align}
+p(O|D_1) &= \frac{1}{|P|}\iiint_{\underline{\Theta}}f(\underline{\Theta};\mu,\Sigma)d\underline{\Theta} \\%, & \parbox[c]{\Sigma = \det(\text{covariance matrix})} \\
+\therefore p(O|D_1) &= \frac{1}{|P|}\underbrace{\times(2\pi)^\frac{k}{2}\times |\Sigma|^\frac{1}{2}}_{|F|} \\
+\therefore p(O|D_1) &= \frac{|F|}{|P|},
+\end{align}
+
+We can use the Bayes factor in order to compare the robustness between two model designs. The Bayes factor is defined as follows:
+
+\begin{align}
+B_{ab} &= \frac{\displaystyle \int p(x|\theta, D_a)p(\theta, D_a)d\theta}{\displaystyle \int p(x|\theta, D_b)p(\theta, D_b)d\theta} \\
+\therefore B_{ab} &= \frac{|Fa|}{|Pa|} / \frac{|Fb|}{|Pb|} \label{eq:final_bayes}
+\end{align}
+
+\noindent Therefore, we can use the ratio of the two robustness measures to calculate the Bayes factor. 
+
 
 %HAFNER:
 %A system is called robust to a specific class of perturbations if it can maintain its function or structure under these perturbations [7]. Such perturbations include changes in biochemical parame- ters (e.g. temperature [8] and other environmental changes), molecular noise [9–12], changes of molecular concentrations, as well as mutations [13,14]. Many properties of biochemical systems show some robustness to such perturbations [15–21]. These observations raise the possibility that robustness itself could be used to discriminate between models [15,16]. In the absence of other criteria, a model would be judged superior if it is more robust than other models to some class of perturbations [19]. This notion forms the cornerstone of our contribution
@@ -338,10 +388,10 @@ A problem that can arise by using this method with stochastic simulations is tha
 
 
 \section{Calculating robustness}
-
+\label{sec:cal_rob}
 Unlike other \acrshort{abc} \acrshort{smc} methods, Stability Finder does not have model selection integrated in the method. This is because the purpose of this method is not necessarily to compare models for robustness but to elucidate the stability a given model is capable of. Nevertheless, robustness analysis is an outcome that Bayesian methods are well suited for. Therefore, here I discuss another algorithm I developed in order to extract robustness information from the results of Stability Finder and apply model selection.  
 
-In order to discuss the parametric robustness of a model we need to be able to approximate the volume of the viable parameter space. The viable parameter space is the space that approximates the posterior distribution that can give rise to the desired behaviour. I tested two methods of approximating the volume of the viable space, which are outlined in Algorithm~\ref{alg:robustness}. The first, crude, method is to calculate the volume of the cuboid that contains this viable space. The 1\textsuperscript{st} and 99\textsuperscript{th}percentile of the viable space (denoted as data in Algorithm~\ref{alg:robustness}) are taken into account. This is necessary in order to exclude outliers in the distribution that would skew the volume calculation significantly. Each parameter represents a side in the cuboid and since the volume of a cuboid is equal to the product of its sides (XXX), the volume of the viable space is equal to the product of the ranges of all the parameters. This cuboid method will be prone to overestimating robustness especially in cases of correlation between parameters.
+As discussed in Section~\ref{sec:rob_back}, two models can be compared for their robustness using Equation~\ref{eq:final_bayes}. This represents the ratio of the robustness measure of each model which in turn is defined as the ratio between the volume of functional region $F$ and the volume of the prior $P$. In order to calculate the Bayes factor we must first be able to approximate the volume of the viable parameter space. The viable parameter space is the space that approximates the posterior distribution that can give rise to the desired behaviour. I tested two methods of approximating the volume of the viable space, which are outlined in Algorithm~\ref{alg:robustness}. The first method calculates the volume of the cuboid that contains this viable space. The 1\textsuperscript{st} and 99\textsuperscript{th}percentile of the viable space (denoted as data in Algorithm~\ref{alg:robustness}) are taken into account. This is necessary in order to exclude outliers in the distribution that would skew the volume calculation significantly. Each parameter represents a side in the cuboid and since the volume of a cuboid is equal to the product of its sides (XXX), the volume of the viable space is equal to the product of the ranges of all the parameters. This cuboid method will be prone to overestimating robustness especially in cases of correlation between parameters.
 
 For the second method the volume of the viable space was represented by a hyper-ellipsoid, an ellipse in higher dimensions. This method should not be as prone to overestimation of robustness as the cuboid method as an ellipsoid can take correlation into account. For this method the distribution of the viable space is assumed to be normal. The method calculates the covariance matrix of the distribution, whose volume is given by Equation~\ref{eq:el_vol}. Just as in the cuboid method, the 1\textsuperscript{st} and 99\textsuperscript{th} percentile of the data is ignored. 
 
@@ -460,6 +510,7 @@ In this section I apply Stability Finder to switch models in order to find the d
 
 
 \subsection{Testing StabilityFinder}
+\label{sec:gard}
 \textcite{Gardner:2000vha} constructed the first synthetic genetic toggle switch~\autocite{Gardner:2000vha}. Their model consisted of two mutually repressing transcription factors, as shown in Figure~\ref{fig:gard_mod}A, and in the deterministic case is defined by the following \acrshort{ode}s:
 
 \begin{align}
@@ -511,6 +562,7 @@ I next applied StabilityFinder to the case of the Gardner switch under stochasti
 
 
 \subsection{Lu toggle switch models}
+\label{sec:lu}
 Next I analyzed an extension of the Gardner switch model developed by~\textcite{Lu:2014kc}~\autocite{Lu:2014kc}. I use these models as they are of increased complexity from the Gardner model. \textcite{Lu:2014kc} considered two types of switches, the classic switch consisting of two mutually repressing transcription factors (model \acrshort{cs-lu}), as well as a \acrfull{dp-lu}.  The \acrshort{cs-lu} switch was found to be bistable given the set of parameters used, while the \acrshort{dp-lu} switch was found to be tristable~\autocite{Lu:2014kc}. The \acrshort{cs-lu} model used in their study is given by the following system of \acrshort{ode}s.
 
 \begin{align}
@@ -700,32 +752,145 @@ Interestingly, and consistent with the results presented above, we find that the
 
 Consistently with the results found in section~\ref{sec:lu_234}, we find that the steady states are consistently symmetric (Figure~\ref{fig:fig8}B). Each of six steady states exists in symmetry with another one, in tightly constrained regions. This is exaggerated in this model where parameters have been forced to be symmetric. 
 
-\subsection{Mass Action switches}						
-Although the DP switch can achieve tristability, we investigated how the addition of positive autoregulation alters the robustness of the switch for bistable behaviour. Here we define a robust system as a device that can withstand fluctuations in parameter values and still produce the desired behaviour (parametric robustness). Feedback loops are well known key regulatory motifs~\autocite{Brandman:2005ci}. Although negative feedback loops are essential for homeostasis and buffering~\autocite{Thomas:1995id} and can increase robustness to extrinsic noise sources, we focussed on the addition of positive feedback because this has been shown to increase robustness in other systems \autocite{XXX}. We use StabilityFinder to compare the two models, and determine whether its worthwhile building a bistable circuit with added positive feedback.
+
+
+\subsection{Mass Action switches}
+\label{sec:ma_sw}						
+%Although the DP switch can achieve tristability, we investigated how the addition of positive autoregulation alters the robustness of the switch for bistable behaviour. Here we define a robust system as a device that can withstand fluctuations in parameter values and still produce the desired behaviour (parametric robustness). Feedback loops are well known key regulatory motifs~\autocite{Brandman:2005ci}. Although negative feedback loops are essential for homeostasis and buffering~\autocite{Thomas:1995id} and can increase robustness to extrinsic noise sources, we focussed on the addition of positive feedback because this has been shown to increase robustness in other systems \autocite{XXX}. We use Stability Finder to compare the two models, and determine whether its worthwhile building a bistable circuit with added positive feedback.
 %StabilityFinder allows us to study more complex systems and to take stochasticity into account. This is relevant in a biological systems in which realistic models tend to involve many species and interactions and where small molecule numbers and external noise are non negligible. 
 
-In order to study the switch system in the most realistic way, we avoid using the quasi-steady state approximation (QSSA) that is often used in modelling the toggle switch. Using mass action, this changes the two-equation system used in~\textcite{Lu:2014kc}~\autocite{Lu:2014kc} into a system of 18 equations and 7 parameters in the classical switch case. These are shown in the Supplementary Information.% Using mass action, the two models representing the  C switch with no autoregulation and DP switch are shown in Figure~\ref{fig:fig4} {\color{red} No they're not}.  
+In order to study the switch system in a more realistic way, I developed an extension to the switches used in Sections~\ref{sec:gard} and~\ref{sec:lu}. This new set of switches does not use the \acrfull{qssa} that is often used in modelling the toggle switch. Using mass action, this changes the two-equation system used in~\textcite{Gardner:2000vha} and~\textcite{Lu:2014kc} into a system of 8 \acrshort{ode}s and 10 parameters in the classical switch case with no autoregulation (model \acrshort{cs-ma}). The equations describing the system are shown below. 
+$$
+\begin{array}{cccc}
+      \textrm{gA}\stackrel{\textrm{ge}}{\longrightarrow}\textrm{gA} + \textrm{A} \\
+      \textrm{gB}\stackrel{\textrm{ge}}{\longrightarrow}\textrm{gB} + \textrm{B} \\
+      \textrm{A} + \textrm{A} \stackrel{\textrm{dim}}{\longrightarrow}\textrm{A2} \\
+      \textrm{A2} \stackrel{\textrm{dim r}}{\longrightarrow}\textrm{A} + \textrm{A} \\
+      \textrm{B} + \textrm{B} \stackrel{\textrm{dim}}{\longrightarrow} \textrm{B2} \\
+      \textrm{B2} \stackrel{\textrm{dim\_r}}{\longrightarrow}\textrm{B} + \textrm{B} \\
+      \textrm{gA} + \textrm{B2} \stackrel{\textrm{rep}}{\longrightarrow}\textrm{B2gA} \\
+      \textrm{B2gA} \stackrel{\textrm{rep\_r}}{\longrightarrow}\textrm{B} + \textrm{gA} \\
+      \textrm{gB} + \textrm{A2} \stackrel{\textrm{rep}}{\longrightarrow}\textrm{A2gB} \\
+      \textrm{A2gB} \stackrel{\textrm{rep\_r}}{\longrightarrow}\textrm{A2} + \textrm{gB} \\
+      \textrm{A} \stackrel{\textrm{deg}}{\longrightarrow}\textrm{\O}\\
+      \textrm{B} \stackrel{\textrm{deg}}{\longrightarrow}\textrm{\O}\\
+      \textrm{A2} \stackrel{\textrm{deg\_dim}}{\longrightarrow} \textrm{\O}\\
+      \textrm{B2} \stackrel{\textrm{deg\_dim}}{\longrightarrow}\textrm{\O}\\
+\end{array}
+$$
+
+For the model with added double positive autoregulation (model \acrshort{dp-ma}) the following equations are added to the system: 
+
+$$
+\begin{array}{cccc} 
+    \textrm{A2} + \textrm{gA} \stackrel{\textrm{aut 1}}{\longrightarrow} \textrm{A2gA} \\
+    \textrm{A2gA} \stackrel{\textrm{aut 2}}{\longrightarrow} \textrm{A} + \textrm{A2gA}\\
+    \textrm{A2gA} \stackrel{\textrm{aut 3}}{\longrightarrow} \textrm{A2}+ \textrm{gA}  \\
+    \textrm{B2} + \textrm{gB} \stackrel{\textrm{aut 1}}{\longrightarrow} \textrm{B2gB} \\
+    \textrm{B2gB} \stackrel{\textrm{aut 2}}{\longrightarrow} \textrm{B} + \textrm{B2gB}\\
+    \textrm{B2gB} \stackrel{\textrm{aut 3}}{\longrightarrow} \textrm{B2}+ \textrm{gB}  \\
+\end{array}
+$$
+
+The \acrshort{ode}s describing the above switches are shown in Appendix (XXX). These models are too complex to be solved analytically and ideal for use in Stability Finder. Thus, I use Stability Finder and fit the models to a bistable behaviour. The two models used and the resulting phase plots are shown in Figure~\ref{fig:ma-cs-dp-phase} and the posterior distributions  obtained are shown in Figure~\ref{fig:ma-sym-det-post}. 
+
+\begin{figure*}[htbp]
+\begin{center}
+\includegraphics[scale=0.7]{chapterStabilityFinder/images/MA-cs-dp-phase.png}
+\caption[LoF caption]{ \label{fig:ma-cs-dp-phase}: The two mass action switches I developed. (A) The simple switch \acrshort{cs-ma} (B) The switch with double positive autoregulation \acrshort{dp-ma}. (C, D) The phase plots of 100 particles simulated from the posterior distributions of the bistable mass action switches.}
+\end{center}
+\end{figure*}
+
+
+\begin{figure*}[htbp]
+\begin{center}
+\includegraphics[width=\textwidth]{chapterStabilityFinder/images/MA_sym_post.png}
+\caption[LoF caption]{ \label{fig:ma-sym-det-post}: The posterior distributions of the symmetric deterministic (A) \acrshort{cs-ma} and (B) \acrshort{dp-ma} switches. (C) Robustness comparison of the two models. }
+\end{center}
+\end{figure*}
+\clearpage
+
+By examining the posterior distributions shown in Figure~\ref{fig:ma-sym-det-post} we see that the \acrshort{cs-ma} is much more constrained that the \acrshort{dp-ma} switch. We find that gene expression must be low for bistability to occur in the \acrshort{cs-ma} model but there is no such constraint in the \acrshort{dp-ma} model. We also find that the monomerization rate $dim\_r$ and the monomer degradation rate $deg$ must both be larger than 2. This is not found in the \acrshort{dp-ma} model. 
+
+Next I compare the two models for robustness using the ellipsoid method described in Section~\ref{sec:cal_rob}. We find that the addition of positive feedback loops greatly increases the system's robustness to parameter fluctuations as seen in Figure~\ref{fig:ma-sym-det-post}C. Adding positive feedback loops to the model allows it to be bistable over a greater range of parameter values. This indicates that small fluctuations in parameters in the cellular environment will not flip the switch and thus makes it more suitable for use in synthetic biological applications where spontaneous and undesired switching might be detrimental. This makes it a better candidate for building new synthetic devices based on the toggle switch design. We identified the parameter region within which these models are bistable, information that is important when building such a device in the lab.
+
+The models used in the above analysis assume the parameters for equivalent reactions are equal. This is a constraint that simplifies the model. When building this model into a synthetic system in the lab, this assumption cannot be easily justified. When choosing promoters to build this synthetic system two promoters can be chosen to have similar strength but it will not necessarily be identical.  In order to study how this might affect the results, I further eliminate modelling assumptions made in the toggle switch by making the parameters representing gene expression ($ge$) and repression ($rep$), as well as the protein degradation parameters asymmetric (independent parameters for each protein, versus fixed to be equal). We find that the features of the posterior distributions of the symmetric and the asymmetric models remain the same. The posterior distribution of the asymmetric \acrshort{cs-ma} model was more constrained than the posterior distribution of the asymmetric \acrshort{dp-ma} model. 
+
+We further study the asymmetric mass action models by examining the \acrshort{qssa} aproximation. As stated above, the \acrshort{qssa} is a common analytical tool for model simplification. By examining the posterior distributions of the asymmetric \acrshort{cs-ma} and \acrshort{dp-ma} models we find that the \acrshort{qssa} does not necessarily hold for these models (Figure~\ref{fig:ma_qssa}). That is, the systems function as switches even when the \acrshort{qssa} does not hold. These assumptions, necessary for the reduction of the model, are therefore not always justified in this case. 
 
 \begin{figure*}[htbp]
 \begin{center}
 \includegraphics[scale=0.4]{chapterStabilityFinder/images/MA_QSSA.png}
-\caption[LoF caption]{ \label{fig:fig5}: (A) Separating transcription and translation in the mass action model. (B) Transcriptional bursting does not allow for a bistable switch. (C) The Quassi Steady state approximation assumption that the dimerization reaction ($dim$) is much faster than its reverse ($dim\_r$) cannot be justified here. The median of the data (red) lies below the x=1 line (black dashed line) which indicates that in the majority of the particles in the posterior $\frac{dim}{dim\_r} < 1$  (D) No difference was found in the robustness to parameter fluctuations for the two models tested here.}
+\caption[LoF caption]{ \label{fig:ma_qssa}: The \acrshort{qssa} that the dimerization reaction ($dim$) is much faster than its reverse ($dim\_r$) cannot be justified here. The median of the data (red) lies below the x=1 line (black dashed line) which indicates that in the majority of the particles in the posterior $\frac{dim}{dim\_r} < 1$}
 \end{center}
 \end{figure*}
 \clearpage
 
 
-Given the posterior distributions shown in Figure~\ref{fig:fig4}, we find that the parameter for transcription factor degradation ($deg$) has to be high, a result that reflects the findings for the Lu models above {\color{red} Do we really see that??}. We also find that the addition of positive feedback loops greatly increases the system's robustness to parameter fluctuations as seen in Figure~\ref{fig:fig4}D. Adding positive feedback loops to the model allows it to be bistable over a greater range of parameter values, but only when the system is symmetric. When this constraint is removed we no longer see a difference in robustness between the CS-MA and DP-MA models. {\color{red} What does this mean? }
+%I further investigated modelling assumptions by separating transcription and translation into two separate steps. This makes the models more realistic but also more complex and Stability Finder is ideal for analysing them.  It is known that transcription in prokaryotes occurs in bursts~\cite{Golding:2005uv} so an interesting question is whether transcriptional bursting has an effect on bistability. To investigate this I added a multiplicative term to the \acrshort{ode}s for mRNA production. Using Stability Finder on these models we find that transcriptional bursting does not affect a system's ability to be bistable. 
+
+\subsubsection{Robustness prior dependence}
+
+An important aspect of robustness that I must address is its dependence on the prior distributions. From Equation~\ref{eq:final_bayes} we can expect that the measure for robustness will depend on the size of the prior. 
+
+I use the symmetric \acrshort{cs-ma} model and Stability Finder to find the posterior distribution that makes this model bistable. This is repeated using the same model, but with larger prior ranges. The priors used are shown in Table~\ref{tab:prior_study}. The posterior distributions are shown in Figure~\ref{fig:priors_matter}A and B. We find that for this model, if the prior ranges are very large, the robustness of the model will be much larger. If one of the parameters is able to have a larger value, then the constraints on the rest of the parameters are not necessary any more. 
+
+In order to test this observation, I test each parameter separately. All the priors are kept the same as the priors in the very narrow case (Figure~\ref{fig:priors_matter}A), except for one. Each run, one of the parameters has priors equal to the priors used in the wide case, Figure~\ref{fig:priors_matter}B. The priors are summarised in Table~\ref{tab:prior_study}. Every time the robustness is calculated using the ellipsoid method. Since robustness is only meaningful when used in relation to another model, the robustness of the \acrshort{cs-ma} model is compared to the robustness of the \acrshort{dp-ma} model used in Figure~\ref{fig:ma-sym-det-post}. The same posterior distribution of the \acrshort{dp-ma} model as used in Figure~\ref{fig:ma-sym-det-post} are used every time. For the parameters this model shares with the \acrshort{cs-ma} model I used the priors used in the narrow case in Table~\ref{tab:prior_study}, for their shared parameters. We can see from Figure~\ref{fig:priors_matter}C that when the priors for $ge$ are much larger, the Bayes factor increases significantly. This is due to the fact that when the rest of the parameters are constrained to being within a very narrow range, gene expression must be small for bistability to occur. Robustness of the \acrshort{cs-ma} model is increased when the priors for degradation and dimerisation have wider priors (Figure~\ref{fig:priors_matter}C).
+ 
+
+\begin{figure*}[h]
+\begin{center}
+\includegraphics[width=\textwidth]{chapterStabilityFinder/images/priors_matter.png}
+\caption[LoF caption]{ \label{fig:priors_matter}: The volume of the priors has an effect on the posterior distribution obtained. (A) The \acrshort{cs-ma} model with narrow priors and (B) the \acrshort{cs-ma} with wide priors. (C) The increase in robustness seen is due to the gene expression parameter being able to be large.}
+\end{center}
+\end{figure*}
+\clearpage
+ 
+In Section~\ref{sec:ma_sw} we found that the \acrshort{dp-ma} is more robust than the \acrshort{cs-ma} model. Here I want to test whether this result still remains when the priors of the models are made wider. I change the prior ranges of both models are measure their robustness each time. The results are shown in Figure~\ref{fig:priors_matter2}A. We find that the robustness measure changed significantly as we change the priors of the models. When both models have very narrow or when both models have wide priors then their robustness measures are very similar. When both models have vary narrow priors the Bayes factor is equal to 1.32 and when the priors are wide the Bayes factor is equal to 1.06. In both these cases there is no significant difference in robustness between the two models. When the priors for both models are narrow the Bayes factor is equal to 2.25. Most notably, when the priors for the \acrshort{cs-ma} model are very narrow and the priors of the \acrshort{dp-ma} model are narrow, the Bayes factor is at 
+
+
+I further analyse the effect of the prior distribution on the robustness by varying the prior ranges of both models, \acrshort{cs-ma} and \acrshort{dp-ma}. Three sets of priors were used: very narrow priors are the priors used in Figure~\ref{fig:ma-sym-det-post}A, wide priors which are the priors used in Figure~\ref{fig:ma-sym-det-post}B and narrow priors which are intermediate between the two. The above sets of priors refer to the parameters the two models have in common which are set to be the same. Nevertheless this does not have to be the case so I also use priors where the common parameters do not have identical priors, but one is always a subset of the other. 
+
+
+We see in Figure~\ref{fig:priors_matter2}A that the robustness for both 
+
+
+\begin{figure*}[h]
+\begin{center}
+\includegraphics[width=\textwidth]{chapterStabilityFinder/images/priors_matter_2.png}
+\caption[LoF caption]{ \label{fig:priors_matter2}:}
+\end{center}
+\end{figure*}
+It is therefore important to note that when talking about the robustness of a model we must always refer to its robustness given a set of priors. This robustness measure cannot be generalised to the model, but it must always be referred to as the robustness of a model given these priors. 
+
+
+\begin{table}[htbp]
+\centering
+\caption{Priors used for studying the effect of priors to robustness}
+\label{tab:prior_study}
+\begin{tabular}{@{}llll@{}}
+\toprule
+         & Very narrow & Narrow  & Wide    \\ \midrule
+ge       & 5 - 10      & 1 - 10  & 1 - 100 \\
+rep      & 2 - 10      & 1 - 10  & 1 - 100 \\
+rep\_r   & 0 - 5       & 1 - 10  & 0 - 10  \\
+dim      & 5 - 10      & 1 - 10  & 0 - 10  \\
+dim\_r   & 0 - 5       & 0 - 5   & 0 - 10  \\
+deg      & 1 - 5       & 0 - 10  & 0 - 100 \\
+deg\_dim & 0 - 0.1     & 0 - 0.5 & 0 - 1   \\ \bottomrule
+\end{tabular}
+\end{table}
 
 
 
+\clearpage
 %This indicates that small fluctuations in parameters in the cellular environment will not affect the system's ability to be bistable, and thus makes it more suitable for use in synthetic biological applications where a very constrained parameter set can be too restrictive.% This makes it a better candidate for building new synthetic devices based on the toggle switch design.
 
 %We identified the parameter region within which these models are bistable, information that is important when building such a device in the lab. In the future, by selecting the system components accordingly, the parameter values can be adjusted \textit{in vivo}. For example, the desired level of gene expression can be accomplished by selecting the appropriate RBS sequence~\autocite{Salis:2009gk}. Another method to modify the parameter values \textit{in vivo} is to select the promoter to have the strength corresponding to the levels of gene expression and repression desired. Activity of each promoter can be measured and standardised~\autocite{Kelly:2009bj} making this process possible. For a system requiring more than one promoter, these can be efficiently selected from a promoter library using a genetic algorithm~\autocite{Wu:2011bq}. These standardised interchangeable components with known sequence and activity~\autocite{Kelly:2009bj,Canton:2008fv} can be selected and used to construct a desired system and replicate the parameter values found using StabilityFinder.
-
+\subsubsection{Multistability in the MA switces}
 We find that in the stochastic case, both the simple switch, S-MA, and positive autoregulation switch, DP-MA, are capable of both bistable and tristable behaviour. The fact that tristability can occur in the classical model is consistent with the effect of small molecule numbers; if gene expression remains low, it provides the opportunity for small number effects to be observed, and the third steady state to stabilise \autocite{Ma:2012dt}. In order to ensure that the tristable switches found in the stochastic case are truly tristable, we re-sample the posterior distributions and simulate to steady state. If the resulting phase plots are tristable then we know that the posterior truly represents tristability. As can be seen in Figure~\ref{fig:fig7}B, differences in the parameter values are observed between the bistable and tristable switches, in both CS-MA and DP-MA models. The design principles for both the CS-MA model and the DP-MA model are summarised in Table~\ref{tab:des_prin}
 
-\begin{table}[]
+\begin{table}[htbp]
 \centering
 \caption{Design principles of bistable and tristable switches}
 \label{tab:des_prin}
@@ -740,25 +905,17 @@ dimer degradation   & Low         & -           & Low         & -           \\\b
 \end{table}
 
 
-\begin{figure*}[h]
-\begin{center}
-\includegraphics[scale=0.5]{chapterStabilityFinder/images/MA_sym_post.png}
-\caption[LoF caption]{ \label{fig:fig4}: Adding positive feedback increases robustness to parameter fluctuations. We compare the posterior distributions of the simple mass action switch and the switch with added double positive autoregulation (A). The two models were both capable of bistable behaviour (B). The two posterior distributions are shown in (C). Comparing the functional region $F$ of the posterior distributions (D) we find that there is a five-fold increase in robustness when positive autoregulation is added. This is not the case for the asymmetric switch in which there is no significant difference in robustness between the CS-MA and DP-MA models.}
-\end{center}
-\end{figure*}
-\clearpage
-
-\begin{figure*}[h]
+\begin{figure*}[htbp]
 \begin{center}
 \includegraphics[scale=0.5]{chapterStabilityFinder/images/MA_stoch_design_princ.png}
 \caption[LoF caption]{ \label{fig:fig7}: Tristability is possible in the mass action toggle switch models only when simulated stochastically. (A) the simple toggle switch with no autoregulation can be both bistable and tristable. The two posteriors are shown, where the posterior distribution of the bistable switch is shown in red and of the tristable switch in blue. From the posterior distribution we can deduce the the dimerization parameter must be small for tristability to occur but large for bistability. The switch with double positive autoregulation and its posterior distributions for the bistable and tristable case are shown in (B). A sample phase plot of a stochastic tristable and bistable mass action switch is shown in (C). Comparing the robustness of the switch with and without positive autoregulation, we don't find a significant difference (D).}
 \end{center}
 \end{figure*}
+\clearpage
+
+
 
 \section{Discussion}
-
-
-
 
 We have developed an algorithm that can identify the parameter regions necessary for a model to achieve a given number of stable steady states. The novelty in our framework over existing methodology is that complex models can be analyzed assuming both deterministic and stochastic dynamics. We have shown that the algorithm can be used to infer parameter ranges and compare robustness between models. We found that adding positive feedback increases the robustness of a toggle switch model to parameter fluctuations. We also found that stochastic modelling can enable a model to achieve stabilities not possible in the deterministic case. We uncovered the design principles that make a tristable switch and finally we found that a three-node switch is capable of hexastability.
 

@@ -1,24 +1,24 @@
 [0] Config.pm:324> INFO - This is Biber 2.1
-[0] Config.pm:327> INFO - Logfile is '/Users/miriam/work/PhD/Manuscripts/PhDthesis/SF_only.blg'
-[50] biber-darwin:276> INFO - === Tue Jun 14, 2016, 01:02:40
-[51] Biber.pm:333> INFO - Reading '/Users/miriam/work/PhD/Manuscripts/PhDthesis/SF_only.bcf'
-[168] Biber.pm:645> INFO - Found 24 citekeys in bib section 0
-[193] Biber.pm:2977> INFO - Processing section 0
-[212] Biber.pm:3115> INFO - Looking for bibtex format file 'switches_ref.bib' for section 0
-[217] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
-[224] bibtex.pm:895> INFO - Found BibTeX data source 'switches_ref.bib'
-[256] Utils.pm:146> WARN - I didn't find a database entry for 'Lu:2009ez' (section 0)
-[257] Utils.pm:146> WARN - I didn't find a database entry for 'Conradi:2007jo' (section 0)
-[257] Utils.pm:146> WARN - I didn't find a database entry for 'Banaji:2010fh' (section 0)
-[257] Utils.pm:146> WARN - I didn't find a database entry for 'Feliu:2013dz' (section 0)
-[257] Utils.pm:146> WARN - I didn't find a database entry for 'Sisson:wf' (section 0)
-[257] Utils.pm:146> WARN - I didn't find a database entry for 'XXX' (section 0)
-[257] Utils.pm:146> WARN - I didn't find a database entry for 'Ghaffarizadeh:2014bt' (section 0)
-[257] Utils.pm:146> WARN - I didn't find a database entry for 'Cinquin:2005go' (section 0)
-[480] UCollate.pm:66> INFO - Overriding locale 'en-GB' defaults 'variable = shifted' with 'variable = non-ignorable'
-[480] UCollate.pm:66> INFO - Overriding locale 'en-GB' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[480] Biber.pm:2854> INFO - Sorting list 'nyt' of type 'entry' with scheme 'nyt' and locale 'en-GB'
-[480] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-GB'
-[529] bbl.pm:505> INFO - Writing '/Users/miriam/work/PhD/Manuscripts/PhDthesis/SF_only.bbl' with encoding 'UTF-8'
-[531] bbl.pm:596> INFO - Output to /Users/miriam/work/PhD/Manuscripts/PhDthesis/SF_only.bbl
-[532] Biber.pm:106> INFO - WARNINGS: 8
+[1] Config.pm:327> INFO - Logfile is '/Users/miriam/work/PhD/Manuscripts/PhDthesis/SF_only.blg'
+[108] biber-darwin:276> INFO - === Wed Jun 15, 2016, 21:10:02
+[108] Biber.pm:333> INFO - Reading '/Users/miriam/work/PhD/Manuscripts/PhDthesis/SF_only.bcf'
+[226] Biber.pm:645> INFO - Found 22 citekeys in bib section 0
+[331] Biber.pm:2977> INFO - Processing section 0
+[471] Biber.pm:3115> INFO - Looking for bibtex format file 'switches_ref.bib' for section 0
+[477] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
+[483] bibtex.pm:895> INFO - Found BibTeX data source 'switches_ref.bib'
+[561] Utils.pm:146> WARN - I didn't find a database entry for 'Lu:2009ez' (section 0)
+[561] Utils.pm:146> WARN - I didn't find a database entry for 'Conradi:2007jo' (section 0)
+[561] Utils.pm:146> WARN - I didn't find a database entry for 'Banaji:2010fh' (section 0)
+[561] Utils.pm:146> WARN - I didn't find a database entry for 'Feliu:2013dz' (section 0)
+[562] Utils.pm:146> WARN - I didn't find a database entry for 'Sisson:wf' (section 0)
+[562] Utils.pm:146> WARN - I didn't find a database entry for 'XXX' (section 0)
+[562] Utils.pm:146> WARN - I didn't find a database entry for 'Ghaffarizadeh:2014bt' (section 0)
+[562] Utils.pm:146> WARN - I didn't find a database entry for 'Cinquin:2005go' (section 0)
+[844] UCollate.pm:66> INFO - Overriding locale 'en-GB' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[844] UCollate.pm:66> INFO - Overriding locale 'en-GB' defaults 'variable = shifted' with 'variable = non-ignorable'
+[844] Biber.pm:2854> INFO - Sorting list 'nyt' of type 'entry' with scheme 'nyt' and locale 'en-GB'
+[844] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-GB'
+[889] bbl.pm:505> INFO - Writing '/Users/miriam/work/PhD/Manuscripts/PhDthesis/SF_only.bbl' with encoding 'UTF-8'
+[891] bbl.pm:596> INFO - Output to /Users/miriam/work/PhD/Manuscripts/PhDthesis/SF_only.bbl
+[891] Biber.pm:106> INFO - WARNINGS: 8

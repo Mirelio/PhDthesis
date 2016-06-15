@@ -2279,17 +2279,14 @@
     <bcf:citekey order="38">Guantes:2008gs</bcf:citekey>
     <bcf:citekey order="39">Ghaffarizadeh:2014bt</bcf:citekey>
     <bcf:citekey order="39">Cinquin:2005go</bcf:citekey>
-    <bcf:citekey order="40">Brandman:2005ci</bcf:citekey>
-    <bcf:citekey order="41">Thomas:1995id</bcf:citekey>
-    <bcf:citekey order="42">XXX</bcf:citekey>
-    <bcf:citekey order="43">Lu:2014kc</bcf:citekey>
-    <bcf:citekey order="44">Lu:2014kc</bcf:citekey>
-    <bcf:citekey order="45">Ma:2012dt</bcf:citekey>
-    <bcf:citekey order="46">Salis:2009gk</bcf:citekey>
-    <bcf:citekey order="47">Kelly:2009bj</bcf:citekey>
-    <bcf:citekey order="48">Wu:2011bq</bcf:citekey>
-    <bcf:citekey order="49">Kelly:2009bj</bcf:citekey>
-    <bcf:citekey order="49">Canton:2008fv</bcf:citekey>
+    <bcf:citekey order="40">Gardner:2000vha</bcf:citekey>
+    <bcf:citekey order="41">Lu:2014kc</bcf:citekey>
+    <bcf:citekey order="42">Ma:2012dt</bcf:citekey>
+    <bcf:citekey order="43">Salis:2009gk</bcf:citekey>
+    <bcf:citekey order="44">Kelly:2009bj</bcf:citekey>
+    <bcf:citekey order="45">Wu:2011bq</bcf:citekey>
+    <bcf:citekey order="46">Kelly:2009bj</bcf:citekey>
+    <bcf:citekey order="46">Canton:2008fv</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nyt" type="entry" sortscheme="nyt">
   <bcf:sorting>

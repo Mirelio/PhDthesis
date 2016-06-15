@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.10.1)  14 JUN 2016 01:03
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.10.1)  15 JUN 2016 21:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2038,14 +2038,14 @@ Package biblatex Warning: The following entry could not be found
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
-(biblatex)                Lu:2009ez
+(biblatex)                Conradi:2007jo
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
-(biblatex)                Banaji:2010fh
+(biblatex)                Ghaffarizadeh:2014bt
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
@@ -2059,14 +2059,14 @@ Package biblatex Warning: The following entry could not be found
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
-(biblatex)                Conradi:2007jo
+(biblatex)                Banaji:2010fh
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
-(biblatex)                Ghaffarizadeh:2014bt
+(biblatex)                Lu:2009ez
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
@@ -2177,117 +2177,122 @@ LaTeX Warning: Command \textgreater invalid in math mode on input line 167.
 [6]
 File: chapterStabilityFinder/images/abcsmc_ex.pdf Graphic file (type QTm)
  <use  "chapterStabilityFinder/images/abcsmc_ex.pdf" > [7]
-Overfull \hbox (24.91255pt too wide) in paragraph at lines 231--232
+LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
+(Font)              scaled to size 8.03735pt on input line 218.
+LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
+(Font)              scaled to size 6.02802pt on input line 218.
+ [8
+
+] [9]
+Overfull \hbox (24.91255pt too wide) in paragraph at lines 281--282
 \EU1/LinuxLibertineO(0)/m/n/10.95 Python package, and can be downloaded from[][]$[][][][][] [] [] [] [][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][][][][][][][][][][] []
  []
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 249.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 299.
 
-[8
-
-] [9]
+[10]
 File: chapterStabilityFinder/images/SF_algo_overv.png Graphic file (type QTm)
  <use  "chapterStabilityFinder/images/SF_algo_overv.png" >
-Overfull \hbox (84.76144pt too wide) in paragraph at lines 261--262
+Overfull \hbox (84.76144pt too wide) in paragraph at lines 311--312
  [] 
  []
 
-[10
+[11
 
 ]
-LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 8.03735pt on input line 289.
-LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 6.02802pt on input line 289.
 File: chapterStabilityFinder/images/LHS.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/images/LHS.png" > [11
+ <use  "chapterStabilityFinder/images/LHS.png" > [12
 
-] [12] [13
+] [13] [14
 
-] [14]
+] [15]
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 345.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 395.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 345.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 395.
 
-[15] [16] [17] [18
+[16] [17] [18] [19
 
 ]
 File: chapterStabilityFinder/images/ex1_sum.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/images/ex1_sum.png" > [19] [20]
+ <use  "chapterStabilityFinder/images/ex1_sum.png" > [20] [21]
 File: chapterStabilityFinder/images/ex4_summ.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/images/ex4_summ.png" > [21
+ <use  "chapterStabilityFinder/images/ex4_summ.png" > [22
 
-] [22] [23
+] [23] [24
 
 ]
-Overfull \hbox (24.4712pt too wide) in paragraph at lines 500--501
+Overfull \hbox (24.4712pt too wide) in paragraph at lines 551--552
 []\EU1/LinuxLibertineO(0)/m/n/10.95 These results agree with the results reported by []Gardner, Cantor, & Collins ([][]2000[][]) ([]Gard-
  []
 
 File: chapterStabilityFinder/images/gardner_model.png Graphic file (type QTm)
 <use  "chapterStabilityFinder/images/gardner_model.png" >
 File: chapterStabilityFinder/images/gardner_posteriors.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/images/gardner_posteriors.png" > [24] [25] [26]
-Overfull \hbox (0.10652pt too wide) in paragraph at lines 529--530
+ <use  "chapterStabilityFinder/images/gardner_posteriors.png" > [25] [26] [27]
+Overfull \hbox (0.10652pt too wide) in paragraph at lines 581--582
 \EU1/LinuxLibertineO(0)/m/n/10.95 Next I analyzed an extension of the Gardner switch model developed by []Lu, Onuchic,
  []
 
 File: chapterStabilityFinder/images/lu_bifurc.png Graphic file (type QTm)
-<use  "chapterStabilityFinder/images/lu_bifurc.png" > [27
+<use  "chapterStabilityFinder/images/lu_bifurc.png" > [28
 
-] [28]
+] [29]
 File: chapterStabilityFinder/images/LU_diagrams.png Graphic file (type QTm)
  <use  "chapterStabilityFinder/images/LU_diagrams.png" >
 File: chapterStabilityFinder/images/lu_paper_post.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/images/lu_paper_post.png" > [29
+ <use  "chapterStabilityFinder/images/lu_paper_post.png" > [30
 
-] [30] [31]
+] [31] [32]
 File: chapterStabilityFinder/images/Lu_234.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/images/Lu_234.png" > [32
+ <use  "chapterStabilityFinder/images/Lu_234.png" > [33
 
-] [33] [34]
+] [34] [35]
 File: chapterStabilityFinder/images/LU-234-phase-all.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/images/LU-234-phase-all.png" > [35]
+ <use  "chapterStabilityFinder/images/LU-234-phase-all.png" > [36]
 File: chapterStabilityFinder/images/lu_6ss.png Graphic file (type QTm)
  <use  "chapterStabilityFinder/images/lu_6ss.png" >
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[36
+[37
 
-] [37]
-File: chapterStabilityFinder/images/MA_QSSA.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/images/MA_QSSA.png" > [38
+] [38] [39
 
-] [39]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 743.
-
+]
+File: chapterStabilityFinder/images/MA-cs-dp-phase.png Graphic file (type QTm)
+ <use  "chapterStabilityFinder/images/MA-cs-dp-phase.png" >
 File: chapterStabilityFinder/images/MA_sym_post.png Graphic file (type QTm)
-<use  "chapterStabilityFinder/images/MA_sym_post.png" >
-Overfull \hbox (53.37527pt too wide) in paragraph at lines 760--761
- [] 
- []
+ <use  "chapterStabilityFinder/images/MA_sym_post.png" > [40] [41]
+File: chapterStabilityFinder/images/MA_QSSA.png Graphic file (type QTm)
+ <use  "chapterStabilityFinder/images/MA_QSSA.png" > [42
 
+] [43]
+File: chapterStabilityFinder/images/priors_matter.png Graphic file (type QTm)
+ <use  "chapterStabilityFinder/images/priors_matter.png" >
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[40
+[44
 
-] [41]
+] [45]
+File: chapterStabilityFinder/images/priors_matter_2.png Graphic file (type QTm)
+ <use  "chapterStabilityFinder/images/priors_matter_2.png" > [46
+
+]
 File: chapterStabilityFinder/images/MA_stoch_design_princ.png Graphic file (type QTm)
  <use  "chapterStabilityFinder/images/MA_stoch_design_princ.png" >
-Overfull \hbox (54.82068pt too wide) in paragraph at lines 768--769
+Overfull \hbox (54.82068pt too wide) in paragraph at lines 924--925
  [] 
  []
 
-[42
+[47
 
-] [43]) [44] [45
+] [48] [49
+
+]) [50] [51
 
 ]
 
@@ -2299,7 +2304,7 @@ Package glossaries Warning: No \printglossary or \printglossaries found.
 (Remove \makeglossaries if you don't want any glossaries.)
 This document will not have a glossary.
 
-[46]
+[52]
 \tf@toc=\write10
 \openout10 = `SF_only.toc'.
 
@@ -2313,12 +2318,12 @@ Package logreq Info: Writing requests to 'SF_only.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 50651 strings out of 493706
- 865751 string characters out of 6145769
- 1565223 words of memory out of 5000000
- 53445 multiletter control sequences out of 15000+600000
+ 50674 strings out of 493706
+ 866260 string characters out of 6145769
+ 1567341 words of memory out of 5000000
+ 53465 multiletter control sequences out of 15000+600000
  9174 words of font info for 67 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 64i,13n,109p,10421b,1897s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,24n,109p,10421b,1924s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on SF_only.pdf (46 pages).
+Output written on SF_only.pdf (52 pages).
