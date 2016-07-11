@@ -1,0 +1,29 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {british}
+\contentsline {chapter}{\chapternumberline {1}Experimental characterisation of the genetic toggle switch}{3}{chapter.1}
+\contentsline {section}{\numberline {1.1}Introduction}{3}{section.1.1}
+\contentsline {section}{\numberline {1.2}Circuit overview}{3}{section.1.2}
+\contentsline {section}{\numberline {1.3}Methods}{5}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}\textit {Escherichia coli} culturing conditions}{5}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Inducers}{5}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}Glycerol stock preparation}{5}{subsection.1.3.3}
+\contentsline {subsection}{\numberline {1.3.4}Revival}{6}{subsection.1.3.4}
+\contentsline {subsection}{\numberline {1.3.5}Plasmid construction}{6}{subsection.1.3.5}
+\contentsline {subsubsection}{\numberline {1.3.5.1}Polymerase Chain Reaction}{6}{subsubsection.1.3.5.1}
+\contentsline {subsubsection}{\numberline {1.3.5.2}Digestion}{8}{subsubsection.1.3.5.2}
+\contentsline {subsubsection}{\numberline {1.3.5.3}Agarose gel electrophoresis}{8}{subsubsection.1.3.5.3}
+\contentsline {subsubsection}{\numberline {1.3.5.4}Ligation}{9}{subsubsection.1.3.5.4}
+\contentsline {subsubsection}{\numberline {1.3.5.5}Transfection}{9}{subsubsection.1.3.5.5}
+\contentsline {subsubsection}{\numberline {1.3.5.6}Colony \acrshort {pcr}}{10}{subsubsection.1.3.5.6}
+\contentsline {subsubsection}{\numberline {1.3.5.7}Sequencing}{11}{subsubsection.1.3.5.7}
+\contentsline {subsection}{\numberline {1.3.6}Growth rate measurement}{11}{subsection.1.3.6}
+\contentsline {subsection}{\numberline {1.3.7}Flow cytometry}{11}{subsection.1.3.7}
+\contentsline {subsubsection}{\numberline {1.3.7.1}Concentration assays}{11}{subsubsection.1.3.7.1}
+\contentsline {subsubsection}{\numberline {1.3.7.2}Time course assays}{12}{subsubsection.1.3.7.2}
+\contentsline {section}{\numberline {1.4}Growth rate investigation}{14}{section.1.4}
+\contentsline {section}{\numberline {1.5}Toggle switch concentration assays}{15}{section.1.5}
+\contentsline {section}{\numberline {1.6}Toggle switch time course assay}{19}{section.1.6}
+\contentsline {section}{\numberline {1.7}Discussion}{22}{section.1.7}
+\contentsline {section}{\numberline {1.8}Summary}{23}{section.1.8}
+\contentsline {chapter}{Bibliography}{25}{section*.16}

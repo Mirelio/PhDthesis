@@ -80,7 +80,7 @@
       <file>central.bcf</file>
     </requires>
     <requires type="editable">
-      <file>switches_ref.bib</file>
+      <file>thesis_n.bib</file>
     </requires>
   </external>
 </requests>

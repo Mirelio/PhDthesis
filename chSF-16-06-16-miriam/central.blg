@@ -1,0 +1,46 @@
+[0] Config.pm:324> INFO - This is Biber 2.1
+[1] Config.pm:327> INFO - Logfile is '/Users/miriam/work/PhD/Manuscripts/PhDthesis/central.blg'
+[55] biber-darwin:276> INFO - === Mon Jun  6, 2016, 15:45:15
+[55] Biber.pm:333> INFO - Reading '/Users/miriam/work/PhD/Manuscripts/PhDthesis/central.bcf'
+[185] Biber.pm:645> INFO - Found 61 citekeys in bib section 0
+[210] Biber.pm:2977> INFO - Processing section 0
+[230] Biber.pm:3115> INFO - Looking for bibtex format file 'switches_ref.bib' for section 0
+[258] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
+[265] bibtex.pm:895> INFO - Found BibTeX data source 'switches_ref.bib'
+[349] Utils.pm:146> WARN - I didn't find a database entry for 'Lu:2009ez' (section 0)
+[350] Utils.pm:146> WARN - I didn't find a database entry for 'Andrianantoandro:2006bi' (section 0)
+[350] Utils.pm:146> WARN - I didn't find a database entry for 'Heinemann:2006ht' (section 0)
+[350] Utils.pm:146> WARN - I didn't find a database entry for 'Agapakis:2009bt' (section 0)
+[350] Utils.pm:146> WARN - I didn't find a database entry for 'Batt:2007jl' (section 0)
+[350] Utils.pm:146> WARN - I didn't find a database entry for 'Chen:2011hj' (section 0)
+[350] Utils.pm:146> WARN - I didn't find a database entry for 'alon:2007b' (section 0)
+[351] Utils.pm:146> WARN - I didn't find a database entry for 'kaplan:1959' (section 0)
+[351] Utils.pm:146> WARN - I didn't find a database entry for 'konopka:2007' (section 0)
+[351] Utils.pm:146> WARN - I didn't find a database entry for 'XXX' (section 0)
+[351] Utils.pm:146> WARN - I didn't find a database entry for 'Deans:2007cya' (section 0)
+[351] Utils.pm:146> WARN - I didn't find a database entry for 'Kramer:2004kq' (section 0)
+[351] Utils.pm:146> WARN - I didn't find a database entry for 'Atkinson:2003tu' (section 0)
+[351] Utils.pm:146> WARN - I didn't find a database entry for 'Ellis:2009hka' (section 0)
+[352] Utils.pm:146> WARN - I didn't find a database entry for 'Khalil:2010hm' (section 0)
+[352] Utils.pm:146> WARN - I didn't find a database entry for 'Walczak:2005ds' (section 0)
+[352] Utils.pm:146> WARN - I didn't find a database entry for 'Biancalani:2015vya' (section 0)
+[352] Utils.pm:146> WARN - I didn't find a database entry for 'Mckay:2000lhs' (section 0)
+[352] Utils.pm:146> WARN - I didn't find a database entry for 'Ham:2008hh' (section 0)
+[352] Utils.pm:146> WARN - I didn't find a database entry for 'Friedland:2009ce' (section 0)
+[352] Utils.pm:146> WARN - I didn't find a database entry for 'Stricker:2008jqa' (section 0)
+[353] Utils.pm:146> WARN - I didn't find a database entry for 'Fung:2005jd' (section 0)
+[353] Utils.pm:146> WARN - I didn't find a database entry for 'Tigges:2009jx' (section 0)
+[353] Utils.pm:146> WARN - I didn't find a database entry for 'Basu:2004gn' (section 0)
+[353] Utils.pm:146> WARN - I didn't find a database entry for 'Conradi:2007jo' (section 0)
+[353] Utils.pm:146> WARN - I didn't find a database entry for 'Banaji:2010fh' (section 0)
+[353] Utils.pm:146> WARN - I didn't find a database entry for 'Feliu:2013dz' (section 0)
+[353] Utils.pm:146> WARN - I didn't find a database entry for 'Sisson:wf' (section 0)
+[353] Utils.pm:146> WARN - I didn't find a database entry for 'Ghaffarizadeh:2014bt' (section 0)
+[354] Utils.pm:146> WARN - I didn't find a database entry for 'Cinquin:2005go' (section 0)
+[795] UCollate.pm:66> INFO - Overriding locale 'en-GB' defaults 'variable = shifted' with 'variable = non-ignorable'
+[795] UCollate.pm:66> INFO - Overriding locale 'en-GB' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[795] Biber.pm:2854> INFO - Sorting list 'nyt' of type 'entry' with scheme 'nyt' and locale 'en-GB'
+[795] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-GB'
+[931] bbl.pm:505> INFO - Writing '/Users/miriam/work/PhD/Manuscripts/PhDthesis/central.bbl' with encoding 'UTF-8'
+[935] bbl.pm:596> INFO - Output to /Users/miriam/work/PhD/Manuscripts/PhDthesis/central.bbl
+[935] Biber.pm:106> INFO - WARNINGS: 30

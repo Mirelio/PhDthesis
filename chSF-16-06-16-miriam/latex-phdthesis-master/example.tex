@@ -1,0 +1,60 @@
+\documentclass[]{phdthesis}
+
+\usepackage{lipsum}
+
+\addbibresource{bibliography.bib}
+
+\degree{Doctor of Philosophy}
+\university{University College London}
+\title{A PhD thesis class for LaTeX}
+\author{Anne Example}
+\primarysupervisor{Prof. Ann Other}
+\secondarysupervisor{Dr. Sue Pervisor}
+
+\begin{document}
+
+% front matter
+\maketitle
+
+\begin{abstract}
+	A PhD thesis class for \LaTeX\ that attempts to follow the UCL thesis requirements. Currently only compilation with XeLaTeX/LuaLaTeX is supported.
+	
+	Copy the `phdthesis.sty` file to the directory containing the poster LaTeX file.
+\end{abstract}
+
+\tableofcontents*
+
+\listoffigures
+
+\listoftables
+
+\begin{acknowledgements}
+	I would like to thank my parents.
+\end{acknowledgements}
+
+% example content
+\chapter{Example chapter}
+
+\section{Example section}
+
+\begin{figure}[t]
+	\centering
+	\textcolor{gray}{\rule{6cm}{3cm}}
+	\caption{Example figure}
+\end{figure}
+
+This is a sentence \autocite{pervisor2015}. \lipsum[1-8] %filler text
+
+\begin{table}[t]
+	\centering
+	\begin{tabular}{ccc}
+		\toprule A&B&A \& B\\\midrule0&0&0\\1&0&0\\0&1&0\\1&1&1\\\bottomrule
+	\end{tabular}
+	\caption{Example table}
+\end{table}
+
+\lipsum[9-13] 
+
+\printbibliography
+
+\end{document}

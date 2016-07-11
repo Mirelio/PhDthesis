@@ -1,7 +1,59 @@
 \section{Introduction to ABC-SysBio}
+
+
+
+
+
+
+
 \section{Methods}
 \subsection{\acrshort{abc} for parameter estimation}
+
+
+
 \subsection{\acrshort{abc} for model selection}
+\subsection{Particle sampling}
+\label{sec:part_samp}
+For the first population, particles are sampled from the priors. Random samples are taken from the distribution specified by the user for each parameter. 
+
+For subsequent populations particles are sampled from the previous population. The weight of each particle in the previous population dictates the probability of it being sampled. The number of samples to be drawn is specified by the user in the input file.  
+
+\subsection{Perturbation}
+\label{sec:pertub}
+Each sampled particle is perturbed by a kernel defined by the distribution of the previous population, as developed by~\textcite{Toni:2009tr}. 
+
+\begin{align}
+K_p(\theta|\theta* ) =& \theta* + U(+s_p, -s_p)\text{, where:} \\
+s_p =& \frac{1}{2} \big (max(\theta_{p-1}) - min(\theta_{p-1}) \big )
+\end{align}
+
+If the \texttheta* falls out of the limits of the priors then the perturbation is rejected and repeated until an acceptable \texttheta* is obtained. This method is successful in perturbing the particles by a small amount in order to explore the parameter space, but can be slow to complete. 
+
+\subsection{Particle simulation}
+\label{sec:sim}
+Each particle is simulated using cuda-sim~\autocite{Zhou:2011hp}. The model is provided by the user in SBML format and is converted into CUDA\textsuperscript{\textregistered} code by cuda-sim. The model in CUDA\textsuperscript{\textregistered} code format can then be run on NVIDIA\textsuperscript{\textregistered}. CUDA\textsuperscript{\textregistered}. \acrshort{gpu}s. This allows the user to take advantage of the speed of parallelised simulations without any CUDA\textsuperscript{\textregistered} knowledge. 
+
+\subsection{Distance function}
+
+\subsection{Weight calculation}
+\label{sec:weight}
+For the first population the weights are all given a value of 1, and then normalised over the number of particles. For subsequent populations the weights of the particles are calculated by considering the weights of the previous population~\autocite{Toni:2009tr}. 
+
+\begin{align}
+w_{t}^{(i)} = \frac{P(\theta_{t}^{(i)})}{\sum_{j=1}^N w_{t-1}^{(j)} K_{t}(\theta_{t-1}^{(j)}, \theta_{t}^{(i)})} \text{ for n $\textgreater$  0}
+\end{align}
+	
+The weights are then normalised over the total number of particles. 
+    
+
+
+
+
+
+
+
+
+
 \section{Models of the genetic toggle switch}
 \section{Results}
 \subsection{Genetic toggle switch model selection}

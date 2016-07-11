@@ -1,0 +1,16 @@
+\BOOKMARK [0][-]{chapter.1}{ABC-Flow}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Introduction}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Methods}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{Results}{chapter.1}% 4
+\BOOKMARK [2][-]{subsection.1.3.1}{Distance\040Calculations}{section.1.3}% 5
+\BOOKMARK [2][-]{subsection.1.3.2}{Comparing\0401D\040and\0402D\040distances}{section.1.3}% 6
+\BOOKMARK [3][-]{subsubsection.1.3.2.1}{Normal\040distribution}{subsection.1.3.2}% 7
+\BOOKMARK [3][-]{subsubsection.1.3.2.2}{Uniform\040distribution}{subsection.1.3.2}% 8
+\BOOKMARK [3][-]{subsubsection.1.3.2.3}{Comparing\040uniform\040and\040normal\040distributions}{subsection.1.3.2}% 9
+\BOOKMARK [3][-]{subsubsection.1.3.2.4}{Bimodal\040distributions}{subsection.1.3.2}% 10
+\BOOKMARK [3][-]{subsubsection.1.3.2.5}{Comparing\040bimodal\040and\040normal\040distributions}{subsection.1.3.2}% 11
+\BOOKMARK [2][-]{subsection.1.3.3}{Applying\040ABC-Flow\040to\040simulated\040Gardner\040data}{section.1.3}% 12
+\BOOKMARK [2][-]{subsection.1.3.4}{Applying\040ABC-Flow\040to\040experimental\040toggle\040switch\040data}{section.1.3}% 13
+\BOOKMARK [3][-]{subsubsection.1.3.4.1}{atc\040induction}{subsection.1.3.4}% 14
+\BOOKMARK [3][-]{subsubsection.1.3.4.2}{iptg\040induction}{subsection.1.3.4}% 15
+\BOOKMARK [2][-]{subsection.1.3.5}{Conclusions}{section.1.3}% 16

@@ -1,0 +1,172 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.5 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{nyt}{nyt}
+    \entry{Cormack:1996gv}{article}{}
+      \name{author}{3}{}{%
+        {{hash=8e3e01d5c71a45ebe866733135bb07d5}{Cormack}{C\bibinitperiod}{Brendan\bibnamedelima P}{B\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+        {{hash=91548ee2e48911648757edefef80ac13}{Valdivia}{V\bibinitperiod}{Raphael\bibnamedelima H}{R\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+        {{hash=617c10dfb31c7c6577fb42bcdc9d478d}{Falkow}{F\bibinitperiod}{Stanley}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{cca524e9f97eae2d33db6b1f00866c6b}
+      \strng{fullhash}{cca524e9f97eae2d33db6b1f00866c6b}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelyear}{1996}
+      \field{labelmonth}{01}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Gene}
+      \field{month}{01}
+      \field{number}{1}
+      \field{title}{{FACS-optimized mutants of the green fluorescent protein (GFP)}}
+      \field{volume}{173}
+      \field{year}{1996}
+      \field{pages}{33\bibrangedash 38}
+      \range{pages}{6}
+    \endentry
+    \entry{Litcofsky:2012gr}{article}{}
+      \name{author}{5}{}{%
+        {{hash=92e93ab4f0e936b61054cf6bba7e140d}{Litcofsky}{L\bibinitperiod}{Kevin\bibnamedelima D}{K\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{hash=43071c0b48c25d7fb085e805b1a72316}{Afeyan}{A\bibinitperiod}{Raffi\bibnamedelima B}{R\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
+        {{hash=487f62edae8f89ee9263c6621c5a345d}{Krom}{K\bibinitperiod}{Russell\bibnamedelima J}{R\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=92c9da5e12d92243b836c2f608d777ab}{Khalil}{K\bibinitperiod}{Ahmad\bibnamedelima S}{A\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{hash=f0f74f0fbecb48e5c6604e8e3789d538}{Collins}{C\bibinitperiod}{James\bibnamedelima J}{J\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{738a3a952d1b458b14dbf08821b260ce}
+      \strng{fullhash}{a961cc9797f20e3e5d77698fbc8aa769}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelyear}{2012}
+      \field{labelmonth}{11}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature Methods}
+      \field{month}{11}
+      \field{number}{11}
+      \field{title}{{Iterative plug-and-play methodology for constructing and modifying synthetic gene networks.}}
+      \field{volume}{9}
+      \field{year}{2012}
+      \field{pages}{1077\bibrangedash 1080}
+      \range{pages}{4}
+    \endentry
+    \entry{Lutz:1997ti}{article}{}
+      \name{author}{2}{}{%
+        {{hash=8edc103b15d110e5b963fc8d2fadfed0}{Lutz}{L\bibinitperiod}{R}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=f7d5ae6b3064402f6bb159a9ca2312fb}{Bujard}{B\bibinitperiod}{H}{H\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b121579b11378108f4dece9ce7755324}
+      \strng{fullhash}{b121579b11378108f4dece9ce7755324}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelyear}{1997}
+      \field{labelmonth}{03}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nucleic Acids Research}
+      \field{month}{03}
+      \field{number}{6}
+      \field{title}{{Independent and tight regulation of transcriptional units in Escherichia coli via the LacR/O, the TetR/O and AraC/I1-I2 regulatory elements.}}
+      \field{volume}{25}
+      \field{year}{1997}
+      \field{pages}{1203\bibrangedash 1210}
+      \range{pages}{8}
+    \endentry
+    \entry{Macdonald:2012el}{article}{}
+      \name{author}{3}{}{%
+        {{hash=649496a258210a85638ea27f9986cc2b}{Macdonald}{M\bibinitperiod}{Patrick\bibnamedelima J}{P\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=b6f25c2ea695f4385f6acab832194dfc}{Chen}{C\bibinitperiod}{Yan}{Y\bibinitperiod}{}{}{}{}}%
+        {{hash=e8547e6bdd8dfca7c8077b353daf57b5}{Mueller}{M\bibinitperiod}{Joachim\bibnamedelima D}{J\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{5bb1724625785832e19841bda56877f1}
+      \strng{fullhash}{5bb1724625785832e19841bda56877f1}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelyear}{2012}
+      \field{labelmonth}{02}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Analytical Biochemistry}
+      \field{month}{02}
+      \field{number}{1}
+      \field{title}{{Chromophore maturation and fluorescence fluctuation spectroscopy of fluorescent proteins in a cell-free expression system.}}
+      \field{volume}{421}
+      \field{year}{2012}
+      \field{pages}{291\bibrangedash 298}
+      \range{pages}{8}
+    \endentry
+    \entry{Shaner:2004vy}{article}{}
+      \name{author}{6}{}{%
+        {{hash=54ca7eb695391296657aa47c8a530d9a}{Shaner}{S\bibinitperiod}{Nathan\bibnamedelima C}{N\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+        {{hash=8c283cabb694a87cc95e2b6832d79bc7}{Campbell}{C\bibinitperiod}{Robert\bibnamedelima E}{R\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{hash=e79c74671dcc1e2053898b7dc9531df8}{Steinbach}{S\bibinitperiod}{Paul\bibnamedelima A}{P\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=97b8839dd2cba01286bed3f5b898b254}{Giepmans}{G\bibinitperiod}{Ben\bibnamedelimb N\bibnamedelima G}{B\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+        {{hash=208f94aae01650ea3ecf9248bcc6b066}{Palmer}{P\bibinitperiod}{Amy\bibnamedelima E}{A\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{hash=60bc2242671782c067c04f990be6ac64}{Tsien}{T\bibinitperiod}{Roger\bibnamedelima Y}{R\bibinitperiod\bibinitdelim Y\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{7487f883839b5d4d76d57e148c3f3d71}
+      \strng{fullhash}{34ac6a560c6e174493c6f982c8773dae}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelyear}{2004}
+      \field{labelmonth}{12}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature Biotechnology}
+      \field{month}{12}
+      \field{number}{12}
+      \field{title}{{Improved monomeric red, orange and yellow fluorescent proteins derived from Discosoma sp. red fluorescent protein.}}
+      \field{volume}{22}
+      \field{year}{2004}
+      \field{pages}{1567\bibrangedash 1572}
+      \range{pages}{6}
+    \endentry
+    \entry{SHIMOMURA:1962va}{article}{}
+      \name{author}{3}{}{%
+        {{hash=10f19ca02a9cf1488df89fc5771ef139}{Shimomura}{S\bibinitperiod}{O}{O\bibinitperiod}{}{}{}{}}%
+        {{hash=343c7b0d6d0df34f01e4614a6b90744d}{Johnson}{J\bibinitperiod}{F\bibnamedelima H}{F\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+        {{hash=e4b24fe83586de122a6f5f11fe7f075c}{Saiga}{S\bibinitperiod}{Y}{Y\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{6570cfa01f6b1990520fe7321fe59176}
+      \strng{fullhash}{6570cfa01f6b1990520fe7321fe59176}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelyear}{1962}
+      \field{labelmonth}{05}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Cellular and Comparative Physiology}
+      \field{month}{05}
+      \field{title}{{Extraction, purification and properties of aequorin, a bioluminescent protein from the luminous hydromedusan, Aequorea.}}
+      \field{volume}{59}
+      \field{year}{1962}
+      \field{pages}{223\bibrangedash 239}
+      \range{pages}{17}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

@@ -1,0 +1,32 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdftex 2015.10.2)  27 APR 2016 19:54
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterConclusions/ChConc.tex
+(/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterConclusions/ChConc.tex
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterConclusions/ChConc.tex:1: Undefined control sequence.
+l.1 \section
+            {Evaluation}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterConclusions/ChConc.tex:3: Undefined control sequence.
+l.3 \section
+            {Future work}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+)
+! Emergency stop.
+<*> ...pts/PhDthesis/chapterConclusions/ChConc.tex
+                                                  
+*** (job aborted, no legal \end found)
+
+!  ==> Fatal error occurred, no output PDF file produced!

@@ -1,0 +1,541 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdftex 2015.10.2)  11 JUL 2016 16:40
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex
+(/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:2: Undefined control sequence.
+l.2 \section
+            {Introduction to synthetic biology}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:4: Undefined control sequence.
+l.4 ...er organisms to perform new tasks~\autocite
+                                                  {Lu:2009ez,Andrianantoandr...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:4: Undefined control sequence.
+l.4 ... make a functional unit, a device~\autocite
+                                                  {Heinemann:2006ht}. A devi...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:4: Undefined control sequence.
+l.4 ...ms functions and produces outputs~\autocite
+                                                  {Andrianantoandro:2006bi}....
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:6: Undefined control sequence.
+l.6 ...ration of design and construction~\autocite
+                                                  {Agapakis:2009bt, Heineman...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:6: Undefined control sequence.
+l.6 ...s, modules and gates respectively~\autocite
+                                                  {Andrianantoandro:2006bi}.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:8: Undefined control sequence.
+l.8 ...sms to producing synthetic drugs ~\autocite
+                                                  {Holtz:2010bm} or creating...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:8: Undefined control sequence.
+l.8 ...reating new synthetic life forms ~\autocite
+                                                  {Agapakis:2009bt}. Despite...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:8: Undefined control sequence.
+l.8 ...edge of the cellular environment ~\autocite
+                                                  {Andrianantoandro:2006bi}.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:10: Undefined control sequence.
+l.10 ...n built, such as toggle switches \autocite
+                                                  {Gardner:2000vha, Kramer:2...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:10: Undefined control sequence.
+l.10 ..., Friedland:2009ce}, oscillators~\autocite
+                                                  {Stricker:2008jqa, Fung:20...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:10: Undefined control sequence.
+l.10 ...ges:2009jx} and pulse generators~\autocite
+                                                  {Basu:2004gn}, but larger ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:10: Undefined control sequence.
+l.10 ...cuits have proven more difficult \autocite
+                                                  {XXX}. The leap from build...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:10: Undefined control sequence.
+l.10 ... has yet to be made successfully~\autocite
+                                                  {Lu:2009ez}, and predictab...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:10: Undefined control sequence.
+l.10 ...it behaviour remains challenging \autocite
+                                                  {XXX}. Efforts to do so ar...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:10: Undefined control sequence.
+l.10 ... synthetic networks non-functional \textit
+                                                  {in vivo} \autocite{XXX}.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:10: Undefined control sequence.
+l.10 ... non-functional \textit{in vivo} \autocite
+                                                  {XXX}.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:12: Undefined control sequence.
+l.12 \section
+             {System design in synthetic biology}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:14: Undefined control sequence.
+l.14 ...c genetic devices non-functional~\autocite
+                                                  {Chen:2009ea}. Designing d...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:15: Undefined control sequence.
+l.15 ...ell known key regulatory motifs ~\autocite
+                                                  {Brandman:2005ci}. Negativ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:15: Undefined control sequence.
+l.15 ...l for homeostasis and buffering ~\autocite
+                                                  {Thomas:1995id} thus incre...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:15: Undefined control sequence.
+l.15 ...e multistationarity in a system ~\autocite
+                                                  {Thomas:1995id}. Incorpora...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:16: Undefined control sequence.
+l.16 ...n economically viable substance ~\autocite
+                                                  {Holtz:2010bm}. Network to...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:17: Undefined control sequence.
+l.17 ...e parameter values can be adjusted \textit
+                                                  {in vivo}. For example, th...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:17: Undefined control sequence.
+l.17 ...e will produce the desired rate ~\autocite
+                                                  {Holtz:2010bm}, a method d...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:17: Undefined control sequence.
+l.17 ...z:2010bm}, a method developed by~\textcite
+                                                  {Salis:2009gk}~\autocite{S...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:17: Undefined control sequence.
+l.17 ...loped by~\textcite{Salis:2009gk}~\autocite
+                                                  {Salis:2009gk}. Another me...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:17: Undefined control sequence.
+l.17 ...thod to tweak the parameter values \textit
+                                                  {in vivo} is to select the...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:17: Undefined control sequence.
+l.17 ...can be measured and standardised~\autocite
+                                                  {Kelly:2009bj} making this...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:17: Undefined control sequence.
+l.17 ...g a genetic algorithm created by~\textcite
+                                                  {Wu:2011bq} ~\autocite{Wu:...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:17: Undefined control sequence.
+l.17 ...created by~\textcite{Wu:2011bq} ~\autocite
+                                                  {Wu:2011bq}. These standar...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:17: Undefined control sequence.
+l.17 ...ic biology classes as BioBricks ~\autocite
+                                                  {Kelly:2009bj,Canton:2008f...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:19: Undefined control sequence.
+l.19 ...t synthetic networks was that of~\textcite
+                                                  {Batt:2007jl}~\autocite{Ba...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:19: Undefined control sequence.
+l.19 ...s that of~\textcite{Batt:2007jl}~\autocite
+                                                  {Batt:2007jl} where they e...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:19: Undefined control sequence.
+l.19 ...tisfied for all the parameters. ~\textcite
+                                                  {Chen:2009ea}~\autocite{Ch...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:19: Undefined control sequence.
+l.19 ...ameters. ~\textcite{Chen:2009ea}~\autocite
+                                                  {Chen:2009ea} used the fuz...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:19: Undefined control sequence.
+l.19 ...bust to cellular disturbances by~\textcite
+                                                  {Chen:2011hj}~\autocite{Ch...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:19: Undefined control sequence.
+l.19 ...bances by~\textcite{Chen:2011hj}~\autocite
+                                                  {Chen:2011hj}. The added v...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (28.16267pt too wide) in paragraph at lines 19--20
+[]\tenrm The first com-pu-ta-tional ap-proach for the tun-ing of ro-bust syn-thetic net-works was that of Batt:2007jl Batt:2007jl|
+
+\hbox(6.94444+1.94444)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm T
+.\tenrm h
+.\tenrm e
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.etc.
+
+[1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:21: Undefined control sequence.
+l.21 \section
+             {Introduction to Biochemical Modelling}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:22: Undefined control sequence.
+l.22 \subsection
+                {Graphical representation of biochemical systems}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:24: Undefined control sequence.
+l.24 ...ally. In a graph, as shown in Figure ~\ref
+                                                  {fig:Toggle switch example...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:24: Undefined control sequence.
+l.24 ...affects the transcription of a gene ~\cite
+                                                  {alon:2007b}. An arrow at ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:24: Undefined control sequence.
+l.24 ...transcription of the gene decreases ~\cite
+                                                  {alon:2007b}.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:26: Undefined control sequence.
+l.26 \subsection
+                {Deterministic and Stochastic modelling}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:28: Undefined control sequence.
+l.28 ...bout the behaviour of the system~\autocite
+                                                  {wilkinson:2006}. When mod...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:28: Undefined control sequence.
+l.28 ...the power of their stoichiometry~\autocite
+                                                  {wilkinson:2006}. This is ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:29: Undefined control sequence.
+l.29 ...les) by time-dependent variables~\autocite
+                                                  {deJong:2002ft}. Rate equa...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:29: Undefined control sequence.
+l.29 ...centrations of the other species~\autocite
+                                                  {deJong:2002ft}. When mode...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:29: Undefined control sequence.
+l.29 ...dge of a system of interesting size ~\cite
+                                                  {wilkinson:2006}. Determin...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:29: Undefined control sequence.
+l.29 ...assumptions that often are not met \textit
+                                                  {in vivo}. A cell is spati...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:29: Undefined control sequence.
+l.29 ...tions in the timing of processes~\autocite
+                                                  {deJong:2002ft}.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:31: Undefined control sequence.
+l.31 ...press the probability that at time \textit
+                                                  {t} the cell contains a nu...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:31: Undefined control sequence.
+l.31 ...ber of molecules of each species~\autocite
+                                                  {deJong:2002ft}. It takes ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:31: Undefined control sequence.
+l.31 ...ution of the state of the system~\autocite
+                                                  {wilkinson:2006}. The algo...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:31: Undefined control sequence.
+l.31 ...06}. The algorithm, developed by~\textcite
+                                                  {Gillespie:1977ww}~\autoci...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:31: Undefined control sequence.
+l.31 ...d by~\textcite{Gillespie:1977ww}~\autocite
+                                                  {Gillespie:1977ww} can be ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterBackgr/ChBackground.tex:32: Undefined control sequence.
+l.32 \begin
+           {enumerate}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[2] )</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on ChBackground.pdf (2 pages, 31392 bytes).
+PDF statistics:
+ 15 PDF objects out of 1000 (max. 8388607)
+ 9 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

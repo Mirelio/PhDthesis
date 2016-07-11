@@ -328,12 +328,21 @@
 % Other preamble
 %-------------------------------------------------------------------------------
 %Avoids the problem of latex trying to fill a page vertically before a float (and leaving massive blank spaces between paragraphs)
+
+\RequirePackage{pifont}% http://ctan.org/pkg/pifont
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
+
 \raggedbottom
 
 %have greek letters in text mode
-\usepackage{textgreek}
-
-
+\RequirePackage{textgreek}
+\RequirePackage{siunitx}
+\DeclareSIUnit{\molar}{M}
+\DeclareSIUnit{\unit}{U}
+\RequirePackage[version=3]{mhchem}
+%\usepackage{gensymb}
 \renewenvironment{abstract}{\cleardoublepage\chapter*{Abstract}\itshape}{}
 \newenvironment{acknowledgements}{\thispagestyle{chapter}\chapter*{Acknowledgements}\markboth{Acknowledgements}{}}{}
 
