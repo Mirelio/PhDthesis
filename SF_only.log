@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.10.1)  6 JUL 2016 17:22
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.10.1)  19 JUL 2016 15:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2308,15 +2308,7 @@ Package biblatex Info: Data encoding 'utf8' specified.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'SF_only.bbl' found.
- (./SF_only.bbl
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Doyle:2005ul
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-)
+ (./SF_only.bbl)
 Package biblatex Info: Reference section=0 on input line 17.
 Package biblatex Info: Reference segment=0 on input line 17.
 \AtBeginShipoutBox=\box62
@@ -2397,173 +2389,162 @@ LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
 (Font)              scaled to size 12.05603pt on input line 4.
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/bx/n' will be
 (Font)              scaled to size 10.1931pt on input line 4.
- (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/se-ascii-print.def
+)
+
+Package glossaries Warning: Deprecated command \glossarystyle.
+ I recommend you switch to \setglossarystyle unless you want to maintain backward compatibility on input line 24.
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/se-ascii-print.def
 File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 ) [1
 
 \openout7 = `SF_only.ist'.
 
 
-])
+] [2
 
-Package glossaries Warning: Deprecated command \glossarystyle.
- I recommend you switch to \setglossarystyle unless you want to maintain backward compatibility on input line 24.
-
-LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/sc' will be
-(Font)              scaled to size 11.00111pt on input line 28.
-[2] (./chapterStabilityFinder/ChSF_introduction.tex
+] (./chapterStabilityFinder/ChSF_introduction.tex
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
 (Font)              scaled to size 17.36067pt on input line 1.
- [3
 
+
+LaTeX Warning: Reference `sec:part_samp' on page 3 undefined on input line 117.
+
+LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
+(Font)              scaled to size 14.46722pt on input line 120.
+[3
 
 ]
-LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/it' will be
-(Font)              scaled to size 11.00111pt on input line 118.
- [4]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 125.
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 14.46722pt on input line 127.
+(Font)              scaled to size 9.04202pt on input line 129.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\acrshort' on input line 127.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 140.
 
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 136.
-LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 9.04202pt on input line 140.
-[5]
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 164.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 165.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 167.
-
-[6]
-File: chapterStabilityFinder/images/abcsmc_ex.pdf Graphic file (type QTm)
- <use  "chapterStabilityFinder/images/abcsmc_ex.pdf" > [7] [8
-
-]
-LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 8.03735pt on input line 224.
-LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 6.02802pt on input line 224.
- [9]
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 283.
-
-[10] [11]
+LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/sc' will be
+(Font)              scaled to size 11.00111pt on input line 147.
+[4]
 File: chapterStabilityFinder/images/SF_algo_overv.png Graphic file (type QTm)
  <use  "chapterStabilityFinder/images/SF_algo_overv.png" >
-Overfull \hbox (84.76144pt too wide) in paragraph at lines 295--296
+Overfull \hbox (84.76144pt too wide) in paragraph at lines 152--153
  [] 
  []
 
-[12
+[5
 
 ]
-Overfull \hbox (15.07262pt too wide) in paragraph at lines 329--330
+Overfull \hbox (15.07262pt too wide) in paragraph at lines 186--187
 \EU1/LinuxLibertineO(0)/m/n/10.95 In Stability Finder, latin hypercube sampling is used to sample initial conditions ([]McKay,
  []
 
 File: chapterStabilityFinder/images/LHS.png Graphic file (type QTm)
-<use  "chapterStabilityFinder/images/LHS.png" > [13
+<use  "chapterStabilityFinder/images/LHS.png" > [6
 
-] [14]
-Overfull \hbox (8.36925pt too wide) in paragraph at lines 356--357
+]
+Overfull \hbox (8.36925pt too wide) in paragraph at lines 213--214
 []\EU1/LinuxLibertineO(0)/m/n/10.95 Steady states of stochastic models are clustered using the K-means clustering ([]Lloyd
  []
 
-[15
+LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
+(Font)              scaled to size 8.03735pt on input line 220.
+[7
 
 ]
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 379.
+LaTeX Warning: Reference `sec:rob_back' on page 8 undefined on input line 250.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 379.
+LaTeX Warning: Reference `eq:final_bayes' on page 8 undefined on input line 250.
 
-[16] [17] [18] [19] [20
+[8] [9] [10] [11
 
 ]
 File: chapterStabilityFinder/images/ex1_sum.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/images/ex1_sum.png" > [21] [22]
+ <use  "chapterStabilityFinder/images/ex1_sum.png" > [12] [13]
 File: chapterStabilityFinder/images/ex4_summ.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/images/ex4_summ.png" > [23
+ <use  "chapterStabilityFinder/images/ex4_summ.png" > [14
 
-] [24] [25
+] [15] [16
 
 ]
+LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/it' will be
+(Font)              scaled to size 11.00111pt on input line 376.
 File: chapterStabilityFinder/images/gardner_model.png Graphic file (type QTm)
  <use  "chapterStabilityFinder/images/gardner_model.png" >
 File: chapterStabilityFinder/images/gardner_posteriors.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/images/gardner_posteriors.png" > [26] [27] [28]
-Overfull \hbox (0.10652pt too wide) in paragraph at lines 564--565
+ <use  "chapterStabilityFinder/images/gardner_posteriors.png" > [17] [18] [19]
+Overfull \hbox (0.10652pt too wide) in paragraph at lines 421--422
 \EU1/LinuxLibertineO(0)/m/n/10.95 Next I analyzed an extension of the Gardner switch model developed by []Lu, Onuchic,
  []
 
 File: chapterStabilityFinder/images/lu_bifurc.png Graphic file (type QTm)
-<use  "chapterStabilityFinder/images/lu_bifurc.png" > [29
+<use  "chapterStabilityFinder/images/lu_bifurc.png" > [20
 
-] [30]
+] [21]
 File: chapterStabilityFinder/images/LU_diagrams.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/images/LU_diagrams.png" > [31
-
-]
+ <use  "chapterStabilityFinder/images/LU_diagrams.png" >
 File: chapterStabilityFinder/images/lu_paper_phase.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/images/lu_paper_phase.png" > [32] [33]
-File: chapterStabilityFinder/images/lu_paper_post.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/images/lu_paper_post.png" > [34]
+ <use  "chapterStabilityFinder/images/lu_paper_phase.png" > [22
 
-LaTeX Warning: Reference `lu_paper_phase.png' on page 35 undefined on input line 666.
+] [23] [24]
+File: chapterStabilityFinder/images/lu_paper_post.png Graphic file (type QTm)
+ <use  "chapterStabilityFinder/images/lu_paper_post.png" > [25]
+
+LaTeX Warning: Reference `lu_paper_phase.png' on page 26 undefined on input line 523.
 
 File: chapterStabilityFinder/images/Lu_234.png Graphic file (type QTm)
-<use  "chapterStabilityFinder/images/Lu_234.png" > [35
+<use  "chapterStabilityFinder/images/Lu_234.png" > [26
 
 
-] [36] [37]
+] [27] [28]
 File: chapterStabilityFinder/images/LU-234-phase-all.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/images/LU-234-phase-all.png" > [38]
+ <use  "chapterStabilityFinder/images/LU-234-phase-all.png" > [29]
 File: chapterStabilityFinder/images/lu_6ss.png Graphic file (type QTm)
  <use  "chapterStabilityFinder/images/lu_6ss.png" >
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[39
+[30
 
-] [40] [41
+] [31]
+LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
+(Font)              scaled to size 6.02802pt on input line 626.
+ [32
 
 ]
 File: chapterStabilityFinder/images/MA-cs-dp-phase.png Graphic file (type QTm)
  <use  "chapterStabilityFinder/images/MA-cs-dp-phase.png" >
 File: chapterStabilityFinder/images/MA_sym_post.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/images/MA_sym_post.png" > [42] [43]
+ <use  "chapterStabilityFinder/images/MA_sym_post.png" > [33] [34]
 File: chapterStabilityFinder/images/MA_QSSA.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/images/MA_QSSA.png" > [44
+ <use  "chapterStabilityFinder/images/MA_QSSA.png" > [35
 
-] [45]
+] [36]
 File: chapterStabilityFinder/images/MA_stoch_design_princ.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/images/MA_stoch_design_princ.png" > [46
+ <use  "chapterStabilityFinder/images/MA_stoch_design_princ.png" > [37
 
-] [47] [48
+] [38]
+
+LaTeX Warning: Reference `eq:final_bayes' on page 39 undefined on input line 727.
+
+[39
 
 ]
 File: chapterStabilityFinder/images/priors_matter.png Graphic file (type QTm)
- <use  "chapterStabilityFinder/images/priors_matter.png" > [49]
+ <use  "chapterStabilityFinder/images/priors_matter.png" > [40]
 File: chapterStabilityFinder/images/priors_matter_2.png Graphic file (type QTm)
  <use  "chapterStabilityFinder/images/priors_matter_2.png" >
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[50
+[41
 
-] [51] [52
+] [42] [43
 
-]) [53] [54
+]) [44] [45
 
-] [55] [56] [57]
+]
 
 Package caption Warning: Unused \captionsetup[subfigure] on input line 195.
 See the caption package documentation for explanation.
@@ -2573,7 +2554,7 @@ Package glossaries Warning: No \printglossary or \printglossaries found.
 (Remove \makeglossaries if you don't want any glossaries.)
 This document will not have a glossary.
 
-[58]
+[46]
 \tf@toc=\write10
 \openout10 = `SF_only.toc'.
 
@@ -2591,12 +2572,12 @@ Package logreq Info: Writing requests to 'SF_only.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 55016 strings out of 493706
- 979763 string characters out of 6145769
- 1669644 words of memory out of 5000000
- 57753 multiletter control sequences out of 15000+600000
- 11741 words of font info for 77 fonts, out of 8000000 for 9000
+ 54908 strings out of 493706
+ 977784 string characters out of 6145769
+ 1668139 words of memory out of 5000000
+ 57651 multiletter control sequences out of 15000+600000
+ 10660 words of font info for 70 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 64i,24n,109p,10415b,2458s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,13n,109p,10415b,1760s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on SF_only.pdf (58 pages).
+Output written on SF_only.pdf (46 pages).

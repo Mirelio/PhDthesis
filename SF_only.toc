@@ -3,32 +3,25 @@
 \select@language {british}
 \contentsline {chapter}{\chapternumberline {1}Toggle switch stability}{3}{chapter.1}
 \contentsline {section}{\numberline {1.1}Introduction}{3}{section.1.1}
-\contentsline {section}{\numberline {1.2}Background}{3}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}\acrshort {abc} algorithms}{5}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Robustness}{8}{subsection.1.2.2}
-\contentsline {section}{\numberline {1.3}Stability Finder algorithm}{10}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}Algorithm overview}{10}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}Particle sampling}{13}{subsection.1.3.2}
-\contentsline {subsection}{\numberline {1.3.3}Perturbation}{13}{subsection.1.3.3}
-\contentsline {subsection}{\numberline {1.3.4}Initial condition sampling}{13}{subsection.1.3.4}
-\contentsline {subsection}{\numberline {1.3.5}Particle simulation}{15}{subsection.1.3.5}
-\contentsline {subsection}{\numberline {1.3.6}Distance function}{15}{subsection.1.3.6}
-\contentsline {subsubsection}{\numberline {1.3.6.1}Clustering methods}{15}{subsubsection.1.3.6.1}
-\contentsline {subsection}{\numberline {1.3.7}Particle rejection}{16}{subsection.1.3.7}
-\contentsline {subsection}{\numberline {1.3.8}Weight calculation}{16}{subsection.1.3.8}
-\contentsline {subsection}{\numberline {1.3.9}Model checking}{17}{subsection.1.3.9}
-\contentsline {section}{\numberline {1.4}Calculating robustness}{17}{section.1.4}
-\contentsline {subsection}{\numberline {1.4.1}Case study 1: Infectious diseases}{20}{subsection.1.4.1}
-\contentsline {subsection}{\numberline {1.4.2}Case study 2: Population growth}{23}{subsection.1.4.2}
-\contentsline {section}{\numberline {1.5}Applications of Stability Finder}{25}{section.1.5}
-\contentsline {subsection}{\numberline {1.5.1}Testing StabilityFinder}{25}{subsection.1.5.1}
-\contentsline {subsection}{\numberline {1.5.2}Lu toggle switch models}{29}{subsection.1.5.2}
-\contentsline {subsubsection}{\numberline {1.5.2.1}Extending the Lu models}{31}{subsubsection.1.5.2.1}
-\contentsline {subsubsection}{\numberline {1.5.2.2}Multistability in the Lu models}{35}{subsubsection.1.5.2.2}
-\contentsline {subsubsection}{\numberline {1.5.2.3}Extending the Lu switch to three nodes}{39}{subsubsection.1.5.2.3}
-\contentsline {subsection}{\numberline {1.5.3}Mass Action switches}{41}{subsection.1.5.3}
-\contentsline {subsubsection}{\numberline {1.5.3.1}Multistability in the MA switces}{46}{subsubsection.1.5.3.1}
-\contentsline {subsubsection}{\numberline {1.5.3.2}Robustness prior dependence}{48}{subsubsection.1.5.3.2}
-\contentsline {section}{\numberline {1.6}Discussion}{52}{section.1.6}
-\contentsline {section}{\numberline {1.7}Summary}{53}{section.1.7}
-\contentsline {chapter}{Bibliography}{55}{section*.27}
+\contentsline {section}{\numberline {1.2}Stability Finder algorithm}{3}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Algorithm overview}{4}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Initial condition sampling}{6}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Distance function}{7}{subsection.1.2.3}
+\contentsline {subsubsection}{\numberline {1.2.3.1}Clustering methods}{7}{subsubsection.1.2.3.1}
+\contentsline {subsection}{\numberline {1.2.4}Particle rejection}{8}{subsection.1.2.4}
+\contentsline {subsection}{\numberline {1.2.5}Model checking}{8}{subsection.1.2.5}
+\contentsline {section}{\numberline {1.3}Calculating robustness}{8}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Case study 1: Infectious diseases}{11}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Case study 2: Population growth}{14}{subsection.1.3.2}
+\contentsline {section}{\numberline {1.4}Applications of Stability Finder}{16}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Testing StabilityFinder}{16}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}Lu toggle switch models}{20}{subsection.1.4.2}
+\contentsline {subsubsection}{\numberline {1.4.2.1}Extending the Lu models}{22}{subsubsection.1.4.2.1}
+\contentsline {subsubsection}{\numberline {1.4.2.2}Multistability in the Lu models}{26}{subsubsection.1.4.2.2}
+\contentsline {subsubsection}{\numberline {1.4.2.3}Extending the Lu switch to three nodes}{30}{subsubsection.1.4.2.3}
+\contentsline {subsection}{\numberline {1.4.3}Mass Action switches}{32}{subsection.1.4.3}
+\contentsline {subsubsection}{\numberline {1.4.3.1}Multistability in the MA switces}{37}{subsubsection.1.4.3.1}
+\contentsline {subsubsection}{\numberline {1.4.3.2}Robustness prior dependence}{39}{subsubsection.1.4.3.2}
+\contentsline {section}{\numberline {1.5}Discussion}{43}{section.1.5}
+\contentsline {section}{\numberline {1.6}Summary}{44}{section.1.6}
+\contentsline {chapter}{Bibliography}{45}{section*.26}

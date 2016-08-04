@@ -1,9 +1,21 @@
 [0] Config.pm:324> INFO - This is Biber 2.1
 [0] Config.pm:327> INFO - Logfile is '/Users/miriam/work/PhD/Manuscripts/PhDthesis/ABCFlow_only.blg'
-[50] biber-darwin:276> INFO - === Thu Jul  7, 2016, 11:48:30
-[50] Biber.pm:333> INFO - Reading '/Users/miriam/work/PhD/Manuscripts/PhDthesis/ABCFlow_only.bcf'
-[157] Biber.pm:645> INFO - Found 0 citekeys in bib section 0
-[157] Utils.pm:146> WARN - The file '/Users/miriam/work/PhD/Manuscripts/PhDthesis/ABCFlow_only.bcf' does not contain any citations!
-[248] bbl.pm:505> INFO - Writing '/Users/miriam/work/PhD/Manuscripts/PhDthesis/ABCFlow_only.bbl' with encoding 'UTF-8'
-[249] bbl.pm:596> INFO - Output to /Users/miriam/work/PhD/Manuscripts/PhDthesis/ABCFlow_only.bbl
-[249] Biber.pm:106> INFO - WARNINGS: 1
+[67] biber-darwin:276> INFO - === Thu Jul 28, 2016, 19:54:56
+[67] Biber.pm:333> INFO - Reading '/Users/miriam/work/PhD/Manuscripts/PhDthesis/ABCFlow_only.bcf'
+[190] Biber.pm:645> INFO - Found 19 citekeys in bib section 0
+[255] Biber.pm:2977> INFO - Processing section 0
+[300] Biber.pm:3115> INFO - Looking for bibtex format file 'thesis_n.bib' for section 0
+[313] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
+[325] bibtex.pm:895> INFO - Found BibTeX data source 'thesis_n.bib'
+[333] Utils.pm:146> WARN - Duplicate entry key: 'Niwa:2005fz' in file 'thesis_n.bib', skipping ...
+[371] Utils.pm:146> WARN - I didn't find a database entry for 'flowCore:man' (section 0)
+[371] Utils.pm:146> WARN - I didn't find a database entry for 'flowViz:man' (section 0)
+[371] Utils.pm:146> WARN - I didn't find a database entry for 'ggplot2:bk' (section 0)
+[371] Utils.pm:146> WARN - I didn't find a database entry for 'Kolmogorov:1933' (section 0)
+[613] UCollate.pm:66> INFO - Overriding locale 'en-GB' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[613] UCollate.pm:66> INFO - Overriding locale 'en-GB' defaults 'variable = shifted' with 'variable = non-ignorable'
+[613] Biber.pm:2854> INFO - Sorting list 'nyt' of type 'entry' with scheme 'nyt' and locale 'en-GB'
+[613] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-GB'
+[654] bbl.pm:505> INFO - Writing '/Users/miriam/work/PhD/Manuscripts/PhDthesis/ABCFlow_only.bbl' with encoding 'UTF-8'
+[656] bbl.pm:596> INFO - Output to /Users/miriam/work/PhD/Manuscripts/PhDthesis/ABCFlow_only.bbl
+[656] Biber.pm:106> INFO - WARNINGS: 5

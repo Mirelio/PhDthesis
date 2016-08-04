@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.10.1)  11 JUL 2016 16:23
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.10.1)  29 JUL 2016 15:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2407,33 +2407,45 @@ File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
 (Font)              scaled to size 17.36067pt on input line 1.
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 14.46722pt on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\acrshort' on input line 10.
+(Font)              scaled to size 14.46722pt on input line 14.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\acrshort' on input line 14.
 
-LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 8.03735pt on input line 28.
-LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 6.02802pt on input line 28.
+
+LaTeX Warning: Reference `XXX' on page 3 undefined on input line 15.
+
+
+LaTeX Warning: Reference `fig:behaviour' on page 3 undefined on input line 15.
+
 [3
 
 ]
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 44.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 44.
-
-)
+File: chapterABCSysBio/images/model_selection.png Graphic file (type QTm)
+ <use  "chapterABCSysBio/images/model_selection.png" >
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/sc' will be
-(Font)              scaled to size 11.00111pt on input line 36.
+(Font)              scaled to size 11.00111pt on input line 39.
  [4]
+LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
+(Font)              scaled to size 8.03735pt on input line 54.
+LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
+(Font)              scaled to size 6.02802pt on input line 54.
+File: chapterABCSysBio/images/behaviour.png Graphic file (type QTm)
+ <use  "chapterABCSysBio/images/behaviour.png" > [5
+
+] [6]
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 86.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 86.
+
+[7]
+File: chapterABCSysBio/images/toggle_switch_designs.png Graphic file (type QTm)
+ <use  "chapterABCSysBio/images/toggle_switch_designs.png" > [8] [9]) [10
+
+]
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/it' will be
 (Font)              scaled to size 11.00111pt on input line 36.
 
@@ -2446,7 +2458,7 @@ Package glossaries Warning: No \printglossary or \printglossaries found.
 (Remove \makeglossaries if you don't want any glossaries.)
 This document will not have a glossary.
 
-[5
+[11
 
 ]
 \tf@toc=\write10
@@ -2457,17 +2469,21 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 38.
  (./ABCSysBio_only.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 38.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 38.
+
+
+LaTeX Warning: There were undefined references.
+
 Package logreq Info: Writing requests to 'ABCSysBio_only.run.xml'.
 \openout1 = `ABCSysBio_only.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 54670 strings out of 493706
- 973766 string characters out of 6145769
- 1653422 words of memory out of 5000000
- 57431 multiletter control sequences out of 15000+600000
+ 54695 strings out of 493706
+ 974254 string characters out of 6145769
+ 1657677 words of memory out of 5000000
+ 57450 multiletter control sequences out of 15000+600000
  11676 words of font info for 76 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 64i,13n,109p,10422b,1765s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,13n,109p,10422b,1764s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on ABCSysBio_only.pdf (5 pages).
+Output written on ABCSysBio_only.pdf (11 pages).

@@ -2236,6 +2236,39 @@
     <bcf:datasource type="file" datatype="bibtex">thesis_n.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
+    <bcf:citekey order="1">Kelly:2009bj</bcf:citekey>
+    <bcf:citekey order="2">Choi:2014gb</bcf:citekey>
+    <bcf:citekey order="3">Diaz:2010kw</bcf:citekey>
+    <bcf:citekey order="4">Anonymous:2015tj</bcf:citekey>
+    <bcf:citekey order="5">Kelwick:2014iy</bcf:citekey>
+    <bcf:citekey order="6">Kelly:2009bj</bcf:citekey>
+    <bcf:citekey order="6">Kelwick:2014iy</bcf:citekey>
+    <bcf:citekey order="7">Litcofsky:2012gr</bcf:citekey>
+    <bcf:citekey order="8">Lutz:1997ti</bcf:citekey>
+    <bcf:citekey order="9">Shaner:2004vy</bcf:citekey>
+    <bcf:citekey order="10">SHIMOMURA:1962va</bcf:citekey>
+    <bcf:citekey order="11">Litcofsky:2012gr</bcf:citekey>
+    <bcf:citekey order="12">Litcofsky:2012gr</bcf:citekey>
+    <bcf:citekey order="13">flowCore:man</bcf:citekey>
+    <bcf:citekey order="14">flowViz:man</bcf:citekey>
+    <bcf:citekey order="15">ggplot2:bk</bcf:citekey>
+    <bcf:citekey order="16">Litcofsky:2012gr</bcf:citekey>
+    <bcf:citekey order="17">Litcofsky:2012gr</bcf:citekey>
+    <bcf:citekey order="18">flowCore:man</bcf:citekey>
+    <bcf:citekey order="19">Kolmogorov:1933</bcf:citekey>
+    <bcf:citekey order="20">Peacock:1983fa</bcf:citekey>
+    <bcf:citekey order="21">Litcofsky:2012gr</bcf:citekey>
+    <bcf:citekey order="22">Gardner:2000vha</bcf:citekey>
+    <bcf:citekey order="23">Gardner:2000vha</bcf:citekey>
+    <bcf:citekey order="24">Gardner:2000vha</bcf:citekey>
+    <bcf:citekey order="25">Gillespie:1977ww</bcf:citekey>
+    <bcf:citekey order="26">Wilk:1968ts</bcf:citekey>
+    <bcf:citekey order="27">Litcofsky:2012gr</bcf:citekey>
+    <bcf:citekey order="28">Gardner:2000vha</bcf:citekey>
+    <bcf:citekey order="29">Litcofsky:2012gr</bcf:citekey>
+    <bcf:citekey order="30">Macdonald:2012el</bcf:citekey>
+    <bcf:citekey order="31">Cormack:1996gv</bcf:citekey>
+    <bcf:citekey order="32">Cormack:1996gv</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nyt" type="entry" sortscheme="nyt">
   <bcf:sorting>

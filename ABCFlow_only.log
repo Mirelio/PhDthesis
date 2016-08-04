@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.10.1)  7 JUL 2016 11:48
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.10.1)  28 JUL 2016 19:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2202,7 +2202,14 @@ Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2015/04/19 v3.0 biblatex localization (PK/JW/AB)
-)) (./ABCFlow_only.aux)
+)) (./ABCFlow_only.aux
+
+LaTeX Warning: Label `fig:normal_example' multiply defined.
+
+
+LaTeX Warning: Label `fig:normal_example@cref' multiply defined.
+
+)
 \openout1 = `ABCFlow_only.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
@@ -2308,7 +2315,36 @@ Package biblatex Info: Data encoding 'utf8' specified.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'ABCFlow_only.bbl' found.
- (./ABCFlow_only.bbl)
+ (./ABCFlow_only.bbl
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                flowViz:man
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                flowCore:man
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Kolmogorov:1933
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                ggplot2:bk
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+)
 Package biblatex Info: Reference section=0 on input line 17.
 Package biblatex Info: Reference segment=0 on input line 17.
 \AtBeginShipoutBox=\box62
@@ -2389,116 +2425,162 @@ LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
 (Font)              scaled to size 12.05603pt on input line 4.
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/bx/n' will be
 (Font)              scaled to size 10.1931pt on input line 4.
-)
-
-Package glossaries Warning: Deprecated command \glossarystyle.
- I recommend you switch to \setglossarystyle unless you want to maintain backward compatibility on input line 24.
-
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/se-ascii-print.def
+LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/it' will be
+(Font)              scaled to size 11.00111pt on input line 9.
+ (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/se-ascii-print.def
 File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 ) [1
 
 \openout7 = `ABCFlow_only.ist'.
 
 
-] [2
+])
 
-] (./chapterABCFlow/ChFlow_introduction.tex
-LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 17.36067pt on input line 2.
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 7.
-LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 9.04202pt on input line 10.
+Package glossaries Warning: Deprecated command \glossarystyle.
+ I recommend you switch to \setglossarystyle unless you want to maintain backward compatibility on input line 24.
 
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 16.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 37.
-
-[3
-
-]
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/sc' will be
-(Font)              scaled to size 11.00111pt on input line 45.
- [4]
+(Font)              scaled to size 11.00111pt on input line 29.
+[2] (./chapterCharacterisation/ChChar_introduction.tex
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 14.46722pt on input line 49.
+(Font)              scaled to size 17.36067pt on input line 1.
+File: chapterABCFlow/images/flow-overview.png Graphic file (type QTm)
+ <use  "chapterABCFlow/images/flow-overview.png" >
+LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
+(Font)              scaled to size 8.03735pt on input line 19.
+ [3
+
+
+] [4]
+File: chapterCharacterisation/images/pKDL071_overview.png Graphic file (type QTm)
+ <use  "chapterCharacterisation/images/pKDL071_overview.png" > [5] [6]
+LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
+(Font)              scaled to size 14.46722pt on input line 51.
+LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/it' will be
+(Font)              scaled to size 14.46722pt on input line 51.
+LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(1)/m/n' will be
+(Font)              scaled to size 11.00111pt on input line 54.
+LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(1)/m/n' will be
+(Font)              scaled to size 8.03735pt on input line 54.
+LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(1)/m/n' will be
+(Font)              scaled to size 6.02802pt on input line 54.
+LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
+(Font)              scaled to size 6.02802pt on input line 54.
+ [7
+
+]
+File: chapterCharacterisation/images/plasmids_constructed.png Graphic file (type QTm)
+ <use  "chapterCharacterisation/images/plasmids_constructed.png" > [8] [9] [10]
+Overfull \hbox (1.11824pt too wide) in paragraph at lines 180--181
+\EU1/LinuxLibertineO(0)/m/n/10.95 Thermocompetent \EU1/LinuxLibertineO(0)/m/it/10.95 E.coli \EU1/LinuxLibertineO(0)/m/n/10.95 Dh5αwas transformed with the constructed plasmids. Each
+ []
+
+[11]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\acrshort' on input line 186.
+
+[12] [13] [14]
+File: chapterABCFlow/images/abc-flow-overv.png Graphic file (type QTm)
+ <use  "chapterABCFlow/images/abc-flow-overv.png" >
+Overfull \hbox (36.00462pt too wide) in paragraph at lines 274--275
+ [] 
+ []
+
+Missing character: There is no 𝜖 in font Linux Libertine O/OT:script=latn;language=DFLT;mapping=tex-text;+liga;mapping=tex-text;!
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 285.
+LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
+(Font)              scaled to size 9.04202pt on input line 304.
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 324.
+
+[15] [16] [17]
+Overfull \hbox (57.82939pt too wide) in paragraph at lines 335--336
+\EU1/LinuxLibertineO(0)/m/n/10.95 The distance in the 1D case was calculated using the Kolmogorov-Smirnov test ([]).
+ []
+
+File: chapterABCFlow/images/ks-1d-overv.png Graphic file (type QTm)
+<use  "chapterABCFlow/images/ks-1d-overv.png" > [18
+
+]
+File: chapterABCFlow/images/intensity_calc.png Graphic file (type QTm)
+ <use  "chapterABCFlow/images/intensity_calc.png" > [19
+
+]
+File: chapterCharacterisation/images/growth_curves.pdf Graphic file (type QTm)
+ <use  "chapterCharacterisation/images/growth_curves.pdf" >
+Overfull \hbox (34.82338pt too wide) in paragraph at lines 396--397
+ [] 
+ []
+
+[20]
+File: chapterCharacterisation/images/pKDL071_concentrations_2d1d.png Graphic file (type QTm)
+ <use  "chapterCharacterisation/images/pKDL071_concentrations_2d1d.png" >
+
+LaTeX Warning: Float too large for page by 17.44165pt on input line 412.
+
+[21
+
+] [22]
+File: chapterCharacterisation/images/pKDL071_concentrations_model_fit.png Graphic file (type QTm)
+ <use  "chapterCharacterisation/images/pKDL071_concentrations_model_fit.png" > [23
+
+] [24]
+File: chapterCharacterisation/images/pKDL071_atc_time.png Graphic file (type QTm)
+ <use  "chapterCharacterisation/images/pKDL071_atc_time.png" >
+
+LaTeX Warning: Float too large for page by 9.74365pt on input line 451.
+
+File: chapterCharacterisation/images/pKDL071_iptg_time.png Graphic file (type QTm)
+<use  "chapterCharacterisation/images/pKDL071_iptg_time.png" >
+
+LaTeX Warning: Float too large for page by 20.5359pt on input line 459.
+
+[25
+
+] [26] [27]) (./chapterABCFlow/ChFlow_introduction.tex
+File: chapterABCFlow/images/epsilon_same_box.png Graphic file (type QTm)
+ <use  "chapterABCFlow/images/epsilon_same_box.png" > [28
+
+] [29]
+File: chapterABCFlow/images/mu_diff.png Graphic file (type QTm)
+ <use  "chapterABCFlow/images/mu_diff.png" > [30
+
+]
+Overfull \hbox (23.65347pt too wide) in paragraph at lines 62--63
+\EU1/LinuxLibertineO(0)/m/n/10.95 Collins ([][]2000[][]) switch was simulated stochastically using the Gillespie algorithm ([]Gillespie
+ []
+
+File: chapterABCFlow/images/1D_sim_res.png Graphic file (type QTm)
+<use  "chapterABCFlow/images/1D_sim_res.png" > [31
+
+] [32]
 File: chapterABCFlow/images/normal_sigma_example.png Graphic file (type QTm)
- <use  "chapterABCFlow/images/normal_sigma_example.png" > [5
-
-]
-File: chapterABCFlow/images/epsil_var.png Graphic file (type QTm)
- <use  "chapterABCFlow/images/epsil_var.png" >
-File: chapterABCFlow/images/ns.png Graphic file (type QTm)
- <use  "chapterABCFlow/images/ns.png" > [6]
-File: chapterABCFlow/images/ngrid.png Graphic file (type QTm)
- <use  "chapterABCFlow/images/ngrid.png" >
-File: chapterABCFlow/images/mus_sigmas_same.png Graphic file (type QTm)
- <use  "chapterABCFlow/images/mus_sigmas_same.png" > [7] [8]
-File: chapterABCFlow/images/mus_sigmas_diff.png Graphic file (type QTm)
- <use  "chapterABCFlow/images/mus_sigmas_diff.png" >
-Overfull \hbox (62.16814pt too wide) in paragraph at lines 138--139
+ <use  "chapterABCFlow/images/normal_sigma_example.png" >
+File: chapterABCFlow/images/compare_1D_2d.png Graphic file (type QTm)
+ <use  "chapterABCFlow/images/compare_1D_2d.png" >
+Overfull \hbox (34.05663pt too wide) in paragraph at lines 98--99
  [][] 
  []
 
-[9
+[33
 
-]
-File: chapterABCFlow/images/epsilon0-1.png Graphic file (type QTm)
- <use  "chapterABCFlow/images/epsilon0-1.png" >
-File: chapterABCFlow/images/accept_rate_2d_1d.pdf Graphic file (type QTm)
- <use  "chapterABCFlow/images/accept_rate_2d_1d.pdf" > [10
-
-] [11]
-File: chapterABCFlow/images/epsilon_uniform.png Graphic file (type QTm)
- <use  "chapterABCFlow/images/epsilon_uniform.png" >
-File: chapterABCFlow/images/uni_v_normal.png Graphic file (type QTm)
- <use  "chapterABCFlow/images/uni_v_normal.png" > [12
-
-] [13]
-File: chapterABCFlow/images/multimodal.png Graphic file (type QTm)
- <use  "chapterABCFlow/images/multimodal.png" >
-File: chapterABCFlow/images/multimodal_musd.png Graphic file (type QTm)
- <use  "chapterABCFlow/images/multimodal_musd.png" >
-Overfull \hbox (54.34319pt too wide) in paragraph at lines 205--206
+] [34]
+File: chapterABCFlow/images/sim_1d_2d_post.png Graphic file (type QTm)
+ <use  "chapterABCFlow/images/sim_1d_2d_post.png" >
+Overfull \hbox (57.76128pt too wide) in paragraph at lines 108--109
  [][] 
  []
 
-[14
-
-] [15]
-File: chapterABCFlow/images/multimodal_v_normal.png Graphic file (type QTm)
- <use  "chapterABCFlow/images/multimodal_v_normal.png" >
-File: chapterABCFlow/images/posterior_comparison_1D_2D.pdf Graphic file (type QTm)
- <use  "chapterABCFlow/images/posterior_comparison_1D_2D.pdf" > [16
-
-] [17]
-File: chapterABCFlow/images/posterior_2d_4.pdf Graphic file (type QTm)
- <use  "chapterABCFlow/images/posterior_2d_4.pdf" > [18
+[35
 
 ]
+File: chapterABCFlow/images/1D_real_res.png Graphic file (type QTm)
+ <use  "chapterABCFlow/images/1D_real_res.png" > [36
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\acrshort' on input line 249.
-
-File: chapterABCFlow/images/real_dat/real_dat_2D.png Graphic file (type QTm)
-<use  "chapterABCFlow/images/real_dat/real_dat_2D.png" >
-Overfull \hbox (48.19594pt too wide) in paragraph at lines 254--255
- [][] 
- []
-
-[19
+] [37]) [38] [39
 
 ]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\acrshort' on input line 259.
-
-)
-
-LaTeX Warning: Empty bibliography on input line 34.
-
 
 Package caption Warning: Unused \captionsetup[subfigure] on input line 195.
 See the caption package documentation for explanation.
@@ -2508,9 +2590,7 @@ Package glossaries Warning: No \printglossary or \printglossaries found.
 (Remove \makeglossaries if you don't want any glossaries.)
 This document will not have a glossary.
 
-[20
-
-]
+[40]
 \tf@toc=\write10
 \openout10 = `ABCFlow_only.toc'.
 
@@ -2519,17 +2599,21 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 36.
  (./ABCFlow_only.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 36.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 36.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package logreq Info: Writing requests to 'ABCFlow_only.run.xml'.
 \openout1 = `ABCFlow_only.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 54617 strings out of 493706
- 972706 string characters out of 6145769
- 1658539 words of memory out of 5000000
- 57366 multiletter control sequences out of 15000+600000
- 10522 words of font info for 67 fonts, out of 8000000 for 9000
+ 54923 strings out of 493706
+ 979360 string characters out of 6145769
+ 1667273 words of memory out of 5000000
+ 57650 multiletter control sequences out of 15000+600000
+ 12009 words of font info for 82 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 64i,12n,109p,10422b,1713s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,21n,109p,10422b,2326s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on ABCFlow_only.pdf (20 pages).
+Output written on ABCFlow_only.pdf (40 pages).

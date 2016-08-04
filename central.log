@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.10.1)  11 JUL 2016 18:34
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.10.1)  11 JUL 2016 19:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2308,6 +2308,13 @@ Package biblatex Info: ... file 'central.bbl' found.
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
+(biblatex)                Wilkinson:2006
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
 (biblatex)                Doyle:2005ul
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
@@ -2323,13 +2330,6 @@ Package biblatex Warning: The following entry could not be found
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
 (biblatex)                XXX
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Wilkinson:2006
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
@@ -2665,136 +2665,133 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\acrshort' on input line 158.
 
 [90] [91] [92] [93]
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 253.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 274.
+
+[94
+
+]
 File: chapterCharacterisation/images/growth_curves.pdf Graphic file (type QTm)
  <use  "chapterCharacterisation/images/growth_curves.pdf" >
-Overfull \hbox (34.82338pt too wide) in paragraph at lines 246--247
+Overfull \hbox (34.82338pt too wide) in paragraph at lines 292--293
  [] 
  []
 
-[94
+[95
 
 ]
 File: chapterCharacterisation/images/pKDL071_concentrations_2d1d.png Graphic file (type QTm)
  <use  "chapterCharacterisation/images/pKDL071_concentrations_2d1d.png" >
 
-LaTeX Warning: Float too large for page by 17.44165pt on input line 262.
+LaTeX Warning: Float too large for page by 17.44165pt on input line 308.
 
-[95
+[96
 
-] [96]
+] [97]
 File: chapterCharacterisation/images/pKDL071_concentrations_model_fit.png Graphic file (type QTm)
- <use  "chapterCharacterisation/images/pKDL071_concentrations_model_fit.png" > [97
+ <use  "chapterCharacterisation/images/pKDL071_concentrations_model_fit.png" > [98
 
-] [98]
+] [99]
 File: chapterCharacterisation/images/pKDL071_atc_time.png Graphic file (type QTm)
  <use  "chapterCharacterisation/images/pKDL071_atc_time.png" >
 
-LaTeX Warning: Float too large for page by 9.74365pt on input line 301.
+LaTeX Warning: Float too large for page by 9.74365pt on input line 347.
 
 File: chapterCharacterisation/images/pKDL071_iptg_time.png Graphic file (type QTm)
 <use  "chapterCharacterisation/images/pKDL071_iptg_time.png" >
 
-LaTeX Warning: Float too large for page by 20.5359pt on input line 309.
+LaTeX Warning: Float too large for page by 20.5359pt on input line 355.
 
-[99
+[100
 
-] [100] [101] [102
-
-]) [103] [104
-
-] (./chapterABCFlow/ChFlow_introduction.tex
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 16.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 37.
-
-[105
-
-] [106]
+] [101] [102]) (./chapterABCFlow/ChFlow_introduction.tex
 File: chapterABCFlow/images/normal_sigma_example.png Graphic file (type QTm)
- <use  "chapterABCFlow/images/normal_sigma_example.png" > [107
+ <use  "chapterABCFlow/images/normal_sigma_example.png" > [103
 
 ]
 File: chapterABCFlow/images/epsil_var.png Graphic file (type QTm)
  <use  "chapterABCFlow/images/epsil_var.png" >
 File: chapterABCFlow/images/ns.png Graphic file (type QTm)
- <use  "chapterABCFlow/images/ns.png" > [108]
+ <use  "chapterABCFlow/images/ns.png" > [104]
 File: chapterABCFlow/images/ngrid.png Graphic file (type QTm)
  <use  "chapterABCFlow/images/ngrid.png" >
 File: chapterABCFlow/images/mus_sigmas_same.png Graphic file (type QTm)
- <use  "chapterABCFlow/images/mus_sigmas_same.png" > [109] [110]
+ <use  "chapterABCFlow/images/mus_sigmas_same.png" > [105] [106]
 File: chapterABCFlow/images/mus_sigmas_diff.png Graphic file (type QTm)
  <use  "chapterABCFlow/images/mus_sigmas_diff.png" >
-Overfull \hbox (62.16814pt too wide) in paragraph at lines 138--139
+Overfull \hbox (62.16814pt too wide) in paragraph at lines 97--98
  [][] 
  []
 
-[111
+[107
 
 ]
 File: chapterABCFlow/images/epsilon0-1.png Graphic file (type QTm)
  <use  "chapterABCFlow/images/epsilon0-1.png" >
 File: chapterABCFlow/images/accept_rate_2d_1d.pdf Graphic file (type QTm)
- <use  "chapterABCFlow/images/accept_rate_2d_1d.pdf" > [112
+ <use  "chapterABCFlow/images/accept_rate_2d_1d.pdf" > [108
 
-] [113]
+] [109]
 File: chapterABCFlow/images/epsilon_uniform.png Graphic file (type QTm)
  <use  "chapterABCFlow/images/epsilon_uniform.png" >
 File: chapterABCFlow/images/uni_v_normal.png Graphic file (type QTm)
- <use  "chapterABCFlow/images/uni_v_normal.png" > [114
+ <use  "chapterABCFlow/images/uni_v_normal.png" > [110
 
-] [115]
+] [111]
 File: chapterABCFlow/images/multimodal.png Graphic file (type QTm)
  <use  "chapterABCFlow/images/multimodal.png" >
 File: chapterABCFlow/images/multimodal_musd.png Graphic file (type QTm)
  <use  "chapterABCFlow/images/multimodal_musd.png" >
-Overfull \hbox (54.34319pt too wide) in paragraph at lines 205--206
+Overfull \hbox (54.34319pt too wide) in paragraph at lines 164--165
  [][] 
  []
 
-[116
+[112
 
-] [117]
+] [113]
 File: chapterABCFlow/images/multimodal_v_normal.png Graphic file (type QTm)
  <use  "chapterABCFlow/images/multimodal_v_normal.png" >
 File: chapterABCFlow/images/posterior_comparison_1D_2D.pdf Graphic file (type QTm)
- <use  "chapterABCFlow/images/posterior_comparison_1D_2D.pdf" > [118
+ <use  "chapterABCFlow/images/posterior_comparison_1D_2D.pdf" > [114
 
-] [119]
+] [115]
 File: chapterABCFlow/images/posterior_2d_4.pdf Graphic file (type QTm)
- <use  "chapterABCFlow/images/posterior_2d_4.pdf" > [120
+ <use  "chapterABCFlow/images/posterior_2d_4.pdf" > [116
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\acrshort' on input line 249.
+(hyperref)                removing `\acrshort' on input line 208.
 
 File: chapterABCFlow/images/real_dat/real_dat_2D.png Graphic file (type QTm)
 <use  "chapterABCFlow/images/real_dat/real_dat_2D.png" >
-Overfull \hbox (48.19594pt too wide) in paragraph at lines 254--255
+Overfull \hbox (48.19594pt too wide) in paragraph at lines 213--214
  [][] 
  []
 
-[121
+[117
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\acrshort' on input line 259.
+(hyperref)                removing `\acrshort' on input line 218.
 
-) [122
+[118
 
-] (./chapterDesignSwitches/ChDesSw_introduction.tex) [123
+]) [119] [120
 
+] (./chapterDesignSwitches/ChDesSw_introduction.tex) [121
+
+] [122
+
+] (./chapterConclusions/ChConc.tex) [123
 
 ] [124
 
-] (./chapterConclusions/ChConc.tex) [125
-
-] [126
-
-] [127] [128] [129] [130] [131] [132] [133] [134
+] [125] [126] [127] [128] [129] [130] [131] [132
 
 ] (./appendices/appendix.tex
 
@@ -2819,7 +2816,7 @@ Overfull \hbox (224.43005pt too wide) detected at line 83
 []
  []
 
-[135] [136] [137] [138] [139
+[133] [134] [135] [136] [137
 
 ])
 
@@ -2835,11 +2832,11 @@ See the caption package documentation for explanation.
 \tf@lot=\write12
 \openout12 = `central.lot'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 97.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 97.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 93.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 93.
 (./central.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 97.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 97.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 93.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 93.
 
 
 LaTeX Warning: There were undefined references.
@@ -2849,12 +2846,12 @@ Package logreq Info: Writing requests to 'central.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 55458 strings out of 493706
- 989315 string characters out of 6145769
- 1704871 words of memory out of 5000000
- 58121 multiletter control sequences out of 15000+600000
+ 55457 strings out of 493706
+ 989304 string characters out of 6145769
+ 1705938 words of memory out of 5000000
+ 58120 multiletter control sequences out of 15000+600000
  12377 words of font info for 84 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  64i,24n,109p,10417b,3224s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on central.pdf (139 pages).
+Output written on central.pdf (137 pages).
