@@ -1,0 +1,114 @@
+\documentclass[]{phdthesis}
+\addbibresource{../../references/thesis_n.bib}
+
+\degree{Doctor of Philosophy}
+\university{University College London}
+\title{Computational design and\\[0.2em]characterisation of synthetic\\[0.2em] genetic switches}
+\author{Miriam Leon}
+\primarysupervisor{Dr. Chris P Barnes}
+\secondarysupervisor{Prof. Geraint MH Thomas}
+
+%%  Abbreviations entries  -----------------%%
+%\acrlong{ } whole phrase, \acrshort{ } acronym, \acrfull{ } both
+\makeglossaries
+\input{../../glossary.tex}
+
+%%---------------------------------------------------%%
+\begin{document}
+% front matter
+\maketitle
+
+
+\begin{abstract}
+blabla
+\end{abstract}
+
+\tableofcontents*
+\listoffigures
+\listoftables
+\glossarystyle{list}
+
+\printglossary[type=\acronymtype, title=Abbreviations, toctitle=List of abbreviations]
+
+%\printglossary[type=\acronymtype, title=Abbreviations, toctitle=Abbreviations]
+
+\begin{acknowledgements}
+blabla
+\end{acknowledgements}
+
+%% --------------------------------------------------------------
+%% CHAPTERS
+%% --------------------------------------------------------------
+
+%% Introduction -------------------------------------%%
+\mainmatter*
+\chapter{Introduction}
+\input{../../chapters/chapterIntroduction/ChIntro_introduction}
+
+%% Background -------------------------------------%%
+\mainmatter*
+\chapter{Background}
+\label{ch:backg}
+\input{../../chapters/chapterBackgr/ChBackground}
+
+%% ABC-SysBio ---------------------------------------%%
+\mainmatter*
+\chapter{Effect or feedback loops on switch robustness }
+\label{ch:abcsysbio}
+\input{../../chapters/chapterABCSysBio/ChAbcSys_introduction}
+
+
+%% StabilityFinder ----------------------------------%%
+\mainmatter*
+ 
+\chapter{Dynamics of multi-stable switches}
+\label{ch:SF}
+\input{../../chapters/chapterStabilityFinder/ChSF_introduction}
+%\input{chapterStabilityFinder/methods}
+%\input{chapterStabilityFinder/results}
+%\input{chapterStabilityFinder/Lu_switches/lu_switches_summary}
+%\input{chapterStabilityFinder/mass_action_switches/mass_action_switch_summary}
+%\input{chapterStabilityFinder/discussion}
+
+
+%%  Characterising the toggle switch -----------------%%
+\mainmatter*
+\chapter{Bayesian model fitting applied to flow cytometry data}
+\label{ch:Flow}
+\input{../../chapters/chapterABCFlow/ChFlow_and_exp_new_str}
+%\input{../chapters/chapterCharacterisation/ChChar_introduction}
+%\input{../chapters/chapterABCFlow/ChFlow_introduction}
+
+%% Designing new switches ---------------------------%%
+\mainmatter*
+\chapter{Designing new switches}
+\label{ch:desSw}
+\input{../../chapters/chapterDesignSwitches/ChDesSw_introduction}
+
+%% Chapter-6 Conclusions --------------------------------------%%
+\mainmatter*
+\chapter{Conclusions}
+\input{../../chapters/chapterConclusions/ChConc}
+
+\printbibliography
+
+%% --------------------------------------------------------------
+%% APPENDIX
+%% --------------------------------------------------------------
+\appendix*
+\addcontentsline{toc}{chapter}{Appendices}
+\chapter{Biochemical kinetic models}
+\label{ap:ODEs}
+\input{../../appendices/appendix_ODEs}
+\chapter{Primers}
+\label{ap:Prim}
+\input{../../appendices/appendix_primers}
+\chapter{Algorithms}
+\label{ap:Alg}
+\input{../../appendices/appendix_algos}
+\end{document}
+
+
+
+
+

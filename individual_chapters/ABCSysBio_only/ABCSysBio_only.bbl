@@ -1,0 +1,172 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.5 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{nyt}{nyt}
+    \entry{Barnes:2011hh}{article}{}
+      \name{author}{4}{}{%
+        {{hash=8341669a3d0db82e877ef918042cb0d0}{Barnes}{B\bibinitperiod}{Chris\bibnamedelima P}{C\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+        {{hash=d06eb23326296ae9fc2d859767d9c154}{Silk}{S\bibinitperiod}{Daniel}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=6215eb4464621bc3e2ca5e27d19c54a8}{Sheng}{S\bibinitperiod}{Xia}{X\bibinitperiod}{}{}{}{}}%
+        {{hash=1071749d15e5d69795cd0e937501205d}{Stumpf}{S\bibinitperiod}{Michael\bibnamedelimb P\bibnamedelima H}{M\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{15cd4b9acc0b6d1fd25cd5b9e1c31c50}
+      \strng{fullhash}{02ad40a5002de2ad9ebc875b7ade578e}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{2011}
+      \field{labelmonth}{09}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the National Academy of Sciences of the United States of America}
+      \field{month}{09}
+      \field{number}{37}
+      \field{title}{{Bayesian design of synthetic biological systems.}}
+      \field{volume}{108}
+      \field{year}{2011}
+      \field{pages}{15190\bibrangedash 15195}
+      \range{pages}{6}
+    \endentry
+    \entry{Clewley:2012kj}{article}{}
+      \name{author}{1}{}{%
+        {{hash=6282ec672db50dd62d26853dbee2a79b}{Clewley}{C\bibinitperiod}{Robert}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{6282ec672db50dd62d26853dbee2a79b}
+      \strng{fullhash}{6282ec672db50dd62d26853dbee2a79b}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelyear}{2012}
+      \field{labelmonth}{01}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PLoS Computational Biology}
+      \field{month}{01}
+      \field{number}{8}
+      \field{title}{{Hybrid models and biological model reduction with PyDSTool.}}
+      \field{volume}{8}
+      \field{year}{2012}
+      \field{pages}{e1002628\bibrangedash e1002628}
+      \range{pages}{-1}
+    \endentry
+    \entry{Gardner:2000vha}{article}{}
+      \name{author}{3}{}{%
+        {{hash=e23a289be0e3393aabeb37497fa299f5}{Gardner}{G\bibinitperiod}{T\bibnamedelima S}{T\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{hash=c5672d98769b1a72fb353f3597a0cd07}{Cantor}{C\bibinitperiod}{C\bibnamedelima R}{C\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+        {{hash=6605a954dd214f66b2fe169d6dc4acef}{Collins}{C\bibinitperiod}{J\bibnamedelima J}{J\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b585ec9edd4b1b4d1fc1feeb357ff20f}
+      \strng{fullhash}{b585ec9edd4b1b4d1fc1feeb357ff20f}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelyear}{2000}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature}
+      \field{number}{6767}
+      \field{title}{{Construction of a genetic toggle switch in Escherichia coli}}
+      \field{volume}{403}
+      \field{year}{2000}
+      \field{pages}{339\bibrangedash 342}
+      \range{pages}{4}
+    \endentry
+    \entry{Liepe:2010eg}{article}{}
+      \name{author}{7}{}{%
+        {{hash=6919ca6326649b57f78ef650e4f54c41}{Liepe}{L\bibinitperiod}{Juliane}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=8cd67c4ce2dd72313140792ab5bac85f}{Barnes}{B\bibinitperiod}{Chris}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=f5cd453ec5a9be18fae9521a6f3d69c0}{Cule}{C\bibinitperiod}{Erika}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=bf2cc6c72c5332801f2269118cffdfed}{Erguler}{E\bibinitperiod}{Kamil}{K\bibinitperiod}{}{}{}{}}%
+        {{hash=1c590fa2892663ce1f54319393efadfd}{Kirk}{K\bibinitperiod}{Paul}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=199d095d48e61cde3962f614838314a2}{Toni}{T\bibinitperiod}{Tina}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=1071749d15e5d69795cd0e937501205d}{Stumpf}{S\bibinitperiod}{Michael\bibnamedelimb P\bibnamedelima H}{M\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{4d01ed948cdd08fe4cb21f8d38f0b930}
+      \strng{fullhash}{c9deb24dd0de9218011b2a8b70d3422b}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelyear}{2010}
+      \field{labelmonth}{07}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Bioinformatics (Oxford, England)}
+      \field{month}{07}
+      \field{number}{14}
+      \field{title}{{ABC-SysBio--approximate Bayesian computation in Python with GPU support.}}
+      \field{volume}{26}
+      \field{year}{2010}
+      \field{pages}{1797\bibrangedash 1799}
+      \range{pages}{3}
+    \endentry
+    \entry{MCKAY:2000vt}{article}{}
+      \name{author}{3}{}{%
+        {{hash=785c10d6d8dfcca9a5c79fadea89482f}{McKay}{M\bibinitperiod}{M\bibnamedelima D}{M\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{hash=17008099515aff0ce715c3c5770344b4}{Beckman}{B\bibinitperiod}{R\bibnamedelima J}{R\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=ed430ca8e394fa16b4aab847a705dd66}{Conover}{C\bibinitperiod}{W\bibnamedelima J}{W\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{2d5a8edb73d537a99c31b1ea9f78dfc8}
+      \strng{fullhash}{2d5a8edb73d537a99c31b1ea9f78dfc8}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelyear}{2000}
+      \field{labelmonth}{02}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Technometrics}
+      \field{month}{02}
+      \field{number}{1}
+      \field{title}{{A comparison of three methods for selecting values of input variables in the analysis of output from a computer code}}
+      \field{volume}{42}
+      \field{year}{2000}
+      \field{pages}{55\bibrangedash 61}
+      \range{pages}{7}
+    \endentry
+    \entry{Toni:2009tr}{article}{}
+      \name{author}{5}{}{%
+        {{hash=199d095d48e61cde3962f614838314a2}{Toni}{T\bibinitperiod}{Tina}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=629ebac104654770f464d8f62aafb5ef}{Welch}{W\bibinitperiod}{David}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=9e62b34039f11204bf0785f1643b6782}{Strelkowa}{S\bibinitperiod}{Natalja}{N\bibinitperiod}{}{}{}{}}%
+        {{hash=898508ce70ce6ff85e8bc209c287f086}{Ipsen}{I\bibinitperiod}{Andreas}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=1071749d15e5d69795cd0e937501205d}{Stumpf}{S\bibinitperiod}{Michael\bibnamedelimb P\bibnamedelima H}{M\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{c4965ec409bdcbc6dd7d89aea07ea5e6}
+      \strng{fullhash}{1a21a535ac5a1200568b5d983d6b9e96}
+      \field{sortinit}{T}
+      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
+      \field{labelyear}{2009}
+      \field{labelmonth}{02}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the Royal Society, Interface / the Royal Society}
+      \field{month}{02}
+      \field{number}{31}
+      \field{title}{{Approximate Bayesian computation scheme for parameter inference and model selection in dynamical systems.}}
+      \field{volume}{6}
+      \field{year}{2009}
+      \field{pages}{187\bibrangedash 202}
+      \range{pages}{16}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+
