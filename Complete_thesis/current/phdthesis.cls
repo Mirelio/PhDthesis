@@ -71,8 +71,8 @@
 %\setmainfont[Ligatures={Common, TeX}]{Lora}
 %\usepackage[T1]{fontenc}
 %\setmainfont[Ligatures={Common, TeX}]{TeX Gyre Pagella}
-\setmathfont{TeX Gyre Pagella Math}
-
+%\setmathfont{TeX Gyre Pagella Math}
+\setmathfont{Cambria Math}
 
 \RequirePackage{microtype}
 \microtypesetup{final, babel=true, factor=1200}
@@ -331,6 +331,7 @@ I confirm that this has been indicated in the thesis.}
 %have greek letters in text mode
 \usepackage{textgreek}
 \RequirePackage{siunitx}
+\RequirePackage{listings}
 \DeclareSIUnit{\molar}{M}
 \DeclareSIUnit{\unit}{U}
 \RequirePackage[version=3]{mhchem}
@@ -347,7 +348,7 @@ I confirm that this has been indicated in the thesis.}
 \RequirePackage{pifont}% http://ctan.org/pkg/pifont
 \newcommand{\cmark}{\ding{51}}%
 \newcommand{\xmark}{\ding{55}}%
-
+\RequirePackage{fixltx2e}
 
 \raggedbottom
 

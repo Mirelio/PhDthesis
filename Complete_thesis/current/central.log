@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.10.1)  11 AUG 2016 14:55
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.10.1)  21 AUG 2016 14:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1116,200 +1116,198 @@ LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 .................................................
 . fontspec info: "set-scale"
 . 
-. TeX Gyre Pagella Math scale = 0.9189820538514595.
+. Cambria Math scale = 0.9233198221757322.
 .................................................
-\g__fontspec_family_TeXGyrePagellaMath_int=\count200
+\g__fontspec_family_CambriaMath_int=\count200
 .................................................
 . fontspec info: "no-font-shape"
 . 
-. Could not resolve font TeX Gyre Pagella Math/B (it probably doesn't exist).
+. Could not resolve font Cambria Math/B (it probably doesn't exist).
 .................................................
 .................................................
 . fontspec info: "set-scale"
 . 
-. TeX Gyre Pagella Math scale = 0.9189820538514595.
+. Cambria Math scale = 0.9233198221757322.
 .................................................
 .................................................
 . fontspec info: "set-scale"
 . 
-. TeX Gyre Pagella Math scale = 0.9189820538514595.
+. Cambria Math scale = 0.9233198221757322.
 .................................................
 .................................................
 . fontspec info: "set-scale"
 . 
-. TeX Gyre Pagella Math scale = 0.9189820538514595.
+. Cambria Math scale = 0.9233198221757322.
 .................................................
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 11.00111pt on input line 74.
+(Font)              scaled to size 11.00111pt on input line 75.
 .................................................
 . fontspec info: "defining-font"
 . 
-. Font family 'TeXGyrePagellaMath(0)' created for font 'TeX Gyre Pagella Math'
-. with options
-. [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},Script=Math,SizeFeatures={{Size=10-},{Size=7-10,Font=TeX
-. Gyre Pagella Math,Style=MathScript},{Size=-7,Font=TeX Gyre Pagella
-. Math,Style=MathScriptScript}}].
+. Font family 'CambriaMath(0)' created for font 'Cambria Math' with options
+. [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},Script=Math,SizeFeatures={{Size=10-},{Size=7-10,Font=Cambria
+. Math,Style=MathScript},{Size=-7,Font=Cambria Math,Style=MathScriptScript}}].
 . 
 . This font family consists of the following shapes:
 . 
 . * 'normal' with NFSS spec.:
-. <10->s*[0.9189820538514595]"TeX Gyre Pagella
-. Math/OT:script=math;language=DFLT;"<7-10>s*[0.9189820538514595]"TeX Gyre
-. Pagella
-. Math/OT:script=math;language=DFLT;+ssty=0;"<-7>s*[0.9189820538514595]"TeX
-. Gyre Pagella Math/OT:script=math;language=DFLT;+ssty=1;"
+. <10->s*[0.9233198221757322]"Cambria
+. Math/OT:script=math;language=DFLT;"<7-10>s*[0.9233198221757322]"Cambria
+. Math/OT:script=math;language=DFLT;+ssty=0;"<-7>s*[0.9233198221757322]"Cambria
+. Math/OT:script=math;language=DFLT;+ssty=1;"
 . 
 . * 'small caps' with NFSS spec.:
 . 
 . and font adjustment code:
 . 
 .................................................
-LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(0)/m/n' will be
-(Font)              scaled to size 9.18976pt on input line 74.
+LaTeX Font Info:    Font shape `EU1/CambriaMath(0)/m/n' will be
+(Font)              scaled to size 9.23325pt on input line 75.
 .................................................
 . fontspec info: "set-scale"
 . 
-. TeX Gyre Pagella Math scale = 0.9189820538514595.
+. Cambria Math scale = 0.9233198221757322.
 .................................................
 LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `normal' on input line 74.
+(Font)              `operators' in the math version `normal' on input line 75.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> EU1/TeXGyrePagellaMath(0)/m/n on input line 74.
+(Font)                  OT1/cmr/m/n --> EU1/CambriaMath(0)/m/n on input line 75.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `bold' on input line 74.
+(Font)              `operators' in the math version `bold' on input line 75.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> EU1/TeXGyrePagellaMath(0)/bx/n on input line 74.
+(Font)                  OT1/cmr/bx/n --> EU1/CambriaMath(0)/bx/n on input line 75.
 .................................................
 . fontspec info: "set-scale"
 . 
-. TeX Gyre Pagella Math scale = 0.9189820538514595.
+. Cambria Math scale = 0.9233198221757322.
 .................................................
 .................................................
 . fontspec info: "no-font-shape"
 . 
-. Could not resolve font TeX Gyre Pagella Math/B (it probably doesn't exist).
+. Could not resolve font Cambria Math/B (it probably doesn't exist).
 .................................................
 .................................................
 . fontspec info: "set-scale"
 . 
-. TeX Gyre Pagella Math scale = 0.9189820538514595.
+. Cambria Math scale = 0.9233198221757322.
 .................................................
 .................................................
 . fontspec info: "set-scale"
 . 
-. TeX Gyre Pagella Math scale = 0.9189820538514595.
+. Cambria Math scale = 0.9233198221757322.
 .................................................
 .................................................
 . fontspec info: "set-scale"
 . 
-. TeX Gyre Pagella Math scale = 0.9189820538514595.
+. Cambria Math scale = 0.9233198221757322.
 .................................................
 .................................................
 . fontspec info: "defining-font"
 . 
-. Font family 'TeXGyrePagellaMath(1)' created for font 'TeX Gyre Pagella Math'
-. with options
-. [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},Script=Math,SizeFeatures={{Size=10-},{Size=7-10,Font=TeX
-. Gyre Pagella Math,Style=MathScript},{Size=-7,Font=TeX Gyre Pagella
+. Font family 'CambriaMath(1)' created for font 'Cambria Math' with options
+. [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},Script=Math,SizeFeatures={{Size=10-},{Size=7-10,Font=Cambria
+. Math,Style=MathScript},{Size=-7,Font=Cambria
 . Math,Style=MathScriptScript}},Scale=1.00001,FontAdjustment={\fontdimen
-. 8\font =7.2pt\relax \relax \fontdimen 9\font =4.69pt\relax \relax \fontdimen
-. 10\font =4.69pt\relax \relax \fontdimen 11\font =6.66pt\relax \relax
-. \fontdimen 12\font =3.11pt\relax \relax \fontdimen 13\font =3.54pt\relax
-. \relax \fontdimen 14\font =3.54pt\relax \relax \fontdimen 15\font
-. =2.96pt\relax \relax \fontdimen 16\font =2.32pt\relax \relax \fontdimen
-. 17\font =2.32pt\relax \relax \fontdimen 18\font =2.32pt\relax \relax
-. \fontdimen 19\font =1.16pt\relax \relax \fontdimen 20\font =0pt\relax
-. \fontdimen 21\font =0pt\relax \fontdimen 22\font =2.5pt\relax \relax }].
+. 8\font =7.56836pt\relax \relax \fontdimen 9\font =5.85938pt\relax \relax
+. \fontdimen 10\font =4.58984pt\relax \relax \fontdimen 11\font
+. =6.68945pt\relax \relax \fontdimen 12\font =5.0293pt\relax \relax \fontdimen
+. 13\font =3.66211pt\relax \relax \fontdimen 14\font =3.66211pt\relax \relax
+. \fontdimen 15\font =3.00293pt\relax \relax \fontdimen 16\font
+. =2.04102pt\relax \relax \fontdimen 17\font =2.04102pt\relax \relax
+. \fontdimen 18\font =2.2461pt\relax \relax \fontdimen 19\font =1.5625pt\relax
+. \relax \fontdimen 20\font =0pt\relax \fontdimen 21\font =0pt\relax
+. \fontdimen 22\font =2.85645pt\relax \relax }].
 . 
 . This font family consists of the following shapes:
 . 
 . * 'normal' with NFSS spec.:
-. <10->s*[1.00001]"TeX Gyre Pagella
-. Math/OT:script=math;language=DFLT;"<7-10>s*[1.00001]"TeX Gyre Pagella
-. Math/OT:script=math;language=DFLT;+ssty=0;"<-7>s*[1.00001]"TeX Gyre Pagella
+. <10->s*[1.00001]"Cambria
+. Math/OT:script=math;language=DFLT;"<7-10>s*[1.00001]"Cambria
+. Math/OT:script=math;language=DFLT;+ssty=0;"<-7>s*[1.00001]"Cambria
 . Math/OT:script=math;language=DFLT;+ssty=1;"
 . 
 . * 'small caps' with NFSS spec.:
 . 
 . and font adjustment code:
-. \fontdimen 8\font =7.2pt\relax \relax \fontdimen 9\font =4.69pt\relax \relax
-. \fontdimen 10\font =4.69pt\relax \relax \fontdimen 11\font =6.66pt\relax
-. \relax \fontdimen 12\font =3.11pt\relax \relax \fontdimen 13\font
-. =3.54pt\relax \relax \fontdimen 14\font =3.54pt\relax \relax \fontdimen
-. 15\font =2.96pt\relax \relax \fontdimen 16\font =2.32pt\relax \relax
-. \fontdimen 17\font =2.32pt\relax \relax \fontdimen 18\font =2.32pt\relax
-. \relax \fontdimen 19\font =1.16pt\relax \relax \fontdimen 20\font =0pt\relax
-. \fontdimen 21\font =0pt\relax \fontdimen 22\font =2.5pt\relax \relax 
+. \fontdimen 8\font =7.56836pt\relax \relax \fontdimen 9\font =5.85938pt\relax
+. \relax \fontdimen 10\font =4.58984pt\relax \relax \fontdimen 11\font
+. =6.68945pt\relax \relax \fontdimen 12\font =5.0293pt\relax \relax \fontdimen
+. 13\font =3.66211pt\relax \relax \fontdimen 14\font =3.66211pt\relax \relax
+. \fontdimen 15\font =3.00293pt\relax \relax \fontdimen 16\font
+. =2.04102pt\relax \relax \fontdimen 17\font =2.04102pt\relax \relax
+. \fontdimen 18\font =2.2461pt\relax \relax \fontdimen 19\font =1.5625pt\relax
+. \relax \fontdimen 20\font =0pt\relax \fontdimen 21\font =0pt\relax
+. \fontdimen 22\font =2.85645pt\relax \relax 
 .................................................
 LaTeX Font Info:    Encoding `OMS' has changed to `EU1' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 74.
+(Font)              `symbols' in the math version `normal' on input line 75.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> EU1/TeXGyrePagellaMath(1)/m/n on input line 74.
+(Font)                  OMS/cmsy/m/n --> EU1/CambriaMath(1)/m/n on input line 75.
 LaTeX Font Info:    Encoding `OMS' has changed to `EU1' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 74.
+(Font)              `symbols' in the math version `bold' on input line 75.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> EU1/TeXGyrePagellaMath(1)/bx/n on input line 74.
+(Font)                  OMS/cmsy/b/n --> EU1/CambriaMath(1)/bx/n on input line 75.
 .................................................
 . fontspec info: "set-scale"
 . 
-. TeX Gyre Pagella Math scale = 0.9189820538514595.
+. Cambria Math scale = 0.9233198221757322.
 .................................................
 .................................................
 . fontspec info: "no-font-shape"
 . 
-. Could not resolve font TeX Gyre Pagella Math/B (it probably doesn't exist).
+. Could not resolve font Cambria Math/B (it probably doesn't exist).
 .................................................
 .................................................
 . fontspec info: "set-scale"
 . 
-. TeX Gyre Pagella Math scale = 0.9189820538514595.
+. Cambria Math scale = 0.9233198221757322.
 .................................................
 .................................................
 . fontspec info: "set-scale"
 . 
-. TeX Gyre Pagella Math scale = 0.9189820538514595.
+. Cambria Math scale = 0.9233198221757322.
 .................................................
 .................................................
 . fontspec info: "set-scale"
 . 
-. TeX Gyre Pagella Math scale = 0.9189820538514595.
+. Cambria Math scale = 0.9233198221757322.
 .................................................
 .................................................
 . fontspec info: "defining-font"
 . 
-. Font family 'TeXGyrePagellaMath(2)' created for font 'TeX Gyre Pagella Math'
-. with options
-. [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},Script=Math,SizeFeatures={{Size=10-},{Size=7-10,Font=TeX
-. Gyre Pagella Math,Style=MathScript},{Size=-7,Font=TeX Gyre Pagella
+. Font family 'CambriaMath(2)' created for font 'Cambria Math' with options
+. [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},Script=Math,SizeFeatures={{Size=10-},{Size=7-10,Font=Cambria
+. Math,Style=MathScript},{Size=-7,Font=Cambria
 . Math,Style=MathScriptScript}},Scale=0.99999,FontAdjustment={\fontdimen
-. 8\font =0.6pt\relax \relax \fontdimen 9\font =1.2pt\relax \relax \fontdimen
-. 10\font =1.2pt\relax \relax \fontdimen 11\font =1.2pt\relax \relax
-. \fontdimen 12\font =4.68pt\relax \relax \fontdimen 13\font =0pt\relax }].
+. 8\font =0.64941pt\relax \relax \fontdimen 9\font =0.64941pt\relax \relax
+. \fontdimen 10\font =0.64941pt\relax \relax \fontdimen 11\font
+. =2.4414pt\relax \relax \fontdimen 12\font =6.05469pt\relax \relax \fontdimen
+. 13\font =0pt\relax }].
 . 
 . This font family consists of the following shapes:
 . 
 . * 'normal' with NFSS spec.:
-. <10->s*[0.99999]"TeX Gyre Pagella
-. Math/OT:script=math;language=DFLT;"<7-10>s*[0.99999]"TeX Gyre Pagella
-. Math/OT:script=math;language=DFLT;+ssty=0;"<-7>s*[0.99999]"TeX Gyre Pagella
+. <10->s*[0.99999]"Cambria
+. Math/OT:script=math;language=DFLT;"<7-10>s*[0.99999]"Cambria
+. Math/OT:script=math;language=DFLT;+ssty=0;"<-7>s*[0.99999]"Cambria
 . Math/OT:script=math;language=DFLT;+ssty=1;"
 . 
 . * 'small caps' with NFSS spec.:
 . 
 . and font adjustment code:
-. \fontdimen 8\font =0.6pt\relax \relax \fontdimen 9\font =1.2pt\relax \relax
-. \fontdimen 10\font =1.2pt\relax \relax \fontdimen 11\font =1.2pt\relax
-. \relax \fontdimen 12\font =4.68pt\relax \relax \fontdimen 13\font =0pt\relax
-. 
+. \fontdimen 8\font =0.64941pt\relax \relax \fontdimen 9\font =0.64941pt\relax
+. \relax \fontdimen 10\font =0.64941pt\relax \relax \fontdimen 11\font
+. =2.4414pt\relax \relax \fontdimen 12\font =6.05469pt\relax \relax \fontdimen
+. 13\font =0pt\relax 
 .................................................
 LaTeX Font Info:    Encoding `OMX' has changed to `EU1' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 74.
+(Font)              `largesymbols' in the math version `normal' on input line 75.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> EU1/TeXGyrePagellaMath(2)/m/n on input line 74.
+(Font)                  OMX/cmex/m/n --> EU1/CambriaMath(2)/m/n on input line 75.
 LaTeX Font Info:    Encoding `OMX' has changed to `EU1' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 74.
+(Font)              `largesymbols' in the math version `bold' on input line 75.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> EU1/TeXGyrePagellaMath(2)/bx/n on input line 74.
+(Font)                  OMX/cmex/m/n --> EU1/CambriaMath(2)/bx/n on input line 75.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
 \MT@toks=\toks34
@@ -2078,65 +2076,87 @@ Package: siunitx 2015/09/14 v2.6l A comprehensive (SI) units package
 . 
 . Defining command \__siunitx_bookmark_si:w with sig. 'om' on line 7378.
 .................................................
-) (/usr/local/texlive/2015/texmf-dist/tex/latex/mhchem/mhchem.sty
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count447
+\lst@gtempboxa=\box62
+\lst@token=\toks49
+\lst@length=\count448
+\lst@currlwidth=\dimen274
+\lst@column=\count449
+\lst@pos=\count450
+\lst@lostspace=\dimen275
+\lst@width=\dimen276
+\lst@newlines=\count451
+\lst@lineno=\count452
+\lst@maxwidth=\dimen277
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count453
+\lst@skipnumbers=\count454
+\lst@framebox=\box63
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/mhchem/mhchem.sty
 Package: mhchem 2015/07/23 v4.02 for typesetting chemical formulae
  (/usr/local/texlive/2015/texmf-dist/tex/latex/l3experimental/l3str/l3regex.sty
 Package: l3regex 2015/09/27 v6111 L3 Experimental regular expressions
  (/usr/local/texlive/2015/texmf-dist/tex/latex/l3experimental/l3str/l3tl-build.sty
 Package: l3tl-build 2015/07/28 v5700 L3 Experimental token list construction
-\l__tl_build_start_index_int=\count447
-\l__tl_build_index_int=\count448
+\l__tl_build_start_index_int=\count455
+\l__tl_build_index_int=\count456
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/l3experimental/l3str/l3tl-analysis.sty
 Package: l3tl-analysis 2015/09/26 v6106 L3 Experimental token lists analysis
-\l__tl_analysis_normal_int=\count449
-\l__tl_analysis_index_int=\count450
-\l__tl_analysis_nesting_int=\count451
-\l__tl_analysis_type_int=\count452
+\l__tl_analysis_normal_int=\count457
+\l__tl_analysis_index_int=\count458
+\l__tl_analysis_nesting_int=\count459
+\l__tl_analysis_type_int=\count460
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/l3experimental/l3str/l3flag.sty
 Package: l3flag 2015/09/27 v6111 L3 Experimental flags
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/l3experimental/l3str/l3str-convert.sty
 Package: l3str-convert 2015/09/26 v6106 L3 Experimental string encoding conversions
-\l__str_internal_int=\count453
+\l__str_internal_int=\count461
 )
-\l__regex_internal_a_int=\count454
-\l__regex_internal_b_int=\count455
-\l__regex_internal_c_int=\count456
-\l__regex_balance_int=\count457
-\l__regex_group_level_int=\count458
-\l__regex_mode_int=\count459
-\l__regex_catcodes_int=\count460
-\l__regex_default_catcodes_int=\count461
-\c__regex_catcode_L_int=\count462
-\c__regex_catcode_O_int=\count463
-\c__regex_catcode_A_int=\count464
-\c__regex_all_catcodes_int=\count465
-\l__regex_show_lines_int=\count466
-\l__regex_min_state_int=\count467
-\l__regex_max_state_int=\count468
-\l__regex_left_state_int=\count469
-\l__regex_right_state_int=\count470
-\l__regex_capturing_group_int=\count471
-\l__regex_min_pos_int=\count472
-\l__regex_max_pos_int=\count473
-\l__regex_current_pos_int=\count474
-\l__regex_start_pos_int=\count475
-\l__regex_success_pos_int=\count476
-\l__regex_current_char_int=\count477
-\l__regex_current_catcode_int=\count478
-\l__regex_last_char_int=\count479
-\l__regex_case_changed_char_int=\count480
-\l__regex_current_state_int=\count481
-\l__regex_step_int=\count482
-\l__regex_min_active_int=\count483
-\l__regex_max_active_int=\count484
-\l__regex_replacement_csnames_int=\count485
-\l__regex_match_count_int=\count486
-\l__regex_submatch_int=\count487
-\l__regex_zeroth_submatch_int=\count488
+\l__regex_internal_a_int=\count462
+\l__regex_internal_b_int=\count463
+\l__regex_internal_c_int=\count464
+\l__regex_balance_int=\count465
+\l__regex_group_level_int=\count466
+\l__regex_mode_int=\count467
+\l__regex_catcodes_int=\count468
+\l__regex_default_catcodes_int=\count469
+\c__regex_catcode_L_int=\count470
+\c__regex_catcode_O_int=\count471
+\c__regex_catcode_A_int=\count472
+\c__regex_all_catcodes_int=\count473
+\l__regex_show_lines_int=\count474
+\l__regex_min_state_int=\count475
+\l__regex_max_state_int=\count476
+\l__regex_left_state_int=\count477
+\l__regex_right_state_int=\count478
+\l__regex_capturing_group_int=\count479
+\l__regex_min_pos_int=\count480
+\l__regex_max_pos_int=\count481
+\l__regex_current_pos_int=\count482
+\l__regex_start_pos_int=\count483
+\l__regex_success_pos_int=\count484
+\l__regex_current_char_int=\count485
+\l__regex_current_catcode_int=\count486
+\l__regex_last_char_int=\count487
+\l__regex_case_changed_char_int=\count488
+\l__regex_current_state_int=\count489
+\l__regex_step_int=\count490
+\l__regex_min_active_int=\count491
+\l__regex_max_active_int=\count492
+\l__regex_replacement_csnames_int=\count493
+\l__regex_match_count_int=\count494
+\l__regex_submatch_int=\count495
+\l__regex_zeroth_submatch_int=\count496
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/chemgreek/chemgreek.sty
 Package: chemgreek 2015/07/01 v1.0a interfaceforuprightgreeklettersforuseinchemistry (CN)
-\l__chemgreek_tmpa_int=\count489
-\g__chemgreek_tmpa_int=\count490
+\l__chemgreek_tmpa_int=\count497
+\g__chemgreek_tmpa_int=\count498
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
@@ -2188,8 +2208,8 @@ Package: chemgreek 2015/07/01 v1.0a interfaceforuprightgreeklettersforuseinchemi
 . Defining command \selectchemgreekmapping with sig. 'm' on line 485.
 .................................................
 )
-\l__mhchem_ce_distanceFromLastComma_int=\count491
-\mhchem@arrow@params=\toks49
+\l__mhchem_ce_distanceFromLastComma_int=\count499
+\mhchem@arrow@params=\toks50
 \mhchem@arrowlength@pgf=\skip281
 \mhchem@bondwidth=\skip282
 \mhchem@bondheight=\skip283
@@ -2200,11 +2220,11 @@ Package: chemgreek 2015/07/01 v1.0a interfaceforuprightgreeklettersforuseinchemi
 \mhchem@bondtmp@minussidebearingright=\skip288
 \mhchem@minispace@tmp=\skip289
 \mhchem@minibackspace@tmp=\skip290
-\l__mhchem_option_version_int=\count492
-\mhchem@option@minusmathsidebearingleft=\dimen274
-\mhchem@option@minusmathsidebearingright=\dimen275
-\mhchem@option@minustextsidebearingleft=\dimen276
-\mhchem@option@minustextsidebearingright=\dimen277
+\l__mhchem_option_version_int=\count500
+\mhchem@option@minusmathsidebearingleft=\dimen278
+\mhchem@option@minusmathsidebearingright=\dimen279
+\mhchem@option@minustextsidebearingleft=\dimen280
+\mhchem@option@minustextsidebearingright=\dimen281
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/pifont.sty
 Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
 LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
@@ -2214,7 +2234,15 @@ File: upzd.fd 2001/06/04 font definitions for U/pzd.
 LaTeX Font Info:    Try loading font information for U+psy on input line 64.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/upsy.fd
 File: upsy.fd 2001/06/04 font definitions for U/psy.
-)))
+)) (/usr/local/texlive/2015/texmf-dist/tex/latex/base/fixltx2e.sty
+Package: fixltx2e 2015/06/22 v2.0b fixes to LaTeX (obsolete)
+
+
+Package fixltx2e Warning: fixltx2e is not required with releases after 2015
+(fixltx2e)                All fixes are now in the LaTeX kernel.
+(fixltx2e)                See the latexrelease package for details.
+
+))
 \glswrite=\write7
 \glo@acronym@file=\write8
 \openout8 = `central.acn'.
@@ -2244,10 +2272,10 @@ LaTeX Warning: Label `fig:lhs' multiply defined.
 LaTeX Warning: Label `fig:lhs@cref' multiply defined.
 
 
-LaTeX Warning: Label `fig:normal_example' multiply defined.
+LaTeX Warning: Label `sec:dist' multiply defined.
 
 
-LaTeX Warning: Label `fig:normal_example@cref' multiply defined.
+LaTeX Warning: Label `sec:dist@cref' multiply defined.
 
 )
 \openout1 = `central.aux'.
@@ -2344,6 +2372,7 @@ Package microtype Info: Loading generic settings for font family
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
@@ -2362,28 +2391,7 @@ Package biblatex Info: ... file 'central.bbl' found.
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
-(biblatex)                alon:2007b
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Isaacs:2003ht
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Chen:2011hj
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                flowCore:man
+(biblatex)                Wilkinson:2006
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
@@ -2397,7 +2405,7 @@ Package biblatex Warning: The following entry could not be found
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
-(biblatex)                Deans:2007cya
+(biblatex)                Chen:2011hj
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
@@ -2411,49 +2419,21 @@ Package biblatex Warning: The following entry could not be found
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
-(biblatex)                Loinger:2007vma
+(biblatex)                Syrtis2016
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
-(biblatex)                Atkinson:2003tu
+(biblatex)                Deans:2007cya
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
-(biblatex)                Wilkinson:2006
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                ggplot2:bk
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                kaplan:1959
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Kolmogorov:1933
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                flowViz:man
+(biblatex)                Loinger:2007vo
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
@@ -2467,7 +2447,21 @@ Package biblatex Warning: The following entry could not be found
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
-(biblatex)                wilkinson:2006
+(biblatex)                Isaacs:2003ht
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                kaplan:1959
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Atkinson:2003tu
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
@@ -2478,17 +2472,31 @@ Package biblatex Warning: The following entry could not be found
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                wilkinson:2006
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                alon:2007b
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
 )
 Package biblatex Info: Reference section=0 on input line 17.
 Package biblatex Info: Reference segment=0 on input line 17.
-\AtBeginShipoutBox=\box62
+\AtBeginShipoutBox=\box64
 Package hyperref Info: Link coloring ON on input line 17.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
  (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count493
+\c@section@level=\count501
 )
 Redoing nameref's sectioning
 Redoing nameref's label
@@ -2505,33 +2513,34 @@ Dictionary: translator-basic-dictionary, Language: English
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2015/09/14 v2.6l siunitx: Abbreviated units
 )
+\c@lstlisting=\count502
 .................................................
 . chemgreek info: "mapping-activated"
 . 
 . Activating mapping `default' on line 17.
 .................................................
-\c__siunitx_mathsf_int=\count494
-LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(0)/m/n' will be
-(Font)              scaled to size 10.06277pt on input line 17.
+\c__siunitx_mathsf_int=\count503
+LaTeX Font Info:    Font shape `EU1/CambriaMath(0)/m/n' will be
+(Font)              scaled to size 10.1104pt on input line 17.
 Package microtype Info: Loading generic settings for font family
-(microtype)             `TeXGyrePagellaMath' (encoding: EU1).
+(microtype)             `CambriaMath' (encoding: EU1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(0)/m/n' will be
-(Font)              scaled to size 7.3518pt on input line 17.
-LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(0)/m/n' will be
-(Font)              scaled to size 5.51385pt on input line 17.
-LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(1)/m/n' will be
+LaTeX Font Info:    Font shape `EU1/CambriaMath(0)/m/n' will be
+(Font)              scaled to size 7.3866pt on input line 17.
+LaTeX Font Info:    Font shape `EU1/CambriaMath(0)/m/n' will be
+(Font)              scaled to size 5.53995pt on input line 17.
+LaTeX Font Info:    Font shape `EU1/CambriaMath(1)/m/n' will be
 (Font)              scaled to size 10.95015pt on input line 17.
-LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(1)/m/n' will be
+LaTeX Font Info:    Font shape `EU1/CambriaMath(1)/m/n' will be
 (Font)              scaled to size 8.00012pt on input line 17.
-LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(1)/m/n' will be
+LaTeX Font Info:    Font shape `EU1/CambriaMath(1)/m/n' will be
 (Font)              scaled to size 6.00009pt on input line 17.
-LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(2)/m/n' will be
+LaTeX Font Info:    Font shape `EU1/CambriaMath(2)/m/n' will be
 (Font)              scaled to size 10.94983pt on input line 17.
-LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(2)/m/n' will be
+LaTeX Font Info:    Font shape `EU1/CambriaMath(2)/m/n' will be
 (Font)              scaled to size 7.99988pt on input line 17.
-LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(2)/m/n' will be
+LaTeX Font Info:    Font shape `EU1/CambriaMath(2)/m/n' will be
 (Font)              scaled to size 5.99991pt on input line 17.
 LaTeX Font Info:    Try loading font information for U+msa on input line 17.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -2549,7 +2558,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `cmss' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-\c__siunitx_mathtt_int=\count495
+\c__siunitx_mathtt_int=\count504
 Package microtype Info: Loading generic settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
@@ -2584,519 +2593,581 @@ LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/bx/n' will be
  [7]
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/sc' will be
 (Font)              scaled to size 11.00111pt on input line 64.
- [8] [9]) [10] (./central.lof
-Overfull \hbox (3.83302pt too wide) in paragraph at lines 12--12
+ [8] [9] [10]) [11] [12
+
+] (./central.lof
+Overfull \hbox (3.83302pt too wide) in paragraph at lines 13--13
  [][] [][][]\EU1/LinuxLibertineO(0)/m/n/10.95 The distribution of parameter values that resulted in monostable, bistable 
  []
 
-[11
+[13] [14]) [15] [16
 
-]) [12] (./central.lot)
+] (./central.lot [17])
 
 Package glossaries Warning: Deprecated command \glossarystyle.
  I recommend you switch to \setglossarystyle unless you want to maintain backward compatibility on input line 29.
 
-(./central.acr [13
+(./central.acr [18] [19
 
-] [14
 
-] [15
+]) [20] [21
 
-]) [16] [17
-
-] [18
+] [22
 
 ] (../../chapters/chapterIntroduction/ChIntro_introduction.tex
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
 (Font)              scaled to size 14.46722pt on input line 6.
-) [19
+) [23
 
-] [20
+] [24
 
-] (../../chapters/chapterBackgr/ChBackground.tex [21
+] (../../chapters/chapterBackgr/ChBackground.tex [25
 
-] [22]
+] [26]
 
-LaTeX Warning: Reference `fig:Toggle switch example' on page 23 undefined on input line 24.
+LaTeX Warning: Reference `fig:Toggle switch example' on page 27 undefined on input line 24.
 
-[23] [24] [25] [26]
+[27] [28] [29] [30] [31] [32] [33
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 62.
-
-
-LaTeX Warning: Float too large for page by 145.63217pt on input line 83.
-
-[27] [28] [29
-
-] [30] [31]
+] [34]
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 8.03735pt on input line 180.
+(Font)              scaled to size 8.03735pt on input line 210.
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 6.02802pt on input line 180.
- [32]
+(Font)              scaled to size 6.02802pt on input line 210.
+ [35]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\acrfull' on input line 216.
+(hyperref)                removing `\acrfull' on input line 246.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\acrshort' on input line 217.
+(hyperref)                removing `\acrshort' on input line 247.
 
-[33]
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 226.
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 256.
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 9.04202pt on input line 230.
- [34]
+(Font)              scaled to size 9.04202pt on input line 260.
+[36]
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 254.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 255.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 284.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 257.
-
-[35]
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 294.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 285.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 294.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 287.
+
+[37] [38]
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 324.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 324.
 
 File: ../../chapters/chapterIntroduction/images/abcsmc_ex.pdf Graphic file (type QTm)
-<use  "../../chapters/chapterIntroduction/images/abcsmc_ex.pdf" > [36] [37]) [38
+<use  "../../chapters/chapterIntroduction/images/abcsmc_ex.pdf" > [39] [40]
+File: ../../chapters/chapterBackgr/images/flow-overview.png Graphic file (type QTm)
+ <use  "../../chapters/chapterBackgr/images/flow-overview.png" >) [41
 
-] (../../chapters/chapterABCSysBio/ChAbcSys_introduction.tex [39
+] [42] (../../chapters/chapterABCSysBio/ChAbcSys_introduction.tex [43
 
 
 ]
-File: ../../chapters/chapterABCSysBio/images/Gard_CS.png Graphic file (type QTm)
- <use  "../../chapters/chapterABCSysBio/images/Gard_CS.png" >
-Overfull \hbox (89.46005pt too wide) in paragraph at lines 28--29
+File: ../../chapters/chapterABCSysBio/images/Gard_CS.pdf Graphic file (type QTm)
+ <use  "../../chapters/chapterABCSysBio/images/Gard_CS.pdf" >
+Overfull \hbox (48.36993pt too wide) in paragraph at lines 34--35
  [] 
  []
 
-[40] [41]
+[44] [45]
 File: ../../chapters/chapterABCSysBio/images/ma-switch-diagram.png Graphic file (type QTm)
- <use  "../../chapters/chapterABCSysBio/images/ma-switch-diagram.png" > [42
+ <use  "../../chapters/chapterABCSysBio/images/ma-switch-diagram.png" > [46
 
-] [43]
+]
 File: ../../chapters/chapterABCSysBio/images/LHS.png Graphic file (type QTm)
- <use  "../../chapters/chapterABCSysBio/images/LHS.png" >
-File: ../../chapters/chapterABCSysBio/images/switch_stbility_examples.pdf Graphic file (type QTm)
- <use  "../../chapters/chapterABCSysBio/images/switch_stbility_examples.pdf" > [44
-
-] [45]
+ <use  "../../chapters/chapterABCSysBio/images/LHS.png" > [47] [48]
+File: ../../chapters/chapterABCSysBio/images/phase_plots_param_scan.png Graphic file (type QTm)
+ <use  "../../chapters/chapterABCSysBio/images/phase_plots_param_scan.png" >
 File: ../../chapters/chapterABCSysBio/images/param_stability_hist.pdf Graphic file (type QTm)
  <use  "../../chapters/chapterABCSysBio/images/param_stability_hist.pdf" >
-Overfull \hbox (18.4954pt too wide) in paragraph at lines 118--119
+Overfull \hbox (18.4954pt too wide) in paragraph at lines 144--145
  [][] 
  []
 
-[46]
+[49
+
+] [50] [51
+
+]
 File: ../../chapters/chapterABCSysBio/images/behaviour.png Graphic file (type QTm)
- <use  "../../chapters/chapterABCSysBio/images/behaviour.png" > [47] [48]
+ <use  "../../chapters/chapterABCSysBio/images/behaviour.png" > [52]
 File: ../../chapters/chapterABCSysBio/images/param_inf_res.png Graphic file (type QTm)
  <use  "../../chapters/chapterABCSysBio/images/param_inf_res.png" >
-Overfull \hbox (19.33453pt too wide) in paragraph at lines 169--171
+Overfull \hbox (21.69531pt too wide) in paragraph at lines 231--233
  []|  [] 
  []
 
-[49] [50
-
-]
+[53] [54]
 File: ../../chapters/chapterABCSysBio/images/toggle_switch_designs.png Graphic file (type QTm)
- <use  "../../chapters/chapterABCSysBio/images/toggle_switch_designs.png" > [51]
+ <use  "../../chapters/chapterABCSysBio/images/toggle_switch_designs.png" > [55
+
+] [56]
 File: ../../chapters/chapterABCSysBio/images/gard_pos.png Graphic file (type QTm)
  <use  "../../chapters/chapterABCSysBio/images/gard_pos.png" >
-Overfull \hbox (99.87373pt too wide) in paragraph at lines 221--222
+Overfull \hbox (91.92397pt too wide) in paragraph at lines 284--285
  [] 
  []
 
+[57
+
+]
 File: ../../chapters/chapterABCSysBio/images/gard_neg.png Graphic file (type QTm)
-<use  "../../chapters/chapterABCSysBio/images/gard_neg.png" >
-Overfull \hbox (80.01682pt too wide) in paragraph at lines 229--230
+ <use  "../../chapters/chapterABCSysBio/images/gard_neg.png" >
+Overfull \hbox (74.6207pt too wide) in paragraph at lines 299--300
  [] 
  []
 
-[52
-
-] [53]
+[58]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\acrlong' on input line 245.
+(hyperref)                removing `\acrshort' on input line 310.
 
 File: ../../chapters/chapterABCSysBio/images/model_selection.png Graphic file (type QTm)
-<use  "../../chapters/chapterABCSysBio/images/model_selection.png" > [54
+<use  "../../chapters/chapterABCSysBio/images/model_selection.png" > [59
 
-]
-File: ../../chapters/chapterABCSysBio/images/model_sel_res.png Graphic file (type QTm)
- <use  "../../chapters/chapterABCSysBio/images/model_sel_res.png" >
-Overfull \hbox (78.18794pt too wide) in paragraph at lines 304--305
- [] 
+] [60]
+Overfull \hbox (73.52736pt too wide) in paragraph at lines 388--393
+ [][] 
  []
 
-[55
-
-] [56] [57
-
-]) [58
-
-] (../../chapters/chapterStabilityFinder/ChSF_introduction.tex [59
-
-
-]
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 140.
-
-[60]
-File: ../../chapters/chapterStabilityFinder/images/SF_algo_overv.png Graphic file (type QTm)
- <use  "../../chapters/chapterStabilityFinder/images/SF_algo_overv.png" >
-Overfull \hbox (84.76144pt too wide) in paragraph at lines 152--153
+File: ../../chapters/chapterABCSysBio/images/model_sel_res.png Graphic file (type QTm)
+<use  "../../chapters/chapterABCSysBio/images/model_sel_res.png" >
+Overfull \hbox (78.18794pt too wide) in paragraph at lines 398--399
  [] 
  []
 
 [61
 
-]
-Overfull \hbox (15.07262pt too wide) in paragraph at lines 186--187
+] [62] [63
+
+] [64]) [65
+
+] [66
+
+] (../../chapters/chapterStabilityFinder/ChSF_introduction.tex [67
+
+] [68]
+File: ../../chapters/chapterStabilityFinder/images/SF_algo_overv.png Graphic file (type QTm)
+ <use  "../../chapters/chapterStabilityFinder/images/SF_algo_overv.png" >
+Overfull \hbox (84.76144pt too wide) in paragraph at lines 141--142
+ [] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[69] [70]
+Overfull \hbox (15.07262pt too wide) in paragraph at lines 179--180
 \EU1/LinuxLibertineO(0)/m/n/10.95 In Stability Finder, latin hypercube sampling is used to sample initial conditions ([]McKay,
  []
 
 File: ../../chapters/chapterStabilityFinder/images/LHS.png Graphic file (type QTm)
-<use  "../../chapters/chapterStabilityFinder/images/LHS.png" > [62
+<use  "../../chapters/chapterStabilityFinder/images/LHS.png" > [71
 
 ]
-Overfull \hbox (8.36925pt too wide) in paragraph at lines 213--214
+Overfull \hbox (8.36925pt too wide) in paragraph at lines 201--202
 []\EU1/LinuxLibertineO(0)/m/n/10.95 Steady states of stochastic models are clustered using the K-means clustering ([]Lloyd
  []
 
-[63
+[72
 
-] [64] [65] [66] [67
+] [73] [74] [75
+
+] [76] [77
 
 ]
 File: ../../chapters/chapterStabilityFinder/images/ex1_sum.png Graphic file (type QTm)
- <use  "../../chapters/chapterStabilityFinder/images/ex1_sum.png" > [68] [69]
+ <use  "../../chapters/chapterStabilityFinder/images/ex1_sum.png" >
 File: ../../chapters/chapterStabilityFinder/images/ex4_summ.png Graphic file (type QTm)
- <use  "../../chapters/chapterStabilityFinder/images/ex4_summ.png" > [70
-
-] [71] [72
+ <use  "../../chapters/chapterStabilityFinder/images/ex4_summ.png" > [78] [79] [80] [81
 
 ]
 File: ../../chapters/chapterStabilityFinder/images/gardner_model.png Graphic file (type QTm)
  <use  "../../chapters/chapterStabilityFinder/images/gardner_model.png" >
 File: ../../chapters/chapterStabilityFinder/images/gardner_posteriors.png Graphic file (type QTm)
- <use  "../../chapters/chapterStabilityFinder/images/gardner_posteriors.png" > [73] [74] [75]
-Overfull \hbox (0.10652pt too wide) in paragraph at lines 421--422
+ <use  "../../chapters/chapterStabilityFinder/images/gardner_posteriors.png" > [82] [83] [84]
+Overfull \hbox (0.10652pt too wide) in paragraph at lines 448--449
 \EU1/LinuxLibertineO(0)/m/n/10.95 Next I analyzed an extension of the Gardner switch model developed by []Lu, Onuchic,
  []
 
 File: ../../chapters/chapterStabilityFinder/images/lu_bifurc.png Graphic file (type QTm)
-<use  "../../chapters/chapterStabilityFinder/images/lu_bifurc.png" > [76
+<use  "../../chapters/chapterStabilityFinder/images/lu_bifurc.png" > [85
 
-] [77]
+] [86]
 File: ../../chapters/chapterStabilityFinder/images/LU_diagrams.png Graphic file (type QTm)
  <use  "../../chapters/chapterStabilityFinder/images/LU_diagrams.png" >
+Overfull \hbox (73.04315pt too wide) in paragraph at lines 510--530
+ [][] 
+ []
+
 File: ../../chapters/chapterStabilityFinder/images/lu_paper_phase.png Graphic file (type QTm)
- <use  "../../chapters/chapterStabilityFinder/images/lu_paper_phase.png" > [78
+<use  "../../chapters/chapterStabilityFinder/images/lu_paper_phase.png" > [87
 
-] [79] [80]
+] [88] [89]
 File: ../../chapters/chapterStabilityFinder/images/lu_paper_post.png Graphic file (type QTm)
- <use  "../../chapters/chapterStabilityFinder/images/lu_paper_post.png" > [81]
-
-LaTeX Warning: Reference `lu_paper_phase.png' on page 82 undefined on input line 523.
-
+ <use  "../../chapters/chapterStabilityFinder/images/lu_paper_post.png" > [90]
 File: ../../chapters/chapterStabilityFinder/images/Lu_234.png Graphic file (type QTm)
-<use  "../../chapters/chapterStabilityFinder/images/Lu_234.png" > [82
+ <use  "../../chapters/chapterStabilityFinder/images/Lu_234.png" >
+
+LaTeX Warning: Float too large for page by 51.21739pt on input line 572.
+
+[91
 
 
-] [83] [84]
+] [92] [93]
 File: ../../chapters/chapterStabilityFinder/images/LU-234-phase-all.png Graphic file (type QTm)
- <use  "../../chapters/chapterStabilityFinder/images/LU-234-phase-all.png" > [85]
+ <use  "../../chapters/chapterStabilityFinder/images/LU-234-phase-all.png" > [94]
 File: ../../chapters/chapterStabilityFinder/images/lu_6ss.png Graphic file (type QTm)
  <use  "../../chapters/chapterStabilityFinder/images/lu_6ss.png" >
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[86
+[95
 
-] [87] [88
+] [96] [97
 
 ]
 File: ../../chapters/chapterStabilityFinder/images/MA-cs-dp-phase.png Graphic file (type QTm)
  <use  "../../chapters/chapterStabilityFinder/images/MA-cs-dp-phase.png" >
 File: ../../chapters/chapterStabilityFinder/images/MA_sym_post.png Graphic file (type QTm)
- <use  "../../chapters/chapterStabilityFinder/images/MA_sym_post.png" > [89] [90]
+ <use  "../../chapters/chapterStabilityFinder/images/MA_sym_post.png" > [98] [99]
 File: ../../chapters/chapterStabilityFinder/images/MA_QSSA.png Graphic file (type QTm)
- <use  "../../chapters/chapterStabilityFinder/images/MA_QSSA.png" > [91
+ <use  "../../chapters/chapterStabilityFinder/images/MA_QSSA.png" > [100
 
-] [92]
+] [101]
 File: ../../chapters/chapterStabilityFinder/images/MA_stoch_design_princ.png Graphic file (type QTm)
- <use  "../../chapters/chapterStabilityFinder/images/MA_stoch_design_princ.png" > [93
+ <use  "../../chapters/chapterStabilityFinder/images/MA_stoch_design_princ.png" > [102
 
-] [94] [95
+] [103] [104
 
 ]
 File: ../../chapters/chapterStabilityFinder/images/priors_matter.png Graphic file (type QTm)
- <use  "../../chapters/chapterStabilityFinder/images/priors_matter.png" > [96]
+ <use  "../../chapters/chapterStabilityFinder/images/priors_matter.png" > [105]
 File: ../../chapters/chapterStabilityFinder/images/priors_matter_2.png Graphic file (type QTm)
  <use  "../../chapters/chapterStabilityFinder/images/priors_matter_2.png" >
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[97
+[106
 
-] [98] [99
+] [107] [108
 
-]) [100] (../../chapters/chapterABCFlow/ChFlow_and_exp_new_str.tex
-File: ../../chapters/chapterABCFlow/images/flow-overview.png Graphic file (type QTm)
- <use  "../../chapters/chapterABCFlow/images/flow-overview.png" > [101
+]) [109] [110
 
+] (../../chapters/chapterABCFlow/ChFlow_and_exp_new_str.tex [111
 
-] [102]
+]
 File: ../../chapters/chapterABCFlow/images/abc-flow-overv.png Graphic file (type QTm)
  <use  "../../chapters/chapterABCFlow/images/abc-flow-overv.png" >
-Overfull \hbox (36.00462pt too wide) in paragraph at lines 38--39
+Overfull \hbox (36.00462pt too wide) in paragraph at lines 47--48
  [] 
  []
 
-Missing character: There is no 𝜖 in font Linux Libertine O/OT:script=latn;language=DFLT;mapping=tex-text;+liga;mapping=tex-text;!
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 88.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 97.
 
-[103] [104]
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 97.
-
-File: ../../chapters/chapterABCFlow/images/mus_sigmas_diff.png Graphic file (type QTm)
-<use  "../../chapters/chapterABCFlow/images/mus_sigmas_diff.png" >
-Overfull \hbox (62.16814pt too wide) in paragraph at lines 118--119
- [][] 
- []
-
-File: ../../chapters/chapterABCFlow/images/multimodal_musd.png Graphic file (type QTm)
-<use  "../../chapters/chapterABCFlow/images/multimodal_musd.png" >
-Overfull \hbox (54.34319pt too wide) in paragraph at lines 126--127
- [][] 
- []
-
-[105
-
-] [106] [107]
-File: ../../chapters/chapterABCFlow/images/multimodal_v_normal.png Graphic file (type QTm)
- <use  "../../chapters/chapterABCFlow/images/multimodal_v_normal.png" >
-Overfull \hbox (68.8305pt too wide) in paragraph at lines 143--144
-[]\EU1/LinuxLibertineO(0)/m/n/10.95 The distance in the 1D case was calculated using the Kolmogorov-Smirnov test ([]).
- []
-
-LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(1)/m/n' will be
-(Font)              scaled to size 11.00111pt on input line 148.
-LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(1)/m/n' will be
-(Font)              scaled to size 8.03735pt on input line 148.
-LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(1)/m/n' will be
-(Font)              scaled to size 6.02802pt on input line 148.
-File: ../../chapters/chapterABCFlow/images/ks-1d-overv.png Graphic file (type QTm)
-<use  "../../chapters/chapterABCFlow/images/ks-1d-overv.png" > [108
-
-] [109]
+[112] [113] [114]
 File: ../../chapters/chapterABCFlow/images/intensity_calc.png Graphic file (type QTm)
- <use  "../../chapters/chapterABCFlow/images/intensity_calc.png" > [110
+ <use  "../../chapters/chapterABCFlow/images/intensity_calc.png" > [115
 
 ]
+File: ../../chapters/chapterABCFlow/images/old_distance.png Graphic file (type QTm)
+ <use  "../../chapters/chapterABCFlow/images/old_distance.png" >
+File: ../../chapters/chapterABCFlow/images/mus_sigmas-01.png Graphic file (type QTm)
+ <use  "../../chapters/chapterABCFlow/images/mus_sigmas-01.png" > [116]
+File: ../../chapters/chapterABCFlow/images/multimodal_musd.png Graphic file (type QTm)
+ <use  "../../chapters/chapterABCFlow/images/multimodal_musd.png" >
+File: ../../chapters/chapterABCFlow/images/multimodal_v_normal.png Graphic file (type QTm)
+ <use  "../../chapters/chapterABCFlow/images/multimodal_v_normal.png" > [117] [118] [119]
+LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(1)/m/n' will be
+(Font)              scaled to size 11.00111pt on input line 200.
+LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(1)/m/n' will be
+(Font)              scaled to size 8.03735pt on input line 200.
+LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(1)/m/n' will be
+(Font)              scaled to size 6.02802pt on input line 200.
 File: ../../chapters/chapterABCFlow/images/epsilon_same_box.png Graphic file (type QTm)
- <use  "../../chapters/chapterABCFlow/images/epsilon_same_box.png" > [111]
+ <use  "../../chapters/chapterABCFlow/images/epsilon_same_box.png" > [120] [121]
 File: ../../chapters/chapterABCFlow/images/mu_diff.png Graphic file (type QTm)
- <use  "../../chapters/chapterABCFlow/images/mu_diff.png" > [112
+ <use  "../../chapters/chapterABCFlow/images/mu_diff.png" > [122
 
 ]
-Overfull \hbox (23.65347pt too wide) in paragraph at lines 257--258
+Overfull \hbox (23.65347pt too wide) in paragraph at lines 294--295
 \EU1/LinuxLibertineO(0)/m/n/10.95 Collins ([][]2000[][]) switch was simulated stochastically using the Gillespie algorithm ([]Gillespie
  []
 
 File: ../../chapters/chapterABCFlow/images/1D_sim_res.png Graphic file (type QTm)
-<use  "../../chapters/chapterABCFlow/images/1D_sim_res.png" > [113
+<use  "../../chapters/chapterABCFlow/images/1D_sim_res.png" > [123] [124] [125]
+File: ../../chapters/chapterABCFlow/images/2D_sim_res.png Graphic file (type QTm)
+ <use  "../../chapters/chapterABCFlow/images/2D_sim_res.png" >
+Overfull \hbox (69.73044pt too wide) in paragraph at lines 348--349
+ [][] 
+ []
 
-] [114]
-File: ../../chapters/chapterABCFlow/images/normal_sigma_example.png Graphic file (type QTm)
- <use  "../../chapters/chapterABCFlow/images/normal_sigma_example.png" >
 File: ../../chapters/chapterABCFlow/images/1d2dfit.png Graphic file (type QTm)
- <use  "../../chapters/chapterABCFlow/images/1d2dfit.png" >
-Overfull \hbox (34.44208pt too wide) in paragraph at lines 293--294
+<use  "../../chapters/chapterABCFlow/images/1d2dfit.png" >
+Overfull \hbox (34.44208pt too wide) in paragraph at lines 367--368
  [][] 
  []
 
-[115
+[126
 
-] [116]
-File: ../../chapters/chapterABCFlow/images/sim_1d_2d_post.pdf Graphic file (type QTm)
- <use  "../../chapters/chapterABCFlow/images/sim_1d_2d_post.pdf" >
-Overfull \hbox (63.7265pt too wide) in paragraph at lines 303--304
- [][] 
- []
+] [127]
+File: ../../chapters/chapterABCFlow/images/toy_model_posteriors.png Graphic file (type QTm)
+ <use  "../../chapters/chapterABCFlow/images/toy_model_posteriors.png" >
 
-[117
+LaTeX Warning: Float too large for page by 29.35167pt on input line 379.
 
-]
 File: ../../chapters/chapterABCFlow/images/pKDL071_overview.png Graphic file (type QTm)
- <use  "../../chapters/chapterABCFlow/images/pKDL071_overview.png" > [118] [119]
-LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/it' will be
-(Font)              scaled to size 12.05603pt on input line 342.
- [120
+<use  "../../chapters/chapterABCFlow/images/pKDL071_overview.png" > [128
 
-] [121] [122]
+] [129] [130]
+LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/it' will be
+(Font)              scaled to size 12.05603pt on input line 416.
+ [131
+
+] [132] [133]
+Overfull \hbox (2.95178pt too wide) in paragraph at lines 534--535
+\EU1/LinuxLibertineO(0)/m/n/10.95 Thermocompetent \EU1/LinuxLibertineO(0)/m/it/10.95 E.coli \EU1/LinuxLibertineO(0)/m/n/10.95 Dh5α was transformed with the constructed plasmids. Each
+ []
+
+[134]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\acrshort' on input line 540.
+
+[135] [136] [137] [138]
+File: ../../chapters/chapterABCFlow/images/pKDL071-YFP.png Graphic file (type QTm)
+ <use  "../../chapters/chapterABCFlow/images/pKDL071-YFP.png" > [139]
+File: ../../chapters/chapterABCFlow/images/plasmids_constructed.png Graphic file (type QTm)
+ <use  "../../chapters/chapterABCFlow/images/plasmids_constructed.png" > [140]
 File: ../../chapters/chapterABCFlow/images/growth_curves.pdf Graphic file (type QTm)
  <use  "../../chapters/chapterABCFlow/images/growth_curves.pdf" >
-Overfull \hbox (34.82338pt too wide) in paragraph at lines 406--407
+Overfull \hbox (34.82338pt too wide) in paragraph at lines 666--667
  [] 
  []
 
-[123] [124]
+[141]
 File: ../../chapters/chapterABCFlow/images/pKDL071_concentrations_2d1d.png Graphic file (type QTm)
  <use  "../../chapters/chapterABCFlow/images/pKDL071_concentrations_2d1d.png" >
 
-LaTeX Warning: Float too large for page by 17.44165pt on input line 422.
+LaTeX Warning: Float too large for page by 17.44165pt on input line 684.
 
-[125
+[142
 
-] [126]
+] [143]
 File: ../../chapters/chapterABCFlow/images/pKDL071_concentrations_model_fit.png Graphic file (type QTm)
- <use  "../../chapters/chapterABCFlow/images/pKDL071_concentrations_model_fit.png" > [127
+ <use  "../../chapters/chapterABCFlow/images/pKDL071_concentrations_model_fit.png" > [144
 
-] [128]
+] [145]
 File: ../../chapters/chapterABCFlow/images/pKDL071_atc_time.png Graphic file (type QTm)
  <use  "../../chapters/chapterABCFlow/images/pKDL071_atc_time.png" >
 
-LaTeX Warning: Float too large for page by 9.74365pt on input line 461.
+LaTeX Warning: Float too large for page by 9.74365pt on input line 723.
 
 File: ../../chapters/chapterABCFlow/images/pKDL071_iptg_time.png Graphic file (type QTm)
 <use  "../../chapters/chapterABCFlow/images/pKDL071_iptg_time.png" >
 
-LaTeX Warning: Float too large for page by 20.5359pt on input line 469.
+LaTeX Warning: Float too large for page by 20.5359pt on input line 731.
 
-[129
+[146
 
-] [130] [131]
-File: ../../chapters/chapterABCFlow/images/plasmids_constructed.png Graphic file (type QTm)
- <use  "../../chapters/chapterABCFlow/images/plasmids_constructed.png" > [132
-
-] [133] [134]
-Overfull \hbox (1.11824pt too wide) in paragraph at lines 599--600
-\EU1/LinuxLibertineO(0)/m/n/10.95 Thermocompetent \EU1/LinuxLibertineO(0)/m/it/10.95 E.coli \EU1/LinuxLibertineO(0)/m/n/10.95 Dh5αwas transformed with the constructed plasmids. Each
+] [147] [148]
+Overfull \hbox (23.65347pt too wide) in paragraph at lines 755--756
+\EU1/LinuxLibertineO(0)/m/n/10.95 Collins ([][]2000[][]) switch was simulated stochastically using the Gillespie algorithm ([]Gillespie
  []
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\acrshort' on input line 605.
-
-[135] [136] [137]
 File: ../../chapters/chapterABCFlow/images/1D_real_res.png Graphic file (type QTm)
- <use  "../../chapters/chapterABCFlow/images/1D_real_res.png" > [138
+<use  "../../chapters/chapterABCFlow/images/1D_real_res.png" > [149
 
-] [139]) [140] (../../chapters/chapterDesignSwitches/ChDesSw_introduction.tex
+] [150]
+Overfull \hbox (3.03374pt too wide) in paragraph at lines 799--800
+[]\EU1/LinuxLibertineO(0)/m/n/10.95 ABC-Flow is similar to INSIGHT ([]Lillacci & Khammash [][]2013[][]), as it used a Bayesian
+ []
+
+[151
+
+]) [152] (../../chapters/chapterDesignSwitches/ChDesSw_introduction.tex
 File: ../../chapters/chapterDesignSwitches/images/switches_cloning_big.png Graphic file (type QTm)
  <use  "../../chapters/chapterDesignSwitches/images/switches_cloning_big.png" >
-Overfull \hbox (43.76157pt too wide) in paragraph at lines 14--15
+Overfull \hbox (43.76157pt too wide) in paragraph at lines 15--16
  [] 
  []
 
-[141
+[153
 
 
-] [142]) [143
+] [154]
+File: ../../chapters/chapterDesignSwitches/images/final-plasmids.pdf Graphic file (type QTm)
+ <use  "../../chapters/chapterDesignSwitches/images/final-plasmids.pdf" >
+File: ../../chapters/chapterDesignSwitches/images/stage1_cloning.pdf Graphic file (type QTm)
+ <use  "../../chapters/chapterDesignSwitches/images/stage1_cloning.pdf" > [155
 
-] [144
+] [156] [157]
+Overfull \hbox (6.33759pt too wide) in paragraph at lines 62--63
+[]\EU1/LinuxLibertineO(0)/m/n/10.95 First, the P$[]$ promoter is synthesised. The reverse complement of BBa_K934024
+ []
 
-] (../../chapters/chapterConclusions/ChConc.tex) [145
 
-] [146
+Overfull \hbox (7.07468pt too wide) in paragraph at lines 65--67
+\EU1/LinuxLibertineO(0)/m/n/10.95 5’- TTGGGACCTGCATGCTAATCTCTATCACTGATAGGGATAATACGAGTATCTC 
+ []
 
-] [147] [148] [149] [150] [151] [152] [153] [154
 
-] (../../appendices/appendix_ODEs.tex
+Overfull \hbox (3.04735pt too wide) in paragraph at lines 65--67
+\EU1/LinuxLibertineO(0)/m/n/10.95 TATCACTGATAGGGAGTAAACCTGTACGATCCTACAGGTAACGTTCGGCCG -3’
+ []
+
+[158
+
+]
+File: ../../chapters/chapterDesignSwitches/images/stage2_cloning.pdf Graphic file (type QTm)
+ <use  "../../chapters/chapterDesignSwitches/images/stage2_cloning.pdf" > [159]
+Overfull \hbox (19.38408pt too wide) in paragraph at lines 87--88
+\EU1/LinuxLibertineO(0)/m/n/10.95 product produced above of pTD103aiiA_Cm with BsGI flanking sequences and pKDL071-
+ []
+
+File: ../../chapters/chapterDesignSwitches/images/stage3_cloning.pdf Graphic file (type QTm)
+<use  "../../chapters/chapterDesignSwitches/images/stage3_cloning.pdf" >
+Overfull \hbox (16.18147pt too wide) in paragraph at lines 92--93
+ [] 
+ []
+
+[160] [161]) [162
+
+
+] (../../chapters/chapterConclusions/ChConc.tex) [163
+
+
+] [164
+
+] [165] [166] [167] [168] [169] [170] [171] [172] (../../appendices/appendix_ODEs.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\acrlong' on input line 1.
 
 
-Overfull \hbox (122.9826pt too wide) detected at line 47
+Overfull \hbox (104.38126pt too wide) detected at line 47
 []
  []
 
 
-Overfull \hbox (102.77191pt too wide) detected at line 66
+Overfull \hbox (85.45616pt too wide) detected at line 66
 []
  []
 
-[155]
-Overfull \hbox (120.44571pt too wide) detected at line 112
+[173
+
+]
+Overfull \hbox (103.6349pt too wide) detected at line 112
 []
  []
 
-[156]
-Overfull \hbox (102.77191pt too wide) detected at line 131
+[174]
+Overfull \hbox (85.45616pt too wide) detected at line 131
 []
  []
 
-[157]
-Overfull \hbox (123.13191pt too wide) detected at line 184
+[175]
+Overfull \hbox (106.3211pt too wide) detected at line 184
 []
  []
 
-[158]
-Overfull \hbox (102.77191pt too wide) detected at line 203
+[176]
+Overfull \hbox (85.45616pt too wide) detected at line 203
 []
  []
 
-[159]
-Overfull \hbox (127.75275pt too wide) detected at line 253
+[177]
+Overfull \hbox (108.05199pt too wide) detected at line 253
 []
  []
 
-[160]
-Overfull \hbox (108.47844pt too wide) detected at line 284
+[178]
+Overfull \hbox (91.66763pt too wide) detected at line 284
 []
  []
 
-[161]
+[179]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\acrshort' on input line 287.
 
 
-Overfull \hbox (191.90219pt too wide) detected at line 318
+Overfull \hbox (169.16745pt too wide) detected at line 318
 []
  []
 
-[162]
+[180]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\acrshort' on input line 366.
 
 
-Overfull \hbox (224.43005pt too wide) detected at line 413
+Overfull \hbox (201.28703pt too wide) detected at line 413
 []
  []
 
-[163] [164] [165]) [166] (../../appendices/appendix_primers.tex
+[181] [182] [183]) [184] (../../appendices/appendix_primers.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\acrshort' on input line 1.
 
-) [167
+) [185
 
-] [168
+] [186
 
-] (../../appendices/appendix_algos.tex [169] [170])
+] (../../appendices/appendix_algos.tex [187] [188] [189
+
+]
+Overfull \hbox (39.35901pt too wide) in paragraph at lines 150--151
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (45.95973pt too wide) in paragraph at lines 156--157
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (59.16118pt too wide) in paragraph at lines 158--159
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (12.95612pt too wide) in paragraph at lines 162--163
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[190]
+Overfull \hbox (138.36986pt too wide) in paragraph at lines 199--200
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (85.56407pt too wide) in paragraph at lines 200--201
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (12.95612pt too wide) in paragraph at lines 202--203
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[191])
 
 Package caption Warning: Unused \captionsetup[subfigure] on input line 198.
 See the caption package documentation for explanation.
 
-[171
-
-]
+[192]
 \tf@toc=\write10
 \openout10 = `central.toc'.
 
@@ -3126,12 +3197,12 @@ Package logreq Info: Writing requests to 'central.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 56164 strings out of 493706
- 1004665 string characters out of 6145769
- 1713481 words of memory out of 5000000
- 58789 multiletter control sequences out of 15000+600000
+ 57451 strings out of 493706
+ 1023678 string characters out of 6145769
+ 1734882 words of memory out of 5000000
+ 60055 multiletter control sequences out of 15000+600000
  12017 words of font info for 83 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 64i,24n,109p,10434b,3227s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,24n,109p,10434b,3237s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on central.pdf (171 pages).
+Output written on central.pdf (192 pages).
