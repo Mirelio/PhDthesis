@@ -1,26 +1,43 @@
 \section{Introduction}
-In this chapter, I aim to study the genetic toggle switch experimentally.  This chapter is organised as follows: In the first section I provide an overview of the circuit used and then outline the methods used for the experiments carried out. In the subsequent section I investigate the effect that the switch has on the growth rate of the bacteria. Then I examine the concentrations of the inducers and the time needed to flip the switch. 
 
+In this chapter I aim to fit the toggle switch model to experimental data. This chapter is organised as follows: In the first section I provide an overview of the framework developed to fit models to flow cytometry data (ABC-Flow). In the subsequent section I test ABC-Flow on simulated flow cytometry data. Next I use flow cytometry to study the toggle switch experimentally and examine the concentrations of the inducers and the time needed to flip the switch. Finally, I use ABC-Flow to fit a computational model to the experimental data acquired.
+
+
+%In this chapter, I aim to study the genetic toggle switch experimentally.  This chapter is organised as follows: In the first section I provide an overview of the circuit used and then outline the methods used for the experiments carried out. In the subsequent section I investigate the effect that the switch has on the growth rate of the bacteria. Then I examine the concentrations of the inducers and the time needed to flip the switch. 
+\section{Contributions to this Chapter}
+
+The R code used to pre-process the flow cytometry obtained was provided by Alex J Fedorec. The initial development of ABC-Flow was carried out by Chris P Barnes. 
 
 \section{Flow cytometry and model fitting}
 
-Flow cytometry detects the fluorescent intensity levels in individual cells. It can also provide physical information about the size and granularity of a cell via the forward and side scattering respectively. An overview of flow cytometry is shown in Figure~\ref{fig:flow_overv}. A laser excites the fluorochrome present in the bacterial cells. The fluorochromes emit a signal that is detected by channels in the optics. The signals are then all collected and analysed. A sample typically consists single cell measurements of $10^4$-$10^5$ cells. %Typically the cell populations are separated from the noise in the experiment via expert manual gating. Advances in flow cytometry technology has increased both the number of the dimensions of the datasets and the number of samples obtained, thus promoting the development for automated methods~\autocite{Johnsson:2016fd, Chen:2015bp, ONeill:2013cs}.
+Computational modelling is well known to aid the understanding  of complex systems by fitting experimental data and providing further insights and testable predictions. Experimental data is used to fit the model parameters and then the model can provide further understanding of the system and aid in the design of further experiments. Flow cytometry is used in synthetic biology for BioBrick characterisation~\autocite{Kelly:2009bj}, enzyme screening~\autocite{Choi:2014gb} and industrial  bioprocesses~\autocite{Diaz:2010kw} among others. 
+
+Flow cytometry data presents a challenge to computational modelling as the fluorescence intensity per cell is measured rather than number of proteins. The problem with measuring fluorescence intensity is that it is a relative and not an absolute measurement like the number or concentration of proteins in a system, which would increase the predictive power of computational models~\autocite{Bower:2010jl, Cooling:2010bx}, but this type of biological data cannot be directly measured~\autocite{Kelwick:2014iy}. The fluorescence intensity values can vary between experiments due to instrument settings so they can only be used in relative terms within the same experiment. Standardization of experimental methods in flow cytometry has aided the effort to reduce variability due to experimental setup~\autocite{Kelly:2009bj}, but the successful conversion of fluorescence intensity to an absolute measurement of protein cell\textsuperscript{-1} s\textsuperscript{-1} has yet to be made successfully. 
+
+%Another challenge that must be faced when modelling gene expression dynamics is that the stochasticity of the systems involved must be taken into account. The Gillespie algorithm~\autocite{Gillespie:1977ww} can be used to simulate a genetic system stochastically but is very computationally expensive. The unknown 
+
+
+Another approach to the problem is converting the model output of GFP cell\textsuperscript{-1} s\textsuperscript{-1} to relative fluorescence intensity. This approach was first developed by~\textcite{Lillacci:2013hu}. The converted model output can then be compared to the data output from the flow cytometer. The fluorescent intensity measurements acquired via flow cytometry are treated as a sample from distribution of the fluorescence present in the cell~\autocite{Lillacci:2013hu}. This means that the flow cytometry fluorescence distribution at each time point can be compared to the model fluorescence distribution. Here I expand the method developed by~\textcite{Lillacci:2013hu} in order to be able to apply it to flow cytometry data including two fluorescent proteins simultaneously. This new framework, ABC-Flow, can be used to fit stochastic models to flow cytometry data involving two species, like the genetic toggle switch. 
+
+
+ %Using a distance metric it can be assessed whether the two samples have been drawn from the same distribution, and thus determine whether the model is a good fit to the data. This allows for the use of computational modelling on flow cytometry data. 
 
 
 
-\begin{figure*}[tb]
-	\begin{center}
-		\includegraphics[scale=0.9]{../../chapters/chapterABCFlow/images/flow-overview.png}
-	\caption[LoF caption]{\label{fig:flow_overv}: Flow cytometry. A laser excites the fluorescent proteins present in each cell. The cytometer has up to 4 lasers, violet (V), red (R), yellow (Y) and blue (B). The detectors in the optics, FL1-4 pick up the signals. The cytometer also picks up size and granularity information via the forward scatter (FSC) and side scatter (SSC) detectors. }
-	\end{center}
-\end{figure*}
+%ABC-Flow approaches the problem of absolute protein numbers
+
+ 
+ 
+% ABC-Flow is a python package that uses Bayesian statistics to fit the parameters of a given model to flow cytometry time course data. The algorithm and its usage is described in Section~\ref{sec:abcflow-meth}.
 
 
-Flow cytometry is used in synthetic biology, among others, for BioBrick characterisation~\autocite{Kelly:2009bj}, enzyme screening~\autocite{Choi:2014gb} and industrial  bioprocesses~\autocite{Diaz:2010kw}. Flow cytometry is a powerful tool for synthetic biology as it can measure multiple parameters in single cells, and process up to 35,000 cells sec\textsuperscript{-1}~\autocite{Anonymous:2015tj}. 
 
-A drawback of flow cytometry is that the fluorescence intensity per cell is measured rather than number of proteins. Measuring absolute numbers of protein would be ideal for model fitting, but this type of biological data cannot be directly measured~\autocite{Kelwick:2014iy}. Standardization of experimental methods in flow cytometry has aided the effort to convert relative measurements, like fluorescence intensity, to absolute measurements, like GFP cell\textsuperscript{-1} s\textsuperscript{-1}~\autocite{Kelly:2009bj, Kelwick:2014iy}. 
+%In order to characterise the~\textcite{Litcofsky:2012gr} toggle switch, I use the data collected in Section~\ref{sec:ts_time} to fit the~\textcite{Gardner:2000vha} toggle switch model, shown in Section (XXX). In order to do that, I use ABC-Flow as described in the Methods in Section~\ref{sec:abcflow-meth}.
 
-In this chapter, I developed ABC-Flow, a method to fit computational models to experimental flow cytometry data. ABC-Flow approaches the problem of absolute protein numbers by converting the model output of GFP cell\textsuperscript{-1} s\textsuperscript{-1} to relative fluorescence intensity. ABC-Flow is a python package that uses Bayesian statistics to fit the parameters of a given model to flow cytometry time course data. The algorithm and its usage is described in Section~\ref{sec:abcflow-meth}.
+%Prior to using ABC-Flow to fit the experimental data to a toggle switch model, ABC-Flow must be validated. In the following sections I first use randomly generated distributions to set the algorithm metrics and distances. Then I use a simulated data set to which I fit a toggle switch model and finally I use ABC-Flow to fit experimental data.  
+
+%In the following sections I first use normal distributions to study the distance functions used in ABC-Flow. Then I use a simulated data set to which I fit a toggle switch model and finally I use ABC-Flow to fit experimental data.  
+
 
 %Progress has been made in the development of computational tools for the automated analysis of flow cytometry data from the field of computational immunology~\autocite{Saeys:2016im}. These tools are used for automated gating~\autocite{Lo:2008it, Aghaeepour:2011fv, Johnsson:2016fd} as well as modelling of cellular processes over time~\autocite{Bendall:2014hs, Bagwell:2015gp}. These methods are used to track different subpopulations over time, in order to follow the underlying developmental trajectory~\autocite{Saeys:2016im} and thus cannot be applied to experiments involving uniform cell populations. 
 
@@ -35,12 +52,12 @@ The algorithm of ABC-Flow is based on the same ABC algorithm as ABC-SysBio and S
 
 \begin{figure*}[htbp]
 	\begin{center}
-		\includegraphics[scale=0.7]{../../chapters/chapterABCFlow/images/abc-flow-overv.png}
-		\caption[LoF caption]{\label{fig:abcflow-overv}: Overview of ABC-Flow. (A) ABC-Flow is used to fit models to experimental flow cytometry data. (B) The algorithm can be applied to 1D and 2D flow data. (C) ABC-Flow uses approximate bayesian computation.}
+		\includegraphics[scale=1.1]{../../chapters/chapterABCFlow/images/abc-flow-overv.png}
+		\caption[LoF caption]{\label{fig:abcflow-overv}Overview of ABC-Flow. (A) ABC-Flow is used to fit models to experimental flow cytometry data. (B) The algorithm can be applied to 1D and 2D flow data. (C) ABC-Flow uses Approximate Bayesian Computation.}
 	\end{center}
 \end{figure*}
 
-The user provides an SBML model file and an input file to specify the information needed to run ABC-Flow, like the \epsilon schedule and the priors to the parameters. The user must also provide a data file containing the flow cytometry data to which the model will be fitted. The data files used here were generated from .fcs files, which is the standard output of flow cytometers using the R bioconductor packages flowCore~\autocite{flowCore:man}. ABC-Flow simulations are implemented on \acrshort{gpu}s.
+The user provides an SBML model file and an input file to specify the information needed to run ABC-Flow, such as the epsilon schedule and the priors to the parameters. The user must also provide a data file containing the flow cytometry data to which the model will be fitted. The data files used here were generated from .fcs files, which is the standard output of flow cytometers, using the R bioconductor packages flowCore~\autocite{flowCore:man}. All models are simulated stochastically using the Gillespie algorithm~\autocite{Gillespie:1977ww}. ABC-Flow simulations are implemented on \acrshort{gpu}s. ABC-Flow is available as a Python package, and can be downloaded from \url{https://github.com/ucl-cssb/ABC-Flow.git}. 
 
 
 
@@ -73,7 +90,7 @@ The user provides an SBML model file and an input file to specify the informatio
 			\State Sample particles from previous population
 			\State Perturb each particle by $\pm$ half the range of the previous population (j) to obtain new perturbed population (i).
 	\EndIf
-	\State Simulate model
+	\State Simulate model using the Gillespie algorithm.
 	\State Convert signal to intensity: 
 	\For{each particle}
 		\For{each beta}
@@ -94,88 +111,7 @@ The user provides an SBML model file and an input file to specify the informatio
 \end{algorithm}
 
 \clearpage
-\subsubsection{Distance Calculations}
-
-
-\begin{algorithm}[htbp]
-\label{alg:dist}
-\caption{Distance calculation}
- \begin{algorithmic}[1]
-    \Statex
-	\Let {Grid}{min(data):max(data):ngrid} 
-	\State kD = kernel density estimation(data)
-	\State kS = kernel density estimation(simulations)
-	\State fD = kD(xx)
-	\State fS = kS(xx)    
-	\State $d = \sum((fD-fS)^2)$
-  \end{algorithmic}
-\end{algorithm}
-
-Next, by varying the amount of $\mu$ and $\sigma$ by which the two normals differ, we can find out the dynamical range of the epsilons. Whether two distributions are identical or vary by a large amount, we can get an estimate of how much the epsilon will vary from one to the other, both in 1D and 2D. 
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[scale=0.5]{../../chapters/chapterABCFlow/images/mus_sigmas_diff.png}
-\caption[LoF caption]{ (A)The range by which epsilon varies as the difference between the $\mu$ of the distributions increases. (B) The difference between the epsilon distribution medians in the 1D and 2D case is not constant with increasing $\mu$ difference between the data sets. (C)The variance of the epsilon distributions remains relatively constant with increasing $\mu$. (D)The median of the epsilon distributions varies by a small amount with increasing difference in the $\sigma$ of the distributions, but the variance (E) remains relatively constant.}
-\label{fig:epsilon_mu_s_diff}
-\end{figure}
-
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[scale=0.6]{../../chapters/chapterABCFlow/images/multimodal_musd.png}
-\caption[LoF caption]{Comparing the 1D and 2D distances between bimodal distributions. (A) and (B) show samples of the bimodal distributions compared in 1D and 2D respectively with a $\mu$ difference of 4 between simulations and data. (C,D) The range by which epsilon median and variance varies as the difference between the $\mu$ of the distributions increases.}
-\label{fig:multimodal_musd}
-\end{figure}
-\clearpage
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[scale=0.6]{../../chapters/chapterABCFlow/images/multimodal_v_normal.png}
-\caption[LoF caption]{Comparing a multimodal to a normal distribution, in 1D and 2D. (A, B) We vary the $mu$ of the normal distribution from equal to the $\mu$ of the first peak of the bimodal distribution to beyond the range of the bimodal distribution. (C) We find that epsilon median and variance are at the lowest when the $\mu$ of the normal distribution is equal to the $\mu$ of one of the peaks of the bimodal distribution. }
-\label{fig:multimodal_v_normal}
-\end{figure}
-
-
-
-
-
-The distance in the 1D case was calculated using the Kolmogorov-Smirnov test~\autocite{Kolmogorov:1933}. The Kolmogorov-Smirnov test is a non-parametric statistic test that determines whether the two distribution functions differ. The KS distance between two distributions is equal to the largest distance between the empirical distribution functions of the two samples, as illustrated in Figure~\ref{fig:ks-dist} and Equation~\ref{eq:ks1d}.
-
-\begin{align}
-\label{eq:ks1d}
-D_{n,n'}=\sup _{x}|F_{1,n}(x)-F_{2,n'}(x)|
-\end{align}
-
-
-
-\begin{figure*}[htbp]
-\begin{center}
-	\includegraphics[scale=0.5]{../../chapters/chapterABCFlow/images/ks-1d-overv.png}
-			\caption[LoF caption]{\label{fig:ks-dist}:The Kolmogorov-Smirnov distance function used to calculate the distance between distributions in the 1D case.}
-	\end{center}
-\end{figure*}
-
-
-
-%A grid is first defined, from the minimum to the maximum value in the dataset. A gaussian kernel is fit to the experimental and the simulated data, at each timepoint for the given grid. The distance between the two kernels is then defined by:
-
-%\begin{align*}%
-%	d = \sum_{i=xmin}^{xmax} (fD_i - fS_i)^2
-%\end{align*}
-
-
-For the 2D case the distance was calculated in a similar way, by using an adaptation of the Kolmogorov-Smirnov distance in higher dimensions~\autocite{Peacock:1983fa}.
-
-%\begin{figure*}[htbp]
-%	\begin{center}
-%		\includegraphics[scale=0.8]{../../chapters/chapterABCFlow/images/KS-dist.png}
-%		\caption[LoF caption]{\label{fig:ks-dist}:The Kolmogorov-Smirnov distance function used to calculate the distance between distributions in the 1D (A) and 2D (B) cases.}
-%	\end{center}
-%\end{figure*}
-%\clearpage
-\clearpage
-\subsubsection{Intensity calculation}
+\subsection{Intensity calculation}
 
 The units of the result of the stochastic simulations is in the form of number of fluorescent proteins. On the other hand, flow cytometry data units are in the form of fluorescence intensity. For ABC-Flow, the simulation results are converted to intensity in order to be able to compare the data to the simulations. In order to do this two additional parameters are defined, intensity \textmu{} and intensity \textsigma{}, for each fluorescent protein used. To convert the number of fluorescent proteins to intensity, random samples are drawn from a normal distribution:
 
@@ -187,46 +123,161 @@ where nFP is the number of fluorescent proteins.
 
 These parameters are fitted to the data along with the model parameters.  
 
-\begin{figure*}[htbp]
+\begin{figure*}[tb]
 	\begin{center}
 		\includegraphics[scale=0.6]{../../chapters/chapterABCFlow/images/intensity_calc.png}
-		\caption[LoF caption]{\label{fig:intensity_calc}:Converting the number of fluorescent proteins to the intensity (iFP) is done by drawing from a normal distribution, as shown in Equation~\ref{eq:intens}.}
+		\caption[LoF caption]{\label{fig:intensity_calc}Converting the number of fluorescent proteins to the intensity (iFP) is done by drawing from a normal distribution, as shown in Equation~\ref{eq:intens}.}
 	\end{center}
 \end{figure*}
 
-\subsection{ABC-Flow model fitting }
+\subsection{Distance Calculations}
 
-In order to characterise the~\textcite{Litcofsky:2012gr} toggle switch, I use the data collected in Section~\ref{sec:ts_time} to fit the~\textcite{Gardner:2000vha} toggle switch model, shown in Section (XXX). In order to do that, I use ABC-Flow as described in the Methods in Section~\ref{sec:abcflow-meth}.
+In order to compare the flow cytometry data to the model generated data, I had to develop a distance measure. This distance measure should be able to determine whether two datasets are sufficiently close to each other to be able to be assume that they have been drawn from the same distribution. The measure should also give an estimate of how different the two data sets are, and thus get increasingly larger as two data sets are drawn from increasingly different distributions. Finally the distance measure should be applicable to one and two dimensional distributions, and be comparable between the two. 
 
-%Prior to using ABC-Flow to fit the experimental data to a toggle switch model, ABC-Flow must be validated. In the following sections I first use randomly generated distributions to set the algorithm metrics and distances. Then I use a simulated data set to which I fit a toggle switch model and finally I use ABC-Flow to fit experimental data.  
 
-In the following sections I first use normal distributions to study the distance functions used in ABC-Flow. Then I use a simulated data set to which I fit a toggle switch model and finally I use ABC-Flow to fit experimental data.  
+\label{sec:dist}
+\subsubsection{Kernel distance}
+\label{sec:dist_kernel}
+In order to measure the distance between the flow cytometry data and the fitted model, the algorithm outlined in Algorithm~\ref{alg:dist} was developed. The algorithm consists of defining a grid from the minimum to the maximum value of the data. A gaussian kernel was then fit to the flow and simulated data. The distance between the two kernels is given by:
 
-\subsubsection{Distance study}
+\begin{align*}%
+	d = \sum_{i=xmin}^{xmax} (fD_i - fS_i)^2,
+\end{align*}
+where $fD_i$ is the kernel of the flow data at each value of x and $fS_i$ the kernel of the simulaed data. An illustration of the distance calculation is shown in Figure~\ref{fig:old_dist}.
+
+
+
+\begin{figure}[tb]
+\centering
+\includegraphics[scale=0.8]{../../chapters/chapterABCFlow/images/old_distance.png}
+\caption[LoF caption]{\label{fig:old_dist}Calculating the distance between two distributions in (A) 1D and (B) 2D. }
+\end{figure}
+
+
+
+\begin{algorithm}[htbp]
+\caption{Distance calculation}
+\label{alg:dist}
+ \begin{algorithmic}[1]
+    \Statex
+	\Let {Grid}{min(data):max(data):ngrid} 
+	\State kD = kernel density estimation(data)
+	\State kS = kernel density estimation(simulations)
+	\State fD = kD(xx)
+	\State fS = kS(xx)    
+	\State $epsilon = \sum((fD-fS)^2)$
+  \end{algorithmic}
+\end{algorithm}
+
+Prior to incorporating this distance calculation in ABC-FLow, it was tested to determine whether it is an appropriate distance to use when comparing distributions. This was done by drawing samples form two uniform distributions with varying mean and standard deviation. Algorithm~\ref{alg:dist} was then used to calculate the distance between the different distributions.
+
+First, Algorithm~\ref{alg:dist} was tested by drawing samples from two distributions with an increasingly different mean. This is done to determine the dynamical range of the distance calculation.
+
+\begin{figure}[tb]
+\centering
+\includegraphics[scale=0.7]{../../chapters/chapterABCFlow/images/mus_sigmas-01.png}
+\caption[LoF caption]{\label{fig:epsilon_mu_s_diff}(A) The range by which epsilon varies as the difference between the mean of the distributions increases. (B) The median of the epsilon distributions varies by a small amount with increasing difference in the standard deviation of the distributions.}
+\end{figure}
+
+From Figure~\ref{fig:epsilon_mu_s_diff} we see that the epsilon value does not increase linearly with increasing mean difference of the two distributions. As the difference between the means increases, the epsilon value reaches a peak when the difference is at 3. From that point, as the mean difference increases, epsilon values decrease until they reach a plateau at epsilon = 0.38 in the 1D case and epsilon = 0.14 in the 2D case. Next, I test the distance calculation by comparing bimodal distributions. Two bimodal distributions are generated with increasingly different mean, in 1D and 2D. 
+
+
+\begin{figure}[tb]
+\centering
+\includegraphics[scale=0.7]{../../chapters/chapterABCFlow/images/multimodal_musd.png}
+\caption[LoF caption]{\label{fig:multimodal_musd}Comparing the 1D and 2D distances between bimodal distributions. (A) and (B) show samples of the bimodal distributions compared in 1D and 2D respectively with a mean difference of 4 between simulations and data. (C) The range by which epsilon median and variance varies as the difference between the mean of the distributions increases. (D) The difference between the epsilons calculated in 1D and 2D is not constant.}
+
+\end{figure}
+
+Similar to the normal distribution, for the bimodal distributions shown in Figure~\ref{fig:multimodal_musd} we find that the epsilon values do not increase linearly. There are two peaks in the epsilon distribution, one at mean difference = 3 and one at mean difference=6. The epsilon values then decline until they reach a plateau. The epsilon values do not have a large range of values, for neither the 1D or 2D cases. We also find that the difference in the epsilon values between the 1D and 2D cases is not constant. 
+
+Finally, I study how these distance functions perform when comparing a bimodal with a normal distribution. A bimodal distribution is generated and a series of normal distributions with increasing mean, in 1D and 2D. From Figure~\ref{fig:multimodal_v_normal} we find that epsilon is the lowest when the mean of the normal distribution corresponds to the μ of one of the two peaks in the bimodal distribution and the highest when there is no overlap between the distributions.
+
+
+\begin{figure}[tb]
+\centering
+\includegraphics[scale=0.7]{../../chapters/chapterABCFlow/images/multimodal_v_normal.png}
+\caption[LoF caption]{Comparing a multimodal to a normal distribution, in 1D and 2D. (A, B) The mean of the normal distribution is varied from equal to the mean of the first peak of the bimodal distribution to beyond the range of the bimodal distribution. (C) Epsilon median and variance are at the lowest when the mean of the normal distribution is equal to the mean of one of the peaks of the bimodal distribution. }
+\label{fig:multimodal_v_normal}
+\end{figure}
+
+
+
+From Figures~\ref{fig:epsilon_mu_s_diff}-\ref{fig:multimodal_v_normal} I conclude that Algorithm~\ref{alg:dist} is not a good measure for distance to be used in ABC-Flow. If Algorithm~\ref{alg:dist} was used in order to minimize the distance between two distributions that start off with very different means, the distance between the two distributions will not be sufficiently minimized. This stems from the fact that ABC-FLow works by iteratively making the accepted epsilon smaller. As can be seen in Figure~\ref{fig:epsilon_mu_s_diff}, if the two distributions have a large difference in the means, (>6) it would not be possible to overcome the peak that is created when the mean difference is at 3. Epsilon values increase before the decrease again, which will be a problem in ABC-Flow. Therefore a different distance calculation was developed. 
+%%%%%%%%%%
+\subsubsection{Kolmogorov-Smirnov distance}
+\label{sec:dist_ks}
+
+In order to avoid the problems that arose from the distance calculation described in Section~\ref{sec:dist_kernel} I implemented a different distance calculation for ABC-Flow. I used a Python implementation of the Kolmogorov-Smirnov two sample test for the 1D case~\autocite{Kolmogorov:1933}. The \acrfull{ks} test is a non-parametric statistic test that determines whether two data sets were frawn from the same underlying distributions. The \acrshort{ks} distance between two distributions is equal to the largest distance between the empirical distribution functions of the two samples, as shown in Equation~\ref{eq:ks1d}.%illustrated in Figure~\ref{fig:ks-dist} and Equation~\ref{eq:ks1d}.
+
+\begin{align}
+\label{eq:ks1d}
+D_{n,n'}=\sup _{x}|F_{1,n}(x)-F_{2,n'}(x)|
+\end{align}
+
+For the 2D case the distance was calculated by using the 2D Kolmogorov-Smirnov two sample test. The algorithm was developed by~\textcite{Fasano:1987hg} and the Python implementation developed by~\textcite{Syrtis2016}. 
+
+\begin{figure*}[tb]
+\begin{center}
+	\includegraphics[scale=0.5]{../../chapters/chapterABCFlow/images/epsilon_uniform_musd_KS2sam.pdf}			
+	\caption[LoF caption]{\label{fig:ks-1d2d}The Kolmogorov-Smirnov distance function was tested in 1D (blue) and 2D (green). Two data sets were generated with increasing mean difference, and the Kolmogorov-Smirnov two-sample test was applied to compute the distance between the two.}
+	\end{center}
+\end{figure*}
+
+This distance calculation was tested to determine whether it is an appropriate distance function to use in ABC-Flow. Two datasets were drawn from normal distributions with increasingly different means. The ~\acrshort{ks} test was then used to calculate the distance between the data sets. This was carried out in 1D and 2D. The results are shown in Figure~\ref{fig:ks-1d2d}.
+
+
+The epsilons of the 1D Kolmogorov-Smirnov distance calculation increase with increasing mean difference until it reaches a plateau when the two distributions are very different. This makes it an ideal distance calculation to be used in ABC-Flow. As the epsilon threshold is lowered at each iteration the difference between the two data sets decreases. Therefore the 1D KS statistic was used in ABC-Flow. 
+
+
+The multidimensional Kolmogorov-Smirnov test presents a challenge, as there is no unique way to order the data points to calculate the largest distance. There are  $2^d − 1$ ways of ordering the data points and defining a cumulative distribution function, where $d$ is the number of dimensions~\autocite{Lopes:2007vk}. This has affected the results of the computed distance seen in Figure~\ref{fig:ks-1d2d}. The variability in the calculation of the distance between data sets originating from distributions with known distance is large relative to the range of values the calculation can take. This was further confirmed when testing this distance on simulated data, where no parameter identifiability was observed (data not shown). 
+
+To alleviate the above shortcomings of the multi-dimensional generalisation of the Kolmogorov-Smirnov test, a different distance calculation was used for the 2D case. The Kolmogorov-Smirnov test for the 1D case was used in ABC-Flow as it performed well in the testing shown here. 
+
+\subsubsection{Wald-Wolfowitz distance}
+
+For the 2D case the distance was calculated by using the multivariate Wald-Wolfowitz test~\autocite{Friedman:1979vm}. This is a generalisation of the Wald-Wolfowitz test proposed by~\autocite{Wald:1940wt}, a non-parametric test to determine whether two data sets were drawn from the same distribution. This test works by computing the minimum spanning tree of the pooled samples. Any edge whose nodes originated from different samples are removed, and the number of \textit{runs} (R) is then defined by the number of disjointed subtrees~\autocite{Friedman:1979vm}. If the number of \textit{runs} is small, then the null hypothesis that the two samples originated from the same distribution cannot be rejected. The quantity W for two samples, of length m and n, computed is given by: 
+ 
+\begin{align}
+W = \frac{R - 2\frac{mn}{N}-1}{\sqrt{\frac{2mn(2mn-N)}{N^2(N-1)}}},
+\end{align}
+where $N = m + n$ and $R$ is the number of \textit{runs}. A Python implementation of the multivariate Wald-Wolfowitz test by~\textcite{Monaco:2014wx} was used here. This is a variation to the Wald-Wolfowitz test that can be efficiently applied to larger data sets. The Python code used is given in Appendix (XXX).
+
+%\begin{figure*}[htbp]
+%	\begin{center}
+%		\includegraphics[scale=0.8]{../../chapters/chapterABCFlow/images/KS-dist.png}
+%		\caption[LoF caption]{\label{fig:ks-dist}:The Kolmogorov-Smirnov distance function used to calculate the distance between distributions in the 1D (A) and 2D (B) cases.}
+%	\end{center}
+%\end{figure*}
+%\clearpage
+
 %Here I simulate two normal distributions, with identical mu and sigma, and calculate the distance between the two using the distance measure used in ABC-Flow. Doing this 1000 times, we then plot the distribution of epsilon. By doing that we can calculate the variance of the epsilon distribution, and find out the error that can be expected when measuring the distance in ABC-Flow. By doing that in 1D and in 2D we can compare the epsilon variances. 
+Here I test this distance calculation in a similar way as Section~\ref{sec:dist_kernel}. First, the two data sets are drawn from increasingly different distributions, and the distance between them calculated. As shown in Figure~\ref{fig:epsilon_mud}D, the 2D distance is 0 when the difference between the μ from which the two datasets are drawn from the same distribution. The distance calculation reaches a plateau at epsilon = 140 when the mean difference is 4 or larger. The 1D distance is also shown in Figure~\ref{fig:epsilon_mud}C in order to compare the two calculations, but the 1D distance was computed using the Kolmogorov-Smirnov distance described in Section~\ref{sec:dist_ks}.
 
-Here, I simulate two normal distributions, with $\mu=0$ and $\sigma=1$ and measure the distance between them using the Kolmogorov-Smirnov test, as used in ABC-Flow. Doing this multiple times, the expected variation in distance values for identical distributions can be calculated. This is the error that can be expected when measuring distance in ABC-Flow. As can be seen in Figure~\ref{fig:epsilon_boxplt}, there range of distance values obtained in the 1D case is small, as the distance between two data sets drawn from the same distribution ranges from 0.1 to 0.2. For the 2D case, the distance values obtained vary more than in the 1D case. 
+To further study the distance calculation used in ABC-Flow, two normal distributions were simulated, with $\mu=0$ and $\sigma=1$ and distance between them calculated using the Kolmogorov-Smirnov test in the 1D case and the Wald-Wolfowitz test in the 2D case. Doing this multiple times, the expected variation in distance values for identical distributions can be calculated. This is the error that can be expected when measuring distance in ABC-Flow. As can be seen in Figure~\ref{fig:epsilon_boxplt}, the range of distance values obtained in the 1D case is small. For the 2D case, the distance values obtained vary more than in the 1D case, but it is still small relative to the range of values that the Wald-Wolfowitz test can take shown in Figure~\ref{fig:epsilon_mud}. 
+%As shown in Figure~\ref{fig:epsilon_mud}D, as the number of samples drawn from each distribution increases, the standard deviation of the distance calculations decreases in the 1D case. This trend is less obvious in the 2D case.
+
+ 
+\begin{figure}[tb]
+\centerfloat
+\includegraphics[scale=0.8]{../../chapters/chapterABCFlow/images/mu_diff.png}
+\caption[LoF caption]{\label{fig:epsilon_mud}The distance calculation for data sets drawn from increasingly different distributions. Two examples are shown of distributions compared in (A) 1D and (B) 2D. (C) As the difference between the means of the two distributions increases, the distance calculation, epsilon, increases. In the 2D case (shown in green) epsilon plateaus at 2.3 and in the 1D case (shown in blue) epsilon plateaus at 1.}
+\label{fig:normal_example}
+\end{figure}
 
 
-\begin{figure}[htbp]
+
+
+
+
+\begin{figure}[tb]
 \centering
 \includegraphics[scale=0.7]{../../chapters/chapterABCFlow/images/epsilon_same_box.png}
-\caption[LoF caption]{\label{fig:epsilon_boxplt} The distance between two data sets drawn form the same distribution are compared using the Kolmogorov-Smirnov two sample test. (A) in 1D and (B) in 2D. (C) The distance is calculated for 1000 data sets. A greater variation of values is found for the 2D distance calculation.  }
-\label{fig:normal_example}
-\end{figure}
-\clearpage
-
-
-To further study the distance calculation used in ABC-Flow, the data sets are drawn from increasingly different distributions, and the distance between them calculated. As shown in Figure~\ref{fig:epsilon_mud}, the 1D distance is 0 when the difference between the \textmu{} from which the two datasets are drawn is 0.5 or less, and 1 when the difference in the \textmu{} between the two data sets is 7 or larger. In the 2D case the standard deviation of the calculated distance is larger than the 1D case. The distance calculation reaches a plateau at epsilon = 2.3 when the \textmu{} difference is 3 or larger. As shown in Figure~\ref{fig:epsilon_mud}D, as the number of samples drawn from each distribution increases, the standard deviation of the distance calculations decreases in the 1D case. This trend is less obvious in the 2D case.
-\begin{figure}[htbp]
-\centering
-\includegraphics[scale=0.7]{../../chapters/chapterABCFlow/images/mu_diff.png}
-\caption[LoF caption]{\label{fig:epsilon_mud} The distance calculation for data sets drawn from increasingly different distributions. Two examples are shown of distributions compared in (A) 1D and (B) 2D. (C) As the difference between the means of the two distributions increases, the distance calculation, epsilon, increases. In the 2D case (shown in green) epsilon plateaus at 2.3 and in the 1D case (shown in blue) epsilon plateaus at 1.}
-\label{fig:normal_example}
+\caption[LoF caption]{\label{fig:epsilon_boxplt}The distance between two data sets drawn form the same distribution are compared using the Kolmogorov-Smirnov two sample test. (A) in 1D and (B) in 2D. (C) The distance is calculated for 1000 data sets. A larger variation of values is found for the 2D distance calculation, but still small relative to the overall range of values. (D) As the number of samples in the datasets increase the distance calculation becomes more accurate in the 1D case. It has no effect on the 2D case.}
 \end{figure}
 
 
-
+Using the Wald-Wolfowitz test the value of epsilon increases with increasing distance between the distributions with relatively small variability between repeats. Since the 2D Wald-Wolfowitz test performed well in the test carried out above, it was implemented in ABC-Flow as the distance function for the 2D calculations.
 %The next parameter to be optimised is the bin size used in the distance calculation. In both 1D and 2D, the space is divided into bins, and the distance between corresponding bins in the data and the simulated data is calculated. The overall distance between to distributions is the sum of the distances between corresponding bins. %If the bin size is too large, small differences between 
 
 
@@ -249,59 +300,81 @@ To further study the distance calculation used in ABC-Flow, the data sets are dr
 
 
 
+
+
+%The following is for 1D, what about for 2D?????
+%As determined by~\textcite{Lillacci:2011tqa} and~\textcite{Lillacci:2013hu}, the minimum number of samples that are necessary in order to accurately compare the two distributions decreases with increasing number of samples in the flow cytometry data. Typically a flow cytometry experiment includes thousands of samples, and thus the number of simulations needed to assess whether the two distributions are the same is small. The number of simulated samples S can be calculated using Equation~\ref{eq:Samples}. 
+%
+%\begin{align}
+%	S \geq \frac{-\log(\frac{α}{2})}{2\Bigg(ε-\sqrt{-\frac{1}{2M}\log(\frac{α}{2}) } \Bigg)^2}\label{eq:Samples}, 
+%\end{align}
+%
+%where $α = 1 - \sqrt{1 - β} $, β represent the confidence interval (here set to 0.05) M is the number of samples of the data and ε is the critical value. This allows us to determine the number of samples needed to accurately calculate the KS distance. For a typical experiment including 10000 samples, with a confidence interval of 0.05 and an ε of 0.08, 514 simulated samples are needed (rounded to the nearest integer). This is defined in ABC-Flow by beta, the number of simulations to be made per parameter sample. This value has to be set to at least 500 in order to get an accurate calculation of the distance. Since the ε value is iteratively decreased in ABC-Flow, the I set beta to satisfy Equation~\ref{eq:Samples} for the lowest ε.
 \clearpage
-\subsubsection{ABC-Flow validation using simulated data}
+\section{ABC-Flow model fitting to simulated data }
 
-In this section I apply ABC-Flow to simulated data, where the parameter values used to produce the data are known. This analysis will serve as a verification test for ABC-Flow. The model used to produce the simulated data is an extension of the~\textcite{Gardner:2000vha} switch. The model consists of two mutually repressing transcription factors. The model used here has additional parameters, representing the repression from the external repressors, \acrshort{iptg} and \acrshort{atc}. 
 
-In order to produce the simulated data set, the extended~\textcite{Gardner:2000vha} switch was simulated stochastically using the Gillespie algorithm~\autocite{Gillespie:1977ww}. The model used is defined by the following hazards:
+%section{ABC-Flow validation using simulated data}
+
+In this section I apply ABC-Flow to simulated data, where the parameter values used to produce the data are known. This analysis will serve as a verification test for ABC-Flow. The model used to produce the simulated data is an extension of the~\textcite{Gardner:2000vha} switch. The model consists of two mutually repressing transcription factors. The model used here has additional parameters allowing for gene expression to be leaky as well as include repression from an external stimulus.
+
+In order to produce the simulated data set, an extension of the~\textcite{Gardner:2000vha} switch was simulated stochastically using the Gillespie algorithm~\autocite{Gillespie:1977ww}. The model used is defined by the following hazards:
 
 \begin{align}
 h_1 &= u \label{eq:eg1}\\
 h_2 &= \frac{p_1 \times p_3	}{1+p_3+v^{p_2}} \label{eq:eg2}\\
 h_3 &= (1 + a)\times v \label{eq:eg3}\\
-h_4 &= \frac{p_4\times p_6}{1+p_6+u^{p_5}} \label{eq:eg4}
+h_4 &= \frac{p_4\times p_6}{1+p_6+u^{p_5}} \label{eq:eg4},
 \end{align}
+where $u$ and $v$ are the two proteins in the system, $p_1$ and $p_4$ represent the effective gene expression of $u$ and $v$ respectively, $p_2$ and $p_5$ represent the cooperativity of $u$ and $v$ respectively. $p_3$ and $p_4$ represent the leakiness of the promoters for each species. parameter α increases the degradation of one of the species, and simulates the addition of a repressor.
 
 
-Using the time course data generated for one of the fluorescent proteins in the system, $u$, I use ABC-Flow to fit the model shown above, using priors centered around the parameter values used to produce the data. The resulting fit is shown in Figure~\ref{fig:1d-sim-res}A. In order to determine whether this is a good fit to the data, QQ plots are produced for each timepoint (Figure~\ref{fig:1d-sim-res}B). A QQ-plot is a plot where the quantiles of two distributions are plotted against eachother. If the distributions are similar, the points will lie on the 45\textdegree{} line x = y line~\autocite{Wilk:1968ts}. 
 
+Using the time course data generated for one of the fluorescent proteins in the system, $u$, I use ABC-Flow to fit the model shown above, using priors centered around the parameter values used to produce the data, shown in Table~\ref{tab:priors_model}. The resulting fit is shown in Figure~\ref{fig:1d-sim-res}A. In order to determine whether this is a good fit to the data, QQ plots are produced for each timepoint (Figure~\ref{fig:1d-sim-res}B). A QQ-plot is a plot where the quantiles of two distributions are plotted against eachother. If the distributions are similar, the points will lie on the 45\textdegree{} line x = y line~\autocite{Wilk:1968ts}. 
+
+By examining the data and the fitted models shown in Figure~\ref{fig:1d-sim-res}, we see that at \textepsilon = 0.08, there is a good fit of the model to the data using ABC-Flow. The model parameters, as well as the intensity parameters, have been fitted to simulated flow cytometry data. The model has been successfully fitted to the simulated data. This is highlighted in the QQ plots in Figure~\ref{fig:1d-sim-res}B, where the results lie in the x=y line. 
 
 \begin{figure}[htbp]
 \centering
-	\includegraphics[scale=0.8]{../../chapters/chapterABCFlow/images/1D_sim_res.png}
+	\includegraphics[scale=0.9]{../../chapters/chapterABCFlow/images/1D_sim_res.png}
 	\caption[LoF caption]{\label{fig:1d-sim-res} (A) 1D ABC-Flow fit (shown in blue) to data (shown in red) produced by simulating the same model. (B) QQ-plot of each time point fit. The quantile of the two distributions are plotted against eachother. If the ditributions are similar, the points would lie on the 45\textdegree{} line x = y, shown in red. }
 \end{figure}
-\clearpage
 
-By examining the data and the fitted models shown in Figure~\ref{fig:1d-sim-res}, we see that at \textepsilon = 0.1, there is a good fit of the model to the data using ABC-Flow. The model parameters, as well as the intensity parameters, have been fitted to simulated flow cytometry data. The timecourse of the model after fitting with ABC-Flow is similar to the data time course. 
-
-I further test ABC-Flow by using 2D data to fit two species of the model simultaneously. The same data was used as was used in the 1D case, but this time both species $u$ and $v$ were taken into account. This represents both sides of the switch model used. Using the same priors as in the 1D case, we can compare the two fits and investigate whether using the 1D or 2D data results in a better fit. The 1D data represents one of the marginal distributions of the data sets, as illustrated in Figure~\ref{fig:1d2dsketch}. I use the marginal distribution of $u$ and the bivariate distribution of $u$ and $v$ in order to determine which one produces a better fit to the data. The resulting timecourse of the data as well as the 1D and 2D fit are shown in Figure~\ref{fig:1d2dcomp}.
-
+I further test ABC-Flow by using 2D data to fit two species of the model simultaneously. The same data was used as was used in the 1D case, but this time both species $u$ and $v$ were taken into account. This represents both sides of the switch model used. 
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[scale=0.3]{../../chapters/chapterABCFlow/images/normal_sigma_example.png}
-\caption[LoF caption]{\label{fig:1d2dsketch} The marginal (1D) versus the bivariate (2D) distribution of the data.}
+\includegraphics[scale=0.7]{../../chapters/chapterABCFlow/images/2D_sim_res.png}
+\caption[LoF caption]{\label{fig:2d-sim-res}2D ABC-Flow fit (shown in blue) to data (shown in red) produced by simulating the same model. }
 \end{figure}
 
+%
+%I further investigate whether using the 1D or 2D data results in a better fit. The 1D data represents one of the marginal distributions of the data sets. I use the marginal distribution of $u$ and the bivariate distribution of $u$ and $v$ in order to determine which one produces a better fit to the data. The resulting timecourse of the data as well as the 1D and 2D fit are shown in Figure~\ref{fig:1d2dcomp}.
+%
+%
+%\begin{figure}[htbp]
+%\centering
+%\includegraphics[scale=0.3]{../../chapters/chapterABCFlow/images/normal_sigma_example.png}
+%\caption[LoF caption]{\label{fig:1d2dsketch} The marginal (1D) versus the bivariate (2D) distribution of the data.}
+%\end{figure}
+%
 
 
+
+%\begin{figure}[htbp]
+%\centering
+%\includegraphics[scale=0.8]{../../chapters/chapterABCFlow/images/1d2dfit.png}
+%\caption[LoF caption]{\label{fig:1d2dcomp}Comparing the fits obtained by using the 1D or 2D data. }
+%\end{figure}
+%\clearpage
+
+
+The posterior distributions obtained from each fit are shown in Figure~\ref{fig:1d2d-sim-post}. We find similar posterior ranges for both the 1D and 2D fits. Both fits identified the parameters necessary to produce the simulated data. From the posteriors we find that the most constrained parameters to produce the switch behaviour in this model are parameters $p2$ and $p5$, the parameters representing the cooperativity of the repressors. They both have to be equal to 2 to produce the observed behaviour in this model. We also find that α, the parameter representing the increased degradation of the repressing species due to the addition of an inducer, is tightly constrained. α is required to be small. Further, we find that μ and σ, the parameters representing the mean and standard deviation of the fluorescence intensity emitted by each fluorescent molecule to be tightly constrained. 
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[scale=0.8]{../../chapters/chapterABCFlow/images/1d2dfit.png}
-\caption[LoF caption]{\label{fig:1d2dcomp} Comparing the fits obtained by using the 1D or 2D data. }
-\end{figure}
-\clearpage
-
-
-The posterior distributions obtained from each fit are shown in Figure~\ref{fig:1d2d-sim-post}. We find similar posterior ranges for both the 1D and 2D fits.
-
-\begin{figure}[htbp]
-\centering
-	\includegraphics[scale=0.4]{../../chapters/chapterABCFlow/images/sim_1d_2d_post.pdf}
-	\caption[LoF caption]{\label{fig:1d2d-sim-post} 1D (red) 2D (blue) fit. }
+	\includegraphics[scale=0.7]{../../chapters/chapterABCFlow/images/toy_model_posteriors.png}
+	\caption[LoF caption]{\label{fig:1d2d-sim-post}The posterior distributions of the 1D (red) 2D (blue) fits to simulated data.}
 \end{figure}
 
 %\begin{figure}[htbp]
@@ -317,9 +390,41 @@ The posterior distributions obtained from each fit are shown in Figure~\ref{fig:
 %	\includegraphics[scale=0.6]{../../chapters/chapterABCFlow/images/2D_sim_res.png}
 %	\caption[LoF caption]{\label{fig:2d-sim-res}}
 %\end{figure}
+\begin{table}[tb]
+\centering
+\caption{The priors used for the 1D and 2D ABC-FLow model fitting to simulated data}
+\label{tab:priors_model}
 
+\begin{tabular}{@{}lll@{}}
+\toprule
+\multicolumn{3}{c}{Parameters}                                         \\ \midrule
+\multicolumn{1}{c}{} & \multicolumn{1}{c}{1D} & \multicolumn{1}{c}{2D} \\ \midrule
+p1                   & 30 - 150               & 30 - 150               \\
+p2                   & 1 - 5                  & 1 - 5                  \\
+p3                   & 700 - 850              & 700 - 850              \\
+p4                   & 30 - 150               & 30 - 150               \\
+p5                   & 0 - 5                  & 0 - 5                  \\
+p6                   & 700 - 850              & 700 - 850              \\
+p7                   & 0 - 5                  & 0 - 5                  \\ \midrule
+\multicolumn{3}{c}{Species}                                            \\ \midrule
+u                    & 9 - 11                 & 9 - 11                 \\
+v                    & 90 - 110               & 90 - 110               \\ \midrule
+\multicolumn{3}{c}{Intensity parameters}                               \\ \midrule
+mean fp1             & 0 - 5                  & 0 - 5                  \\
+mean fp2             &                   & 0 - 5                  \\
+sigma fp1            & 0 - 7                  & 0 - 7                  \\
+sigma fp2            &                   & 0 - 7                  \\ \bottomrule
+\end{tabular}
 
+\end{table}
+
+These results demonstrate that ABC-Flow can successfully fit a computational model to flow cytometry data. It can identify the parameter values necessary to produce the observed behaviour. ABC-Flow can now be confidently applied to real flow cytometry data of the genetic toggle switch. This will allow me to fit a computational model to experimental data of the genetic toggle switch and uncover the parameters that are necessary to produce this behaviour. In the following Section I will outline the methods used to obtain the experimental data necessary and the results obtained.
+
+\clearpage
 \section{Toggle switch data collection}
+
+In this section I collect experimental data on the genetic toggle switch. Using flow cytometry and the necessary inducers to flip the switch I study the switch flipping over time as well as over different inducer concentrations. 
+
 \subsection{Circuit overview}
 
 The toggle switch plasmid I used here was provided by ~\textcite{Litcofsky:2012gr}. All the switch components were contained in one plasmid, pKDL071. An overview of the plasmid is shown in Figure~\ref{fig:pKDL071map}A and the sequence given in Appendix (XXX). The circuit consists of two promoters, Ptrc2 and PLtetO-1~\autocite{Lutz:1997ti}. Ptrc2 is a constitutive promoter, repressible by LacI. PLtetO-1 is also a constitutive promoter, repressible by TetR, as shown in Figure~\ref{fig:pKDL071map}B. mCherry~\autocite{Shaner:2004vy} and \acrshort{gfp}~\autocite{SHIMOMURA:1962va} are fluorescent proteins, that were added under the control of the same promoters as the repressors, and thus reflect the levels of TetR and LacI in the system. The plasmid contains kanamycin antibiotic resistance and is high copy (ColE1 origin of replication).
@@ -355,150 +460,11 @@ To preserve the transformed cultures long-term glycerol stocks were made. \SI{5}
 \subsubsection{Revival}
 For subsequent revival of the frozen cultures, a \SI{1.5}{\milli\liter} eppendorf tube was removed from the \SI{-80}{\celsius} freezer and put on ice. Small amount was streaked onto an agar plate containing \acrshort{lb} and kanamycin. The plates were stored in an incubator at \SI{37}{\celsius} overnight. Then the plates were sealed using parafilm and stored at \SI{4}{\celsius} for up to two weeks. 
 
-\subsubsection{Inducers}
 
-Anhydrotetracycline (ATc) solution was made by diluting \acrshort{atc} from Cayman Chemical Company in \SI{100}\% ethanol to a concentration of \SI{1}{\milli\gram\per\milli\liter}. \acrfull{iptg} solution was made by dissolving \acrshort{iptg} in deionized water to a concentration of \SI{1}{\molar}. The solution was sterilised by passing the solution through a \SI{0.22}{\micro\meter} syringe filter. Both inducers were stored in \SI{1}{\milli\liter} aliquots at \SI{-20}{\celsius}. 
-
-
-\subsubsection{Growth rate measurement}
-\label{sec:growth_meth}
-Plate reader analysis was carried out in order to measure the growth of \textit{E.coli} over time. Overnight cultures were made using the method shown in Section~\ref{sec:overnigh_cult}. Overnight cultures were then diluted by a 1:1000 ratio into a \SI{5}{\milli\liter} \acrshort{lb} + kanamycin solution. The diluted cultures were grown at \SI{37}{\celsius} with shaking at 200rpm for 1 hour. These cultures were then further diluted by a 1:100 ratio. \SI{200}{\ul} aliquots of the dilutions were then transferred to a clear bottom, black-walled 96-well plate. Wells with only LB and kanamycin were also added in order to be used as blanks. The plate was then sealed using a gas permeable membrane and placed it in BMG FLUOstat OPTIMA plate reader to measure absorbance. The plate reader was set to a constant \SI{37}{\celsius}, with 30 seconds orbital shaking at \SI{150}rpm and \SI{4}{\milli\metre} shaking width every ten minutes. Absorbance was measured at \SI{540}{\nano\meter}. Data was exported as a CSV file and analysed using Python. 
-
-\subsubsection{Flow cytometry}
-Flow cytometry experiments were carried out in order to get fluorescent levels in single cells. Flow cytometry allows us to gather this information for thousands of single cells. Flow cytometry data was exported as FCS files and analysed using the R bioconductor packages flowCore~\autocite{flowCore:man}, flowViz~\autocite{flowViz:man} and Ggplot2~\autocite{ggplot2:bk}. 
-
-\subsubsection{Concentration assays}
-\label{sec:flo_conc}
-Concentration assays were carried out in order to determine the concentration of each inducer (\acrshort{atc} and \acrshort{iptg}) at which the switch flips.  Separate overnight cultures were prepared as per Section~\ref{sec:overnigh_cult} with added \acrshort{iptg} at a concentration of \SI{1}{\milli\molar} or added \acrshort{atc} at a concentration of \SI{100}{\nano\gram\per\milli\liter}~\autocite{Litcofsky:2012gr}. The cultures were then diluted by 1:1000 into fresh \acrshort{lb} medium with varying concentrations of the opposite inducer than what the cells were grown in overnight. The concentrations used are shown in Table~\ref{tab:flow_conc}. For each concentration. three replicates cultures were made.
-
-
-\begin{table}[htbp]
-\centering
-\caption{Concentrations used for flow cytometry assay}
-\label{tab:flow_conc}
-\begin{tabular}{@{}cc@{}}
-\toprule
-\acrshort{atc} (ng/ml)  & \acrshort{iptg} (M) \\ \midrule
-0.05 & 1e-7 \\
-0.06 & 6e-7 \\
-0.07 & 1e-6 \\
-0.08 & 6e-6 \\
-0.09 & 1e-5 \\
-0.1  & 1e-3 \\
-1.0  & 0.1  \\ \bottomrule
-\end{tabular}
-\end{table}
-
-The cultures were placed in an incubator at \SI{37}{\celsius}, 200rpm for 5 hours. The cultures were then placed in a centrifuge and spun at 13,000rpm for 5 minutes. The supernatant was discarded and replaced it with \SI{1}{\milli\liter} PBS solution. The BD LSRFortessa\textsuperscript{TM} cell analyzer (Becton, Dickinson and Company) was used at the St. Mary's Flow Cytometry Core Facility at Imperial College London  for flow cytometry analysis. \acrshort{gfp} was excited using the \SI{488}{\nano\meter} laser and detected using the 533/30 filter. mCherry was excited using the \SI{561}{\nano\meter} laser and detected using the 620/10 filter. Data was obtained at n=10000 events per experiment. 
-
-\subsubsection{Time course assays}
-\label{sec:flo_time}
-Time course assays were carried out to measure the time it takes for the switch to flip to each state. Separate overnight cultures of pKDL071 were prepared as per Section~\ref{sec:overnigh_cult} with added \acrshort{iptg} at a concentration of \SI{1}{\milli\molar} or added \acrshort{atc} at a concentration of \SI{100}{\nano\gram\per\milli\liter}~\autocite{Litcofsky:2012gr}. Overnight cultures of pSEVA281G and pSEVA281C were also made. The cultures were then diluted by a ratio of 1:1000 into fresh LB medium. Separate cultures for each time point were made, in triplicate. For cultures grown overnight in \acrshort{iptg}, \acrshort{atc} was added at a concentration of \SI{100}{\nano\gram\per\milli\liter} and for cultures grown overnight in \acrshort{atc}, \acrshort{iptg} was added at a concentration of \SI{1}{\milli\molar}. All cultures were placed at \SI{37}{\celsius}, 200rpm incubator. At 30 minutes, 1 hour and then every hour up to 6 hours flow cytometry was carried out for the corresponding cultures. Triplicates for each induction were removed from the incubator and placed in a centrifuge at 13, 000rpm for 10 minutes. The supernatant was discarded and replaced with \SI{1}{\milli\liter} PBS solution. These cultures were then analysed in an Attune\textsuperscript{TM} NxT Flow Cytometer (Thermo Fisher Scientific) at University College London. \acrshort{gfp} was excited using the \SI{488}{\nano\meter} laser and detected using the 533/30 filter. mCherry was excited using the \SI{561}{\nano\meter} laser and detected using the 620/10 filter. Data was obtained at n=10000 events per experiment. pSEVA281G and pSEVA281C cultures were used to set the laser voltages and pKDL071 cultures to detect the bacteria population.  
-
-
-\subsection{Results}
-\subsubsection{Growth rate investigation}
-
-I carried out a growth rate analysis to determine whether the \acrshort{atc} or \acrshort{iptg} added to pKDL071 or pSEVA281G \textit{E. coli} cultures affected the growth of the bacteria. Cultures were grown without any inducer overnight as described in Section~\ref{sec:growth_meth}. I ran assays for the cultures with and without added inducers. As can be seen in Figure~\ref{fig:growth_curve}, there is no difference between the conditions. The addition of either \acrshort{atc} or \acrshort{iptg} does not affect the growth rate of \textit{E. coli} K-12 MG1655. Additionally, \acrshort{atc} does not affect the growth rate of \textit{E. coli} Dh5\textalpha. Since the addition of \acrshort{atc} flips the switch to the GFP high state, and \acrshort{iptg} to the mCherry high state, we can also conclude that the growth rate of the chassis is not affected by which side of the switch is in the high state. The growth rate of \textit{E. coli} Dh5\textalpha was consistently lower than that of \textit{E. coli} K-12 MG1655.
-
-\begin{figure*}[htbp]
-	\begin{center}
-		\includegraphics[scale=0.7]{../../chapters/chapterABCFlow/images/growth_curves.pdf}
-		\caption[LoF caption]{\label{fig:growth_curve}: Growth rate analysis of \textit{E. coli} K-12 MG1655 pKDL071 and \textit{E. coli} Dh5\textalpha pSEVA281G cultures with and without inducers. The inducers do not affect the growth of the bacteria. }
-	\end{center}
-\end{figure*}
-
-\clearpage
-
-\subsubsection{Toggle switch concentration assays}
-
-Here I aim to identify the inducer concentration at which the pKDL071 toggle switch changes state. In order to do that I carry out a concentration assay using flow cytometry, as described in Section~\ref{sec:flo_conc}. As can be seen in Figure~\ref{fig:switch_concent2d1d}A, during \acrshort{atc} induction the switch flips to a GFP high state when \acrshort{atc} concentration is at \SI{0.09}{\nano\gram\per\milli\liter} or higher. We observe a bimodal distribution at concentrations \SI{0.07}{\nano\gram\per\milli\liter} and \SI{0.08}{\nano\gram\per\milli\liter}, which indicates that the switching has begun at these concentrations. Thats why part of the population has switched to the GFP high state but complete switching is not observed until the concentration of \acrshort{atc} is at \SI{0.09}{\nano\gram\per\milli\liter}. In the case of \acrshort{iptg} induction (Figure~\ref{fig:switch_concent2d1d}B) we find that the switch flips to the mCherry high state when the concentration of \acrshort{iptg} is higher or equal to 0.001M. A decrease in GFP fluorescence is also observed. We do not observe a bimodal distribution in this case. 
-
-\begin{figure*}[htbp]
-	\begin{center}
-\includegraphics[scale=0.7]{../../chapters/chapterABCFlow/images/pKDL071_concentrations_2d1d.png}
-\caption[LoF caption]{\label{fig:switch_concent2d1d}: (A) \acrshort{atc} induction at various concentrations (B) \acrshort{iptg} induction at various concentrations. }
-\end{center}
-\end{figure*}
-\clearpage
-
-By taking into account the two induction curves of the switch turning to each high state, we can see the dynamic ranges of pKDL071 in \textit{E.coli}. We can see in Figure~\ref{fig:switch_concentrations_model} there is an approximately 100-fold change in fluorescent units during \acrshort{iptg} and \acrshort{atc} induction. 
-
- A Hill function was used to model the characterisation curves shown in Figure~\ref{fig:switch_concentrations_model}. The model used is the following:
- \begin{align}
- 	F = Pmin + (Pmax - Pmin)\frac{\Big(\frac{[I]}{Kd}\Big)^n}{1+\Big(\frac{[I]}{Kd}\Big)^n},
- \end{align}
- 
-where F is the median fluorescent unit and [I] is the concentration of inducer. Pmin and Pmax are the minimum and maximum fluorescence respectively, and Kd and n are the dissociation constant, and Hill coefficient. I fit Hill function models using maximum likelihood estimation to the response curves. The values for parameters Pmin, Pmax, Kd, and n are 8, 1600, 0.1, 1.8 respectively for the \acrshort{atc} induction and 8, 700, 0.08, 2.5 for \acrshort{iptg} induction. 
-
-\begin{figure*}[tb]
-	\begin{center}
-\includegraphics[width=\textwidth]{../../chapters/chapterABCFlow/images/pKDL071_concentrations_model_fit.png}
-\caption[LoF caption]{\label{fig:switch_concentrations_model}: (A, B) \acrshort{atc} induction of pKDL071. (C, D) \acrshort{iptg} induction of pKDL071.}
-\end{center}
-\end{figure*}
-
-
-For the case of the \acrshort{atc} induction we observe a sharp switch between the GFP low to the GFP high state, as can be seen in the characterisation curve in Figure~\ref{fig:switch_concentrations_model}B. This is a clear indication of the bistability of this switch.
-
-\clearpage
-
-
-
-
-
-\subsubsection{Toggle switch time course assay}
-\label{sec:ts_time}
-I further analysed the pKDL071 toggle switch by investigating the time it takes for it to switch from one high state to the other. To do that I used the method outlined in Section~\ref{sec:flo_time}. I obtained separate time courses for the \acrshort{iptg} and \acrshort{atc} inductions. 
-
-As can be seen in Figure~\ref{fig:switch_timecourse_atc} pKDL071 \acrshort{atc}  induction begins switching 1 hour after induction. Complete induction is seen at 6 hours. During the \acrshort{iptg} induction (Figure~\ref{fig:switch_timecourse_iptg}) we see a bimodal distribution at 4 hours, and induction is complete at 6 hours. We observe that during \acrshort{atc} induction there is an increase in \acrshort{gfp} fluorescence and a decrease in mCherry fluorescence, in the case of \acrshort{iptg} induction the increase in mCherry fluorescence is not as prominent. A decrease in GFP fluorescence is observed during \acrshort{iptg} induction. 
-
-\begin{figure*}[tb]
-	\begin{center}
-\includegraphics[scale=0.7]{../../chapters/chapterABCFlow/images/pKDL071_atc_time.png}
-\caption[LoF caption]{\label{fig:switch_timecourse_atc}: \acrshort{atc} induction of pKDL071 over time}
-\end{center}
-\end{figure*}
-
-
-\begin{figure*}[tb]
-	\begin{center}
-\includegraphics[scale=0.7]{../../chapters/chapterABCFlow/images/pKDL071_iptg_time.png}
-\caption[LoF caption]{\label{fig:switch_timecourse_iptg}: \acrshort{iptg} induction of pKDL071 over time}
-\end{center}
-\end{figure*}
-\clearpage
-
-
-%\begin{figure*}[tb]
-%	\begin{center}
-%\includegraphics[scale=0.5]{../../chapters/chapterABCFlow/images/atc_timecourse.png}
-%\caption[LoF caption]{\label{fig:atc_timecourse}: \acrshort{atc} induction of pKDL071 over time}
-%\end{center}
-%\end{figure*}
-%
-%\begin{figure*}[tb]
-%	\begin{center}
-%\includegraphics[scale=0.5]{../../chapters/chapterABCFlow/images/iptg_timcourse.png}
-%\caption[LoF caption]{\label{fig:iptg_timecourse}: \acrshort{iptg} induction of pKDL071 over time}
-%\end{center}
-%\end{figure*}
-%\clearpage
 
 \subsubsection{Plasmid construction}
 
-I constructed two plasmids in order to use them for the flow cytometry experiments. The first plasmid, pSEVA281G contains the promoter PLtetO-1 and \acrshort{gfp} and the other, pSEVA281C, contains the promoter Ptrc2 and mCherry from PKDL071, shown in Figure~\ref{fig:psevas}. These two plasmids were used to determine the appropriate voltages for the lasers that excite \acrshort{gfp} and mCherry.
-
-pSEVA281G was constructed by digesting pKDL071 and pSEVA281 using the protocol outlined in Section~\ref{sec:digest}. pSEVA281 is a plasmid backbone containing kanamycin resistance, a high copy origin of replication and a multiple cloning site. The digested fragments were isolated using gel purification (Section~\ref{sec:gel_electr}) and then ligated the isolated fragments (Section~\ref{sec:ligation}). \textit{Escherichia coli} Dh5\textalpha{} was then transformed with each plasmid (Section~\ref{sec:transfection}). pSEVA281C was constructed via \acrshort{pcr} cloning. \acrshort{pcr} was carried out using the pKDL071 plasmid as a template \acrshort{dna} using the protocol outlined in Section~\ref{sec:pcr}. Primers were chosen so that Ptrc2 and mCherry were copied and a Hind\RNum{3} restriction enzyme recognition sequence added to the fragment. The primers are listed in Appendix (XXX). The amplified \acrshort{dna} was purified using the Qiagen PCR cleanup kit (Qiagen, Crawley, U.K) and then carried out the rest of the cloning procedure as per plasmid pSEVA281G.
-
-Following construction, each plasmid was isolated using the QIAprep Spin Miniprep Kit (Qiagen, Crawley, U.K). Plasmid concentration was determined using the Thermo Scientific NanoDrop 1000 Spectrophotometer (Fisher Scientific, MA, U.S.A).
-
-\begin{figure*}[t]
-	\begin{center}
-		\includegraphics[width=\textwidth]{../../chapters/chapterABCFlow/images/plasmids_constructed.png}
-		\caption[LoF caption]{\label{fig:psevas}: The plasmids used to calibrate GFP and mCherry fluorescence. (A) pSEVA281G plasmid map (B) pSEVA281C plasmid map.  }
-	\end{center}
-\end{figure*}
+Plasmids were constructed via \acrshort{pcr} cloning. \acrshort{pcr} primers were chosen to add restriction enzyme sites on the 5' and 3' were needed. Following \acrshort{pcr} amplification, the amplified \acrshort{dna} was purified using the Qiagen PCR cleanup kit (Qiagen, Crawley, U.K). Double digests were carried out and the desired fragment isolated via gel extraction. The relevant fragments were subsequently ligated. Following construction, each plasmid was isolated using the QIAprep Spin Miniprep Kit (Qiagen, Crawley, U.K). Plasmid concentration was determined using the Thermo Scientific NanoDrop 1000 Spectrophotometer (Fisher Scientific, MA, U.S.A).
 
 \subsubsection{Polymerase Chain Reaction}
 \label{sec:pcr}
@@ -596,7 +562,7 @@ Ligase &  \xmark    & \xmark    & \cmark    & \cmark    \\ \bottomrule
 
 \subsubsection{Transformation}
 \label{sec:transfection}
-Thermocompetent \textit{E.coli} Dh5\textalpha was transformed with the constructed plasmids. Each ligation reaction was added to \SI{50}{\micro\liter} of thawed competent cells. The cells were subsequently kept on ice for 30 minutes, then placed at a \SI{42}{\celsius} water bath for \SI{45}{\second}. The cells were then placed back on ice for 15 minutes. Then \SI{500}{\micro\liter} of Super Optimal broth with Catabolite repression (SOC) were added to each ligation and placed in a \SI{37}{\celsius} shaking incubator for 3 hours. \SI{500}{\micro\liter} and \SI{50}{\micro\liter} were subsequently pipetted of each ligation onto petri dishes with LB agar and the appropriate antibiotic. The plates were incubated at \SI{37}{\celsius} for 12-16 hours. Two controls were used for the transfection protocol, a positive control with no antibiotic in the LB agar and non-transfected cells and a negative control of non-transformed cells and LB agar with antibiotic. These ensure that the cells are viable and not contaminated respectively. 
+Thermocompetent \textit{E.coli} Dh5α was transformed with the constructed plasmids. Each ligation reaction was added to \SI{50}{\micro\liter} of thawed competent cells. The cells were subsequently kept on ice for 30 minutes, then placed at a \SI{42}{\celsius} water bath for \SI{45}{\second}. The cells were then placed back on ice for 15 minutes. Then \SI{500}{\micro\liter} of Super Optimal broth with Catabolite repression (SOC) were added to each ligation and placed in a \SI{37}{\celsius} shaking incubator for 3 hours. \SI{500}{\micro\liter} and \SI{50}{\micro\liter} were subsequently pipetted of each ligation onto petri dishes with LB agar and the appropriate antibiotic. The plates were incubated at \SI{37}{\celsius} for 12-16 hours. Two controls were used for the transfection protocol, a positive control with no antibiotic in the LB agar and non-transfected cells and a negative control of non-transformed cells and LB agar with antibiotic. These ensure that the cells are viable and not contaminated respectively. 
 
 Finally, the number of colonies were counted on each plate. Individual colonies were then selected from each transfection and grew each separately in \SI{5}{\milli\liter} LB medium for 12-16 hours at \SI{37}{\celsius}, 200 rpm. Glycerol stocks were then prepared from each culture, as per Section~\ref{sec:glycerol_stock}.
 
@@ -648,23 +614,279 @@ Finally a diagnostic agarose gel electrophoresis was carried out as outlined in 
 \subsubsection{Sequencing}
 In order to confirm plasmid identity, all plasmids were sequenced using Source Bioscience, Cambridge UK. \SI{10}{\micro\liter}  of each plasmid DNA were submitted at a minimum of \SI{100}{\nano\gram\per\micro\liter} as per the requirements. Primer sequences were also submitted and manufactured by Source Bioscience. Primers can be found in Appendix (XXX). 
 
+\subsubsection{Inducers}
+
+Anhydrotetracycline (ATc) solution was made by diluting \acrshort{atc} from Cayman Chemical Company in \SI{100}\% ethanol to a concentration of \SI{1}{\milli\gram\per\milli\liter}. \acrfull{iptg} solution was made by dissolving \acrshort{iptg} in deionized water to a concentration of \SI{1}{\molar}. The solution was sterilised by passing the solution through a \SI{0.22}{\micro\meter} syringe filter. Both inducers were stored in \SI{1}{\milli\liter} aliquots at \SI{-20}{\celsius}. 
 
 
+\subsubsection{Growth rate measurement}
+\label{sec:growth_meth}
+Plate reader analysis was carried out in order to measure the growth of \textit{E.coli} over time. Overnight cultures were made using the method shown in Section~\ref{sec:overnigh_cult}. Overnight cultures were then diluted by a 1:1000 ratio into a \SI{5}{\milli\liter} \acrshort{lb} + kanamycin solution. The diluted cultures were grown at \SI{37}{\celsius} with shaking at 200rpm for 1 hour. These cultures were then further diluted by a 1:100 ratio. \SI{200}{\ul} aliquots of the dilutions were then transferred to a clear bottom, black-walled 96-well plate. Wells with only LB and kanamycin were also added in order to be used as blanks. The plate was then sealed using a gas permeable membrane and placed it in BMG FLUOstat OPTIMA plate reader to measure absorbance. The plate reader was set to a constant \SI{37}{\celsius}, with 30 seconds orbital shaking at \SI{150}rpm and \SI{4}{\milli\metre} shaking width every ten minutes. Absorbance was measured at \SI{540}{\nano\meter}. Data was exported as a CSV file and analysed using Python. 
+
+\subsubsection{Flow cytometry}
+Flow cytometry experiments were carried out in order to get fluorescent levels in single cells. Flow cytometry allows us to gather this information for thousands of single cells. Flow cytometry data was exported as FCS files and analysed using the R bioconductor packages flowCore~\autocite{flowCore:man}, flowViz~\autocite{flowViz:man} and Ggplot2~\autocite{ggplot2:bk}. Prior to analysis the raw data was processed to remove any debris or instrument noise detected. The data was also processed to removed any doublets, which occurs when more than one bacterial  cell passes through the detector at a time. This will skew the data by including datapoint with double the fluorescent intensity that the rest of the population. The pre-processing was done by using the side scattering data. The height and the area of the sample forward scattering distribution is recorded during an experiment. The cells that lie in the diagonal where the area equals the height are single bacterial cells. If the area of the signal exceeds the height it is indicative of a doublet, or cluster of cells, and is removed from the data. This preprocessing was carried out using autoGate, developed by~\textcite{Fedorec2016}. 
+
+
+
+\subsubsection{Concentration assays}
+\label{sec:flo_conc}
+Concentration assays were carried out in order to determine the concentration of each inducer (\acrshort{atc} and \acrshort{iptg}) at which the switch flips.  Separate overnight cultures were prepared as per Section~\ref{sec:overnigh_cult} with added \acrshort{iptg} at a concentration of \SI{1}{\milli\molar} or added \acrshort{atc} at a concentration of \SI{100}{\nano\gram\per\milli\liter}~\autocite{Litcofsky:2012gr}. The cultures were then diluted by 1:1000 into fresh \acrshort{lb} medium with varying concentrations of the opposite inducer than what the cells were grown in overnight. The concentrations used are shown in Table~\ref{tab:flow_conc}. For each concentration. three replicates cultures were made.
+
+
+\begin{table}[htbp]
+\centering
+\caption{Concentrations used for flow cytometry assay}
+\label{tab:flow_conc}
+\begin{tabular}{@{}cc@{}}
+\toprule
+\acrshort{atc} (ng/ml)  & \acrshort{iptg} (M) \\ \midrule
+0.05 & 1e-7 \\
+0.06 & 6e-7 \\
+0.07 & 1e-6 \\
+0.08 & 6e-6 \\
+0.09 & 1e-5 \\
+0.1  & 1e-3 \\
+1.0  & 0.1  \\ \bottomrule
+\end{tabular}
+\end{table}
+
+The cultures were placed in an incubator at \SI{37}{\celsius}, 200rpm for 5 hours. The cultures were then placed in a centrifuge and spun at 13,000rpm for 5 minutes. The supernatant was discarded and replaced it with \SI{1}{\milli\liter} PBS solution. The BD LSRFortessa\textsuperscript{TM} cell analyzer (Becton, Dickinson and Company) was used at the St. Mary's Flow Cytometry Core Facility at Imperial College London  for flow cytometry analysis. \acrshort{gfp} was excited using the \SI{488}{\nano\meter} laser and detected using the 533/30 filter. mCherry was excited using the \SI{561}{\nano\meter} laser and detected using the 620/10 filter. Data was obtained at n=10000 events per experiment. 
+
+\subsubsection{Time course assays}
+\label{sec:flo_time}
+Time course assays were carried out to measure the time it takes for the switch to flip to each state. Separate overnight cultures of pKDL071 were prepared as per Section~\ref{sec:overnigh_cult} with added \acrshort{iptg} at a concentration of \SI{1}{\milli\molar} or added \acrshort{atc} at a concentration of \SI{100}{\nano\gram\per\milli\liter}~\autocite{Litcofsky:2012gr}. Overnight cultures of pSEVA281G and pSEVA281C were also made. The cultures were then diluted by a ratio of 1:1000 into fresh LB medium. Separate cultures for each time point were made, in triplicate. For cultures grown overnight in \acrshort{iptg}, \acrshort{atc} was added at a concentration of \SI{100}{\nano\gram\per\milli\liter} and for cultures grown overnight in \acrshort{atc}, \acrshort{iptg} was added at a concentration of \SI{1}{\milli\molar}. All cultures were placed at \SI{37}{\celsius}, 200rpm incubator. At 30 minutes, 1 hour and then every hour up to 6 hours flow cytometry was carried out for the corresponding cultures. Triplicates for each induction were removed from the incubator and placed in a centrifuge at 13, 000rpm for 10 minutes. The supernatant was discarded and replaced with \SI{1}{\milli\liter} PBS solution. These cultures were then analysed in an Attune\textsuperscript{TM} NxT Flow Cytometer (Thermo Fisher Scientific) at University College London. \acrshort{gfp} was excited using the \SI{488}{\nano\meter} laser and detected using the 533/30 filter. mCherry was excited using the \SI{561}{\nano\meter} laser and detected using the 620/10 filter. Data was obtained at n=10000 events per experiment. pSEVA281G and pSEVA281C cultures were used to set the laser voltages and pKDL071 cultures to detect the bacteria population.  
+
+
+\subsection{Results}
+
+\subsubsection{pKDL071 plasmid alteration}
+
+
+The pKDL071 plasmid contains all the elements of the switch. The two states of the switch are LacI high and TetR high. These are detected by using the fluorescent proteins that are controlled by the same promoters, and thus mirror the levels of LacI and TetR. The concentration of LacI can be estimated by GFP intensity and TetR concentration by mCherry intensity. In order to detect GFP and mCherry levels within each cell simultaneously, flow cytometry can be used. The lasers needed to excite GFP and mCherry are \SI{488}{\nano\meter} blue and \SI{561}{\nano\meter} yellow respectively. Since the blue laser was not available for use in the BD Acuri\textsuperscript{TM} C6 or the BD LSRII\textsuperscript{TM} (Becton, Dickinson and Company) flow cytometers available, an alternative construct had to be made in order to be able to detect the levels of both sides of the switch. 
+
+In order to alter the switch construct to be able to detect both sides, the mCherry gene was swapped for the YFP gene. The yellow fluorescent protein is excited by the blue laser and could thus be detected using the equipment available. The YFP gene was available from BioBrick registry of standard biological parts as BBa\_K592101. PCR cloning was used to introduce the flanking sequences of EcoRV and KasI restriction enzymes in the 5' and 3' ends respectively. The primers used are given in Appendix (XXX). A double digest was performed on plasmids pKDL071 and BBa\_K592101, as well as positive and negative controls. Following gel extraction and ligation, the pKDL071-YFP plasmid was complete. The plasmid map is shown in Figure~\ref{fig:pkdl071yfp}.
+
+\begin{figure*}[htbp]
+	\begin{center}
+		\includegraphics[scale=0.3]{../../chapters/chapterABCFlow/images/pKDL071-YFP.png}
+		\caption[LoF caption]{\label{fig:pkdl071yfp}: pKDL071-YFP plasmid map.  }
+	\end{center}
+\end{figure*}
+
+GFP and YFP have overlapping emission spectra, which have to be compensated during flow cytometry data acquisition~\autocite{Shapiro:1941}. This is because the signal from GFP can be detected at the YFP detector and vice versa. Due to the high level of compensation needed to be carried out and the relatively dim signal given by the bacteria used here, the different stages of the switch, ON and OFF, could not be resolved (data not shown). In order to be able to acquire toggle switch flow cytometry data, an alternative facility was found that was able to detect GFP and mCherry fluorescence. 
+
+\subsubsection{Control plasmids construction}
+I constructed two plasmids in order to use them for the flow cytometry mCherry/GFP experiments. The first plasmid, pSEVA281G contains the promoter PLtetO-1 and \acrshort{gfp} and the other, pSEVA281C, contains the promoter Ptrc2 and mCherry from PKDL071, shown in Figure~\ref{fig:psevas}. These two plasmids were used to determine the appropriate voltages for the lasers that excite \acrshort{gfp} and mCherry.
+
+pSEVA281G was constructed by digesting pKDL071 and pSEVA281 using the protocol outlined in Section~\ref{sec:digest}. pSEVA281 is a plasmid backbone containing kanamycin resistance, a high copy origin of replication and a multiple cloning site. The digested fragments were isolated using gel purification (Section~\ref{sec:gel_electr}) and then ligated the isolated fragments (Section~\ref{sec:ligation}). \textit{Escherichia coli} Dh5α was then transformed with each plasmid (Section~\ref{sec:transfection}). 
+
+pSEVA281C was constructed via \acrshort{pcr} cloning. \acrshort{pcr} was carried out using the pKDL071 plasmid as a template \acrshort{dna} using the protocol outlined in Section~\ref{sec:pcr}. Primers were chosen so that Ptrc2 and mCherry were copied and a Hind\RNum{3} restriction enzyme recognition sequence added to the fragment. The rest of the cloning procedure followed as per plasmid pSEVA281G.
+
+\begin{figure*}[htbp]
+	\begin{center}
+		\includegraphics[width=\textwidth]{../../chapters/chapterABCFlow/images/plasmids_constructed.png}
+		\caption[LoF caption]{\label{fig:psevas}: The plasmids used to calibrate GFP and mCherry fluorescence. (A) pSEVA281G plasmid map (B) pSEVA281C plasmid map.  }
+	\end{center}
+\end{figure*}
+
+
+\subsubsection{Growth rate investigation}
+
+I carried out a growth rate analysis to determine whether the \acrshort{atc} or \acrshort{iptg} added to pKDL071 or pSEVA281G \textit{E. coli} cultures affected the growth of the bacteria. Cultures were grown without any inducer overnight as described in Section~\ref{sec:growth_meth}. Assays for the cultures were ran with and without added inducers. As can be seen in Figure~\ref{fig:growth_curve}, there is no difference between the conditions. The addition of either \acrshort{atc} or \acrshort{iptg} does not affect the growth rate of \textit{E. coli} K-12 MG1655. Additionally, \acrshort{atc} does not affect the growth rate of \textit{E. coli} Dh5α. Since the addition of \acrshort{atc} flips the switch to the GFP high state, and \acrshort{iptg} to the mCherry high state, we can also conclude that the growth rate of the chassis is not affected by which side of the switch is in the high state. The growth rate of \textit{E. coli} Dh5α was consistently lower than that of \textit{E. coli} K-12 MG1655.
+
+\begin{figure*}[htbp]
+	\begin{center}
+		\includegraphics[scale=0.7]{../../chapters/chapterABCFlow/images/growth_curves.pdf}
+		\caption[LoF caption]{\label{fig:growth_curve}: Growth rate analysis of \textit{E. coli} K-12 MG1655 pKDL071 and \textit{E. coli} Dh5α pSEVA281G cultures with and without inducers. The inducers do not affect the growth of the bacteria. }
+	\end{center}
+\end{figure*}
 
 \clearpage
+
+
+
+\subsubsection{Toggle switch concentration assays}
+
+Here I aim to identify the inducer concentration at which the pKDL071 toggle switch changes state. In order to do that I carry out a concentration assay using flow cytometry, as described in Section~\ref{sec:flo_conc}. As can be seen in Figure~\ref{fig:switch_concent2d1d}A, during \acrshort{atc} induction the switch flips to a GFP high state when \acrshort{atc} concentration is at \SI{0.09}{\nano\gram\per\milli\liter} or higher. We observe a bimodal distribution at concentrations \SI{0.07}{\nano\gram\per\milli\liter} and \SI{0.08}{\nano\gram\per\milli\liter}, which indicates that the switching has begun at these concentrations. Thats why part of the population has switched to the GFP high state but complete switching is not observed until the concentration of \acrshort{atc} is at \SI{0.09}{\nano\gram\per\milli\liter}. In the case of \acrshort{iptg} induction (Figure~\ref{fig:switch_concent2d1d}B) we find that the switch flips to the mCherry high state when the concentration of \acrshort{iptg} is higher or equal to 0.001M. A decrease in GFP fluorescence is also observed. We do not observe a bimodal distribution in this case. 
+
+\begin{figure*}[htbp]
+	\begin{center}
+\includegraphics[scale=0.7]{../../chapters/chapterABCFlow/images/pKDL071_concentrations_2d1d.png}
+\caption[LoF caption]{\label{fig:switch_concent2d1d}: (A) \acrshort{atc} induction at various concentrations (B) \acrshort{iptg} induction at various concentrations. }
+\end{center}
+\end{figure*}
+\clearpage
+
+By taking into account the two induction curves of the switch turning to each high state, we can see the dynamic ranges of pKDL071 in \textit{E.coli}. We can see in Figure~\ref{fig:switch_concentrations_model} there is an approximately 100-fold change in fluorescent units during \acrshort{iptg} and \acrshort{atc} induction. 
+
+ A Hill function was used to model the characterisation curves shown in Figure~\ref{fig:switch_concentrations_model}. The model used is the following:
+ \begin{align}
+ 	F = Pmin + (Pmax - Pmin)\frac{\Big(\frac{[I]}{Kd}\Big)^n}{1+\Big(\frac{[I]}{Kd}\Big)^n},
+ \end{align}
+ 
+where F is the median fluorescent unit and [I] is the concentration of inducer. Pmin and Pmax are the minimum and maximum fluorescence respectively, and Kd and n are the dissociation constant, and Hill coefficient. I fit Hill function models using maximum likelihood estimation to the response curves. The values for parameters Pmin, Pmax, Kd, and n are 8, 1600, 0.1, 1.8 respectively for the \acrshort{atc} induction and 8, 700, 0.08, 2.5 for \acrshort{iptg} induction. 
+
+\begin{figure*}[tb]
+	\begin{center}
+\includegraphics[width=\textwidth]{../../chapters/chapterABCFlow/images/pKDL071_concentrations_model_fit.png}
+\caption[LoF caption]{\label{fig:switch_concentrations_model}: (A, B) \acrshort{atc} induction of pKDL071. (C, D) \acrshort{iptg} induction of pKDL071.}
+\end{center}
+\end{figure*}
+
+
+For the case of the \acrshort{atc} induction we observe a sharp switch between the GFP low to the GFP high state, as can be seen in the characterisation curve in Figure~\ref{fig:switch_concentrations_model}B. This is a clear indication of the bistability of this switch.
+
+\clearpage
+
+
+
+
+
+\subsubsection{Toggle switch time course assay}
+\label{sec:ts_time}
+I further analysed the pKDL071 toggle switch by investigating the time it takes for it to switch from one high state to the other. To do that I used the method outlined in Section~\ref{sec:flo_time}. I obtained separate time courses for the \acrshort{iptg} and \acrshort{atc} inductions. 
+
+As can be seen in Figure~\ref{fig:switch_timecourse_atc} pKDL071 \acrshort{atc}  induction begins switching 1 hour after induction. Complete induction is seen at 6 hours. During the \acrshort{iptg} induction (Figure~\ref{fig:switch_timecourse_iptg}) we see a bimodal distribution at 4 hours, and induction is complete at 6 hours. We observe that during \acrshort{atc} induction there is an increase in \acrshort{gfp} fluorescence and a decrease in mCherry fluorescence, in the case of \acrshort{iptg} induction the increase in mCherry fluorescence is not as prominent. A decrease in GFP fluorescence is observed during \acrshort{iptg} induction. 
+
+\begin{figure*}[tb]
+	\begin{center}
+\includegraphics[scale=0.7]{../../chapters/chapterABCFlow/images/pKDL071_atc_time.png}
+\caption[LoF caption]{\label{fig:switch_timecourse_atc} \acrshort{atc} induction of pKDL071 over time}
+\end{center}
+\end{figure*}
+
+
+\begin{figure*}[tb]
+	\begin{center}
+\includegraphics[scale=0.7]{../../chapters/chapterABCFlow/images/pKDL071_iptg_time.png}
+\caption[LoF caption]{\label{fig:switch_timecourse_iptg} \acrshort{iptg} induction of pKDL071 over time}
+\end{center}
+\end{figure*}
+\clearpage
+
+In the next section I use ABC-FLow to fit a computational model to the timecourse data obtained. Prior to fitting a model to it, I process the data by removing the unresponsive populations. This ensures that the model is fitted only to the data from cells that respond to the inducers. As seen in Figure~\ref{fig:switch_timecourse_atc}, during the ATc induction there is an unresponsive population of cells where GFP and mChery fluorescence are both less that $10^3$. This population is excluded from further analysis of the data. During the IPTG induction there is a population of cells that does not repsond to the addition of IPTG by switching from GFP high to mCherry high. This population of cells is also excluded from further analysis. 
+
+%\begin{figure*}[tb]
+%	\begin{center}
+%\includegraphics[scale=0.5]{../../chapters/chapterABCFlow/images/atc_timecourse.png}
+%\caption[LoF caption]{\label{fig:atc_timecourse}: \acrshort{atc} induction of pKDL071 over time}
+%\end{center}
+%\end{figure*}
+%
+%\begin{figure*}[tb]
+%	\begin{center}
+%\includegraphics[scale=0.5]{../../chapters/chapterABCFlow/images/iptg_timcourse.png}
+%\caption[LoF caption]{\label{fig:iptg_timecourse}: \acrshort{iptg} induction of pKDL071 over time}
+%\end{center}
+%\end{figure*}
+%\clearpage
+
 \section{ABC-Flow used on experimental data}
  
-Next I applied ABC-Flow to the experimental flow cytometry data collected in Section~\ref{sec:ts_time}. The data set is comprised of time course data of the~\textcite{Litcofsky:2012gr} toggle switch. The two states of the switch are represented by the levels of GFP and mCherry intensity in each bacterial cell. Using \acrshort{atc} inducer, each cell transitions from a mCherry high state to a GFP high state. I used the extension to the~\textcite{Gardner:2000vha} switch described in Equations~\ref{eq:eg1}-\ref{eq:eg4}.
+In this section I apply ABC-Flow to the experimental flow cytometry data collected in Section~\ref{sec:ts_time}. The data set is comprised of time course data of the~\textcite{Litcofsky:2012gr} toggle switch. The two states of the switch are represented by the levels of GFP and mCherry intensity in each bacterial cell. Using \acrshort{atc} inducer, each cell transitions from a mCherry high state to a GFP high state. 
 
- 
+
+\subsection{Toggle switch model used in ABC-Flow}
+
+I used the extension to the~\textcite{Gardner:2000vha} switch described in Equations~\ref{eq:eg1}-\ref{eq:eg4}. The model used is defined by the following hazards:
+
+\begin{align}
+h_1 &= KD_u \times (1 + KI_u) \times GFP\\
+h_2 &= 60 \times \frac{R_u \times KL_u}{1 + KL_u + KR_u \times mCherry^2}\\
+h_3 &= KD_v \times (1 + KI_v) \times mCherry\\
+h_4 &= 60 \times \frac{R_v \times KL_v}{1+ KL_v + KR_v \times GFP^2},
+\end{align}    
+    
+where GFP and mCherry represent the two fluorescent proteins in the system. The cooperativity of the repressors is represented in the model. KI\textsubscript{u} and KI\textsubscript{v} KL\textsubscript{u} KL\textsubscript{v} KD\textsubscript{u} KD\textsubscript{v} KR\textsubscript{u} KR\textsubscript{v}, parameters KI\textsubscript{u} and KI\textsubscript{v} increase the degradation of one of the species, and simulates the addition of a repressor, IPTG or ATc respectively. 
+
+The two production hazards, $h2$ and $h4$ are multiplied by 60 to reflect the copy number of the toggle switch plasmid in each cell. The plasmid containing the toggle switch used here, pKDL071, contains the ColE1 origin of replication, and thus 50-70 copies of the plasmid are present in each cell~\autocite{Milo:2010cz}. 
+
+The priors used in ABC-Flow for this model are given in Table~\ref{tab:priors_model_real}. All priors given assume a uniform ditribution. The values where chosen in agreement with~\autocite{Lillacci:2013hu} and in reference to \url{http://bionumbers.hms.harvard.edu/}, the database of useful biological numbers~\autocite{Milo:2010cz}.
+
+
+%\begin{table}[tb]
+%\centering
+%\caption{The priors used for the 1D and 2D ABC-FLow model fitting to flow cytometry data}
+%\label{tab:priors_model_real}
+%\rotatebox{90}{
+%\begin{tabular}{llll}
+%\hline
+%\multicolumn{4}{c}{Parameters}                                                                                                         \\ \hline
+%\multicolumn{1}{c}{Description}                               & \multicolumn{1}{c}{Symbol} & Units & \multicolumn{1}{c}{ATc induction} \\ \hline
+%IPTG-induced mCherry degradation rate                         & KIu                        & h\textsuperscript{−1} μM\textsuperscript{−1}     &                                   \\
+%GFP transcription rate                                        & Ru                         &molecules h\textsuperscript{−1} & 1 - 50                            \\
+%GFP translation rate                                          & KLu                        &h\textsuperscript{−1}& 1 - 50                            \\
+%GFP degradation                                               & KDu                        &h\textsuperscript{−1}& 0.1 - 2                           \\
+%mCherry-induced GFP repression rate                           & KRu                        &molecules\textsuperscript{−1} h\textsuperscript{−1}& 0.016 - 1.2                       \\
+%mCherry transcription rate                                    & Rv                         &molecules h\textsuperscript{−1}& 1 - 50                            \\
+%mCherry translation rate                                      & KLv                        &h\textsuperscript{−1}& 1 - 50                            \\
+%GFP-induced mCherry repression rate                           & KRv                        &molecules\textsuperscript{−1} h\textsuperscript{−1}& 0.016 - 1.2                       \\
+%mCherry degradation                                           & KDv                        &h\textsuperscript{−1}& 0.1 - 2                           \\
+%ATC-induced GFP degradation rate                              & KIv                        & h\textsuperscript{−1} μM\textsuperscript{−1}    & 1 - 10                            \\ \hline
+%\multicolumn{4}{c}{Species}                                                                                                            \\ \hline
+%                                                              & GFP                        & mM    & 0 - 1                             \\
+%                                                              & mCherry                    & mM    & 100 - 1000                        \\ \hline
+%\multicolumn{4}{c}{Intensity paramters}                                                                                                \\ \hline
+%Mean of fluorescence of single GFP molecule                   & mGFP                       & AU    & 5 - 200                           \\
+%Mean of fluorescence of single mCherry molecule               & mmCherry                   & AU    & 5 - 200                           \\
+%Standard deviation of fluorescence of single GFP molecule     & sGFP                       & AU    & 5 - 200                           \\
+%Standard deviation of fluorescence of single mCherry molecule & smCherry                   & AU    & 5 - 200                           \\ \hline
+%\end{tabular}
+%}
+%\end{table}
+
+
+\begin{table}[htbp]
+\centering
+\caption{The priors used for the 1D and 2D ABC-FLow model fitting to flow cytometry data}
+\label{tab:priors_model_real}
+\rotatebox{90}{
+\begin{tabular}{@{}lllll@{}}
+\toprule
+\multicolumn{5}{c}{Parameters} \\ \midrule
+\multicolumn{1}{c}{Description} & \multicolumn{1}{c}{Symbol} & Units & \multicolumn{1}{c}{ATc induction} & IPTG induction \\ \midrule
+IPTG-induced mCherry degradation rate & KI\textsubscript{u} &  h\textsuperscript{−1} μM\textsuperscript{−1}&  & 1 - 10 \\
+GFP transcription rate & R\textsubscript{u} & molecules h\textsuperscript{−1} & 1 - 50 & 1 - 50 \\
+GFP translation rate & KL\textsubscript{u} & h\textsuperscript{−1} & 1 - 50 & 1 - 50 \\
+GFP degradation & KD\textsubscript{u} & h\textsuperscript{−1} & 0.1 - 2 & 0.1 - 2 \\
+mCherry-induced GFP repression rate & KR\textsubscript{u} &  molecules\textsuperscript{−1} h\textsuperscript{−1} & 0.016 - 1.2 & 0.016 - 1.2 \\
+mCherry transcription rate & R\textsubscript{v} & molecules h\textsuperscript{−1} & 1 - 50 & 1 - 50 \\
+mCherry translation rate & KL\textsubscript{v} & h\textsuperscript{−1} & 1 - 50 & 1 - 50 \\
+GFP-induced mCherry repression rate & KR\textsubscript{v} & molecules\textsuperscript{−1} h\textsuperscript{−1} & 0.016 - 1.2 & 0.016 - 1.2 \\
+mCherry degradation & KD\textsubscript{v} & h\textsuperscript{−1} & 0.1 - 2 & 0.1 - 2 \\
+ATC-induced GFP degradation rate & KI\textsubscript{v} & h\textsuperscript{−1} μM\textsuperscript{−1} & 1 - 10 &  \\ \midrule
+\multicolumn{5}{c}{Species} \\ \midrule
+ & GFP & mM & 0 - 1 & 100 - 1000 \\
+ & mCherry & mM & 100 - 1000 & 0 - 1 \\ \midrule
+\multicolumn{5}{c}{Intensity paramters} \\ \midrule
+Mean of fluorescence of single GFP molecule & μ\textsubscript{GFP} & AU & 5 - 200 & 5 - 200 \\
+Mean of fluorescence of single mCherry molecule & μ\textsubscript{mCherry} & AU & 5 - 200 & 5 - 200 \\
+Standard deviation of fluorescence of single GFP molecule & σ\textsubscript{GFP} & AU & 5 - 200 & 5 - 200 \\
+Standard deviation of fluorescence of single mCherry molecule & σ\textsubscript{mCherry} & AU & 5 - 200 & 5 - 200 \\ \bottomrule
+\end{tabular}
+}
+\end{table}
+\clearpage
+
+
+
+\subsection{ATc induction}
+
 \begin{figure}[htbp]
 \centering
-	\includegraphics[scale=0.6]{../../chapters/chapterABCFlow/images/1D_real_res.png}
-	\caption[LoF caption]{\label{fig:1d-real-res}}
+	\includegraphics[scale=0.5]{../../chapters/chapterABCFlow/images/2D_real_res.png}
+	\caption[LoF caption]{\label{fig:1d-real-res} (A) The timecourse data collected in Section(XXX) (blue) and the resulting model fit from ABC-Flow (red). (B) The posterior distribution of the fitted morel. }
 \end{figure}
+\clearpage
+
+\subsection{IPTG induction}
 
 
-
+\begin{figure}[htbp]
+\centering
+	\includegraphics[scale=0.5]{../../chapters/chapterABCFlow/images/2D_real_res_IPTG.png}
+	\caption[LoF caption]{\label{fig:1d-real-res-iptg} }
+\end{figure}
 
 %\subsubsection{\acrshort{atc} induction}
  
@@ -678,6 +900,7 @@ Next I applied ABC-Flow to the experimental flow cytometry data collected in Sec
 %\clearpage
 
 %\subsubsection{\acrshort{iptg} induction}
+\clearpage
 \section{Discussion}
 
 Here I characterised the genetic toggle switch experimentally. First I study the effect of the two inducers \acrshort{atc} and \acrshort{iptg} on the growth rate of the selected chassis \textit{E. coli} K-12 MG1655. I find that there is no detrimental effect to the bacterium by the inducers. I also find that which state the switch is on has no effect on the growth rate of the bacteria. In order for this toggle switch to be used in a synthetic biology application, it is important that both sides of the switch have an equivalent burden onto the chassis. If one of the steady states creates a larger burden and slows down the growth of the bacteria, this can create an imbalance in the population. If the toggle switch-bearing bacterial population exists in an environment with competing bacteria, for example the gut microbiome, and one of the two states creates a larger burden, this would cause the switch-bearing population to become less competitive compared to the non switch-bearing population. It is therefore crucial that the state of the switch does not affect the competitiveness of the chassis.  
@@ -687,6 +910,7 @@ I further characterised the switch by determining the minimum inducer concentrat
 
 Furthermore I find that this toggle switch, pKDL071, is faster to respond to a change in \acrshort{atc} concentration that to a change in \acrshort{iptg} concentration. For \acrshort{iptg} induction we observe a change in fluorescence after 3-4 hours of induction. For \acrshort{atc} induction we can see a difference within an hour of induction. This result is in agreement with~\textcite{Litcofsky:2012gr}. This difference in response times must be taken into account when using the pKDL071 switch for other applications. This difference could be due to maturation times of the fluorescent proteins. \textcite{Macdonald:2012el} found that mCherry half-maturation time is 150 mins, whereas the GFP variant used here, GFPmut3b has been especially mutated for fast action~\autocite{Cormack:1996gv}. ~\textcite{Cormack:1996gv} found that whereas wild type GFP is detectable 1-2 hours after induction, GFPmut3b is detectable 8 minutes after induction. This difference could account for the different response times observed here, but further investigation is required. 
 
+ABC-Flow is similar to INSIGHT~\autocite{Lillacci:2013hu}, as it used a Bayesian framework to fit the model to the data, and converts model output to fluorescence intensity in order to compare the two.  
 
 \section{Summary}
 

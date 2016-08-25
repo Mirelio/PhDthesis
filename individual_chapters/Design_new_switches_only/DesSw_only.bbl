@@ -16,5 +16,113 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \sortlist{nyt}{nyt}
+    \entry{Litcofsky:2012gr}{article}{}
+      \name{author}{5}{}{%
+        {{hash=92e93ab4f0e936b61054cf6bba7e140d}{Litcofsky}{L\bibinitperiod}{Kevin\bibnamedelima D}{K\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{hash=43071c0b48c25d7fb085e805b1a72316}{Afeyan}{A\bibinitperiod}{Raffi\bibnamedelima B}{R\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
+        {{hash=487f62edae8f89ee9263c6621c5a345d}{Krom}{K\bibinitperiod}{Russell\bibnamedelima J}{R\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=92c9da5e12d92243b836c2f608d777ab}{Khalil}{K\bibinitperiod}{Ahmad\bibnamedelima S}{A\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{hash=f0f74f0fbecb48e5c6604e8e3789d538}{Collins}{C\bibinitperiod}{James\bibnamedelima J}{J\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{738a3a952d1b458b14dbf08821b260ce}
+      \strng{fullhash}{a961cc9797f20e3e5d77698fbc8aa769}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelyear}{2012}
+      \field{labelmonth}{11}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature Methods}
+      \field{month}{11}
+      \field{number}{11}
+      \field{title}{{Iterative plug-and-play methodology for constructing and modifying synthetic gene networks.}}
+      \field{volume}{9}
+      \field{year}{2012}
+      \field{pages}{1077\bibrangedash 1080}
+      \range{pages}{4}
+    \endentry
+    \entry{Lutz:1997ti}{article}{}
+      \name{author}{2}{}{%
+        {{hash=8edc103b15d110e5b963fc8d2fadfed0}{Lutz}{L\bibinitperiod}{R}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=f7d5ae6b3064402f6bb159a9ca2312fb}{Bujard}{B\bibinitperiod}{H}{H\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b121579b11378108f4dece9ce7755324}
+      \strng{fullhash}{b121579b11378108f4dece9ce7755324}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelyear}{1997}
+      \field{labelmonth}{03}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nucleic Acids Research}
+      \field{month}{03}
+      \field{number}{6}
+      \field{title}{{Independent and tight regulation of transcriptional units in Escherichia coli via the LacR/O, the TetR/O and AraC/I1-I2 regulatory elements.}}
+      \field{volume}{25}
+      \field{year}{1997}
+      \field{pages}{1203\bibrangedash 1210}
+      \range{pages}{8}
+    \endentry
+    \entry{Prindle:2012cj}{article}{}
+      \name{author}{6}{}{%
+        {{hash=2f6ec67c7a915e13ca443600c5cd1d6f}{Prindle}{P\bibinitperiod}{Arthur}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=70d0f5f6ab14089e5590f30271fc3806}{Samayoa}{S\bibinitperiod}{Phillip}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=16a0c724bfd1e9cc95c151828dbcd739}{Razinkov}{R\bibinitperiod}{Ivan}{I\bibinitperiod}{}{}{}{}}%
+        {{hash=504dd405c35dcedff6bd0fb992795ff3}{Danino}{D\bibinitperiod}{Tal}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=16c5b5395d3856aa38d61f0833116fa7}{Tsimring}{T\bibinitperiod}{Lev\bibnamedelima S}{L\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{hash=e292c7aa7ea70e8e77abd3134400fa1a}{Hasty}{H\bibinitperiod}{Jeff}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{5f70c28ec804519a049b0d8064460b58}
+      \strng{fullhash}{edb0f97f6bb1c4aa864b5eb5db250b09}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelyear}{2012}
+      \field{labelmonth}{01}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature}
+      \field{month}{01}
+      \field{number}{7379}
+      \field{title}{{A sensing array of radically coupled genetic 'biopixels'.}}
+      \field{volume}{481}
+      \field{year}{2012}
+      \field{pages}{39\bibrangedash 44}
+      \range{pages}{6}
+    \endentry
+    \entry{Stricker:2008jqa}{article}{}
+      \name{author}{6}{}{%
+        {{hash=5277fe701688190a18023c8f05cc248a}{Stricker}{S\bibinitperiod}{Jesse}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=04b9819f72775b97e10e49b202b913d9}{Cookson}{C\bibinitperiod}{Scott}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=3291425097a03a8c28a89b1f53b3991b}{Bennett}{B\bibinitperiod}{Matthew\bibnamedelima R}{M\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+        {{hash=f5136466623b711e67e7e1a169dcc1df}{Mather}{M\bibinitperiod}{William\bibnamedelima H}{W\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+        {{hash=16c5b5395d3856aa38d61f0833116fa7}{Tsimring}{T\bibinitperiod}{Lev\bibnamedelima S}{L\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{hash=e292c7aa7ea70e8e77abd3134400fa1a}{Hasty}{H\bibinitperiod}{Jeff}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{28397a136074664dbb48bc1693201588}
+      \strng{fullhash}{1910e987f59434fa4a67fd768e71e44a}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelyear}{2008}
+      \field{labelmonth}{10}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature}
+      \field{month}{10}
+      \field{number}{7221}
+      \field{title}{{A fast, robust and tunable synthetic gene oscillator}}
+      \field{volume}{456}
+      \field{year}{2008}
+      \field{pages}{516\bibrangedash 519}
+      \range{pages}{4}
+    \endentry
+  \endsortlist
+\endrefsection
 \endinput
 

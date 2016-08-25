@@ -19,17 +19,29 @@
 
 \refsection{0}
   \sortlist{nyt}{nyt}
-    \entry{Anonymous:2015tj}{manual}{}
-      \field{sortinit}{A}
-      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
-      \field{labelyear}{2015}
-      \field{labelmonth}{07}
+    \entry{Bower:2010jl}{article}{}
+      \name{author}{3}{}{%
+        {{hash=e490b60ab520618088cc7bf6c79116b4}{Bower}{B\bibinitperiod}{Adam\bibnamedelima G}{A\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+        {{hash=de7fd5dffd23468cc0d513bb5f946e2f}{McClintock}{M\bibinitperiod}{Maria\bibnamedelima K}{M\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+        {{hash=42d9c55f0ebdc2e54ba9b9e360f9a854}{Fong}{F\bibinitperiod}{Stephen\bibnamedelima S}{S\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{2e39fcdc1edae5952f5d76dc21cb3e09}
+      \strng{fullhash}{2e39fcdc1edae5952f5d76dc21cb3e09}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{2010}
+      \field{labelmonth}{01}
       \field{datelabelsource}{}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{edition}{CO016625}
-      \field{month}{07}
-      \field{title}{{Attune NxT Acoustic Focusing Cytometer}}
-      \field{year}{2015}
+      \field{journaltitle}{Bioengineered Bugs}
+      \field{month}{01}
+      \field{number}{5}
+      \field{title}{{Synthetic biology: a foundation for multi-scale molecular biology.}}
+      \field{volume}{1}
+      \field{year}{2010}
+      \field{pages}{309\bibrangedash 312}
+      \range{pages}{4}
     \endentry
     \entry{Choi:2014gb}{article}{}
       \name{author}{10}{}{%
@@ -61,6 +73,33 @@
       \field{year}{2014}
       \field{pages}{163\bibrangedash 171}
       \range{pages}{9}
+    \endentry
+    \entry{Cooling:2010bx}{article}{}
+      \name{author}{7}{}{%
+        {{hash=aa4c184163cfb879b8c9b8fa68a10eca}{Cooling}{C\bibinitperiod}{M\bibnamedelima T}{M\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
+        {{hash=7c464894fdfd5ee3a8f1d9ed4d063fb9}{Rouilly}{R\bibinitperiod}{V}{V\bibinitperiod}{}{}{}{}}%
+        {{hash=b5a937520ff7324495f7bd311e8c703d}{Misirli}{M\bibinitperiod}{G}{G\bibinitperiod}{}{}{}{}}%
+        {{hash=d143d68d8a845f9a9b7cbe3ef52ac8db}{Lawson}{L\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=18e76f77ed34fdca4f257e73464ae03a}{Yu}{Y\bibinitperiod}{T}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=204abd9cc646fab2b8adad7406c077f3}{Hallinan}{H\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=493a54be9b32fedf509077a0fcfeafc5}{Wipat}{W\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{cfd08a0fbd24aa844f127dc195935b69}
+      \strng{fullhash}{c620f0a979bcdced1e3c968f55ab5d0e}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelyear}{2010}
+      \field{labelmonth}{03}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{03}
+      \field{number}{7}
+      \field{title}{{Standard virtual biological parts: a repository of modular modeling components for synthetic biology.}}
+      \field{volume}{26}
+      \field{year}{2010}
+      \field{pages}{925\bibrangedash 931}
+      \range{pages}{7}
     \endentry
     \entry{Cormack:1996gv}{article}{}
       \name{author}{3}{}{%
@@ -110,6 +149,111 @@
       \field{year}{2010}
       \field{pages}{385\bibrangedash 407}
       \range{pages}{23}
+    \endentry
+    \entry{flowViz:man}{manual}{}
+      \name{author}{6}{}{%
+        {{hash=a43e31158c0d850e0a4770f0739be711}{Ellis}{E\bibinitperiod}{B.}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=139c34de789d4558b7e7c7f334960046}{Gentleman}{G\bibinitperiod}{R.}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=8130aaf2a19f4cfed00f3e6929140481}{Hahne}{H\bibinitperiod}{F.}{F\bibinitperiod}{}{}{}{}}%
+        {{hash=13936e7b0a5f085b7bc7d3f4e75ade10}{{Le\bibnamedelimb Meur}}{L\bibinitperiod}{N.}{N\bibinitperiod}{}{}{}{}}%
+        {{hash=5deec10aa36734765c620c874332c8b0}{Sarkar}{S\bibinitperiod}{D.}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=63d81c16afad800b87940a7660a09415}{Jiang}{J\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{7c0f3390b7dc1c3b20a73eec9b6eca10}
+      \strng{fullhash}{4651c166322d8a4ef44858d76d1c594b}
+      \field{sortinit}{E}
+      \field{sortinithash}{fefc5210ef4721525b2a478df41efcd4}
+      \field{extrayear}{1}
+      \field{labelyear}{2016}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{R package version 1.36.2}
+      \field{title}{flowViz: Visualization for flow cytometry}
+      \field{year}{2016}
+    \endentry
+    \entry{flowCore:man}{manual}{}
+      \name{author}{7}{}{%
+        {{hash=a43e31158c0d850e0a4770f0739be711}{Ellis}{E\bibinitperiod}{B.}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=981c288b8b5b1c101e2482509704f947}{Haaland}{H\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=8130aaf2a19f4cfed00f3e6929140481}{Hahne}{H\bibinitperiod}{F.}{F\bibinitperiod}{}{}{}{}}%
+        {{hash=13936e7b0a5f085b7bc7d3f4e75ade10}{{Le\bibnamedelimb Meur}}{L\bibinitperiod}{N.}{N\bibinitperiod}{}{}{}{}}%
+        {{hash=83f5cea814ff7aadb84418121fb82e7c}{Gopalakrishnan}{G\bibinitperiod}{N.}{N\bibinitperiod}{}{}{}{}}%
+        {{hash=52c33bce24da1011f22812080c2e95c5}{Spidlen}{S\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=63d81c16afad800b87940a7660a09415}{Jiang}{J\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{7c0f3390b7dc1c3b20a73eec9b6eca10}
+      \strng{fullhash}{b0ba50e229dab4e9ce2666ff13e46fc0}
+      \field{sortinit}{E}
+      \field{sortinithash}{fefc5210ef4721525b2a478df41efcd4}
+      \field{extrayear}{2}
+      \field{labelyear}{2016}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{R package version 1.38.2}
+      \field{title}{flowCore: flowCore: Basic structures for flow cytometry data}
+      \field{year}{2016}
+    \endentry
+    \entry{Fasano:1987hg}{article}{}
+      \name{author}{2}{}{%
+        {{hash=c407d7202acca36fb7c8623b3dbf51f5}{Fasano}{F\bibinitperiod}{G}{G\bibinitperiod}{}{}{}{}}%
+        {{hash=719594a4d2b7458fc0bd96eca0c7d045}{Franceschini}{F\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{d9a730c60d093e2a3605d61045ec05c6}
+      \strng{fullhash}{d9a730c60d093e2a3605d61045ec05c6}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labelyear}{1987}
+      \field{labelmonth}{03}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Monthly Notices of the Royal Astronomical Society}
+      \field{month}{03}
+      \field{number}{1}
+      \field{title}{{A multidimensional version of the Kolmogorov-Smirnov test}}
+      \field{volume}{225}
+      \field{year}{1987}
+      \field{pages}{155\bibrangedash 170}
+      \range{pages}{16}
+    \endentry
+    \entry{Fedorec2016}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=8028feecbb5c96d31801916383f2db1d}{Fedorec}{F\bibinitperiod}{Alex\bibnamedelima J}{A\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{8028feecbb5c96d31801916383f2db1d}
+      \strng{fullhash}{8028feecbb5c96d31801916383f2db1d}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labelyear}{2016}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/ajfedorec/autoGate.git}}
+      \field{journaltitle}{GitHub repository}
+      \field{title}{autoGate}
+      \field{year}{2016}
+    \endentry
+    \entry{Friedman:1979vm}{article}{}
+      \name{author}{2}{}{%
+        {{hash=5d35851718459afb3d739bef4c828e55}{Friedman}{F\bibinitperiod}{J\bibnamedelima H}{J\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+        {{hash=06007741357db365ff8a861019e277c0}{Rafsky}{R\bibinitperiod}{L\bibnamedelima C}{L\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b20d12d15af9fe34e71306af0317aab3}
+      \strng{fullhash}{b20d12d15af9fe34e71306af0317aab3}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labelyear}{1979}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Annals of Statistics}
+      \field{title}{{Multivariate generalizations of the Wald-Wolfowitz and Smirnov two-sample tests}}
+      \field{year}{1979}
     \endentry
     \entry{Gardner:2000vha}{article}{}
       \name{author}{3}{}{%
@@ -208,6 +352,48 @@
       \field{pages}{60\bibrangedash 60}
       \range{pages}{1}
     \endentry
+    \entry{Kolmogorov:1933}{article}{}
+      \name{author}{1}{}{%
+        {{hash=6dd5ad82ab13b9c19c378468ccf47d80}{Kolmogorov}{K\bibinitperiod}{A.\bibnamedelimi N.}{A\bibinitperiod\bibinitdelim N\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{6dd5ad82ab13b9c19c378468ccf47d80}
+      \strng{fullhash}{6dd5ad82ab13b9c19c378468ccf47d80}
+      \field{sortinit}{K}
+      \field{sortinithash}{a7d5b3aec5a0890aae7baf85a209abfc}
+      \field{labelyear}{1933}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Giornale dell’Istituto Italiano degli Attuari}
+      \field{title}{{Sulla Determinazione Empirica di Una Legge di Distribuzione}}
+      \field{volume}{4}
+      \field{year}{1933}
+      \field{pages}{83\bibrangedash 91}
+      \range{pages}{9}
+    \endentry
+    \entry{Lillacci:2013hu}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b22b0448905e8c81f524929de6b2b381}{Lillacci}{L\bibinitperiod}{Gabriele}{G\bibinitperiod}{}{}{}{}}%
+        {{hash=5acb5c6abff7145489af27c0e8c43608}{Khammash}{K\bibinitperiod}{Mustafa}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{85c75c976fbeec7c0abd31315b0f991d}
+      \strng{fullhash}{85c75c976fbeec7c0abd31315b0f991d}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelyear}{2013}
+      \field{labelmonth}{09}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Bioinformatics (Oxford, England)}
+      \field{month}{09}
+      \field{number}{18}
+      \field{title}{{The signal within the noise: efficient inference of stochastic gene regulation models using fluorescence histograms and stochastic simulations.}}
+      \field{volume}{29}
+      \field{year}{2013}
+      \field{pages}{2311\bibrangedash 2319}
+      \range{pages}{9}
+    \endentry
     \entry{Litcofsky:2012gr}{article}{}
       \name{author}{5}{}{%
         {{hash=92e93ab4f0e936b61054cf6bba7e140d}{Litcofsky}{L\bibinitperiod}{Kevin\bibnamedelima D}{K\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
@@ -233,6 +419,31 @@
       \field{year}{2012}
       \field{pages}{1077\bibrangedash 1080}
       \range{pages}{4}
+    \endentry
+    \entry{Lopes:2007vk}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=0f705814928d081693f5d6e3cf2b0952}{Lopes}{L\bibinitperiod}{Raul\bibnamedelimb H\bibnamedelima C}{R\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+        {{hash=451b792140acf6fff484f8a3afc6b4c6}{Reid}{R\bibinitperiod}{Ivan}{I\bibinitperiod}{}{}{}{}}%
+        {{hash=38fbf8740e857e21215673c0709d5e0e}{Hobson}{H\bibinitperiod}{Peter\bibnamedelima R}{P\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Amsterdam}%
+      }
+      \strng{namehash}{fdecf11e34b00de8cd44bd201a31e91c}
+      \strng{fullhash}{fdecf11e34b00de8cd44bd201a31e91c}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelyear}{2007}
+      \field{labelmonth}{07}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International Workshop on Advanced Computing and Analysis Techniques in Physics Research}
+      \field{month}{07}
+      \field{title}{{The two-dimensional Kolmogorov-Smirnov test}}
+      \field{year}{2007}
+      \field{pages}{1\bibrangedash 12}
+      \range{pages}{12}
     \endentry
     \entry{Lutz:1997ti}{article}{}
       \name{author}{2}{}{%
@@ -281,27 +492,71 @@
       \field{pages}{291\bibrangedash 298}
       \range{pages}{8}
     \endentry
-    \entry{Peacock:1983fa}{article}{}
+    \entry{Syrtis2016}{misc}{}
       \name{author}{1}{}{%
-        {{hash=c138ddd1932cb902cf10c834132c4791}{Peacock}{P\bibinitperiod}{J\bibnamedelima A}{J\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=317e53650314c2e0d2446edd180f4bbd}{Major}{M\bibinitperiod}{Syrtis}{S\bibinitperiod}{}{}{}{}}%
       }
-      \strng{namehash}{c138ddd1932cb902cf10c834132c4791}
-      \strng{fullhash}{c138ddd1932cb902cf10c834132c4791}
-      \field{sortinit}{P}
-      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
-      \field{labelyear}{1983}
-      \field{labelmonth}{03}
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{317e53650314c2e0d2446edd180f4bbd}
+      \strng{fullhash}{317e53650314c2e0d2446edd180f4bbd}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelyear}{2016}
       \field{datelabelsource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Monthly Notices of the Royal Astronomical Society}
-      \field{month}{03}
-      \field{number}{3}
-      \field{title}{{Two-dimensional goodness-of-fit testing in astronomy}}
-      \field{volume}{202}
-      \field{year}{1983}
-      \field{pages}{615\bibrangedash 627}
-      \range{pages}{13}
+      \field{howpublished}{\url{https://github.com/syrte/ndtest.git}}
+      \field{journaltitle}{GitHub repository}
+      \field{title}{ndtest}
+      \field{year}{2016}
+    \endentry
+    \entry{Milo:2010cz}{article}{}
+      \name{author}{5}{}{%
+        {{hash=9fed56718464421f939e0b0d84997792}{Milo}{M\bibinitperiod}{Ron}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=6256329f1ee0e42213971f67d1d949f4}{Jorgensen}{J\bibinitperiod}{Paul}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=e893785d15b750c24b731336e5146431}{Moran}{M\bibinitperiod}{Uri}{U\bibinitperiod}{}{}{}{}}%
+        {{hash=354528270dae01ae482e3afbb64658f5}{Weber}{W\bibinitperiod}{Griffin}{G\bibinitperiod}{}{}{}{}}%
+        {{hash=815a4615f6bacf492d2e7fbc25c32673}{Springer}{S\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{a1504fd77a6758359f433305c656b805}
+      \strng{fullhash}{1f3e2d7ae755bcef899edb0874e0d242}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelyear}{2010}
+      \field{labelmonth}{01}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nucleic Acids Research}
+      \field{month}{01}
+      \field{number}{Database issue}
+      \field{title}{{BioNumbers--the database of key numbers in molecular and cell biology.}}
+      \field{volume}{38}
+      \field{year}{2010}
+      \field{pages}{D750\bibrangedash D753}
+      \range{pages}{-1}
+    \endentry
+    \entry{Monaco:2014wx}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=eb8af83bdeecedb51c2e61b6458e1fe1}{Monaco}{M\bibinitperiod}{John\bibnamedelima V}{J\bibinitperiod\bibinitdelim V\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{eb8af83bdeecedb51c2e61b6458e1fe1}
+      \strng{fullhash}{eb8af83bdeecedb51c2e61b6458e1fe1}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelyear}{2014}
+      \field{labelmonth}{07}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International Journal of Cognitive Biometrics}
+      \field{month}{07}
+      \field{title}{{Classification and Authentication of One-dimensional Behavioral Biometrics}}
+      \field{year}{2014}
+      \field{pages}{1\bibrangedash 8}
+      \range{pages}{8}
     \endentry
     \entry{Shaner:2004vy}{article}{}
       \name{author}{6}{}{%
@@ -330,6 +585,24 @@
       \field{pages}{1567\bibrangedash 1572}
       \range{pages}{6}
     \endentry
+    \entry{Shapiro:1941}{book}{}
+      \name{author}{1}{}{%
+        {{hash=c7252fb2e4ecdad4f6c454c78f65dbfb}{Shapiro}{S\bibinitperiod}{Howard\bibnamedelima M.}{H\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley-Liss}%
+      }
+      \strng{namehash}{c7252fb2e4ecdad4f6c454c78f65dbfb}
+      \strng{fullhash}{c7252fb2e4ecdad4f6c454c78f65dbfb}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelyear}{1941}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Practical flow cytometry }}
+      \field{year}{1941}
+    \endentry
     \entry{SHIMOMURA:1962va}{article}{}
       \name{author}{3}{}{%
         {{hash=10f19ca02a9cf1488df89fc5771ef139}{Shimomura}{S\bibinitperiod}{O}{O\bibinitperiod}{}{}{}{}}%
@@ -352,6 +625,45 @@
       \field{year}{1962}
       \field{pages}{223\bibrangedash 239}
       \range{pages}{17}
+    \endentry
+    \entry{Wald:1940wt}{article}{}
+      \name{author}{2}{}{%
+        {{hash=6eeb37aec54485fe044a9e233abb2183}{Wald}{W\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=023320ea068c92887e10446d3360a4cf}{Wolfowitz}{W\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{c8fd309a397233cd1377b26503f52589}
+      \strng{fullhash}{c8fd309a397233cd1377b26503f52589}
+      \field{sortinit}{W}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
+      \field{labelyear}{1940}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Annals of Mathematical Statistics}
+      \field{title}{{On a test whether two samples are from the same population}}
+      \field{year}{1940}
+    \endentry
+    \entry{ggplot2:bk}{book}{}
+      \name{author}{1}{}{%
+        {{hash=1d0f6977ce2d043e298a59a1cd75b7ef}{Wickham}{W\bibinitperiod}{Hadley}{H\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer-Verlag New York}%
+      }
+      \strng{namehash}{1d0f6977ce2d043e298a59a1cd75b7ef}
+      \strng{fullhash}{1d0f6977ce2d043e298a59a1cd75b7ef}
+      \field{sortinit}{W}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
+      \field{labelyear}{2009}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0-387-98140-6}
+      \field{title}{ggplot2: Elegant Graphics for Data Analysis}
+      \field{year}{2009}
+      \verb{url}
+      \verb http://ggplot2.org
+      \endverb
     \endentry
     \entry{Wilk:1968ts}{article}{}
       \name{author}{2}{}{%
@@ -377,10 +689,6 @@
       \range{pages}{17}
     \endentry
   \endsortlist
-  \missing{Kolmogorov:1933}
-  \missing{ggplot2:bk}
-  \missing{flowViz:man}
-  \missing{flowCore:man}
 \endrefsection
 \endinput
 

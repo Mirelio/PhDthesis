@@ -2237,19 +2237,26 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1">Gardner:2000vha</bcf:citekey>
-    <bcf:citekey order="2">Clewley:2012kj</bcf:citekey>
-    <bcf:citekey order="3">Gardner:2000vha</bcf:citekey>
-    <bcf:citekey order="4">Gardner:2000vha</bcf:citekey>
+    <bcf:citekey order="2">Gardner:2000vha</bcf:citekey>
+    <bcf:citekey order="3">Alon:2007</bcf:citekey>
+    <bcf:citekey order="4">Clewley:2012kj</bcf:citekey>
     <bcf:citekey order="5">Gardner:2000vha</bcf:citekey>
-    <bcf:citekey order="6">MCKAY:2000vt</bcf:citekey>
-    <bcf:citekey order="7">Toni:2009tr</bcf:citekey>
-    <bcf:citekey order="8">Liepe:2010eg</bcf:citekey>
-    <bcf:citekey order="9">Barnes:2011hh</bcf:citekey>
-    <bcf:citekey order="10">Gardner:2000vha</bcf:citekey>
-    <bcf:citekey order="11">Clewley:2012kj</bcf:citekey>
-    <bcf:citekey order="12">Liepe:2010eg</bcf:citekey>
-    <bcf:citekey order="13">Toni:2009tr</bcf:citekey>
-    <bcf:citekey order="14">Gardner:2000vha</bcf:citekey>
+    <bcf:citekey order="6">mathematica:2016</bcf:citekey>
+    <bcf:citekey order="7">Gardner:2000vha</bcf:citekey>
+    <bcf:citekey order="8">Gardner:2000vha</bcf:citekey>
+    <bcf:citekey order="9">Gardner:2000vha</bcf:citekey>
+    <bcf:citekey order="10">MCKAY:2000vt</bcf:citekey>
+    <bcf:citekey order="11">Liepe:2010eg</bcf:citekey>
+    <bcf:citekey order="12">Toni:2009tr</bcf:citekey>
+    <bcf:citekey order="13">Barnes:2011hh</bcf:citekey>
+    <bcf:citekey order="14">Brandman:2005ci</bcf:citekey>
+    <bcf:citekey order="15">Gardner:2000vha</bcf:citekey>
+    <bcf:citekey order="16">Clewley:2012kj</bcf:citekey>
+    <bcf:citekey order="17">Alon:2007</bcf:citekey>
+    <bcf:citekey order="18">Liepe:2010eg</bcf:citekey>
+    <bcf:citekey order="19">Toni:2009tr</bcf:citekey>
+    <bcf:citekey order="20">Strasser:2012kt</bcf:citekey>
+    <bcf:citekey order="21">Gardner:2000vha</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nyt" type="entry" sortscheme="nyt">
   <bcf:sorting>

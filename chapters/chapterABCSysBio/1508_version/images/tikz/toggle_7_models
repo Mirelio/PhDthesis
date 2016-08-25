@@ -1,0 +1,67 @@
+%!tikz editor 1.0
+\documentclass{article}
+\usepackage{tikz}
+\usepackage[graphics, active, tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+
+%!tikz preamble begin
+
+%!tikz preamble end
+
+
+\begin{document}
+%!tikz source begin
+\begin{tikzpicture}[node distance=3cm,thick,
+	activate/.style={-stealth, shorten >= 2pt},
+	repress/.style={-|, shorten >= 2pt},
+  main node/.style={circle,fill=white,draw,font=\sffamily\Large\bfseries}]
+
+\node[main node] (1) {A};
+\node[main node] (2) [below of=1] {B};
+\draw[repress] [bend left] (1) to (2);
+\draw[repress] [bend left] (2) to (1);
+
+\node[main node] (3) [right of=1]{A};
+\node[main node] (4) [right of=2]{B};
+\draw[repress] [bend left] (3) to (4);
+\draw[repress] [bend left] (4) to (3);
+\draw[activate] [loop above] (3) to (3);
+
+
+\node[main node] (5) [right of=3]{A};
+\node[main node] (6) [right of=4]{B};
+\draw[repress] [bend left] (5) to (6);
+\draw[repress] [bend left] (6) to (5);
+\draw[activate] [loop below] (6) to (6);
+
+\node[main node] (7) [right of=5]{A};
+\node[main node] (8) [right of=6]{B};
+\draw[repress] [bend left] (7) to (8);
+\draw[repress] [bend left] (8) to (7);
+\draw[activate] [loop above] (7) to (7);
+\draw[activate] [loop below] (8) to (8);
+
+%Second row
+\node[main node] (9) [below right of=2]{A};
+\node[main node] (10) [below of=9]{B};
+\draw[repress] [bend left] (9) to (10);
+\draw[repress] [bend left] (10) to (9);
+\draw[repress] [loop above] (9) to (9);
+
+\node[main node] (11) [below right of=4]{A};
+\node[main node] (12) [below of=11]{B};
+\draw[repress] [bend left] (11) to (12);
+\draw[repress] [bend left] (12) to (11);
+\draw[repress] [loop below] (12) to (12);
+
+\node[main node] (13) [below right of=6]{A};
+\node[main node] (14) [below of=13]{B};
+\draw[repress] [bend left] (13) to (14);
+\draw[repress] [bend left] (14) to (13);
+\draw[repress] [loop above] (13) to (13);
+\draw[repress] [loop below] (14) to (14);
+
+\end{tikzpicture}
+%!tikz source end
+
+\end{document}

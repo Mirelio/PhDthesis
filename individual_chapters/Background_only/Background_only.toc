@@ -2,7 +2,27 @@
 \defcounter {refsection}{0}\relax 
 \select@language {british}
 \contentsline {chapter}{\chapternumberline {1}Background}{3}{chapter.1}
-\contentsline {subsection}{\numberline {1.0.1}\acrshort {abc} algorithms}{4}{subsection.1.0.1}
-\contentsline {subsection}{\numberline {1.0.2}Robustness}{8}{subsection.1.0.2}
-\contentsline {section}{\numberline {1.1}Contents of this thesis}{10}{section.1.1}
-\contentsline {chapter}{Bibliography}{11}{section*.3}
+\contentsline {section}{\numberline {1.1}Introduction to synthetic biology}{3}{section.1.1}
+\contentsline {section}{\numberline {1.2}System design in synthetic biology}{4}{section.1.2}
+\contentsline {section}{\numberline {1.3}Introduction to Biochemical Modelling}{5}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Graphical representation of biochemical systems}{5}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Deterministic and Stochastic modelling}{5}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}Steady state and stability}{6}{subsection.1.3.3}
+\contentsline {section}{\numberline {1.4}The genetic toggle switch}{7}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Importance in natural systems}{7}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}Uses in synthetic biology}{8}{subsection.1.4.2}
+\contentsline {subsection}{\numberline {1.4.3}Modelling the genetic toggle switch}{8}{subsection.1.4.3}
+\contentsline {section}{\numberline {1.5}Introduction to Bayesian statistics}{11}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}Bayes' theorem}{12}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {1.5.2}Bayesian inference}{12}{subsection.1.5.2}
+\contentsline {subsection}{\numberline {1.5.3}Model checking}{12}{subsection.1.5.3}
+\contentsline {subsection}{\numberline {1.5.4}Prior selection}{12}{subsection.1.5.4}
+\contentsline {subsection}{\numberline {1.5.5}Model parametric Robustness}{13}{subsection.1.5.5}
+\contentsline {section}{\numberline {1.6}\acrfull {abc}}{15}{section.1.6}
+\contentsline {subsection}{\numberline {1.6.1}\acrshort {abc} algorithms}{15}{subsection.1.6.1}
+\contentsline {subsection}{\numberline {1.6.2}Particle sampling}{17}{subsection.1.6.2}
+\contentsline {subsection}{\numberline {1.6.3}Perturbation}{17}{subsection.1.6.3}
+\contentsline {subsection}{\numberline {1.6.4}Particle simulation}{18}{subsection.1.6.4}
+\contentsline {subsection}{\numberline {1.6.5}Weight calculation}{18}{subsection.1.6.5}
+\contentsline {section}{\numberline {1.7}Flow Cytometry}{20}{section.1.7}
+\contentsline {chapter}{Bibliography}{23}{section*.5}

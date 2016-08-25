@@ -19,6 +19,24 @@
 
 \refsection{0}
   \sortlist{nyt}{nyt}
+    \entry{Alon:2007}{book}{}
+      \name{author}{1}{}{%
+        {{hash=a0026e806b0c3123f7fb978a2c810b66}{Alon}{A\bibinitperiod}{Uri}{U\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Chapman \& Hall/CRC}%
+      }
+      \strng{namehash}{a0026e806b0c3123f7fb978a2c810b66}
+      \strng{fullhash}{a0026e806b0c3123f7fb978a2c810b66}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labelyear}{2007}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{An Introduction To The Systems Biology}}
+      \field{year}{2007}
+    \endentry
     \entry{Barnes:2011hh}{article}{}
       \name{author}{4}{}{%
         {{hash=8341669a3d0db82e877ef918042cb0d0}{Barnes}{B\bibinitperiod}{Chris\bibnamedelima P}{C\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
@@ -43,6 +61,31 @@
       \field{year}{2011}
       \field{pages}{15190\bibrangedash 15195}
       \range{pages}{6}
+    \endentry
+    \entry{Brandman:2005ci}{article}{}
+      \name{author}{4}{}{%
+        {{hash=dc18873fecc146db1f7797f81235ab1c}{Brandman}{B\bibinitperiod}{Onn}{O\bibinitperiod}{}{}{}{}}%
+        {{hash=db4712cc30768c3afc4d6baa251d03ab}{Ferrell}{F\bibinitperiod}{James\bibnamedelima E}{J\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{hash=fd81853acdb66a971c271e27ba65e198}{Li}{L\bibinitperiod}{Rong}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=1737b7d3638109b026b61af342e3555b}{Meyer}{M\bibinitperiod}{Tobias}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{7874b4cf8fd6ce77e5cf5b3b6eca517c}
+      \strng{fullhash}{aca096549c0b977de76a78dc41e99c9c}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{2005}
+      \field{labelmonth}{10}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Science}
+      \field{month}{10}
+      \field{number}{5747}
+      \field{title}{{Interlinked fast and slow positive feedback loops drive reliable cell decisions.}}
+      \field{volume}{310}
+      \field{year}{2005}
+      \field{pages}{496\bibrangedash 498}
+      \range{pages}{3}
     \endentry
     \entry{Clewley:2012kj}{article}{}
       \name{author}{1}{}{%
@@ -116,6 +159,24 @@
       \field{pages}{1797\bibrangedash 1799}
       \range{pages}{3}
     \endentry
+    \entry{mathematica:2016}{book}{}
+      \name{author}{1}{}{%
+        {{hash=ce5dcee0dbc496743f68d2911b7cd05b}{Mathematica}{M\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Wolfram Research, Inc.}%
+      }
+      \strng{namehash}{ce5dcee0dbc496743f68d2911b7cd05b}
+      \strng{fullhash}{ce5dcee0dbc496743f68d2911b7cd05b}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelyear}{2016}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{version 10.3}
+      \field{year}{2016}
+    \endentry
     \entry{MCKAY:2000vt}{article}{}
       \name{author}{3}{}{%
         {{hash=785c10d6d8dfcca9a5c79fadea89482f}{McKay}{M\bibinitperiod}{M\bibnamedelima D}{M\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
@@ -139,6 +200,30 @@
       \field{year}{2000}
       \field{pages}{55\bibrangedash 61}
       \range{pages}{7}
+    \endentry
+    \entry{Strasser:2012kt}{article}{}
+      \name{author}{3}{}{%
+        {{hash=8a295e6af16774a414c6968a8b08a3ea}{Strasser}{S\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=7050371f594cfca4f55d466b76b03c0e}{Theis}{T\bibinitperiod}{Fabian\bibnamedelima J}{F\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=6d38c9631c50d5a602842631f9caac18}{Marr}{M\bibinitperiod}{Carsten}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{e0ac2a456f1f0db6a37c818883f46543}
+      \strng{fullhash}{e0ac2a456f1f0db6a37c818883f46543}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelyear}{2012}
+      \field{labelmonth}{01}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Biophysical Journal}
+      \field{month}{01}
+      \field{number}{1}
+      \field{title}{{Stability and multiattractor dynamics of a toggle switch based on a two-stage model of stochastic gene expression.}}
+      \field{volume}{102}
+      \field{year}{2012}
+      \field{pages}{19\bibrangedash 29}
+      \range{pages}{11}
     \endentry
     \entry{Toni:2009tr}{article}{}
       \name{author}{5}{}{%

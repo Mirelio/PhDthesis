@@ -67,10 +67,12 @@
 
 \defaultfontfeatures{Scale=MatchLowercase}
 \setmainfont[Ligatures={Common, TeX}]{Linux Libertine O}
+
 %\setmainfont[Ligatures={Common, TeX}]{Lora}
 %\usepackage[T1]{fontenc}
 %\setmainfont[Ligatures={Common, TeX}]{TeX Gyre Pagella}
-\setmathfont{TeX Gyre Pagella Math}
+%\setmathfont{TeX Gyre Pagella Math}
+\setmathfont{Cambria Math}
 
 
 \RequirePackage{microtype}
@@ -334,6 +336,7 @@
 \RequirePackage{pifont}% http://ctan.org/pkg/pifont
 \newcommand{\cmark}{\ding{51}}%
 \newcommand{\xmark}{\ding{55}}%
+\RequirePackage{fixltx2e}
 
 
 \raggedbottom

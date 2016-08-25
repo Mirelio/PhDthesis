@@ -715,6 +715,49 @@
       \field{pages}{465\bibrangedash 471}
       \range{pages}{7}
     \endentry
+    \entry{Fasano:1987hg}{article}{}
+      \name{author}{2}{}{%
+        {{hash=c407d7202acca36fb7c8623b3dbf51f5}{Fasano}{F\bibinitperiod}{G}{G\bibinitperiod}{}{}{}{}}%
+        {{hash=719594a4d2b7458fc0bd96eca0c7d045}{Franceschini}{F\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{d9a730c60d093e2a3605d61045ec05c6}
+      \strng{fullhash}{d9a730c60d093e2a3605d61045ec05c6}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labelyear}{1987}
+      \field{labelmonth}{03}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Monthly Notices of the Royal Astronomical Society}
+      \field{month}{03}
+      \field{number}{1}
+      \field{title}{{A multidimensional version of the Kolmogorov-Smirnov test}}
+      \field{volume}{225}
+      \field{year}{1987}
+      \field{pages}{155\bibrangedash 170}
+      \range{pages}{16}
+    \endentry
+    \entry{Fedorec2016}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=8028feecbb5c96d31801916383f2db1d}{Fedorec}{F\bibinitperiod}{Alex\bibnamedelima J}{A\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{8028feecbb5c96d31801916383f2db1d}
+      \strng{fullhash}{8028feecbb5c96d31801916383f2db1d}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labelyear}{2016}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/ajfedorec/autoGate.git}}
+      \field{journaltitle}{GitHub repository}
+      \field{title}{autoGate}
+      \field{year}{2016}
+    \endentry
     \entry{Feliu:2013dz}{article}{}
       \name{author}{2}{}{%
         {{hash=77798b17e6d8b379a2517b33bd523ca9}{Feliu}{F\bibinitperiod}{Elisenda}{E\bibinitperiod}{}{}{}{}}%
@@ -803,6 +846,23 @@
       \field{year}{2009}
       \field{pages}{1199\bibrangedash 1202}
       \range{pages}{4}
+    \endentry
+    \entry{Friedman:1979vm}{article}{}
+      \name{author}{2}{}{%
+        {{hash=5d35851718459afb3d739bef4c828e55}{Friedman}{F\bibinitperiod}{J\bibnamedelima H}{J\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+        {{hash=06007741357db365ff8a861019e277c0}{Rafsky}{R\bibinitperiod}{L\bibnamedelima C}{L\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b20d12d15af9fe34e71306af0317aab3}
+      \strng{fullhash}{b20d12d15af9fe34e71306af0317aab3}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labelyear}{1979}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Annals of Statistics}
+      \field{title}{{Multivariate generalizations of the Wald-Wolfowitz and Smirnov two-sample tests}}
+      \field{year}{1979}
     \endentry
     \entry{Fukunaga:2013wt}{book}{}
       \name{author}{1}{}{%
@@ -1449,6 +1509,31 @@
       \field{pages}{068104}
       \range{pages}{1}
     \endentry
+    \entry{Lopes:2007vk}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=0f705814928d081693f5d6e3cf2b0952}{Lopes}{L\bibinitperiod}{Raul\bibnamedelimb H\bibnamedelima C}{R\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+        {{hash=451b792140acf6fff484f8a3afc6b4c6}{Reid}{R\bibinitperiod}{Ivan}{I\bibinitperiod}{}{}{}{}}%
+        {{hash=38fbf8740e857e21215673c0709d5e0e}{Hobson}{H\bibinitperiod}{Peter\bibnamedelima R}{P\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Amsterdam}%
+      }
+      \strng{namehash}{fdecf11e34b00de8cd44bd201a31e91c}
+      \strng{fullhash}{fdecf11e34b00de8cd44bd201a31e91c}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelyear}{2007}
+      \field{labelmonth}{07}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International Workshop on Advanced Computing and Analysis Techniques in Physics Research}
+      \field{month}{07}
+      \field{title}{{The two-dimensional Kolmogorov-Smirnov test}}
+      \field{year}{2007}
+      \field{pages}{1\bibrangedash 12}
+      \range{pages}{12}
+    \endentry
     \entry{Lu:2014kc}{article}{}
       \name{author}{3}{}{%
         {{hash=5e483448d0cf28193ac760624950a7ee}{Lu}{L\bibinitperiod}{Mingyang}{M\bibinitperiod}{}{}{}{}}%
@@ -1569,6 +1654,26 @@
       \field{pages}{291\bibrangedash 298}
       \range{pages}{8}
     \endentry
+    \entry{Syrtis2016}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=317e53650314c2e0d2446edd180f4bbd}{Major}{M\bibinitperiod}{Syrtis}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{317e53650314c2e0d2446edd180f4bbd}
+      \strng{fullhash}{317e53650314c2e0d2446edd180f4bbd}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelyear}{2016}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/syrte/ndtest.git}}
+      \field{journaltitle}{GitHub repository}
+      \field{title}{ndtest}
+      \field{year}{2016}
+    \endentry
     \entry{Marjoram:2003up}{article}{}
       \name{author}{4}{}{%
         {{hash=8975150812eeabfb3955083a402560e1}{Marjoram}{M\bibinitperiod}{Paul}{P\bibinitperiod}{}{}{}{}}%
@@ -1636,6 +1741,52 @@
       \field{pages}{55\bibrangedash 61}
       \range{pages}{7}
     \endentry
+    \entry{Milo:2010cz}{article}{}
+      \name{author}{5}{}{%
+        {{hash=9fed56718464421f939e0b0d84997792}{Milo}{M\bibinitperiod}{Ron}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=6256329f1ee0e42213971f67d1d949f4}{Jorgensen}{J\bibinitperiod}{Paul}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=e893785d15b750c24b731336e5146431}{Moran}{M\bibinitperiod}{Uri}{U\bibinitperiod}{}{}{}{}}%
+        {{hash=354528270dae01ae482e3afbb64658f5}{Weber}{W\bibinitperiod}{Griffin}{G\bibinitperiod}{}{}{}{}}%
+        {{hash=815a4615f6bacf492d2e7fbc25c32673}{Springer}{S\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{a1504fd77a6758359f433305c656b805}
+      \strng{fullhash}{1f3e2d7ae755bcef899edb0874e0d242}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelyear}{2010}
+      \field{labelmonth}{01}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nucleic Acids Research}
+      \field{month}{01}
+      \field{number}{Database issue}
+      \field{title}{{BioNumbers--the database of key numbers in molecular and cell biology.}}
+      \field{volume}{38}
+      \field{year}{2010}
+      \field{pages}{D750\bibrangedash D753}
+      \range{pages}{-1}
+    \endentry
+    \entry{Monaco:2014wx}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=eb8af83bdeecedb51c2e61b6458e1fe1}{Monaco}{M\bibinitperiod}{John\bibnamedelima V}{J\bibinitperiod\bibinitdelim V\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{eb8af83bdeecedb51c2e61b6458e1fe1}
+      \strng{fullhash}{eb8af83bdeecedb51c2e61b6458e1fe1}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelyear}{2014}
+      \field{labelmonth}{07}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International Journal of Cognitive Biometrics}
+      \field{month}{07}
+      \field{title}{{Classification and Authentication of One-dimensional Behavioral Biometrics}}
+      \field{year}{2014}
+      \field{pages}{1\bibrangedash 8}
+      \range{pages}{8}
+    \endentry
     \entry{Niwa:2005fz}{article}{}
       \name{author}{7}{}{%
         {{hash=751960630b061e7bc5e29ae5c694eaed}{Niwa}{N\bibinitperiod}{Hitoshi}{H\bibinitperiod}{}{}{}{}}%
@@ -1663,28 +1814,6 @@
       \field{year}{2005}
       \field{pages}{13\bibrangedash 13}
       \range{pages}{1}
-    \endentry
-    \entry{Peacock:1983fa}{article}{}
-      \name{author}{1}{}{%
-        {{hash=c138ddd1932cb902cf10c834132c4791}{Peacock}{P\bibinitperiod}{J\bibnamedelima A}{J\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{c138ddd1932cb902cf10c834132c4791}
-      \strng{fullhash}{c138ddd1932cb902cf10c834132c4791}
-      \field{sortinit}{P}
-      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
-      \field{labelyear}{1983}
-      \field{labelmonth}{03}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Monthly Notices of the Royal Astronomical Society}
-      \field{month}{03}
-      \field{number}{3}
-      \field{title}{{Two-dimensional goodness-of-fit testing in astronomy}}
-      \field{volume}{202}
-      \field{year}{1983}
-      \field{pages}{615\bibrangedash 627}
-      \range{pages}{13}
     \endentry
     \entry{Pedersen:2007ke}{article}{}
       \name{author}{3}{}{%
@@ -2118,6 +2247,23 @@
       \field{pages}{18926\bibrangedash 18931}
       \range{pages}{6}
     \endentry
+    \entry{Wald:1940wt}{article}{}
+      \name{author}{2}{}{%
+        {{hash=6eeb37aec54485fe044a9e233abb2183}{Wald}{W\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=023320ea068c92887e10446d3360a4cf}{Wolfowitz}{W\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{c8fd309a397233cd1377b26503f52589}
+      \strng{fullhash}{c8fd309a397233cd1377b26503f52589}
+      \field{sortinit}{W}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
+      \field{labelyear}{1940}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Annals of Mathematical Statistics}
+      \field{title}{{On a test whether two samples are from the same population}}
+      \field{year}{1940}
+    \endentry
     \entry{Warren:2004baa}{article}{}
       \name{author}{2}{}{%
         {{hash=912c29a4e38f463f0f3fe21172ae5e9d}{Warren}{W\bibinitperiod}{Patrick\bibnamedelima B}{P\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
@@ -2308,19 +2454,18 @@
       \range{pages}{3}
     \endentry
   \endsortlist
-  \missing{Wilkinson:2006}
-  \missing{Sisson:wf}
-  \missing{Chen:2011hj}
-  \missing{Woods:2015vu}
-  \missing{Syrtis2016}
-  \missing{Deans:2007cya}
-  \missing{Loinger:2007vo}
   \missing{konopka:2007}
-  \missing{Isaacs:2003ht}
-  \missing{kaplan:1959}
-  \missing{Atkinson:2003tu}
-  \missing{XXX}
+  \missing{Sisson:wf}
+  \missing{Woods:2015vu}
   \missing{wilkinson:2006}
+  \missing{XXX}
+  \missing{Wilkinson:2006}
+  \missing{Loinger:2007vo}
+  \missing{Chen:2011hj}
+  \missing{kaplan:1959}
+  \missing{Isaacs:2003ht}
+  \missing{Deans:2007cya}
+  \missing{Atkinson:2003tu}
   \missing{alon:2007b}
 \endrefsection
 \endinput

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.10.1)  10 AUG 2016 17:46
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.10.1)  23 AUG 2016 15:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1104,200 +1104,198 @@ LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 .................................................
 . fontspec info: "set-scale"
 . 
-. TeX Gyre Pagella Math scale = 0.9189820538514595.
+. Cambria Math scale = 0.9233198221757322.
 .................................................
-\g__fontspec_family_TeXGyrePagellaMath_int=\count200
+\g__fontspec_family_CambriaMath_int=\count200
 .................................................
 . fontspec info: "no-font-shape"
 . 
-. Could not resolve font TeX Gyre Pagella Math/B (it probably doesn't exist).
+. Could not resolve font Cambria Math/B (it probably doesn't exist).
 .................................................
 .................................................
 . fontspec info: "set-scale"
 . 
-. TeX Gyre Pagella Math scale = 0.9189820538514595.
+. Cambria Math scale = 0.9233198221757322.
 .................................................
 .................................................
 . fontspec info: "set-scale"
 . 
-. TeX Gyre Pagella Math scale = 0.9189820538514595.
+. Cambria Math scale = 0.9233198221757322.
 .................................................
 .................................................
 . fontspec info: "set-scale"
 . 
-. TeX Gyre Pagella Math scale = 0.9189820538514595.
+. Cambria Math scale = 0.9233198221757322.
 .................................................
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 11.00111pt on input line 73.
+(Font)              scaled to size 11.00111pt on input line 75.
 .................................................
 . fontspec info: "defining-font"
 . 
-. Font family 'TeXGyrePagellaMath(0)' created for font 'TeX Gyre Pagella Math'
-. with options
-. [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},Script=Math,SizeFeatures={{Size=10-},{Size=7-10,Font=TeX
-. Gyre Pagella Math,Style=MathScript},{Size=-7,Font=TeX Gyre Pagella
-. Math,Style=MathScriptScript}}].
+. Font family 'CambriaMath(0)' created for font 'Cambria Math' with options
+. [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},Script=Math,SizeFeatures={{Size=10-},{Size=7-10,Font=Cambria
+. Math,Style=MathScript},{Size=-7,Font=Cambria Math,Style=MathScriptScript}}].
 . 
 . This font family consists of the following shapes:
 . 
 . * 'normal' with NFSS spec.:
-. <10->s*[0.9189820538514595]"TeX Gyre Pagella
-. Math/OT:script=math;language=DFLT;"<7-10>s*[0.9189820538514595]"TeX Gyre
-. Pagella
-. Math/OT:script=math;language=DFLT;+ssty=0;"<-7>s*[0.9189820538514595]"TeX
-. Gyre Pagella Math/OT:script=math;language=DFLT;+ssty=1;"
+. <10->s*[0.9233198221757322]"Cambria
+. Math/OT:script=math;language=DFLT;"<7-10>s*[0.9233198221757322]"Cambria
+. Math/OT:script=math;language=DFLT;+ssty=0;"<-7>s*[0.9233198221757322]"Cambria
+. Math/OT:script=math;language=DFLT;+ssty=1;"
 . 
 . * 'small caps' with NFSS spec.:
 . 
 . and font adjustment code:
 . 
 .................................................
-LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(0)/m/n' will be
-(Font)              scaled to size 9.18976pt on input line 73.
+LaTeX Font Info:    Font shape `EU1/CambriaMath(0)/m/n' will be
+(Font)              scaled to size 9.23325pt on input line 75.
 .................................................
 . fontspec info: "set-scale"
 . 
-. TeX Gyre Pagella Math scale = 0.9189820538514595.
+. Cambria Math scale = 0.9233198221757322.
 .................................................
 LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `normal' on input line 73.
+(Font)              `operators' in the math version `normal' on input line 75.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> EU1/TeXGyrePagellaMath(0)/m/n on input line 73.
+(Font)                  OT1/cmr/m/n --> EU1/CambriaMath(0)/m/n on input line 75.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `bold' on input line 73.
+(Font)              `operators' in the math version `bold' on input line 75.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> EU1/TeXGyrePagellaMath(0)/bx/n on input line 73.
+(Font)                  OT1/cmr/bx/n --> EU1/CambriaMath(0)/bx/n on input line 75.
 .................................................
 . fontspec info: "set-scale"
 . 
-. TeX Gyre Pagella Math scale = 0.9189820538514595.
+. Cambria Math scale = 0.9233198221757322.
 .................................................
 .................................................
 . fontspec info: "no-font-shape"
 . 
-. Could not resolve font TeX Gyre Pagella Math/B (it probably doesn't exist).
+. Could not resolve font Cambria Math/B (it probably doesn't exist).
 .................................................
 .................................................
 . fontspec info: "set-scale"
 . 
-. TeX Gyre Pagella Math scale = 0.9189820538514595.
+. Cambria Math scale = 0.9233198221757322.
 .................................................
 .................................................
 . fontspec info: "set-scale"
 . 
-. TeX Gyre Pagella Math scale = 0.9189820538514595.
+. Cambria Math scale = 0.9233198221757322.
 .................................................
 .................................................
 . fontspec info: "set-scale"
 . 
-. TeX Gyre Pagella Math scale = 0.9189820538514595.
+. Cambria Math scale = 0.9233198221757322.
 .................................................
 .................................................
 . fontspec info: "defining-font"
 . 
-. Font family 'TeXGyrePagellaMath(1)' created for font 'TeX Gyre Pagella Math'
-. with options
-. [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},Script=Math,SizeFeatures={{Size=10-},{Size=7-10,Font=TeX
-. Gyre Pagella Math,Style=MathScript},{Size=-7,Font=TeX Gyre Pagella
+. Font family 'CambriaMath(1)' created for font 'Cambria Math' with options
+. [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},Script=Math,SizeFeatures={{Size=10-},{Size=7-10,Font=Cambria
+. Math,Style=MathScript},{Size=-7,Font=Cambria
 . Math,Style=MathScriptScript}},Scale=1.00001,FontAdjustment={\fontdimen
-. 8\font =7.2pt\relax \relax \fontdimen 9\font =4.69pt\relax \relax \fontdimen
-. 10\font =4.69pt\relax \relax \fontdimen 11\font =6.66pt\relax \relax
-. \fontdimen 12\font =3.11pt\relax \relax \fontdimen 13\font =3.54pt\relax
-. \relax \fontdimen 14\font =3.54pt\relax \relax \fontdimen 15\font
-. =2.96pt\relax \relax \fontdimen 16\font =2.32pt\relax \relax \fontdimen
-. 17\font =2.32pt\relax \relax \fontdimen 18\font =2.32pt\relax \relax
-. \fontdimen 19\font =1.16pt\relax \relax \fontdimen 20\font =0pt\relax
-. \fontdimen 21\font =0pt\relax \fontdimen 22\font =2.5pt\relax \relax }].
+. 8\font =7.56836pt\relax \relax \fontdimen 9\font =5.85938pt\relax \relax
+. \fontdimen 10\font =4.58984pt\relax \relax \fontdimen 11\font
+. =6.68945pt\relax \relax \fontdimen 12\font =5.0293pt\relax \relax \fontdimen
+. 13\font =3.66211pt\relax \relax \fontdimen 14\font =3.66211pt\relax \relax
+. \fontdimen 15\font =3.00293pt\relax \relax \fontdimen 16\font
+. =2.04102pt\relax \relax \fontdimen 17\font =2.04102pt\relax \relax
+. \fontdimen 18\font =2.2461pt\relax \relax \fontdimen 19\font =1.5625pt\relax
+. \relax \fontdimen 20\font =0pt\relax \fontdimen 21\font =0pt\relax
+. \fontdimen 22\font =2.85645pt\relax \relax }].
 . 
 . This font family consists of the following shapes:
 . 
 . * 'normal' with NFSS spec.:
-. <10->s*[1.00001]"TeX Gyre Pagella
-. Math/OT:script=math;language=DFLT;"<7-10>s*[1.00001]"TeX Gyre Pagella
-. Math/OT:script=math;language=DFLT;+ssty=0;"<-7>s*[1.00001]"TeX Gyre Pagella
+. <10->s*[1.00001]"Cambria
+. Math/OT:script=math;language=DFLT;"<7-10>s*[1.00001]"Cambria
+. Math/OT:script=math;language=DFLT;+ssty=0;"<-7>s*[1.00001]"Cambria
 . Math/OT:script=math;language=DFLT;+ssty=1;"
 . 
 . * 'small caps' with NFSS spec.:
 . 
 . and font adjustment code:
-. \fontdimen 8\font =7.2pt\relax \relax \fontdimen 9\font =4.69pt\relax \relax
-. \fontdimen 10\font =4.69pt\relax \relax \fontdimen 11\font =6.66pt\relax
-. \relax \fontdimen 12\font =3.11pt\relax \relax \fontdimen 13\font
-. =3.54pt\relax \relax \fontdimen 14\font =3.54pt\relax \relax \fontdimen
-. 15\font =2.96pt\relax \relax \fontdimen 16\font =2.32pt\relax \relax
-. \fontdimen 17\font =2.32pt\relax \relax \fontdimen 18\font =2.32pt\relax
-. \relax \fontdimen 19\font =1.16pt\relax \relax \fontdimen 20\font =0pt\relax
-. \fontdimen 21\font =0pt\relax \fontdimen 22\font =2.5pt\relax \relax 
+. \fontdimen 8\font =7.56836pt\relax \relax \fontdimen 9\font =5.85938pt\relax
+. \relax \fontdimen 10\font =4.58984pt\relax \relax \fontdimen 11\font
+. =6.68945pt\relax \relax \fontdimen 12\font =5.0293pt\relax \relax \fontdimen
+. 13\font =3.66211pt\relax \relax \fontdimen 14\font =3.66211pt\relax \relax
+. \fontdimen 15\font =3.00293pt\relax \relax \fontdimen 16\font
+. =2.04102pt\relax \relax \fontdimen 17\font =2.04102pt\relax \relax
+. \fontdimen 18\font =2.2461pt\relax \relax \fontdimen 19\font =1.5625pt\relax
+. \relax \fontdimen 20\font =0pt\relax \fontdimen 21\font =0pt\relax
+. \fontdimen 22\font =2.85645pt\relax \relax 
 .................................................
 LaTeX Font Info:    Encoding `OMS' has changed to `EU1' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 73.
+(Font)              `symbols' in the math version `normal' on input line 75.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> EU1/TeXGyrePagellaMath(1)/m/n on input line 73.
+(Font)                  OMS/cmsy/m/n --> EU1/CambriaMath(1)/m/n on input line 75.
 LaTeX Font Info:    Encoding `OMS' has changed to `EU1' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 73.
+(Font)              `symbols' in the math version `bold' on input line 75.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> EU1/TeXGyrePagellaMath(1)/bx/n on input line 73.
+(Font)                  OMS/cmsy/b/n --> EU1/CambriaMath(1)/bx/n on input line 75.
 .................................................
 . fontspec info: "set-scale"
 . 
-. TeX Gyre Pagella Math scale = 0.9189820538514595.
+. Cambria Math scale = 0.9233198221757322.
 .................................................
 .................................................
 . fontspec info: "no-font-shape"
 . 
-. Could not resolve font TeX Gyre Pagella Math/B (it probably doesn't exist).
+. Could not resolve font Cambria Math/B (it probably doesn't exist).
 .................................................
 .................................................
 . fontspec info: "set-scale"
 . 
-. TeX Gyre Pagella Math scale = 0.9189820538514595.
+. Cambria Math scale = 0.9233198221757322.
 .................................................
 .................................................
 . fontspec info: "set-scale"
 . 
-. TeX Gyre Pagella Math scale = 0.9189820538514595.
+. Cambria Math scale = 0.9233198221757322.
 .................................................
 .................................................
 . fontspec info: "set-scale"
 . 
-. TeX Gyre Pagella Math scale = 0.9189820538514595.
+. Cambria Math scale = 0.9233198221757322.
 .................................................
 .................................................
 . fontspec info: "defining-font"
 . 
-. Font family 'TeXGyrePagellaMath(2)' created for font 'TeX Gyre Pagella Math'
-. with options
-. [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},Script=Math,SizeFeatures={{Size=10-},{Size=7-10,Font=TeX
-. Gyre Pagella Math,Style=MathScript},{Size=-7,Font=TeX Gyre Pagella
+. Font family 'CambriaMath(2)' created for font 'Cambria Math' with options
+. [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},Script=Math,SizeFeatures={{Size=10-},{Size=7-10,Font=Cambria
+. Math,Style=MathScript},{Size=-7,Font=Cambria
 . Math,Style=MathScriptScript}},Scale=0.99999,FontAdjustment={\fontdimen
-. 8\font =0.6pt\relax \relax \fontdimen 9\font =1.2pt\relax \relax \fontdimen
-. 10\font =1.2pt\relax \relax \fontdimen 11\font =1.2pt\relax \relax
-. \fontdimen 12\font =4.68pt\relax \relax \fontdimen 13\font =0pt\relax }].
+. 8\font =0.64941pt\relax \relax \fontdimen 9\font =0.64941pt\relax \relax
+. \fontdimen 10\font =0.64941pt\relax \relax \fontdimen 11\font
+. =2.4414pt\relax \relax \fontdimen 12\font =6.05469pt\relax \relax \fontdimen
+. 13\font =0pt\relax }].
 . 
 . This font family consists of the following shapes:
 . 
 . * 'normal' with NFSS spec.:
-. <10->s*[0.99999]"TeX Gyre Pagella
-. Math/OT:script=math;language=DFLT;"<7-10>s*[0.99999]"TeX Gyre Pagella
-. Math/OT:script=math;language=DFLT;+ssty=0;"<-7>s*[0.99999]"TeX Gyre Pagella
+. <10->s*[0.99999]"Cambria
+. Math/OT:script=math;language=DFLT;"<7-10>s*[0.99999]"Cambria
+. Math/OT:script=math;language=DFLT;+ssty=0;"<-7>s*[0.99999]"Cambria
 . Math/OT:script=math;language=DFLT;+ssty=1;"
 . 
 . * 'small caps' with NFSS spec.:
 . 
 . and font adjustment code:
-. \fontdimen 8\font =0.6pt\relax \relax \fontdimen 9\font =1.2pt\relax \relax
-. \fontdimen 10\font =1.2pt\relax \relax \fontdimen 11\font =1.2pt\relax
-. \relax \fontdimen 12\font =4.68pt\relax \relax \fontdimen 13\font =0pt\relax
-. 
+. \fontdimen 8\font =0.64941pt\relax \relax \fontdimen 9\font =0.64941pt\relax
+. \relax \fontdimen 10\font =0.64941pt\relax \relax \fontdimen 11\font
+. =2.4414pt\relax \relax \fontdimen 12\font =6.05469pt\relax \relax \fontdimen
+. 13\font =0pt\relax 
 .................................................
 LaTeX Font Info:    Encoding `OMX' has changed to `EU1' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 73.
+(Font)              `largesymbols' in the math version `normal' on input line 75.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> EU1/TeXGyrePagellaMath(2)/m/n on input line 73.
+(Font)                  OMX/cmex/m/n --> EU1/CambriaMath(2)/m/n on input line 75.
 LaTeX Font Info:    Encoding `OMX' has changed to `EU1' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 73.
+(Font)              `largesymbols' in the math version `bold' on input line 75.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> EU1/TeXGyrePagellaMath(2)/bx/n on input line 73.
+(Font)                  OMX/cmex/m/n --> EU1/CambriaMath(2)/bx/n on input line 75.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
 \MT@toks=\toks34
@@ -1315,9 +1313,9 @@ Package microtype Info: Loading configuration file microtype.cfg.
 File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
 ))
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 24.99617pt on input line 108.
+(Font)              scaled to size 24.99617pt on input line 110.
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/bx/n' will be
-(Font)              scaled to size 23.16023pt on input line 108.
+(Font)              scaled to size 23.16023pt on input line 110.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
  (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifvtex.sty
@@ -1671,8 +1669,8 @@ Package rerunfilecheck Info: Feature \pdfmdfivesum is not available
 )
 \Hy@SectionHShift=\skip214
 )
-Package hyperref Info: Option `final' set `true' on input line 249.
-Package hyperref Info: Option `colorlinks' set `true' on input line 249.
+Package hyperref Info: Option `final' set `true' on input line 251.
+Package hyperref Info: Option `colorlinks' set `true' on input line 251.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/cleveref/cleveref.sty
 Package: cleveref 2013/12/28 v0.19 Intelligent cross-referencing
 LaTeX Info: Redefining \Cref on input line 955.
@@ -1916,7 +1914,15 @@ File: upzd.fd 2001/06/04 font definitions for U/pzd.
 LaTeX Font Info:    Try loading font information for U+psy on input line 64.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/upsy.fd
 File: upsy.fd 2001/06/04 font definitions for U/psy.
-)) (/usr/local/texlive/2015/texmf-dist/tex/latex/textgreek/textgreek.sty
+)) (/usr/local/texlive/2015/texmf-dist/tex/latex/base/fixltx2e.sty
+Package: fixltx2e 2015/06/22 v2.0b fixes to LaTeX (obsolete)
+
+
+Package fixltx2e Warning: fixltx2e is not required with releases after 2015
+(fixltx2e)                All fixes are now in the LaTeX kernel.
+(fixltx2e)                See the latexrelease package for details.
+
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/textgreek/textgreek.sty
 Package: textgreek 2011/10/09 v0.7 Greek symbols in text
 Package textgreek Info: Loading the definitions for the Greek fontencoding. on input line 39.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/greek-fontenc/lgrenc.def
@@ -2375,27 +2381,27 @@ File: siunitx-abbreviations.cfg 2015/09/14 v2.6l siunitx: Abbreviated units
 . Activating mapping `default' on line 17.
 .................................................
 \c__siunitx_mathsf_int=\count494
-LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(0)/m/n' will be
-(Font)              scaled to size 10.06277pt on input line 17.
+LaTeX Font Info:    Font shape `EU1/CambriaMath(0)/m/n' will be
+(Font)              scaled to size 10.1104pt on input line 17.
 Package microtype Info: Loading generic settings for font family
-(microtype)             `TeXGyrePagellaMath' (encoding: EU1).
+(microtype)             `CambriaMath' (encoding: EU1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(0)/m/n' will be
-(Font)              scaled to size 7.3518pt on input line 17.
-LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(0)/m/n' will be
-(Font)              scaled to size 5.51385pt on input line 17.
-LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(1)/m/n' will be
+LaTeX Font Info:    Font shape `EU1/CambriaMath(0)/m/n' will be
+(Font)              scaled to size 7.3866pt on input line 17.
+LaTeX Font Info:    Font shape `EU1/CambriaMath(0)/m/n' will be
+(Font)              scaled to size 5.53995pt on input line 17.
+LaTeX Font Info:    Font shape `EU1/CambriaMath(1)/m/n' will be
 (Font)              scaled to size 10.95015pt on input line 17.
-LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(1)/m/n' will be
+LaTeX Font Info:    Font shape `EU1/CambriaMath(1)/m/n' will be
 (Font)              scaled to size 8.00012pt on input line 17.
-LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(1)/m/n' will be
+LaTeX Font Info:    Font shape `EU1/CambriaMath(1)/m/n' will be
 (Font)              scaled to size 6.00009pt on input line 17.
-LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(2)/m/n' will be
+LaTeX Font Info:    Font shape `EU1/CambriaMath(2)/m/n' will be
 (Font)              scaled to size 10.94983pt on input line 17.
-LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(2)/m/n' will be
+LaTeX Font Info:    Font shape `EU1/CambriaMath(2)/m/n' will be
 (Font)              scaled to size 7.99988pt on input line 17.
-LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(2)/m/n' will be
+LaTeX Font Info:    Font shape `EU1/CambriaMath(2)/m/n' will be
 (Font)              scaled to size 5.99991pt on input line 17.
 LaTeX Font Info:    Try loading font information for U+msa on input line 17.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -2440,99 +2446,107 @@ File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 ] (../../chapters/chapterABCSysBio/ChAbcSys_introduction.tex
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
 (Font)              scaled to size 17.36067pt on input line 1.
-LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/it' will be
-(Font)              scaled to size 11.00111pt on input line 20.
+LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
+(Font)              scaled to size 14.46722pt on input line 11.
  [3
 
 ]
-File: ../../chapters/chapterABCSysBio/images/Gard_CS.png Graphic file (type QTm)
- <use  "../../chapters/chapterABCSysBio/images/Gard_CS.png" >
-Overfull \hbox (89.46005pt too wide) in paragraph at lines 28--29
+LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/it' will be
+(Font)              scaled to size 11.00111pt on input line 20.
+File: ../../chapters/chapterABCSysBio/images/Gard_CS.pdf Graphic file (type QTm)
+ <use  "../../chapters/chapterABCSysBio/images/Gard_CS.pdf" >
+Overfull \hbox (48.36993pt too wide) in paragraph at lines 38--39
  [] 
  []
 
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/sc' will be
-(Font)              scaled to size 11.00111pt on input line 32.
+(Font)              scaled to size 11.00111pt on input line 42.
 [4] [5]
 File: ../../chapters/chapterABCSysBio/images/ma-switch-diagram.png Graphic file (type QTm)
  <use  "../../chapters/chapterABCSysBio/images/ma-switch-diagram.png" >
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 8.03735pt on input line 51.
+(Font)              scaled to size 8.03735pt on input line 68.
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 6.02802pt on input line 51.
+(Font)              scaled to size 6.02802pt on input line 68.
  [6
 
-] [7]
-File: ../../chapters/chapterABCSysBio/images/LHS.png Graphic file (type QTm)
- <use  "../../chapters/chapterABCSysBio/images/LHS.png" >
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 87.
+]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 112.
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 9.04202pt on input line 91.
-File: ../../chapters/chapterABCSysBio/images/switch_stbility_examples.pdf Graphic file (type QTm)
- <use  "../../chapters/chapterABCSysBio/images/switch_stbility_examples.pdf" > [8
-
-] [9]
+(Font)              scaled to size 9.04202pt on input line 116.
+File: ../../chapters/chapterABCSysBio/images/LHS.png Graphic file (type QTm)
+ <use  "../../chapters/chapterABCSysBio/images/LHS.png" > [7] [8]
+File: ../../chapters/chapterABCSysBio/images/phase_plots_param_scan.png Graphic file (type QTm)
+ <use  "../../chapters/chapterABCSysBio/images/phase_plots_param_scan.png" >
 File: ../../chapters/chapterABCSysBio/images/param_stability_hist.pdf Graphic file (type QTm)
  <use  "../../chapters/chapterABCSysBio/images/param_stability_hist.pdf" >
-Overfull \hbox (18.4954pt too wide) in paragraph at lines 118--119
+Overfull \hbox (18.4954pt too wide) in paragraph at lines 148--149
  [][] 
  []
 
-[10]
+[9
+
+] [10] [11
+
+]
 File: ../../chapters/chapterABCSysBio/images/behaviour.png Graphic file (type QTm)
- <use  "../../chapters/chapterABCSysBio/images/behaviour.png" > [11] [12]
+ <use  "../../chapters/chapterABCSysBio/images/behaviour.png" > [12]
 File: ../../chapters/chapterABCSysBio/images/param_inf_res.png Graphic file (type QTm)
  <use  "../../chapters/chapterABCSysBio/images/param_inf_res.png" >
-Overfull \hbox (19.33453pt too wide) in paragraph at lines 169--171
+Overfull \hbox (21.69531pt too wide) in paragraph at lines 235--237
  []|  [] 
  []
 
-[13]
-LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
-(Font)              scaled to size 14.46722pt on input line 184.
- [14
-
-]
+[13] [14]
 File: ../../chapters/chapterABCSysBio/images/toggle_switch_designs.png Graphic file (type QTm)
- <use  "../../chapters/chapterABCSysBio/images/toggle_switch_designs.png" > [15]
+ <use  "../../chapters/chapterABCSysBio/images/toggle_switch_designs.png" > [15
+
+] [16]
 File: ../../chapters/chapterABCSysBio/images/gard_pos.png Graphic file (type QTm)
  <use  "../../chapters/chapterABCSysBio/images/gard_pos.png" >
-Overfull \hbox (99.87373pt too wide) in paragraph at lines 221--222
+Overfull \hbox (91.92397pt too wide) in paragraph at lines 288--289
  [] 
  []
 
+[17
+
+]
 File: ../../chapters/chapterABCSysBio/images/gard_neg.png Graphic file (type QTm)
-<use  "../../chapters/chapterABCSysBio/images/gard_neg.png" >
-Overfull \hbox (80.01682pt too wide) in paragraph at lines 229--230
+ <use  "../../chapters/chapterABCSysBio/images/gard_neg.png" >
+Overfull \hbox (74.6207pt too wide) in paragraph at lines 303--304
  [] 
  []
 
-[16
-
-] [17]
+[18]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\acrlong' on input line 245.
+(hyperref)                removing `\acrshort' on input line 314.
 
 File: ../../chapters/chapterABCSysBio/images/model_selection.png Graphic file (type QTm)
-<use  "../../chapters/chapterABCSysBio/images/model_selection.png" > [18
+<use  "../../chapters/chapterABCSysBio/images/model_selection.png" > [19
 
-]
+] [20]
+Overfull \hbox (73.52736pt too wide) in paragraph at lines 392--397
+ [][] 
+ []
+
 File: ../../chapters/chapterABCSysBio/images/model_sel_res.png Graphic file (type QTm)
- <use  "../../chapters/chapterABCSysBio/images/model_sel_res.png" >
-Overfull \hbox (78.18794pt too wide) in paragraph at lines 304--305
+<use  "../../chapters/chapterABCSysBio/images/model_sel_res.png" >
+Overfull \hbox (78.18794pt too wide) in paragraph at lines 402--403
  [] 
  []
 
-[19
+[21
 
-] [20] [21
+] [22] [23
 
-]) [22
+] [24]) [25
+
+] [26
 
 ]
 
-Package caption Warning: Unused \captionsetup[subfigure] on input line 197.
+Package caption Warning: Unused \captionsetup[subfigure] on input line 199.
 See the caption package documentation for explanation.
 
 
@@ -2540,9 +2554,7 @@ Package glossaries Warning: No \printglossary or \printglossaries found.
 (Remove \makeglossaries if you don't want any glossaries.)
 This document will not have a glossary.
 
-[23
-
-]
+[27]
 \tf@toc=\write10
 \openout10 = `ABCSysBio_only.toc'.
 
@@ -2556,12 +2568,12 @@ Package logreq Info: Writing requests to 'ABCSysBio_only.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 55248 strings out of 493706
- 986434 string characters out of 6145769
- 1666173 words of memory out of 5000000
- 57976 multiletter control sequences out of 15000+600000
+ 55326 strings out of 493706
+ 987228 string characters out of 6145769
+ 1668923 words of memory out of 5000000
+ 58051 multiletter control sequences out of 15000+600000
  10660 words of font info for 70 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 64i,13n,109p,10441b,1762s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,14n,109p,10441b,1760s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on ABCSysBio_only.pdf (23 pages).
+Output written on ABCSysBio_only.pdf (27 pages).

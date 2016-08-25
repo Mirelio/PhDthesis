@@ -1,0 +1,2055 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.5 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{nyt}{nyt}
+    \entry{Agapakis:2009bt}{article}{}
+      \name{author}{2}{}{%
+        {{hash=a2868530b983f5ef5f36bdb58437a339}{Agapakis}{A\bibinitperiod}{Christina\bibnamedelima M}{C\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{hash=471cc3a91cff5cb32bd28a3ad1d7bd90}{Silver}{S\bibinitperiod}{Pamela\bibnamedelima A}{P\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{903094c74377e54c83e41f5c5b1583ba}
+      \strng{fullhash}{903094c74377e54c83e41f5c5b1583ba}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labelyear}{2009}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{DESCRIPTION: Synthetic Biology review SUMMARY: * Modularity * Switches robust to noise, used as useful biological machines * eg. production therapeutic compounds only in appropriate context * Increase complexity by adding third repressor. * coupled positive and negative feedback loops can maintain oscillations robustly. Time delay might be critical for oscillations to occur}
+      \field{journaltitle}{Molecular BioSystems}
+      \field{number}{7}
+      \field{title}{{Synthetic biology: exploring and exploiting genetic modularity through the design of novel biological networks}}
+      \field{volume}{5}
+      \field{year}{2009}
+      \field{pages}{704}
+      \range{pages}{1}
+    \endentry
+    \entry{Alon:2007}{book}{}
+      \name{author}{1}{}{%
+        {{hash=a0026e806b0c3123f7fb978a2c810b66}{Alon}{A\bibinitperiod}{Uri}{U\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Chapman \& Hall/CRC}%
+      }
+      \strng{namehash}{a0026e806b0c3123f7fb978a2c810b66}
+      \strng{fullhash}{a0026e806b0c3123f7fb978a2c810b66}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labelyear}{2007}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{An Introduction To The Systems Biology}}
+      \field{year}{2007}
+    \endentry
+    \entry{Andrianantoandro:2006bia}{article}{}
+      \name{author}{4}{}{%
+        {{hash=7dc84cab9311e2812beec2d5a6c040e2}{Andrianantoandro}{A\bibinitperiod}{Ernesto}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=feca625bd114603ad465c3379e00d2ec}{Basu}{B\bibinitperiod}{Subhayu}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=397d3b882444007d24e41070c5fbb13e}{Karig}{K\bibinitperiod}{David\bibnamedelima K}{D\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+        {{hash=89d698773eaf2fae761ff0008031c7be}{Weiss}{W\bibinitperiod}{Ron}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{9897a1af742ee5c4e2b8fe047d26c784}
+      \strng{fullhash}{9cdf6b062c5159684a9dad847ca374ac}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labelyear}{2014}
+      \field{labelmonth}{04}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Molecular systems biology}
+      \field{month}{04}
+      \field{number}{1}
+      \field{title}{{Synthetic biology: new engineering rules for an emerging discipline.}}
+      \field{volume}{2}
+      \field{year}{2014}
+      \field{pages}{2006.0028}
+      \range{pages}{-1}
+    \endentry
+    \entry{Anonymous:2015tj}{manual}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labelyear}{2015}
+      \field{labelmonth}{07}
+      \field{datelabelsource}{}
+      \field{labeltitlesource}{title}
+      \field{edition}{CO016625}
+      \field{month}{07}
+      \field{title}{{Attune NxT Acoustic Focusing Cytometer}}
+      \field{year}{2015}
+    \endentry
+    \entry{Babtie:2014jg}{article}{}
+      \name{author}{3}{}{%
+        {{hash=5f8b4342c574056b6e67516267e193f2}{Babtie}{B\bibinitperiod}{Ann\bibnamedelima C}{A\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+        {{hash=1c590fa2892663ce1f54319393efadfd}{Kirk}{K\bibinitperiod}{Paul}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=1071749d15e5d69795cd0e937501205d}{Stumpf}{S\bibinitperiod}{Michael\bibnamedelimb P\bibnamedelima H}{M\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{c0e8831bcc15b056e656e37ffc728e95}
+      \strng{fullhash}{c0e8831bcc15b056e656e37ffc728e95}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{2014}
+      \field{labelmonth}{12}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the National Academy of Sciences of the United States of America}
+      \field{month}{12}
+      \field{number}{52}
+      \field{title}{{Topological sensitivity analysis for systems biology.}}
+      \field{volume}{111}
+      \field{year}{2014}
+      \field{pages}{18507\bibrangedash 18512}
+      \range{pages}{6}
+    \endentry
+    \entry{Banaji:2010fh}{article}{}
+      \name{author}{2}{}{%
+        {{hash=bbffa02e266c172481e368dd3369e6e8}{Banaji}{B\bibinitperiod}{Murad}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=6ca229af38364dd2b7a5fabb225a2bc9}{Craciun}{C\bibinitperiod}{Gheorghe}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b0f887f2eee8c4b58a17ce123d5aea87}
+      \strng{fullhash}{b0f887f2eee8c4b58a17ce123d5aea87}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{2010}
+      \field{labelmonth}{01}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Advances in Applied Mathematics}
+      \field{month}{01}
+      \field{number}{2}
+      \field{title}{{Graph-theoretic criteria for injectivity and unique equilibria in general chemical reaction systems}}
+      \field{volume}{44}
+      \field{year}{2010}
+      \field{pages}{168\bibrangedash 184}
+      \range{pages}{17}
+    \endentry
+    \entry{Barkai:1997cd}{article}{}
+      \name{author}{2}{}{%
+        {{hash=eeb368047946a4bb0ff2960a6be4bbbc}{Barkai}{B\bibinitperiod}{N}{N\bibinitperiod}{}{}{}{}}%
+        {{hash=5b12ce6126ed99c60788d172ed7e458e}{Leibler}{L\bibinitperiod}{S}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{a3d5776e8f169184560488efa94ab3ee}
+      \strng{fullhash}{a3d5776e8f169184560488efa94ab3ee}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{1997}
+      \field{labelmonth}{06}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature}
+      \field{month}{06}
+      \field{number}{6636}
+      \field{title}{{Robustness in simple biochemical networks.}}
+      \field{volume}{387}
+      \field{year}{1997}
+      \field{pages}{913\bibrangedash 917}
+      \range{pages}{5}
+    \endentry
+    \entry{Barnes:2011hh}{article}{}
+      \name{author}{4}{}{%
+        {{hash=8341669a3d0db82e877ef918042cb0d0}{Barnes}{B\bibinitperiod}{Chris\bibnamedelima P}{C\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+        {{hash=d06eb23326296ae9fc2d859767d9c154}{Silk}{S\bibinitperiod}{Daniel}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=6215eb4464621bc3e2ca5e27d19c54a8}{Sheng}{S\bibinitperiod}{Xia}{X\bibinitperiod}{}{}{}{}}%
+        {{hash=1071749d15e5d69795cd0e937501205d}{Stumpf}{S\bibinitperiod}{Michael\bibnamedelimb P\bibnamedelima H}{M\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{15cd4b9acc0b6d1fd25cd5b9e1c31c50}
+      \strng{fullhash}{02ad40a5002de2ad9ebc875b7ade578e}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{2011}
+      \field{labelmonth}{09}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the National Academy of Sciences of the United States of America}
+      \field{month}{09}
+      \field{number}{37}
+      \field{title}{{Bayesian design of synthetic biological systems.}}
+      \field{volume}{108}
+      \field{year}{2011}
+      \field{pages}{15190\bibrangedash 15195}
+      \range{pages}{6}
+    \endentry
+    \entry{Basu:2004gn}{article}{}
+      \name{author}{5}{}{%
+        {{hash=feca625bd114603ad465c3379e00d2ec}{Basu}{B\bibinitperiod}{Subhayu}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=31241f5ebacc1755884c2ec2dd039b0d}{Mehreja}{M\bibinitperiod}{Rishabh}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=0635c3fba0f04a9bb61b47595eaf3319}{Thiberge}{T\bibinitperiod}{Stephan}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=3322b9c61855ff98c7ab2ac6d3c710cb}{Chen}{C\bibinitperiod}{Ming-Tang}{M\bibinithyphendelim T\bibinitperiod}{}{}{}{}}%
+        {{hash=89d698773eaf2fae761ff0008031c7be}{Weiss}{W\bibinitperiod}{Ron}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{766f89c1b6e3ed8430e8f71084d27f68}
+      \strng{fullhash}{8e39bc7771db2ba9f3421c0101a179bc}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{2004}
+      \field{labelmonth}{04}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the National Academy of Sciences of the United States of America}
+      \field{month}{04}
+      \field{number}{17}
+      \field{title}{{Spatiotemporal control of gene expression with pulse-generating networks.}}
+      \field{volume}{101}
+      \field{year}{2004}
+      \field{pages}{6355\bibrangedash 6360}
+      \range{pages}{6}
+    \endentry
+    \entry{Batt:2007jl}{article}{}
+      \name{author}{4}{}{%
+        {{hash=6e155432de0a43c9261a7247e3ef625a}{Batt}{B\bibinitperiod}{Grégory}{G\bibinitperiod}{}{}{}{}}%
+        {{hash=78c5e462bc5d2d95a956307d8fea03ef}{Yordanov}{Y\bibinitperiod}{Boyan}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=89d698773eaf2fae761ff0008031c7be}{Weiss}{W\bibinitperiod}{Ron}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=826cd766160d9baf0e344510b73d921a}{Belta}{B\bibinitperiod}{Calin}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{107b3185fd3aa43c72c88067c49731ac}
+      \strng{fullhash}{c2aa16c06b399b21bacc3b527a98f900}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{2007}
+      \field{labelmonth}{09}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Bioinformatics (Oxford, England)}
+      \field{month}{09}
+      \field{number}{18}
+      \field{title}{{Robustness analysis and tuning of synthetic gene networks.}}
+      \field{volume}{23}
+      \field{year}{2007}
+      \field{pages}{2415\bibrangedash 2422}
+      \range{pages}{8}
+    \endentry
+    \entry{Becskei:2000ft}{article}{}
+      \name{author}{2}{}{%
+        {{hash=787acb3a15a1d3ccbd7d2e6c88291e20}{Becskei}{B\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=2369f4ed245a25bcdd3a1e3e9ac9e5ff}{Serrano}{S\bibinitperiod}{L}{L\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{a4beebbc833f29860615f8331499786d}
+      \strng{fullhash}{a4beebbc833f29860615f8331499786d}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{2000}
+      \field{labelmonth}{06}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature}
+      \field{month}{06}
+      \field{number}{6786}
+      \field{title}{{Engineering stability in gene networks by autoregulation.}}
+      \field{volume}{405}
+      \field{year}{2000}
+      \field{pages}{590\bibrangedash 593}
+      \range{pages}{4}
+    \endentry
+    \entry{Biancalani:2015vya}{article}{}
+      \name{author}{2}{}{%
+        {{hash=981ce583f0ae82c23ebbbcc181d6c40a}{Biancalani}{B\bibinitperiod}{T}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=9147eed8356ebab31622b7df560800a2}{Assaf}{A\bibinitperiod}{M}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{80cd280ad1d8f8dadf557b17e588f879}
+      \strng{fullhash}{80cd280ad1d8f8dadf557b17e588f879}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{2015}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical review letters}
+      \field{title}{{Genetic Toggle Switch in the Absence of Cooperative Binding: Exact Results}}
+      \field{year}{2015}
+    \endentry
+    \entry{Brandman:2005ci}{article}{}
+      \name{author}{4}{}{%
+        {{hash=dc18873fecc146db1f7797f81235ab1c}{Brandman}{B\bibinitperiod}{Onn}{O\bibinitperiod}{}{}{}{}}%
+        {{hash=db4712cc30768c3afc4d6baa251d03ab}{Ferrell}{F\bibinitperiod}{James\bibnamedelima E}{J\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{hash=fd81853acdb66a971c271e27ba65e198}{Li}{L\bibinitperiod}{Rong}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=1737b7d3638109b026b61af342e3555b}{Meyer}{M\bibinitperiod}{Tobias}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{7874b4cf8fd6ce77e5cf5b3b6eca517c}
+      \strng{fullhash}{aca096549c0b977de76a78dc41e99c9c}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{2005}
+      \field{labelmonth}{10}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Science}
+      \field{month}{10}
+      \field{number}{5747}
+      \field{title}{{Interlinked fast and slow positive feedback loops drive reliable cell decisions.}}
+      \field{volume}{310}
+      \field{year}{2005}
+      \field{pages}{496\bibrangedash 498}
+      \range{pages}{3}
+    \endentry
+    \entry{Canton:2008fv}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b4d08056b58dbc7971eed4ac4c0638ca}{Canton}{C\bibinitperiod}{Barry}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=d0283c6dc4c0510cb49d943cbfb1bab9}{Labno}{L\bibinitperiod}{Anna}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=56bcc611788a8cec916f128ba7c4f04b}{Endy}{E\bibinitperiod}{Drew}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{bdebb415e5cee92e987e7f94df7373dc}
+      \strng{fullhash}{bdebb415e5cee92e987e7f94df7373dc}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelyear}{2008}
+      \field{labelmonth}{06}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature Biotechnology}
+      \field{month}{06}
+      \field{number}{7}
+      \field{title}{{Refinement and standardization of synthetic biological parts and devices.}}
+      \field{volume}{26}
+      \field{year}{2008}
+      \field{pages}{787\bibrangedash 793}
+      \range{pages}{7}
+    \endentry
+    \entry{Chen:2009ea}{article}{}
+      \name{author}{3}{}{%
+        {{hash=bb996adb2c7a36362192c885c8772dab}{Chen}{C\bibinitperiod}{Bor-Sen}{B\bibinithyphendelim S\bibinitperiod}{}{}{}{}}%
+        {{hash=c785f481ffa6a8d2fa0e31189a94f872}{Chang}{C\bibinitperiod}{Chia-Hung}{C\bibinithyphendelim H\bibinitperiod}{}{}{}{}}%
+        {{hash=e14f39138008f4e9de84d8633457fe69}{Lee}{L\bibinitperiod}{Hsiao-Ching}{H\bibinithyphendelim C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{cc27f60f354c85727405389484be7b3d}
+      \strng{fullhash}{cc27f60f354c85727405389484be7b3d}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelyear}{2009}
+      \field{labelmonth}{07}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Bioinformatics (Oxford, England)}
+      \field{month}{07}
+      \field{number}{14}
+      \field{title}{{Robust synthetic biology design: stochastic game theory approach.}}
+      \field{volume}{25}
+      \field{year}{2009}
+      \field{pages}{1822\bibrangedash 1830}
+      \range{pages}{9}
+    \endentry
+    \entry{Cherry:2000wi}{article}{}
+      \name{author}{2}{}{%
+        {{hash=a6ccbb388979d72338676c31443be02c}{Cherry}{C\bibinitperiod}{J\bibnamedelima L}{J\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{hash=339597487f6b98b333bed59696d4a99a}{Adler}{A\bibinitperiod}{F\bibnamedelima R}{F\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{d6e8a121180d39a57e68405feb71c532}
+      \strng{fullhash}{d6e8a121180d39a57e68405feb71c532}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelyear}{2000}
+      \field{labelmonth}{03}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Theoretical Biology}
+      \field{month}{03}
+      \field{number}{2}
+      \field{title}{{How to make a biological switch.}}
+      \field{volume}{203}
+      \field{year}{2000}
+      \field{pages}{117\bibrangedash 133}
+      \range{pages}{17}
+    \endentry
+    \entry{Chickarmane:2009by}{article}{}
+      \name{author}{3}{}{%
+        {{hash=2079252a9f9e1216da47586ca7d6d92f}{Chickarmane}{C\bibinitperiod}{Vijay}{V\bibinitperiod}{}{}{}{}}%
+        {{hash=95dd1b1267a448d3b936c448967a5e67}{Enver}{E\bibinitperiod}{Tariq}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=ad87a70ecc77b218415882f256cc1c91}{Peterson}{P\bibinitperiod}{Carsten}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{20615088659caa1defdad6c1376d7c91}
+      \strng{fullhash}{20615088659caa1defdad6c1376d7c91}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelyear}{2009}
+      \field{labelmonth}{01}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PLoS Computational Biology}
+      \field{month}{01}
+      \field{number}{1}
+      \field{title}{{Computational modeling of the hematopoietic erythroid-myeloid switch reveals insights into cooperativity, priming, and irreversibility.}}
+      \field{volume}{5}
+      \field{year}{2009}
+      \field{pages}{e1000268\bibrangedash e1000268}
+      \range{pages}{-1}
+    \endentry
+    \entry{Choi:2014gb}{article}{}
+      \name{author}{10}{}{%
+        {{hash=551e1b3147645d7a864f86982ec4223d}{Choi}{C\bibinitperiod}{Su-Lim}{S\bibinithyphendelim L\bibinitperiod}{}{}{}{}}%
+        {{hash=2d256acf9b30ff7fe7903c6c74f8e487}{Rha}{R\bibinitperiod}{Eugene}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=ff34ba446e83652a43d40db443568a06}{Lee}{L\bibinitperiod}{Sang\bibnamedelima Jun}{S\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=d9a2f886770e2cdb2fd508090ad1ad93}{Kim}{K\bibinitperiod}{Haseong}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=6217c6ba55545d83fcf4760309ee9e65}{Kwon}{K\bibinitperiod}{Kilkoang}{K\bibinitperiod}{}{}{}{}}%
+        {{hash=7c531ce6d4e9bdb29c3d45bb65d6b78b}{Jeong}{J\bibinitperiod}{Young-Su}{Y\bibinithyphendelim S\bibinitperiod}{}{}{}{}}%
+        {{hash=0ba9ef41f3c103ed78f385193d52634f}{Rhee}{R\bibinitperiod}{Young\bibnamedelima Ha}{Y\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+        {{hash=cacf412da21737c87d6abd9103d84b7b}{Song}{S\bibinitperiod}{Jae\bibnamedelima Jun}{J\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=e495512d0df4273fc68ade212dfa8e22}{Kim}{K\bibinitperiod}{Hak-Sung}{H\bibinithyphendelim S\bibinitperiod}{}{}{}{}}%
+        {{hash=cbe0c564c1b0ffdbb83a5171752f2238}{Lee}{L\bibinitperiod}{Seung-Goo}{S\bibinithyphendelim G\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{9509737b1997322ccf7d81379f1ffc0b}
+      \strng{fullhash}{b64cf421241abcb856015d5c129bbe1b}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelyear}{2014}
+      \field{labelmonth}{03}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACS Synthetic Biology}
+      \field{month}{03}
+      \field{number}{3}
+      \field{title}{{Toward a generalized and high-throughput enzyme screening system based on artificial genetic circuits.}}
+      \field{volume}{3}
+      \field{year}{2014}
+      \field{pages}{163\bibrangedash 171}
+      \range{pages}{9}
+    \endentry
+    \entry{Cinquin:2005go}{article}{}
+      \name{author}{2}{}{%
+        {{hash=d854d705f6ceb649a971c6a223c696ed}{Cinquin}{C\bibinitperiod}{O}{O\bibinitperiod}{}{}{}{}}%
+        {{hash=74dbf949b7d5096c5ab062462a196fc7}{Demongeot}{D\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{fcdc3bf058f522c152bbfa721b9a8f92}
+      \strng{fullhash}{fcdc3bf058f522c152bbfa721b9a8f92}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelyear}{2005}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Theoretical Biology}
+      \field{number}{3}
+      \field{title}{{High-dimensional switches and the modelling of cellular differentiation}}
+      \field{volume}{233}
+      \field{year}{2005}
+      \field{pages}{391\bibrangedash 411}
+      \range{pages}{21}
+    \endentry
+    \entry{Clewley:2012kj}{article}{}
+      \name{author}{1}{}{%
+        {{hash=6282ec672db50dd62d26853dbee2a79b}{Clewley}{C\bibinitperiod}{Robert}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{6282ec672db50dd62d26853dbee2a79b}
+      \strng{fullhash}{6282ec672db50dd62d26853dbee2a79b}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelyear}{2012}
+      \field{labelmonth}{01}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PLoS Computational Biology}
+      \field{month}{01}
+      \field{number}{8}
+      \field{title}{{Hybrid models and biological model reduction with PyDSTool.}}
+      \field{volume}{8}
+      \field{year}{2012}
+      \field{pages}{e1002628\bibrangedash e1002628}
+      \range{pages}{-1}
+    \endentry
+    \entry{Conradi:2007jo}{article}{}
+      \name{author}{4}{}{%
+        {{hash=58321b80fcb9d8e8ab48c211f5669e64}{Conradi}{C\bibinitperiod}{C}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=35866cdcfbff58fe66185cab7eb8da16}{Flockerzi}{F\bibinitperiod}{D}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=4903007dbb8a452c6bd93d0efd15ece2}{Raisch}{R\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=793936a767ec080b6115f8ca168e6eef}{Stelling}{S\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{2c97d33a9cc0ccdae699863587adcafc}
+      \strng{fullhash}{47c384d3c22374b5bbea9900c1928aa9}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelyear}{2007}
+      \field{labelmonth}{12}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PNAS}
+      \field{month}{12}
+      \field{number}{49}
+      \field{title}{{Subnetwork analysis reveals dynamic features of complex (bio)chemical networks}}
+      \field{volume}{104}
+      \field{year}{2007}
+      \field{pages}{19175\bibrangedash 19180}
+      \range{pages}{6}
+    \endentry
+    \entry{Cormack:1996gv}{article}{}
+      \name{author}{3}{}{%
+        {{hash=8e3e01d5c71a45ebe866733135bb07d5}{Cormack}{C\bibinitperiod}{Brendan\bibnamedelima P}{B\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+        {{hash=91548ee2e48911648757edefef80ac13}{Valdivia}{V\bibinitperiod}{Raphael\bibnamedelima H}{R\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+        {{hash=617c10dfb31c7c6577fb42bcdc9d478d}{Falkow}{F\bibinitperiod}{Stanley}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{cca524e9f97eae2d33db6b1f00866c6b}
+      \strng{fullhash}{cca524e9f97eae2d33db6b1f00866c6b}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelyear}{1996}
+      \field{labelmonth}{01}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Gene}
+      \field{month}{01}
+      \field{number}{1}
+      \field{title}{{FACS-optimized mutants of the green fluorescent protein (GFP)}}
+      \field{volume}{173}
+      \field{year}{1996}
+      \field{pages}{33\bibrangedash 38}
+      \range{pages}{6}
+    \endentry
+    \entry{deJong:2002ft}{article}{}
+      \name{author}{1}{}{%
+        {{hash=87b772ddd15df031c67c11578d98a22d}{Jong}{J\bibinitperiod}{Hidde}{H\bibinitperiod}{de}{d\bibinitperiod}{}{}}%
+      }
+      \strng{namehash}{87b772ddd15df031c67c11578d98a22d}
+      \strng{fullhash}{87b772ddd15df031c67c11578d98a22d}
+      \field{sortinit}{d}
+      \field{sortinithash}{78f7c4753a2004675f316a80bdb31742}
+      \field{labelyear}{2002}
+      \field{labelmonth}{01}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Computational Biology}
+      \field{month}{01}
+      \field{number}{1}
+      \field{title}{{Modeling and simulation of genetic regulatory systems: a literature review.}}
+      \field{volume}{9}
+      \field{year}{2002}
+      \field{pages}{67\bibrangedash 103}
+      \range{pages}{37}
+    \endentry
+    \entry{Diaz:2010kw}{article}{}
+      \name{author}{4}{}{%
+        {{hash=ff2b817d18535ac3538c30ac1f295f23}{Dı́az}{D\bibinitperiod}{Mario}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=a8c5688bf40fe69945bc29d657ac6991}{Herrero}{H\bibinitperiod}{Mónica}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=451d9a8f2f5fb226ec7e27721472f75c}{Garcı́a}{G\bibinitperiod}{Luis\bibnamedelima A}{L\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=2dc84afefe44884c9ade353a6dfb13ca}{Quirós}{Q\bibinitperiod}{Covadonga}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{96f8fe0dd068d28685cf313a11ade797}
+      \strng{fullhash}{86e21c2bc2e846eb09c9406857c9ae31}
+      \field{sortinit}{D}
+      \field{sortinithash}{78f7c4753a2004675f316a80bdb31742}
+      \field{labelyear}{2010}
+      \field{labelmonth}{01}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Biochemical Engineering Journal}
+      \field{month}{01}
+      \field{number}{3}
+      \field{title}{{Application of flow cytometry to industrial microbial bioprocesses}}
+      \field{volume}{48}
+      \field{year}{2010}
+      \field{pages}{385\bibrangedash 407}
+      \range{pages}{23}
+    \endentry
+    \entry{DOYLE:2005ul}{article}{}
+      \name{author}{2}{}{%
+        {{hash=a4bbf7067362e9d5d256d3db2494dedb}{Doyle}{D\bibinitperiod}{John}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=40ea8c791ea84405120b0e36634df5a0}{Csete}{C\bibinitperiod}{Marie}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{1b24fe5336c82ce0808c3c55ebb8ec12}
+      \strng{fullhash}{1b24fe5336c82ce0808c3c55ebb8ec12}
+      \field{sortinit}{D}
+      \field{sortinithash}{78f7c4753a2004675f316a80bdb31742}
+      \field{labelyear}{2005}
+      \field{labelmonth}{11}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PLoS Biology}
+      \field{month}{11}
+      \field{number}{11}
+      \field{title}{{Motifs, Control, and Stability}}
+      \field{volume}{3}
+      \field{year}{2005}
+      \field{pages}{e392}
+      \range{pages}{-1}
+    \endentry
+    \entry{Ellis:2009hka}{article}{}
+      \name{author}{3}{}{%
+        {{hash=395fd641bc482d575f3b52d2ef6aa187}{Ellis}{E\bibinitperiod}{Tom}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=bd7d15d79ca36b953d99a1a0aaccb94a}{Wang}{W\bibinitperiod}{Xiao}{X\bibinitperiod}{}{}{}{}}%
+        {{hash=f0f74f0fbecb48e5c6604e8e3789d538}{Collins}{C\bibinitperiod}{James\bibnamedelima J}{J\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{7ca09b016e79a761814ba6159f4bb289}
+      \strng{fullhash}{7ca09b016e79a761814ba6159f4bb289}
+      \field{sortinit}{E}
+      \field{sortinithash}{fefc5210ef4721525b2a478df41efcd4}
+      \field{labelyear}{2009}
+      \field{labelmonth}{04}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature Biotechnology}
+      \field{month}{04}
+      \field{number}{5}
+      \field{title}{{Diversity-based, model-guided construction of synthetic gene networks with predicted functions.}}
+      \field{volume}{27}
+      \field{year}{2009}
+      \field{pages}{465\bibrangedash 471}
+      \range{pages}{7}
+    \endentry
+    \entry{Feliu:2013dz}{article}{}
+      \name{author}{2}{}{%
+        {{hash=77798b17e6d8b379a2517b33bd523ca9}{Feliu}{F\bibinitperiod}{Elisenda}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=cf88a663229fb8c353d29d52ddfebf48}{Wiuf}{W\bibinitperiod}{Carsten}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b3e5ea3832af7d33362a4a8272bd3479}
+      \strng{fullhash}{b3e5ea3832af7d33362a4a8272bd3479}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labelyear}{2013}
+      \field{labelmonth}{09}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Bioinformatics (Oxford, England)}
+      \field{month}{09}
+      \field{number}{18}
+      \field{title}{{A computational method to preclude multistationarity in networks of interacting species.}}
+      \field{volume}{29}
+      \field{year}{2013}
+      \field{pages}{2327\bibrangedash 2334}
+      \range{pages}{8}
+    \endentry
+    \entry{FerrellJr:2002fh}{article}{}
+      \name{author}{1}{}{%
+        {{hash=304583f570fdb67ec6ad04414b0c8766}{Ferrell}{F\bibinitperiod}{James\bibnamedelima E}{J\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{Jr}{J\bibinitperiod}}%
+      }
+      \strng{namehash}{304583f570fdb67ec6ad04414b0c8766}
+      \strng{fullhash}{304583f570fdb67ec6ad04414b0c8766}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labelyear}{2002}
+      \field{labelmonth}{04}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Current opinion in cell biology}
+      \field{month}{04}
+      \field{number}{2}
+      \field{title}{{Self-perpetuating states in signal transduction: positive feedback, double-negative feedback and bistability}}
+      \field{volume}{14}
+      \field{year}{2002}
+      \field{pages}{140\bibrangedash 148}
+      \range{pages}{9}
+    \endentry
+    \entry{Friedland:2009ce}{article}{}
+      \name{author}{6}{}{%
+        {{hash=45602dffd492f4dbe3a1ed72dc5329b1}{Friedland}{F\bibinitperiod}{Ari\bibnamedelima E}{A\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{hash=f5c02c2db3527565e3f23b817fff1a63}{Lu}{L\bibinitperiod}{Timothy\bibnamedelima K}{T\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+        {{hash=bd7d15d79ca36b953d99a1a0aaccb94a}{Wang}{W\bibinitperiod}{Xiao}{X\bibinitperiod}{}{}{}{}}%
+        {{hash=bb1e6f4bd2e1ea251390c33e606aad33}{Shi}{S\bibinitperiod}{David}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=01ca887b2f310e8541c15136caabe09c}{Church}{C\bibinitperiod}{George}{G\bibinitperiod}{}{}{}{}}%
+        {{hash=f0f74f0fbecb48e5c6604e8e3789d538}{Collins}{C\bibinitperiod}{James\bibnamedelima J}{J\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{797e35152a2ee38184fe74737a73ce3f}
+      \strng{fullhash}{ee5e5928768a0d19ebdcbaa52a88fb35}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labelyear}{2009}
+      \field{labelmonth}{05}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Science}
+      \field{month}{05}
+      \field{number}{5931}
+      \field{title}{{Synthetic gene networks that count.}}
+      \field{volume}{324}
+      \field{year}{2009}
+      \field{pages}{1199\bibrangedash 1202}
+      \range{pages}{4}
+    \endentry
+    \entry{Fukunaga:2013wt}{book}{}
+      \name{author}{1}{}{%
+        {{hash=ddd23a61859afb367b1b8b12fa8fac25}{Fukunaga}{F\bibinitperiod}{Keinosuke}{K\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Academic Press}%
+      }
+      \strng{namehash}{ddd23a61859afb367b1b8b12fa8fac25}
+      \strng{fullhash}{ddd23a61859afb367b1b8b12fa8fac25}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labelyear}{2013}
+      \field{labelmonth}{10}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{10}
+      \field{title}{{Introduction to Statistical Pattern Recognition}}
+      \field{year}{2013}
+    \endentry
+    \entry{Fung:2005jd}{article}{}
+      \name{author}{6}{}{%
+        {{hash=4ebe421574237d7da32b0d83da712474}{Fung}{F\bibinitperiod}{E}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=8e98b5bc43353c3a56cfade384e2d3d2}{Wong}{W\bibinitperiod}{Wilson\bibnamedelima W}{W\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+        {{hash=be5b2072f8874bcd2c359feb14da95b9}{Suen}{S\bibinitperiod}{J\bibnamedelima K}{J\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+        {{hash=88421aa40454262bcde7f56ec55b4733}{Bulter}{B\bibinitperiod}{T}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=33de1a8c0bdb4fad3bb40ec1a16823ad}{Lee}{L\bibinitperiod}{S\bibnamedelima G}{S\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+        {{hash=96aee0f823432d07322413b63eb562c8}{Liao}{L\bibinitperiod}{James\bibnamedelima C}{J\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{d1dc887c87e37b7621fbd2cef2d61db6}
+      \strng{fullhash}{2d18afe08fcb578006cce4eec8d4822f}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labelyear}{2005}
+      \field{labelmonth}{05}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature}
+      \field{month}{05}
+      \field{number}{7038}
+      \field{title}{{A synthetic gene--metabolic oscillator }}
+      \field{volume}{435}
+      \field{year}{2005}
+      \field{pages}{118\bibrangedash 122}
+      \range{pages}{5}
+    \endentry
+    \entry{Gardner:2000vha}{article}{}
+      \name{author}{3}{}{%
+        {{hash=e23a289be0e3393aabeb37497fa299f5}{Gardner}{G\bibinitperiod}{T\bibnamedelima S}{T\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{hash=c5672d98769b1a72fb353f3597a0cd07}{Cantor}{C\bibinitperiod}{C\bibnamedelima R}{C\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+        {{hash=6605a954dd214f66b2fe169d6dc4acef}{Collins}{C\bibinitperiod}{J\bibnamedelima J}{J\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b585ec9edd4b1b4d1fc1feeb357ff20f}
+      \strng{fullhash}{b585ec9edd4b1b4d1fc1feeb357ff20f}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelyear}{2000}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature}
+      \field{number}{6767}
+      \field{title}{{Construction of a genetic toggle switch in Escherichia coli}}
+      \field{volume}{403}
+      \field{year}{2000}
+      \field{pages}{339\bibrangedash 342}
+      \range{pages}{4}
+    \endentry
+    \entry{Ghaffarizadeh:2014bt}{article}{}
+      \name{author}{3}{}{%
+        {{hash=5e4a89dc0c8aedd5e4fe5df212877944}{Ghaffarizadeh}{G\bibinitperiod}{Ahmadreza}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=45b04434ff246ae6bccf715ff9c0519b}{Flann}{F\bibinitperiod}{Nicholas\bibnamedelima S}{N\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{hash=61b03406e8316a22af1aff5d504a7411}{Podgorski}{P\bibinitperiod}{Gregory\bibnamedelima J}{G\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{5c8f6b95f5c359074ee9588427edc7f5}
+      \strng{fullhash}{5c8f6b95f5c359074ee9588427edc7f5}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelyear}{2014}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{BMC Bioinformatics}
+      \field{title}{{Multistable switches and their role in cellular differentiation networks.}}
+      \field{volume}{15 Suppl 7}
+      \field{year}{2014}
+      \field{pages}{S7}
+      \range{pages}{-1}
+    \endentry
+    \entry{Gillespie:1977ww}{article}{}
+      \name{author}{1}{}{%
+        {{hash=871a7dbf8fa6b3d378a1969060d05205}{Gillespie}{G\bibinitperiod}{D\bibnamedelima T}{D\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{871a7dbf8fa6b3d378a1969060d05205}
+      \strng{fullhash}{871a7dbf8fa6b3d378a1969060d05205}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelyear}{1977}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Physical Chemistry}
+      \field{number}{25}
+      \field{title}{{Exact Stochastic Simulation of Coupled Chemical-Reactions}}
+      \field{volume}{81}
+      \field{year}{1977}
+      \field{pages}{2340\bibrangedash 2361}
+      \range{pages}{22}
+    \endentry
+    \entry{Guantes:2008gs}{article}{}
+      \name{author}{2}{}{%
+        {{hash=afda6abefba607b2827f556da195bba3}{Guantes}{G\bibinitperiod}{Raúl}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=0fe640ee3b0a253c6e577b7802e13841}{Poyatos}{P\bibinitperiod}{Juan\bibnamedelima F}{J\bibinitperiod\bibinitdelim F\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{a51a256a5cf5a79811270e386c80c001}
+      \strng{fullhash}{a51a256a5cf5a79811270e386c80c001}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelyear}{2008}
+      \field{labelmonth}{11}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PLoS Computational Biology}
+      \field{month}{11}
+      \field{number}{11}
+      \field{title}{{Multistable decision switches for flexible control of epigenetic differentiation.}}
+      \field{volume}{4}
+      \field{year}{2008}
+      \field{pages}{e1000235}
+      \range{pages}{-1}
+    \endentry
+    \entry{Hafner:2009ct}{article}{}
+      \name{author}{4}{}{%
+        {{hash=45f10eb5489766e6076bee4a16171968}{Hafner}{H\bibinitperiod}{Marc}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=836aadfafb99a418e0308c121a0ac626}{Koeppl}{K\bibinitperiod}{Heinz}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=8d6c1df0c111e79b87cf7bfe33f96045}{Hasler}{H\bibinitperiod}{Martin}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=8fd3a8379cbda9c60f92e446330e16fb}{Wagner}{W\bibinitperiod}{Andreas}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{4feeaeb451e2eb3c6d37f9ce43da49de}
+      \strng{fullhash}{3e9fd9a7d11eeffce47670470f5e6968}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelyear}{2009}
+      \field{labelmonth}{10}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PLoS Computational Biology}
+      \field{month}{10}
+      \field{number}{10}
+      \field{title}{{`Glocal' Robustness Analysis and Model Discrimination for Circadian Oscillators}}
+      \field{volume}{5}
+      \field{year}{2009}
+      \field{pages}{e1000534}
+      \range{pages}{-1}
+    \endentry
+    \entry{Ham:2008hh}{article}{}
+      \name{author}{4}{}{%
+        {{hash=839f6f8837f644cfa22a06e8255bbb0b}{Ham}{H\bibinitperiod}{Timothy\bibnamedelima S}{T\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{hash=a4f6e5dd3d758fa3b232daaa152e0a0b}{Lee}{L\bibinitperiod}{Sung\bibnamedelima K}{S\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+        {{hash=bfa31edf306ce06a18d48e30da8e4630}{Keasling}{K\bibinitperiod}{Jay\bibnamedelima D}{J\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{hash=6284dcb25a108b88a368241dda998df4}{Arkin}{A\bibinitperiod}{Adam\bibnamedelima P}{A\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{c5fc8102eca2043fd27f2b4a39a6e439}
+      \strng{fullhash}{408d8ed99d8f0ccd680c213f3097703c}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelyear}{2008}
+      \field{labelmonth}{07}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PLoS ONE}
+      \field{month}{07}
+      \field{number}{7}
+      \field{title}{{Design and Construction of a Double Inversion Recombination Switch for Heritable Sequential Genetic Memory}}
+      \field{volume}{3}
+      \field{year}{2008}
+      \field{pages}{e2815}
+      \range{pages}{-1}
+    \endentry
+    \entry{Heinemann:2006ht}{article}{}
+      \name{author}{2}{}{%
+        {{hash=90ee2e61af985f7dc8b6d05e57b34b4d}{Heinemann}{H\bibinitperiod}{M}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=75d981d61f53c6e9b997b6b37ea189d7}{Panke}{P\bibinitperiod}{S}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{8e5632047b2f627dfcf1e993474f8857}
+      \strng{fullhash}{8e5632047b2f627dfcf1e993474f8857}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelyear}{2006}
+      \field{labelmonth}{11}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Bioinformatics (Oxford, England)}
+      \field{month}{11}
+      \field{number}{22}
+      \field{title}{{Synthetic biology--putting engineering into biology}}
+      \field{volume}{22}
+      \field{year}{2006}
+      \field{pages}{2790\bibrangedash 2799}
+      \range{pages}{10}
+    \endentry
+    \entry{Holtz:2010bm}{article}{}
+      \name{author}{2}{}{%
+        {{hash=69100e6fb1df267017669b586f77fedc}{Holtz}{H\bibinitperiod}{William\bibnamedelima J}{W\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=bfa31edf306ce06a18d48e30da8e4630}{Keasling}{K\bibinitperiod}{Jay\bibnamedelima D}{J\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{82c0d3709d1991b692286334cc699aea}
+      \strng{fullhash}{82c0d3709d1991b692286334cc699aea}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelyear}{2010}
+      \field{labelmonth}{01}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Cell}
+      \field{month}{01}
+      \field{number}{1}
+      \field{title}{{Engineering Static and Dynamic Control of Synthetic Pathways}}
+      \field{volume}{140}
+      \field{year}{2010}
+      \field{pages}{19\bibrangedash 23}
+      \range{pages}{5}
+    \endentry
+    \entry{Kelly:2009bj}{article}{}
+      \name{author}{10}{}{%
+        {{hash=74ea9436c188b71bde450069e0beb7c2}{Kelly}{K\bibinitperiod}{Jason\bibnamedelima R}{J\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+        {{hash=9edf73ad057a8e826b0c7e5a5c551968}{Rubin}{R\bibinitperiod}{Adam\bibnamedelima J}{A\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=1eb6a39b6dd6a94ebaf2395383721d3e}{Davis}{D\bibinitperiod}{Joseph\bibnamedelima H}{J\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+        {{hash=312b0ec0cbff1f445b467914af97feff}{Ajo-Franklin}{A\bibinithyphendelim F\bibinitperiod}{Caroline\bibnamedelima M}{C\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{hash=a370c84f5ea894ca98d090c6ebc07375}{Cumbers}{C\bibinitperiod}{John}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=af95beb20e5ca88a9261807500de921f}{Czar}{C\bibinitperiod}{Michael\bibnamedelima J}{M\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=7e7327e833146bb23b7200ad1a3dd539}{Mora}{M\bibinitperiod}{Kim}{K\bibinitperiod}{de}{d\bibinitperiod}{}{}}%
+        {{hash=b4df1ee72a7bd4fe499ff011643f51bc}{Glieberman}{G\bibinitperiod}{Aaron\bibnamedelima L}{A\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{hash=0d654aca38816ab4a573d8de3468fdc9}{Monie}{M\bibinitperiod}{Dileep\bibnamedelima D}{D\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{hash=56bcc611788a8cec916f128ba7c4f04b}{Endy}{E\bibinitperiod}{Drew}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{efe51932c7a56779e3e14259f2293098}
+      \strng{fullhash}{2a3c58b08afaa081d882d52b237bd65c}
+      \field{sortinit}{K}
+      \field{sortinithash}{a7d5b3aec5a0890aae7baf85a209abfc}
+      \field{labelyear}{2009}
+      \field{labelmonth}{01}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Biological Engineering}
+      \field{month}{01}
+      \field{number}{1}
+      \field{title}{{Measuring the activity of BioBrick promoters using an in vivo reference standard.}}
+      \field{volume}{3}
+      \field{year}{2009}
+      \field{pages}{4\bibrangedash 4}
+      \range{pages}{1}
+    \endentry
+    \entry{Kelwick:2014iy}{article}{}
+      \name{author}{4}{}{%
+        {{hash=c6b6d87491cbd14d97acc464e5678935}{Kelwick}{K\bibinitperiod}{Richard}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=91d46e075ea2610ca51763e0847a7c69}{MacDonald}{M\bibinitperiod}{James\bibnamedelima T}{J\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
+        {{hash=d9049ebd18e05ee6268fdcc175d28ddb}{Webb}{W\bibinitperiod}{Alexander\bibnamedelima J}{A\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=c0a85842555f65f648f423d0224bb16d}{Freemont}{F\bibinitperiod}{Paul}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{c16b74b278fbe31adbf7020c09883c62}
+      \strng{fullhash}{be239f559a6b370b6cf18cf9a57f0842}
+      \field{sortinit}{K}
+      \field{sortinithash}{a7d5b3aec5a0890aae7baf85a209abfc}
+      \field{labelyear}{2014}
+      \field{labelmonth}{01}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Frontiers in bioengineering and biotechnology}
+      \field{month}{01}
+      \field{title}{{Developments in the tools and methodologies of synthetic biology.}}
+      \field{volume}{2}
+      \field{year}{2014}
+      \field{pages}{60\bibrangedash 60}
+      \range{pages}{1}
+    \endentry
+    \entry{Khalil:2010hm}{article}{}
+      \name{author}{2}{}{%
+        {{hash=92c9da5e12d92243b836c2f608d777ab}{Khalil}{K\bibinitperiod}{Ahmad\bibnamedelima S}{A\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{hash=f0f74f0fbecb48e5c6604e8e3789d538}{Collins}{C\bibinitperiod}{James\bibnamedelima J}{J\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b496dbd0cc32ef551b764e9c49bafe66}
+      \strng{fullhash}{b496dbd0cc32ef551b764e9c49bafe66}
+      \field{sortinit}{K}
+      \field{sortinithash}{a7d5b3aec5a0890aae7baf85a209abfc}
+      \field{labelyear}{2010}
+      \field{labelmonth}{05}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature Publishing Group}
+      \field{month}{05}
+      \field{number}{5}
+      \field{title}{{Synthetic biology: applications come of age}}
+      \field{volume}{11}
+      \field{year}{2010}
+      \field{pages}{367\bibrangedash 379}
+      \range{pages}{13}
+    \endentry
+    \entry{Kim:2006uk}{article}{}
+      \name{author}{5}{}{%
+        {{hash=b2236af712a294693dcea632d195b1fb}{Kim}{K\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=48752657eb856581ed9df769ce104ebe}{Bates}{B\bibinitperiod}{D\bibnamedelima G}{D\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+        {{hash=65f2804e3523979250572ca98625e1ba}{Postlewaite}{P\bibinitperiod}{I}{I\bibinitperiod}{}{}{}{}}%
+        {{hash=99b9a60607967ccae4682a367cc91dde}{Ma}{M\bibinitperiod}{L}{L\bibinitperiod}{}{}{}{}}%
+        {{hash=0483d37d152e949f63fc27e0c6b2e07c}{Iglesias}{I\bibinitperiod}{P\bibnamedelima A}{P\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{4e8b68a1af84992328d02c71a1a02c6b}
+      \strng{fullhash}{8bd2eee95b3b04f666ca45272f9fcde2}
+      \field{sortinit}{K}
+      \field{sortinithash}{a7d5b3aec5a0890aae7baf85a209abfc}
+      \field{labelyear}{2006}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Systems biology}
+      \field{title}{{Robustness analysis of biochemical network models}}
+      \field{year}{2006}
+    \endentry
+    \entry{Kitano:2007cp}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ccbec67ed2a448309bfd4a1cec5e10c8}{Kitano}{K\bibinitperiod}{Hiroaki}{H\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{ccbec67ed2a448309bfd4a1cec5e10c8}
+      \strng{fullhash}{ccbec67ed2a448309bfd4a1cec5e10c8}
+      \field{sortinit}{K}
+      \field{sortinithash}{a7d5b3aec5a0890aae7baf85a209abfc}
+      \field{labelyear}{2007}
+      \field{labelmonth}{09}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Molecular systems biology}
+      \field{month}{09}
+      \field{title}{{Towards a theory of biological robustness}}
+      \field{volume}{3}
+      \field{year}{2007}
+    \endentry
+    \entry{Kobayashi:2004cv}{article}{}
+      \name{author}{7}{}{%
+        {{hash=be12bb1d06fb2a7ef1805f2929dcaf7e}{Kobayashi}{K\bibinitperiod}{Hideki}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=2f54d51d52734c85585576ef59d5051e}{Kaern}{K\bibinitperiod}{Mads}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=e9a362e2608f79691afca979a6b02f1c}{Araki}{A\bibinitperiod}{Michihiro}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=9b8e4197bfc0bbce0fd66feec274166e}{Chung}{C\bibinitperiod}{Kristy}{K\bibinitperiod}{}{}{}{}}%
+        {{hash=757a10dc9c54c7a97f822b071eef49e0}{Gardner}{G\bibinitperiod}{Timothy\bibnamedelima S}{T\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{hash=07924dd6ae9a292fa68fb69b0489312f}{Cantor}{C\bibinitperiod}{Charles\bibnamedelima R}{C\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+        {{hash=f0f74f0fbecb48e5c6604e8e3789d538}{Collins}{C\bibinitperiod}{James\bibnamedelima J}{J\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{7c0bf24bfa886017e245106b36c56fb7}
+      \strng{fullhash}{b6944eb63537ce1480bb347fec2a112e}
+      \field{sortinit}{K}
+      \field{sortinithash}{a7d5b3aec5a0890aae7baf85a209abfc}
+      \field{labelyear}{2004}
+      \field{labelmonth}{05}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the National Academy of Sciences of the United States of America}
+      \field{month}{05}
+      \field{number}{22}
+      \field{title}{{Programmable cells: interfacing natural and engineered gene networks.}}
+      \field{volume}{101}
+      \field{year}{2004}
+      \field{pages}{8414\bibrangedash 8419}
+      \range{pages}{6}
+    \endentry
+    \entry{Kramer:2004kq}{article}{}
+      \name{author}{6}{}{%
+        {{hash=b7c36cd22f54454102df54ab083a1de1}{Kramer}{K\bibinitperiod}{Beat\bibnamedelima P}{B\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+        {{hash=dac05ab54f17b7deb84e90cae38549e2}{Viretta}{V\bibinitperiod}{Alessandro\bibnamedelima Usseglio}{A\bibinitperiod\bibinitdelim U\bibinitperiod}{}{}{}{}}%
+        {{hash=f28b8128501fee7207f558726b71770b}{Daoud-El-Baba}{D\bibinithyphendelim E\bibinithyphendelim B\bibinitperiod}{Marie}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=606076af751a78457550e215f266369f}{Aubel}{A\bibinitperiod}{Dominique}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=33c190686db1e92d963dcacce9e230d4}{Weber}{W\bibinitperiod}{Wilfried}{W\bibinitperiod}{}{}{}{}}%
+        {{hash=1d0f006cbcb20c95d520f23beb56b773}{Fussenegger}{F\bibinitperiod}{Martin}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{c6dda5ac62bc9000f45bc24c1c1b127f}
+      \strng{fullhash}{9da8298d917118ea132b464edcf79ab3}
+      \field{sortinit}{K}
+      \field{sortinithash}{a7d5b3aec5a0890aae7baf85a209abfc}
+      \field{labelyear}{2004}
+      \field{labelmonth}{06}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature Biotechnology}
+      \field{month}{06}
+      \field{number}{7}
+      \field{title}{{An engineered epigenetic transgene switch in mammalian cells.}}
+      \field{volume}{22}
+      \field{year}{2004}
+      \field{pages}{867\bibrangedash 870}
+      \range{pages}{4}
+    \endentry
+    \entry{Liepe:2010eg}{article}{}
+      \name{author}{7}{}{%
+        {{hash=6919ca6326649b57f78ef650e4f54c41}{Liepe}{L\bibinitperiod}{Juliane}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=8cd67c4ce2dd72313140792ab5bac85f}{Barnes}{B\bibinitperiod}{Chris}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=f5cd453ec5a9be18fae9521a6f3d69c0}{Cule}{C\bibinitperiod}{Erika}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=bf2cc6c72c5332801f2269118cffdfed}{Erguler}{E\bibinitperiod}{Kamil}{K\bibinitperiod}{}{}{}{}}%
+        {{hash=1c590fa2892663ce1f54319393efadfd}{Kirk}{K\bibinitperiod}{Paul}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=199d095d48e61cde3962f614838314a2}{Toni}{T\bibinitperiod}{Tina}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=1071749d15e5d69795cd0e937501205d}{Stumpf}{S\bibinitperiod}{Michael\bibnamedelimb P\bibnamedelima H}{M\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{4d01ed948cdd08fe4cb21f8d38f0b930}
+      \strng{fullhash}{c9deb24dd0de9218011b2a8b70d3422b}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelyear}{2010}
+      \field{labelmonth}{07}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Bioinformatics (Oxford, England)}
+      \field{month}{07}
+      \field{number}{14}
+      \field{title}{{ABC-SysBio--approximate Bayesian computation in Python with GPU support.}}
+      \field{volume}{26}
+      \field{year}{2010}
+      \field{pages}{1797\bibrangedash 1799}
+      \range{pages}{3}
+    \endentry
+    \entry{Liepe:2014iw}{article}{}
+      \name{author}{6}{}{%
+        {{hash=6919ca6326649b57f78ef650e4f54c41}{Liepe}{L\bibinitperiod}{Juliane}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=1c590fa2892663ce1f54319393efadfd}{Kirk}{K\bibinitperiod}{Paul}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=93cf644e65e0373e6db95c722408e064}{Filippi}{F\bibinitperiod}{Sarah}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=199d095d48e61cde3962f614838314a2}{Toni}{T\bibinitperiod}{Tina}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=8341669a3d0db82e877ef918042cb0d0}{Barnes}{B\bibinitperiod}{Chris\bibnamedelima P}{C\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+        {{hash=1071749d15e5d69795cd0e937501205d}{Stumpf}{S\bibinitperiod}{Michael\bibnamedelimb P\bibnamedelima H}{M\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{4d01ed948cdd08fe4cb21f8d38f0b930}
+      \strng{fullhash}{0c004a9b779630a6dfd43592f43a8553}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelyear}{2014}
+      \field{labelmonth}{02}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature Protocols}
+      \field{month}{02}
+      \field{number}{2}
+      \field{title}{{A framework for parameter estimation and model selection from experimental data in systems biology using approximate Bayesian computation.}}
+      \field{volume}{9}
+      \field{year}{2014}
+      \field{pages}{439\bibrangedash 456}
+      \range{pages}{18}
+    \endentry
+    \entry{Lipshtat:2006wb}{article}{}
+      \name{author}{4}{}{%
+        {{hash=cfdf27b22adf2d95412525ef57bc8b70}{Lipshtat}{L\bibinitperiod}{Azi}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=6f65e4467d5a66abe716ec425e3645fe}{Loinger}{L\bibinitperiod}{Adiel}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=4b619561530435777b15aa81cf41ab85}{Balaban}{B\bibinitperiod}{Nathalie\bibnamedelima Q}{N\bibinitperiod\bibinitdelim Q\bibinitperiod}{}{}{}{}}%
+        {{hash=65b81db75906975cdac83d50ca55e6bb}{Biham}{B\bibinitperiod}{Ofer}{O\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b6c5a1b96f85cee402bb8e13f791bb58}
+      \strng{fullhash}{6753f4766343fd548f9f6ecde8e7c915}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelyear}{2006}
+      \field{labelmonth}{05}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical review letters}
+      \field{month}{05}
+      \field{number}{18}
+      \field{title}{{Genetic toggle switch without cooperative binding.}}
+      \field{volume}{96}
+      \field{year}{2006}
+      \field{pages}{188101}
+      \range{pages}{1}
+    \endentry
+    \entry{Litcofsky:2012gr}{article}{}
+      \name{author}{5}{}{%
+        {{hash=92e93ab4f0e936b61054cf6bba7e140d}{Litcofsky}{L\bibinitperiod}{Kevin\bibnamedelima D}{K\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{hash=43071c0b48c25d7fb085e805b1a72316}{Afeyan}{A\bibinitperiod}{Raffi\bibnamedelima B}{R\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
+        {{hash=487f62edae8f89ee9263c6621c5a345d}{Krom}{K\bibinitperiod}{Russell\bibnamedelima J}{R\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=92c9da5e12d92243b836c2f608d777ab}{Khalil}{K\bibinitperiod}{Ahmad\bibnamedelima S}{A\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{hash=f0f74f0fbecb48e5c6604e8e3789d538}{Collins}{C\bibinitperiod}{James\bibnamedelima J}{J\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{738a3a952d1b458b14dbf08821b260ce}
+      \strng{fullhash}{a961cc9797f20e3e5d77698fbc8aa769}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelyear}{2012}
+      \field{labelmonth}{11}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature Methods}
+      \field{month}{11}
+      \field{number}{11}
+      \field{title}{{Iterative plug-and-play methodology for constructing and modifying synthetic gene networks.}}
+      \field{volume}{9}
+      \field{year}{2012}
+      \field{pages}{1077\bibrangedash 1080}
+      \range{pages}{4}
+    \endentry
+    \entry{Lloyd:1982wn}{article}{}
+      \name{author}{1}{}{%
+        {{hash=1b0064d5c82f054a3e6845ca0851306b}{Lloyd}{L\bibinitperiod}{S\bibnamedelima P}{S\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{1b0064d5c82f054a3e6845ca0851306b}
+      \strng{fullhash}{1b0064d5c82f054a3e6845ca0851306b}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelyear}{1982}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Information Theory}
+      \field{title}{{Least squares quantization in PCM}}
+      \field{year}{1982}
+    \endentry
+    \entry{Lu:2014kc}{article}{}
+      \name{author}{3}{}{%
+        {{hash=5e483448d0cf28193ac760624950a7ee}{Lu}{L\bibinitperiod}{Mingyang}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=b6be0b6d1474cd31feb1d6eb6fcf6bde}{Onuchic}{O\bibinitperiod}{José}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=e1aafa4a6f7b6d973b7b308d275c740d}{Ben-Jacob}{B\bibinithyphendelim J\bibinitperiod}{Eshel}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{475c49655271dc21e5f5c587f230c326}
+      \strng{fullhash}{475c49655271dc21e5f5c587f230c326}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelyear}{2014}
+      \field{labelmonth}{08}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{WKB approximation: is a method for finding approximate solutions to linear partial differential equations with spatially varying coefficients here they apply it to a three-way genetic switch study the effect of noise on multistage switches use a positive feedback loop on both nodes switch WKB approximation: is a method for finding approximate solutions to linear partial differential equations with spatially varying coefficients here they apply it to a three-way genetic switch study the effect of noise on multistage switches use a positive feedback loop on both nodes switch WKB approximation: is a method for finding approximate solutions to linear partial differential equations with spatially varying coefficients here they apply it to a three-way genetic switch study the effect of noise on multistage switches use a positive feedback loop on both nodes switch WKB approximation: is a method for finding approximate solutions to linear partial differential equations with spatially varying coefficients here they apply it to a three-way genetic switch study the effect of noise on multistage switches use a positive feedback loop on both nodes switch WKB approximation: is a method for finding approximate solutions to linear partial differential equations with spatially varying coefficients here they apply it to a three-way genetic switch study the effect of noise on multistage switches use a positive feedback loop on both nodes switch WKB approximation: is a method for finding approximate solutions to linear partial differential equations with spatially varying coefficients here they apply it to a three-way genetic switch study the effect of noise on multistage switches use a positive feedback loop on both nodes switch}
+      \field{journaltitle}{Physical review letters}
+      \field{month}{08}
+      \field{number}{7}
+      \field{title}{{Construction of an Effective Landscape for Multistate Genetic Switches}}
+      \field{volume}{113}
+      \field{year}{2014}
+      \field{pages}{078102}
+      \range{pages}{1}
+    \endentry
+    \entry{Lu:2009ez}{article}{}
+      \name{author}{3}{}{%
+        {{hash=f5c02c2db3527565e3f23b817fff1a63}{Lu}{L\bibinitperiod}{Timothy\bibnamedelima K}{T\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+        {{hash=92c9da5e12d92243b836c2f608d777ab}{Khalil}{K\bibinitperiod}{Ahmad\bibnamedelima S}{A\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{hash=f0f74f0fbecb48e5c6604e8e3789d538}{Collins}{C\bibinitperiod}{James\bibnamedelima J}{J\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{fc462eb2bdc30ec2543bc875cfec9562}
+      \strng{fullhash}{fc462eb2bdc30ec2543bc875cfec9562}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelyear}{2009}
+      \field{labelmonth}{12}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature Biotechnology}
+      \field{month}{12}
+      \field{number}{12}
+      \field{title}{{Next-generation synthetic gene networks}}
+      \field{volume}{27}
+      \field{year}{2009}
+      \field{pages}{1139\bibrangedash 1150}
+      \range{pages}{12}
+    \endentry
+    \entry{Lutz:1997ti}{article}{}
+      \name{author}{2}{}{%
+        {{hash=8edc103b15d110e5b963fc8d2fadfed0}{Lutz}{L\bibinitperiod}{R}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=f7d5ae6b3064402f6bb159a9ca2312fb}{Bujard}{B\bibinitperiod}{H}{H\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b121579b11378108f4dece9ce7755324}
+      \strng{fullhash}{b121579b11378108f4dece9ce7755324}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelyear}{1997}
+      \field{labelmonth}{03}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nucleic Acids Research}
+      \field{month}{03}
+      \field{number}{6}
+      \field{title}{{Independent and tight regulation of transcriptional units in Escherichia coli via the LacR/O, the TetR/O and AraC/I1-I2 regulatory elements.}}
+      \field{volume}{25}
+      \field{year}{1997}
+      \field{pages}{1203\bibrangedash 1210}
+      \range{pages}{8}
+    \endentry
+    \entry{Ma:2012dt}{article}{}
+      \name{author}{4}{}{%
+        {{hash=a92297e6d0aa8a8a8de4577bac57b151}{Ma}{M\bibinitperiod}{Rui}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=e5f118b0587b78855cfd082c47ada2fb}{Wang}{W\bibinitperiod}{Jichao}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=b2d742c6240830a21b2b9ddea5a8bb9b}{Hou}{H\bibinitperiod}{Zhonghuai}{Z\bibinitperiod}{}{}{}{}}%
+        {{hash=e9719f61672aa47243f23ff45171404e}{Liu}{L\bibinitperiod}{Haiyan}{H\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{e331f48bd8b3f5d8b48d5b164066d154}
+      \strng{fullhash}{51d2f1caddc056faa99c0b75cfb6eade}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelyear}{2012}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Revealed an additional kinetic stable state nearby the traditionally regarded unstable steady state	 The toggle switch based on mutual inhibition whose reaction kinetic characteristics described by a pair of ODEs. These equations predict at most two stable steady states and one unstable steady state. But stochastic fluctuations are not negligible, so exact stochastic simulation via kinetic monte carlo (KMC) algorithm used. Here experimentally and theoretically revealed an additional kinetic stable state nearby the traditionally regarded unstable ss. System from monostable to twistable under different conditions. Source of additional kinetic stability: the discrete and fluctuate nature of molecule numbers, especially when they are often very close or equal to zero.}
+      \field{journaltitle}{Physical review letters}
+      \field{number}{24}
+      \field{title}{{Small-number effects: a third stable state in a genetic bistable toggle switch}}
+      \field{volume}{109}
+      \field{year}{2012}
+      \field{pages}{248107}
+      \range{pages}{1}
+    \endentry
+    \entry{Macdonald:2012el}{article}{}
+      \name{author}{3}{}{%
+        {{hash=649496a258210a85638ea27f9986cc2b}{Macdonald}{M\bibinitperiod}{Patrick\bibnamedelima J}{P\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=b6f25c2ea695f4385f6acab832194dfc}{Chen}{C\bibinitperiod}{Yan}{Y\bibinitperiod}{}{}{}{}}%
+        {{hash=e8547e6bdd8dfca7c8077b353daf57b5}{Mueller}{M\bibinitperiod}{Joachim\bibnamedelima D}{J\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{5bb1724625785832e19841bda56877f1}
+      \strng{fullhash}{5bb1724625785832e19841bda56877f1}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelyear}{2012}
+      \field{labelmonth}{02}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Analytical Biochemistry}
+      \field{month}{02}
+      \field{number}{1}
+      \field{title}{{Chromophore maturation and fluorescence fluctuation spectroscopy of fluorescent proteins in a cell-free expression system.}}
+      \field{volume}{421}
+      \field{year}{2012}
+      \field{pages}{291\bibrangedash 298}
+      \range{pages}{8}
+    \endentry
+    \entry{Marjoram:2003up}{article}{}
+      \name{author}{4}{}{%
+        {{hash=8975150812eeabfb3955083a402560e1}{Marjoram}{M\bibinitperiod}{Paul}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=9557976d10e3a1cedaea0829bc261066}{Molitor}{M\bibinitperiod}{John}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=8fac4e88e17173616e8df6a01b02b83e}{Plagnol}{P\bibinitperiod}{Vincent}{V\bibinitperiod}{}{}{}{}}%
+        {{hash=197c820c18cedd85ebe1d06a783fc9c3}{Tavare}{T\bibinitperiod}{Simon}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{2701f5eb6f456f52e3b732678437d117}
+      \strng{fullhash}{795bd81c3fa8f8a254ad757ea4c20f00}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelyear}{2003}
+      \field{labelmonth}{12}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the National Academy of Sciences of the United States of America}
+      \field{month}{12}
+      \field{number}{26}
+      \field{title}{{Markov chain Monte Carlo without likelihoods.}}
+      \field{volume}{100}
+      \field{year}{2003}
+      \field{pages}{15324\bibrangedash 15328}
+      \range{pages}{5}
+    \endentry
+    \entry{mathematica:2016}{book}{}
+      \name{author}{1}{}{%
+        {{hash=ce5dcee0dbc496743f68d2911b7cd05b}{Mathematica}{M\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Wolfram Research, Inc.}%
+      }
+      \strng{namehash}{ce5dcee0dbc496743f68d2911b7cd05b}
+      \strng{fullhash}{ce5dcee0dbc496743f68d2911b7cd05b}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelyear}{2016}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{version 10.3}
+      \field{year}{2016}
+    \endentry
+    \entry{MCKAY:2000vt}{article}{}
+      \name{author}{3}{}{%
+        {{hash=785c10d6d8dfcca9a5c79fadea89482f}{McKay}{M\bibinitperiod}{M\bibnamedelima D}{M\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{hash=17008099515aff0ce715c3c5770344b4}{Beckman}{B\bibinitperiod}{R\bibnamedelima J}{R\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=ed430ca8e394fa16b4aab847a705dd66}{Conover}{C\bibinitperiod}{W\bibnamedelima J}{W\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{2d5a8edb73d537a99c31b1ea9f78dfc8}
+      \strng{fullhash}{2d5a8edb73d537a99c31b1ea9f78dfc8}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelyear}{2000}
+      \field{labelmonth}{02}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Technometrics}
+      \field{month}{02}
+      \field{number}{1}
+      \field{title}{{A comparison of three methods for selecting values of input variables in the analysis of output from a computer code}}
+      \field{volume}{42}
+      \field{year}{2000}
+      \field{pages}{55\bibrangedash 61}
+      \range{pages}{7}
+    \endentry
+    \entry{Niwa:2005fz}{article}{}
+      \name{author}{7}{}{%
+        {{hash=751960630b061e7bc5e29ae5c694eaed}{Niwa}{N\bibinitperiod}{Hitoshi}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=4286a4ea805f12cc6ca8bc8e4ec773f7}{Toyooka}{T\bibinitperiod}{Yayoi}{Y\bibinitperiod}{}{}{}{}}%
+        {{hash=b7214653376ec883d35d0b7ec32b8554}{Shimosato}{S\bibinitperiod}{Daisuke}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=7dfa543bca5b17fa49b06d29ae29c032}{Strumpf}{S\bibinitperiod}{Dan}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=c5b5fd0672e01e2f63755fa1e0b1ab14}{Takahashi}{T\bibinitperiod}{Kadue}{K\bibinitperiod}{}{}{}{}}%
+        {{hash=6bfc3ec8df05bf2ec6376017a14a0aa0}{Yagi}{Y\bibinitperiod}{Rika}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=8bf30f93b11d5194993116767e929c5e}{Rossant}{R\bibinitperiod}{Janet}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{57822f09fd27b7873bc5b310400c4946}
+      \strng{fullhash}{bb587685c97c0b10297e16b1a4fd1353}
+      \field{sortinit}{N}
+      \field{sortinithash}{925374ca63e7594de7fafdb83e64d41d}
+      \field{labelyear}{2005}
+      \field{labelmonth}{12}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Cell}
+      \field{month}{12}
+      \field{number}{5}
+      \field{title}{{Interaction between Oct3/4 and Cdx2 Determines Trophectoderm Differentiation}}
+      \field{volume}{123}
+      \field{year}{2005}
+      \field{pages}{13\bibrangedash 13}
+      \range{pages}{1}
+    \endentry
+    \entry{Peacock:1983fa}{article}{}
+      \name{author}{1}{}{%
+        {{hash=c138ddd1932cb902cf10c834132c4791}{Peacock}{P\bibinitperiod}{J\bibnamedelima A}{J\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{c138ddd1932cb902cf10c834132c4791}
+      \strng{fullhash}{c138ddd1932cb902cf10c834132c4791}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelyear}{1983}
+      \field{labelmonth}{03}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Monthly Notices of the Royal Astronomical Society}
+      \field{month}{03}
+      \field{number}{3}
+      \field{title}{{Two-dimensional goodness-of-fit testing in astronomy}}
+      \field{volume}{202}
+      \field{year}{1983}
+      \field{pages}{615\bibrangedash 627}
+      \range{pages}{13}
+    \endentry
+    \entry{Pedersen:2007ke}{article}{}
+      \name{author}{3}{}{%
+        {{hash=a90d0190ce757e8253e682125a2b7a9c}{Pedersen}{P\bibinitperiod}{Morten\bibnamedelima Gram}{M\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+        {{hash=6190b8c46341b44e92ea1d2ce54aa425}{Bersani}{B\bibinitperiod}{Alberto\bibnamedelima Maria}{A\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{hash=40ca42ab37bfc964f6d582549b428e2e}{Bersani}{B\bibinitperiod}{Enrico}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{d2f03f89ac860ce3d43282265fc8b797}
+      \strng{fullhash}{d2f03f89ac860ce3d43282265fc8b797}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelyear}{2007}
+      \field{labelmonth}{06}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Mathematical Chemistry}
+      \field{month}{06}
+      \field{number}{4}
+      \field{title}{{Quasi steady-state approximations in complex intracellular signal transduction networks -- a word of caution}}
+      \field{volume}{43}
+      \field{year}{2007}
+      \field{pages}{1318\bibrangedash 1344}
+      \range{pages}{27}
+    \endentry
+    \entry{Prill:2005fq}{article}{}
+      \name{author}{3}{}{%
+        {{hash=e3f84700832128f0767c76bae6c2555b}{Prill}{P\bibinitperiod}{Robert\bibnamedelima J}{R\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=c9e2883d563af78994ff61c9d09a6e8b}{Iglesias}{I\bibinitperiod}{Pablo\bibnamedelima A}{P\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=cde34f2848e86eea24d8453add7db93c}{Levchenko}{L\bibinitperiod}{Andre}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{932de113575ede6e7c0471fdb0c26f89}
+      \strng{fullhash}{932de113575ede6e7c0471fdb0c26f89}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelyear}{2005}
+      \field{labelmonth}{11}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PLoS Biology}
+      \field{month}{11}
+      \field{number}{11}
+      \field{title}{{Dynamic properties of network motifs contribute to biological network organization.}}
+      \field{volume}{3}
+      \field{year}{2005}
+      \field{pages}{e343\bibrangedash e343}
+      \range{pages}{-1}
+    \endentry
+    \entry{Prindle:2012cj}{article}{}
+      \name{author}{6}{}{%
+        {{hash=2f6ec67c7a915e13ca443600c5cd1d6f}{Prindle}{P\bibinitperiod}{Arthur}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=70d0f5f6ab14089e5590f30271fc3806}{Samayoa}{S\bibinitperiod}{Phillip}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=16a0c724bfd1e9cc95c151828dbcd739}{Razinkov}{R\bibinitperiod}{Ivan}{I\bibinitperiod}{}{}{}{}}%
+        {{hash=504dd405c35dcedff6bd0fb992795ff3}{Danino}{D\bibinitperiod}{Tal}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=16c5b5395d3856aa38d61f0833116fa7}{Tsimring}{T\bibinitperiod}{Lev\bibnamedelima S}{L\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{hash=e292c7aa7ea70e8e77abd3134400fa1a}{Hasty}{H\bibinitperiod}{Jeff}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{5f70c28ec804519a049b0d8064460b58}
+      \strng{fullhash}{edb0f97f6bb1c4aa864b5eb5db250b09}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelyear}{2012}
+      \field{labelmonth}{01}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature}
+      \field{month}{01}
+      \field{number}{7379}
+      \field{title}{{A sensing array of radically coupled genetic 'biopixels'.}}
+      \field{volume}{481}
+      \field{year}{2012}
+      \field{pages}{39\bibrangedash 44}
+      \range{pages}{6}
+    \endentry
+    \entry{Pritchard:1999td}{article}{}
+      \name{author}{4}{}{%
+        {{hash=266cd21e144746b40df03af11a567b97}{Pritchard}{P\bibinitperiod}{J\bibnamedelima K}{J\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+        {{hash=057f547fa074c23ff0dbb9d6669978b1}{Seielstad}{S\bibinitperiod}{M\bibnamedelima T}{M\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
+        {{hash=9fab8794f764470a439350a827ba882d}{Perez-Lezaun}{P\bibinithyphendelim L\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=5326a9cc8d8ee7a4ccceac986dd0dd0d}{Feldman}{F\bibinitperiod}{M\bibnamedelima W}{M\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{54a8b9ab025b8ecf5d3f37c0e7bfab10}
+      \strng{fullhash}{cf8ff912d9a65b09939a87c8e81f2612}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelyear}{1999}
+      \field{labelmonth}{12}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Molecular Biology and Evolution}
+      \field{month}{12}
+      \field{number}{12}
+      \field{title}{{Population growth of human Y chromosomes: A study of Y chromosome microsatellites}}
+      \field{volume}{16}
+      \field{year}{1999}
+      \field{pages}{1791\bibrangedash 1798}
+      \range{pages}{8}
+    \endentry
+    \entry{Salis:2009gk}{article}{}
+      \name{author}{3}{}{%
+        {{hash=0b4a0dba96eb901a4dead94285d97d1b}{Salis}{S\bibinitperiod}{Howard\bibnamedelima M}{H\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{hash=62518cbecde8bb67378728df31cf765d}{Mirsky}{M\bibinitperiod}{Ethan\bibnamedelima A}{E\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=65ff41dbe5274be5e583c56228f77524}{Voigt}{V\bibinitperiod}{Christopher\bibnamedelima A}{C\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b7df97998b5efd9ce15aabe80776c70a}
+      \strng{fullhash}{b7df97998b5efd9ce15aabe80776c70a}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelyear}{2009}
+      \field{labelmonth}{09}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature Biotechnology}
+      \field{month}{09}
+      \field{number}{10}
+      \field{title}{{Automated design of synthetic ribosome binding sites to control protein expression.}}
+      \field{volume}{27}
+      \field{year}{2009}
+      \field{pages}{946\bibrangedash 950}
+      \range{pages}{5}
+    \endentry
+    \entry{Shaner:2004vy}{article}{}
+      \name{author}{6}{}{%
+        {{hash=54ca7eb695391296657aa47c8a530d9a}{Shaner}{S\bibinitperiod}{Nathan\bibnamedelima C}{N\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+        {{hash=8c283cabb694a87cc95e2b6832d79bc7}{Campbell}{C\bibinitperiod}{Robert\bibnamedelima E}{R\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{hash=e79c74671dcc1e2053898b7dc9531df8}{Steinbach}{S\bibinitperiod}{Paul\bibnamedelima A}{P\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=97b8839dd2cba01286bed3f5b898b254}{Giepmans}{G\bibinitperiod}{Ben\bibnamedelimb N\bibnamedelima G}{B\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+        {{hash=208f94aae01650ea3ecf9248bcc6b066}{Palmer}{P\bibinitperiod}{Amy\bibnamedelima E}{A\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{hash=60bc2242671782c067c04f990be6ac64}{Tsien}{T\bibinitperiod}{Roger\bibnamedelima Y}{R\bibinitperiod\bibinitdelim Y\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{7487f883839b5d4d76d57e148c3f3d71}
+      \strng{fullhash}{34ac6a560c6e174493c6f982c8773dae}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelyear}{2004}
+      \field{labelmonth}{12}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature Biotechnology}
+      \field{month}{12}
+      \field{number}{12}
+      \field{title}{{Improved monomeric red, orange and yellow fluorescent proteins derived from Discosoma sp. red fluorescent protein.}}
+      \field{volume}{22}
+      \field{year}{2004}
+      \field{pages}{1567\bibrangedash 1572}
+      \range{pages}{6}
+    \endentry
+    \entry{SHIMOMURA:1962va}{article}{}
+      \name{author}{3}{}{%
+        {{hash=10f19ca02a9cf1488df89fc5771ef139}{Shimomura}{S\bibinitperiod}{O}{O\bibinitperiod}{}{}{}{}}%
+        {{hash=343c7b0d6d0df34f01e4614a6b90744d}{Johnson}{J\bibinitperiod}{F\bibnamedelima H}{F\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+        {{hash=e4b24fe83586de122a6f5f11fe7f075c}{Saiga}{S\bibinitperiod}{Y}{Y\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{6570cfa01f6b1990520fe7321fe59176}
+      \strng{fullhash}{6570cfa01f6b1990520fe7321fe59176}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelyear}{1962}
+      \field{labelmonth}{05}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Cellular and Comparative Physiology}
+      \field{month}{05}
+      \field{title}{{Extraction, purification and properties of aequorin, a bioluminescent protein from the luminous hydromedusan, Aequorea.}}
+      \field{volume}{59}
+      \field{year}{1962}
+      \field{pages}{223\bibrangedash 239}
+      \range{pages}{17}
+    \endentry
+    \entry{Shinar:2010dd}{article}{}
+      \name{author}{2}{}{%
+        {{hash=ac9f22105fe6692a19d5b0252fd47056}{Shinar}{S\bibinitperiod}{G}{G\bibinitperiod}{}{}{}{}}%
+        {{hash=313c397e5427ca95e201cd0ea52432fe}{Feinberg}{F\bibinitperiod}{M}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{5f650278ac29f60a9b8e763be0e8a582}
+      \strng{fullhash}{5f650278ac29f60a9b8e763be0e8a582}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelyear}{2010}
+      \field{labelmonth}{03}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Science}
+      \field{month}{03}
+      \field{number}{5971}
+      \field{title}{{Structural Sources of Robustness in Biochemical Reaction Networks}}
+      \field{volume}{327}
+      \field{year}{2010}
+      \field{pages}{1389\bibrangedash 1391}
+      \range{pages}{3}
+    \endentry
+    \entry{Stelling:2004wo}{article}{}
+      \name{author}{5}{}{%
+        {{hash=793936a767ec080b6115f8ca168e6eef}{Stelling}{S\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=ab0ba811c111cb8917dc419f3f9fb6cc}{Sauer}{S\bibinitperiod}{U}{U\bibinitperiod}{}{}{}{}}%
+        {{hash=3b0c4e82a9c835774010c03240afedd5}{Szallasi}{S\bibinitperiod}{Z}{Z\bibinitperiod}{}{}{}{}}%
+        {{hash=4b858c9d10b516d3ed838827f56da3e3}{Doyle}{D\bibinitperiod}{F\bibnamedelima J}{F\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=b33f13c137695ea949f1eba04001ca60}{DOYLE}{D\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{13d030ca2a590af43d7ce27cc38eafd1}
+      \strng{fullhash}{216165f8c533f160ca87fd9913a18b64}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelyear}{2004}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Cell}
+      \field{number}{6}
+      \field{title}{{Robustness of cellular functions}}
+      \field{volume}{118}
+      \field{year}{2004}
+      \field{pages}{675\bibrangedash 685}
+      \range{pages}{11}
+    \endentry
+    \entry{Strasser:2012kt}{article}{}
+      \name{author}{3}{}{%
+        {{hash=8a295e6af16774a414c6968a8b08a3ea}{Strasser}{S\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=7050371f594cfca4f55d466b76b03c0e}{Theis}{T\bibinitperiod}{Fabian\bibnamedelima J}{F\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=6d38c9631c50d5a602842631f9caac18}{Marr}{M\bibinitperiod}{Carsten}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{e0ac2a456f1f0db6a37c818883f46543}
+      \strng{fullhash}{e0ac2a456f1f0db6a37c818883f46543}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelyear}{2012}
+      \field{labelmonth}{01}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Biophysical Journal}
+      \field{month}{01}
+      \field{number}{1}
+      \field{title}{{Stability and multiattractor dynamics of a toggle switch based on a two-stage model of stochastic gene expression.}}
+      \field{volume}{102}
+      \field{year}{2012}
+      \field{pages}{19\bibrangedash 29}
+      \range{pages}{11}
+    \endentry
+    \entry{Stricker:2008jqa}{article}{}
+      \name{author}{6}{}{%
+        {{hash=5277fe701688190a18023c8f05cc248a}{Stricker}{S\bibinitperiod}{Jesse}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=04b9819f72775b97e10e49b202b913d9}{Cookson}{C\bibinitperiod}{Scott}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=3291425097a03a8c28a89b1f53b3991b}{Bennett}{B\bibinitperiod}{Matthew\bibnamedelima R}{M\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+        {{hash=f5136466623b711e67e7e1a169dcc1df}{Mather}{M\bibinitperiod}{William\bibnamedelima H}{W\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+        {{hash=16c5b5395d3856aa38d61f0833116fa7}{Tsimring}{T\bibinitperiod}{Lev\bibnamedelima S}{L\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{hash=e292c7aa7ea70e8e77abd3134400fa1a}{Hasty}{H\bibinitperiod}{Jeff}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{28397a136074664dbb48bc1693201588}
+      \strng{fullhash}{1910e987f59434fa4a67fd768e71e44a}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelyear}{2008}
+      \field{labelmonth}{10}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature}
+      \field{month}{10}
+      \field{number}{7221}
+      \field{title}{{A fast, robust and tunable synthetic gene oscillator}}
+      \field{volume}{456}
+      \field{year}{2008}
+      \field{pages}{516\bibrangedash 519}
+      \range{pages}{4}
+    \endentry
+    \entry{Thomas:1995id}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b6267a76fcb8ecc22612effb6d2142a7}{Thomas}{T\bibinitperiod}{R}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=f916afff59bbda24080f2824841f920f}{Thieffry}{T\bibinitperiod}{D}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=0c58e4cf5a8622f6bab57c2cab8033b6}{Kaufman}{K\bibinitperiod}{M}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{292d0b82679e7fd407ee6acad60f8dfd}
+      \strng{fullhash}{292d0b82679e7fd407ee6acad60f8dfd}
+      \field{sortinit}{T}
+      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
+      \field{labelyear}{1995}
+      \field{labelmonth}{03}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Bulletin of mathematical biology}
+      \field{month}{03}
+      \field{number}{2}
+      \field{title}{{Dynamical behaviour of biological regulatory networks--I. Biological role of feedback loops and practical use of the concept of the loop-characteristic state.}}
+      \field{volume}{57}
+      \field{year}{1995}
+      \field{pages}{247\bibrangedash 276}
+      \range{pages}{30}
+    \endentry
+    \entry{Tibshirani:2001vo}{article}{}
+      \name{author}{3}{}{%
+        {{hash=21780bd4ff9a4cecd018c6cfdbd80280}{Tibshirani}{T\bibinitperiod}{R}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=bfb864ec280e9e5f636e15e19309f19a}{Walther}{W\bibinitperiod}{G}{G\bibinitperiod}{}{}{}{}}%
+        {{hash=e1440a33ef594fbe1375568d9288cc69}{Hastie}{H\bibinitperiod}{T}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{83229c230aec6b8abedb2c0d4fe19494}
+      \strng{fullhash}{83229c230aec6b8abedb2c0d4fe19494}
+      \field{sortinit}{T}
+      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
+      \field{labelyear}{2001}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the Royal {\ldots}}
+      \field{title}{{Estimating the number of clusters in a data set via the gap statistic}}
+      \field{year}{2001}
+    \endentry
+    \entry{Tigges:2009jx}{article}{}
+      \name{author}{4}{}{%
+        {{hash=cff762f368b5952802081846ff3b3a60}{Tigges}{T\bibinitperiod}{Marcel}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=351ab813b4f46ca987c11caa19cd099d}{Marquez-Lago}{M\bibinithyphendelim L\bibinitperiod}{Tatiana\bibnamedelima T}{T\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
+        {{hash=d17c9f048caccd96dd096bbf2383a878}{Stelling}{S\bibinitperiod}{Jörg}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=1d0f006cbcb20c95d520f23beb56b773}{Fussenegger}{F\bibinitperiod}{Martin}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{1e2ab7b351b2457d81695c1f820e614b}
+      \strng{fullhash}{271e34a9f8124904833404ba1133d32c}
+      \field{sortinit}{T}
+      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
+      \field{labelyear}{2009}
+      \field{labelmonth}{01}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature}
+      \field{month}{01}
+      \field{number}{7227}
+      \field{title}{{A tunable synthetic mammalian oscillator.}}
+      \field{volume}{457}
+      \field{year}{2009}
+      \field{pages}{309\bibrangedash 312}
+      \range{pages}{4}
+    \endentry
+    \entry{Toni:2011jy}{article}{}
+      \name{author}{5}{}{%
+        {{hash=199d095d48e61cde3962f614838314a2}{Toni}{T\bibinitperiod}{Tina}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=f73803d9b71aeca6e2350712e2050876}{Jovanovic}{J\bibinitperiod}{Goran}{G\bibinitperiod}{}{}{}{}}%
+        {{hash=6f54b6d9125e40752d4e5a377d3de3d4}{Huvet}{H\bibinitperiod}{Maxime}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=2f615fec27df64ee44e2419ec43d11cc}{Buck}{B\bibinitperiod}{Martin}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=1071749d15e5d69795cd0e937501205d}{Stumpf}{S\bibinitperiod}{Michael\bibnamedelimb P\bibnamedelima H}{M\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{c4965ec409bdcbc6dd7d89aea07ea5e6}
+      \strng{fullhash}{46560db0916474b8cfead111bdb1272a}
+      \field{sortinit}{T}
+      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
+      \field{labelyear}{2011}
+      \field{labelmonth}{01}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{BMC systems biology}
+      \field{month}{01}
+      \field{title}{{From qualitative data to quantitative models: analysis of the phage shock protein stress response in Escherichia coli.}}
+      \field{volume}{5}
+      \field{year}{2011}
+      \field{pages}{69\bibrangedash 69}
+      \range{pages}{1}
+    \endentry
+    \entry{Toni:2009tr}{article}{}
+      \name{author}{5}{}{%
+        {{hash=199d095d48e61cde3962f614838314a2}{Toni}{T\bibinitperiod}{Tina}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=629ebac104654770f464d8f62aafb5ef}{Welch}{W\bibinitperiod}{David}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=9e62b34039f11204bf0785f1643b6782}{Strelkowa}{S\bibinitperiod}{Natalja}{N\bibinitperiod}{}{}{}{}}%
+        {{hash=898508ce70ce6ff85e8bc209c287f086}{Ipsen}{I\bibinitperiod}{Andreas}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=1071749d15e5d69795cd0e937501205d}{Stumpf}{S\bibinitperiod}{Michael\bibnamedelimb P\bibnamedelima H}{M\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{c4965ec409bdcbc6dd7d89aea07ea5e6}
+      \strng{fullhash}{1a21a535ac5a1200568b5d983d6b9e96}
+      \field{sortinit}{T}
+      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
+      \field{labelyear}{2009}
+      \field{labelmonth}{02}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the Royal Society, Interface / the Royal Society}
+      \field{month}{02}
+      \field{number}{31}
+      \field{title}{{Approximate Bayesian computation scheme for parameter inference and model selection in dynamical systems.}}
+      \field{volume}{6}
+      \field{year}{2009}
+      \field{pages}{187\bibrangedash 202}
+      \range{pages}{16}
+    \endentry
+    \entry{Walczak:2005ds}{article}{}
+      \name{author}{3}{}{%
+        {{hash=12853b0818ef2be8f5934d8ef4a2d7d7}{Walczak}{W\bibinitperiod}{A\bibnamedelima M}{A\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{hash=733b24ad1ea03244a51aeca25d72f14f}{Onuchic}{O\bibinitperiod}{J\bibnamedelima N}{J\bibinitperiod\bibinitdelim N\bibinitperiod}{}{}{}{}}%
+        {{hash=56d2fff8e816cb1dc79a7305a1fdb9c8}{Wolynes}{W\bibinitperiod}{P\bibnamedelima G}{P\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{94f3532d2b0da50335f23d4326896f49}
+      \strng{fullhash}{94f3532d2b0da50335f23d4326896f49}
+      \field{sortinit}{W}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
+      \field{labelyear}{2005}
+      \field{labelmonth}{12}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the National Academy of Sciences of the United States of America}
+      \field{month}{12}
+      \field{number}{52}
+      \field{title}{{Absolute rate theories of epigenetic stability}}
+      \field{volume}{102}
+      \field{year}{2005}
+      \field{pages}{18926\bibrangedash 18931}
+      \range{pages}{6}
+    \endentry
+    \entry{Warren:2004baa}{article}{}
+      \name{author}{2}{}{%
+        {{hash=912c29a4e38f463f0f3fe21172ae5e9d}{Warren}{W\bibinitperiod}{Patrick\bibnamedelima B}{P\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
+        {{hash=66133a0d123a47bfba272a8d0319e5ec}{Wolde}{W\bibinitperiod}{Pieter\bibnamedelima Rein}{P\bibinitperiod\bibinitdelim R\bibinitperiod}{ten}{t\bibinitperiod}{}{}}%
+      }
+      \strng{namehash}{5d622a4e563c92696c0a469d037bd9cd}
+      \strng{fullhash}{5d622a4e563c92696c0a469d037bd9cd}
+      \field{sortinit}{W}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
+      \field{labelyear}{2004}
+      \field{labelmonth}{03}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical review letters}
+      \field{month}{03}
+      \field{number}{12}
+      \field{title}{{Enhancement of the Stability of Genetic Switches by Overlapping Upstream Regulatory Domains}}
+      \field{volume}{92}
+      \field{year}{2004}
+      \field{pages}{128101}
+      \range{pages}{1}
+    \endentry
+    \entry{Warren:2005kea}{article}{}
+      \name{author}{2}{}{%
+        {{hash=912c29a4e38f463f0f3fe21172ae5e9d}{Warren}{W\bibinitperiod}{Patrick\bibnamedelima B}{P\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
+        {{hash=66133a0d123a47bfba272a8d0319e5ec}{Wolde}{W\bibinitperiod}{Pieter\bibnamedelima Rein}{P\bibinitperiod\bibinitdelim R\bibinitperiod}{ten}{t\bibinitperiod}{}{}}%
+      }
+      \strng{namehash}{5d622a4e563c92696c0a469d037bd9cd}
+      \strng{fullhash}{5d622a4e563c92696c0a469d037bd9cd}
+      \field{sortinit}{W}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
+      \field{labelyear}{2005}
+      \field{labelmonth}{04}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Physical Chemistry B}
+      \field{month}{04}
+      \field{number}{14}
+      \field{title}{{Chemical models of genetic toggle switches}}
+      \field{volume}{109}
+      \field{year}{2005}
+      \field{pages}{6812\bibrangedash 6823}
+      \range{pages}{12}
+    \endentry
+    \entry{Wilk:1968ts}{article}{}
+      \name{author}{2}{}{%
+        {{hash=79bd594d338209db1f9b649088382534}{Wilk}{W\bibinitperiod}{M\bibnamedelima B}{M\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
+        {{hash=f3ad27ad80561040f22d6513cbc99b3d}{Gnanadesikan}{G\bibinitperiod}{R}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{a8794b7b26cdb9e101f8b70730010d93}
+      \strng{fullhash}{a8794b7b26cdb9e101f8b70730010d93}
+      \field{sortinit}{W}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
+      \field{labelyear}{1968}
+      \field{labelmonth}{02}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Biometrika}
+      \field{month}{02}
+      \field{number}{1}
+      \field{title}{{Probability plotting methods for the analysis of data.}}
+      \field{volume}{55}
+      \field{year}{1968}
+      \field{pages}{1\bibrangedash 17}
+      \range{pages}{17}
+    \endentry
+    \entry{Woods:2016eh}{article}{}
+      \name{author}{4}{}{%
+        {{hash=fd155bca2a1292f7e454c19863250cdb}{Woods}{W\bibinitperiod}{Mae\bibnamedelima L}{M\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{hash=bc43d3b1b8b9df1394dacea05b8ece7d}{Leon}{L\bibinitperiod}{Miriam}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=81d0ae04317e27f09bfc15c015ad99e4}{Perez-Carrasco}{P\bibinithyphendelim C\bibinitperiod}{Ruben}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=8341669a3d0db82e877ef918042cb0d0}{Barnes}{B\bibinitperiod}{Chris\bibnamedelima P}{C\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{25336e67229672fe4968b7baee3ee0b4}
+      \strng{fullhash}{fac9570802b25151d8b5701125cb22c7}
+      \field{sortinit}{W}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
+      \field{labelyear}{2016}
+      \field{labelmonth}{06}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACS Synthetic Biology}
+      \field{month}{06}
+      \field{number}{6}
+      \field{title}{{A Statistical Approach Reveals Designs for the Most Robust Stochastic Gene Oscillators.}}
+      \field{volume}{5}
+      \field{year}{2016}
+      \field{pages}{459\bibrangedash 470}
+      \range{pages}{12}
+    \endentry
+    \entry{Wu:2011bq}{article}{}
+      \name{author}{3}{}{%
+        {{hash=0d8417d930d1d3d4e04dab4b8900438d}{Wu}{W\bibinitperiod}{Chih-Hung}{C\bibinithyphendelim H\bibinitperiod}{}{}{}{}}%
+        {{hash=e14f39138008f4e9de84d8633457fe69}{Lee}{L\bibinitperiod}{Hsiao-Ching}{H\bibinithyphendelim C\bibinitperiod}{}{}{}{}}%
+        {{hash=bb996adb2c7a36362192c885c8772dab}{Chen}{C\bibinitperiod}{Bor-Sen}{B\bibinithyphendelim S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{1f0f790f36423397c2101645758f666f}
+      \strng{fullhash}{1f0f790f36423397c2101645758f666f}
+      \field{sortinit}{W}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
+      \field{labelyear}{2011}
+      \field{labelmonth}{10}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Bioinformatics (Oxford, England)}
+      \field{month}{10}
+      \field{number}{19}
+      \field{title}{{Robust synthetic gene network design via library-based search method}}
+      \field{volume}{27}
+      \field{year}{2011}
+      \field{pages}{2700\bibrangedash 2706}
+      \range{pages}{7}
+    \endentry
+    \entry{ZamoraSillero:2011jw}{article}{}
+      \name{author}{5}{}{%
+        {{hash=2bbf0cdff5a0f541f83af2a9a14ca3f8}{Zamora-Sillero}{Z\bibinithyphendelim S\bibinitperiod}{Elı́as}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=45f10eb5489766e6076bee4a16171968}{Hafner}{H\bibinitperiod}{Marc}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=0d8a6fc244737626350f3ff653985d0a}{Ibig}{I\bibinitperiod}{Ariane}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=187d085a7ba3e423ab09c4b09ae81bc3}{Stelling}{S\bibinitperiod}{Joerg}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=8fd3a8379cbda9c60f92e446330e16fb}{Wagner}{W\bibinitperiod}{Andreas}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{f5471b1ce8252a493e666172389897f9}
+      \strng{fullhash}{58acb106a01ac2c3f10f73c6158f83cf}
+      \field{sortinit}{Z}
+      \field{sortinithash}{fdda4caaa6b5fa63e0c081dcb159543a}
+      \field{labelyear}{2011}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{BMC systems biology}
+      \field{title}{{Efficient characterization of high-dimensional parameter spaces for systems biology.}}
+      \field{volume}{5}
+      \field{year}{2011}
+      \field{pages}{142}
+      \range{pages}{1}
+    \endentry
+    \entry{Zhou:2011hp}{article}{}
+      \name{author}{5}{}{%
+        {{hash=2e29157ddad4853ba8dd52d2347ce256}{Zhou}{Z\bibinitperiod}{Yanxiang}{Y\bibinitperiod}{}{}{}{}}%
+        {{hash=6919ca6326649b57f78ef650e4f54c41}{Liepe}{L\bibinitperiod}{Juliane}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=6215eb4464621bc3e2ca5e27d19c54a8}{Sheng}{S\bibinitperiod}{Xia}{X\bibinitperiod}{}{}{}{}}%
+        {{hash=1071749d15e5d69795cd0e937501205d}{Stumpf}{S\bibinitperiod}{Michael\bibnamedelimb P\bibnamedelima H}{M\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+        {{hash=8cd67c4ce2dd72313140792ab5bac85f}{Barnes}{B\bibinitperiod}{Chris}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{0d44fbcaf835354d79cf42f113d43c68}
+      \strng{fullhash}{50415f0dabd786161eeae18cfd0b14a7}
+      \field{sortinit}{Z}
+      \field{sortinithash}{fdda4caaa6b5fa63e0c081dcb159543a}
+      \field{labelyear}{2011}
+      \field{labelmonth}{03}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Bioinformatics (Oxford, England)}
+      \field{month}{03}
+      \field{number}{6}
+      \field{title}{{GPU accelerated biochemical network simulation.}}
+      \field{volume}{27}
+      \field{year}{2011}
+      \field{pages}{874\bibrangedash 876}
+      \range{pages}{3}
+    \endentry
+  \endsortlist
+  \missing{Deans:2007cya}
+  \missing{Isaacs:2003ht}
+  \missing{flowCore:man}
+  \missing{alon:2007b}
+  \missing{Loinger:2007vma}
+  \missing{kaplan:1959}
+  \missing{Sisson:wf}
+  \missing{flowViz:man}
+  \missing{XXX}
+  \missing{ggplot2:bk}
+  \missing{konopka:2007}
+  \missing{Woods:2015vu}
+  \missing{wilkinson:2006}
+  \missing{Kolmogorov:1933}
+  \missing{Chen:2011hj}
+  \missing{Atkinson:2003tu}
+  \missing{Wilkinson:2006}
+\endrefsection
+\endinput
+

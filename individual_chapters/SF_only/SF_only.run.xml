@@ -80,7 +80,7 @@
       <file>SF_only.bcf</file>
     </requires>
     <requires type="editable">
-      <file>thesis.bib</file>
+      <file>../../references/thesis_n.bib</file>
     </requires>
   </external>
 </requests>

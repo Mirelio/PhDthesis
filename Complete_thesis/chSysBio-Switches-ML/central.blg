@@ -1,0 +1,35 @@
+[0] Config.pm:324> INFO - This is Biber 2.1
+[81] Config.pm:327> INFO - Logfile is '/Users/miriam/work/PhD/Manuscripts/PhDthesis/Complete_thesis/chSysBio-Switches-ML/central.blg'
+[152] biber-darwin:276> INFO - === Mon Aug 15, 2016, 17:07:14
+[153] Biber.pm:333> INFO - Reading '/Users/miriam/work/PhD/Manuscripts/PhDthesis/Complete_thesis/chSysBio-Switches-ML/central.bcf'
+[613] Biber.pm:645> INFO - Found 102 citekeys in bib section 0
+[849] Biber.pm:2977> INFO - Processing section 0
+[1077] Biber.pm:3115> INFO - Looking for bibtex format file '../../references/thesis_n.bib' for section 0
+[1108] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
+[1161] bibtex.pm:895> INFO - Found BibTeX data source '../../references/thesis_n.bib'
+[1170] Utils.pm:146> WARN - Duplicate entry key: 'Niwa:2005fz' in file '../../references/thesis_n.bib', skipping ...
+[1180] Utils.pm:146> WARN - Duplicate entry key: 'Wilkinson:2006td' in file '../../references/thesis_n.bib', skipping ...
+[1450] Utils.pm:146> WARN - I didn't find a database entry for 'Isaacs:2003ht' (section 0)
+[1450] Utils.pm:146> WARN - I didn't find a database entry for 'Deans:2007cya' (section 0)
+[1450] Utils.pm:146> WARN - I didn't find a database entry for 'XXX' (section 0)
+[1450] Utils.pm:146> WARN - I didn't find a database entry for 'Chen:2011hj' (section 0)
+[1450] Utils.pm:146> WARN - I didn't find a database entry for 'alon:2007b' (section 0)
+[1450] Utils.pm:146> WARN - I didn't find a database entry for 'wilkinson:2006' (section 0)
+[1450] Utils.pm:146> WARN - I didn't find a database entry for 'kaplan:1959' (section 0)
+[1450] Utils.pm:146> WARN - I didn't find a database entry for 'konopka:2007' (section 0)
+[1451] Utils.pm:146> WARN - I didn't find a database entry for 'Atkinson:2003tu' (section 0)
+[1451] Utils.pm:146> WARN - I didn't find a database entry for 'Wilkinson:2006' (section 0)
+[1451] Utils.pm:146> WARN - I didn't find a database entry for 'Loinger:2007vma' (section 0)
+[1451] Utils.pm:146> WARN - I didn't find a database entry for 'Sisson:wf' (section 0)
+[1451] Utils.pm:146> WARN - I didn't find a database entry for 'Woods:2015vu' (section 0)
+[1451] Utils.pm:146> WARN - I didn't find a database entry for 'flowCore:man' (section 0)
+[1452] Utils.pm:146> WARN - I didn't find a database entry for 'Kolmogorov:1933' (section 0)
+[1452] Utils.pm:146> WARN - I didn't find a database entry for 'flowViz:man' (section 0)
+[1452] Utils.pm:146> WARN - I didn't find a database entry for 'ggplot2:bk' (section 0)
+[2814] UCollate.pm:66> INFO - Overriding locale 'en-GB' defaults 'variable = shifted' with 'variable = non-ignorable'
+[2814] UCollate.pm:66> INFO - Overriding locale 'en-GB' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[2814] Biber.pm:2854> INFO - Sorting list 'nyt' of type 'entry' with scheme 'nyt' and locale 'en-GB'
+[2814] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-GB'
+[3264] bbl.pm:505> INFO - Writing '/Users/miriam/work/PhD/Manuscripts/PhDthesis/Complete_thesis/chSysBio-Switches-ML/central.bbl' with encoding 'UTF-8'
+[3277] bbl.pm:596> INFO - Output to /Users/miriam/work/PhD/Manuscripts/PhDthesis/Complete_thesis/chSysBio-Switches-ML/central.bbl
+[3277] Biber.pm:106> INFO - WARNINGS: 19

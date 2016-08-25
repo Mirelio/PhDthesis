@@ -1,9 +1,19 @@
-[1] Config.pm:324> INFO - This is Biber 2.1
+[0] Config.pm:324> INFO - This is Biber 2.1
 [1] Config.pm:327> INFO - Logfile is '/Users/miriam/work/PhD/Manuscripts/PhDthesis/individual_chapters/Design_new_switches_only/DesSw_only.blg'
-[80] biber-darwin:276> INFO - === Thu Aug 11, 2016, 20:03:57
-[80] Biber.pm:333> INFO - Reading '/Users/miriam/work/PhD/Manuscripts/PhDthesis/individual_chapters/Design_new_switches_only/DesSw_only.bcf'
-[209] Biber.pm:645> INFO - Found 0 citekeys in bib section 0
-[210] Utils.pm:146> WARN - The file '/Users/miriam/work/PhD/Manuscripts/PhDthesis/individual_chapters/Design_new_switches_only/DesSw_only.bcf' does not contain any citations!
-[268] bbl.pm:505> INFO - Writing '/Users/miriam/work/PhD/Manuscripts/PhDthesis/individual_chapters/Design_new_switches_only/DesSw_only.bbl' with encoding 'UTF-8'
-[268] bbl.pm:596> INFO - Output to /Users/miriam/work/PhD/Manuscripts/PhDthesis/individual_chapters/Design_new_switches_only/DesSw_only.bbl
-[269] Biber.pm:106> INFO - WARNINGS: 1
+[81] biber-darwin:276> INFO - === Mon Aug 22, 2016, 20:01:27
+[81] Biber.pm:333> INFO - Reading '/Users/miriam/work/PhD/Manuscripts/PhDthesis/individual_chapters/Design_new_switches_only/DesSw_only.bcf'
+[225] Biber.pm:645> INFO - Found 4 citekeys in bib section 0
+[253] Biber.pm:2977> INFO - Processing section 0
+[275] Biber.pm:3115> INFO - Looking for bibtex format file '../../references/thesis_n.bib' for section 0
+[291] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
+[312] bibtex.pm:895> INFO - Found BibTeX data source '../../references/thesis_n.bib'
+[325] Utils.pm:146> WARN - Duplicate entry key: 'Niwa:2005fz' in file '../../references/thesis_n.bib', skipping ...
+[338] Utils.pm:146> WARN - Duplicate entry key: 'Wilkinson:2006td' in file '../../references/thesis_n.bib', skipping ...
+[339] Utils.pm:146> WARN - Duplicate entry key: 'Finney:2003vk' in file '../../references/thesis_n.bib', skipping ...
+[444] UCollate.pm:66> INFO - Overriding locale 'en-GB' defaults 'variable = shifted' with 'variable = non-ignorable'
+[445] UCollate.pm:66> INFO - Overriding locale 'en-GB' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[445] Biber.pm:2854> INFO - Sorting list 'nyt' of type 'entry' with scheme 'nyt' and locale 'en-GB'
+[445] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-GB'
+[458] bbl.pm:505> INFO - Writing '/Users/miriam/work/PhD/Manuscripts/PhDthesis/individual_chapters/Design_new_switches_only/DesSw_only.bbl' with encoding 'UTF-8'
+[459] bbl.pm:596> INFO - Output to /Users/miriam/work/PhD/Manuscripts/PhDthesis/individual_chapters/Design_new_switches_only/DesSw_only.bbl
+[459] Biber.pm:106> INFO - WARNINGS: 3
