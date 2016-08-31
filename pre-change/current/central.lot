@@ -1,0 +1,39 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {british}
+\addvspace {10pt}
+\addvspace {10pt}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Examples of common genetic coupled chemical reactions. $p$ stands for promoter, and $A$ represents a protein. $A_2$ is the dimer of protein $A$. \relax }}{26}{table.caption.7}
+\contentsline {table}{\numberline {2.2}{\ignorespaces Predator-prey chemical reactions\relax }}{30}{table.caption.11}
+\contentsline {table}{\numberline {2.3}{\ignorespaces Summary of stability for the CS and DP switches found via different modelling approaches\relax }}{43}{table.caption.13}
+\addvspace {10pt}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Simple mass action switch\relax }}{50}{table.caption.16}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Toggle switch inducer equations\relax }}{54}{table.caption.20}
+\contentsline {table}{\numberline {3.3}{\ignorespaces The prior distributions used for the standard toggle switch parameter inference. The values indicate the lower and upper limits of a uniform distribution.\relax }}{55}{table.caption.21}
+\contentsline {table}{\numberline {3.4}{\ignorespaces Autoregulated switches additional equations\relax }}{65}{table.caption.28}
+\contentsline {table}{\numberline {3.5}{\ignorespaces The prior distributions used for model selection. The values indicate the lower and upper limits of a uniform distribution.\relax }}{65}{table.caption.29}
+\addvspace {10pt}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Gardner switch priors in the deterministic and stochastic cases\relax }}{86}{table.caption.34}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Priors of the classical(\acrshort {cs-lu}), single positive (\acrshort {sp-lu}) and double positive (\acrshort {dp-lu}) models.\relax }}{92}{table.caption.39}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Priors used in the three-node switch\relax }}{99}{table.caption.44}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Design principles of bistable and tristable switches\relax }}{106}{table.caption.49}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Priors used for studying the effect of priors to robustness\relax }}{108}{table.caption.51}
+\addvspace {10pt}
+\contentsline {table}{\numberline {5.1}{\ignorespaces The priors used for the 1D and 2D ABC-FLow model fitting to simulated data\relax }}{134}{table.caption.67}
+\contentsline {table}{\numberline {5.2}{\ignorespaces \acrshort {pcr} recipe\relax }}{138}{table.caption.69}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Thermocycling conditions\relax }}{138}{table.caption.70}
+\contentsline {table}{\numberline {5.4}{\ignorespaces Digestion recipe\relax }}{139}{table.caption.71}
+\contentsline {table}{\numberline {5.5}{\ignorespaces Ligation controls\relax }}{140}{table.caption.72}
+\contentsline {table}{\numberline {5.6}{\ignorespaces Colony \acrshort {pcr} master mix recipe\relax }}{141}{table.caption.73}
+\contentsline {table}{\numberline {5.7}{\ignorespaces Thermocycling conditions for colony \acrshort {pcr}\relax }}{141}{table.caption.74}
+\contentsline {table}{\numberline {5.8}{\ignorespaces Concentrations used for flow cytometry assay\relax }}{143}{table.caption.75}
+\contentsline {table}{\numberline {5.9}{\ignorespaces Initial values used for Hill function parameters\relax }}{148}{table.caption.80}
+\contentsline {table}{\numberline {5.10}{\ignorespaces The priors used for the 1D and 2D ABC-FLow model fitting to flow cytometry data\relax }}{157}{table.caption.85}
+\addvspace {10pt}
+\addvspace {10pt}
+\addvspace {10pt}
+\contentsline {table}{\numberline {A.1}{\ignorespaces CS-MA stoichiometry matrix\relax }}{197}{table.caption.100}
+\contentsline {table}{\numberline {A.2}{\ignorespaces DP-MA stoichiometry matrix\relax }}{199}{table.caption.101}
+\addvspace {10pt}
+\contentsline {table}{\numberline {B.1}{\ignorespaces List of primers used for PCR amplification\relax }}{201}{table.caption.102}
+\addvspace {10pt}

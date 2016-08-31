@@ -1,32 +1,23 @@
-[1] Config.pm:324> INFO - This is Biber 2.1
-[1] Config.pm:327> INFO - Logfile is '/Users/miriam/work/PhD/Manuscripts/PhDthesis/Complete_thesis/current/central.blg'
-[323] biber-darwin:276> INFO - === Thu Aug 25, 2016, 16:44:41
-[323] Biber.pm:333> INFO - Reading '/Users/miriam/work/PhD/Manuscripts/PhDthesis/Complete_thesis/current/central.bcf'
-[459] Biber.pm:645> INFO - Found 117 citekeys in bib section 0
-[1179] Biber.pm:2977> INFO - Processing section 0
-[2884] Biber.pm:3115> INFO - Looking for bibtex format file '../../references/thesis_n.bib' for section 0
-[3341] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
-[3366] bibtex.pm:895> INFO - Found BibTeX data source '../../references/thesis_n.bib'
-[3467] Utils.pm:146> WARN - Duplicate entry key: 'Niwa:2005fz' in file '../../references/thesis_n.bib', skipping ...
-[3480] Utils.pm:146> WARN - Duplicate entry key: 'Wilkinson:2006td' in file '../../references/thesis_n.bib', skipping ...
-[3481] Utils.pm:146> WARN - Duplicate entry key: 'Finney:2003vk' in file '../../references/thesis_n.bib', skipping ...
-[4390] Utils.pm:146> WARN - I didn't find a database entry for 'Isaacs:2003ht' (section 0)
-[4390] Utils.pm:146> WARN - I didn't find a database entry for 'Deans:2007cya' (section 0)
-[4391] Utils.pm:146> WARN - I didn't find a database entry for 'XXX' (section 0)
-[4391] Utils.pm:146> WARN - I didn't find a database entry for 'Chen:2011hj' (section 0)
-[4391] Utils.pm:146> WARN - I didn't find a database entry for 'alon:2007b' (section 0)
-[4391] Utils.pm:146> WARN - I didn't find a database entry for 'wilkinson:2006' (section 0)
-[4391] Utils.pm:146> WARN - I didn't find a database entry for 'kaplan:1959' (section 0)
-[4392] Utils.pm:146> WARN - I didn't find a database entry for 'konopka:2007' (section 0)
-[4392] Utils.pm:146> WARN - I didn't find a database entry for 'Atkinson:2003tu' (section 0)
-[4392] Utils.pm:146> WARN - I didn't find a database entry for 'Wilkinson:2006' (section 0)
-[4392] Utils.pm:146> WARN - I didn't find a database entry for 'Sisson:wf' (section 0)
-[4392] Utils.pm:146> WARN - I didn't find a database entry for 'Loinger:2007vo' (section 0)
-[4392] Utils.pm:146> WARN - I didn't find a database entry for 'Woods:2015vu' (section 0)
-[6471] UCollate.pm:66> INFO - Overriding locale 'en-GB' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[6471] UCollate.pm:66> INFO - Overriding locale 'en-GB' defaults 'variable = shifted' with 'variable = non-ignorable'
-[6471] Biber.pm:2854> INFO - Sorting list 'nyt' of type 'entry' with scheme 'nyt' and locale 'en-GB'
-[6471] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-GB'
-[6999] bbl.pm:505> INFO - Writing '/Users/miriam/work/PhD/Manuscripts/PhDthesis/Complete_thesis/current/central.bbl' with encoding 'UTF-8'
-[7057] bbl.pm:596> INFO - Output to /Users/miriam/work/PhD/Manuscripts/PhDthesis/Complete_thesis/current/central.bbl
-[7057] Biber.pm:106> INFO - WARNINGS: 16
+[0] Config.pm:324> INFO - This is Biber 2.1
+[0] Config.pm:327> INFO - Logfile is '/Users/miriam/work/PhD/Manuscripts/PhDthesis/Complete_thesis/current/central.blg'
+[102] biber-darwin:276> INFO - === Wed Aug 31, 2016, 21:43:19
+[102] Biber.pm:333> INFO - Reading '/Users/miriam/work/PhD/Manuscripts/PhDthesis/Complete_thesis/current/central.bcf'
+[236] Biber.pm:645> INFO - Found 126 citekeys in bib section 0
+[1168] Biber.pm:2977> INFO - Processing section 0
+[2007] Biber.pm:3115> INFO - Looking for bibtex format file '../../references/thesis_n.bib' for section 0
+[2026] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
+[2072] bibtex.pm:895> INFO - Found BibTeX data source '../../references/thesis_n.bib'
+[2082] Utils.pm:146> WARN - Duplicate entry key: 'Niwa:2005fz' in file '../../references/thesis_n.bib', skipping ...
+[2093] Utils.pm:146> WARN - Duplicate entry key: 'Wilkinson:2006td' in file '../../references/thesis_n.bib', skipping ...
+[2094] Utils.pm:146> WARN - Duplicate entry key: 'Finney:2003vk' in file '../../references/thesis_n.bib', skipping ...
+[2802] Utils.pm:146> WARN - I didn't find a database entry for 'XXX' (section 0)
+[2803] Utils.pm:146> WARN - I didn't find a database entry for 'Sisson:wf' (section 0)
+[2803] Utils.pm:146> WARN - I didn't find a database entry for 'Loinger:2007vo' (section 0)
+[2803] Utils.pm:146> WARN - I didn't find a database entry for 'Woods:2015vu' (section 0)
+[4954] UCollate.pm:66> INFO - Overriding locale 'en-GB' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[4954] UCollate.pm:66> INFO - Overriding locale 'en-GB' defaults 'variable = shifted' with 'variable = non-ignorable'
+[4954] Biber.pm:2854> INFO - Sorting list 'nyt' of type 'entry' with scheme 'nyt' and locale 'en-GB'
+[4954] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-GB'
+[5693] bbl.pm:505> INFO - Writing '/Users/miriam/work/PhD/Manuscripts/PhDthesis/Complete_thesis/current/central.bbl' with encoding 'UTF-8'
+[5707] bbl.pm:596> INFO - Output to /Users/miriam/work/PhD/Manuscripts/PhDthesis/Complete_thesis/current/central.bbl
+[5708] Biber.pm:106> INFO - WARNINGS: 7

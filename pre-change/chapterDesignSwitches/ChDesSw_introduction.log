@@ -1,0 +1,123 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdftex 2015.10.2)  4 AUG 2016 15:15
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapters/chapterDesignSwitches/ChDesSw_introduction.tex
+(/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapters/chapterDesignSwitches/ChDesSw_introduction.tex
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapters/chapterDesignSwitches/ChDesSw_introduction.tex:1: Undefined control sequence.
+l.1 \section
+            {Circuit overview}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapters/chapterDesignSwitches/ChDesSw_introduction.tex:4: Undefined control sequence.
+l.4 \begin
+          {figure*}[t]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapters/chapterDesignSwitches/ChDesSw_introduction.tex:5: Undefined control sequence.
+l.5 	\begin
+           {center}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapters/chapterDesignSwitches/ChDesSw_introduction.tex:6: Undefined control sequence.
+l.6 		\includegraphics
+                      [width=\textwidth]{../../chapters/chapterDesignSwitche...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapters/chapterDesignSwitches/ChDesSw_introduction.tex:6: Undefined control sequence.
+l.6 		\includegraphics[width=\textwidth
+                                       ]{../../chapters/chapterDesignSwitche...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapters/chapterDesignSwitches/ChDesSw_introduction.tex:6: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.6 ...ters/chapterDesignSwitches/images/switches_
+                                                  cloning.png}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapters/chapterDesignSwitches/ChDesSw_introduction.tex:6: Extra }, or forgotten $.
+l.6 ...DesignSwitches/images/switches_cloning.png}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapters/chapterDesignSwitches/ChDesSw_introduction.tex:7: Undefined control sequence.
+l.7 		\caption
+              [LoF caption]{\label{fig:plan}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapters/chapterDesignSwitches/ChDesSw_introduction.tex:7: Undefined control sequence.
+l.7 		\caption[LoF caption]{\label
+                                  {fig:plan}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapters/chapterDesignSwitches/ChDesSw_introduction.tex:8: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \end 
+l.8 	\end
+         {center}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (47.40611pt too wide) in paragraph at lines 4--8
+[]\tenrm figure*[t] cen-ter [width=]../../chapters/chapterDesignSwitches/images/switches$[]\teni loning:png\tenrm [\teni LoFcaption\tenrm ][]$ |
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm ^^L (ligature fi)
+.\tenrm g
+.\tenrm u
+.\tenrm r
+.etc.
+
+[1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 6 ({)
+### bottom level</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on ChDesSw_introduction.pdf (1 page, 32826 bytes).
+PDF statistics:
+ 20 PDF objects out of 1000 (max. 8388607)
+ 13 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -139,7 +139,7 @@ The Stability Finder algorithm is summarised below. Stability Finder is availabl
 \begin{figure*}[h]
 \begin{center}
 \includegraphics[scale=0.9]{../../chapters/chapterStabilityFinder/images/SF_algo_overv.png}
-\caption[LoF caption]{\label{fig:fig1}: Using sequential Monte Carlo to examine system stability. The algorithm takes as input a model (A) and evolves it to the stability of choice (C) via intermediate populations. In this example model shown in A, There are two species and two parameters. For the model to be bistable, the phase plot of the two species of interest must have two distinct densities, as shown in (C). The parameter space of the model is searched through our algorithm until the resulting simulations give rise to bistability. The parameter values for the model that demonstrated the desired behaviour are given as an output (D). The output consists of the accepted values for each parameter, as well as each density plotted against the other. This allows us to uncover correlations between parameter values. We made this algorithm into a python package, called Stability Finder. The overview of the algorithm is shown in (E).}
+\caption[StabilityFinder algorithm overview]{\label{fig:fig1}: Using sequential Monte Carlo to examine system stability. The algorithm takes as input a model (A) and evolves it to the stability of choice (C) via intermediate populations. In this example model shown in A, There are two species and two parameters. For the model to be bistable, the phase plot of the two species of interest must have two distinct densities, as shown in (C). The parameter space of the model is searched through our algorithm until the resulting simulations give rise to bistability. The parameter values for the model that demonstrated the desired behaviour are given as an output (D). The output consists of the accepted values for each parameter, as well as each density plotted against the other. This allows us to uncover correlations between parameter values. We made this algorithm into a python package, called Stability Finder. The overview of the algorithm is shown in (E).}
 \end{center}
 \end{figure*}
 \clearpage
@@ -323,7 +323,7 @@ To validate these methods I compare them to  ABC-SysBio model selection~\autocit
     		\EndIf
 			\If{Ellipsoid calculation}
 				\State Calculate data covariance matrix
-    			\State $V_{post}^{m} = \frac{2\pi^{\frac{k}{2}}}{p\Gamma(\frac{k}{2})} \Big[ \chi _{k}^{2}(\alpha) \Big]^{\frac{k}{2}} |\Sigma|^\frac{1}{2}$
+    			\State $V_{post}^{m} = \frac{2\pi^{\frac{k}{2}}}{k\Gamma(\frac{k}{2})} \Big[ \chi _{k}^{2}(\alpha) \Big]^{\frac{k}{2}} |\Sigma|^\frac{1}{2}$
     		\EndIf
 			\Statex
 			\State $R^{m} = \frac{V_{post}^{m}}{V_{prior}^{m}}$
@@ -338,7 +338,7 @@ We use the following two examples used in ABC-SysBio~\autocite{Toni:2009tr}:
 \subsection{Case study 1: Infectious diseases}
 \label{sec:cs1}
 
-For the first case study utilizes the models used in~\autocite{Toni:2009tr}. As described in~\textcite{Toni:2009tr}, the models describe the spread of an infectious disease through a population over time. The population is made up of susceptible, infected or recovered individuals, denoted as $S$, $I$ and $R$ respectively. Three models are compared for the robustness of their posterior distributions. The first model (Model 1), is the simplest model of the three. Each individual $S$ or $R$ can be infected once and then it can immediately infect other individuals~\autocite{Toni:2009tr}.
+For the first case study utilizes the models used in~\textcite{Toni:2009tr}. As described in~\textcite{Toni:2009tr}, the models describe the spread of an infectious disease through a population over time. The population is made up of susceptible, infected or recovered individuals, denoted as $S$, $I$ and $R$ respectively. Three models are compared for the robustness of their posterior distributions. The first model (Model 1), is the simplest model of the three. Each individual $S$ or $R$ can be infected once and then it can immediately infect other individuals~\autocite{Toni:2009tr}.
 
 \begin{align}
 \dot S &= \alpha - \gamma SI - dS \\
@@ -389,7 +389,7 @@ As in Section~\ref{sec:cs1}, two analyses were carried out on these two models. 
 \begin{figure*}[p]
 \begin{center}
 \includegraphics[width=\textwidth]{../../chapters/chapterStabilityFinder/images/ex1_sum.png}
-\caption[LoF caption]{\label{fig:rob_sysbio1}: Robustness analysis of the three models for the spread of infectious diseases. (A-C) The posterior distributions of the three models compared. (D) I use three methods to calculate robustness, ABC-SysBio model selection, the volume of the hyper-cuboid approximation of the posterior distribution and the volume of the hyper-ellipsoid approximation of the posterior distribution. Each analysis was repeated three times. The height of the bars indicate the mean robustness from the three repeats and the error bars represent the standard deviation. There is good agreement between all three methods. All three methods show that Model 1, the simplest model, is the most robust model. }
+\caption[Robustness analysis of case study 1]{\label{fig:rob_sysbio1}: Robustness analysis of the three models for the spread of infectious diseases. (A-C) The posterior distributions of the three models compared. (D) I use three methods to calculate robustness, ABC-SysBio model selection, the volume of the hyper-cuboid approximation of the posterior distribution and the volume of the hyper-ellipsoid approximation of the posterior distribution. Each analysis was repeated three times. The height of the bars indicate the mean robustness from the three repeats and the error bars represent the standard deviation. There is good agreement between all three methods. All three methods show that Model 1, the simplest model, is the most robust model. }
 
 \end{center}
 \end{figure*}
@@ -397,7 +397,7 @@ As in Section~\ref{sec:cs1}, two analyses were carried out on these two models. 
 \begin{figure*}[p]
 \begin{center}
 \includegraphics[width=\textwidth]{../../chapters/chapterStabilityFinder/images/ex4_summ.png}
-\caption[LoF caption]{\label{fig:rob_sysbio4}: Robustness comparison of two population growth models. (A) The posterior distributions of the two models. (B-D) The models were simulated using \acrshort{ode},~\acrshort{mjp} and~\acrshort{sde}. Both the cuboid and the ellipsoid approximations agree with ABC-SysBio model selection results. Each analysis was repeated three times. The height of the bars indicate the mean robustness from the three repeats and the error bars represent the standard deviation. }
+\caption[Robustness analysis of case study 2]{\label{fig:rob_sysbio4}: Robustness comparison of two population growth models. (A) The posterior distributions of the two models. (B-D) The models were simulated using \acrshort{ode},~\acrshort{mjp} and~\acrshort{sde}. Both the cuboid and the ellipsoid approximations agree with ABC-SysBio model selection results. Each analysis was repeated three times. The height of the bars indicate the mean robustness from the three repeats and the error bars represent the standard deviation. }
 \end{center}
 \end{figure*}
 
@@ -442,14 +442,14 @@ I next applied Stability Finder to the case of the Gardner switch under stochast
 \begin{figure*}[htbp]
 \begin{center}
 	\includegraphics[scale=0.8]{../../chapters/chapterStabilityFinder/images/gardner_model.png}
-	\caption[LoF caption]{\label{fig:gard_mod} The Gardner switch model used to test Stability Finder. The Gardner model (A) consists of two mutually repressing transcription factors. It can be reduced to a two-equation system (B) , where $u$ and $v$ are the two transcription factors, $a_1$,$a_2$ are their effective rates of synthesis, $u$,$v$ are their concentrations and $\beta$, $\gamma$ represent the cooperativity of each promoter. (C) Two samples of deterministic simulated timecourses of the Gardner switch and (D) The resulting phase plot. (E) Two samples of timecourses of the stochastic simulations and (F) the resulting stationary distributions.}
+	\caption[StabilityFinder used on the Gardner toggle switch]{\label{fig:gard_mod} The Gardner switch model used to test Stability Finder. The Gardner model (A) consists of two mutually repressing transcription factors. It can be reduced to a two-equation system (B) , where $u$ and $v$ are the two transcription factors, $a_1$,$a_2$ are their effective rates of synthesis, $u$,$v$ are their concentrations and $\beta$, $\gamma$ represent the cooperativity of each promoter. (C) Two samples of deterministic simulated timecourses of the Gardner switch and (D) The resulting phase plot. (E) Two samples of timecourses of the stochastic simulations and (F) the resulting stationary distributions.}
 \end{center}
 \end{figure*}
 
 \begin{figure*}[htbp]
 \begin{center}
 	\includegraphics[scale=0.8]{../../chapters/chapterStabilityFinder/images/gardner_posteriors.png}
-	\caption[LoF caption]{\label{fig:gard_post} Elucidating the stability of the Gardner switch. The Gardner model has four parameters, for which I want to find the values for which this system is bistable. I use Stability Finder to find the posterior distribution of the bistable Gardner switch, deterministically (A) and stochastically (B). The posterior distributions are shown as the density plots of each parameter as well as each one plotted against the other.  }
+	\caption[The posterior distributions of the bistable Gardner toggle switch]{\label{fig:gard_post} Elucidating the stability of the Gardner switch. The Gardner model has four parameters, for which I want to find the values for which this system is bistable. I use Stability Finder to find the posterior distribution of the bistable Gardner switch, deterministically (A) and stochastically (B). The posterior distributions are shown as the density plots of each parameter as well as each one plotted against the other.  }
 \end{center}
 \end{figure*}
 \clearpage
@@ -493,7 +493,7 @@ For the parameter values used in the Lu study, the \acrshort{cs-lu} switch exhib
 \begin{figure*}[htbp]
 \begin{center}
 	\includegraphics[scale=0.5]{../../chapters/chapterStabilityFinder/images/lu_bifurc.png}
-	\caption[LoF caption]{\label{fig:lu_bifurc}  Stream plot of the vector plot of the (A) \acrshort{cs-lu} and \acrshort{dp-lu} switches. The colours indicate the magnitude of the vectors, with yellow indicating high and red low values. The blue points represent stable steady states and the grey points represent unstable steady states.  }
+	\caption[Phase plane analysis of the Lu toggle switch models]{\label{fig:lu_bifurc}  Stream plot of the vector plot of the (A) \acrshort{cs-lu} and \acrshort{dp-lu} switches. The colours indicate the magnitude of the vectors, with yellow indicating high and red low values. The blue points represent stable steady states and the grey points represent unstable steady states.  }
 \end{center}
 \end{figure*}
 \clearpage
@@ -508,7 +508,7 @@ It is known that that the addition of positive autoregulation to the classical t
 \begin{figure*}[tb]
 \begin{center}
 	\includegraphics[width=\textwidth]{../../chapters/chapterStabilityFinder/images/LU_diagrams.png}
-	\caption[LoF caption]{\label{fig:lu_mods} The three LU toggle switch models. (A) \acrshort{cs-lu}, (B) \acrshort{sp-lu} and (C) \acrshort{dp-lu}.   }
+	\caption[The three Lu toggle switch models.]{\label{fig:lu_mods} The three LU toggle switch models. (A) \acrshort{cs-lu}, (B) \acrshort{sp-lu} and (C) \acrshort{dp-lu}.   }
 \end{center}
 \end{figure*}
 
@@ -553,15 +553,15 @@ Parameter                                            & Symbol & \acrshort{cs-lu}
 \begin{figure*}[p]
 \begin{center}
 \includegraphics[width=\textwidth]{../../chapters/chapterStabilityFinder/images/lu_paper_phase.png}
-\caption[LoF caption]{ \label{fig:lu_paper_phase}: The phase plots of 100 particles from the last population of the three Lu switches. (A) The bistable \acrshort{cs-lu} (B) The bistable \acrshort{sp-lu} and (C) The tristable \acrshort{dp-lu}. We find two types of tristable behaviour, one where the third steady state is zero-zero and one where the third state is high (non-dead). }
+\caption[Resulting phase plots from StabilityFinder used on the Lu switches ]{ \label{fig:lu_paper_phase}: The phase plots of 100 particles from the last population of the three Lu switches. (A) The bistable \acrshort{cs-lu} (B) The bistable \acrshort{sp-lu} and (C) The tristable \acrshort{dp-lu}. We find two types of tristable behaviour, one where the third steady state is zero-zero and one where the third state is high (non-dead). }
 \end{center}
 \end{figure*}
 \clearpage
 
 \begin{figure*}[p]
 \centerfloat
-\includegraphics[scale=0.8]{../../chapters/chapterStabilityFinder/images/lu_paper_post.png}
-\caption[LoF caption]{ \label{fig:fig3}: The three variants of the Lu models. (A) The \acrshort{cs-lu} switch is bistable. The most restricted parameters for this behaviour are $kx$ and $ky$ which both have to be high relative to the prior while the net protein production for $X$ and $Y$ must be balanced. (B) The extended Lu model with a single positive autoregulation on $X$. This model is bistable when $gx$ is small, but the net production of protein is equal for the two nodes. (C) The Lu model with double positive autoregulaiton is tristable, and its posterior distribution shown here. }
+\includegraphics[scale=0.9]{../../chapters/chapterStabilityFinder/images/lu_paper_post.png}
+\caption[Posterior distributions of the Lu switches]{ \label{fig:fig3}: The three variants of the Lu models. (A) The \acrshort{cs-lu} switch is bistable. The most restricted parameters for this behaviour are $kx$ and $ky$ which both have to be high relative to the prior while the net protein production for $X$ and $Y$ must be balanced. (B) The extended Lu model with a single positive autoregulation on $X$. This model is bistable when $gx$ is small, but the net production of protein is equal for the two nodes. (C) The Lu model with double positive autoregulaiton is tristable, and its posterior distribution shown here. }
 
 \end{figure*}
 \clearpage
@@ -587,7 +587,7 @@ Since the Lu models can be solved analytically, we can obtain the bifurcation di
 \begin{figure*}
 	\centerfloat
 		\includegraphics[scale=0.45]{../../chapters/chapterStabilityFinder/images/Lu_234.png}
-		\caption[LoF caption]{ \label{fig:lu_234}: Design principles of multistable switches. (A) Using the Lu model with added positive autoregulation we uncover the design principles dictating if a switch will be bistable, tristable, or will have 4 steady states. (B-D) By considering the bivariate distributions of the parameters we can uncover the differences in the parameters of a bistable switch compared to a tristable switch, compared to a quadristable switch . The posterior distribution of the bistable switch is shown in purple, of the tristable switch in pink and of a quadristable in green. The bivariate distributions for which a difference is observed between the stabilities are in black boxes. An example of a phase plot from each behaviour is shown next to the corresponding posterior distribution.}
+		\caption[ Design principles of multistable switches]{ \label{fig:lu_234}: Design principles of multistable switches. (A) Using the Lu model with added positive autoregulation we uncover the design principles dictating if a switch will be bistable, tristable, or will have 4 steady states. (B-D) By considering the bivariate distributions of the parameters we can uncover the differences in the parameters of a bistable switch compared to a tristable switch, compared to a quadristable switch . The posterior distribution of the bistable switch is shown in purple, of the tristable switch in pink and of a quadristable in green. The bivariate distributions for which a difference is observed between the stabilities are in black boxes. An example of a phase plot from each behaviour is shown next to the corresponding posterior distribution.}
 \end{figure*}
 
 
@@ -613,7 +613,7 @@ This same principle can be seen in the bistable and the tristable switches. In t
 \begin{figure*}
 	\begin{center}
 		\includegraphics[width=\textwidth]{../../chapters/chapterStabilityFinder/images/LU-234-phase-all.png}
-		\caption[LoF caption]{ \label{fig:lu_234_phase}: The phase plots from 100 particles from each posterior. (A) The \\acrshort{cs-lu} (B) \acrshort{sp-lu} and (C) \acrshort{dp-lu}. Each particle is represented by a different shade of blue. We find a strong conservation on the location of the steady states between particles.  }
+		\caption[Phase plots of multistable switches]{ \label{fig:lu_234_phase}: The phase plots from 100 particles from each posterior. (A) The \\acrshort{cs-lu} (B) \acrshort{sp-lu} and (C) \acrshort{dp-lu}. Each particle is represented by a different shade of blue. We find a strong conservation on the location of the steady states between particles.  }
 	\end{center}
 \end{figure*}
 
@@ -649,7 +649,7 @@ Transcription rate fold change & lxx       & 8-12    \\ \bottomrule
 \begin{figure*}[h]
 \begin{center}
 \includegraphics[scale=0.6]{../../chapters/chapterStabilityFinder/images/lu_6ss.png}
-\caption[LoF caption]{ \label{fig:fig8}: The three-node mutual repression model, with added positive auto-regulation on each node. (A) The model. The model is studied in two dimensions using Stability Finder, for nodes $X$ and $Y$. (B) The phase plot of 100 particles from the posterior found by Stability Finder. There are 6 steady states. (C) The posterior distribution of the 6-steady state three-node system. Parameters $kx$ and $nxy$ are the most constrained.}
+\caption[The three-node mutual repression model, with added positive auto-regulation on each node.]{ \label{fig:fig8}: The three-node mutual repression model, with added positive auto-regulation on each node. (A) The model. The model is studied in two dimensions using Stability Finder, for nodes $X$ and $Y$. (B) The phase plot of 100 particles from the posterior found by Stability Finder. There are 6 steady states. (C) The posterior distribution of the 6-steady state three-node system. Parameters $kx$ and $nxy$ are the most constrained.}
 \end{center}
 \end{figure*}
 \clearpage
@@ -703,7 +703,7 @@ The \acrshort{ode}s describing the above switches are shown in Appendix (XXX). T
 \begin{figure*}[htbp]
 \begin{center}
 \includegraphics[scale=0.7]{../../chapters/chapterStabilityFinder/images/MA-cs-dp-phase.png}
-\caption[LoF caption]{ \label{fig:ma-cs-dp-phase}: The two mass action switches I developed. (A) The simple switch \acrshort{cs-ma} (B) The switch with double positive autoregulation \acrshort{dp-ma}. (C, D) The phase plots of 100 particles simulated from the posterior distributions of the bistable mass action switches.}
+\caption[The mass action togge switches and phase plots]{ \label{fig:ma-cs-dp-phase}: The two mass action switches I developed. (A) The simple switch \acrshort{cs-ma} (B) The switch with double positive autoregulation \acrshort{dp-ma}. (C, D) The phase plots of 100 particles simulated from the posterior distributions of the bistable mass action switches.}
 \end{center}
 \end{figure*}
 
@@ -711,7 +711,7 @@ The \acrshort{ode}s describing the above switches are shown in Appendix (XXX). T
 \begin{figure*}[htbp]
 \centerfloat
 \includegraphics[scale=0.5]{../../chapters/chapterStabilityFinder/images/MA_sym_post.png}
-\caption[LoF caption]{ \label{fig:ma-sym-det-post}: The posterior distributions of the symmetric deterministic (A) \acrshort{cs-ma} and (B) \acrshort{dp-ma} switches. (C) Robustness comparison of the two models. }
+\caption[Robustness comparison of the \acrshort{cs-ma} and \acrshort{dp-ma} switches]{ \label{fig:ma-sym-det-post}: The posterior distributions of the symmetric deterministic (A) \acrshort{cs-ma} and (B) \acrshort{dp-ma} switches. (C) Robustness comparison of the two models. }
 \end{figure*}
 \clearpage
 
@@ -721,12 +721,12 @@ Next I compare the two models for robustness using the ellipsoid method describe
 
 The models used in the above analysis assume the parameters for equivalent reactions are equal. This is a constraint that simplifies the model. When building this model into a synthetic system in the lab, this assumption is not necessarily justified. When choosing promoters to build this synthetic system two promoters can be chosen to have similar strength but their strength will not necessarily be identical.  In order to study how this might affect the results, I further eliminate modelling assumptions made in the toggle switch by making the parameters representing gene expression ($ge$) and repression ($rep$), as well as the protein degradation parameters asymmetric (independent parameters for each protein, versus fixed to be equal). We find that the features of the posterior distributions of the symmetric and the asymmetric models remain the same. The posterior distribution of the asymmetric \acrshort{cs-ma} model was more constrained than the posterior distribution of the asymmetric \acrshort{dp-ma} model. 
 
-We further study the asymmetric mass action models by examining the \acrshort{qssa} aproximation. As stated above, the \acrshort{qssa} is a common analytical tool for model simplification. By examining the posterior distributions of the asymmetric \acrshort{cs-ma} and \acrshort{dp-ma} models we find that the \acrshort{qssa} does not necessarily hold for these models (Figure~\ref{fig:ma_qssa}). That is, the systems function as switches even when the \acrshort{qssa} does not hold. These assumptions, necessary for the reduction of the model, are therefore not always justified in this case. 
+I further study the asymmetric mass action models by examining the \acrshort{qssa} aproximation. As stated above, the \acrshort{qssa} is a common analytical tool for model simplification. By examining the posterior distributions of the asymmetric \acrshort{cs-ma} and \acrshort{dp-ma} models we find that the \acrshort{qssa} does not necessarily hold for these models (Figure~\ref{fig:ma_qssa}). That is, the systems function as switches even when the \acrshort{qssa} does not hold. These assumptions, necessary for the reduction of the model, are therefore not always justified in this case. 
 
 \begin{figure*}[htbp]
 \begin{center}
-\includegraphics[scale=0.4]{../../chapters/chapterStabilityFinder/images/MA_QSSA.png}
-\caption[LoF caption]{ \label{fig:ma_qssa}: The \acrshort{qssa} that the dimerization reaction ($dim$) is much faster than its reverse ($dim\_r$) cannot be justified here. The median of the data (red) lies below the x=1 line (black dashed line) which indicates that in the majority of the particles in the posterior $\frac{dim}{dim\_r} < 1$}
+\includegraphics[width=\textwidth]{../../chapters/chapterStabilityFinder/images/qssa-cs-sym.png}
+\caption[Testing the QSSA assumptions on the mass action models]{ \label{fig:ma_qssa}: The \acrshort{qssa} that the dimerization reaction ($dim$) is much faster than its reverse ($dim\_r$) cannot be justified here. The median of the data (red) lies below the x=1 line (black dashed line) which indicates that in the majority of the particles in the posterior $\frac{dim}{dim\_r} < 1$}
 \end{center}
 \end{figure*}
 \clearpage
@@ -760,7 +760,7 @@ dimer degradation   & Low         & -           & Low         & -           \\\b
 \begin{figure*}[htbp]
 \centerfloat
 \includegraphics[scale=0.5]{../../chapters/chapterStabilityFinder/images/MA_stoch_design_princ.png}
-\caption[LoF caption]{ \label{fig:fig7}: Tristability is possible in the mass action toggle switch models only when simulated stochastically. (A) The simple toggle switch with no autoregulation can be both bistable and tristable. The two posteriors are shown, where the posterior distribution of the bistable switch is shown in red and of the tristable switch in blue. From the posterior distribution we can deduce the the dimerization parameter must be small for tristability to occur but large for bistability. The switch with double positive autoregulation and its posterior distributions for the bistable and tristable case are shown in (B). (C) A sample phase plot of a stochastic tristable and bistable mass action switch. }
+\caption[Multistability in the stochastic mass action models]{ \label{fig:fig7}: Tristability is possible in the mass action toggle switch models only when simulated stochastically. (A) The simple toggle switch with no autoregulation can be both bistable and tristable. The two posteriors are shown, where the posterior distribution of the bistable switch is shown in red and of the tristable switch in blue. From the posterior distribution we can deduce the the dimerization parameter must be small for tristability to occur but large for bistability. The switch with double positive autoregulation and its posterior distributions for the bistable and tristable case are shown in (B). (C) A sample phase plot of a stochastic tristable and bistable mass action switch. }
 \end{figure*}
 \clearpage
 
@@ -781,7 +781,7 @@ In order to test this observation, I test each parameter separately. All the pri
 \label{tab:prior_study}
 \begin{tabular}{@{}cccc@{}}
 \toprule
-         & Very narrow & Narrow  & Wide    \\ \midrule
+         & VN2 & N1  & W    \\ \midrule
 ge       & 5 - 10      & 1 - 10  & 1 - 100 \\
 rep      & 2 - 10      & 1 - 10  & 1 - 100 \\
 rep\_r   & 0 - 5       & 1 - 10  & 0 - 10  \\
@@ -800,7 +800,7 @@ Robustness of the \acrshort{cs-ma} model is increased when the priors for degrad
 \begin{figure*}[h]
 \begin{center}
 \includegraphics[width=\textwidth]{../../chapters/chapterStabilityFinder/images/priors_matter.png}
-\caption[LoF caption]{ \label{fig:priors_matter}: The volume of the priors has an effect on the posterior distribution obtained. (A) The \acrshort{cs-ma} model with narrow priors and (B) the \acrshort{cs-ma} with wide priors. (C) The increase in robustness seen is due to the gene expression parameter being able to be large.}
+\caption[The volume of the priors has an effect on the posterior distribution obtained.]{ \label{fig:priors_matter}: The volume of the priors has an effect on the posterior distribution obtained. (A) The \acrshort{cs-ma} model with narrow priors and (B) the \acrshort{cs-ma} with wide priors. (C) The increase in robustness seen is due to the gene expression parameter being able to be large.}
 \end{center}
 \end{figure*}
 \clearpage
@@ -811,8 +811,8 @@ It is evident that the robustness measure depends on the prior volume. It is the
 
 \begin{figure*}[h]
 \begin{center}
-\includegraphics[scale=0.8]{../../chapters/chapterStabilityFinder/images/priors_matter_2.png}
-\caption[LoF caption]{ \label{fig:priors_matter2}: Changing the priors in both models affects the robustness measure. (A) Using different prior ranges for the \acrshort{cs-ma} and the \acrshort{dp-ma} models yields different robustness for each. (B) The Bayes' factor as a function of the prior volume difference. }
+\includegraphics[scale=0.7]{../../chapters/chapterStabilityFinder/images/priors_matter_2.png}
+\caption[Changing the priors in both models affects the robustness measure.]{ \label{fig:priors_matter2}: Changing the priors in both models affects the robustness measure. (A) Using different prior ranges for the \acrshort{cs-ma} and the \acrshort{dp-ma} models yields different robustness for each. (B) The Bayes' factor as a function of the prior volume difference. }
 \end{center}
 \end{figure*}
 \clearpage

@@ -30,17 +30,17 @@
 \contentsline {subsubsection}{\numberline {1.6.2.13}Growth rate measurement}{29}{subsubsection.1.6.2.13}
 \contentsline {subsubsection}{\numberline {1.6.2.14}Flow cytometry}{30}{subsubsection.1.6.2.14}
 \contentsline {subsubsection}{\numberline {1.6.2.15}Concentration assays}{30}{subsubsection.1.6.2.15}
-\contentsline {subsubsection}{\numberline {1.6.2.16}Time course assays}{32}{subsubsection.1.6.2.16}
+\contentsline {subsubsection}{\numberline {1.6.2.16}Time course assays}{31}{subsubsection.1.6.2.16}
 \contentsline {subsection}{\numberline {1.6.3}Results}{32}{subsection.1.6.3}
 \contentsline {subsubsection}{\numberline {1.6.3.1}pKDL071 plasmid alteration}{32}{subsubsection.1.6.3.1}
-\contentsline {subsubsection}{\numberline {1.6.3.2}Control plasmids construction}{34}{subsubsection.1.6.3.2}
-\contentsline {subsubsection}{\numberline {1.6.3.3}Growth rate investigation}{35}{subsubsection.1.6.3.3}
+\contentsline {subsubsection}{\numberline {1.6.3.2}Control plasmids construction}{32}{subsubsection.1.6.3.2}
+\contentsline {subsubsection}{\numberline {1.6.3.3}Growth rate investigation}{33}{subsubsection.1.6.3.3}
 \contentsline {subsubsection}{\numberline {1.6.3.4}Toggle switch concentration assays}{36}{subsubsection.1.6.3.4}
 \contentsline {subsubsection}{\numberline {1.6.3.5}Toggle switch time course assay}{40}{subsubsection.1.6.3.5}
 \contentsline {section}{\numberline {1.7}ABC-Flow used on experimental data}{43}{section.1.7}
-\contentsline {subsection}{\numberline {1.7.1}Toggle switch model used in ABC-Flow}{43}{subsection.1.7.1}
-\contentsline {subsection}{\numberline {1.7.2}ATc induction}{46}{subsection.1.7.2}
-\contentsline {subsection}{\numberline {1.7.3}IPTG induction}{47}{subsection.1.7.3}
-\contentsline {section}{\numberline {1.8}Discussion}{48}{section.1.8}
-\contentsline {section}{\numberline {1.9}Summary}{49}{section.1.9}
-\contentsline {chapter}{Bibliography}{51}{section*.33}
+\contentsline {subsection}{\numberline {1.7.1}Toggle switch model developed to fit to experimental data}{43}{subsection.1.7.1}
+\contentsline {subsection}{\numberline {1.7.2}Model fitting to the genetic toggle switch post ATc induction}{46}{subsection.1.7.2}
+\contentsline {subsection}{\numberline {1.7.3}Model fitting to the genetic toggle switch post IPTG induction}{48}{subsection.1.7.3}
+\contentsline {section}{\numberline {1.8}Discussion}{51}{section.1.8}
+\contentsline {section}{\numberline {1.9}Summary}{53}{section.1.9}
+\contentsline {chapter}{Bibliography}{55}{section*.38}

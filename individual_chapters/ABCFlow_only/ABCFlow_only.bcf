@@ -2273,16 +2273,22 @@
     <bcf:citekey order="34">Litcofsky:2012gr</bcf:citekey>
     <bcf:citekey order="35">Litcofsky:2012gr</bcf:citekey>
     <bcf:citekey order="36">Shapiro:1941</bcf:citekey>
-    <bcf:citekey order="37">Litcofsky:2012gr</bcf:citekey>
-    <bcf:citekey order="38">Gardner:2000vha</bcf:citekey>
-    <bcf:citekey order="39">Milo:2010cz</bcf:citekey>
-    <bcf:citekey order="40">Lillacci:2013hu</bcf:citekey>
-    <bcf:citekey order="41">Milo:2010cz</bcf:citekey>
-    <bcf:citekey order="42">Litcofsky:2012gr</bcf:citekey>
-    <bcf:citekey order="43">Macdonald:2012el</bcf:citekey>
-    <bcf:citekey order="44">Cormack:1996gv</bcf:citekey>
-    <bcf:citekey order="45">Cormack:1996gv</bcf:citekey>
-    <bcf:citekey order="46">Lillacci:2013hu</bcf:citekey>
+    <bcf:citekey order="37">R:2008</bcf:citekey>
+    <bcf:citekey order="38">Litcofsky:2012gr</bcf:citekey>
+    <bcf:citekey order="39">Ackers:1982tq</bcf:citekey>
+    <bcf:citekey order="40">Milo:2010cz</bcf:citekey>
+    <bcf:citekey order="41">Lillacci:2013hu</bcf:citekey>
+    <bcf:citekey order="42">Milo:2010cz</bcf:citekey>
+    <bcf:citekey order="43">Kelwick:2014iy</bcf:citekey>
+    <bcf:citekey order="44">Lillacci:2013hu</bcf:citekey>
+    <bcf:citekey order="45">Tabor:2009bz</bcf:citekey>
+    <bcf:citekey order="46">Litcofsky:2012gr</bcf:citekey>
+    <bcf:citekey order="47">Macdonald:2012el</bcf:citekey>
+    <bcf:citekey order="48">Cormack:1996gv</bcf:citekey>
+    <bcf:citekey order="49">Cormack:1996gv</bcf:citekey>
+    <bcf:citekey order="50">Lillacci:2013hu</bcf:citekey>
+    <bcf:citekey order="51">Chin:2006fb</bcf:citekey>
+    <bcf:citekey order="52">Lu:2009ez</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nyt" type="entry" sortscheme="nyt">
   <bcf:sorting>

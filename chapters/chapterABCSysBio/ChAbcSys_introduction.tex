@@ -8,14 +8,22 @@ Structurally this chapter is organised as follows: In the first section I examin
 \section{Background}
 
 
+Creating synthetic devices that are robust to changing cellular contexts will be key to the success of synthetic biology. Unknown initial conditions and parameter values as well as the variability of the cellular environment, extracellular noise and crosstalk makes the majority of synthetic genetic devices non-functional~\autocite{Chen:2009ea}. Designing devices robust to this environment will lead to reliable behaviour of the systems.
+When faced with a set of competing designs for a given genetic circuit, one is likely to choose the simplest possible model that can achieve the desired behaviour. However, simple systems are often the least robust. Feedback loops are well known key regulatory motifs~\autocite{Brandman:2005ci}. Negative feedback loops are essential for homeostasis and buffering~\autocite{Thomas:1995id} thus increasing robustness to extrinsic noise sources and positive feedback loops can generate multistationarity in a system~\autocite{Thomas:1995id}. Incorporating this kind of additional feedback interactions can make a design more robust and reliable. 
+%Maximising production is an important goal for a metabolic engineering project if it is to produce an economically viable substance~\autocite{Holtz:2010bm}. Network topologies and parameter values of different toggle switch designs are explored here in order to identify the design that maximises robustness and distance between steady states. This ensures the reliable production of the product with the greatest distance between the on and off states of the switch. 
+ In the future, by selecting the system components accordingly during sequence design, the parameter values can be selected \textit{in vivo}. For example, the parameter value corresponding to the translation initiation rate can be chosen by selecting the appropriate RBS sequence which given a nucleotide sequence will produce the desired rate~\autocite{Holtz:2010bm}, a method developed by~\textcite{Salis:2009gk}. Another method to tweak the parameter values \textit{in vivo} is to select the promoter to have the strength corresponding to the levels of gene expression and repression desired. Activity of each promoter can be measured and standardised~\autocite{Kelly:2009bj} making this process possible. For a system requiring more than one promoter, these can be efficiently selected from a promoter library using a genetic algorithm created by~\textcite{Wu:2011bq}. These standardised interchangeable components with known sequence and activity are what synthetic biology classes as BioBricks~\autocite{Kelly:2009bj,Canton:2008fv}. These can be selected and used to construct a desired system and replicate the parameter values found in the scan presented here.
+
+The first computational approach for the tuning of robust synthetic networks was that of~\textcite{Batt:2007jl} where they examined the problem of finding a subset of the parameter set for which a given property was satisfied for all the parameters. \textcite{Chen:2009ea} used the fuzzy  dynamic game method to solve the minimax regulation design problem of synthetic genetic networks. In that method the worst case effect of all disturbances is minimised for a given network. An evolutionary algorithm has also been used to solve the robust design problem by evolving the parameters of the system in order to make it more robust to cellular disturbances by~\textcite{Wu:2011bq}. The added value of the methodology presented here is that the network structure in addition to the network parameters are adjusted to select a network that can robustly create the desired behaviour.	
+
 \subsection{The bistable genetic toggle switch}
 %the following is copy paste from SF:
 \textcite{Gardner:2000vha} constructed the first synthetic genetic toggle switch. Their model consisted of two mutually repressing transcription factors, and is defined by the following \acrshort{ode}s:
 
 \begin{align}\label{eq:gards}
-\frac{du}{dt} &= \frac{a_1}{1+v^{\beta}} - u \\\label{eq:gards2}
-\frac{dv}{dt} &= \frac{a_2}{1+u^{\gamma }} - v,
+\frac{du}{dt} &= \frac{a_1  l_1}{1 + l_1 + k_1  v^{\beta}} - u \\\label{eq:gards2}
+\frac{dv}{dt} &= \frac{a_2  l_2}{1 + l_2 + k_2  u^{\gamma }} - v,
 \end{align}
+
 
 \noindent where \textit{u} is the concentration of repressor 1, \textit{v} the concentration of repressor 2, $a_1$ and $a_2$ denote the effective rates of synthesis of repressors 1 and 2 respectively, β is the cooperativity of repression of promoter 1 and γ of repressor 2. This model is capable of bistable behaviour when $a_1$ and $a_2$ are balanced and when β, γ are > 1~\autocite{Gardner:2000vha}. 
 
@@ -34,10 +42,9 @@ I further study the system by conducting a bifurcation analysis, where all param
 
 
 \begin{figure*}[htbp]
-	\begin{center}
+\centerfloat
 \includegraphics[scale=0.7]{../../chapters/chapterABCSysBio/images/Gard_CS.pdf}
-\caption[LoF caption]{\label{fig:Gard_CS}: The \textcite{Gardner:2000vha} toggle switch is capable of bistable behaviour given $a_1$ and $a_2$ = 10, and β, γ = 2. (A) The timecourse of the simulated model using multiple initial conditions. (B) The vector plot of the Gardner switch shows there are two stable steady states. (C) A bifurcation diagram shows that the system is bistable when 5 \ge{} $a_1$ \le{} 31.}
-\end{center}
+\caption[Phase space and bifurcation analysis of the Gardner toggle switch]{\label{fig:Gard_CS}The \textcite{Gardner:2000vha} toggle switch is capable of bistable behaviour given $a_1$ and $a_2$ = 10, and β, γ = 2. (A) The timecourse of the simulated model using multiple initial conditions. (B) The vector plot of the Gardner switch shows there are two stable steady states. (C) A bifurcation diagram shows that the system is bistable when 5 \ge{} $a_1$ \le{} 31.}
 \end{figure*}
 \clearpage
 
@@ -52,7 +59,7 @@ In order to study the switch system in a more realistic way, I developed an exte
 \begin{figure*}[tbp]
 	\begin{center}
 \includegraphics[scale=0.7]{../../chapters/chapterABCSysBio/images/ma-switch-diagram.png}
-\caption[LoF caption]{\label{fig:Gard_MA}: An illustration of the model used in the parameter scan. }
+\caption[Toggle switch model used in the parameter scan]{\label{fig:Gard_MA}An illustration of the model used in the parameter scan. }
 \end{center}
 \end{figure*}
 
@@ -127,32 +134,32 @@ In order to determine the range of parameter values for which the above model is
 \begin{figure*}[tbp]
 \begin{center}
 \includegraphics[scale=0.5]{../../chapters/chapterABCSysBio/images/LHS.png}
-\caption[LoF caption]{\label{fig:lhs}Latin hypercube sampling ensures that the whole space is sampled evenly. For the two species concerned, A and B, we assume uniform distributions, shown in grey. The joint space of the two distributions is divided into smaller equal parts and a random sample is drawn from within each subspace.  }
+\caption[Latin Hypercube sampling]{\label{fig:lhs}Latin hypercube sampling ensures that the whole space is sampled evenly. For the two species concerned, A and B, we assume uniform distributions, shown in grey. The joint space of the two distributions is divided into smaller equal parts and a random sample is drawn from within each subspace.  }
 \end{center}
 \end{figure*}
 \clearpage
-After each particle was solved to steady state, the value of each dimer at the last timepoint was taken, for all initial conditions sampled. These were used to make a phase diagram for each particle, which consists of the steady state value of one dimer plotted against the other. The parameter scan uncovered the presence of tristable, bistable and monostable systems given a different set of parameter values. An example of the phase plots for each of the three types of stabilities found during the scan are shown in Figure~\ref{fig:stab exampl}.
+After each particle was solved to steady state, the value of each dimer at the last timepoint was taken, for all initial conditions sampled. These were used to make a phase diagram for each particle, which consists of the steady state value of one dimer plotted against the other. The parameter scan uncovered the presence of bistable and monostable systems given a different set of parameter values. An example of the phase plots for each of the three types of stabilities found during the scan are shown in Figure~\ref{fig:stab exampl}.
 
-\begin{figure*}[htbp]
+\begin{figure*}[tb]
 \centering
-\includegraphics[width=\textwidth]{../../chapters/chapterABCSysBio/images/phase_plots_param_scan.png}
-\caption[LoF caption]{\label{fig:stab exampl}: An example for each type of switch found during the parameter scan. Each graph represents the steady state values of one dimer plotted against the other, from one parameter set and 100 initial conditions.}
+\includegraphics[width=0.7\textwidth]{../../chapters/chapterABCSysBio/images/phase_plots_param_scan.png}
+\caption[Phase space examples of a monostable and a bistable switch]{\label{fig:stab exampl}An example for each type of switch found during the parameter scan. Each graph represents the steady state values of one dimer plotted against8the other, from one parameter set and 100 initial conditions.}
 \end{figure*}
 
-There were a total of 217 monostable, 16 bistable and 6 tristable switches out of 400 sampled parameter sets. The remaining samples did not reach steady state. The parameter values that produced each stability are shown in Figure~\ref{fig:scan ode param hist}. 
+A total of 1000 parameter sets were sampled. Out of these, 56\% were monostable, 35.2\% did not reach steady state and 8.8\% where bistable. The distributions of the parameters that produced each stability are shown in Figure~\ref{fig:scan ode param hist}. 
 
 \begin{figure}
 \centering
 \begin{minipage}[c]{1\textwidth}
 \centering
-    \includegraphics[width=\textwidth]{../../chapters/chapterABCSysBio/images/posterior_comparison2.pdf}
-    \caption{The distribution of parameter values that resulted in monostable, bistable and tristable switches in the parameter scan. Each graph represents the distribution of the values of one parameter. }
+    \includegraphics[width=1.2\textwidth]{../../chapters/chapterABCSysBio/images/param_scan_combo.pdf}
+    \caption[Distributions of the parameters resulting in each stability obtained by the parameter scan]{The distribution of parameter values that resulted in monostable and bistable switches in the parameter scan. }
     \label{fig:scan ode param hist}
 \end{minipage}
 \end{figure}
 
 
-From the histograms in Figure~\ref{fig:scan ode param hist} it can be seen that the parameter for gene expression (ge) tends to be relatively high when bistability arises whereas the parameter for the reverse reaction of repression (rep\_r) tends to be low. Degradation (deg) also tends to be low. From this analysis I showed that the toggle switch is capable of bistable behaviour for a range of parameter values. 
+From Figure~\ref{fig:scan ode param hist} it can be seen that the parameter for gene expression (ge) tends to be relatively high when bistability arises. The parameter for repression (rep) tends to be high whereas the parameter for its reverse reaction (rep\_r) tends to be low. From this analysis I showed that the toggle switch is capable of bistable behaviour for a range of parameter values. 
 
 \clearpage
 \subsection{Toggle switch parameter inference}
@@ -197,7 +204,7 @@ The range of parameter values shown to produce a bistable switch in Section~\ref
 \begin{tabular}{ccccccccc}
 \toprule
  \textbf{ge}     & \textbf{rep}     & \textbf{rep\_r}     & \textbf{dim}    & \textbf{dim\_r}     & \textbf{deg}  & \textbf{rep dim}    & \textbf{rep\_dim\_r} & \textbf{deg\_sr}    \\
-6-9     & 4-10    & 1-4       & 4-10   & 2-7       & 2-5  & 0.05-0.1   & 0.01-0.05     & 0.01-0.05         \\ \bottomrule
+6-9     & 4-10    & 1-4       & 4-10   & 2-7       & 2-5  & 0.05-0.1   & 0.01-0.05     & 0.01-0.05        \\ \bottomrule
 \end{tabular}
 \end{table}
 
@@ -209,7 +216,7 @@ The following were defined as the design specifications for a bistable genetic t
 \begin{figure*}[htbp]
 	\begin{center}
 \includegraphics[scale=0.7]{../../chapters/chapterABCSysBio/images/behaviour.png}
-\caption[LoF caption]{\label{fig:abc_behav}: Design specification for ABC parameter inference. The input to the system consists of an event turning on the stimulus (S) at t=20 and another turning on the repressor (R) at t=70. The output specification is the response to the switch to these stimuli.}
+\caption[Design specification for ABC parameter inference]{\label{fig:abc_behav}: Design specification for ABC parameter inference. The input to the system consists of an event turning on the stimulus (S) at t=20 and another turning on the repressor (R) at t=70. The output specification is the response to the switch to these stimuli.}
 \end{center}
 \end{figure*}
 
@@ -234,7 +241,7 @@ The results of the parameter inference of the toggle switch are shown in Figure~
     \centering
     \hspace*{-1cm}
     \includegraphics[scale=0.7]{../../chapters/chapterABCSysBio/images/param_inf_res.png}
-    \caption{(A) The time series of the final population (for final $\epsilon$ = 2 ) of the standard toggle switch ABC-SMC parameter inference. The stimulus, that represses A2, is added at t=20 and the repressor, that represses B2 is added at t=70. (B) The posterior distribution of the toggle switch.}
+    \caption[Posterior distribution of the switch obtained from ABC system design]{(A) The time series of the final population (for final $\epsilon$ = 2 ) of the standard toggle switch ABC-SMC parameter inference. The stimulus, that represses A2, is added at t=20 and the repressor, that represses B2 is added at t=70. (B) The posterior distribution of the toggle switch.}
     \label{fig:stand_abc_timeseries}
 \end{figure}
 \clearpage
@@ -255,14 +262,14 @@ Both positive and negative feedback loops were considered. Therefore 7 models we
 
 Double negative autoregulation: 
 \begin{align}\label{eq:gards_neg}
-\frac{du}{dt} &= \frac{a_1}{1+v^{\beta} + k_{u}^{\delta_{u}}} - u \\
-\frac{dv}{dt} &= \frac{a_2}{1+u^{\gamma }+ k_{v}^{\delta_{v}}} - v,
+\frac{du}{dt} &= \frac{a_1  l_1}{1+l_1+k_1  v^{\beta} + ka_{1}  u^{2}} - u \\
+\frac{dv}{dt} &= \frac{a_2  l_2}{1+l_2+k_2  u^{\gamma }+ ka_{2}  v^{2}} - v,
 \end{align}
 
 Double positive autoregulation: 
 \begin{align}\label{eq:gards_pos}
-\frac{du}{dt} &= \frac{a_1+ k_{u}^{\delta_{u}}}{1+v^{\beta}} - u \\
-\frac{dv}{dt} &= \frac{a_2+ k_{v}^{\delta_{v}}}{1+u^{\gamma }} - v,
+\frac{du}{dt} &= \frac{a_1  (l_1 + ka_{1}  u^{2}) }{1+l_1 + k_1  v^{\beta} + ka_{1}  u^{2}} - u \\
+\frac{dv}{dt} &= \frac{a_2  (l_2 + ka_{2}  v^{2}) }{1+l_2 + k_2  u^{\gamma} + ka_{2}  v^{2}} - v,
 \end{align}
 
 where $k$ represents the effective binding of the transcription factor to its own promoter and γ represents the polymerisation of the bound transcription factor. 
@@ -271,12 +278,12 @@ where $k$ represents the effective binding of the transcription factor to its ow
 \begin{figure*}[htbp]
 	\begin{center}
 \includegraphics[width=\textwidth]{../../chapters/chapterABCSysBio/images/toggle_switch_designs.png}
-\caption[LoF caption]{\label{fig:toggle_switch_designs}: Toggle switch designs considered for model selection. 7 models were used: The simple toggle switch (A), the switches with positive autoregulation on either or both nodes (B, C, D) and the switches with negative autoregulation on either or both nodes (E, F, G)}
+\caption[Model designs considered for model selection.]{\label{fig:toggle_switch_designs}: Toggle switch designs considered for model selection. 7 models were used: The simple toggle switch (A), the switches with positive autoregulation on either or both nodes (B, C, D) and the switches with negative autoregulation on either or both nodes (E, F, G)}
 \end{center}
 \end{figure*}
 \clearpage
 
-\subsubsection{Autoregulation switches phase plots}
+\subsubsection{Autoregulation switches phase space and bifurcation analysis}
 \label{sec:models_bist_bif}
 In order to use these models for model selection, it must first be determined whether they are capable of behaving like a switch. \acrshort{abc} \acrshort{smc} model selection is used to select models that can produce the same behaviour, over a greater range of parameter values. If a model is not capable of producing the desired behaviour for the prior range, then it will not be used for model selection.
 
@@ -285,8 +292,8 @@ I used the PyDSTool~\autocite{Clewley:2012kj} in order to determine whether each
 
 \begin{figure*}[htbp]
 	\begin{center}
-\includegraphics[scale=0.6]{../../chapters/chapterABCSysBio/images/gard_pos.png}
-\caption[LoF caption]{\label{fig:Gard_pos}: Both single and positive autoregulation is consistent with bistable behaviour.  (A) Single positive autoregulation. Two stable steady states are found in the single positive autoregilation model at (u, v) = (0.069, 11.94) and (u, v) = (9.85,0.122). (B) Double positive autoregulation. The model with double positive autoregulation has two stable steady states at (u, v)=(0.122, 9.85) and (u,v)=(11.94, 0.069).}
+\includegraphics[scale=0.6]{../../chapters/chapterABCSysBio/images/gard_pos.pdf}
+\caption[Phase plane analysis of the switch with positive autoregulation]{\label{fig:Gard_pos}: Both single and positive autoregulation is consistent with bistable behaviour.  (A) Single positive autoregulation. Two stable steady states are found in the single positive autoregilation model at (u, v) = (0.069, 11.94) and (u, v) = (9.85,0.122). (B) Double positive autoregulation. The model with double positive autoregulation has two stable steady states at (u, v)=(0.122, 9.85) and (u,v)=(11.94, 0.069).}
 \end{center}
 \end{figure*}
 
@@ -299,10 +306,10 @@ Negative autoregulation occurs when the protein binds to its own promoter and re
 
 % (C) Bifurcation diagram of the single negative autoregulation switch, where all parameters remain constant and only $ku$ varied.
 \begin{figure*}[htbp]
-	\begin{center}
-\includegraphics[scale=0.7]{../../chapters/chapterABCSysBio/images/gard_neg.png}
-\caption[LoF caption]{\label{fig:Gard_neg}:(A) Timecourse of the single negative autoregulation switch, when $k_u$=2 with varying initial conditions. The system is monostable. (B) One stable steady state is found for the single negative autoregulation switch when $k_u$=2 at u=0.099 and v=9.903. (C) The vector plot of the switch with double negative autoregulation has one steady state at u=1.699 and v=1.699.}
-\end{center}
+\centerfloat
+\includegraphics[scale=0.7]{../../chapters/chapterABCSysBio/images/gard_neg.pdf}
+\caption[Phase plane and bifurcation analysis of the switch with negative autoregulation]{\label{fig:Gard_neg}:(A) Timecourse of the single negative autoregulation switch, when $k_u$=2 with varying initial conditions. The system is monostable. (B) One stable steady state is found for the single negative autoregulation switch when $k_u$=2 at u=0.099 and v=9.903. (C) The vector plot of the switch with double negative autoregulation has one steady state at u=1.699 and v=1.699.}
+
 \end{figure*}
 \clearpage
 
@@ -318,7 +325,7 @@ Bayesian model selection is used to directly compare the competing designs using
 \begin{figure*}[htbp]
 	\begin{center}
 \includegraphics[scale=0.7]{../../chapters/chapterABCSysBio/images/model_selection.png}
-\caption[LoF caption]{\label{fig:abc_model_sel}: \acrshort{abc} \acrshort{smc} model selection. (A) A model is sampled, and the (B) parameter values for that model are sampled. The system is simulated and the result compared to the desired behaviour. (C) If the distance between the two is smaller than the current accepted threshold, then the samples are retained. If not they are discarded. (D) This method can select the model that can produced the desired behaviour over a greater parameter range (red ellipse). }
+\caption[\acrshort{abc} \acrshort{smc} model selection]{\label{fig:abc_model_sel} \acrshort{abc} \acrshort{smc} model selection. (A) A model is sampled, and the (B) parameter values for that model are sampled. The system is simulated and the result compared to the desired behaviour. (C) If the distance between the two is smaller than the current accepted threshold, then the samples are retained. If not they are discarded. (D) This method can select the model that can produced the desired behaviour over a greater parameter range (red ellipse). }
 \end{center}
 \end{figure*}
 \clearpage
@@ -386,7 +393,7 @@ $\textrm{B2gB} \stackrel{\textrm{aut\_3}}{\longrightarrow} \textrm{B2}+ \textrm{
 Given the models shown above and the parameter priors shown in Table~\ref{tab:model_selec_params}, ABC SMC model selection was carried out. 
 
 \begin{table}[htbp]
-\centering
+\centerfloat
 \caption{The prior distributions used for model selection. The values indicate the lower and upper limits of a uniform distribution.}
 \label{tab:model_selec_params}
 \begin{tabular}{cccccccccccc}
@@ -398,10 +405,11 @@ Given the models shown above and the parameter priors shown in Table~\ref{tab:mo
 
 
 \begin{figure*}[htbp]
-	\begin{center}
-\includegraphics[scale=0.75]{../../chapters/chapterABCSysBio/images/model_sel_res.png}
-\caption[LoF caption]{\label{fig:model_sel_res}: (A) The toggle switch models considered. Interactions denoted by a circular arrow head can be positive of zero. (B) The toggle switch with positive autoregulation on A was found to be the most robust to parameter fluctuations. Three repeats of the model selection were carried out, and the median values are shown here. Upper and lower quartile error bars are included but are too small to be visible. (C) The posterior distribution of the toggle switch with positive autoregulation on A and B.}
-\end{center}
+	\centerfloat
+\includegraphics[scale=0.75]{../../chapters/chapterABCSysBio/images/model_sel_res-01.png}
+\caption[ABC model selection resulting posterior distribution]{\label{fig:model_sel_res}: (A) The toggle switch models considered. Interactions denoted by a circular arrow head can be positive of zero. (B) The toggle switch with positive autoregulation on A was found to be the most robust to parameter fluctuations. Three repeats of the model selection were carried out, and the median values are shown here. Upper and lower quartile error bars are included but are too small to be visible. (C) The posterior distribution of the toggle switch with positive autoregulation on A and B.}
+
+
 \end{figure*}
 \clearpage
 The results are shown in Figure~\ref{fig:model_sel_res}. The toggle switch with positive autoregulation on both nodes was found to be the most robust model. This indicates that although all the models considered are capable of behaving like a switch, the model with double positive autoregulation could do that over a greater parameter range.  

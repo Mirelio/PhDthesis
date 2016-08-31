@@ -1,17 +1,56 @@
 
-\section{Quantitative dynamical modelling in synthetic biology}
 
-\section{Contents of this thesis}
+\section{Introduction to synthetic biology}
 
-\subsection{Outline}
+Synthetic biology aims at the rational design and construction of biological parts, devices, and systems in order to engineer organisms to perform new tasks~\autocite{Lu:2009ez, Andrianantoandro:2006bia}. A part is a basic unit, like a promoter or a ribosome binding site that when combined with other parts will make a functional unit, a device~\autocite{Heinemann:2006ht}. A device processes inputs, performs functions and produces outputs~\autocite{Andrianantoandro:2006bia}. A system comprises of a collection of devices.     
 
-\subsection{Publications}
+Emphasis is put on the use of engineering principles such as modularity, standardisation, use of predictive models and the separation of design and construction~\autocite{Agapakis:2009bt, Heinemann:2006ht}. A hierarchy similar to computer science is used, with cells, pathways and biochemical reactions acting as computers, modules and gates respectively~\autocite{Andrianantoandro:2006bia}. 
+       
+Numerous applications of synthetic biology have emerged, from altering existing metabolisms to producing synthetic drugs ~\autocite{Holtz:2010bm} or creating new synthetic life forms ~\autocite{Agapakis:2009bt}. Despite the successes there is still a lack of predictive power due to the stochasticity and lack of complete knowledge of the cellular environment ~\autocite{Andrianantoandro:2006bia}.
 
-Parts of this thesis has been published in the following articles:
+Synthetic biology is now entering an age where simple synthetic circuits have been built, such as toggle switches \autocite{Gardner:2000vha, Kramer:2004kq, Isaacs:2003hta, Ham:2008hh, Deans:2007cy, Friedland:2009ce}, oscillators~\autocite{Stricker:2008jqa, Fung:2005jd, Tigges:2009jx} and pulse generators~\autocite{Basu:2004gn}, but larger circuits have proven more difficult \autocite{XXX}. The leap from building low-level circuits to assembling them into complex networks has yet to be made successfully~\autocite{Lu:2009ez}, and predictable circuit behaviour remains challenging~\autocite{XXX}. Efforts to do so are plagued by intra-circuit crosstalk and incompatibility, as well as cellular noise, which can render synthetic networks non-functional \textit{in vivo} \autocite{XXX}. 
+
+
+\section{Quantitative modelling in synthetic biology}
+
+Importance of quantitative understanding of systems
+
+mathematical modelling can aid the advancement of the field of synthetic biology
+
+Synthetic biology draws from the multidisciplinary work of biologists, mathematicians, computer scientists, physicists, to name a few examples. The work from a lot of different fields comes together to attempt to engineer biology. The randomness of the biological environment, the plethora of unknowns in the engineered system as well as its surrounding environment and their interaction therein makes this task extremely challenging. The field has made great advancements in recent years(XXX), and mathematical modelling has played an integral part in that(XXX). 
+
+
+Statistical tools are being developed that can handle the complexity of synthetic biological models(XXX).
+
+The field of systems biology has aided in the advancement of the field(XXX). It aims to understand of the underlying principles that govern system dynamics. It aims to uncover the signal within the noise, or to understand the significance of noise itself in the function of the system(XXX)
+
+
+Here I use quantitative modelling to understand a synthetic system. I look at the problem from two different perspectives, design and inference. I aim to improve on the design of a synthetic biological system and understand the principles dictating the new designs. I also aim to quantitatively study the current system and infer the underlying principles that govern its behaviour.  
+
+
+\section{Thesis Outline}
+
+This thesis will focus on the biochemical modelling of the genetic toggle switch. The thesis is organised as follows:
+
+\vskip 0.1in
+\noindent \textbf{Chapter 2} provides an introduction to biochemical modelling. It contains an overview of the mathematical methods that formed the basis of the methods used throughout this thesis. It also contains a literature review on the current understanding on the dynamics of the genetic toggle switch. I provide material that is necessary for the understanding of the rest of this thesis. 
+\vskip 0.1in
+\noindent In \textbf{Chapter 3} I explore the effect that adding feedback loops has on the stability and parametric robustness of the toggle switch. I develop more realistic biochemical models of the genetic toggle switch and study their ability to behave like a switch.  
+
+\vskip 0.1in
+\noindent In \textbf{Chapter 4} I develop a parameter estimation algorithm for multistable switches, called StabilityFinder. I benchmark this algorithm using a toggle switch model with known results. I then apply it to extensions of the simplified toggle switch as well as the more realistic models of the toggle switch developed in Chapter 4 in order to study the design principles that make a multistable switch. Finally I develop an algorithm for estimating the robustness of a system using the results from StabilityFinder and use it to study the effect of feedback loops on the robustness of the switch.  
+
+\vskip 0.1in
+\noindent In \textbf{Chapter 5} I develop an algorithm based on bayesian statistics for parameter estimation for biochemical modelling of flow cytometry data, called ABC-Flow. I also characterise the genetic toggle switch experimentally and provide an overview of the methods used. Finally I apply ABC-FLow to the experimental data collected and infer the parameters that give rise to the data.
+\vskip 0.1in
+\noindent In \textbf{Chapter 6} contains a detailed experimental plan to be carried out as a next step to this work. I outline the steps needed to design and construct genetic toggle switches with added autoregulating feedback loops experimentally. 
+\vskip 0.1in
+\noindent \textbf{Chapter 7} concludes this thesis with an overview of the work presented here and a discussion of future directions. 
+\vskip 0.1in
+\noindent Work carried out throughout my candidature has been published in the following articles:
 
 \begin{enumerate}
-	\item Woods, M., Leon, M., Perez-Carrasco, R.,  Barnes, C. P. (2015). ‘A statisticalapproach reveals designs for the most robust stochastic gene oscillators’. bioRxiv, 025056.
-	
-	\item Woods, M., Leon, M., Perez-Carrasco, R.,  Barnes, C. P. (2015). ‘A statisticalapproach reveals designs for the most robust stochastic gene oscillators’. bioRxiv, 025056.
+	\item Leon, M., Woods, M., Fedorec, J. A., \& Barnes, C. P. (2016). ‘A computational method for the investigation of multistable systems and its application to genetic switches’. [Submitted].
+	\item Woods, M. L., Leon, M., Perez-Carrasco, R., \& Barnes, C. P. (2016). ‘A Statistical Approach Reveals Designs for the Most Robust Stochastic Gene Oscillators.’ ACS Synthetic Biology 5(6), 459–470.
 	
 \end{enumerate}

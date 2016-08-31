@@ -1,0 +1,31 @@
+%!tikz editor 1.0
+\documentclass{article}
+\usepackage{tikz}
+\usepackage[graphics, active, tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+
+%!tikz preamble begin
+
+%!tikz preamble end
+
+
+\begin{document}
+%!tikz source begin
+\begin{tikzpicture}[node distance=3cm,thick,
+	activate/.style={-stealth, shorten >= 2pt},
+	repress/.style={-|, shorten >= 2pt},
+  main node/.style={circle,fill=white,draw,font=\sffamily\Large\bfseries}]
+
+
+\node[main node] (1) {A};
+\node[main node] (3) [below of=1] {B};
+
+%\draw[repress, out=-70, in=70] (1) to (3);
+%\draw[repress, out=110, in=-110] (3) to (1);
+\draw[repress] [bend left] (1) to (3);
+\draw[repress] [bend left] (3) to (1);
+
+\end{tikzpicture}
+%!tikz source end
+
+\end{document}

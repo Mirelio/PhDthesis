@@ -64,7 +64,7 @@
 \RequirePackage[utf8x]{inputenc}
 \RequirePackage[greek, british]{babel}     % British hypernation
 \usepackage{textalpha}
-
+\RequirePackage{tikz}
 \defaultfontfeatures{Scale=MatchLowercase}
 \setmainfont[Ligatures={Common, TeX}]{Linux Libertine O}
 

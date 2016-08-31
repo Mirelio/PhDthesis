@@ -1,0 +1,79 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {british}
+\addvspace {10pt}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces A graphical representation of a biochemical system. The two nodes, A and B represent species and the edges (arrows) a reaction between the two. An arrow represents activation and a flat line represents repression.\relax }}{27}{figure.caption.8}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Hill formalism example}}{28}{figure.caption.9}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Shea-Ackers formalism example}}{29}{figure.caption.10}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces \acrshort {abc} \acrshort {smc} example}}{39}{figure.caption.12}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces LoF caption}}{48}{figure.caption.14}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces LoF caption}}{49}{figure.caption.15}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces LoF caption}}{51}{figure.caption.17}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces LoF caption}}{52}{figure.caption.18}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces The distribution of parameter values that resulted in monostable and bistable switches in the parameter scan. \relax }}{53}{figure.caption.19}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces LoF caption}}{55}{figure.caption.22}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces (A) The time series of the final population (for final $\mitvarepsilon $ = 2 ) of the standard toggle switch ABC-SMC parameter inference. The stimulus, that represses A2, is added at t=20 and the repressor, that represses B2 is added at t=70. (B) The posterior distribution of the toggle switch.\relax }}{57}{figure.caption.23}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces LoF caption}}{59}{figure.caption.24}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces LoF caption}}{61}{figure.caption.25}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces LoF caption}}{62}{figure.caption.26}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces LoF caption}}{64}{figure.caption.27}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces LoF caption}}{66}{figure.caption.30}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces LoF caption}}{74}{figure.caption.31}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces LoF caption}}{83}{figure.caption.32}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces LoF caption}}{84}{figure.caption.33}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces LoF caption}}{87}{figure.caption.35}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces LoF caption}}{88}{figure.caption.36}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces LoF caption}}{90}{figure.caption.37}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces LoF caption}}{91}{figure.caption.38}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces LoF caption}}{93}{figure.caption.40}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces LoF caption}}{94}{figure.caption.41}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces LoF caption}}{97}{figure.caption.42}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces LoF caption}}{98}{figure.caption.43}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces LoF caption}}{100}{figure.caption.45}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces LoF caption}}{102}{figure.caption.46}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces LoF caption}}{103}{figure.caption.47}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces LoF caption}}{105}{figure.caption.48}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces LoF caption}}{107}{figure.caption.50}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces LoF caption}}{109}{figure.caption.52}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces LoF caption}}{111}{figure.caption.53}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces LoF caption}}{116}{figure.caption.54}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces LoF caption}}{118}{figure.caption.55}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces LoF caption}}{120}{figure.caption.56}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces LoF caption}}{121}{figure.caption.57}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces LoF caption}}{122}{figure.caption.58}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces LoF caption}}{123}{figure.caption.59}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces LoF caption}}{124}{figure.caption.60}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces LoF caption}}{125}{figure.caption.61}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces LoF caption}}{128}{figure.caption.62}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces LoF caption}}{129}{figure.caption.63}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces LoF caption}}{131}{figure.caption.64}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces LoF caption}}{132}{figure.caption.65}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces LoF caption}}{133}{figure.caption.66}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces LoF caption}}{136}{figure.caption.68}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces LoF caption}}{145}{figure.caption.76}
+\contentsline {figure}{\numberline {5.16}{\ignorespaces LoF caption}}{146}{figure.caption.77}
+\contentsline {figure}{\numberline {5.17}{\ignorespaces LoF caption}}{147}{figure.caption.78}
+\contentsline {figure}{\numberline {5.18}{\ignorespaces LoF caption}}{149}{figure.caption.79}
+\contentsline {figure}{\numberline {5.19}{\ignorespaces LoF caption}}{150}{figure.caption.81}
+\contentsline {figure}{\numberline {5.20}{\ignorespaces LoF caption}}{151}{figure.caption.82}
+\contentsline {figure}{\numberline {5.21}{\ignorespaces LoF caption}}{153}{figure.caption.83}
+\contentsline {figure}{\numberline {5.22}{\ignorespaces LoF caption}}{154}{figure.caption.84}
+\contentsline {figure}{\numberline {5.23}{\ignorespaces LoF caption}}{158}{figure.caption.86}
+\contentsline {figure}{\numberline {5.24}{\ignorespaces LoF caption}}{159}{figure.caption.87}
+\contentsline {figure}{\numberline {5.25}{\ignorespaces LoF caption}}{160}{figure.caption.88}
+\contentsline {figure}{\numberline {5.26}{\ignorespaces LoF caption}}{161}{figure.caption.89}
+\contentsline {figure}{\numberline {5.27}{\ignorespaces LoF caption}}{162}{figure.caption.90}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces LoF caption}}{168}{figure.caption.91}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces LoF caption}}{170}{figure.caption.92}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces LoF caption}}{171}{figure.caption.93}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces LoF caption}}{173}{figure.caption.94}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces LoF caption}}{175}{figure.caption.95}
+\addvspace {10pt}
+\addvspace {10pt}
+\addvspace {10pt}
+\addvspace {10pt}

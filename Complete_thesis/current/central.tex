@@ -20,8 +20,11 @@
 
 
 \begin{abstract}
-blabla
-\end{abstract}
+Genetic switches exhibit multistability, form the basis of epigenetic memory, and are found in natural decision making systems, such as cell fate determination in developmental pathways. Synthetic genetic switches can be used for recording the presence of different environmental signals, for changing phenotype using synthetic inputs and as building blocks for higher-level sequential logic circuits. 
+
+In this thesis the genetic toggle switch was studied computationally and experimentally. Bayesian methods were used to compare competing model designs of the genetic toggle switch. The method used enables the simultaneous inference of the kinetic parameters and the ranking of the models with respect to producing the same behaviour over a greater volume of parameter space.
+
+Flow Cytometry was used to characterise a known toggle switch plasmid. Two new computational tools were developed; ABC-Flow which takes advantage of sequential Monte Carlo methods to fit models to Flow Cytometry data. ABC-Flow was used to characterise the toggle switch plasmid and fit models to experimental results. The other computational tool, StabilityFinder, can identify regions of parameter space capable of producing multistable behaviour, while handling uncertainty in biochemical rate constants and initial conditions. A collection of models of genetic switches were examined, ranging from the deterministic simplified toggle switch to stochastic models containing different positive feedback connections. The design principles behind making a bistable switch were uncovered, as well as those necessary to make a tristable switch. The results suggest many ways in which the construction of genetic switches can be enhanced.Finally, a design strategy for constructing novel toggle switches is presented.\end{abstract}
 
 \tableofcontents*
 \listoffigures
@@ -51,6 +54,13 @@ blabla
 \chapter{Background}
 \label{ch:backg}
 \input{../../chapters/chapterBackgr/ChBackground}
+
+
+%% Switch literature -------------------------------------%%
+%\mainmatter*
+%\chapter{Current understanding of% the genetic toggle switch}
+%\label{ch:swlit}
+%\input{../../chapters/chapterLiterature/ChSwitch}
 
 %% ABC-SysBio ---------------------------------------%%
 \mainmatter*

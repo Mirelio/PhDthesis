@@ -1,0 +1,237 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdftex 2015.10.2)  22 JUL 2016 13:15
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterABCSysBio/ChAbcSys_introduction.tex
+(/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterABCSysBio/ChAbcSys_introduction.tex
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterABCSysBio/ChAbcSys_introduction.tex:1: Undefined control sequence.
+l.1 \section
+            {Introduction to ABC-SysBio}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterABCSysBio/ChAbcSys_introduction.tex:9: Undefined control sequence.
+l.9 \section
+            {Methods}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterABCSysBio/ChAbcSys_introduction.tex:14: Undefined control sequence.
+l.14 \subsection
+                {\acrshort{abc} for model selection}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterABCSysBio/ChAbcSys_introduction.tex:14: Undefined control sequence.
+l.14 \subsection{\acrshort
+                          {abc} for model selection}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterABCSysBio/ChAbcSys_introduction.tex:15: Undefined control sequence.
+l.15 ...ndix. The results are shown in Figure~\ref
+                                                  {XXX}. The target behaviou...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterABCSysBio/ChAbcSys_introduction.tex:15: Undefined control sequence.
+l.15 ...el was compared to is shown in Figure~\ref
+                                                  {fig:behaviour}.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterABCSysBio/ChAbcSys_introduction.tex:19: Undefined control sequence.
+l.19 ...model and its parameter values, \texttheta
+                                                  , are sampled from the pri...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterABCSysBio/ChAbcSys_introduction.tex:19: Undefined control sequence.
+l.19 ...m their priors. When the last \textepsilon
+                                                  {} is reached, the algorit...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterABCSysBio/ChAbcSys_introduction.tex:19: Undefined control sequence.
+l.19 ...e is selected as the most robust~\autocite
+                                                  {Toni:2009tr}.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterABCSysBio/ChAbcSys_introduction.tex:30: Undefined control sequence.
+l.30 ... one or both nodes as shown in Figure~\ref
+                                                  {fig:toggle_switch_designs...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterABCSysBio/ChAbcSys_introduction.tex:30: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.30 ... nodes as shown in Figure~\ref{fig:toggle_
+                                                  switch_designs}. There are...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterABCSysBio/ChAbcSys_introduction.tex:30: Extra }, or forgotten $.
+l.30 ... in Figure~\ref{fig:toggle_switch_designs}
+                                                  . There are two inducers, ...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterABCSysBio/ChAbcSys_introduction.tex:32: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.32 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (2213.33737pt too wide) in paragraph at lines 30--32
+\tenrm switches with pos-i-tive or neg-a-tive auto-regulation in one or both nodes as shown in Fig-ure fig:toggle$[]\teni witch[]esigns:Therearetwoinducers; oneturningtheswitchonbyrepressingAandoneturningtheswitchoffbyrepressingB:ThereactionsofthestandardtoggleswitchareshowninAppendix\tenrm (\teni XXX\tenrm )\teni :Giventhemodelsshownaboveandtheparameterpriorsusedforthestandardtoggleswitchparameterinference; ABCSMCmodelselectionwillbecarriedout:UsingtheABCSMCmodelselection; themostrobustmodelcanbeselected:Themostrobustmodelisthemodelthatcanproducethesamebehaviouroveragreaterrangeofparameters:$ |
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\tenrm s
+.\tenrm w
+.\tenrm i
+.\tenrm t
+.\tenrm c
+.etc.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterABCSysBio/ChAbcSys_introduction.tex:33: Undefined control sequence.
+l.33 \begin
+           {figure*}[htbp]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterABCSysBio/ChAbcSys_introduction.tex:34: Undefined control sequence.
+l.34 	\begin
+            {center}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterABCSysBio/ChAbcSys_introduction.tex:35: Undefined control sequence.
+l.35 \includegraphics
+                     [scale=0.5]{chapterABCSysBio/images/model_selection.png}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterABCSysBio/ChAbcSys_introduction.tex:35: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.35 ...[scale=0.5]{chapterABCSysBio/images/model_
+                                                  selection.png}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterABCSysBio/ChAbcSys_introduction.tex:35: Extra }, or forgotten $.
+l.35 ...apterABCSysBio/images/model_selection.png}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterABCSysBio/ChAbcSys_introduction.tex:36: Undefined control sequence.
+l.36 \caption
+             [LoF caption]{\label{fig:abc_model_sel}: Model selection}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterABCSysBio/ChAbcSys_introduction.tex:36: Undefined control sequence.
+l.36 \caption[LoF caption]{\label
+                                 {fig:abc_model_sel}: Model selection}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapterABCSysBio/ChAbcSys_introduction.tex:37: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \end 
+l.37 \end
+         {center}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (99.12599pt too wide) in paragraph at lines 33--37
+[]\tenrm figure*[htbp] cen-ter [scale=0.5]chapterABCSysBio/images/model$[]\teni election:png\tenrm [\teni LoFcaption\tenrm ][]$ |
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm ^^L (ligature fi)
+.\tenrm g
+.\tenrm u
+.\tenrm r
+.etc.
+
+[1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] )
+(\end occurred inside a group at level 2)
+
+### simple group (level 2) entered at line 35 ({)
+### simple group (level 1) entered at line 30 ({)
+### bottom level</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on ChAbcSys_introduction.pdf (1 page, 46101 bytes).
+PDF statistics:
+ 20 PDF objects out of 1000 (max. 8388607)
+ 13 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
