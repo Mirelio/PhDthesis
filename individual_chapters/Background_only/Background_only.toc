@@ -1,36 +1,40 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
 \select@language {british}
-\contentsline {chapter}{\chapternumberline {1}Background}{3}{chapter.1}
-\contentsline {section}{\numberline {1.1}Methods in biochemical modelling}{3}{section.1.1}
-\contentsline {subsection}{\numberline {1.1.1}Representation of transcription networks}{3}{subsection.1.1.1}
-\contentsline {subsubsection}{\numberline {1.1.1.1}Coupled chemical reactions and the law of mass action}{3}{subsubsection.1.1.1.1}
-\contentsline {subsubsection}{\numberline {1.1.1.2}Graphical representation of biochemical systems}{4}{subsubsection.1.1.1.2}
-\contentsline {subsubsection}{\numberline {1.1.1.3}\acrfull {sbml}}{4}{subsubsection.1.1.1.3}
-\contentsline {subsection}{\numberline {1.1.2}Modelling promoter regulation}{5}{subsection.1.1.2}
-\contentsline {subsubsection}{\numberline {1.1.2.1}Hill formalism}{5}{subsubsection.1.1.2.1}
-\contentsline {subsubsection}{\numberline {1.1.2.2}Shea-Ackers formalism}{6}{subsubsection.1.1.2.2}
-\contentsline {subsection}{\numberline {1.1.3}Simulation of dynamical systems}{7}{subsection.1.1.3}
-\contentsline {subsubsection}{\numberline {1.1.3.1}Deterministic mass action kinetics}{7}{subsubsection.1.1.3.1}
-\contentsline {subsubsection}{\numberline {1.1.3.2}Assumptions of deterministic modelling}{8}{subsubsection.1.1.3.2}
-\contentsline {subsection}{\numberline {1.1.4}Phase plane analysis}{9}{subsection.1.1.4}
-\contentsline {subsection}{\numberline {1.1.5}Steady states}{10}{subsection.1.1.5}
-\contentsline {subsection}{\numberline {1.1.6}Steady state stability}{10}{subsection.1.1.6}
-\contentsline {subsection}{\numberline {1.1.7}Stochastic modelling of dynamical systems}{11}{subsection.1.1.7}
-\contentsline {subsubsection}{\numberline {1.1.7.1}Simulating stochastic models}{11}{subsubsection.1.1.7.1}
-\contentsline {subsubsection}{\numberline {1.1.7.2}The Gillespie algorithm}{12}{subsubsection.1.1.7.2}
-\contentsline {subsubsection}{\numberline {1.1.7.3}Stochastic mass action kinetics}{12}{subsubsection.1.1.7.3}
-\contentsline {section}{\numberline {1.2}Parameter inference}{13}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}\acrfull {abc}}{13}{subsection.1.2.1}
-\contentsline {subsubsection}{\numberline {1.2.1.1}Particle sampling}{15}{subsubsection.1.2.1.1}
-\contentsline {subsubsection}{\numberline {1.2.1.2}Perturbation}{15}{subsubsection.1.2.1.2}
-\contentsline {subsubsection}{\numberline {1.2.1.3}Particle simulation}{16}{subsubsection.1.2.1.3}
-\contentsline {subsubsection}{\numberline {1.2.1.4}Weight calculation}{16}{subsubsection.1.2.1.4}
-\contentsline {subsection}{\numberline {1.2.2}ABC algorithm example}{16}{subsection.1.2.2}
-\contentsline {subsection}{\numberline {1.2.3}Derivation of model parametric robustness defined via Bayesian statistics}{18}{subsection.1.2.3}
-\contentsline {section}{\numberline {1.3}Flow Cytometry}{20}{section.1.3}
-\contentsline {section}{\numberline {1.4}Current understanding of the genetic toggle switch}{20}{section.1.4}
-\contentsline {subsection}{\numberline {1.4.1}The genetic toggle switch in natural systems}{21}{subsection.1.4.1}
-\contentsline {subsection}{\numberline {1.4.2}Uses in synthetic biology}{22}{subsection.1.4.2}
-\contentsline {subsection}{\numberline {1.4.3}Modelling the genetic toggle switch}{23}{subsection.1.4.3}
-\contentsline {chapter}{Bibliography}{27}{section*.12}
+\contentsline {chapter}{\chapternumberline {1}Introduction}{3}{chapter.1}
+\contentsline {section}{\numberline {1.1}Introduction to synthetic biology}{3}{section.1.1}
+\contentsline {section}{\numberline {1.2}Quantitative modelling in synthetic biology}{3}{section.1.2}
+\contentsline {section}{\numberline {1.3}Thesis Outline}{5}{section.1.3}
+\contentsline {chapter}{\chapternumberline {2}Background}{7}{chapter.2}
+\contentsline {section}{\numberline {2.1}Methods in biochemical modelling}{7}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Representation of transcription networks}{7}{subsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.1.1}Coupled chemical reactions and the law of mass action}{7}{subsubsection.2.1.1.1}
+\contentsline {subsubsection}{\numberline {2.1.1.2}Graphical representation of biochemical systems}{8}{subsubsection.2.1.1.2}
+\contentsline {subsubsection}{\numberline {2.1.1.3}\acrfull {sbml}}{8}{subsubsection.2.1.1.3}
+\contentsline {subsection}{\numberline {2.1.2}Transcriptional binding kinetics}{9}{subsection.2.1.2}
+\contentsline {subsubsection}{\numberline {2.1.2.1}Hill formalism}{9}{subsubsection.2.1.2.1}
+\contentsline {subsubsection}{\numberline {2.1.2.2}Shea-Ackers formalism}{10}{subsubsection.2.1.2.2}
+\contentsline {subsection}{\numberline {2.1.3}Simulation of dynamical systems}{11}{subsection.2.1.3}
+\contentsline {subsubsection}{\numberline {2.1.3.1}Deterministic mass action kinetics}{11}{subsubsection.2.1.3.1}
+\contentsline {subsubsection}{\numberline {2.1.3.2}Assumptions of deterministic modelling}{12}{subsubsection.2.1.3.2}
+\contentsline {subsection}{\numberline {2.1.4}Nonlinear dynamical modelling}{13}{subsection.2.1.4}
+\contentsline {subsubsection}{\numberline {2.1.4.1}Phase plane analysis}{13}{subsubsection.2.1.4.1}
+\contentsline {subsubsection}{\numberline {2.1.4.2}Steady states}{14}{subsubsection.2.1.4.2}
+\contentsline {subsubsection}{\numberline {2.1.4.3}Steady state stability}{14}{subsubsection.2.1.4.3}
+\contentsline {subsection}{\numberline {2.1.5}Stochastic modelling of dynamical systems}{15}{subsection.2.1.5}
+\contentsline {subsubsection}{\numberline {2.1.5.1}Simulating stochastic models}{15}{subsubsection.2.1.5.1}
+\contentsline {subsubsection}{\numberline {2.1.5.2}The Gillespie algorithm}{16}{subsubsection.2.1.5.2}
+\contentsline {subsubsection}{\numberline {2.1.5.3}Stochastic mass action kinetics}{16}{subsubsection.2.1.5.3}
+\contentsline {section}{\numberline {2.2}The Bayesian solution to parameter inference and system design}{17}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}\acrfull {abc}}{18}{subsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.1.1}Particle sampling}{20}{subsubsection.2.2.1.1}
+\contentsline {subsubsection}{\numberline {2.2.1.2}Perturbation}{20}{subsubsection.2.2.1.2}
+\contentsline {subsubsection}{\numberline {2.2.1.3}Particle simulation}{21}{subsubsection.2.2.1.3}
+\contentsline {subsubsection}{\numberline {2.2.1.4}Weight calculation}{21}{subsubsection.2.2.1.4}
+\contentsline {subsubsection}{\numberline {2.2.1.5}ABC SMC algorithm example}{21}{subsubsection.2.2.1.5}
+\contentsline {subsection}{\numberline {2.2.2}Derivation of model parametric robustness defined via Bayesian statistics}{23}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Current understanding of the genetic toggle switch}{25}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}The genetic toggle switch in natural systems}{25}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Uses in synthetic biology}{26}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Modelling the genetic toggle switch}{27}{subsection.2.3.3}
+\contentsline {chapter}{Bibliography}{29}{section*.11}

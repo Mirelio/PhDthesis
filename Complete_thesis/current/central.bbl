@@ -94,7 +94,7 @@
       \strng{fullhash}{9cdf6b062c5159684a9dad847ca374ac}
       \field{sortinit}{A}
       \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
-      \field{labelyear}{2014}
+      \field{labelyear}{2006}
       \field{labelmonth}{04}
       \field{datelabelsource}{}
       \field{labelnamesource}{author}
@@ -104,7 +104,7 @@
       \field{number}{1}
       \field{title}{{Synthetic biology: new engineering rules for an emerging discipline.}}
       \field{volume}{2}
-      \field{year}{2014}
+      \field{year}{2006}
       \field{pages}{2006.0028}
       \range{pages}{-1}
     \endentry
@@ -233,6 +233,30 @@
       \field{year}{2011}
       \field{pages}{15190\bibrangedash 15195}
       \range{pages}{6}
+    \endentry
+    \entry{Barnes:2011bk}{article}{}
+      \name{author}{3}{}{%
+        {{hash=8341669a3d0db82e877ef918042cb0d0}{Barnes}{B\bibinitperiod}{Chris\bibnamedelima P}{C\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+        {{hash=d06eb23326296ae9fc2d859767d9c154}{Silk}{S\bibinitperiod}{Daniel}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=1071749d15e5d69795cd0e937501205d}{Stumpf}{S\bibinitperiod}{Michael\bibnamedelimb P\bibnamedelima H}{M\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{32ccc377bc928abe148cd2ca379845b1}
+      \strng{fullhash}{32ccc377bc928abe148cd2ca379845b1}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{2011}
+      \field{labelmonth}{12}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Interface Focus}
+      \field{month}{12}
+      \field{number}{6}
+      \field{title}{{Bayesian design strategies for synthetic biology.}}
+      \field{volume}{1}
+      \field{year}{2011}
+      \field{pages}{895\bibrangedash 908}
+      \range{pages}{14}
     \endentry
     \entry{Basu:2004gn}{article}{}
       \name{author}{5}{}{%
@@ -852,6 +876,30 @@
       \field{pages}{465\bibrangedash 471}
       \range{pages}{7}
     \endentry
+    \entry{Entus:wy}{article}{}
+      \name{author}{3}{}{%
+        {{hash=61ba5a9ba1f5e85736d531ea6acab367}{Entus}{E\bibinitperiod}{Robert}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=b7d2c99d219e9e80f945a382a90a5fe4}{Aufderheide}{A\bibinitperiod}{Brian}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=88e0e34625e4125f11ed4ef2227d28e8}{Sauro}{S\bibinitperiod}{Herbert\bibnamedelima M}{H\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{f872ab84ee172db6cef28996281e308b}
+      \strng{fullhash}{f872ab84ee172db6cef28996281e308b}
+      \field{sortinit}{E}
+      \field{sortinithash}{fefc5210ef4721525b2a478df41efcd4}
+      \field{labelyear}{2007}
+      \field{labelmonth}{08}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Systems and synthetic biology}
+      \field{month}{08}
+      \field{number}{3}
+      \field{title}{{Design and implementation of three incoherent feed-forward motif based biological concentration sensors.}}
+      \field{volume}{1}
+      \field{year}{2007}
+      \field{pages}{119\bibrangedash 128}
+      \range{pages}{10}
+    \endentry
     \entry{Fasano:1987hg}{article}{}
       \name{author}{2}{}{%
         {{hash=c407d7202acca36fb7c8623b3dbf51f5}{Fasano}{F\bibinitperiod}{G}{G\bibinitperiod}{}{}{}{}}%
@@ -1110,6 +1158,28 @@
       \field{year}{1977}
       \field{pages}{2340\bibrangedash 2361}
       \range{pages}{22}
+    \endentry
+    \entry{Gramelsberger:2013iu}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ea5d7827b616f5feb62cfa8ffcd10197}{Gramelsberger}{G\bibinitperiod}{Gabriele}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{ea5d7827b616f5feb62cfa8ffcd10197}
+      \strng{fullhash}{ea5d7827b616f5feb62cfa8ffcd10197}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelyear}{2013}
+      \field{labelmonth}{05}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Studies in History and Philosophy of Science Part C: Studies in History and Philosophy of Biological and Biomedical Sciences}
+      \field{month}{05}
+      \field{number}{2}
+      \field{title}{{The simulation approach in synthetic biology.}}
+      \field{volume}{44}
+      \field{year}{2013}
+      \field{pages}{150\bibrangedash 157}
+      \range{pages}{8}
     \endentry
     \entry{Guantes:2008gs}{article}{}
       \name{author}{2}{}{%
@@ -1519,6 +1589,30 @@
       \field{title}{{Programming Massively Parallel Processors}}
       \field{year}{2010}
     \endentry
+    \entry{Kirkpatrick:1983kv}{article}{}
+      \name{author}{3}{}{%
+        {{hash=7872b231407c202bb66a9588eac3de57}{Kirkpatrick}{K\bibinitperiod}{S}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=b0560aad8fda276ddf4abb55b479736d}{C\bibnamedelima D\bibnamedelima Gelatt}{C\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim G\bibinitperiod}{Jr}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=59aff46a38ec94f32e29d84c3f36cdfa}{Vecchi}{V\bibinitperiod}{M\bibnamedelima P}{M\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{6df44f3d1f4d77c010e6b84ec14473ee}
+      \strng{fullhash}{6df44f3d1f4d77c010e6b84ec14473ee}
+      \field{sortinit}{K}
+      \field{sortinithash}{a7d5b3aec5a0890aae7baf85a209abfc}
+      \field{labelyear}{1983}
+      \field{labelmonth}{05}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Science}
+      \field{month}{05}
+      \field{number}{4598}
+      \field{title}{{Optimization by Simulated Annealing}}
+      \field{volume}{220}
+      \field{year}{1983}
+      \field{pages}{671\bibrangedash 680}
+      \range{pages}{10}
+    \endentry
     \entry{Kitano:2007cp}{article}{}
       \name{author}{1}{}{%
         {{hash=ccbec67ed2a448309bfd4a1cec5e10c8}{Kitano}{K\bibinitperiod}{Hiroaki}{H\bibinitperiod}{}{}{}{}}%
@@ -1662,6 +1756,22 @@
       \field{year}{2006}
       \field{pages}{D689\bibrangedash D691}
       \range{pages}{-1}
+    \endentry
+    \entry{Levenberg:1944we}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ad4683ceda03da27e217ecb04f4c3874}{Levenberg}{L\bibinitperiod}{K}{K\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{ad4683ceda03da27e217ecb04f4c3874}
+      \strng{fullhash}{ad4683ceda03da27e217ecb04f4c3874}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelyear}{1944}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Quarterly of applied mathematics}
+      \field{title}{{A method for the solution of certain non-linear problems in least squares}}
+      \field{year}{1944}
     \endentry
     \entry{Liepe:2010eg}{article}{}
       \name{author}{7}{}{%
@@ -1971,6 +2081,32 @@
       \field{pages}{248107}
       \range{pages}{1}
     \endentry
+    \entry{Ma:2009ig}{article}{}
+      \name{author}{5}{}{%
+        {{hash=75c23e4be47abb16010fe8110f78b2dc}{Ma}{M\bibinitperiod}{Wenzhe}{W\bibinitperiod}{}{}{}{}}%
+        {{hash=9641f26cfa6ce16bdb935c2655fe74e9}{Trusina}{T\bibinitperiod}{Ala}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=2f293ba9d4270897d902a78e1041e3d9}{El-Samad}{E\bibinithyphendelim S\bibinitperiod}{Hana}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=a404c8c0896b1f8bde434b3ca639be03}{Lim}{L\bibinitperiod}{Wendell\bibnamedelima A}{W\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=aef09bee35d2d1968e488c853b24b2c9}{Tang}{T\bibinitperiod}{Chao}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{d6be4e144a16601894ec5bac2027e8ee}
+      \strng{fullhash}{9a443c2e8c8dc6bbe9effaf90efe9fbc}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelyear}{2009}
+      \field{labelmonth}{08}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Cell}
+      \field{month}{08}
+      \field{number}{4}
+      \field{title}{{Defining network topologies that can achieve biochemical adaptation.}}
+      \field{volume}{138}
+      \field{year}{2009}
+      \field{pages}{760\bibrangedash 773}
+      \range{pages}{14}
+    \endentry
     \entry{Macdonald:2012el}{article}{}
       \name{author}{3}{}{%
         {{hash=649496a258210a85638ea27f9986cc2b}{Macdonald}{M\bibinitperiod}{Patrick\bibnamedelima J}{P\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
@@ -2039,6 +2175,22 @@
       \field{year}{2003}
       \field{pages}{15324\bibrangedash 15328}
       \range{pages}{5}
+    \endentry
+    \entry{Marquardt:1963wr}{article}{}
+      \name{author}{1}{}{%
+        {{hash=0230f4a7c84e71b909f85e9d177e394f}{Marquardt}{M\bibinitperiod}{D\bibnamedelima W}{D\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{0230f4a7c84e71b909f85e9d177e394f}
+      \strng{fullhash}{0230f4a7c84e71b909f85e9d177e394f}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelyear}{1963}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the society for Industrial and Applied {\ldots}}
+      \field{title}{{An algorithm for least-squares estimation of nonlinear parameters}}
+      \field{year}{1963}
     \endentry
     \entry{mathematica:2016}{book}{}
       \name{author}{1}{}{%
@@ -2128,6 +2280,30 @@
       \field{pages}{1\bibrangedash 8}
       \range{pages}{8}
     \endentry
+    \entry{Nielsen:2013hs}{article}{}
+      \name{author}{3}{}{%
+        {{hash=9c2fbd53c26614632ccb8c98c77e36d9}{Nielsen}{N\bibinitperiod}{Alec\bibnamedelima AK}{A\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=9d68785995c5fb8c19b774003414e6f7}{Segall-Shapiro}{S\bibinithyphendelim S\bibinitperiod}{Thomas\bibnamedelima H}{T\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+        {{hash=65ff41dbe5274be5e583c56228f77524}{Voigt}{V\bibinitperiod}{Christopher\bibnamedelima A}{C\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{a3694018f406b1cd0085efccdeda68dc}
+      \strng{fullhash}{a3694018f406b1cd0085efccdeda68dc}
+      \field{sortinit}{N}
+      \field{sortinithash}{925374ca63e7594de7fafdb83e64d41d}
+      \field{labelyear}{2013}
+      \field{labelmonth}{12}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Current Opinion in Chemical Biology}
+      \field{month}{12}
+      \field{number}{6}
+      \field{title}{{Advances in genetic circuit design: novel biochemistries, deep part mining, and precision gene expression}}
+      \field{volume}{17}
+      \field{year}{2013}
+      \field{pages}{878\bibrangedash 892}
+      \range{pages}{15}
+    \endentry
     \entry{Niwa:2005fz}{article}{}
       \name{author}{7}{}{%
         {{hash=751960630b061e7bc5e29ae5c694eaed}{Niwa}{N\bibinitperiod}{Hitoshi}{H\bibinitperiod}{}{}{}{}}%
@@ -2143,18 +2319,33 @@
       \field{sortinit}{N}
       \field{sortinithash}{925374ca63e7594de7fafdb83e64d41d}
       \field{labelyear}{2005}
-      \field{labelmonth}{12}
       \field{datelabelsource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Cell}
-      \field{month}{12}
       \field{number}{5}
       \field{title}{{Interaction between Oct3/4 and Cdx2 Determines Trophectoderm Differentiation}}
       \field{volume}{123}
       \field{year}{2005}
       \field{pages}{13\bibrangedash 13}
       \range{pages}{1}
+    \endentry
+    \entry{Onbasoglu:2001um}{article}{}
+      \name{author}{2}{}{%
+        {{hash=abdc7c171395e73fa0fc04cda3538a88}{Onbaşoğlu}{O\bibinitperiod}{E}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=5c62afbea3f7d0064c83219b17c31a93}{Özdamar}{Ö\bibinitperiod}{L}{L\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{bc17078ea624b17afc9d9148ad44bb98}
+      \strng{fullhash}{bc17078ea624b17afc9d9148ad44bb98}
+      \field{sortinit}{O}
+      \field{sortinithash}{7803d2715d5e795e70382b084ab8d00e}
+      \field{labelyear}{2001}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Global Optimization}
+      \field{title}{{Parallel simulated annealing algorithms in global optimization}}
+      \field{year}{2001}
     \endentry
     \entry{Pedersen:2007ke}{article}{}
       \name{author}{3}{}{%
@@ -2371,6 +2562,28 @@
       \field{pages}{1389\bibrangedash 1391}
       \range{pages}{3}
     \endentry
+    \entry{Sisson:2007il}{article}{}
+      \name{author}{3}{}{%
+        {{hash=bbe914cf8fb18604a46da287bf5f295f}{Sisson}{S\bibinitperiod}{S\bibnamedelima A}{S\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=9f7fd6fb881501ca5ea978714193f2e1}{Fan}{F\bibinitperiod}{Y}{Y\bibinitperiod}{}{}{}{}}%
+        {{hash=2ad76f960a77a1383ba626911ac73fb3}{Tanaka}{T\bibinitperiod}{Mark\bibnamedelima M}{M\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{e139fa210901574cbfb9928dd93aa7b4}
+      \strng{fullhash}{e139fa210901574cbfb9928dd93aa7b4}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelyear}{2007}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the National Academy of Sciences of the United States of America}
+      \field{number}{6}
+      \field{title}{{Sequential Monte Carlo without likelihoods}}
+      \field{volume}{104}
+      \field{year}{2007}
+      \field{pages}{1760\bibrangedash 1765}
+      \range{pages}{6}
+    \endentry
     \entry{Stelling:2004wo}{article}{}
       \name{author}{5}{}{%
         {{hash=793936a767ec080b6115f8ca168e6eef}{Stelling}{S\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
@@ -2564,6 +2777,25 @@
       \field{pages}{309\bibrangedash 312}
       \range{pages}{4}
     \endentry
+    \entry{Toni:2010}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=199d095d48e61cde3962f614838314a2}{Toni}{T\bibinitperiod}{Tina}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {Imperial College London}%
+      }
+      \strng{namehash}{199d095d48e61cde3962f614838314a2}
+      \strng{fullhash}{199d095d48e61cde3962f614838314a2}
+      \field{sortinit}{T}
+      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
+      \field{labelyear}{2010}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Approximate Bayesian computation for parameter inference and model selection in systems biology}
+      \field{type}{phdthesis}
+      \field{year}{2010}
+    \endentry
     \entry{Toni:2011jy}{article}{}
       \name{author}{5}{}{%
         {{hash=199d095d48e61cde3962f614838314a2}{Toni}{T\bibinitperiod}{Tina}{T\bibinitperiod}{}{}{}{}}%
@@ -2614,6 +2846,52 @@
       \field{year}{2009}
       \field{pages}{187\bibrangedash 202}
       \range{pages}{16}
+    \endentry
+    \entry{Veening:2008da}{article}{}
+      \name{author}{3}{}{%
+        {{hash=05bd1517e113a66016a6b8a8da8e3db4}{Veening}{V\bibinitperiod}{Jan-Willem}{J\bibinithyphendelim W\bibinitperiod}{}{}{}{}}%
+        {{hash=4e37bea0b1a56f69407b44265a37acc9}{Smits}{S\bibinitperiod}{Wiep\bibnamedelima Klaas}{W\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+        {{hash=16b3e87b31049d4802475ac36caf43f4}{Kuipers}{K\bibinitperiod}{Oscar\bibnamedelima P}{O\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{4a4de78190bdfc108f979d913fb80ee2}
+      \strng{fullhash}{4a4de78190bdfc108f979d913fb80ee2}
+      \field{sortinit}{V}
+      \field{sortinithash}{d18f5ce25ce0b5ca7f924e3f6c04870e}
+      \field{labelyear}{2008}
+      \field{labelmonth}{01}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Microbiology}
+      \field{month}{01}
+      \field{title}{{Bistability, epigenetics, and bet-hedging in bacteria.}}
+      \field{volume}{62}
+      \field{year}{2008}
+      \field{pages}{193\bibrangedash 210}
+      \range{pages}{18}
+    \endentry
+    \entry{Vinson:2011hu}{article}{}
+      \name{author}{2}{}{%
+        {{hash=100abf4fc243f83367546100c588c080}{Vinson}{V\bibinitperiod}{V}{V\bibinitperiod}{}{}{}{}}%
+        {{hash=10293eeb07c596cbae5c5f2388fd1672}{Pennisi}{P\bibinitperiod}{E}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{267650d10c8f215437c5000d299a8e2e}
+      \strng{fullhash}{267650d10c8f215437c5000d299a8e2e}
+      \field{sortinit}{V}
+      \field{sortinithash}{d18f5ce25ce0b5ca7f924e3f6c04870e}
+      \field{labelyear}{2011}
+      \field{labelmonth}{09}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Science}
+      \field{month}{09}
+      \field{number}{6047}
+      \field{title}{{The Allure of Synthetic Biology}}
+      \field{volume}{333}
+      \field{year}{2011}
+      \field{pages}{1235\bibrangedash 1235}
+      \range{pages}{1}
     \endentry
     \entry{Walczak:2005ds}{article}{}
       \name{author}{3}{}{%
@@ -2776,6 +3054,24 @@
       \field{title}{{Stochastic Modelling for Systems Biology}}
       \field{year}{2006}
     \endentry
+    \entry{Wood:2002uo}{article}{}
+      \name{author}{3}{}{%
+        {{hash=78584edbeb003be920e238cd8390acab}{Wood}{W\bibinitperiod}{G\bibnamedelima R}{G\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+        {{hash=20fd511096425a297c18e9767fd6b4c5}{Alexander}{A\bibinitperiod}{DLJ}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=78061640be236f481080ff55f44ada6b}{Bulger}{B\bibinitperiod}{D\bibnamedelima W}{D\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{10f9a6fdd7351b274b4971d7b04ded16}
+      \strng{fullhash}{10f9a6fdd7351b274b4971d7b04ded16}
+      \field{sortinit}{W}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
+      \field{labelyear}{2002}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Global Optimization}
+      \field{title}{{Approximation of the distribution of convergence times for stochastic global optimisation}}
+      \field{year}{2002}
+    \endentry
     \entry{Woods:2016eh}{article}{}
       \name{author}{4}{}{%
         {{hash=fd155bca2a1292f7e454c19863250cdb}{Woods}{W\bibinitperiod}{Mae\bibnamedelima L}{M\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
@@ -2848,6 +3144,28 @@
       \field{pages}{142}
       \range{pages}{1}
     \endentry
+    \entry{Zheng:2010bp}{article}{}
+      \name{author}{2}{}{%
+        {{hash=86d25c421a370ffb1306d29771f066e4}{Zheng}{Z\bibinitperiod}{Yuting}{Y\bibinitperiod}{}{}{}{}}%
+        {{hash=470b3042cb0bbb423841799349373d36}{Sriram}{S\bibinitperiod}{Ganesh}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{c78832fd8297a71691de7d5232c873e2}
+      \strng{fullhash}{c78832fd8297a71691de7d5232c873e2}
+      \field{sortinit}{Z}
+      \field{sortinithash}{fdda4caaa6b5fa63e0c081dcb159543a}
+      \field{labelyear}{2010}
+      \field{labelmonth}{01}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Biomedicine and Biotechnology}
+      \field{month}{01}
+      \field{title}{{Mathematical modeling: bridging the gap between concept and realization in synthetic biology.}}
+      \field{volume}{2010}
+      \field{year}{2010}
+      \field{pages}{541609\bibrangedash 541609}
+      \range{pages}{1}
+    \endentry
     \entry{Zhou:2011hp}{article}{}
       \name{author}{5}{}{%
         {{hash=2e29157ddad4853ba8dd52d2347ce256}{Zhou}{Z\bibinitperiod}{Yanxiang}{Y\bibinitperiod}{}{}{}{}}%
@@ -2876,8 +3194,6 @@
     \endentry
   \endsortlist
   \missing{Loinger:2007vo}
-  \missing{XXX}
-  \missing{Sisson:wf}
   \missing{Woods:2015vu}
 \endrefsection
 \endinput

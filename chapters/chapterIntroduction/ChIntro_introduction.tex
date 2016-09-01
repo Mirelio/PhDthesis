@@ -8,25 +8,30 @@ Emphasis is put on the use of engineering principles such as modularity, standar
        
 Numerous applications of synthetic biology have emerged, from altering existing metabolisms to producing synthetic drugs ~\autocite{Holtz:2010bm} or creating new synthetic life forms ~\autocite{Agapakis:2009bt}. Despite the successes there is still a lack of predictive power due to the stochasticity and lack of complete knowledge of the cellular environment ~\autocite{Andrianantoandro:2006bia}.
 
-Synthetic biology is now entering an age where simple synthetic circuits have been built, such as toggle switches \autocite{Gardner:2000vha, Kramer:2004kq, Isaacs:2003hta, Ham:2008hh, Deans:2007cy, Friedland:2009ce}, oscillators~\autocite{Stricker:2008jqa, Fung:2005jd, Tigges:2009jx} and pulse generators~\autocite{Basu:2004gn}, but larger circuits have proven more difficult \autocite{XXX}. The leap from building low-level circuits to assembling them into complex networks has yet to be made successfully~\autocite{Lu:2009ez}, and predictable circuit behaviour remains challenging~\autocite{XXX}. Efforts to do so are plagued by intra-circuit crosstalk and incompatibility, as well as cellular noise, which can render synthetic networks non-functional \textit{in vivo} \autocite{XXX}. 
 
 
 \section{Quantitative modelling in synthetic biology}
 
-Importance of quantitative understanding of systems
+%Importance of quantitative understanding of systems
 
-mathematical modelling can aid the advancement of the field of synthetic biology
+%mathematical modelling can aid the advancement of the field of synthetic biology
 
-Synthetic biology draws from the multidisciplinary work of biologists, mathematicians, computer scientists, physicists, to name a few examples. The work from a lot of different fields comes together to attempt to engineer biology. The randomness of the biological environment, the plethora of unknowns in the engineered system as well as its surrounding environment and their interaction therein makes this task extremely challenging. The field has made great advancements in recent years(XXX), and mathematical modelling has played an integral part in that(XXX). 
+%Synthetic biology is now entering an age where simple synthetic circuits have been built, such as toggle switches \autocite{Gardner:2000vha, Kramer:2004kq, Isaacs:2003hta, Ham:2008hh, Deans:2007cy, Friedland:2009ce}, oscillators~\autocite{Stricker:2008jqa, Fung:2005jd, Tigges:2009jx} and pulse generators~\autocite{Basu:2004gn}, but larger circuits have proven more difficult \autocite{XXX}. The leap from building low-level circuits to assembling them into complex networks has yet to be made successfully~\autocite{Lu:2009ez}, and predictable circuit behaviour remains challenging~\autocite{XXX}. Efforts to do so are plagued by intra-circuit crosstalk and incompatibility, as well as cellular noise, which can render synthetic networks non-functional \textit{in vivo} \autocite{XXX}. 
+
+Synthetic biology draws from the multidisciplinary work of biologists, mathematicians, computer scientists, physicists and chemists~\autocite{Vinson:2011hu} in order to engineer biology. The randomness of the biological environment, the plethora of unknowns in the engineered system as well as its surrounding environment and their interaction therein makes this task extremely challenging. The field has made great advancements in recent years, and a collection of simple synthetic circuits have been built such as toggle switches \autocite{Gardner:2000vha, Kramer:2004kq, Isaacs:2003hta, Ham:2008hh, Deans:2007cy, Friedland:2009ce}, oscillators~\autocite{Stricker:2008jqa, Fung:2005jd, Tigges:2009jx} and pulse generators~\autocite{Basu:2004gn}.  
+
+These synthetic circuits have been built to imitate controllers from electrical engineering, like logic gates, switches, and oscillators, but the inherent complexity and noisiness of biology and the cellular environment make their predictability and application challenging. This has highlighted the importance of using more advanced computational tools to aid in the design, and ultimately the success, of novel synthetic biological devices. 
+
+This has led to systems and synthetic biology increasingly being merged together in an effort to understand the inherent complexity of engineering biological systems~\autocite{Gramelsberger:2013iu}. Quantitative modelling has been used to aid and improve the systems under consideration. Successful examples include that of~\textcite{Stricker:2008jqa} and~\textcite{Entus:wy}.~\textcite{Stricker:2008jqa}  designed a genetic oscillator and mathematical modelling of the system allowed them to identify the parameters of their system that accommodate oscillations.~\textcite{Entus:wy} used modelling to design and construct incoherent feed forward loops in \textit{E.coli}.   
+
+The design of genetic circuits has an additional challenge compared to other areas of genetic engineering. The components of the circuits have to be finely tuned to work together towards the desired behaviour of the system. This is in contrast to engineering a cell to produce a single protein where its production has to be maximized~\autocite{Nielsen:2013hs}. The need to orchestration a number of genetic components toward a common goal has made the integration of systems and synthetic biology all the more important.
 
 
-Statistical tools are being developed that can handle the complexity of synthetic biological models(XXX).
-
-The field of systems biology has aided in the advancement of the field(XXX). It aims to understand of the underlying principles that govern system dynamics. It aims to uncover the signal within the noise, or to understand the significance of noise itself in the function of the system(XXX)
+In this work I use quantitative modelling to understand a synthetic system. I look at the problem from two different perspectives, design and inference. I aim to improve on the design of a synthetic biological system and understand the principles dictating the new designs. I also aim to quantitatively study the current system and infer the underlying principles that govern its behaviour. 
 
 
-Here I use quantitative modelling to understand a synthetic system. I look at the problem from two different perspectives, design and inference. I aim to improve on the design of a synthetic biological system and understand the principles dictating the new designs. I also aim to quantitatively study the current system and infer the underlying principles that govern its behaviour.  
 
+%The field of systems biology has aided in the advancement of the field(XXX). It aims to understand of the underlying principles that govern system dynamics. It aims to uncover the signal within the noise, and to understand the significance of noise itself in the function of the system(XXX)
 
 \section{Thesis Outline}
 
