@@ -1418,6 +1418,28 @@
       \field{pages}{7714\bibrangedash 7719}
       \range{pages}{6}
     \endentry
+    \entry{Scipy}{misc}{}
+      \true{moreauthor}
+      \name{author}{3}{}{%
+        {{hash=4b3d26f886661aa723985bcfd835ba18}{Jones}{J\bibinitperiod}{Eric}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=84194a0ad9431322c2f58a085b3991f0}{Oliphant}{O\bibinitperiod}{Travis}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=3d6efaaa3d9682e20787eb06ff70a3d7}{Peterson}{P\bibinitperiod}{Pearu}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{6161d5ffac903d9c99af53f45c09a00f}
+      \strng{fullhash}{0fc4e01109f422119afc29f3251df541}
+      \field{sortinit}{J}
+      \field{sortinithash}{ec3950a647c092421b9fcca6d819504a}
+      \field{labelyear}{2001--}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{[Online; accessed 2016-09-02]}
+      \field{title}{{SciPy}: Open source scientific tools for {Python}}
+      \field{year}{2001--}
+      \verb{url}
+      \verb http://www.scipy.org/
+      \endverb
+    \endentry
     \entry{kaplan:1959}{book}{}
       \name{author}{2}{}{%
         {{hash=13ae20772129874ba3304d82222e958e}{Kaplan}{K\bibinitperiod}{Daniel}{D\bibinitperiod}{}{}{}{}}%
@@ -1918,6 +1940,25 @@
       \field{title}{{Least squares quantization in PCM}}
       \field{year}{1982}
     \endentry
+    \entry{Loinger:2007vma}{article}{}
+      \name{author}{4}{}{%
+        {{hash=9743d507aa3c838fda730dd9256253f1}{Loinger}{L\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=45f15f23972a5ae2150785186913eb12}{Lipshtat}{L\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=77404ca5ab85fd860cbf5e696447907c}{Balaban}{B\bibinitperiod}{N\bibnamedelima Q}{N\bibinitperiod\bibinitdelim Q\bibinitperiod}{}{}{}{}}%
+        {{hash=d16e55c3840023a5045e4bd75df3e437}{Biham}{B\bibinitperiod}{O}{O\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{1bb6960d63deeb19c312bff34c59ccf7}
+      \strng{fullhash}{a6e9ebe0c7d1f9e4d1160f9fcae64329}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelyear}{2007}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review E}
+      \field{title}{{Stochastic simulations of genetic switch systems}}
+      \field{year}{2007}
+    \endentry
     \entry{Loinger:2009vo}{article}{}
       \name{author}{2}{}{%
         {{hash=6f65e4467d5a66abe716ec425e3645fe}{Loinger}{L\bibinitperiod}{Adiel}{A\bibinitperiod}{}{}{}{}}%
@@ -2370,6 +2411,27 @@
       \field{year}{2007}
       \field{pages}{1318\bibrangedash 1344}
       \range{pages}{27}
+    \endentry
+    \entry{phys_biol_cell}{book}{}
+      \name{author}{4}{}{%
+        {{hash=db7f39acd822484a5ceba469cc4e3b88}{Phillips}{P\bibinitperiod}{Rob}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=714abb902c5eb54bb42fb1497ef6b137}{Kondev}{K\bibinitperiod}{Jane}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=c72345ecf2ea65b1a0753e577471eff4}{Theriot}{T\bibinitperiod}{Julie}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=fe183eadc0c2bc3d8f3ee88cdbc0323b}{Garcia}{G\bibinitperiod}{Hernan\bibnamedelima G.}{H\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Garland Science}%
+      }
+      \strng{namehash}{d832efb041ee3f673101a773a940ec4e}
+      \strng{fullhash}{3d9ccd3708f20ff567bfb80d480b1a9d}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelyear}{2013}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Physical biology of the cell}
+      \field{year}{2013}
     \endentry
     \entry{Prill:2005fq}{article}{}
       \name{author}{3}{}{%
@@ -3193,8 +3255,8 @@
       \range{pages}{3}
     \endentry
   \endsortlist
-  \missing{Loinger:2007vo}
   \missing{Woods:2015vu}
+  \missing{Loinger:2007vo}
 \endrefsection
 \endinput
 

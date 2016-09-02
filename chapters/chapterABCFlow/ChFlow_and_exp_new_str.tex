@@ -733,12 +733,25 @@ Here I aim to identify the inducer concentration at which the pKDL071 toggle swi
 The Hill function, given below, was used to obtain the characterization curves of the two inductions, ATc and IPTG. 
 
 \begin{align}
- 	F = Pmin + (Pmax - Pmin)\frac{\Big(\frac{[I]}{Kd}\Big)^n}{1+\Big(\frac{[I]}{Kd}\Big)^n},
+ 	F_{ac} = Pmin + (Pmax - Pmin)\frac{\Big(\frac{[I]}{Kd}\Big)^n}{1+\Big(\frac{[I]}{Kd}\Big)^n},\\
+ 	F_{rep} = Pmax + (Pmin - Pmax)\frac{\Big(1}{1+\Big(\frac{[I]}{Kd}\Big)^n}
 \end{align}
  
 where F is the median fluorescent unit and [I] is the concentration of inducer. Pmin and Pmax are the minimum and maximum fluorescence respectively, and Kd and n are the dissociation constant, and Hill coefficient. I fit the Hill function by using the nonlinear least squares estimation in the R statistical environment~\autocite{R:2008}. Initial values used for the Hill function parameters $P_{min}$, $P_{max}$, $K_d$, and $n$ are given in Table~\ref{tab:hill_initial}.
 
 
+
+%\begin{table}[htbp]
+%\centering
+%\caption{Initial values used for Hill function parameters}
+%\label{tab:hill_initial}
+%\begin{tabular}{@{}lllll@{}}
+%\toprule
+% & pmin & pmax & kd & n \\ \midrule
+%ATc induction & 18 & 1800 & 0.12 & 2 \\
+%IPTG induction & 0 & 800 & 0.00001 & 1.6 \\ \bottomrule
+%\end{tabular}
+%\end{table}
 
 \begin{table}[htbp]
 \centering
@@ -746,9 +759,13 @@ where F is the median fluorescent unit and [I] is the concentration of inducer. 
 \label{tab:hill_initial}
 \begin{tabular}{@{}lllll@{}}
 \toprule
- & pmin & pmax & kd & n \\ \midrule
-ATc induction & 18 & 1800 & 0.12 & 2 \\
-IPTG induction & 0 & 800 & 0.00001 & 1.6 \\ \bottomrule
+\multirow{2}{*}{Parameters} & \multicolumn{2}{l}{ATc induction} & \multicolumn{2}{l}{IPTG induction} \\ \cmidrule(l){2-5} 
+ & GFP & mCherry & GFP & mCherry \\ \midrule
+pmin & 18.3 & 330.45 & 139.69 & 7.3 \\
+pmax & 1541.3 & 974.46 & 1392.822 & 687.3 \\
+kd & 0.097 & 0.09917 & 0.000019 & 0.00012\\
+n & 56.7 & 135.006 & 2.59 & 0.98\\ 
+fold change & 84.1 & 2.94 & 9.97 & 94.15 \\ \bottomrule
 \end{tabular}
 \end{table}
 
@@ -774,13 +791,6 @@ For the case of the \acrshort{atc} induction we observe a sharp switch between t
 During IPTG induction we observe an increase in mCherry fluorescence, as seen in Figure~\ref{fig:switch_concentrations_model}. The parameters obtained via the nonlinear least squares estimation are $P_{min} = 7.3$, $P_{max}=687.3$, $K_d=0.00012$, and $n=0.98$. There is a 94.5 fold increase in mCherry fluorescence.  We also observe a decrease in GFP fluorescence with increasing IPTG concentrations. 
 
 Figures~\ref{fig:switch_concentrations_model_atc} and~\ref{fig:switch_concentrations_model} demonstrate that the genetic toggle switch present on the pKDL071 plasmid is capable of behaving like a switch. By adding the appropriate inducers at increasing concentrations I observed the switch flipping between its two states, GFP high/mCherry low and GFP low/mCherry high. I observed a bigger fold increase in fluorescence in mCherry during IPTG inductions compared to GFP during ATc inductions. Both inductions resulted in a large overall change in fluorescence for the two fluorescent proteins GFP and mCherry. 
-
-
-\clearpage
-
-
-
-
 
 \subsubsection{Toggle switch time course assay}
 \label{sec:ts_time}

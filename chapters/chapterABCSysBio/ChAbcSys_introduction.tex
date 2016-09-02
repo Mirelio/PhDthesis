@@ -17,26 +17,41 @@ When faced with a set of competing designs for a given genetic circuit, one is l
 
 The first computational approach for the tuning of robust synthetic networks was that of~\textcite{Batt:2007jl} where they examined the problem of finding a subset of the parameter set for which a given property was satisfied for all the parameters. \textcite{Chen:2009ea} used the fuzzy  dynamic game method to solve the minimax regulation design problem of synthetic genetic networks. In that method the worst case effect of all disturbances is minimised for a given network. An evolutionary algorithm has also been used to solve the robust design problem by evolving the parameters of the system in order to make it more robust to cellular disturbances by~\textcite{Wu:2011bq}. The added value of the methodology presented here is that the network structure in addition to the network parameters are adjusted to select a network that can robustly create the desired behaviour.	
 
-\subsection{The bistable genetic toggle switch}
+\section{The bistable genetic toggle switch}
 %the following is copy paste from SF:
-\textcite{Gardner:2000vha} constructed the first synthetic genetic toggle switch. Their model consisted of two mutually repressing transcription factors, and is defined by the following \acrshort{ode}s:
+The synthetic genetic toggle switch consists of two mutually repressing transcription factors. It was first developed by~\textcite{Gardner:2000vha}, and consists of the following ODEs:
 
-\begin{align}\label{eq:gards}
-\frac{du}{dt} &= \frac{a_1  l_1}{1 + l_1 + k_1  v^{\beta}} - u \\\label{eq:gards2}
+\begin{align}\label{eq:gards1}
+\frac{du}{dt} &= \frac{a_1}{1 +  v^{\beta}} - u \\ \label{eq:gards2}
+\frac{dv}{dt} &= \frac{a_2}{1 +  u^{\gamma }} - v,
+\end{align}
+
+\noindent where \textit{u} is the concentration of repressor 1, \textit{v} the concentration of repressor 2, $a_1$ and $a_2$ denote the effective rates of synthesis of repressors 1 and 2 respectively, β is the cooperativity of repression of promoter 1 and γ of repressor 2. This model is capable of bistable behaviour when $a_1$ and $a_2$ are balanced and when β, γ are > 1~\autocite{Gardner:2000vha}. This model is derived from the biochemical rate equations of gene expression for the two promoters in the system. Using the Shea-Ackers formalism (as described in Section~\ref{sec:shea-ackers}), these are shown in Figure~\ref{fig:sa-GCS}.
+
+\begin{figure*}[tb]
+\centerfloat
+\includegraphics[scale=0.7]{../../chapters/chapterABCSysBio/images/shea-ackers-cs.png}
+\caption[Simple toggle switch model using the Shea-Ackers formalism]{\label{fig:sa-GCS}Simple toggle switch model using the Shea-Ackers formalism}
+\end{figure*}
+
+
+The model can thus also be described by the following \acrshort{ode}s:
+
+\begin{align}\label{eq:gards_sa}
+\frac{du}{dt} &= \frac{a_1  l_1}{1 + l_1 + k_1  v^{\beta}} - u \\\label{eq:gards2_sa}
 \frac{dv}{dt} &= \frac{a_2  l_2}{1 + l_2 + k_2  u^{\gamma }} - v,
 \end{align}
 
-
-\noindent where \textit{u} is the concentration of repressor 1, \textit{v} the concentration of repressor 2, $a_1$ and $a_2$ denote the effective rates of synthesis of repressors 1 and 2 respectively, β is the cooperativity of repression of promoter 1 and γ of repressor 2. This model is capable of bistable behaviour when $a_1$ and $a_2$ are balanced and when β, γ are > 1~\autocite{Gardner:2000vha}. 
+The model shown in Equations~\ref{eq:gards1}-\ref{eq:gards2} is the dimensionless version of the model shown in Equations~\ref{eq:gards_sa}-\ref{eq:gards2_sa}. This is constructed by measuring $a_1$ and $a_2$ in units of $k_{1}^{\frac{-1}{β}}$ and $k_{2}^{\frac{-1}{γ}}$ respectively~\autocite{phys_biol_cell}. In the following section I will use the Shea-Ackers version of the model to show that it is also capable of bistable behaviour. 
 
 \subsection{Phase space and bifurcation analysis}
 \label{sec:bifurc}
 
 
-First, I study the model given in Equations~\ref{eq:gards}-~\ref{eq:gards2} by conducting a bifurcation analysis in order to confirm that it is capable of bistable behaviour. A bifurcation analysis is used to determine the properties of a system in parameter space~\autocite{Alon:2007}. Here I used the PyDSTool~\autocite{Clewley:2012kj}, a python package used for the analysis of dynamical systems. 
+First, I study the model given in Equations~\ref{eq:gards_sa}-\ref{eq:gards2_sa} by conducting a bifurcation analysis in order to confirm that it is capable of bistable behaviour. A bifurcation analysis is used to determine the properties of a system in parameter space~\autocite{Alon:2007}. Here I used the PyDSTool~\autocite{Clewley:2012kj}, a python package used for the analysis of dynamical systems. 
 
 
-The parameters chosen here for the bifurcation analysis are within the range suggested by ~\textcite{Gardner:2000vha}.  $a_1$ and $a_2$ are set to 10, and β, γ set to 2. A vector plot shows that the system has two steady states as shown in Figure~\ref{fig:Gard_CS}B. Both states were found to be stable by examining the eigenvalues of the system at each steady state using Mathematica~\autocite{mathematica:2016}.
+The parameters chosen here for the bifurcation analysis are within the range suggested by~\textcite{Gardner:2000vha}.  $a_1$ and $a_2$ are set to 10, and β, γ set to 2. A vector plot shows that the system has two steady states as shown in Figure~\ref{fig:Gard_CS}B. Both states were found to be stable by examining the eigenvalues of the system at each steady state using Mathematica~\autocite{mathematica:2016}.
 
 
 I further study the system by conducting a bifurcation analysis, where all parameters remain constant to the values shown above, and only one parameter ($a_1$) is varied. The bifurcation analysis shows that by varying the parameter for the effective rate of synthesis of repressor 1 while all other parameters remain constant, the system is bistable when 5 \ge{} $a_1$ \le{} 31.
@@ -50,26 +65,92 @@ I further study the system by conducting a bifurcation analysis, where all param
 \end{figure*}
 \clearpage
 
+
+
+\subsection{The quasi steady state approximation and the genetic toggle switch}
+\label{sec:qssa}
+In order for a system to be able to be studied mathematically, a number of assumptions have to be made. The system under consideration has to be reduced to very few equations and parameters in order to make the system solvable. This requires assumptions to be made about the system that cannot always be justified, such as the quasi-steady state approximation (QSSA). The QSSA assumes that the binding/unbinding processes are much faster than any other process~\autocite{Loinger:2007vma} thus the bound intermediate is assumed to always be in steady state. The QSSA assumption is met \textit{in vitro} but often does not hold \textit{in vivo}. Its misuse can lead to large errors and incorrectly estimated parameters~\autocite{Pedersen:2007ke}.
+
+Equations~\ref{eq:gards1}-\ref{eq:gards2} of the genetic toggle switch can be derived from the full model by using the \acrfull{qssa}. In this Section I will discuss how Equations~\ref{eq:gards1}-\ref{eq:gards2} can be derived from the full model constructed under the mass action formalism by using the \acrshort{qssa}. Consider the set of reactions given in Table~\ref{tab:gard-qssa} representing the genetic toggle switch.
+
+\begin{table}[h]
+\centering
+\caption{Toggle switch model reactions under mass action kinetics}
+\label{tab:gard-qssa}
+\begin{tabular}{@{}ll@{}}
+\toprule
+Equation                                                                             & Description                      \\ \midrule
+${gu}\stackrel{{a_1}}{\longrightarrow}{gv} + {u}$                                             & \multirow{2}{*}{gene expression} \\
+${gv}\stackrel{{a_2}}{\longrightarrow}{gu} + {v}$                                             &                                  \\
+$β {u} \xrightleftharpoons[Kd_u]{Km_u}{u_β}$        & \multirow{2}{*}{dimerization}    \\
+$γ {v} + {v} \xrightleftharpoons[Kd_v]{Km_v} {v_γ}$       &                                  \\
+${gu} + {v_γ} \xrightleftharpoons[Kf_u]{Kr_u}{v_γ\bullet gu}$    & \multirow{2}{*}{repression}      \\
+${gv} + {u_β} \xrightleftharpoons[Kf_v]{Kr_v}{u_β\bullet gv}$    &                                  \\
+${u} \stackrel{{D_u}}{\longrightarrow}{\oslash}$                     & \multirow{2}{*}{degradation}     \\
+${v} \stackrel{{D_v}}{\longrightarrow}{\oslash}$                     &                                  \\ \cmidrule(r){1-2}
+\end{tabular}
+\end{table}
+
+\noindent Using mass action kinetics, this set of reactions gives us the following ODEs:
+
+\begin{align}\label{eq:gard_ma_ode}
+	\frac{du}{dt} &= a_{1}gu - Kd_{u}u^β + K_{m}u_β - D_u u\\
+	\frac{dv}{dt} &= a_{2}gv - Kd_{v}v^γ + K_{m}v_γ - D_v v\\
+	\frac{du_β}{dt} &= Kd_{u}u^β - Km_{u}u_β - Kf_{v}gv u_β\\
+	\frac{dv_γ}{dt} &= Kd_{v}v^γ - Km_{v}v_γ - Kf_{u}gu v_γ\\
+	\frac{dgu\bullet v_γ}{dt} &= Kf_{u}gv v_{γ} - Kr_{u}gu\bullet v_γ\\
+	\frac{dgv\bullet u_β}{dt} &= Kf_{v}gu u_{β} - Kr_{v}gv\bullet u_β\\	
+\end{align}
+
+
+The principal quasi steady state assumption being made is that the rate of binding and unbinding of the repressor to the promoter happens very fast. We assume that it happens so much faster than any other reaction in the system that we can assume that $\frac{dgu\bullet v_γ}{dt}$ and $\frac{dgv\bullet u_β}{dt}$ are constant, i.e. in equilibrium. This assumption is also known as the separation of timescales in transcriptional regulation. In order for $\frac{dgu\bullet v_γ}{dt}$ and $\frac{dgv\bullet u_β}{dt}$ to be in equilibrium, we must assume that
+
+\begin{align}
+	\frac{dgu\bullet v_γ}{dt} &= Kf_{v}gv v_{γ} - Kr_{u}gu\bullet v_γ = 0\\
+	\frac{dgv\bullet u_β}{dt} &= Kf_{u}gu u_{β} - Kr_{v}gv\bullet u_β = 0,
+\end{align}
+
+\noindent therefore,
+
+\begin{align}
+	Kf_{v}gv v_{γ} - Kr_{u}gu\bullet  v_γ &= 0\\
+	Kf_{u}gu u_{β} - Kr_{v}gv\bullet  u_β &= 0,
+\end{align}
+
+\noindent Now we have a set of algebraic equations rather than differential equations. Solving for $\frac{dgu\bullet v_γ}{dt}$ and $\frac{dgv\bullet u_β}{dt}$  respectively we get:
+
+\begin{align}
+	gu\bullet  v_γ &= \frac{Kf_{v}gv v_{γ}}{Kr_{v}} \\
+	gv\bullet  u_β &= \frac{Kf_{u}gu u_{β}}{Kr_{u}} 
+\end{align}
+
+\noindent This can now be substituted into set of Equations~\ref{eq:gard_ma_ode}. The second assumption that is made in this system is that the rate of formation and dissociation of the polymerised transcription factor is in steady state. This allows us to solve the system for $u$ in a similar way as shown above and substitute it in Equations~\ref{eq:gard_ma_ode}.
+
 \section{Designing a simple synthetic switch}
 \label{sec:design_sim}
 %This bit is from SF chapter as well
 
-The model used in Section~\ref{sec:bifurc} could be solved analytically and I demonstrated that it is bistable for the parameters given. Nevertheless, for a switch to be useful in synthetic biological applications, it must be capable of behaving like a switch over a range of parameter values, as these fluctuate within the cellular environment. Therefore, in this section I study the parameter ranges that can give rise to a bistable switch. This indicates whether the bistability of the switch models is robust to small parameter fluctuations.
+It was demonstrated that the model used in Section~\ref{sec:bifurc} is bistable for the parameters given. Nevertheless, for a switch to be useful in synthetic biological applications, it must be capable of behaving like a switch over a range of parameter values rather than just point values, as these fluctuate within the cellular environment. Therefore, in this section I study the parameter ranges that can give rise to a bistable switch. This indicates whether the bistability of the switch models is robust to small parameter fluctuations.
 
-In order to study the switch system in a more realistic way, I developed an extension to the ~\textcite{Gardner:2000vha} switch. This new set of switches does not use the \acrfull{qssa} that is often used in modelling the toggle switch. Using mass action, this changes the two-equation system used in Equations~\ref{eq:gards} into a system of 18 equations. The equations describing the system are shown below and illustrated in Figure~\ref{fig:Gard_MA}. The \acrshort{ode}s are given in Appendix(XXX). The system consists of two genes, gA and gB. The products of the genes homodimerise and mutually repress each other. A symmetric model, where the parameters for equivalent reactions are set to be the same, was used for simplicity.
 
-\begin{figure*}[tbp]
+\subsection{Development of the mass action model for the genetic toggle switch}
+
+In order to study the switch system in a more realistic way, I developed an extension to the ~\textcite{Gardner:2000vha} switch. This new set of switches does not use the \acrfull{qssa}, as described in Section~\ref{sec:qssa}. Avoiding the use of the \acrshort{qssa} the model becomes more flexible, and does not assume that the formation of the polymerized transciption factors is in steady state or that the association and dissociation of the transcription factors to the promoter is in steady state.  
+
+Using mass action, this changes the two-equation system used in Equations~\ref{eq:gards1}-\ref{eq:gards2} into a system of 18 equations. The equations describing the system are shown below and illustrated in Figure~\ref{fig:Gard_MA}. The \acrshort{ode}s are given in Appendix~\ref{ap:ODEs}. The system consists of two genes, gA and gB. The products of the genes homodimerise and mutually repress each other. A symmetric model, where the parameters for equivalent reactions are set to be the same, was used for simplicity.
+
+\begin{figure*}[tb]
 	\begin{center}
-\includegraphics[scale=0.7]{../../chapters/chapterABCSysBio/images/ma-switch-diagram.png}
+\includegraphics[scale=0.6]{../../chapters/chapterABCSysBio/images/ma-switch-diagram.png}
 \caption[Toggle switch model used in the parameter scan]{\label{fig:Gard_MA}An illustration of the model used in the parameter scan. }
 \end{center}
 \end{figure*}
 
 
 
-\begin{table}[t]
+\begin{table}[tb]
 \centering
-\caption{Simple mass action switch}
+\caption{Simple mass action switch reactions}
 \label{tab:simp-ma-equ}
 \begin{tabular}{@{}ll@{}}
 \toprule
@@ -111,38 +192,47 @@ $\textrm{B} \stackrel{\textrm{deg}}{\longrightarrow}\textrm{\O}$                
 %%      \textrm{S} \stackrel{\textrm{deg}}{\longrightarrow}\textrm{\O}\\
 %\end{array}
 %$$
-
+\clearpage
 \subsection{Parameter scan for model stability}
 \label{sec:paramscan}
 
-In order to determine the range of parameter values for which the above model is bistable, I developed a parameter scanning algorithm. The algorithm is outlined in Algorithm~\ref{alg:param_scan} below. This method involves the scan of parameter values as well as initial conditions for AA and BB. Parameter values are sampled randomly from a uniform distribution. Here, each set of samples will be referred to as a particle. For each particle, latin hypercube sampling is used to sample initial conditions~\autocite{MCKAY:2000vt}. The uniform priors of the two species in consideration represent a rectangle space, which is subdivided into equal parts. Then a random sample is drawn from each sub-part, as illustrated in Figure~\ref{fig:lhs}. This is used to ensure that the whole space is sampled uniformly. Latin hypercube sampling is done in two dimensions, in order to sample initial conditions for the two dimers, AA and BB. 
+The bifurcation analysis carried out in Section~\ref{sec:bifurc} can give us the conditions for bistability of a model with respect to one parameter being varied while all the others remain constant. Here I want to determine the range of parameter values for which the above model is bistable without assuming a specific point value for any parameter. Therefore I developed a parameter scanning algorithm, that varies all the parameters in the model over a given range. The algorithm is outlined in Algorithm~\ref{alg:param_scan} below. This method involves the scan of parameter values as well as initial conditions for AA and BB. Parameter values are sampled randomly from a uniform distribution. Here, each set of samples will be referred to as a particle. For each particle, latin hypercube sampling is used to sample initial conditions~\autocite{MCKAY:2000vt}. The uniform priors of the two species in consideration represent a rectangular space, which is subdivided into equal parts. Then a random sample is drawn from each sub-part, as illustrated in Figure~\ref{fig:lhs}. This is used to ensure that the whole space is sampled uniformly. Latin hypercube sampling is done in two dimensions, in order to sample initial conditions for the two dimers, AA and BB. The initial conditions for all other species remain constant, $gA = 1$ and  $gB = 1$ while all other species are equal to zero. 
 
 \begin{algorithm}[htbp]
 \caption{Parameter scan algorithm}
 \label{alg:param_scan}
  \begin{algorithmic}[1]
     \Statex
-	\State Select multiple sets of parameter values from a random uniform distribution between 0 and 10.
+	\State Select 100 sets of parameter values from a random uniform distribution between 0 and 10.
 	\For{each set of parameter values}:
-	\State Select multiple sets of initial conditions for the two dimers via latin hypercube sampling
+		
+		\Let{step}{1}
+		\For{i in range(0, 10)}
+			\For{j in range(0, 10)}
+				\State A2 sample = random sample from U(i, i + step) 
+				\State B2 sample = random sample from U(j, j + step) 
+			\EndFor
+		\EndFor
 	\For{ each set of initial conditions}
-	\State Integrate ODEs of the model
-	\State Solve system to steady state
+	\State Integrate ODEs of the model to t = 100 mins
+	\State Let s = \{s1, s2, ..., s8\}, the values of al species at last time point
+	\State Find roots of system using s as starting estimates 
 	\EndFor
+	\State Plot phase plot of roots for A2, B2
 	\EndFor
   \end{algorithmic} 
 \end{algorithm}
 
-\begin{figure*}[tbp]
+\begin{figure*}[ht]
 \begin{center}
 \includegraphics[scale=0.5]{../../chapters/chapterABCSysBio/images/LHS.png}
 \caption[Latin Hypercube sampling]{\label{fig:lhs}Latin hypercube sampling ensures that the whole space is sampled evenly. For the two species concerned, A and B, we assume uniform distributions, shown in grey. The joint space of the two distributions is divided into smaller equal parts and a random sample is drawn from within each subspace.  }
 \end{center}
 \end{figure*}
-\clearpage
-After each particle was solved to steady state, the value of each dimer at the last timepoint was taken, for all initial conditions sampled. These were used to make a phase diagram for each particle, which consists of the steady state value of one dimer plotted against the other. The parameter scan uncovered the presence of bistable and monostable systems given a different set of parameter values. An example of the phase plots for each of the three types of stabilities found during the scan are shown in Figure~\ref{fig:stab exampl}.
 
-\begin{figure*}[tb]
+The roots of each particle for each initial condition were found using the Python package SciPy~\autocite{Scipy}. A phase plot was made for each particle, which consists of the last time point value of one dimer plotted against the other. The parameter scan uncovered the presence of bistable and monostable systems given a different set of parameter values. An example of the phase plots for each of the three types of stabilities found during the scan are shown in Figure~\ref{fig:stab exampl}.
+
+\begin{figure*}[htbp]
 \centering
 \includegraphics[width=0.7\textwidth]{../../chapters/chapterABCSysBio/images/phase_plots_param_scan.png}
 \caption[Phase space examples of a monostable and a bistable switch]{\label{fig:stab exampl}An example for each type of switch found during the parameter scan. Each graph represents the steady state values of one dimer plotted against8the other, from one parameter set and 100 initial conditions.}
@@ -163,7 +253,6 @@ A total of 1000 parameter sets were sampled. Out of these, 56\% were monostable,
 
 From Figure~\ref{fig:scan ode param hist} it can be seen that the parameter for gene expression (ge) tends to be relatively high when bistability arises. The parameter for repression (rep) tends to be high whereas the parameter for its reverse reaction (rep\_r) tends to be low. From this analysis I showed that the toggle switch is capable of bistable behaviour for a range of parameter values. 
 
-\clearpage
 \subsection{Toggle switch parameter inference}
 \label{sec:param_inf}
 In this section, I extend the analysis carried out in Section~\ref{sec:paramscan} to study the problem of how to rationally design a synthetic biological system to perform a behaviour of choice.  In order to address this question I use a Bayesian approach, known as \acrlong{abc} and described in Section(XXX), implemented in a software package, ABC-SysBio~\autocite{Liepe:2010eg}. 
@@ -172,7 +261,7 @@ This approach is capable of approximating the posterior distribution that gives 
 
 Here I use ABC-SysBio to fit a model to the design objectives of a switch-like behaviour. I extend the model used in Section~\ref{sec:paramscan} by adding two inducers to the system, S and R. S removes the A homodimer (AA) from the system by binding to it thus removing the repression on gene B. R removes BB from the system with the same mechanism. These inducers represent the stimuli that will turn the switch ON and OFF in a biological setting. The following equations are added to the existing set of equations for the mass action switch: 
 
-\begin{table}[b]
+\begin{table}[htbp]
 \centering
 \caption{Toggle switch inducer equations}
 \label{tab:toglle-inducer-equs}
@@ -201,11 +290,13 @@ The range of parameter values shown to produce a bistable switch in Section~\ref
 
 \begin{table}[t]
 \centering
-\caption{The prior distributions used for the standard toggle switch parameter inference. The values indicate the lower and upper limits of a uniform distribution.}
+\caption{The prior distributions used for the standard toggle switch parameter inference. The values indicate the lower and upper limits (inclusive) of a uniform distribution.}
 \label{tab:param_inf_params}
+\centerfloat
 \begin{tabular}{ccccccccc}
 \toprule
- \textbf{ge}     & \textbf{rep}     & \textbf{rep\_r}     & \textbf{dim}    & \textbf{dim\_r}     & \textbf{deg}  & \textbf{rep dim}    & \textbf{rep\_dim\_r} & \textbf{deg\_sr}    \\
+ \textbf{ge}     & \textbf{rep}     & \textbf{rep\_r}     & \textbf{dim}    & \textbf{dim\_r}     & \textbf{deg}  & \textbf{rep\_dim}    & \textbf{rep\_dim\_r} & \textbf{deg\_sr}    \\
+ (min\textsuperscript{-1})&(μM min\textsuperscript{-1})&(min\textsuperscript{-1})&(μM min\textsuperscript{-1})&(min\textsuperscript{-1})&(min\textsuperscript{-1})&(μM min\textsuperscript{-1})&(min\textsuperscript{-1})&(min\textsuperscript{-1})\\
 6-9     & 4-10    & 1-4       & 4-10   & 2-7       & 2-5  & 0.05-0.1   & 0.01-0.05     & 0.01-0.05        \\ \bottomrule
 \end{tabular}
 \end{table}
@@ -218,7 +309,7 @@ The following were defined as the design specifications for a bistable genetic t
 \begin{figure*}[htbp]
 	\begin{center}
 \includegraphics[scale=0.7]{../../chapters/chapterABCSysBio/images/behaviour.png}
-\caption[Design specification for ABC parameter inference]{\label{fig:abc_behav}: Design specification for ABC parameter inference. The input to the system consists of an event turning on the stimulus (S) at t=20 and another turning on the repressor (R) at t=70. The output specification is the response to the switch to these stimuli.}
+\caption[Design specification for ABC parameter inference]{\label{fig:abc_behav}Design specification for ABC parameter inference. The input to the system consists of an event turning on the stimulus (S) at t=20 and another turning on the repressor (R) at t=70. The output specification is the response to the switch to these stimuli.}
 \end{center}
 \end{figure*}
 
@@ -236,7 +327,7 @@ where $i$ represents the timepoints, $s_i$ the simulation result at  each timepo
 
 \subsection{Results}
 
-The results of the parameter inference of the toggle switch are shown in Figure~\ref{fig:stand_abc_timeseries}. The model was shown to successfully behave like a switch within the parameter range used here. The resulting timecourse of the last population matches the design specifications. It can be seen from the posterior distribution that gene expression rate (ge) must be high relative to the prior. Repression (rep) and degradation must both be low and the rate of dimerisation (dim) must be high relative to the prior. The posterior constitutes the specifications that can be used when building a synthetic switch in the lab, as the appropriate components can be tweaked for a successful circuit. More generally, the posterior distribution shows that the parameter space that can give rise to this behaviour is limited. A very small portion of the prior is capable of producing the desired design specifications. In the next section I will examine wether the addition of feedback loops can increase the volume of the posterior that produces the required behaviour.
+The results of the parameter inference of the toggle switch are shown in Figure~\ref{fig:stand_abc_timeseries}. The model was shown to successfully behave like a switch within the parameter range used here. The resulting timecourse of the last population matches the design specifications. It can be seen from the posterior distribution that gene expression rate (ge) must be high relative to the prior. Repression (rep) and degradation must both be low and the rate of dimerisation (dim) must be high relative to the prior. The posterior constitutes the specifications that can be used when building a synthetic switch in the lab, as the appropriate components can be tweaked for a successful circuit. More generally, the posterior distribution shows that the parameter space that can give rise to this behaviour is limited. A very small portion of the prior is capable of producing the desired design specifications. In the next section I will examine whether the addition of feedback loops can increase the robustness of this behaviour.
 
 
 \begin{figure}[htbp]
@@ -260,7 +351,16 @@ As was shown in Section~\ref{sec:design_sim}, the posterior distribution of the 
 
 Both positive and negative feedback loops were considered. Therefore 7 models were examined for their capability to behave like a switch. The simple toggle switch, switches with positive autoregulation in either or both nodes and switches with negative autoregulation in either or both nodes. The models considered are illustrated in Figure~\ref{fig:toggle_switch_designs}. 
 
- In order to study each model analytically I built extensions to the ~\autocite{Gardner:2000vha} toggle switch in order to incorporate positive and negative feedback to the system.  The models for the double autoregulation models are shown below. For the single autoregulation models, the unnecessary autoregulation term is set to 0.
+ In order to study each model mathematically I built extensions to the ~\autocite{Gardner:2000vha} toggle switch in order to incorporate positive and negative feedback to the system. These were constructed using the Shea-Ackers formalism, as described in Section~\ref{sec:shea-ackers}, as shown in Figure~\ref{fig:sa-autoreg}. The models for the double autoregulation models are shown below. For the single autoregulation models, the unnecessary autoregulation term is set to 0.
+
+
+\begin{figure*}[tb]
+\centerfloat
+\includegraphics[scale=0.7]{../../chapters/chapterABCSysBio/images/shea-ackers_autoreg.png}
+\caption[Toggle switch models with autoregulation using the Shea-Ackers formalism]{\label{fig:sa-autoreg}Toggle switch models with autoregulation using the Shea-Ackers formalism}
+\end{figure*}
+
+
 
 Double negative autoregulation: 
 \begin{align}\label{eq:gards_neg}
@@ -274,13 +374,13 @@ Double positive autoregulation:
 \frac{dv}{dt} &= \frac{a_2  (l_2 + ka_{2}  v^{2}) }{1+l_2 + k_2  u^{\gamma} + ka_{2}  v^{2}} - v,
 \end{align}
 
-where $k$ represents the effective binding of the transcription factor to its own promoter and γ represents the polymerisation of the bound transcription factor. 
+\noindent where $k$ represents the effective binding of the transcription factor to its own promoter and γ represents the polymerisation of the bound transcription factor. 
 
 
-\begin{figure*}[htbp]
+\begin{figure*}[tb]
 	\begin{center}
 \includegraphics[width=\textwidth]{../../chapters/chapterABCSysBio/images/toggle_switch_designs.png}
-\caption[Model designs considered for model selection.]{\label{fig:toggle_switch_designs}: Toggle switch designs considered for model selection. 7 models were used: The simple toggle switch (A), the switches with positive autoregulation on either or both nodes (B, C, D) and the switches with negative autoregulation on either or both nodes (E, F, G)}
+\caption[Model designs considered for model selection.]{\label{fig:toggle_switch_designs}Toggle switch designs considered for model selection. 7 models were used: The simple toggle switch (A), the switches with positive autoregulation on either or both nodes (B, C, D) and the switches with negative autoregulation on either or both nodes (E, F, G)}
 \end{center}
 \end{figure*}
 \clearpage
@@ -295,15 +395,15 @@ I used the PyDSTool~\autocite{Clewley:2012kj} in order to determine whether each
 \begin{figure*}[htbp]
 	\begin{center}
 \includegraphics[scale=0.6]{../../chapters/chapterABCSysBio/images/gard_pos.pdf}
-\caption[Phase plane analysis of the switch with positive autoregulation]{\label{fig:Gard_pos}: Both single and positive autoregulation is consistent with bistable behaviour.  (A) Single positive autoregulation. Two stable steady states are found in the single positive autoregilation model at (u, v) = (0.069, 11.94) and (u, v) = (9.85,0.122). (B) Double positive autoregulation. The model with double positive autoregulation has two stable steady states at (u, v)=(0.122, 9.85) and (u,v)=(11.94, 0.069).}
+\caption[Phase plane analysis of the switch with positive autoregulation]{\label{fig:Gard_pos}Both single and positive autoregulation is consistent with bistable behaviour.  (A) Single positive autoregulation. Two stable steady states are found in the single positive autoregilation model at (u, v) = (0.069, 11.94) and (u, v) = (9.85,0.122). (B) Double positive autoregulation. The model with double positive autoregulation has two stable steady states at (u, v)=(0.122, 9.85) and (u,v)=(11.94, 0.069).}
 \end{center}
 \end{figure*}
 
 % A bifurcation analysis, when all other parameters are kept constant and only $k$ varied, shows that  even small values of $k$ destroy bistability. This is shown in Figure~\ref{fig:Gard_neg}C.
 
-On the other hand, negative autoregulation was not consistent with bistable behaviour for the parameter values used here. The vector plot of the switch with single negative autoregulation show that there is one stable steady state when the levels of the unregulated protein are high and the levels of the negatively regulated protein low. The vector plot for the switch with double negative autoregulation shows one stable steady state when the levels of both proteins are low. 
+On the other hand, negative autoregulation was not consistent with bistable behaviour for the parameter values used here. The vector plot of the switch with single negative autoregulation show that there is one stable steady state when the levels of the unregulated protein are high and the levels of the negatively regulated protein low. The vector plot for the switch with double negative autoregulation shows one stable steady state when the levels of both proteins are low. A bifurcation plot of the switch with single positive autoregulation highlights this result; the switch is bistable for only very small amounts of $ka1$, the parameter for negative autoregulation. This is shown in Figure~\ref{fig:Gard_neg}.
 
-Negative autoregulation occurs when the protein binds to its own promoter and represses production. This means that the protein levels rise to a lower level than what would be expected for an unregulated system~\autocite{Alon:2007}. This means that, in the case of the double negative autoregulation, the concentration levels of either protein are not sufficient to dominate over the other and create bistability. In the case of the single negative autoregulation, only the protein without autoregulation is able to reach sufficient levels to dominate the system, and thus the only steady state of the system is when the unregulated protein is high.
+Negative autoregulation occurs when the protein binds to its own promoter and represses production. Therefore the protein levels rise to a lower level than what would be expected for an unregulated system~\autocite{Alon:2007}. In the case of the double negative autoregulation, the concentration levels of either protein would therefore not be sufficient to dominate over the other and create bistability. In the case of the single negative autoregulation, only the protein without autoregulation is able to reach sufficient levels to dominate the system, and thus the only steady state of the system is when the unregulated protein is high.
 
 
 % (C) Bifurcation diagram of the single negative autoregulation switch, where all parameters remain constant and only $ku$ varied.
@@ -398,11 +498,12 @@ Given the models shown above and the parameter priors shown in Table~\ref{tab:mo
 \centerfloat
 \caption{The prior distributions used for model selection. The values indicate the lower and upper limits of a uniform distribution.}
 \label{tab:model_selec_params}
-\begin{tabular}{cccccccccccc}
+\resizebox{1.3\textwidth}{!}{\begin{tabular}{cccccccccccc}
 \toprule
- \textbf{ge}     & \textbf{rep}     & \textbf{rep\_r}     & \textbf{dim}    & \textbf{dim\_r}     & \textbf{deg}  & \textbf{rep dim}    & \textbf{rep\_dim\_r} & \textbf{deg\_sr}    & \textbf{aut\_1} & \textbf{aut\_2} & \textbf{aut\_3} \\
+ \textbf{ge}     & \textbf{rep}     & \textbf{rep\_r}     & \textbf{dim}    & \textbf{dim\_r}     & \textbf{deg}  & \textbf{rep\_dim}    & \textbf{rep\_dim\_r} & \textbf{deg\_sr}    & \textbf{aut\_1} & \textbf{aut\_2} & \textbf{aut\_3} \\
+  (min\textsuperscript{-1})&(μM min\textsuperscript{-1})&(min\textsuperscript{-1})&(μM min\textsuperscript{-1})&(min\textsuperscript{-1})&(min\textsuperscript{-1})&(μM min\textsuperscript{-1})&(min\textsuperscript{-1})&(min\textsuperscript{-1}) &(μM min\textsuperscript{-1})&(min\textsuperscript{-1})&(min\textsuperscript{-1})\\
 1-10     & 1-10    & 0-5       & 1-10   & 0-5       & 1-5  & 0.05-0.1   & 0.01-0.1     & 0-1 & 0-10 & 0-2 & 0-10        \\ \bottomrule
-\end{tabular}
+\end{tabular}}
 \end{table}
 
 

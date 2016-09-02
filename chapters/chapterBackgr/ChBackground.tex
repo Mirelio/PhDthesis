@@ -2,6 +2,93 @@
 
 %\section{System design in synthetic biology}
 
+\section{Current understanding of the genetic toggle switch}
+
+One of the most common devices used in synthetic biology is the genetic toggle switch. A toggle switch consists of a set of transcription factors that mutually repress each other~\autocite{Gardner:2000vha}. Genetic switches play a major role in binary cell fate decisions like stem cell differentiation, as they are capable of exhibiting bistable behaviour. Bistability of a system is defined by the existence of two distinct phenotypic states but no intermediate state. Bistability is a property that is important in nature and a valuable resource to tap into in synthetic biology. It allows cells to alter their response to environmental cues and increases the overall population fitness by 'hedge-betting' the response of the population \autocite{Veening:2008da}. 
+
+\subsection{The genetic toggle switch in natural systems}
+In developmental processes, bistability ensures that the differentiating cell will follow one pathway, or the other, with no possible intermediate phenotypes. This is vital for the correct development of a cell in a specific pathway. One example is the trophectoderm differentiation pathway, in which a mutually inhibitory toggle switch exists between Oct3/4 and Cdx2. This determines whether an Embryonic Stem cell will differentiate into a Trophectoderm cell, if Cdx2 dominates the system, or an Inner Cell Mass cell if Oct3/4 dominates~\autocite{Niwa:2005fz}. Bistability is critical in this system as a cell must differentiate into either a trophectoderm cell or an inner cell mass cell, thus the signal to do so must be straightforward. 
+
+In the case of the GATA1 and PU.1 toggle switch, the transcription factor pair controls the fate of the common myeloid progenitors, and the two possible differentiation paths are erythroid and myeloid blood cells~\autocite{Chickarmane:2009by}. The double-negative feedback loop created by the mutually repressive pair of transcription factors sustains the system in balance until an external stimulus causes one of the two transcription factors to increase in concentration. The increased concentration of one transcription factor causes the increased repression of the production of the antagonistic transcription factor, tipping the balance towards the dominance of the first transcription factor. The double negative feedback loop reinforces this dynamic and the system remains in the same state, until an external stimulus disturbs it~\autocite{FerrellJr:2002fh}.
+
+\subsection{Uses in synthetic biology}
+Despite their simplicity, toggle switches can be powerful building blocks with which to create complex responses in a synthetic network. They can be used in isolation or in tandem to create complex networks and signalling cascades. The toggle switch has been used for the regulation of mammalian gene expression~\autocite{Deans:2007cy, Kramer:2004kq}. Other synthetic applications of the toggle switch include the construction of a synthetic genetic clock~\autocite{Atkinson:2003tu}, of a predictable genetic timer~\autocite{Ellis:2009hka}, and the formation of biofilms in response to engineered stimuli~\autocite{Kobayashi:2004cv}. 
+
+These applications are modifications of the classical toggle switch~\autocite{Gardner:2000vha}, but an application made of a cascade or collection of the switch would be more challenging. This would make more complex applications possible and could be used to solve real-life problems. For example, an analog-to-digital converter to translate external stimuli like the concentration of an inducer into an internal digital response, or programmable bacteria to move from point to point up different chemical gradients~\autocite{Lu:2009ez}. For a review on current circuits see~\autocite{Khalil:2010hm} and for possible future applications see~\autocite{Lu:2009ez}. This leap will be difficult to achieve before first being able to build robust and well characterised individual switches.
+
+\subsection{Modelling the genetic toggle switch} 
+
+%Deterministic modelling utilises ordinary differential equations (ODE) and models the concentrations of the species (proteins or other molecules) by time-dependent variables~\autocite{deJong:2002ft}. When modelling deterministically the model is viewed as a system whose behaviour is entirely predictable, given sufficient knowledge. In stochastic modelling, species are measured in discrete amounts rather than concentrations and a joint probability distribution is used to express the probability that at time \textit{t} the cell contains a number of molecules of each species~\autocite{deJong:2002ft,Wilkinson:2006td}. It takes uncertainty into account and is thus often more appropriate for modelling cellular systems, although more computationally expensive. In stochastic systems the Gillespie algorithm is widely used to simulate the time-evolution of the state of the system~\autocite{Warren:2005kea}.
+
+The toggle switch motif has been studied extensively and there are numerous studies based on a number of different methods of modelling and analysis of the dynamics, including both deterministic and stochastic approaches. The conclusions drawn about the stability and robustness of the toggle switch vary between the different modelling approaches. Numerous studies have concluded that cooperativity is a necessary condition for bistability to arise~\autocite{Gardner:2000vha, Walczak:2005ds, Warren:2004baa, Warren:2005kea, Cherry:2000wi}. However, ~\textcite{Lipshtat:2006wb} found that stochastic effects can give rise to bistability even without cooperativity in three kinds of switch; the exclusive switch, in which there can only be one repressor bound at any one time, a switch in which there is degradation of bound repressors, and the switch in which free repressor proteins can form a complex, which renders them inactive as transcription factors~\autocite{Lipshtat:2006wb}. 
+
+In another study, \textcite{Ma:2012dt} found that the stochastic fluctuations in a system involving such a small number of molecules, like the toggle switch, uncovers effects that can not be predicted by the fully deterministic case~\autocite{Ma:2012dt}. In their system, the toggle switch was found to be tristable, as small number effects render the third unstable steady state stable. \textcite{Biancalani:2015vya} identified multiplicative noise as the source of bistability in the stochastic case~\autocite{Biancalani:2015vya}. ~\textcite{Warren:2005kea} concluded that the exclusive switch is always more robust than the general switch, since the free energy barrier is higher~\autocite{Warren:2005kea}. A summary of the toggle switch models is shown in Table~\ref{tab:refs}. As is clear from above, there is yet to exist a consensus on the stability a switch is capable of, and the most appropriate method of modelling it. Different methods arrive at different conclusions, creating confusion on which behaviour to be expected by the experimentalist for even a simple system like the toggle switch, consisting of just two genes. The toggle switch cannot be used as a building block of larger, more complex systems until its behaviour can be predicted accurately. Until then, designing systems with predictable behaviour will be near impossible.
+
+
+\begin{table}[t]
+\centering
+
+\caption{Summary of stability for the CS and DP switches found via different modelling approaches}
+\label{tab:refs}
+\rotatebox{90}{
+\begin{tabular}{@{}llll@{}}
+\toprule
+\multicolumn{1}{c}{} & \multicolumn{2}{c}{CS} & \multicolumn{1}{c}{DP} \\ \midrule
+Stability & Deterministic & Stochastic & Deterministic \\
+Monostable & \autocite{Loinger:2009vo} & \autocite{Loinger:2009vo} & \autocite{Guantes:2008gs} \\
+\multirow{4}{*}{Bistable} & \autocite{Gardner:2000vha} & \autocite{Lu:2014kc}, & \multirow{4}{*}{\autocite{Guantes:2008gs}} \\
+ & \autocite{Loinger:2009vo} & \autocite{Lipshtat:2006wb}, &  \\
+ &  & \autocite{Biancalani:2015vya}, &  \\
+ &  & \autocite{Loinger:2009vo} &  \\
+\multirow{2}{*}{Tristable} & \multirow{2}{*}{} & \autocite{Loinger:2009vo}, & \autocite{Guantes:2008gs}, \\
+ &  & \autocite{Ma:2012dt} & \autocite{Lu:2014kc} \\
+Quadristable &  &  & \autocite{Guantes:2008gs} \\ \bottomrule
+\end{tabular}
+}
+\end{table}
+
+\clearpage
+
+
+%\begin{table}[t]
+%\centering
+%\caption{Summary of stability for the CS switch found via different modelling approaches}
+%\label{tab:refs}
+%\begin{tabular}{@{}llll@{}}
+%\toprule
+%             & \multicolumn{2}{c}{CS}                                                                                                                                   & \multicolumn{1}{c}{DP}                      \\ \midrule
+%Stability    & Deterministic                                      & Stochastic                                                                                          & Deterministic                               \\
+%Monostable   & \autocite{Loinger:2009vo}                           & \autocite{Loinger:2009vo}                                                                            & \autocite{Guantes:2008gs}                     \\
+%Bistable     & \autocite{Gardner:2000vha}, \autocite{Loinger:2009vo} & \cite{Lu:2014kc}, \autocite{Biancalani:2015vya}, \autocite{Lipshtat:2006wb}, \autocite{Loinger:2009vo} & \autocite{Guantes:2008gs}                     \\
+%Tristable    &                                                    & \autocite{Loinger:2009vo}, \autocite{Ma:2012dt}                                                        & \autocite{Guantes:2008gs}, \autocite{Lu:2014kc} \\
+%Quadristable &                                                    &                                                                                                     & \autocite{Guantes:2008gs}                     \\ \bottomrule
+%\end{tabular}
+%\end{table}
+
+%\begin{table}[]
+%\centering
+%\caption{Summary of stability for the toggle switch found via different modelling approaches}
+%\label{tab:refs}
+%\rotatebox{90}{
+%\begin{tabular}{@{}ccccccc@{}}
+%\toprule
+%                                        & \multicolumn{3}{c}{\textbf{Simple}}                                                                                                                                            & \multicolumn{3}{c}{\textbf{Double positive autoregulation}} \\ \midrule
+%                                        & \textit{Stability}                             & \textit{Reference} & \textit{Notes}                                                                                           & \textit{Stability}  & \textit{Reference}  & \textit{Notes}  \\  \midrule
+%\multirow{3}{*}{\textbf{Deterministic}} & Monostable                                     & \autocite{Loinger:2007vma}       & \begin{tabular}[c]{@{}c@{}}no cooperativity,\\ exclusive \& general\end{tabular}                         & Bistable            & \autocite{Guantes:2008gs}        &                 \\
+%                                        & \multirow{2}{*}{Bistable}                      & \autocite{Gardner:2000vha}       & copperativity \textgreater 2,                                                                            & Tristable           & \autocite{Guantes:2008gs}        &                 \\
+%                                        &                                                & \autocite{Loinger:2007vma}       & bound repressor degradation                                                                              & 4 steady steates    & \autocite{Guantes:2008gs}        &                 \\ \midrule
+%\multirow{7}{*}{\textbf{Stochastic}}    & Monostable                                     & \autocite{Loinger:2007vma}       & \begin{tabular}[c]{@{}c@{}}no cooperativity, \\ weak repression\end{tabular}                             & Tristable           & \autocite{Lu:2014kc}             &                 \\
+%                                        & \multirow{4}{*}{Bistable}                      & \autocite{Lu:2014kc}            &                                                                                                          &                     &                     &                 \\
+%                                        &                                                & \autocite{Biancalani:2015vya}    & \begin{tabular}[c]{@{}c@{}}exclusive,\\ controlled by noise strength\end{tabular}                        &                     &                     &                 \\
+%                                        &                                                & \autocite{Lipshtat:2006wb}      & no cooperativity                                                                                         &                     &                     &                 \\
+%                                        &                                                & \autocite{Loinger:2007vma}       & \begin{tabular}[c]{@{}c@{}}no cooperativity,\\ exclusive \& \\ bound repression degradation\end{tabular} &                     &                     &                 \\
+%                                        & \multicolumn{1}{l}{\multirow{2}{*}{Tristable}} & \autocite{Loinger:2007vma}       & \begin{tabular}[c]{@{}c@{}}no cooperativity,\\ strong repression\end{tabular}                            &                     &                     &                 \\
+%                                        & \multicolumn{1}{l}{}                           & \autocite{Ma:2012dt}           &                                                                                                          &                     &                     &                 \\ \bottomrule 
+%\end{tabular}
+%}
+%\end{table} 
+
+
 \section{Methods in biochemical modelling}
 
 Modelling attempts to describe the elements and dynamics of the biochemical system of interest. It is a tool used for integrating knowledge and experimental data as well as for making predictions about the behaviour of the system~\autocite{Wilkinson:2006td}. 
@@ -81,12 +168,12 @@ The processes of transcription regulation in prokaryotes is complex and there ha
 The Hill formalism is often used to describe a biochemical system where an activator or repressor is present~\autocite{Alon:2007}. The Hill function is often represented as
 
 \begin{align*}
-	\frac{dP}{dt} = V_{max}\frac{S^n}{K^n + S^n},
+	\frac{dP}{dt} = V_{max}\frac{x^n}{1 + x^n},
 \end{align*}
-\noindent if activation is being modelled. Parameter $n$ is the Hill coefficient and $K$ the Hill constant. $V{max}$ is the maximum amount of product and $S$ is the substrate concentration. The Hill constant represent the substrate concentration that results in half of the response and the Hill coefficient affects the steepness of the function and represents the cooperativity of the binding to the promoter~\autocite{Alon:2007}. If repression is being modelled, the Hill function is represented as
+\noindent if activation is being modelled. Parameter $n$ is the Hill coefficient and $K$ the Hill constant. $V{max}$ is the maximum amount of product and $x = \frac{S}{K}$, where S is the substrate concentration. The Hill constant represent the substrate concentration that results in half of the response and the Hill coefficient affects the steepness of the function and represents the cooperativity of the binding to the promoter~\autocite{Alon:2007}. If repression is being modelled, the Hill function is represented as
 
 \begin{align*}
-	\frac{dP}{dt} = V_{max}\frac{K}{K + S^n}
+	\frac{dP}{dt} = V_{max}\frac{1}{1 + x^n}
 \end{align*}
 
 
@@ -104,7 +191,7 @@ The Hill formalism is often used to describe a biochemical system where an activ
 
 
 \subsubsection{Shea-Ackers formalism}
-
+\label{sec:shea-ackers}
 The Shea-Ackers formalism developed by~\textcite{Ackers:1982tq} uses a statistical thermodynamic model to represent the bindinf of transcription factors to their promoters. A system is described by the various states the promoter can have. An exampled of possible states is given in Figure~\ref{fig:shea_ack_ex}. Each state has an associated term, or weight, and the probability of transcription is given by the ration of the producing states over all possible states. This is referred to as the partition function. 
 
 \begin{figure*}[htb]
@@ -116,9 +203,9 @@ The Shea-Ackers formalism developed by~\textcite{Ackers:1982tq} uses a statistic
 
 The partition function is thus given by 
 
-\begin{align*}
+\begin{align}
 	P_{T} = \alpha \frac{k_1 + k_{3}A^2}{1 + k_1 + k_{2}R^2 + k_{3}A^2}
-\end{align*}
+\end{align}
 Here I assume that repression and activation is cooperative, thus two transcription factors must bind to the promoter to repress or activate it. 
 \newpage
 \subsection{Simulation of dynamical systems}
@@ -572,90 +659,4 @@ B_{ab} &= \frac{\displaystyle \int p(x|\theta, D_a)p(\theta, D_a)d\theta}{\displ
 
 
 %\section{Control theory in systems biology}
-
-\section{Current understanding of the genetic toggle switch}
-
-One of the most common devices used in synthetic biology is the genetic toggle switch. A toggle switch consists of a set of transcription factors that mutually repress each other~\autocite{Gardner:2000vha}. Genetic switches play a major role in binary cell fate decisions like stem cell differentiation, as they are capable of exhibiting bistable behaviour. Bistability of a system is defined by the existence of two distinct phenotypic states but no intermediate state. Bistability is a property that is important in nature and a valuable resource to tap into in synthetic biology. It allows cells to alter their response to environmental cues and increases the overall population fitness by 'hedge-betting' the response of the population \autocite{Veening:2008da}. 
-
-\subsection{The genetic toggle switch in natural systems}
-In developmental processes, bistability ensures that the differentiating cell will follow one pathway, or the other, with no possible intermediate phenotypes. This is vital for the correct development of a cell in a specific pathway. One example is the trophectoderm differentiation pathway, in which a mutually inhibitory toggle switch exists between Oct3/4 and Cdx2. This determines whether an Embryonic Stem cell will differentiate into a Trophectoderm cell, if Cdx2 dominates the system, or an Inner Cell Mass cell if Oct3/4 dominates~\autocite{Niwa:2005fz}. Bistability is critical in this system as a cell must differentiate into either a trophectoderm cell or an inner cell mass cell, thus the signal to do so must be straightforward. 
-
-In the case of the GATA1 and PU.1 toggle switch, the transcription factor pair controls the fate of the common myeloid progenitors, and the two possible differentiation paths are erythroid and myeloid blood cells~\autocite{Chickarmane:2009by}. The double-negative feedback loop created by the mutually repressive pair of transcription factors sustains the system in balance until an external stimulus causes one of the two transcription factors to increase in concentration. The increased concentration of one transcription factor causes the increased repression of the production of the antagonistic transcription factor, tipping the balance towards the dominance of the first transcription factor. The double negative feedback loop reinforces this dynamic and the system remains in the same state, until an external stimulus disturbs it~\autocite{FerrellJr:2002fh}.
-
-\subsection{Uses in synthetic biology}
-Despite their simplicity, toggle switches can be powerful building blocks with which to create complex responses in a synthetic network. They can be used in isolation or in tandem to create complex networks and signalling cascades. The toggle switch has been used for the regulation of mammalian gene expression~\autocite{Deans:2007cy, Kramer:2004kq}. Other synthetic applications of the toggle switch include the construction of a synthetic genetic clock~\autocite{Atkinson:2003tu}, of a predictable genetic timer~\autocite{Ellis:2009hka}, and the formation of biofilms in response to engineered stimuli~\autocite{Kobayashi:2004cv}. 
-
-These applications are modifications of the classical toggle switch~\autocite{Gardner:2000vha}, but an application made of a cascade or collection of the switch would be more challenging. This would make more complex applications possible and could be used to solve real-life problems. For example, an analog-to-digital converter to translate external stimuli like the concentration of an inducer into an internal digital response, or programmable bacteria to move from point to point up different chemical gradients~\autocite{Lu:2009ez}. For a review on current circuits see~\autocite{Khalil:2010hm} and for possible future applications see~\autocite{Lu:2009ez}. This leap will be difficult to achieve before first being able to build robust and well characterised individual switches.
-
-\subsection{Modelling the genetic toggle switch} 
-
-%Deterministic modelling utilises ordinary differential equations (ODE) and models the concentrations of the species (proteins or other molecules) by time-dependent variables~\autocite{deJong:2002ft}. When modelling deterministically the model is viewed as a system whose behaviour is entirely predictable, given sufficient knowledge. In stochastic modelling, species are measured in discrete amounts rather than concentrations and a joint probability distribution is used to express the probability that at time \textit{t} the cell contains a number of molecules of each species~\autocite{deJong:2002ft,Wilkinson:2006td}. It takes uncertainty into account and is thus often more appropriate for modelling cellular systems, although more computationally expensive. In stochastic systems the Gillespie algorithm is widely used to simulate the time-evolution of the state of the system~\autocite{Warren:2005kea}.
-
-The toggle switch motif has been studied extensively and there are numerous studies based on a number of different methods of modelling and analysis of the dynamics, including both deterministic and stochastic approaches. The conclusions drawn about the stability and robustness of the toggle switch vary between the different modelling approaches. Numerous studies have concluded that cooperativity is a necessary condition for bistability to arise~\autocite{Gardner:2000vha, Walczak:2005ds, Warren:2004baa, Warren:2005kea, Cherry:2000wi}. However, ~\textcite{Lipshtat:2006wb} found that stochastic effects can give rise to bistability even without cooperativity in three kinds of switch; the exclusive switch, in which there can only be one repressor bound at any one time, a switch in which there is degradation of bound repressors, and the switch in which free repressor proteins can form a complex, which renders them inactive as transcription factors~\autocite{Lipshtat:2006wb}. 
-
-In another study, \textcite{Ma:2012dt} found that the stochastic fluctuations in a system involving such a small number of molecules, like the toggle switch, uncovers effects that can not be predicted by the fully deterministic case~\autocite{Ma:2012dt}. In their system, the toggle switch was found to be tristable, as small number effects render the third unstable steady state stable. \textcite{Biancalani:2015vya} identified multiplicative noise as the source of bistability in the stochastic case~\autocite{Biancalani:2015vya}. ~\textcite{Warren:2005kea} concluded that the exclusive switch is always more robust than the general switch, since the free energy barrier is higher~\autocite{Warren:2005kea}. A summary of the toggle switch models is shown in Table~\ref{tab:refs}. As is clear from above, there is yet to exist a consensus on the stability a switch is capable of, and the most appropriate method of modelling it. Different methods arrive at different conclusions, creating confusion on which behaviour to be expected by the experimentalist for even a simple system like the toggle switch, consisting of just two genes. The toggle switch cannot be used as a building block of larger, more complex systems until its behaviour can be predicted accurately. Until then, designing systems with predictable behaviour will be near impossible.
-
-
-\begin{table}[t]
-\centering
-
-\caption{Summary of stability for the CS and DP switches found via different modelling approaches}
-\label{tab:refs}
-\rotatebox{90}{
-\begin{tabular}{@{}llll@{}}
-\toprule
-\multicolumn{1}{c}{} & \multicolumn{2}{c}{CS} & \multicolumn{1}{c}{DP} \\ \midrule
-Stability & Deterministic & Stochastic & Deterministic \\
-Monostable & \autocite{Loinger:2009vo} & \autocite{Loinger:2009vo} & \autocite{Guantes:2008gs} \\
-\multirow{4}{*}{Bistable} & \autocite{Gardner:2000vha} & \autocite{Lu:2014kc}, & \multirow{4}{*}{\autocite{Guantes:2008gs}} \\
- & \autocite{Loinger:2009vo} & \autocite{Lipshtat:2006wb}, &  \\
- &  & \autocite{Biancalani:2015vya}, &  \\
- &  & \autocite{Loinger:2009vo} &  \\
-\multirow{2}{*}{Tristable} & \multirow{2}{*}{} & \autocite{Loinger:2009vo}, & \autocite{Guantes:2008gs}, \\
- &  & \autocite{Ma:2012dt} & \autocite{Lu:2014kc} \\
-Quadristable &  &  & \autocite{Guantes:2008gs} \\ \bottomrule
-\end{tabular}
-}
-\end{table}
-
-\clearpage
-
-
-%\begin{table}[t]
-%\centering
-%\caption{Summary of stability for the CS switch found via different modelling approaches}
-%\label{tab:refs}
-%\begin{tabular}{@{}llll@{}}
-%\toprule
-%             & \multicolumn{2}{c}{CS}                                                                                                                                   & \multicolumn{1}{c}{DP}                      \\ \midrule
-%Stability    & Deterministic                                      & Stochastic                                                                                          & Deterministic                               \\
-%Monostable   & \autocite{Loinger:2009vo}                           & \autocite{Loinger:2009vo}                                                                            & \autocite{Guantes:2008gs}                     \\
-%Bistable     & \autocite{Gardner:2000vha}, \autocite{Loinger:2009vo} & \cite{Lu:2014kc}, \autocite{Biancalani:2015vya}, \autocite{Lipshtat:2006wb}, \autocite{Loinger:2009vo} & \autocite{Guantes:2008gs}                     \\
-%Tristable    &                                                    & \autocite{Loinger:2009vo}, \autocite{Ma:2012dt}                                                        & \autocite{Guantes:2008gs}, \autocite{Lu:2014kc} \\
-%Quadristable &                                                    &                                                                                                     & \autocite{Guantes:2008gs}                     \\ \bottomrule
-%\end{tabular}
-%\end{table}
-
-%\begin{table}[]
-%\centering
-%\caption{Summary of stability for the toggle switch found via different modelling approaches}
-%\label{tab:refs}
-%\rotatebox{90}{
-%\begin{tabular}{@{}ccccccc@{}}
-%\toprule
-%                                        & \multicolumn{3}{c}{\textbf{Simple}}                                                                                                                                            & \multicolumn{3}{c}{\textbf{Double positive autoregulation}} \\ \midrule
-%                                        & \textit{Stability}                             & \textit{Reference} & \textit{Notes}                                                                                           & \textit{Stability}  & \textit{Reference}  & \textit{Notes}  \\  \midrule
-%\multirow{3}{*}{\textbf{Deterministic}} & Monostable                                     & \autocite{Loinger:2007vma}       & \begin{tabular}[c]{@{}c@{}}no cooperativity,\\ exclusive \& general\end{tabular}                         & Bistable            & \autocite{Guantes:2008gs}        &                 \\
-%                                        & \multirow{2}{*}{Bistable}                      & \autocite{Gardner:2000vha}       & copperativity \textgreater 2,                                                                            & Tristable           & \autocite{Guantes:2008gs}        &                 \\
-%                                        &                                                & \autocite{Loinger:2007vma}       & bound repressor degradation                                                                              & 4 steady steates    & \autocite{Guantes:2008gs}        &                 \\ \midrule
-%\multirow{7}{*}{\textbf{Stochastic}}    & Monostable                                     & \autocite{Loinger:2007vma}       & \begin{tabular}[c]{@{}c@{}}no cooperativity, \\ weak repression\end{tabular}                             & Tristable           & \autocite{Lu:2014kc}             &                 \\
-%                                        & \multirow{4}{*}{Bistable}                      & \autocite{Lu:2014kc}            &                                                                                                          &                     &                     &                 \\
-%                                        &                                                & \autocite{Biancalani:2015vya}    & \begin{tabular}[c]{@{}c@{}}exclusive,\\ controlled by noise strength\end{tabular}                        &                     &                     &                 \\
-%                                        &                                                & \autocite{Lipshtat:2006wb}      & no cooperativity                                                                                         &                     &                     &                 \\
-%                                        &                                                & \autocite{Loinger:2007vma}       & \begin{tabular}[c]{@{}c@{}}no cooperativity,\\ exclusive \& \\ bound repression degradation\end{tabular} &                     &                     &                 \\
-%                                        & \multicolumn{1}{l}{\multirow{2}{*}{Tristable}} & \autocite{Loinger:2007vma}       & \begin{tabular}[c]{@{}c@{}}no cooperativity,\\ strong repression\end{tabular}                            &                     &                     &                 \\
-%                                        & \multicolumn{1}{l}{}                           & \autocite{Ma:2012dt}           &                                                                                                          &                     &                     &                 \\ \bottomrule 
-%\end{tabular}
-%}
-%\end{table} 
 
