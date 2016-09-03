@@ -60,7 +60,7 @@
 \BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 60
 \BOOKMARK [1][-]{section.4.2}{Contributions\040to\040this\040Chapter}{chapter.4}% 61
 \BOOKMARK [1][-]{section.4.3}{Background}{chapter.4}% 62
-\BOOKMARK [1][-]{section.4.4}{Stability\040Finder\040algorithm}{chapter.4}% 63
+\BOOKMARK [1][-]{section.4.4}{StabilityFinder\040algorithm}{chapter.4}% 63
 \BOOKMARK [2][-]{subsection.4.4.1}{Algorithm\040overview}{section.4.4}% 64
 \BOOKMARK [2][-]{subsection.4.4.2}{Initial\040condition\040sampling}{section.4.4}% 65
 \BOOKMARK [2][-]{subsection.4.4.3}{Clustering\040methods}{section.4.4}% 66
@@ -69,15 +69,15 @@
 \BOOKMARK [1][-]{section.4.5}{Calculating\040robustness}{chapter.4}% 69
 \BOOKMARK [2][-]{subsection.4.5.1}{Case\040study\0401:\040Infectious\040diseases}{section.4.5}% 70
 \BOOKMARK [2][-]{subsection.4.5.2}{Case\040study\0402:\040Population\040growth}{section.4.5}% 71
-\BOOKMARK [1][-]{section.4.6}{Applications\040of\040Stability\040Finder}{chapter.4}% 72
-\BOOKMARK [2][-]{subsection.4.6.1}{Testing\040StabilityFinder}{section.4.6}% 73
+\BOOKMARK [1][-]{section.4.6}{Applications\040of\040StabilityFinder}{chapter.4}% 72
+\BOOKMARK [2][-]{subsection.4.6.1}{StabilityFinder\040used\040on\040the\040Gardner\040toggle\040switch}{section.4.6}% 73
 \BOOKMARK [2][-]{subsection.4.6.2}{Lu\040toggle\040switch\040models}{section.4.6}% 74
 \BOOKMARK [3][-]{subsubsection.4.6.2.1}{Extending\040the\040Lu\040models}{subsection.4.6.2}% 75
 \BOOKMARK [3][-]{subsubsection.4.6.2.2}{Multistability\040in\040the\040Lu\040models}{subsection.4.6.2}% 76
 \BOOKMARK [3][-]{subsubsection.4.6.2.3}{Extending\040the\040Lu\040switch\040to\040three\040nodes}{subsection.4.6.2}% 77
-\BOOKMARK [2][-]{subsection.4.6.3}{Mass\040action\040switches}{section.4.6}% 78
-\BOOKMARK [3][-]{subsubsection.4.6.3.1}{Multistability\040in\040the\040MA\040switches}{subsection.4.6.3}% 79
-\BOOKMARK [3][-]{subsubsection.4.6.3.2}{Robustness\040prior\040dependence}{subsection.4.6.3}% 80
+\BOOKMARK [2][-]{subsection.4.6.3}{StabilityFinder\040used\040on\040the\040more\040general\040mass\040action\040switches}{section.4.6}% 78
+\BOOKMARK [3][-]{subsubsection.4.6.3.1}{Multistability\040in\040the\040stochastic\040mass\040action\040switches}{subsection.4.6.3}% 79
+\BOOKMARK [3][-]{subsubsection.4.6.3.2}{Bayes\040factors\040depend\040on\040the\040choice\040of\040priors}{subsection.4.6.3}% 80
 \BOOKMARK [1][-]{section.4.7}{Discussion}{chapter.4}% 81
 \BOOKMARK [1][-]{section.4.8}{Summary}{chapter.4}% 82
 \BOOKMARK [0][-]{chapter.5}{Bayesian\040model\040fitting\040applied\040to\040flow\040cytometry\040data}{}% 83
@@ -150,3 +150,5 @@
 \BOOKMARK [2][-]{subsection.C.1.1}{Deterministic\040case}{section.C.1}% 150
 \BOOKMARK [2][-]{subsection.C.1.2}{Stochastic\040case}{section.C.1}% 151
 \BOOKMARK [1][-]{section.C.2}{K-means\040clustering}{appendix.C}% 152
+\BOOKMARK [0][-]{appendix.D}{Additional\040posterior\040distributions}{}% 153
+\BOOKMARK [1][-]{section.D.1}{Asymmetric\040mass\040action\040toggle\040switch\040posterior\040distributions}{appendix.D}% 154

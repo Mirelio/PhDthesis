@@ -286,19 +286,19 @@ $\textrm{S} \stackrel{\textrm{deg}}{\longrightarrow}\textrm{\O}$                
 %      \textrm{S} \stackrel{\textrm{deg}}{\longrightarrow}\textrm{\O}\\
 %\end{array}
 %$$
-The range of parameter values shown to produce a bistable switch in Section~\ref{sec:paramscan} were used as priors and are shown in Table~\ref{tab:param_inf_params}.
+The range of parameter values shown to produce a bistable switch in Section~\ref{sec:paramscan} were used as priors and are shown in Table~\ref{tab:param_inf_params}. Initial conditions of the two genes, $gA$, $gB$ were set to 1, and species $A$ and $A2$ were set to 50 and 10 respectively, in order to set the starting conditions of the switch to $B2$ OFF. All other species initial conditions were set to 0. 
 
 \begin{table}[t]
 \centering
 \caption{The prior distributions used for the standard toggle switch parameter inference. The values indicate the lower and upper limits (inclusive) of a uniform distribution.}
 \label{tab:param_inf_params}
 \centerfloat
-\begin{tabular}{ccccccccc}
+\resizebox{1.3\textwidth}{!}{\begin{tabular}{cccccccccc}
 \toprule
- \textbf{ge}     & \textbf{rep}     & \textbf{rep\_r}     & \textbf{dim}    & \textbf{dim\_r}     & \textbf{deg}  & \textbf{rep\_dim}    & \textbf{rep\_dim\_r} & \textbf{deg\_sr}    \\
- (min\textsuperscript{-1})&(μM min\textsuperscript{-1})&(min\textsuperscript{-1})&(μM min\textsuperscript{-1})&(min\textsuperscript{-1})&(min\textsuperscript{-1})&(μM min\textsuperscript{-1})&(min\textsuperscript{-1})&(min\textsuperscript{-1})\\
-6-9     & 4-10    & 1-4       & 4-10   & 2-7       & 2-5  & 0.05-0.1   & 0.01-0.05     & 0.01-0.05        \\ \bottomrule
-\end{tabular}
+ \textbf{ge}     & \textbf{rep}     & \textbf{rep\_r}     & \textbf{dim}    & \textbf{dim\_r}     & \textbf{deg}  & \textbf{rep\_dim}    & \textbf{rep\_dim\_r} & \textbf{deg\_sr} & \textbf{deg\_dim}   \\
+ (min\textsuperscript{-1})&(μM min\textsuperscript{-1})&(min\textsuperscript{-1})&(μM min\textsuperscript{-1})&(min\textsuperscript{-1})&(min\textsuperscript{-1})&(μM min\textsuperscript{-1})&(min\textsuperscript{-1})&(min\textsuperscript{-1})&(min\textsuperscript{-1})\\
+6-9     & 4-10    & 1-4       & 4-10   & 2-7       & 2-5  & 0.05-0.1   & 0.01-0.05     & 0.01-0.05  & 0-1      \\ \bottomrule
+\end{tabular}}
 \end{table}
 
 \subsection{Design specifications}
@@ -314,20 +314,20 @@ The following were defined as the design specifications for a bistable genetic t
 \end{figure*}
 
 \subsubsection{Distance function}
-In order to fit the switch model to the behaviour specified above, a distance function must be defined. The distance function defines the quantity that is minimized at each successive iteration of \acrshort{abc} \acrshort{smc}. Three distances are measured, one for each state of the switch, OFF-ON-OFF. Each distance is the sum of the distances of the simulated protein levels to the desired protein levels at each timepoint. All three distances must reach the minimum threshold for the process to be complete. 
+In order to fit the switch model to the behaviour specified above, a distance function must be defined. The distance function defines the quantity that is minimized at each successive iteration of \acrshort{abc} \acrshort{smc}. Three distances are measured, one for each state of the switch, OFF-ON-OFF. Each distance is the sum of the distances of the simulated protein levels to the desired protein levels at each time point. All three distances must reach the minimum threshold for the process to be complete. 
 
 \begin{align}\label{eq:dist}
 	d_1 &= \sum_{i=0}^{20} (s_i-t_1)^2 \\
 	d_2 &= \sum_{i=21}^{70} (s_i-t_2)^2 \\
 	d_3 &=  \sum_{i=71}^{100} (s_i-t_3)^2,
 \end{align}
-where $i$ represents the timepoints, $s_i$ the simulation result at  each timepoint and $t_1$, $t_2$, $t_3$ represent each target behaviour. $t_1$, $t_2$, $t_3$ were set to 0, 20, 0 respectively. 
+where $i$ represents the time points, $s_i$ the simulation result at  each time point and $t_1$, $t_2$, $t_3$ represent each target behaviour. $t_1$, $t_2$, $t_3$ were set to 0, 20, 0 respectively. 
 
 
 
 \subsection{Results}
 
-The results of the parameter inference of the toggle switch are shown in Figure~\ref{fig:stand_abc_timeseries}. The model was shown to successfully behave like a switch within the parameter range used here. The resulting timecourse of the last population matches the design specifications. It can be seen from the posterior distribution that gene expression rate (ge) must be high relative to the prior. Repression (rep) and degradation must both be low and the rate of dimerisation (dim) must be high relative to the prior. The posterior constitutes the specifications that can be used when building a synthetic switch in the lab, as the appropriate components can be tweaked for a successful circuit. More generally, the posterior distribution shows that the parameter space that can give rise to this behaviour is limited. A very small portion of the prior is capable of producing the desired design specifications. In the next section I will examine whether the addition of feedback loops can increase the robustness of this behaviour.
+The results of the parameter inference of the toggle switch are shown in Figure~\ref{fig:stand_abc_timeseries}. The model was shown to successfully behave like a switch within the parameter range used here. The resulting time course of the last population matches the design specifications. It can be seen from the posterior distribution that gene expression rate (ge) must be high relative to the prior. Repression (rep) and degradation must both be low and the rate of dimerisation (dim) must be high relative to the prior. The posterior constitutes the specifications that can be used when building a synthetic switch in the lab, as the appropriate components can be tweaked for a successful circuit. More generally, the posterior distribution shows that the parameter space that can give rise to this behaviour is limited. A very small portion of the prior is capable of producing the desired design specifications. In the next section I will examine whether the addition of feedback loops can increase the robustness of this behaviour.
 
 
 \begin{figure}[htbp]
@@ -422,18 +422,29 @@ The models shown here to be capable of bistable behaviour will be used in the fo
 
 \subsection{\acrshort{abc} for model selection}
 
-Bayesian model selection is used to directly compare the competing designs using ABC-SysBio~\autocite{Liepe:2010eg}. This method enables the simultaneous inference of the kinetic parameters and the structure of the models in order to select the model producing the same behaviour over a greater parameter range. \acrshort{abc} \acrshort{smc} can be used for model selection by adding the model as a parameter to the selection process. The algorithm samples models as well as parameters at each iteration. When the last \textepsilon{} is reached, the algorithm will have concluded to a posterior distribution of parameters for each model, a subset of the prior distribution that can give the best rise to the data. The model that performs over a greater posterior parameter range is selected as the most robust~\autocite{Toni:2009tr}. The process is outlined in Figure~\ref{fig:abc_model_sel}.
+In Section~\ref{sec:param_inf} I used ABC SMC to infer the parameters of a model that can produce the desired behaviour. In this Section I extend the analysis by asking which  model, out of the 5 candidate models shown above, can produce the desired behaviour. Bayesian model selection can be used to rank models according to their posterior distributions. 
+
+ABC SMC model selection works by treating each model as another 'parameter'. ABC SMC then proceeds to approximate the posterior distribution over the joint space of all models~\autocite{Toni:2009tr}. The marginal posterior distribution (also known as model evidence) for each model ($m$) can then be used to rank all the models ($M$). 
+
+\begin{align}
+	p(m|D) = \frac{\textnormal{accepted particles from } m}{\textnormal{all accepted particles}}
+\end{align}
+
+ABC SMC model selection accounts for model complexity and parametric robustness in order to avoid the problem of overfitting. It automatically applies the rule of parsimony, or Occam's razor, which dictates the simplest model to account for the data is the best model~\autocite{Toni:2010}. This is done be penalising the addition of a parameter, corresponding to an increase in the volume of the prior,  if it does not result in a larger increase in the volume of the approximated posterior distribution~\autocite{Woods:2016eh}.  Bayesian model selection can be used to rank models according to how well they describe the data, or how likely they are to give rise to the data we wish to see in a system design setting.  
+
+
+%Bayesian model selection is used to directly compare the competing designs using ABC-SysBio~\autocite{Liepe:2010eg}. This method enables the simultaneous inference of the kinetic parameters and the structure of the models in order to select the model producing the same behaviour over a greater parameter range. \acrshort{abc} \acrshort{smc} can be used for model selection by adding the model as a parameter to the selection process. The algorithm samples models as well as parameters at each iteration. When the last \textepsilon{} is reached, the algorithm will have concluded to a posterior distribution of parameters for each model, a subset of the prior distribution that can give the best rise to the data. The model that performs over a greater posterior parameter range is selected as the most robust~\autocite{Toni:2009tr}. The process is outlined in Figure~\ref{fig:abc_model_sel}.
     
-\begin{figure*}[htbp]
-	\begin{center}
-\includegraphics[scale=0.7]{../../chapters/chapterABCSysBio/images/model_selection.png}
-\caption[\acrshort{abc} \acrshort{smc} model selection]{\label{fig:abc_model_sel} \acrshort{abc} \acrshort{smc} model selection. (A) A model is sampled, and the (B) parameter values for that model are sampled. The system is simulated and the result compared to the desired behaviour. (C) If the distance between the two is smaller than the current accepted threshold, then the samples are retained. If not they are discarded. (D) This method can select the model that can produced the desired behaviour over a greater parameter range (red ellipse). }
-\end{center}
-\end{figure*}
-\clearpage
+%\begin{figure*}[htbp]
+%	\begin{center}
+%\includegraphics[scale=0.7]{../../chapters/chapterABCSysBio/images/model_selection.png}
+%\caption[\acrshort{abc} \acrshort{smc} model selection]{\label{fig:abc_model_sel} \acrshort{abc} \acrshort{smc} model selection. (A) A model is sampled, and the (B) parameter values for that model are sampled. The system is simulated and the result compared to the desired behaviour. (C) If the distance between the two is smaller than the current accepted threshold, then the samples are retained. If not they are discarded. (D) This method can select the model that can produced the desired behaviour over a greater parameter range (red ellipse). }
+%\end{center}
+%\end{figure*}
+%\clearpage
 
 
-In order to select for the more robust toggle switch, the standard toggle switch was compared to switches with positive autoregulation in one or both nodes, which were shown to be capable of bistable behaviour in Section~\ref{sec:models_bist_bif}. The mass action models were used for model selection, in order to represent the system in a more realistic way. The equations shown in Table~\ref{tab:autoreg_equs} are added to the equations of the simple toggle switch used in Section~\ref{sec:param_inf}. Toggle switches with autoregulation on both nodes have both sets of equations added. The same design specifications as used in Section~\ref{sec:param_inf} were used.
+Here I apply ABC SMC model selection using the package ABC-SysBio~\autocite{Liepe:2010eg}. I study whether the addition of feedback loops to the standard toggle switch can increase its parametric robustness. The standard toggle switch was compared to switches with positive autoregulation in one or both nodes, which were shown to be capable of bistable behaviour in Section~\ref{sec:models_bist_bif}. The mass action models were used for model selection, in order to represent the system in a more realistic way. The equations shown in Table~\ref{tab:autoreg_equs} are added to the equations of the simple toggle switch used in Section~\ref{sec:param_inf}. Toggle switches with autoregulation on both nodes have both sets of equations added. The same design specifications as used in Section~\ref{sec:param_inf} were used.
 
 
 
@@ -492,17 +503,17 @@ $\textrm{B2gB} \stackrel{\textrm{aut\_3}}{\longrightarrow} \textrm{B2}+ \textrm{
 %\end{array}
 %$$
 
-Given the models shown above and the parameter priors shown in Table~\ref{tab:model_selec_params}, ABC SMC model selection was carried out. 
+Given the models shown above and the parameter priors shown in Table~\ref{tab:model_selec_params}, ABC SMC model selection was carried out. The priors for model selection were set to wider that in the ones used during parameter inference of the simple switch in order to make them more flexible for the additional models. For all models initial conditions of the two genes, $gA$, $gB$ were set to 1, and species $A$ and $A2$ were set to 50 and 10 respectively, in order to set the starting conditions of the switch to $B2$ OFF. All other species initial conditions were set to 0. 
 
 \begin{table}[htbp]
 \centerfloat
 \caption{The prior distributions used for model selection. The values indicate the lower and upper limits of a uniform distribution.}
 \label{tab:model_selec_params}
-\resizebox{1.3\textwidth}{!}{\begin{tabular}{cccccccccccc}
+\resizebox{1.3\textwidth}{!}{\begin{tabular}{ccccccccccccc}
 \toprule
- \textbf{ge}     & \textbf{rep}     & \textbf{rep\_r}     & \textbf{dim}    & \textbf{dim\_r}     & \textbf{deg}  & \textbf{rep\_dim}    & \textbf{rep\_dim\_r} & \textbf{deg\_sr}    & \textbf{aut\_1} & \textbf{aut\_2} & \textbf{aut\_3} \\
-  (min\textsuperscript{-1})&(μM min\textsuperscript{-1})&(min\textsuperscript{-1})&(μM min\textsuperscript{-1})&(min\textsuperscript{-1})&(min\textsuperscript{-1})&(μM min\textsuperscript{-1})&(min\textsuperscript{-1})&(min\textsuperscript{-1}) &(μM min\textsuperscript{-1})&(min\textsuperscript{-1})&(min\textsuperscript{-1})\\
-1-10     & 1-10    & 0-5       & 1-10   & 0-5       & 1-5  & 0.05-0.1   & 0.01-0.1     & 0-1 & 0-10 & 0-2 & 0-10        \\ \bottomrule
+ \textbf{ge}     & \textbf{rep}     & \textbf{rep\_r}     & \textbf{dim}    & \textbf{dim\_r}     & \textbf{deg}  & \textbf{rep\_dim}    & \textbf{rep\_dim\_r} & \textbf{deg\_sr}  & \textbf{deg\_dim}   & \textbf{aut\_1} & \textbf{aut\_2} & \textbf{aut\_3} \\
+  (min\textsuperscript{-1})&(μM min\textsuperscript{-1})&(min\textsuperscript{-1})&(μM min\textsuperscript{-1})&(min\textsuperscript{-1})&(min\textsuperscript{-1})&(μM min\textsuperscript{-1})&(min\textsuperscript{-1})&(min\textsuperscript{-1})&(min\textsuperscript{-1}) &(μM min\textsuperscript{-1})&(min\textsuperscript{-1})&(min\textsuperscript{-1})\\
+1-10     & 1-10    & 0-5       & 1-10   & 0-5       & 1-5  & 0.05-0.1   & 0.01-0.1     & 0.01-0.1 & 0-1 & 0-10 & 0-2 & 0-10        \\ \bottomrule
 \end{tabular}}
 \end{table}
 
@@ -521,9 +532,9 @@ The results are shown in Figure~\ref{fig:model_sel_res}. The toggle switch with 
 
 \section{Discussion}
 
-Here I developed a more realistic model for the genetic toggle switch, using mass action. This model does not use the \acrshort{qssa}. In Chapter(XXX) I explore this model further and show that the \acrshort{qssa} is not necessary. I showed that this model is capable of bistable behaviour, within a given parameter range. I further studied this by using \acrshort{abc} \acrshort{smc} parameter inference to fit the toggle switch to a switching behaviour of choice. The parameter inference revealed the range of parameter values that can produce the behaviour of choice. These parameter values can be used to design a synthetic toggle switch that will behave in the specified manner. 
+Here I developed a more realistic model for the genetic toggle switch, using mass action which does not use the \acrshort{qssa}. In Chapter~\ref{ch:SF} I explore this model further and show that the \acrshort{qssa} cannot always be justified. I showed that this model is capable of bistable behaviour, within a given parameter range. I further studied this by using \acrshort{abc} \acrshort{smc} parameter inference to fit the toggle switch to a switching behaviour of choice. The parameter inference revealed the range of parameter values that can produce the behaviour of choice. These parameter values can be used to design a synthetic toggle switch that will behave in the specified manner. 
 
-Further, I showed that negative autoregulation is not consistent with bistable behaviour for the parameter values examined here. Adding small levels of single negative autoregulation to the system caused to revert to monostability. The only steady state was when the unregulated protein was high and the negatively regulated protein was low. This makes sense, as the negatively regulated protein cannot reach high enough levels to repress the other protein and dominate the system, whereas the unregulated protein is free to reach a higher steady state. In the case of double negative autoregulation, neither protein is free to reach sufficient levels to dominate the other, and the only steady state was when the levels of both proteins are low. This indicates that the system reaches a deadlock situation where both proteins are repressed and cannot reach a higher steady state. The models used here are deterministic and simplified down to two equations. Stochastic dynamics where noise is added to the system or a more complex model could be capable of overcoming this deadlock situation. More specifically, if transcriptional or translational bursting is included, the protein that receives the first boost can dominate the system on time and escape the deadlock situation~\autocite{Strasser:2012kt}.
+Further, I showed that negative autoregulation is not consistent with bistable behaviour for the parameter values examined here. Adding small levels of single negative autoregulation to the system caused it to revert to monostability. The only steady state was when the unregulated protein was high and the negatively regulated protein was low. This makes sense, as the negatively regulated protein cannot reach high enough levels to repress the other protein and dominate the system, whereas the unregulated protein is free to reach a higher steady state. In the case of double negative autoregulation, neither protein is free to reach sufficient levels to dominate the other, and the only steady state was when the levels of both proteins are low. This indicates that the system reaches a deadlock situation where both proteins are repressed and cannot reach a higher steady state. The models used here are deterministic and simplified down to two equations. Stochastic dynamics where noise is added to the system or a more complex model could be capable of overcoming this deadlock situation. More specifically, if transcriptional or translational bursting is included, the protein that receives the first boost can dominate the system on time and escape the deadlock situation~\autocite{Strasser:2012kt}.
 
 
 Finally, I showed that the addition of positive feedback loops make the genetic toggle switch more robust to parameter fluctuations. This means that the model was capable of producing the desired behaviour over a greater parameter range. This indicates that small fluctuations in parameters in the cellular environment will not affect the system's ability to be bistable, and thus makes it more suitable for use in synthetic biological applications where a very constrained parameter set can be too restrictive. This makes it a better candidate for building new synthetic devices based on the toggle switch design.
@@ -532,8 +543,9 @@ Finally, I showed that the addition of positive feedback loops make the genetic 
 %The first computational approach for the tuning of robust synthetic networks was that of Batt \textit{et al}, ~\cite{Batt:2007jl} where they examined the problem of finding a subset of the parameter set for which a given property was satisfied for all the parameters.  An evolutionary algorithm has also been used to solve the robust design problem by evolving the parameters of the system in order to make it more robust to cellular disturbances by Chen \textit{et al} ~\cite{Chen:2011hj}. The added value of the methodology presented here is that the network structure in addition to the network parameters are adjusted to select a network that can robustly create the desired behaviour.
 
 
-The volume of the posterior distribution of even the most robust switch out of the ones examined here was still not large. This means that the behaviour of choice is still constrained, even after the addition of the positive feedback loops. A caveat of the analysis used here that has to be considered is that the parameter space is not searched for simply combinations that can produce a bistable switch. The behaviour that is required is very specific, and it is probable that the plethora of constraints put to the system result in the discard of parameter combinations that create a bistable switch. Firstly, a specific steady state level is required, for both the ON and OFF stages. When the switch is OFF, the protein levels must be as close to zero as possible, and when the switch is ON, the protein levels are required to approach 20nM. This requirement will discard any switches that have a higher or lower ON state, or a slightly higher OFF state. Additionally, the design specifications used here dictate that the time to reach steady state has to be quick. There is not much transition time allowed between the ON and OFF states, and the protein is required to reach steady state within a few timepoints. This also results in the exclusion of systems that reach steady state slower, but still act as a bistable switch. Therefore, the switches examined here, follow a very constrained behaviour. In the next Chapter I develop a method that is more flexible in the type of switches it can analyze.     
+The volume of the posterior distribution of even the most robust switch out of the ones examined here was still not large. This means that the behaviour of choice is still constrained, even after the addition of the positive feedback loops. A caveat of the analysis used here that has to be considered is that the parameter space is not searched for simply combinations that can produce a bistable switch. The behaviour that is required is very specific, and it is probable that the plethora of constraints put to the system result in the discard of parameter combinations that create a bistable switch. Firstly, a specific steady state level is required, for both the ON and OFF stages. When the switch is OFF, the protein levels must be as close to zero as possible, and when the switch is ON, the protein levels are required to approach 20μM. This requirement will discard any switches that have a higher or lower ON state, or a slightly higher OFF state. Additionally, the design specifications used here dictate that the time to reach steady state has to be quick. There is not much transition time allowed between the ON and OFF states, and the protein is required to reach steady state within a few time points. Here, model time was taken to represent minutes, thus a time point in the simulation represents on minute. This dictates that the switch has to occur very fast. This results in the exclusion of systems that reach steady state slower, but still act as a bistable switch. Therefore, the switches examined here, follow a very constrained behaviour. In the next Chapter I develop a method that is more flexible in the type of switches it can analyze.     
 
+It is important to discuss the assumptions made in the models presented in this Chapter. As was discussed in Chapter~\ref{ch:backg}, the assumptions made about the underlying model can affect the behaviour observed in the model. Firstly, the numerous steps involved in transcription and translation have been condensed into one 'gene expression' step.  This simplifies the model by reducing the number of parameters an reactions included, and it has been shown that it does not affect the stability of the switch~\autocite{Warren:2005kea}. The other assumption being made here is that repression is cooperative. This means that a transcription factor dimer has to bind to the promoter region to repress it successfully. This has been shown to be critical for a bistable switch~\autocite{Gardner:2000vha, Warren:2005kea, Warren:2004baa, Cherry:2000wi}, as discussed in Chapter~\ref{ch:backg}.~\textcite{Lipshtat:2006wb} found that a switch can be exhibit bistability without cooperativity, only if stochasticity is taken into account. Since the switch models were simulated using deterministic dynamics here, the assumption of cooperativity was necessary to make it bistable. Finally, the models used here correspond to a general switch, i.e. a switch where both repressors A2 and B2 are free to bind to the promoters simultaneously. This is in contrast to the exclusive switch, where the two promoters are assumed to overlap and the two proteins cannot bind at the same time~\autocite{Loinger:2007vma}. The exclusive switch can be found in natural systems~\autocite{lambda_sw} and has been shown that the exclusive switch is more robust than the general switch~\autocite{Loinger:2007vma, Barnes:2011hh}. Nevertheless, here I model a synthetic genetic switch, like the one build by~\textcite{Gardner:2000vha}, which consists of two separate promoters, making the general switch model more appropriate. 
 
 
 %Further analysis is thus needed to determine what these combinations are. A sensitivity analysis of the model will be carried out in order to determine which parameters affect bistability and to which parameters is the system robust. The parameter scan will also be incorporated into the ABC SMC methodology, in order to identify the parameter values required for bistability more efficiently.             
@@ -543,7 +555,7 @@ The volume of the posterior distribution of even the most robust switch out of t
 
 	
 %Chen \textit{et al} ~\cite{Chen:2009ea} used the fuzzy  dynamic game method to solve the minimax regulation design problem of synthetic genetic networks. In that method the worst case effect of all disturbances is minimised for a given network.
-\clearpage
+
 \section{Summary}
 
 In this chapter I studied the~\textcite{Gardner:2000vha} toggle switch and showed that it is bistable. I further studied the genetic toggle switch model using mass action. I identified the parameter ranges that produce a bistable behaviour and could be used as prior distributions for parameter inference. Further, I studied the effect of adding feedback loops has on the robustness of the genetic toggle switch. I found that the switch with double positive autoregulation is the most robust to parameter fluctuations. In the next chapter I address some of the shortcomings of the method used here by developing a new algorithm, StabiliyFinder. 

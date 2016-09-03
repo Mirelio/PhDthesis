@@ -21,62 +21,64 @@
 \contentsline {figure}{\numberline {3.10}{\ignorespaces Model designs considered for model selection.}}{69}{figure.caption.29}
 \contentsline {figure}{\numberline {3.11}{\ignorespaces Phase plane analysis of the switch with positive autoregulation}}{71}{figure.caption.30}
 \contentsline {figure}{\numberline {3.12}{\ignorespaces Phase plane and bifurcation analysis of the switch with negative autoregulation}}{72}{figure.caption.31}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces \acrshort {abc} \acrshort {smc} model selection}}{74}{figure.caption.32}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces ABC model selection resulting posterior distribution}}{76}{figure.caption.35}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces ABC model selection resulting posterior distribution}}{75}{figure.caption.34}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces StabilityFinder algorithm overview}}{84}{figure.caption.36}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Robustness analysis of case study 1}}{93}{figure.caption.37}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Robustness analysis of case study 2}}{94}{figure.caption.38}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces StabilityFinder used on the Gardner toggle switch}}{97}{figure.caption.40}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces The posterior distributions of the bistable Gardner toggle switch}}{98}{figure.caption.41}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Phase plane analysis of the Lu toggle switch models}}{100}{figure.caption.42}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces The three Lu toggle switch models.}}{101}{figure.caption.43}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Resulting phase plots from StabilityFinder used on the Lu switches }}{103}{figure.caption.45}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Posterior distributions of the Lu switches}}{104}{figure.caption.46}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Design principles of multistable switches}}{107}{figure.caption.47}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Phase plots of multistable switches}}{108}{figure.caption.48}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces The three-node mutual repression model, with added positive auto-regulation on each node.}}{110}{figure.caption.50}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces The mass action togge switches and phase plots}}{112}{figure.caption.51}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Robustness comparison of the \acrshort {cs-ma} and \acrshort {dp-ma} switches}}{113}{figure.caption.52}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Testing the QSSA assumptions on the mass action models}}{115}{figure.caption.53}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Multistability in the stochastic mass action models}}{117}{figure.caption.55}
-\contentsline {figure}{\numberline {4.17}{\ignorespaces The volume of the priors has an effect on the posterior distribution obtained.}}{119}{figure.caption.57}
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Changing the priors in both models affects the robustness measure.}}{121}{figure.caption.58}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces StabilityFinder algorithm overview}}{82}{figure.caption.35}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Robustness analysis of case study 1}}{92}{figure.caption.36}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Robustness analysis of case study 2}}{93}{figure.caption.37}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces StabilityFinder used on the Gardner toggle switch}}{96}{figure.caption.39}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces The posterior distributions of the bistable Gardner toggle switch}}{97}{figure.caption.40}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Phase plane analysis of the Lu toggle switch models}}{99}{figure.caption.41}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces The three Lu toggle switch models.}}{100}{figure.caption.42}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Resulting phase plots from StabilityFinder used on the Lu switches }}{102}{figure.caption.44}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Posterior distributions of the Lu switches}}{103}{figure.caption.45}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Design principles of multistable switches}}{106}{figure.caption.46}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Phase plots of multistable switches}}{108}{figure.caption.47}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces The three-node mutual repression model, with added positive auto-regulation on each node.}}{110}{figure.caption.49}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces The mass action togge switches and phase plots}}{112}{figure.caption.50}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Robustness comparison of the \acrshort {cs-ma} and \acrshort {dp-ma} switches}}{113}{figure.caption.51}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Testing the QSSA assumptions on the mass action models}}{115}{figure.caption.52}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Multistability in the stochastic mass action models}}{118}{figure.caption.54}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces The volume of the priors has an effect on the posterior distribution obtained.}}{121}{figure.caption.56}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Changing the priors in both models affects the robustness measure.}}{123}{figure.caption.58}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Flow cytometry experimental setup}}{126}{figure.caption.59}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces ABC-Flow algorithm overview}}{128}{figure.caption.60}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Converting the number of fluorescent proteins to intensity}}{130}{figure.caption.61}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Kernel distance}}{131}{figure.caption.62}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Range of epsilon values using the kernel distance}}{132}{figure.caption.63}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Epsilon value ranges of bimodal distributions using the kernel distance}}{133}{figure.caption.64}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Epsilon value ranges of bimodal and uniform distributions using the kernel distance}}{134}{figure.caption.65}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Range of epsilon values using the Kolmogorov-Smirnov distance}}{136}{figure.caption.66}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Rangel of epsilon values obtained using the Wald-Wolfowitz distance}}{138}{figure.caption.67}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces LoF caption}}{139}{figure.caption.68}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Applying ABC-Flow to 1D simulated data}}{141}{figure.caption.69}
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Applying ABC-Flow to 2D simulated data}}{142}{figure.caption.70}
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Posterior distributions of inferred parameters from simulated data}}{143}{figure.caption.71}
-\contentsline {figure}{\numberline {5.14}{\ignorespaces pKDL071 plasmid map and diagram of interactions}}{146}{figure.caption.73}
-\contentsline {figure}{\numberline {5.15}{\ignorespaces pKDL071-YFP plasmid map }}{156}{figure.caption.81}
-\contentsline {figure}{\numberline {5.16}{\ignorespaces pSEVA281G and pSEVA281C plasmid map}}{157}{figure.caption.82}
-\contentsline {figure}{\numberline {5.17}{\ignorespaces Growth rate curves of cultures with and without inducers}}{158}{figure.caption.83}
-\contentsline {figure}{\numberline {5.18}{\ignorespaces Inducer concentration assay of pKDL071}}{160}{figure.caption.84}
-\contentsline {figure}{\numberline {5.19}{\ignorespaces Characterisation of pKDL071 after ATc induction}}{162}{figure.caption.86}
-\contentsline {figure}{\numberline {5.20}{\ignorespaces Characterisation of pKDL071 after IPTG induction}}{163}{figure.caption.87}
-\contentsline {figure}{\numberline {5.21}{\ignorespaces \acrshort {atc} induction of pKDL071 over time}}{165}{figure.caption.88}
-\contentsline {figure}{\numberline {5.22}{\ignorespaces \acrshort {iptg} induction of pKDL071 over time}}{166}{figure.caption.89}
-\contentsline {figure}{\numberline {5.23}{\ignorespaces ABC-Flow fit to post-ATc timecourse data}}{170}{figure.caption.91}
-\contentsline {figure}{\numberline {5.24}{\ignorespaces Posterior distribution of inferred parameters for post-ATc induction of the toggle switch}}{171}{figure.caption.92}
-\contentsline {figure}{\numberline {5.25}{\ignorespaces ABC-Flow fit to post-ATc timecourse data}}{172}{figure.caption.93}
-\contentsline {figure}{\numberline {5.26}{\ignorespaces Posterior distribution of inferred parameters for post-IPTG induction of the toggle switchn}}{173}{figure.caption.94}
-\contentsline {figure}{\numberline {5.27}{\ignorespaces Epsilon and acceptance rate of ABC-Flow inference}}{174}{figure.caption.95}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Flow cytometry experimental setup}}{128}{figure.caption.59}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces ABC-Flow algorithm overview}}{130}{figure.caption.60}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Converting the number of fluorescent proteins to intensity}}{132}{figure.caption.61}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Kernel distance}}{133}{figure.caption.62}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Range of epsilon values using the kernel distance}}{134}{figure.caption.63}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Epsilon value ranges of bimodal distributions using the kernel distance}}{135}{figure.caption.64}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Epsilon value ranges of bimodal and uniform distributions using the kernel distance}}{136}{figure.caption.65}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Range of epsilon values using the Kolmogorov-Smirnov distance}}{138}{figure.caption.66}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Rangel of epsilon values obtained using the Wald-Wolfowitz distance}}{140}{figure.caption.67}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces LoF caption}}{141}{figure.caption.68}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Applying ABC-Flow to 1D simulated data}}{143}{figure.caption.69}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Applying ABC-Flow to 2D simulated data}}{144}{figure.caption.70}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Posterior distributions of inferred parameters from simulated data}}{145}{figure.caption.71}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces pKDL071 plasmid map and diagram of interactions}}{148}{figure.caption.73}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces pKDL071-YFP plasmid map }}{158}{figure.caption.81}
+\contentsline {figure}{\numberline {5.16}{\ignorespaces pSEVA281G and pSEVA281C plasmid map}}{159}{figure.caption.82}
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Growth rate curves of cultures with and without inducers}}{160}{figure.caption.83}
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Inducer concentration assay of pKDL071}}{162}{figure.caption.84}
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Characterisation of pKDL071 after ATc induction}}{164}{figure.caption.86}
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Characterisation of pKDL071 after IPTG induction}}{165}{figure.caption.87}
+\contentsline {figure}{\numberline {5.21}{\ignorespaces \acrshort {atc} induction of pKDL071 over time}}{167}{figure.caption.88}
+\contentsline {figure}{\numberline {5.22}{\ignorespaces \acrshort {iptg} induction of pKDL071 over time}}{168}{figure.caption.89}
+\contentsline {figure}{\numberline {5.23}{\ignorespaces ABC-Flow fit to post-ATc timecourse data}}{172}{figure.caption.91}
+\contentsline {figure}{\numberline {5.24}{\ignorespaces Posterior distribution of inferred parameters for post-ATc induction of the toggle switch}}{173}{figure.caption.92}
+\contentsline {figure}{\numberline {5.25}{\ignorespaces ABC-Flow fit to post-ATc timecourse data}}{174}{figure.caption.93}
+\contentsline {figure}{\numberline {5.26}{\ignorespaces Posterior distribution of inferred parameters for post-IPTG induction of the toggle switchn}}{175}{figure.caption.94}
+\contentsline {figure}{\numberline {5.27}{\ignorespaces Epsilon and acceptance rate of ABC-Flow inference}}{176}{figure.caption.95}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Cloning plan overview}}{180}{figure.caption.96}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces The plasmid maps of three new switches to be constructed.}}{182}{figure.caption.97}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Stage 1 cloning procedure.}}{183}{figure.caption.98}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Stage 2 cloning procedure.}}{185}{figure.caption.99}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Stage 3 cloning procedure.}}{187}{figure.caption.100}
-\addvspace {10pt}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Cloning plan overview}}{182}{figure.caption.96}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces The plasmid maps of three new switches to be constructed.}}{184}{figure.caption.97}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Stage 1 cloning procedure.}}{185}{figure.caption.98}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Stage 2 cloning procedure.}}{187}{figure.caption.99}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Stage 3 cloning procedure.}}{189}{figure.caption.100}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
+\addvspace {10pt}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {D.1}{\ignorespaces Asymmetric CS-MA posterior distribution}}{223}{figure.caption.109}
+\contentsline {figure}{\numberline {D.2}{\ignorespaces Asymmetric DP-MA posterior distribution}}{224}{figure.caption.110}

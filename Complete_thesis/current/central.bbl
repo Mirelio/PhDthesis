@@ -1459,6 +1459,29 @@
       \field{title}{Understanding nonlinear dynamics}
       \field{year}{1995}
     \endentry
+    \entry{Kass:1995eh}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4c753f839bb4d337c2f86c88f6fd0184}{Kass}{K\bibinitperiod}{Robert\bibnamedelima E}{R\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{hash=0451cbcfdf7af3838441abe600b2a495}{Raftery}{R\bibinitperiod}{Adrian\bibnamedelima E}{A\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{9625d018e2c3e4acec55b8e65a1018d6}
+      \strng{fullhash}{9625d018e2c3e4acec55b8e65a1018d6}
+      \field{sortinit}{K}
+      \field{sortinithash}{a7d5b3aec5a0890aae7baf85a209abfc}
+      \field{labelyear}{1995}
+      \field{labelmonth}{06}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the American Statistical Association}
+      \field{month}{06}
+      \field{number}{430}
+      \field{title}{{Bayes Factors}}
+      \field{volume}{90}
+      \field{year}{1995}
+      \field{pages}{773\bibrangedash 795}
+      \range{pages}{23}
+    \endentry
     \entry{Kelly:2009bj}{article}{}
       \name{author}{10}{}{%
         {{hash=74ea9436c188b71bde450069e0beb7c2}{Kelly}{K\bibinitperiod}{Jason\bibnamedelima R}{J\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
@@ -2509,6 +2532,25 @@
       \field{pages}{1791\bibrangedash 1798}
       \range{pages}{8}
     \endentry
+    \entry{lambda_sw}{book}{}
+      \name{author}{1}{}{%
+        {{hash=52a6934e659d723440e1fef64d9ba070}{Ptashne}{P\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{2}{%
+        {􏱈Cell Press}%
+        {Blackwell Scientific}%
+      }
+      \strng{namehash}{52a6934e659d723440e1fef64d9ba070}
+      \strng{fullhash}{52a6934e659d723440e1fef64d9ba070}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelyear}{1992}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A Genetic Switch: Phage 􏱗 and Higher Organisms}
+      \field{year}{1992}
+    \endentry
     \entry{Salis:2009gk}{article}{}
       \name{author}{3}{}{%
         {{hash=0b4a0dba96eb901a4dead94285d97d1b}{Salis}{S\bibinitperiod}{Howard\bibnamedelima M}{H\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
@@ -3256,7 +3298,6 @@
     \endentry
   \endsortlist
   \missing{Woods:2015vu}
-  \missing{Loinger:2007vo}
 \endrefsection
 \endinput
 
