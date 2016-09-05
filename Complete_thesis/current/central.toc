@@ -43,22 +43,22 @@
 \contentsline {chapter}{\chapternumberline {3}Postive feedback loops can increase the robustness of a genetic toggle switch}{51}{chapter.3}
 \contentsline {section}{\numberline {3.1}Introduction}{51}{section.3.1}
 \contentsline {section}{\numberline {3.2}Background}{51}{section.3.2}
-\contentsline {section}{\numberline {3.3}The bistable genetic toggle switch}{53}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Phase space and bifurcation analysis}{54}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}The quasi steady state approximation and the genetic toggle switch}{56}{subsection.3.3.2}
-\contentsline {section}{\numberline {3.4}Designing a simple synthetic switch}{58}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Development of the mass action model for the genetic toggle switch}{58}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Parameter scan for model stability}{60}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Toggle switch parameter inference}{63}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}Design specifications}{64}{subsection.3.4.4}
-\contentsline {subsubsection}{\numberline {3.4.4.1}Distance function}{64}{subsubsection.3.4.4.1}
-\contentsline {subsection}{\numberline {3.4.5}Results}{65}{subsection.3.4.5}
-\contentsline {section}{\numberline {3.5}Designing a more robust genetic toggle switch}{67}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Models of the genetic toggle switch}{67}{subsection.3.5.1}
-\contentsline {subsubsection}{\numberline {3.5.1.1}Autoregulation switches phase space and bifurcation analysis}{70}{subsubsection.3.5.1.1}
-\contentsline {subsection}{\numberline {3.5.2}\acrshort {abc} for model selection}{73}{subsection.3.5.2}
-\contentsline {section}{\numberline {3.6}Discussion}{76}{section.3.6}
-\contentsline {section}{\numberline {3.7}Summary}{78}{section.3.7}
+\contentsline {section}{\numberline {3.3}The bistable genetic toggle switch}{52}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Phase space and bifurcation analysis}{53}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}The quasi steady state approximation and the genetic toggle switch}{55}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}Designing a simple synthetic switch}{57}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Development of the mass action model for the genetic toggle switch}{57}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Parameter scan for model stability}{59}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Toggle switch parameter inference}{62}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Design specifications}{63}{subsection.3.4.4}
+\contentsline {subsubsection}{\numberline {3.4.4.1}Distance function}{63}{subsubsection.3.4.4.1}
+\contentsline {subsection}{\numberline {3.4.5}Results}{64}{subsection.3.4.5}
+\contentsline {section}{\numberline {3.5}Designing a more robust genetic toggle switch}{66}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Models of the genetic toggle switch}{66}{subsection.3.5.1}
+\contentsline {subsubsection}{\numberline {3.5.1.1}Autoregulation switches phase space and bifurcation analysis}{69}{subsubsection.3.5.1.1}
+\contentsline {subsection}{\numberline {3.5.2}\acrshort {abc} for model selection}{72}{subsection.3.5.2}
+\contentsline {section}{\numberline {3.6}Discussion}{75}{section.3.6}
+\contentsline {section}{\numberline {3.7}Summary}{77}{section.3.7}
 \contentsline {chapter}{\chapternumberline {4}Dynamics of multi-stable switches}{79}{chapter.4}
 \contentsline {section}{\numberline {4.1}Introduction}{79}{section.4.1}
 \contentsline {section}{\numberline {4.2}Contributions to this Chapter}{79}{section.4.2}
@@ -86,73 +86,76 @@
 \contentsline {chapter}{\chapternumberline {5}Bayesian model fitting applied to flow cytometry data}{127}{chapter.5}
 \contentsline {section}{\numberline {5.1}Introduction}{127}{section.5.1}
 \contentsline {section}{\numberline {5.2}Contributions to this Chapter}{127}{section.5.2}
-\contentsline {section}{\numberline {5.3}Flow cytometry and model fitting}{128}{section.5.3}
-\contentsline {section}{\numberline {5.4}ABC-Flow algorithm development}{129}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Intensity calculation}{132}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Distance Calculations}{132}{subsection.5.4.2}
-\contentsline {subsubsection}{\numberline {5.4.2.1}Kernel distance}{133}{subsubsection.5.4.2.1}
-\contentsline {subsubsection}{\numberline {5.4.2.2}Kolmogorov-Smirnov distance}{137}{subsubsection.5.4.2.2}
-\contentsline {subsubsection}{\numberline {5.4.2.3}Wald-Wolfowitz distance}{138}{subsubsection.5.4.2.3}
-\contentsline {section}{\numberline {5.5}ABC-Flow model fitting to simulated data }{142}{section.5.5}
-\contentsline {section}{\numberline {5.6}Toggle switch data collection}{147}{section.5.6}
-\contentsline {subsection}{\numberline {5.6.1}Circuit overview}{147}{subsection.5.6.1}
-\contentsline {subsection}{\numberline {5.6.2}Methods}{149}{subsection.5.6.2}
-\contentsline {subsubsection}{\numberline {5.6.2.1}\textit {Escherichia coli} culturing conditions}{149}{subsubsection.5.6.2.1}
-\contentsline {subsubsection}{\numberline {5.6.2.2}Glycerol stock preparation}{149}{subsubsection.5.6.2.2}
-\contentsline {subsubsection}{\numberline {5.6.2.3}Revival}{149}{subsubsection.5.6.2.3}
-\contentsline {subsubsection}{\numberline {5.6.2.4}Plasmid construction}{150}{subsubsection.5.6.2.4}
-\contentsline {subsubsection}{\numberline {5.6.2.5}Polymerase Chain Reaction}{150}{subsubsection.5.6.2.5}
-\contentsline {subsubsection}{\numberline {5.6.2.6}Digestion}{151}{subsubsection.5.6.2.6}
-\contentsline {subsubsection}{\numberline {5.6.2.7}Agarose gel electrophoresis}{151}{subsubsection.5.6.2.7}
-\contentsline {subsubsection}{\numberline {5.6.2.8}Ligation}{152}{subsubsection.5.6.2.8}
-\contentsline {subsubsection}{\numberline {5.6.2.9}Transformation}{152}{subsubsection.5.6.2.9}
-\contentsline {subsubsection}{\numberline {5.6.2.10}Colony \acrshort {pcr}}{153}{subsubsection.5.6.2.10}
-\contentsline {subsubsection}{\numberline {5.6.2.11}Sequencing}{154}{subsubsection.5.6.2.11}
-\contentsline {subsubsection}{\numberline {5.6.2.12}Inducers}{154}{subsubsection.5.6.2.12}
-\contentsline {subsubsection}{\numberline {5.6.2.13}Growth rate measurement}{154}{subsubsection.5.6.2.13}
-\contentsline {subsubsection}{\numberline {5.6.2.14}Flow cytometry}{155}{subsubsection.5.6.2.14}
-\contentsline {subsubsection}{\numberline {5.6.2.15}Concentration assays}{155}{subsubsection.5.6.2.15}
-\contentsline {subsubsection}{\numberline {5.6.2.16}Time course assays}{156}{subsubsection.5.6.2.16}
-\contentsline {subsection}{\numberline {5.6.3}Results}{157}{subsection.5.6.3}
-\contentsline {subsubsection}{\numberline {5.6.3.1}pKDL071 plasmid alteration}{157}{subsubsection.5.6.3.1}
-\contentsline {subsubsection}{\numberline {5.6.3.2}Control plasmids construction}{157}{subsubsection.5.6.3.2}
-\contentsline {subsubsection}{\numberline {5.6.3.3}Growth rate investigation}{158}{subsubsection.5.6.3.3}
-\contentsline {subsubsection}{\numberline {5.6.3.4}Toggle switch concentration assays}{161}{subsubsection.5.6.3.4}
-\contentsline {subsubsection}{\numberline {5.6.3.5}Toggle switch time course assay}{165}{subsubsection.5.6.3.5}
-\contentsline {section}{\numberline {5.7}ABC-Flow used on experimental data}{169}{section.5.7}
-\contentsline {subsection}{\numberline {5.7.1}Toggle switch model developed to fit to experimental data}{169}{subsection.5.7.1}
-\contentsline {subsection}{\numberline {5.7.2}Model fitting to the genetic toggle switch post ATc induction}{172}{subsection.5.7.2}
-\contentsline {subsection}{\numberline {5.7.3}Model fitting to the genetic toggle switch post IPTG induction}{174}{subsection.5.7.3}
-\contentsline {section}{\numberline {5.8}Discussion}{177}{section.5.8}
-\contentsline {section}{\numberline {5.9}Summary}{179}{section.5.9}
-\contentsline {chapter}{\chapternumberline {6}Designing new switches}{181}{chapter.6}
-\contentsline {section}{\numberline {6.1}Introduction}{181}{section.6.1}
-\contentsline {section}{\numberline {6.2}Cloning overview}{181}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Resulting switches}{183}{subsection.6.2.1}
-\contentsline {section}{\numberline {6.3}Experimental design}{183}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Stage 1 - Construction of pKDL071-plac/ara-araC}{183}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Stage 2 - Construction of pKDL071-pluxtet-luxR}{186}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Stage 3 - Construction of pKDL0713a}{188}{subsection.6.3.3}
-\contentsline {section}{\numberline {6.4}Discussion}{190}{section.6.4}
-\contentsline {section}{\numberline {6.5}Summary}{190}{section.6.5}
-\contentsline {chapter}{\chapternumberline {7}Conclusions}{191}{chapter.7}
-\contentsline {section}{\numberline {7.1}Evaluation}{191}{section.7.1}
-\contentsline {section}{\numberline {7.2}Future perspectives}{191}{section.7.2}
-\contentsline {chapter}{Bibliography}{193}{section*.102}
-\contentsline {chapter}{Appendices}{203}{section*.102}
-\contentsline {appendix}{\chapternumberline {A}Biochemical kinetic models}{205}{appendix.A}
-\contentsline {section}{\numberline {A.1}\acrlong {ode}s}{205}{section.A.1}
-\contentsline {subsection}{\numberline {A.1.1}Standard toggle switch with inducers}{205}{subsection.A.1.1}
-\contentsline {subsection}{\numberline {A.1.2}Positive autoregulation on A and B with inducers}{211}{subsection.A.1.2}
-\contentsline {subsection}{\numberline {A.1.3}\acrshort {cs-ma}}{212}{subsection.A.1.3}
-\contentsline {subsection}{\numberline {A.1.4}\acrshort {dp-ma}}{214}{subsection.A.1.4}
-\contentsline {appendix}{\chapternumberline {B}Primers}{217}{appendix.B}
-\contentsline {section}{\numberline {B.1}Primers used during \acrshort {pcr} and sequencing}{217}{section.B.1}
-\contentsline {appendix}{\chapternumberline {C}Algorithms}{219}{appendix.C}
-\contentsline {section}{\numberline {C.1}Clustering algorithms}{219}{section.C.1}
-\contentsline {subsection}{\numberline {C.1.1}Deterministic case}{219}{subsection.C.1.1}
-\contentsline {subsection}{\numberline {C.1.2}Stochastic case}{219}{subsection.C.1.2}
-\contentsline {paragraph}{Gap statistic}{219}{algorithm.9}
-\contentsline {section}{\numberline {C.2}K-means clustering}{221}{section.C.2}
-\contentsline {appendix}{\chapternumberline {D}Additional posterior distributions}{223}{appendix.D}
-\contentsline {section}{\numberline {D.1}Asymmetric mass action toggle switch posterior distributions}{223}{section.D.1}
+\contentsline {section}{\numberline {5.3}Flow cytometry}{127}{section.5.3}
+\contentsline {section}{\numberline {5.4}Flow cytometry and model fitting}{128}{section.5.4}
+\contentsline {section}{\numberline {5.5}ABC-Flow algorithm development}{129}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Intensity calculation}{133}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Distance Calculations}{134}{subsection.5.5.2}
+\contentsline {subsubsection}{\numberline {5.5.2.1}Kernel distance}{134}{subsubsection.5.5.2.1}
+\contentsline {subsubsection}{\numberline {5.5.2.2}Kolmogorov-Smirnov distance}{138}{subsubsection.5.5.2.2}
+\contentsline {subsubsection}{\numberline {5.5.2.3}Wald-Wolfowitz distance}{139}{subsubsection.5.5.2.3}
+\contentsline {section}{\numberline {5.6}ABC-Flow model fitting to simulated data }{143}{section.5.6}
+\contentsline {subsection}{\numberline {5.6.1}Toggle switch model development}{143}{subsection.5.6.1}
+\contentsline {subsection}{\numberline {5.6.2}Parameter inference resulting from simulated data}{144}{subsection.5.6.2}
+\contentsline {section}{\numberline {5.7}Toggle switch data collection}{149}{section.5.7}
+\contentsline {subsection}{\numberline {5.7.1}Circuit overview}{149}{subsection.5.7.1}
+\contentsline {subsection}{\numberline {5.7.2}Methods}{151}{subsection.5.7.2}
+\contentsline {subsubsection}{\numberline {5.7.2.1}\textit {Escherichia coli} culturing conditions}{151}{subsubsection.5.7.2.1}
+\contentsline {subsubsection}{\numberline {5.7.2.2}Glycerol stock preparation}{151}{subsubsection.5.7.2.2}
+\contentsline {subsubsection}{\numberline {5.7.2.3}Revival}{151}{subsubsection.5.7.2.3}
+\contentsline {subsubsection}{\numberline {5.7.2.4}Plasmid construction}{152}{subsubsection.5.7.2.4}
+\contentsline {subsubsection}{\numberline {5.7.2.5}Polymerase Chain Reaction}{152}{subsubsection.5.7.2.5}
+\contentsline {subsubsection}{\numberline {5.7.2.6}Digestion}{153}{subsubsection.5.7.2.6}
+\contentsline {subsubsection}{\numberline {5.7.2.7}Agarose gel electrophoresis}{153}{subsubsection.5.7.2.7}
+\contentsline {subsubsection}{\numberline {5.7.2.8}Ligation}{154}{subsubsection.5.7.2.8}
+\contentsline {subsubsection}{\numberline {5.7.2.9}Transformation}{154}{subsubsection.5.7.2.9}
+\contentsline {subsubsection}{\numberline {5.7.2.10}Colony \acrshort {pcr}}{155}{subsubsection.5.7.2.10}
+\contentsline {subsubsection}{\numberline {5.7.2.11}Sequencing}{156}{subsubsection.5.7.2.11}
+\contentsline {subsubsection}{\numberline {5.7.2.12}Inducers}{156}{subsubsection.5.7.2.12}
+\contentsline {subsubsection}{\numberline {5.7.2.13}Growth rate measurement}{156}{subsubsection.5.7.2.13}
+\contentsline {subsubsection}{\numberline {5.7.2.14}Flow cytometry}{157}{subsubsection.5.7.2.14}
+\contentsline {subsubsection}{\numberline {5.7.2.15}Concentration assays}{157}{subsubsection.5.7.2.15}
+\contentsline {subsubsection}{\numberline {5.7.2.16}Time course assays}{158}{subsubsection.5.7.2.16}
+\contentsline {subsection}{\numberline {5.7.3}Results}{159}{subsection.5.7.3}
+\contentsline {subsubsection}{\numberline {5.7.3.1}pKDL071 plasmid alteration}{159}{subsubsection.5.7.3.1}
+\contentsline {subsubsection}{\numberline {5.7.3.2}Control plasmids construction}{159}{subsubsection.5.7.3.2}
+\contentsline {subsubsection}{\numberline {5.7.3.3}Growth rate investigation}{160}{subsubsection.5.7.3.3}
+\contentsline {subsubsection}{\numberline {5.7.3.4}Toggle switch concentration assays}{163}{subsubsection.5.7.3.4}
+\contentsline {subsubsection}{\numberline {5.7.3.5}Toggle switch time course assay}{167}{subsubsection.5.7.3.5}
+\contentsline {section}{\numberline {5.8}ABC-Flow used on experimental data}{170}{section.5.8}
+\contentsline {subsection}{\numberline {5.8.1}Toggle switch model developed to fit to experimental data}{170}{subsection.5.8.1}
+\contentsline {subsection}{\numberline {5.8.2}Model fitting to the genetic toggle switch post ATc induction}{173}{subsection.5.8.2}
+\contentsline {subsection}{\numberline {5.8.3}Model fitting to the genetic toggle switch post IPTG induction}{175}{subsection.5.8.3}
+\contentsline {section}{\numberline {5.9}Discussion}{180}{section.5.9}
+\contentsline {section}{\numberline {5.10}Summary}{182}{section.5.10}
+\contentsline {chapter}{\chapternumberline {6}Designing new switches}{183}{chapter.6}
+\contentsline {section}{\numberline {6.1}Introduction}{183}{section.6.1}
+\contentsline {section}{\numberline {6.2}Cloning overview}{183}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Resulting switches}{185}{subsection.6.2.1}
+\contentsline {section}{\numberline {6.3}Experimental design}{185}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Stage 1 - Construction of pKDL071-plac/ara-araC}{185}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Stage 2 - Construction of pKDL071-pluxtet-luxR}{188}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Stage 3 - Construction of pKDL0713a}{190}{subsection.6.3.3}
+\contentsline {section}{\numberline {6.4}Discussion}{192}{section.6.4}
+\contentsline {section}{\numberline {6.5}Summary}{192}{section.6.5}
+\contentsline {chapter}{\chapternumberline {7}Conclusions}{193}{chapter.7}
+\contentsline {section}{\numberline {7.1}Evaluation}{193}{section.7.1}
+\contentsline {section}{\numberline {7.2}Future perspectives}{193}{section.7.2}
+\contentsline {chapter}{Bibliography}{195}{section*.104}
+\contentsline {chapter}{Appendices}{206}{section*.104}
+\contentsline {appendix}{\chapternumberline {A}Biochemical kinetic models}{207}{appendix.A}
+\contentsline {section}{\numberline {A.1}\acrlong {ode}s}{207}{section.A.1}
+\contentsline {subsection}{\numberline {A.1.1}Standard toggle switch with inducers}{207}{subsection.A.1.1}
+\contentsline {subsection}{\numberline {A.1.2}Positive autoregulation on A and B with inducers}{213}{subsection.A.1.2}
+\contentsline {subsection}{\numberline {A.1.3}\acrshort {cs-ma}}{214}{subsection.A.1.3}
+\contentsline {subsection}{\numberline {A.1.4}\acrshort {dp-ma}}{216}{subsection.A.1.4}
+\contentsline {appendix}{\chapternumberline {B}Primers}{219}{appendix.B}
+\contentsline {section}{\numberline {B.1}Primers used during \acrshort {pcr} and sequencing}{219}{section.B.1}
+\contentsline {appendix}{\chapternumberline {C}Algorithms}{221}{appendix.C}
+\contentsline {section}{\numberline {C.1}Clustering algorithms}{221}{section.C.1}
+\contentsline {subsection}{\numberline {C.1.1}Deterministic case}{221}{subsection.C.1.1}
+\contentsline {subsection}{\numberline {C.1.2}Stochastic case}{221}{subsection.C.1.2}
+\contentsline {paragraph}{Gap statistic}{221}{algorithm.9}
+\contentsline {section}{\numberline {C.2}K-means clustering}{223}{section.C.2}
+\contentsline {appendix}{\chapternumberline {D}Additional posterior distributions}{225}{appendix.D}
+\contentsline {section}{\numberline {D.1}Asymmetric mass action toggle switch posterior distributions}{225}{section.D.1}
