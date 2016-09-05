@@ -296,7 +296,7 @@ A problem that can arise by using this method with stochastic simulations is tha
 \label{sec:cal_rob}
 Unlike~\textcite{Toni:2009tr}, StabilityFinder does not have model selection integrated into the method. This is because the purpose of StabilityFinder is not necessarily to compare models for robustness but to elucidate the stability a given model is capable of. Nevertheless, robustness analysis is an outcome that Bayesian methods are well suited for. Therefore, here I discuss another algorithm I developed in order to extract robustness information from the results of StabilityFinder and apply model selection.  
 
-As discussed in Section~\ref{sec:rob_back}, two models can be compared for their robustness using the Bayes factor, defined as follows:
+As discussed in Section~\ref{sec:rob_back}, two models $M_a$ and $M_b$ can be compared for their robustness using the Bayes factor, defined as follows:
 
 \begin{align}
  B_{ab} &= \frac{p(D|M_a)}{p(D|M_b)}, \label{eq:final_bayes1}
@@ -305,7 +305,7 @@ As discussed in Section~\ref{sec:rob_back}, two models can be compared for their
 \noindent which represents the fraction of the evidence supported by model $a$ over the evidence supported by model $b$. This can be interpreted as the ratio of the fraction of the volume of the functional region to the volume of its prior of model $a$ and model $b$:
 
 \begin{align}
- B_{ab} &= \frac{|Fa|}{|Pa|} / \frac{|Fb|}{|Pb|}, \label{eq:final_bayes2}
+ B_{ab} &= \frac{|F_a|}{|P_a|} / \frac{|F_b|}{|P_b|}, \label{eq:final_bayes2}
 \end{align}	
 
 \noindent where $|F|$ is the volume of the functional region of model and $|P|$ the volume of the prior. Equation~\ref{eq:final_bayes2} represents the ratio of the robustness measure of each model which in turn is defined as the ratio between the volume of functional region $F$ and the volume of the prior $P$. The reader is referred to Section~\ref{sec:rob_back} for a further discussion.
@@ -541,11 +541,11 @@ The \acrshort{sp-lu} switch is modelled using the following \acrshort{ode} syste
 \end{align}
 
 
-Using StabilityFinder with priors centred around the parameter values used in the original paper (see Table~\ref{tab:lu_all}), we can identify the most important parameters for achieving the models' stability. The phase plots of the final populations of the models are shown in Figure~\ref{fig:lu_paper_phase} and the posterior distribution of these models are shown in Figure~\ref{fig:fig3}A. We find that the parameters representing the rates of degradation of the transcription factors in the system ($k_x$,$k_y$) must both be large in relation to the prior ranges for bistability to occur. Protein degradation rates have been shown to be important for many system behaviours including oscillations \autocite{Woods:2015vu}.
+Using StabilityFinder with priors centred around the parameter values used in the original paper (see Table~\ref{tab:lu_all}), we can identify the most important parameters for achieving the models' stability. The phase plots of the final populations of the models are shown in Figure~\ref{fig:lu_paper_phase} and the posterior distribution of these models are shown in Figure~\ref{fig:fig3}A. We find that the parameters representing the rates of degradation of the transcription factors in the system ($k_x$, $k_y$) must both be large in relation to the prior ranges for bistability to occur. Protein degradation rates have been shown to be important for many system behaviours including oscillations \autocite{Woods:2016eh}.
 
 \begin{table}[htpb]
 \centering
-\caption{Priors of the classical(\acrshort{cs-lu}), single positive (\acrshort{sp-lu}) and double positive (\acrshort{dp-lu}) models.}
+\caption{Priors of the classical (\acrshort{cs-lu}), single positive (\acrshort{sp-lu}) and double positive (\acrshort{dp-lu}) models.}
 \label{tab:lu_all}
 \begin{tabular}{@{}ccccc@{}}
 \toprule
@@ -665,7 +665,7 @@ To further demonstrate the flexibility of StabilityFinder I investigated a syste
 \toprule
 Parameter                           & Symbol & Range (nM/min)  \\ \midrule
 Production rate (Proteins/Minute)               & gx        & 3-5    \\
-Degradation rate  (Minute-1)             & kx        & 0-0.2     \\
+Degradation rate  (Minute\textsubscript{-1})             & kx        & 0-0.2     \\
 Hill coefficient               & nxy       & 0-2    \\
 Hill thresholds concentration (Proteins) & xxy       & 140-160 \\
 Transcription rate fold change & lxy       & 0-0.2     \\
@@ -697,18 +697,17 @@ Consistently with the results found in section~\ref{sec:lu_234}, we find that th
 In order to study the switch system in a more realistic way, I developed an extension to the switches used in Sections~\ref{sec:gard} and~\ref{sec:lu}. This new set of switches does not use the \acrfull{qssa} that is often used in modelling the toggle switch. Using mass action, this changes the two-equation system used in~\textcite{Gardner:2000vha} and~\textcite{Lu:2014kc} into a system of 8 \acrshort{ode}s and 10 parameters in the classical switch case with no autoregulation (model \acrshort{cs-ma}). The equations describing the system are shown below. 
 $$
 \begin{array}{cccc}
-      \textrm{gA}\stackrel{\textrm{ge}}{\longrightarrow}\textrm{gA} + \textrm{A} \\
-      \textrm{gB}\stackrel{\textrm{ge}}{\longrightarrow}\textrm{gB} + \textrm{B} \\
+      \textrm{gA}\stackrel{\textrm{geA}}{\longrightarrow}\textrm{gA} + \textrm{A} \\
+      \textrm{gB}\stackrel{\textrm{geB}}{\longrightarrow}\textrm{gB} + \textrm{B} \\
       \textrm{A} + \textrm{A} \stackrel{\textrm{dim}}{\longrightarrow}\textrm{A2} \\
       \textrm{A2} \stackrel{\textrm{dim r}}{\longrightarrow}\textrm{A} + \textrm{A} \\
       \textrm{B} + \textrm{B} \stackrel{\textrm{dim}}{\longrightarrow} \textrm{B2} \\
       \textrm{B2} \stackrel{\textrm{dim\_r}}{\longrightarrow}\textrm{B} + \textrm{B} \\
-      \textrm{gA} + \textrm{B2} \stackrel{\textrm{rep}}{\longrightarrow}\textrm{B2gA} \\
+      \textrm{gA} + \textrm{B2} \stackrel{\textrm{repA}}{\longrightarrow}\textrm{B2gA} \\
       \textrm{B2gA} \stackrel{\textrm{rep\_r}}{\longrightarrow}\textrm{B} + \textrm{gA} \\
-      \textrm{gB} + \textrm{A2} \stackrel{\textrm{rep}}{\longrightarrow}\textrm{A2gB} \\
+      \textrm{gB} + \textrm{A2} \stackrel{\textrm{repB}}{\longrightarrow}\textrm{A2gB} \\
       \textrm{A2gB} \stackrel{\textrm{rep\_r}}{\longrightarrow}\textrm{A2} + \textrm{gB} \\
       \textrm{A} \stackrel{\textrm{deg}}{\longrightarrow}\textrm{\O}\\
-      \textrm{B} \stackrel{\textrm{deg}}{\longrightarrow}\textrm{\O}\\
       \textrm{A2} \stackrel{\textrm{deg\_dim}}{\longrightarrow} \textrm{\O}\\
       \textrm{B2} \stackrel{\textrm{deg\_dim}}{\longrightarrow}\textrm{\O}\\
 \end{array}
@@ -740,13 +739,13 @@ The \acrshort{ode}s describing the above switches are shown in Appendix~\ref{ap:
 \begin{figure*}[htbp]
 \centerfloat
 \includegraphics[width=1.1\textwidth]{../../chapters/chapterStabilityFinder/images/MA_sym_post.png}
-\caption[Robustness comparison of the \acrshort{cs-ma} and \acrshort{dp-ma} switches]{ \label{fig:ma-sym-det-post}: The posterior distributions of the symmetric deterministic (A) Robustness comparison of the two models (B) \acrshort{cs-ma} and  (C) \acrshort{dp-ma} switches. }
+\caption[Robustness comparison of the \acrshort{cs-ma} and \acrshort{dp-ma} switches]{ \label{fig:ma-sym-det-post}: The posterior distributions of the symmetric deterministic (A) Robustness comparison of the two models. The Bayes factor of $\frac{p(B|CS)}{p(B|DP)}$ was found to be 9.14. (B) \acrshort{cs-ma} and  (C) \acrshort{dp-ma} switches. }
 \end{figure*}
 
 
 By examining the posterior distributions shown in Figure~\ref{fig:ma-sym-det-post} we see that the \acrshort{cs-ma} is much more constrained that the \acrshort{dp-ma} switch. We find that gene expression must be low for bistability to occur in the \acrshort{cs-ma} model but there is no such constraint in the \acrshort{dp-ma} model. We also find that the monomerization rate $dim\_r$ and the monomer degradation rate $deg$ must both be larger than 2. This is not found in the \acrshort{dp-ma} model. 
 
-Next I compare the two models for robustness using the ellipsoid method described in Section~\ref{sec:cal_rob}. We find that the addition of positive feedback loops greatly increases the system's robustness to parameter fluctuations as seen in Figure~\ref{fig:ma-sym-det-post}A. Adding positive feedback loops to the model allows it to be bistable over a greater range of parameter values. This indicates that small fluctuations in parameters in the cellular environment will not revert it to monostability and thus makes it more suitable for use in synthetic biological applications where inconsistent stability profile of a system could be detrimental. This makes it a better candidate for building new synthetic devices based on the toggle switch design. We identified the parameter region within which these models are bistable, information that is important when building such a device in the lab.
+Next I compare the two models for robustness using the ellipsoid method described in Section~\ref{sec:cal_rob}. We find that the addition of positive feedback loops greatly increases the system's robustness to parameter fluctuations as seen in Figure~\ref{fig:ma-sym-det-post}A, The Bayes factor of $\frac{p(B|CS)}{p(B|DP)}$, where $B$ is bistable behaviour, was found to be 9.14.. Adding positive feedback loops to the model allows it to be bistable over a greater range of parameter values. This indicates that small fluctuations in parameters in the cellular environment will not revert it to monostability and thus makes it more suitable for use in synthetic biological applications where inconsistent stability profile of a system could be detrimental. This makes it a better candidate for building new synthetic devices based on the toggle switch design. We identified the parameter region within which these models are bistable, information that is important when building such a device in the lab.
 
 The models used in the above analysis assume the parameters for equivalent reactions are equal. This is a constraint that simplifies the model. When building this model into a synthetic system in the lab, this assumption is not necessarily justified. When choosing promoters to build this synthetic system two promoters can be chosen to have similar strength but their strength will not necessarily be identical.  In order to study how this might affect the results, I further eliminate modelling assumptions made in the toggle switch by making the parameters representing gene expression ($ge$) and repression ($rep$), as well as the protein degradation parameters asymmetric (independent parameters for each protein, versus fixed to be equal). We find that the features of the posterior distributions of the symmetric and the asymmetric models remain the same. The reader is referred to Appendix~\ref{ap:figures} for the posterior distributions of the asymmetric models. 
 
@@ -829,12 +828,12 @@ deg\_dim & 0 - 0.1     & 0 - 0.5 & 0 - 1   \\ \bottomrule
 \end{tabular}
 \end{table}
 
-Furthermore, I test the effect of the prior range to the robustness of the model for each parameter separately. For each test, the prior distributions of all the parameters correspond to the range given in column VN2 in Table~\ref{tab:prior_study} except for the parameter being tested. For each run one parameter is being tested and has a prior range equal to the range given in column W in Table~\ref{tab:prior_study}. StabilityFinder is then used to approximate the posterior distribution of the model, given the priors and bistable behaviour. Therefore, there are 7 posterior distributions of the bistable CS-MA switch, each one corresponding to one parameter having a wide prior range. For each run, the Bayes factor of the model compared to the \acrshort{dp-ma} model used in Figure~\ref{fig:ma-sym-det-post} is calculated, using Algorithm~\ref{alg:robustness}. The posterior distribution for \acrshort{dp-ma} remains the same every time. Figure~\ref{fig:priors_matter}C shows the Bayes factors calculated for the DP-MA model against each run of the \acrshort{cs-ma}. We can see from Figure~\ref{fig:priors_matter}C that when the priors for $ge$ are much larger, the Bayes' factor increases. The evidence for choosing DP-MA over CS-MA changes from substantial to strong, as defined in Table~\ref{}, by using a larger prior for parameter $ge$. This change is attributed to the fact the $ge$ is constrained to be low. If the prior range is much larger, it is evident that the ratio of the volumes of the functional region to the prior will be much smaller for CS-MA. %On the other hand, the range of the prior of parameter $deg\_dim$ does not increase the Bayes factor in favour of model DP-MA. This is in agreement with~\textcite{Kass:1995eh}, who 
+Furthermore, I test the effect of the prior range to the robustness of the model for each parameter separately. For each test, the prior distributions of all the parameters correspond to the range given in column VN2 in Table~\ref{tab:prior_study} except for the parameter being tested. For each run one parameter is being tested and has a prior range equal to the range given in column W in Table~\ref{tab:prior_study}. StabilityFinder is then used to approximate the posterior distribution of the model, given the priors and bistable behaviour. Therefore, there are 7 posterior distributions of the bistable CS-MA switch, each one corresponding to one parameter having a wide prior range. For each run, the Bayes factor of the model compared to the \acrshort{dp-ma} model used in Figure~\ref{fig:ma-sym-det-post} is calculated, using Algorithm~\ref{alg:robustness}. The posterior distribution for \acrshort{dp-ma} remains the same every time. Figure~\ref{fig:priors_matter}C shows the Bayes factors calculated for the DP-MA model against each run of the \acrshort{cs-ma}. We can see from Figure~\ref{fig:priors_matter}C that when the priors for $ge$ are much larger, the Bayes factor increases. The evidence for choosing DP-MA over CS-MA changes from substantial to strong, as defined in Table~\ref{tab:BAYES_FACTS}, by using a larger prior for parameter $ge$. This change is attributed to the fact the $ge$ is constrained to be low. If the prior range is much larger, it is evident that the ratio of the volumes of the functional region to the prior will be much smaller for CS-MA. %On the other hand, the range of the prior of parameter $deg\_dim$ does not increase the Bayes factor in favour of model DP-MA. This is in agreement with~\textcite{Kass:1995eh}, who 
  
 
 \begin{figure*}[h]
 \begin{center}
-\includegraphics[width=\textwidth]{../../chapters/chapterStabilityFinder/images/priors_matter.png}
+\includegraphics[width=1.2\textwidth]{../../chapters/chapterStabilityFinder/images/priors_matter.png}
 \caption[The volume of the priors has an effect on the posterior distribution obtained.]{ \label{fig:priors_matter}: The volume of the priors has an effect on the posterior distribution obtained. (A) The \acrshort{cs-ma} model with VN2 priors and (B) the \acrshort{cs-ma} with W priors. (C) The increase in robustness seen is due to the gene expression parameter prior being wide while the functional region remains constrained.}
 \end{center}
 \end{figure*}
@@ -853,7 +852,7 @@ We find that the robustness measure changed as the priors of the models changed.
 \label{tab:bayes_vols}
 \begin{tabular}{@{}ccc@{}}
 \toprule
-\multicolumn{2}{l}{Prior volume} & \multirow{2}{*}{Bayes factor} \\ \cmidrule(r){1-2}
+\multicolumn{2}{l}{Prior volume} & \multirow{2}{4cm}{Bayes factor  ($\frac{p(B|DP-MA}{p(B|CS-MA)}$)  } \\ \cmidrule(r){1-2}
 \acrshort{cs-ma}  & \acrshort{dp-ma} &  \\ \midrule
 VN2 & VN2 & 1.32 \\
 VN2 & N1 & 9.14 \\

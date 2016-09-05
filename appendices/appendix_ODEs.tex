@@ -45,7 +45,7 @@ $$
  && \\ 
 \end{array}
  $$
- %\newpage
+
  $$ 
   \begin{array}{ccl}
 \frac {\mathrm{d}\left( {{\mathrm{[S]}} \, \cdot \, {V}_{\mathrm{cell}} } \right) }  {\mathrm{d}{t} }  \; &=& \;  { \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{rep\_dim}} \, \cdot \, {\mathrm{[S]}} \, \cdot \, {\mathrm{[A2]}} } \right) }{ \, + \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{rep\_dim\_r}} \, \cdot \, {\mathrm{[SA2]}} } \right) } { \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{deg\_sr}} \, \cdot \, {\mathrm{[S]}} } \right) } \\ 
@@ -110,7 +110,7 @@ $$
  && \\ 
   \end{array}
  $$
-% \newpage
+
  $$
  \begin{array}{ccl}
  \frac {\mathrm{d}\left( {{\mathrm{[S]}} \, \cdot \, {V}_{\mathrm{cell}} } \right) }  {\mathrm{d}{t} }  \; &=& \;  { \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{rep\_dim}} \, \cdot \, {\mathrm{[S]}} \, \cdot \, {\mathrm{[A2]}} } \right) }{ \, + \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{rep\_dim\_r}} \, \cdot \, {\mathrm{[SA2]}} } \right) }{ \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{deg\_sr}} \, \cdot \, {\mathrm{[S]}} } \right) } \\ 
@@ -182,7 +182,7 @@ $$
  
  \end{array}
  $$
- %\newpage
+
  $$
  \begin{array}{ccl} 
 \frac {\mathrm{d}\left( {{\mathrm{[S]}} \, \cdot \, {V}_{\mathrm{cell}} } \right) }  {\mathrm{d}{t} }  \; &=& \;  { \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{deg\_sr}} \, \cdot \, {\mathrm{[S]}} } \right) } { \, + \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{rep\_dim\_r}} \, \cdot \, {\mathrm{[SA2]}} } \right) }{ \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{rep\_dim}} \, \cdot \, {\mathrm{[S]}} \, \cdot \, {\mathrm{[A2]}} } \right) } \\ 
@@ -251,7 +251,7 @@ $$
  
  \end{array}
  $$
- %\newpage
+
  $$
  \begin{array}{ccl} 
 \frac {\mathrm{d}\left( {{\mathrm{[A2gB]}} \, \cdot \, {V}_{\mathrm{cell}} } \right) }  {\mathrm{d}{t} }  \; &=& \;  { \, + \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{rep}} \, \cdot \, {\mathrm{[gB]}} \, \cdot \, {\mathrm{[A2]}} } \right) } { \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{rep\_r}} \, \cdot \, {\mathrm{[A2gB]}} } \right) } \\ 
@@ -287,26 +287,32 @@ $$
 \subsection{\acrshort{cs-ma}}
 $$
 \begin{array}{ccl}
-\frac {\mathrm{d}\left( {{\mathrm{[A]}} \, \cdot \, {V}_{\mathrm{cell}} } \right) }  {\mathrm{d}{t} }  \; &=& \;  { \, + \, {2} \, \cdot \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{dim\_r}} \, \cdot \, {\mathrm{[A2]}} } \right) } { \, - \, {2} \, \cdot \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{dim}} \, \cdot \, {\mathrm{[A]}} \, \cdot \, {\mathrm{[A]}} } \right) } { \, + \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{geA}} \, \cdot \, {\mathrm{[gA]}} } \right) }{ \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{deg}} \, \cdot \, {\mathrm{[A]}} } \right) } \\ 
+\frac {\mathrm{d}\left( {{\mathrm{[A]}} \, \cdot \, {V}_{\mathrm{cell}} } \right) }  {\mathrm{d}{t} }  \; &=& \;  { \, + \, {2} \, \cdot \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{dim\_r}} \, \cdot \, {\mathrm{[A2]}} } \right) } { \, - \, {2} \, \cdot \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{dim}} \, \cdot \, {\mathrm{[A]}} \, \cdot \, {\mathrm{[A]}} } \right) } { \, + \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{geA}} \, \cdot \, {\mathrm{[gA]}} } \right) } \\ 
+ && \\ 
+ \; && \;  { \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{deg}} \, \cdot \, {\mathrm{[A]}} } \right) } \\ 
  && \\ 
  
-\frac {\mathrm{d}\left( {{\mathrm{[gA]}} \, \cdot \, {V}_{\mathrm{cell}} } \right) }  {\mathrm{d}{t} }  \; &=& \;  { \, + \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{rep\_r}} \, \cdot \, {\mathrm{[B2gA]}} } \right) }{ \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{repA}} \, \cdot \, {\mathrm{[gA]}} \, \cdot \, {\mathrm{[B2]}} } \right) } \\ 
+\frac {\mathrm{d}\left( {{\mathrm{[gA]}} \, \cdot \, {V}_{\mathrm{cell}} } \right) }  {\mathrm{d}{t} }  \; &=& \;  { \, + \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{rep\_r}} \, \cdot \, {\mathrm{[B2gA]}} } \right) } \\ 
+ && \\ 
+ \; && \;  { \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{repA}} \, \cdot \, {\mathrm{[gA]}} \, \cdot \, {\mathrm{[B2]}} } \right) } \\ 
  && \\ 
  
-\frac {\mathrm{d}\left( {{\mathrm{[B]}} \, \cdot \, {V}_{\mathrm{cell}} } \right) }  {\mathrm{d}{t} }  \; &=& \;  { \, + \, {2} \, \cdot \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{dim\_r}} \, \cdot \, {\mathrm{[B2]}} } \right) } { \, - \, {2} \, \cdot \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{dim}} \, \cdot \, {\mathrm{[B]}} \, \cdot \, {\mathrm{[B]}} } \right) } { \, + \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{geB}} \, \cdot \, {\mathrm{[gB]}} } \right) }{ \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{deg}} \, \cdot \, {\mathrm{[B]}} } \right) } \\ 
+\frac {\mathrm{d}\left( {{\mathrm{[B]}} \, \cdot \, {V}_{\mathrm{cell}} } \right) }  {\mathrm{d}{t} }  \; &=& \;  { \, + \, {2} \, \cdot \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{dim\_r}} \, \cdot \, {\mathrm{[B2]}} } \right) } { \, - \, {2} \, \cdot \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{dim}} \, \cdot \, {\mathrm{[B]}} \, \cdot \, {\mathrm{[B]}} } \right) }  \\ 
+ && \\ 
+ \; && \;  { \, + \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{geB}} \, \cdot \, {\mathrm{[gB]}} } \right) }{ \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{deg}} \, \cdot \, {\mathrm{[B]}} } \right) } \\ 
  && \\ 
  
 \frac {\mathrm{d}\left( {{\mathrm{[gB]}} \, \cdot \, {V}_{\mathrm{cell}} } \right) }  {\mathrm{d}{t} }  \; &=& \;  { \, + \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{rep\_r}} \, \cdot \, {\mathrm{[A2gB]}} } \right) }{ \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{repB}} \, \cdot \, {\mathrm{[gB]}} \, \cdot \, {\mathrm{[A2]}} } \right) } \\ 
  && \\ 
  
-\frac {\mathrm{d}\left( {{\mathrm{[A2]}} \, \cdot \, {V}_{\mathrm{cell}} } \right) }  {\mathrm{d}{t} }  \; &=& \;  { \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{dim\_r}} \, \cdot \, {\mathrm{[A2]}} } \right) } { \, + \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{dim}} \, \cdot \, {\mathrm{[A]}} \, \cdot \, {\mathrm{[A]}} } \right) }{ \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{deg\_dim}} \, \cdot \, {\mathrm{[A2]}} } \right) }{ \, + \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{rep\_r}} \, \cdot \, {\mathrm{[A2gB]}} } \right) } \\ 
+\frac {\mathrm{d}\left( {{\mathrm{[A2]}} \, \cdot \, {V}_{\mathrm{cell}} } \right) }  {\mathrm{d}{t} }  \; &=& \;  { \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{dim\_r}} \, \cdot \, {\mathrm{[A2]}} } \right) } { \, + \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{dim}} \, \cdot \, {\mathrm{[A]}} \, \cdot \, {\mathrm{[A]}} } \right) }{ \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{deg\_dim}} \, \cdot \, {\mathrm{[A2]}} } \right) } \\ 
  && \\ 
- \; && \;  { \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{repB}} \, \cdot \, {\mathrm{[gB]}} \, \cdot \, {\mathrm{[A2]}} } \right) } \\ 
+ \; && \;  { \, + \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{rep\_r}} \, \cdot \, {\mathrm{[A2gB]}} } \right) } { \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{repB}} \, \cdot \, {\mathrm{[gB]}} \, \cdot \, {\mathrm{[A2]}} } \right) } \\ 
  && \\ 
  
-\frac {\mathrm{d}\left( {{\mathrm{[B2]}} \, \cdot \, {V}_{\mathrm{cell}} } \right) }  {\mathrm{d}{t} }  \; &=& \;  { \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{dim\_r}} \, \cdot \, {\mathrm{[B2]}} } \right) }{ \, + \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{dim}} \, \cdot \, {\mathrm{[B]}} \, \cdot \, {\mathrm{[B]}} } \right) }{ \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{deg\_dim}} \, \cdot \, {\mathrm{[B2]}} } \right) } { \, + \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{rep\_r}} \, \cdot \, {\mathrm{[B2gA]}} } \right) } \\ 
+\frac {\mathrm{d}\left( {{\mathrm{[B2]}} \, \cdot \, {V}_{\mathrm{cell}} } \right) }  {\mathrm{d}{t} }  \; &=& \;  { \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{dim\_r}} \, \cdot \, {\mathrm{[B2]}} } \right) }{ \, + \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{dim}} \, \cdot \, {\mathrm{[B]}} \, \cdot \, {\mathrm{[B]}} } \right) }{ \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{deg\_dim}} \, \cdot \, {\mathrm{[B2]}} } \right) }  \\ 
  && \\ 
- \; && \;  { \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{repA}} \, \cdot \, {\mathrm{[gA]}} \, \cdot \, {\mathrm{[B2]}} } \right) } \\ 
+ \; && \;  { \, + \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{rep\_r}} \, \cdot \, {\mathrm{[B2gA]}} } \right) }{ \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{repA}} \, \cdot \, {\mathrm{[gA]}} \, \cdot \, {\mathrm{[B2]}} } \right) } \\ 
  && \\ 
  
 \frac {\mathrm{d}\left( {{\mathrm{[A2gB]}} \, \cdot \, {V}_{\mathrm{cell}} } \right) }  {\mathrm{d}{t} }  \; &=& \;  { \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{rep\_r}} \, \cdot \, {\mathrm{[A2gB]}} } \right) }{ \, + \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{repB}} \, \cdot \, {\mathrm{[gB]}} \, \cdot \, {\mathrm{[A2]}} } \right) } \\ 
@@ -366,9 +372,9 @@ The CS-MA switch was simulated using stochastic dynamics. The stoichimetry matri
 \subsection{\acrshort{dp-ma}}
 $$
 \begin{array}{ccl}
-\frac {\mathrm{d}\left( {{\mathrm{[A]}} \, \cdot \, {V}_{\mathrm{cell}} } \right) }  {\mathrm{d}{t} }  \; &=& \;  { \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{deg}} \, \cdot \, {\mathrm{[A]}} } \right) }{ \, + \, {2} \, \cdot \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{dim\_r}} \, \cdot \, {\mathrm{[A2]}} } \right) }{ \, - \, {2} \, \cdot \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{dim}} \, \cdot \, {\mathrm{[A]}} \, \cdot \, {\mathrm{[A]}} } \right) }{ \, + \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{geA}} \, \cdot \, {\mathrm{[gA]}} } \right) } \\ 
+\frac {\mathrm{d}\left( {{\mathrm{[A]}} \, \cdot \, {V}_{\mathrm{cell}} } \right) }  {\mathrm{d}{t} }  \; &=& \;  { \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{deg}} \, \cdot \, {\mathrm{[A]}} } \right) }{ \, + \, {2} \, \cdot \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{dim\_r}} \, \cdot \, {\mathrm{[A2]}} } \right) }{ \, - \, {2} \, \cdot \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{dim}} \, \cdot \, {\mathrm{[A]}} \, \cdot \, {\mathrm{[A]}} } \right) } \\ 
  && \\ 
- \; && \;  { \, + \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{aut\_2}} \, \cdot \, {\mathrm{[A2gA]}} } \right) } \\ 
+ \; && \;  { \, + \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{geA}} \, \cdot \, {\mathrm{[gA]}} } \right) } { \, + \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{aut\_2}} \, \cdot \, {\mathrm{[A2gA]}} } \right) } \\ 
  && \\ 
  
 \frac {\mathrm{d}\left( {{\mathrm{[gA]}} \, \cdot \, {V}_{\mathrm{cell}} } \right) }  {\mathrm{d}{t} }  \; &=& \;  { \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{aut\_1}} \, \cdot \, {\mathrm{[A2]}} \, \cdot \, {\mathrm{[gA]}} } \right) }{ \, + \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{rep\_r}} \, \cdot \, {\mathrm{[B2gA]}} } \right) }{ \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{repA}} \, \cdot \, {\mathrm{[gA]}} \, \cdot \, {\mathrm{[B2]}} } \right) } \\ 
@@ -376,9 +382,9 @@ $$
  \; && \;  { \, + \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{aut\_3}} \, \cdot \, {\mathrm{[A2gA]}} } \right) } \\ 
  && \\ 
  
-\frac {\mathrm{d}\left( {{\mathrm{[B]}} \, \cdot \, {V}_{\mathrm{cell}} } \right) }  {\mathrm{d}{t} }  \; &=& \;  { \, + \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{aut\_2}} \, \cdot \, {\mathrm{[B2gB]}} } \right) }{ \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{deg}} \, \cdot \, {\mathrm{[B]}} } \right) }{ \, + \, {2} \, \cdot \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{dim\_r}} \, \cdot \, {\mathrm{[B2]}} } \right) }{ \, - \, {2} \, \cdot \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{dim}} \, \cdot \, {\mathrm{[B]}} \, \cdot \, {\mathrm{[B]}} } \right) } \\ 
+\frac {\mathrm{d}\left( {{\mathrm{[B]}} \, \cdot \, {V}_{\mathrm{cell}} } \right) }  {\mathrm{d}{t} }  \; &=& \;  { \, + \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{aut\_2}} \, \cdot \, {\mathrm{[B2gB]}} } \right) }{ \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{deg}} \, \cdot \, {\mathrm{[B]}} } \right) }{ \, + \, {2} \, \cdot \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{dim\_r}} \, \cdot \, {\mathrm{[B2]}} } \right) } \\ 
  && \\ 
- \; && \;  { \, + \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{geB}} \, \cdot \, {\mathrm{[gB]}} } \right) } \\ 
+ \; && \;  { \, - \, {2} \, \cdot \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{dim}} \, \cdot \, {\mathrm{[B]}} \, \cdot \, {\mathrm{[B]}} } \right) } { \, + \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{geB}} \, \cdot \, {\mathrm{[gB]}} } \right) } \\ 
  && \\ 
  
 \frac {\mathrm{d}\left( {{\mathrm{[gB]}} \, \cdot \, {V}_{\mathrm{cell}} } \right) }  {\mathrm{d}{t} }  \; &=& \;  { \, + \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{aut\_3}} \, \cdot \, {\mathrm{[B2gB]}} } \right) }{ \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{aut\_1}} \, \cdot \, {\mathrm{[B2]}} \, \cdot \, {\mathrm{[gB]}} } \right) }{ \, + \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{rep\_r}} \, \cdot \, {\mathrm{[A2gB]}} } \right) } \\ 
@@ -386,16 +392,18 @@ $$
  \; && \;  { \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{repB}} \, \cdot \, {\mathrm{[gB]}} \, \cdot \, {\mathrm{[A2]}} } \right) } \\ 
  && \\ 
  
-\frac {\mathrm{d}\left( {{\mathrm{[A2]}} \, \cdot \, {V}_{\mathrm{cell}} } \right) }  {\mathrm{d}{t} }  \; &=& \;  { \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{aut\_1}} \, \cdot \, {\mathrm{[A2]}} \, \cdot \, {\mathrm{[gA]}} } \right) }{ \, + \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{rep\_r}} \, \cdot \, {\mathrm{[A2gB]}} } \right) }{ \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{repB}} \, \cdot \, {\mathrm{[gB]}} \, \cdot \, {\mathrm{[A2]}} } \right) } { \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{dim\_r}} \, \cdot \, {\mathrm{[A2]}} } \right) } \\ 
+\frac {\mathrm{d}\left( {{\mathrm{[A2]}} \, \cdot \, {V}_{\mathrm{cell}} } \right) }  {\mathrm{d}{t} }  \; &=& \;  { \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{aut\_1}} \, \cdot \, {\mathrm{[A2]}} \, \cdot \, {\mathrm{[gA]}} } \right) }{ \, + \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{rep\_r}} \, \cdot \, {\mathrm{[A2gB]}} } \right) }{ \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{repB}} \, \cdot \, {\mathrm{[gB]}} \, \cdot \, {\mathrm{[A2]}} } \right) } \\ 
  && \\ 
- \; && \;  { \, + \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{dim}} \, \cdot \, {\mathrm{[A]}} \, \cdot \, {\mathrm{[A]}} } \right) }{ \, + \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{aut\_3}} \, \cdot \, {\mathrm{[A2gA]}} } \right) } \\ 
+ \; && \;   { \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{dim\_r}} \, \cdot \, {\mathrm{[A2]}} } \right) }  { \, + \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{dim}} \, \cdot \, {\mathrm{[A]}} \, \cdot \, {\mathrm{[A]}} } \right) }{ \, + \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{aut\_3}} \, \cdot \, {\mathrm{[A2gA]}} } \right) } \\ 
  && \\ 
  \; && \;  { \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{deg\_dim}} \, \cdot \, {\mathrm{[A2]}} } \right) } \\ 
  && \\ 
  
 \frac {\mathrm{d}\left( {{\mathrm{[B2]}} \, \cdot \, {V}_{\mathrm{cell}} } \right) }  {\mathrm{d}{t} }  \; &=& \;  { \, + \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{aut\_3}} \, \cdot \, {\mathrm{[B2gB]}} } \right) }{ \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{aut\_1}} \, \cdot \, {\mathrm{[B2]}} \, \cdot \, {\mathrm{[gB]}} } \right) }{ \, + \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{rep\_r}} \, \cdot \, {\mathrm{[B2gA]}} } \right) } \\ 
  && \\ 
- \; && \;  { \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{repA}} \, \cdot \, {\mathrm{[gA]}} \, \cdot \, {\mathrm{[B2]}} } \right) }{ \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{dim\_r}} \, \cdot \, {\mathrm{[B2]}} } \right) } { \, + \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{dim}} \, \cdot \, {\mathrm{[B]}} \, \cdot \, {\mathrm{[B]}} } \right) } { \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{deg\_dim}} \, \cdot \, {\mathrm{[B2]}} } \right) } \\ 
+ \; && \;  { \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{repA}} \, \cdot \, {\mathrm{[gA]}} \, \cdot \, {\mathrm{[B2]}} } \right) }{ \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{dim\_r}} \, \cdot \, {\mathrm{[B2]}} } \right) }  \\ 
+ && \\ 
+ \; && \;  { \, + \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{dim}} \, \cdot \, {\mathrm{[B]}} \, \cdot \, {\mathrm{[B]}} } \right) } { \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{deg\_dim}} \, \cdot \, {\mathrm{[B2]}} } \right) } \\ 
  && \\ 
  
 \frac {\mathrm{d}\left( {{\mathrm{[B2gA]}} \, \cdot \, {V}_{\mathrm{cell}} } \right) }  {\mathrm{d}{t} }  \; &=& \;  { \, - \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{rep\_r}} \, \cdot \, {\mathrm{[B2gA]}} } \right) }{ \, + \, {V}_{\mathrm{cell}} \, \cdot \, \left( {{\mathrm{repA}} \, \cdot \, {\mathrm{[gA]}} \, \cdot \, {\mathrm{[B2]}} } \right) } \\ 

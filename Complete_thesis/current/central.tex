@@ -20,11 +20,16 @@
 
 
 \begin{abstract}
-Genetic switches exhibit multistability, form the basis of epigenetic memory, and are found in natural decision making systems, such as cell fate determination in developmental pathways. Synthetic genetic switches can be used for recording the presence of different environmental signals, for changing phenotype using synthetic inputs and as building blocks for higher-level sequential logic circuits. 
+Genetic toggle switches consist of two mutually repressing transcription factors. The switch motif  forms the basis of epigenetic memory and is found in natural decision making systems, such as cell fate determination in developmental pathways. A synthetic genetic switch can be used for a variety of applications, like recording the presence of different environmental signals, for changing phenotype using synthetic inputs and as building blocks for higher-level sequential logic circuits.
 
-In this thesis the genetic toggle switch was studied computationally and experimentally. Bayesian methods were used to compare competing model designs of the genetic toggle switch. The method used enables the simultaneous inference of the kinetic parameters and the ranking of the models with respect to producing the same behaviour over a greater volume of parameter space.
+Here, the genetic toggle switch was studied computationally and experimentally. Bayesian methods were used to compare competing model designs of the genetic toggle switch. The method used enables the simultaneous inference of the kinetic parameters and the ranking of the models with respect to robustness. 
 
-Flow Cytometry was used to characterise a known toggle switch plasmid. Two new computational tools were developed; ABC-Flow which takes advantage of sequential Monte Carlo methods to fit models to Flow Cytometry data. ABC-Flow was used to characterise the toggle switch plasmid and fit models to experimental results. The other computational tool, StabilityFinder, can identify regions of parameter space capable of producing multistable behaviour, while handling uncertainty in biochemical rate constants and initial conditions. A collection of models of genetic switches were examined, ranging from the deterministic simplified toggle switch to stochastic models containing different positive feedback connections. The design principles behind making a bistable switch were uncovered, as well as those necessary to make a tristable switch. The results suggest many ways in which the construction of genetic switches can be enhanced.Finally, a design strategy for constructing novel toggle switches is presented.\end{abstract}
+A computational tool based on Bayesian statistics was developed, that can identify regions of parameter space capable of producing multistable behaviour, while handling uncertainty in biochemical rate constants and initial conditions. A collection of models of genetic switches were examined, ranging from the deterministic simplified toggle switch to stochastic models containing different positive feedback connections. The design principles behind making a bistable switch were uncovered, as well as those necessary to make a tristable or quadristable switch.
+
+Flow Cytometry was used to characterise a known toggle switch plasmid. A computational tool were developed which takes advantage of sequential Monte Carlo methods to infer model parameter values from flow cytometry data. ABC-Flow was used to characterise the toggle switch plasmid and fit models to experimental results. 
+
+These results, taken together, suggest many ways in which the construction of genetic switches can be enhanced. A design strategy is presented for the construction of novel toggle switches.
+\end{abstract}
 
 \tableofcontents*
 \listoffigures
@@ -107,8 +112,9 @@ blabla
 %% --------------------------------------------------------------
 %% APPENDIX
 %% --------------------------------------------------------------
-\appendix*
-\addcontentsline{toc}{chapter}{Appendices}
+
+%\addcontentsline{toc}{chapter}{Appendices}
+\appendix
 \chapter{Biochemical kinetic models}
 \label{ap:ODEs}
 \input{../../appendices/appendix_ODEs}

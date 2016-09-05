@@ -174,7 +174,7 @@ where $fD_i$ is the kernel of the flow data at each value of x and $fS_i$ the ke
 
 
 \begin{algorithm}[tb]
-\caption{Distance calculation}
+\caption{Kernel distance calculation}
 \label{alg:dist}
  \begin{algorithmic}[1]
     \Statex
@@ -408,21 +408,21 @@ The posterior distributions obtained from each fit are shown in Figure~\ref{fig:
 \toprule
 \multicolumn{3}{c}{Parameters}                                         \\ \midrule
 \multicolumn{1}{c}{} & \multicolumn{1}{c}{1D} & \multicolumn{1}{c}{2D} \\ \midrule
-p1                   & 30 - 150               & 30 - 150               \\
-p2                   & 1 - 5                  & 1 - 5                  \\
-p3                   & 700 - 850              & 700 - 850              \\
-p4                   & 30 - 150               & 30 - 150               \\
-p5                   & 0 - 5                  & 0 - 5                  \\
-p6                   & 700 - 850              & 700 - 850              \\
-p7                   & 0 - 5                  & 0 - 5                  \\ \midrule
+p1                   & 80 - 120               & 80 - 120               \\
+p2                   & 1 - 4                  & 1 - 4                  \\
+p3                   & 750 - 850              & 750 - 850              \\
+p4                   & 80 - 120               & 80 - 120               \\
+p5                   & 1 - 5                  & 1 - 4                  \\
+p6                   & 750 - 850              & 750 - 850              \\
+p7                   & 1 - 4                  & 1 - 4                  \\ \midrule
 \multicolumn{3}{c}{Species}                                            \\ \midrule
 u                    & 9 - 11                 & 9 - 11                 \\
 v                    & 90 - 110               & 90 - 110               \\ \midrule
 \multicolumn{3}{c}{Intensity parameters}                               \\ \midrule
-mean fp1             & 0 - 5                  & 0 - 5                  \\
-mean fp2             &                   & 0 - 5                  \\
-sigma fp1            & 0 - 7                  & 0 - 7                  \\
-sigma fp2            &                   & 0 - 7                  \\ \bottomrule
+mean fp1             & 0 - 2                  & 0 - 2                  \\
+mean fp2             &                   & 0 - 2                  \\
+sigma fp1            & 4 - 6                  & 4 - 6                  \\
+sigma fp2            &                   & 4 - 6                  \\ \bottomrule
 \end{tabular}
 
 \end{table}
@@ -703,7 +703,7 @@ pSEVA281C was constructed via \acrshort{pcr} cloning. \acrshort{pcr} was carried
 
 I carried out a growth rate analysis to determine whether the \acrshort{atc} or \acrshort{iptg} added to pKDL071 or pSEVA281G \textit{E. coli} cultures affected the growth of the bacteria. Cultures were grown without any inducer overnight as described in Section~\ref{sec:growth_meth}. Assays for the cultures were ran with and without added inducers. As can be seen in Figure~\ref{fig:growth_curve}, there is no difference between the conditions. The addition of either \acrshort{atc} or \acrshort{iptg} does not affect the growth rate of \textit{E. coli} K-12 MG1655. Additionally, \acrshort{atc} does not affect the growth rate of \textit{E. coli} Dh5α. Since the addition of \acrshort{atc} flips the switch to the GFP high state, and \acrshort{iptg} to the mCherry high state, we can also conclude that the growth rate of the chassis is not affected by which side of the switch is in the high state. The growth rate of \textit{E. coli} Dh5α was consistently lower than that of \textit{E. coli} K-12 MG1655.
 
-\begin{figure*}[tb]
+\begin{figure*}[htbp]
 	\begin{center}
 		\includegraphics[scale=0.6]{../../chapters/chapterABCFlow/images/growth_curves.png}
 		\caption[Growth rate curves of cultures with and without inducers]{\label{fig:growth_curve}: Growth rate analysis of \textit{E. coli} K-12 MG1655 pKDL071 and \textit{E. coli} Dh5α pSEVA281G cultures with and without inducers. The inducers do not affect the growth of the bacteria. }
@@ -728,7 +728,7 @@ I carried out a concentration assay using flow cytometry, as described in Sectio
 
 \begin{align}
  	F_{ac} = Pmin + (Pmax - Pmin)\frac{\Big(\frac{[I]}{Kd}\Big)^n}{1+\Big(\frac{[I]}{Kd}\Big)^n},\\
- 	F_{rep} = Pmax + (Pmin - Pmax)\frac{\Big(1}{1+\Big(\frac{[I]}{Kd}\Big)^n}
+ 	F_{rep} = Pmax + (Pmin - Pmax)\frac{(1)}{1+\Big(\frac{[I]}{Kd}\Big)^n}
 \end{align}
  
 where F is the median fluorescent unit and [I] is the concentration of inducer. Pmin and Pmax are the minimum and maximum fluorescence respectively, and Kd and n are the dissociation constant, and Hill coefficient. I fit the Hill function by using the nonlinear least squares estimation in the R statistical environment~\autocite{R:2008}. Initial values used for the Hill function parameters $P_{min}$, $P_{max}$, $K_d$, and $n$ are given in Table~\ref{tab:hill_initial}.
@@ -784,7 +784,7 @@ For the case of the \acrshort{atc} induction we observe a sharp switch between t
 \end{figure*}
 
 
-During IPTG induction we observe an increase in mCherry fluorescence, as seen in Figure~\ref{fig:switch_concentrations_model}. The parameters obtained via the nonlinear least squares estimation are $P_{min} = 7.3$, $P_{max}=687.3$, $K_d=0.00012$, and $n=0.98$. There is a 94.5 fold increase in mCherry fluorescence.  We also observe a decrease in GFP fluorescence with increasing IPTG concentrations. 
+During IPTG induction we observe an increase in mCherry fluorescence, as seen in Figure~\ref{fig:switch_concentrations_model}. The parameters obtained via the nonlinear least squares estimation are given in Table~\ref{tab:hill_initial}. There is a 94.5 fold increase in mCherry fluorescence.  We also observe a decrease in GFP fluorescence with increasing IPTG concentrations. 
 
 Figures~\ref{fig:switch_concentrations_model_atc} and~\ref{fig:switch_concentrations_model} demonstrate that the genetic toggle switch present on the pKDL071 plasmid is capable of behaving like a switch. By adding the appropriate inducers at increasing concentrations I observed the switch flipping between its two states, GFP high/mCherry low and GFP low/mCherry high. I observed a bigger fold increase in fluorescence in mCherry during IPTG inductions compared to GFP during \acrshort{atc} inductions. Both inductions resulted in a large overall change in fluorescence for the two fluorescent proteins GFP and mCherry. 
 
@@ -830,7 +830,7 @@ In the next section I use ABC-FLow to fit a computational model to the timecours
 
 \section{ABC-Flow used on experimental data}
  
-In this section I apply ABC-Flow to the experimental flow cytometry data collected in Section~\ref{sec:ts_time}. The data set is comprised of time course data of the~\textcite{Litcofsky:2012gr} toggle switch. The two states of the switch are represented by the levels of GFP and mCherry intensity in each bacterial cell. Using \acrshort{atc} inducer, each cell transitions from a mCherry high state to a GFP high state and using \acrshort{iptg} each cell transitions from a GFP high state to an mCherry high state. 
+In this section I apply ABC-Flow to the experimental flow cytometry data collected in Section~\ref{sec:ts_time}. The data set is comprised of time course data of the~\textcite{Litcofsky:2012gr} toggle switch. The two states of the switch are represented by the levels of GFP and mCherry intensity in each bacterial cell. Using \acrshort{atc} inducer, each cell transitions from a GFP low/mCherry high state to a GFP high/mCherry low state and using \acrshort{iptg} each cell transitions from a GFP high/mCherry low state to an GFP high/mCherry high state. 
 
 
 \subsection{Toggle switch model developed to fit to experimental data}
@@ -847,6 +847,12 @@ h_4 &= 60  \frac{R_v  KL_v}{1+ KL_v + KR_v  GFP^2},
 \noindent where GFP and mCherry represent the two fluorescent proteins in the system. The cooperativity of the repressors (GFP and mCherry) is assumed in the model as well as the dimerization of the inducers. KI\textsubscript{u} and KI\textsubscript{v} KL\textsubscript{u} KL\textsubscript{v} KD\textsubscript{u} KD\textsubscript{v} KR\textsubscript{u} KR\textsubscript{v}, parameters KI\textsubscript{u} and KI\textsubscript{v} increase the degradation of one of the species, and simulates the addition of a repressor, IPTG or \acrshort{atc} respectively. When using this model to fit to the post-\acrshort{atc} induction time course data, KI\textsubscript{v} was set to 0. KI\textsubscript{u} was set to 0, until t = 0.01h where the prior distribution was used. This was done to simulate the addition of the inducer. When using this model to fit the post-IPTG induction time course, KI\textsubscript{u} was set to 0 and KI\textsubscript{v} sampled from the prior after t = 0.01h. 
 
 The two production hazards, $h2$ and $h4$ are multiplied by 60 to reflect the copy number of the toggle switch plasmid in each cell. The plasmid containing the toggle switch used here, pKDL071, contains the ColE1 origin of replication, and thus 50-70 copies of the plasmid are present in each cell~\autocite{Milo:2010cz}. The priors used in ABC-Flow for this model are given in Table~\ref{tab:priors_model_real}. All priors given assume a uniform distribution. The values where chosen in agreement with~\autocite{Lillacci:2013hu} and in reference to \url{http://bionumbers.hms.harvard.edu/}, the database of useful biological numbers~\autocite{Milo:2010cz}. In order to account for background fluorescence I used the fluorescence levels of the OFF states of the switch. After the overnight induction of the toggle switch with \acrshort{atc} and IPTG, the fluorescent intensity of the OFF state was considered to be the background fluorescence present. This was added to the model at each time point. 
+
+
+%The final epsilon used in both switch inductions was set to 10. This is a sufficient distance in order to obtain a distribution that is close to the experimental data set, as shown in Section~\ref{sec:dist}. Nevertheless, given that the data set does not represent a normal distribution, it was not possible to obtain a fit with such a low epsilon value. 
+
+The populations were allowed to progress until the reduction in epsilon started to plateau and the acceptance rate becomes very low. This indicates that the fit will not improve significantly with subsequent populations.
+
 
 %\begin{table}[tb]
 %\centering
@@ -889,16 +895,16 @@ The two production hazards, $h2$ and $h4$ are multiplied by 60 to reflect the co
 \toprule
 \multicolumn{5}{c}{Parameters} \\ \midrule
 \multicolumn{1}{c}{Description} & \multicolumn{1}{c}{Symbol} & Units & \multicolumn{1}{c}{ATc induction} & IPTG induction \\ \midrule
-IPTG-induced mCherry degradation rate & KI\textsubscript{u} &  h\textsuperscript{−1} μM\textsuperscript{−1}&  & 1 - 10 \\
+IPTG-induced mCherry degradation rate & KI\textsubscript{u} &  h\textsuperscript{−1} μM\textsuperscript{−1}&  & 1 - 100 \\
 GFP transcription rate & R\textsubscript{u} & molecules h\textsuperscript{−1} & 1 - 50 & 1 - 50 \\
 GFP translation rate & KL\textsubscript{u} & h\textsuperscript{−1} & 1 - 50 & 1 - 50 \\
-GFP degradation & KD\textsubscript{u} & h\textsuperscript{−1} & 0.1 - 2 & 0.1 - 2 \\
+GFP degradation & KD\textsubscript{u} & h\textsuperscript{−1} & 0.001 - 0.1 & 0.001 - 0.1 \\
 mCherry-induced GFP repression rate & KR\textsubscript{u} &  molecules\textsuperscript{−1} h\textsuperscript{−1} & 0.016 - 1.2 & 0.016 - 1.2 \\
 mCherry transcription rate & R\textsubscript{v} & molecules h\textsuperscript{−1} & 1 - 50 & 1 - 50 \\
 mCherry translation rate & KL\textsubscript{v} & h\textsuperscript{−1} & 1 - 50 & 1 - 50 \\
 GFP-induced mCherry repression rate & KR\textsubscript{v} & molecules\textsuperscript{−1} h\textsuperscript{−1} & 0.016 - 1.2 & 0.016 - 1.2 \\
 mCherry degradation & KD\textsubscript{v} & h\textsuperscript{−1} & 0.1 - 2 & 0.1 - 2 \\
-ATC-induced GFP degradation rate & KI\textsubscript{v} & h\textsuperscript{−1} μM\textsuperscript{−1} & 1 - 10 &  \\ \midrule
+ATC-induced GFP degradation rate & KI\textsubscript{v} & h\textsuperscript{−1} μM\textsuperscript{−1} & 1 - 100 &  \\ \midrule
 \multicolumn{5}{c}{Species} \\ \midrule
  & GFP & mM & 0 - 1 & 100 - 1000 \\
  & mCherry & mM & 100 - 1000 & 0 - 1 \\ \midrule
@@ -916,12 +922,12 @@ Standard deviation of fluorescence of single mCherry molecule & σ\textsubscript
 
 \subsection{Model fitting to the genetic toggle switch post ATc induction}
 
-I used ABC-Flow to fit the model described in Section~\ref{sec:Real_model} o the post-ATc induction timecourse of the toggle switch. I used the data set obtained in Section~\ref{sec:flo_time}. The data was pre-processed by removing the population of cells that were unresponsive to the inducer. The prior distribution used is given in Table~\ref{tab:priors_model_real}. ABC-Flow returned the posterior distributions of the parameters that could reproduce the experimental data. The posterior distributions are given in Figure~\ref{fig:1atc-post}. 
+I used ABC-Flow to fit the model described in Section~\ref{sec:Real_model} to the post-\acrshort{atc} induction time course of the toggle switch. I used the data set obtained in Section~\ref{sec:flo_time}. The data was pre-processed by removing the population of cells that were unresponsive to the inducer. The prior distribution used is given in Table~\ref{tab:priors_model_real}. ABC-Flow was used to infer the parameter values that could fit the experimental data. The posterior distributions are given in Figure~\ref{fig:1atc-post}. 
 
 
 \begin{figure}[tb]
 \centerfloat
-	\includegraphics[width=1.2\textwidth]{../../chapters/chapterABCFlow/images/2D_real_res.png}
+	\includegraphics[width=1.2\textwidth]{../../chapters/chapterABCFlow/images/2D_real_res-01.png}
 	\caption[ABC-Flow fit to post-\acrshort{atc} time course data]{\label{fig:1d-real-res} (A) The post-\acrshort{atc} induction flow cytometry time course data (blue) and the resulting model fit from ABC-Flow (red). (B) The model simulation using parameters sampled from the posterior distribution shows that this model behaves like a switch. }
 \end{figure}
 
@@ -934,9 +940,10 @@ Figure~\ref{fig:1d-real-res} shows the resulting time course data of the model u
 \end{figure}
 
 
-The posterior distribution obtained from ABC-Flow is shown in Figure~\ref{fig:1atc-post}. We find that the parameter for GFP gene expression, R\textsubscript{u}  is low, whereas the parameter for gene expression of mCherry was not inferred well. The parameter for the repression of GFP by mCherry was also inferred to be low. The median values of all inferred parameters, with the 95\% confidence intervals, are given in Table~\ref{tab:inf_params_atc}. 
 
-In order to validate these results I compare the 95\% confidence intervals of the inferred parameters to values reported in the literature. The half life of GFP was estimated to be (7.195, 94.884)hours which is consistent with the \textgreater 24 hours half life that has been previously reported for the variant of GFP used here, GFPmut3b~\autocite{Andersen:1998tn}. The half life for mCherry was estimated to be (7.179, 45.039)hours which is consistent with the long half life of mCherry, reported to be more than 24 hours~\autocite{Shaner:2004vy}. 
+% The parameter for the repression of GFP by mCherry (KR\textsubscript{u}) was inferred to be () . The median values of all inferred parameters, with the 95\% confidence intervals, are given in Table~\ref{tab:inf_params_atc}. 
+
+The inferred parameters, and the 95\% credible intervals of the inferrence, are given in Table~\ref{tab:inf_params_atc}. In order to validate these results I compare the 95\% confidence intervals of the inferred parameters to values reported in the literature. The half life of GFP was estimated to be (7.195, 94.884) hours which is consistent with the \textgreater 24 hours half life that has been previously reported for the variant of GFP used here, GFPmut3b~\autocite{Andersen:1998tn}. The half life for mCherry was estimated to be (7.179, 45.039) hours which is consistent with the long half life of mCherry, reported to be more than 24 hours~\autocite{Shaner:2004vy}. We find that the inferred parameter for GFP gene expression, R\textsubscript{u} is (1.052, 3.412) molecules h\textsubscript{-1}, whereas the parameter for gene expression of mCherry (R\textsubscript{v}) was inferred to (1.918, 47.835) molecules h\textsubscript{-1}. These values correspond to the promoter strengths of P\textsubscript{lteto-1} and P\textsubscript{trc2} respectively. Characterization data on the strength of these two promoters report that there is a difference in strengths, P\textsubscript{trc2} being a stronger promoter than P\textsubscript{lteto-1}~\autocite{Litcofsky:2012gr}. There is an indication of the difference in strengths in the inferred values here, but the value of \textsubscript{v} has not been inferred as well as R\textsubscript{u} to draw a string conclusion.
 
 
 \begin{table}[tb]
@@ -962,15 +969,26 @@ sfp2 & 34.498 & 104.000 & 165.358 \\ \bottomrule
 \end{tabular}
 \end{table}
 
+The inferred parameters can be used to study the switch system present in the pKDL071 plasmid. Here I examined the effect that the values of the most well inferred parameters, R\textsubscript{u} and KR\textsubscript{u} have on the behaviour of the system. The value of R\textsubscript{u} represents the strength of the promoter driving GFP expression. It is therefore important to understand the effect that the promoter strength has on the behaviour of the system. In order to do that, I simulated the model with values that exceed the 95\% credible region of the values inferred from ABC-Flow. The results are shown in Figure~\ref{fig:prom_str}. We find that if the promoter strength is lower then the system does not behave like a switch. Further, I examine the effect that the strength of KR\textsubscript{u}, the parameter representing the mCherry-induced GFP repression rate, has to the behaviour of the system. We find that KR\textsubscript{u} affects the time it takes for the switch to occur. Values lower than the 95\% credible region cause the switch to occur too fast, and values that are larger make the switch occur too slow compared to the time course data collected.
 
+
+\begin{figure}[htb]
+\centerfloat
+	\includegraphics[width=\textwidth]{../../chapters/chapterABCFlow/images/promoter_strengths.png}
+	\caption[The inferred parameter values produce a switch]{\label{fig:prom_str} (A) The median of the inferred values of R\textsubscript{u} produce a switch-like behaviour. (B) Decreasing parameter R\textsubscript{u} to a value outside the 95\% credible region stops the model from behaving like a switch. (C) KR\textsubscript{u}, the parameter representing the mCherry-induced GFP repression rate affects the time at which the switch occurs. If the value is set to lower than the 95\% credible region, the switch happens too fast. (D) If the value of KR\textsubscript{u} is set to larger than the 95\% credible region, the switch happens too slow.}
+\end{figure}
+
+
+
+\clearpage
 \subsection{Model fitting to the genetic toggle switch post IPTG induction}
 In this section I use ABC-Flow to fit the experimental time course obtained from the toggle switch post-IPTG induction. The prior densities used are given in Table~\ref{tab:priors_model_real}. The resulting time course of the model fitted to the experimental flow cytometry data is shown in Figure~\ref{fig:1d-real-res-iptg}. The median and 95\% confidence intervals of the inferred parameters are shown in Table~\ref{tab:inf_params_iptg}.
 
 
 \begin{figure}[htbp]
 \centerfloat%
-	\includegraphics[width=1.2\textwidth]{../../chapters/chapterABCFlow/images/2D_real_res_IPTG.png}
-	\caption[ABC-Flow fit to post-\acrshort{atc} time course data]{\label{fig:1d-real-res-iptg} (A) The time course data obtained of the post-IPTG induced toggle switch is shown in blue and the resulting fit from ABC-Flow is shown in red. (B) The model was simulated by using parameter sampled from the posterior distribution. The resulting model did not behave like a switch. }
+	\includegraphics[width=1.2\textwidth]{../../chapters/chapterABCFlow/images/2D_real_res_IPTG-01.png}
+	\caption[ABC-Flow fit to post-\acrshort{atc} time course data]{\label{fig:1d-real-res-iptg} (A) The time course data obtained of the post-IPTG induced toggle switch is shown in blue and the resulting fit from ABC-Flow is shown in red. (B) The model was simulated by using parameter sampled from the posterior distribution. The resulting model did not behave like a switch. (C) The particle acceptance rate from ABC-Flow (D) The progression of epsilon threshold values at each population.  }
 \end{figure}
 
 As can be seen in Figure~\ref{fig:1d-real-res-iptg}B, the toggle switch model simulated using the parameters fitted to the post-IPTG time course data does not behave like a switch within the timeframe given from the experimental data (0-6 hours). We find a rapid decay of GFP without an increase in mCherry fluorescence as would be expected. This could be attributed to the experimental time course obtained. As shown in Figure~\ref{fig:1d-real-res-iptg}A, over a period of 6 hours post induction there is a decrease in GFP fluorescence. mCherry can be seen increasing after two hours post induction but then not maintaining that high level. Over the 6 hours, there is no overall increase in mCherry fluorescence. This time course would be challenging to fit using the model used here as it does not behave like a switch as expected. 
@@ -999,27 +1017,27 @@ sfp2 & 18.323 & 65.000 & 130.537 \\ \bottomrule
 \end{table}
 
 
-The posterior density obtained from by ABC-Flow is given in Figure~\ref{fig:1atc-post}. We find parameter R\textsubscript{u}, representing GFP expression, to be  low. 
+The posterior density obtained from by ABC-Flow is given in Figure~\ref{fig:1atc-post}. Parameter R\textsubscript{u}, representing GFP expression, was inferred to be (1.044, 12.553) molecules h\textsubscript{-1}.  The epsilon progression of the fit for the IPTG induction of the switch further confirms that the fit to the data is not very good. Epsilon reduction levels off at a high epsilon value compared to the ATc induction, while the acceptance rate is very low. This indicates that continuing with the fit of the above model to the IPTG induction data will not produce a better fit.   
 
 \begin{figure}[htbp]
 \centerfloat
 	\includegraphics[width=\textwidth]{../../chapters/chapterABCFlow/images/real_data_stuff/posterior2D_pop9_100p-IPTG.pdf}
-	\caption[Posterior distribution of inferred parameters for post-IPTG induction of the toggle switchn]{\label{fig:1atc-post} The posterior distribution obtained from ABC-Flow for the post-IPTG timecourse data. The parameter for GFP expression was found to be the most constrained. }
+	\caption[Posterior distribution of inferred parameters for post-IPTG induction of the toggle switchn]{\label{fig:1atc-post} The posterior distribution obtained from ABC-Flow for the post-IPTG timecourse data. The parameter for GFP expression was found to be the most well inferred. (C) The particle acceptance rate from ABC-Flow (D) The progression of epsilon threshold values at each population.}
 \end{figure}
 
 
-The final epsilon used in both switch inductions was set to 10. This is a sufficient distance in order to obtain a distribution that is close to the experimental data set, as shown in Section~\ref{sec:dist}. Nevertheless, given that the data set does not represent a normal distribution, it was not possible to obtain a fit with such a low epsilon value. The populations were allowed to progress until the reduction in epsilon started to plateaux and the acceptance rate becomes very low. This indicates that the fit will not improve significantly with subsequent populations. The progression of the epsilons and the acceptance rates are given in Figure~\ref{fig:epsilon_accept}. The epsilon progression of the fit for the IPTG induction of the switch further confirms that the fit to the data is not very good. Epsilon reduction levels off at a high epsilon value compared to the ATc induction, while the acceptance rate is very low. This indicates that continuing with the fit of the above model to the IPTG induction data will not produce a better fit. 
 
 
 
-\begin{figure}[tb]
-\centerfloat
-	\includegraphics[scale=0.7]{../../chapters/chapterABCFlow/images/epsilon_acceptance.png}
-	\caption[Epsilon and acceptance rate of ABC-Flow inference]{\label{fig:epsilon_accept}(A) The progression of epsilons over the populations in ABC-Flow for ATc (green) and IPTG (red) induction. (B) The acceptance rate decreases rapidly with every population.}
-\end{figure}
+
+%\begin{figure}[tb]
+%\centerfloat
+%	\includegraphics[scale=0.7]{../../chapters/chapterABCFlow/images/epsilon_acceptance.png}
+%	\caption[Epsilon and acceptance rate of ABC-Flow inference]{\label{fig:epsilon_accept}(A) The progression of epsilons over the populations in ABC-Flow for ATc (green) and IPTG (red) induction. (B) The acceptance rate decreases rapidly with every population.}
+%\end{figure}
 
 In this section I used ABC-Flow to fit a toggle switch model to experimental flow cytometry data. Both sides of the switch were examined, ATc induction which flips the switch from mCherry high to GFP high and IPTG induction, which flips the switch from GFP high to mCherry high. The model was successfully fit to the data set obtained from the ATc induction of the switch but less so to the data obtained from the IPTG induction of the switch. 
-
+\clearpage
 \section{Discussion}
 
 In this Chapter I characterised the genetic toggle switch experimentally. First I study the effect of the two inducers \acrshort{atc} and \acrshort{iptg} on the growth rate of the selected chassis \textit{E. coli} K-12 MG1655. I find that there is no detrimental effect to the bacterium by the inducers. I further characterised the switch by determining the minimum inducer concentration necessary to change the state of the switch. I find that for \acrshort{atc} induction, a minimum of \SI{0.09}{\nano\gram\per\milli\liter} is required to cause the switch to go to a GFP high state. For \acrshort{iptg} induction I find that a minimum of \SI{0.001}{M} is required to flip the switch to an mCherry high state. This information is critical for using this switch in other applications. Both sides of the switch are very sensitive to inducer concentrations, as the concentrations required to observe a change in fluorescence are very small. 
