@@ -27,7 +27,7 @@ This has led to systems and synthetic biology increasingly being merged together
 The design of genetic circuits has an additional challenge compared to other areas of genetic engineering. The components of the circuits have to be finely tuned to work together towards the desired behaviour of the system. This is in contrast to engineering a cell to produce a single protein where its production has to be maximized~\autocite{Nielsen:2013hs}. The need to orchestration a number of genetic components toward a common goal has made the integration of systems and synthetic biology all the more important.
 
 
-In this work I use quantitative modelling to understand a synthetic system. I look at the problem from two different perspectives, design and inference. I aim to improve on the design of a synthetic biological system and understand the principles dictating the new designs. I also aim to quantitatively study the current system and infer the underlying principles that govern its behaviour. 
+In this work I use quantitative modelling to understand a synthetic system. I look at the problem from two different perspectives, design and inference. I aim to improve on the design of a synthetic biological system and understand the principles dictating the new designs. I also aim to quantitatively study an existing system and infer the underlying principles that govern its behaviour. 
 
 
 
@@ -43,19 +43,19 @@ This thesis will focus on the biochemical modelling of the genetic toggle switch
 \noindent In \textbf{Chapter 3} I explore the effect that adding feedback loops has on the stability and parametric robustness of the toggle switch. I develop more realistic biochemical models of the genetic toggle switch and study their ability to behave like a switch.  
 
 \vskip 0.1in
-\noindent In \textbf{Chapter 4} I develop a parameter estimation algorithm for multistable switches, called StabilityFinder. I benchmark this algorithm using a toggle switch model with known results. I then apply it to extensions of the simplified toggle switch as well as the more realistic models of the toggle switch developed in Chapter 4 in order to study the design principles that make a multistable switch. Finally I develop an algorithm for estimating the robustness of a system using the results from StabilityFinder and use it to study the effect of feedback loops on the robustness of the switch.  
+\noindent In \textbf{Chapter 4} I develop a parameter estimation algorithm for multistable switches, called StabilityFinder. I benchmark this algorithm using a toggle switch model with known results. I then apply it to extensions of the simplified toggle switch as well as the more realistic models of the toggle switch developed in Chapter 3 in order to study the design principles that make a multistable switch. Finally I develop an algorithm for estimating the robustness of a system using the results from StabilityFinder and use it to study the effect of feedback loops on the robustness of the switch.  
 
 \vskip 0.1in
-\noindent In \textbf{Chapter 5} I develop an algorithm based on bayesian statistics for parameter estimation for biochemical modelling of flow cytometry data, called ABC-Flow. I also characterise the genetic toggle switch experimentally and provide an overview of the methods used. Finally I apply ABC-FLow to the experimental data collected and infer the parameters that give rise to the data.
+\noindent In \textbf{Chapter 5} I develop an algorithm based on Bayesian statistics for parameter estimation of flow cytometry data, called ABC-Flow. I also characterise the genetic toggle switch experimentally and provide an overview of the methods used. Finally I apply ABC-Flow to the experimental data collected and infer the parameters that give rise to the data.
 \vskip 0.1in
 \noindent In \textbf{Chapter 6} contains a detailed experimental plan to be carried out as a next step to this work. I outline the steps needed to design and construct genetic toggle switches with added autoregulating feedback loops experimentally. 
 \vskip 0.1in
 \noindent \textbf{Chapter 7} concludes this thesis with an overview of the work presented here and a discussion of future directions. 
 \vskip 0.1in
-\noindent Work carried out throughout my candidature has been published in the following articles:
+\noindent Work carried out throughout my candidature has been published in the following article:
 
-\begin{enumerate}
+\begin{itemize}
 	\item Leon, M., Woods, M., Fedorec, J. A., \& Barnes, C. P. (2016). ‘A computational method for the investigation of multistable systems and its application to genetic switches’. [Submitted].
-	\item Woods, M. L., Leon, M., Perez-Carrasco, R., \& Barnes, C. P. (2016). ‘A Statistical Approach Reveals Designs for the Most Robust Stochastic Gene Oscillators.’ ACS Synthetic Biology 5(6), 459–470.
+	%\item Woods, M. L., Leon, M., Perez-Carrasco, R., \& Barnes, C. P. (2016). ‘A Statistical Approach Reveals Designs for the Most Robust Stochastic Gene Oscillators.’ ACS Synthetic Biology 5(6), 459–470.
 	
-\end{enumerate}
+\end{itemize}

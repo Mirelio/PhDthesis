@@ -10,7 +10,7 @@ Structurally this chapter is organised as follows: In the first section I examin
 
 Creating synthetic devices that are robust to changing cellular contexts will be key to the success of synthetic biology. Unknown initial conditions and parameter values as well as the variability of the cellular environment, extracellular noise and crosstalk makes the majority of synthetic genetic devices non-functional~\autocite{Chen:2009ea}. Designing devices robust to this environment will lead to reliable behaviour of the systems.
 
-When faced with a set of competing designs for a given genetic circuit, one is likely to choose the simplest possible model that can achieve the desired behaviour. However, simple systems are often the least robust. Feedback loops are well known key regulatory motifs~\autocite{Brandman:2005ci}. Negative feedback loops are essential for homeostasis and buffering~\autocite{Thomas:1995id} thus increasing robustness to extrinsic noise sources and positive feedback loops can generate multistationarity in a system~\autocite{Thomas:1995id}. Incorporating this kind of additional feedback interactions can make a design more robust and reliable. 
+When faced with a set of competing designs for a given genetic circuit, one is likely to choose the simplest possible model that can achieve the desired behaviour. However, simple systems are often the least robust. Feedback loops are well known key regulatory motifs~\autocite{Brandman:2005ci}. Negative feedback loops are essential for homeostasis and buffering, thus increasing robustness to extrinsic noise sources, and positive feedback loops can generate multistationarity in a system~\autocite{Thomas:1995id}. Incorporating this kind of additional feedback interactions can make a design more robust and reliable. 
 %Maximising production is an important goal for a metabolic engineering project if it is to produce an economically viable substance~\autocite{Holtz:2010bm}. Network topologies and parameter values of different toggle switch designs are explored here in order to identify the design that maximises robustness and distance between steady states. This ensures the reliable production of the product with the greatest distance between the on and off states of the switch. 
 
 
@@ -123,7 +123,7 @@ The principal quasi steady state assumption being made is that the rate of bindi
 	gv\bullet  u_β &= \frac{Kf_{u}gu u_{β}}{Kr_{u}} 
 \end{align}
 
-\noindent This can now be substituted into set of Equations~\ref{eq:gard_ma_ode}. The second assumption that is made in this system is that the rate of formation and dissociation of the polymerised transcription factor is in steady state. This allows us to solve the system for $u$ in a similar way as shown above and substitute it in Equations~\ref{eq:gard_ma_ode}.
+\noindent This can now be substituted into the set of Equations~\ref{eq:gard_ma_ode}. The second assumption that is made in this system is that the rate of formation and dissociation of the polymerised transcription factor is in steady state. This allows us to solve the system for $u$ in a similar way as shown above and substitute it in Equations~\ref{eq:gard_ma_ode}. This results in a simplified model, with fewer differential equations and parameters.
 
 \section{Designing a simple synthetic switch}
 \label{sec:design_sim}
@@ -195,7 +195,7 @@ $\textrm{B} \stackrel{\textrm{deg}}{\longrightarrow}\varnothing$                
 \subsection{Parameter scan for model stability}
 \label{sec:paramscan}
 
-The bifurcation analysis carried out in Section~\ref{sec:bifurc} can give us the conditions for bistability of a model with respect to one parameter being varied while all the others remain constant. Here I want to determine the range of parameter values for which the above model is bistable without assuming a specific point value for any parameter. Therefore I developed a parameter scanning algorithm, that varies all the parameters in the model over a given range. The algorithm is outlined in Algorithm~\ref{alg:param_scan} below. This method involves the scan of parameter values as well as initial conditions for AA and BB. Parameter values are sampled randomly from a uniform distribution. Here, each set of samples will be referred to as a particle. For each particle, latin hypercube sampling is used to sample initial conditions~\autocite{MCKAY:2000vt}. The uniform priors of the two species in consideration represent a rectangular space, which is subdivided into equal parts. Then a random sample is drawn from each sub-part, as illustrated in Figure~\ref{fig:lhs}. This is used to ensure that the whole space is sampled uniformly. Latin hypercube sampling is done in two dimensions, in order to sample initial conditions for the two dimers, AA and BB. The initial conditions for all other species remain constant, $gA = 1$ and  $gB = 1$ while all other species are equal to zero. 
+The bifurcation analysis carried out in Section~\ref{sec:bifurc} can give us the conditions for bistability of a model with respect to one parameter being varied while all the others remain constant. Here I want to determine the range of parameter values for which the above model is bistable without assuming a specific point value for any parameter. Therefore I developed a parameter scanning algorithm, that varies all the parameters in the model over a given range. The algorithm is outlined in Algorithm~\ref{alg:param_scan} below. This method involves the scan of parameter values as well as initial conditions for A2 and B2. Parameter values are sampled randomly from a uniform distribution, U(0, 10). Here, each set of samples will be referred to as a particle. For each particle, latin hypercube sampling is used to sample initial conditions~\autocite{MCKAY:2000vt}. The uniform priors of the two species in consideration represent a rectangular space, which is subdivided into equal parts. Then a random sample is drawn from each sub-part, as illustrated in Figure~\ref{fig:lhs}. This is used to ensure that the whole space is sampled uniformly. Latin hypercube sampling is done in two dimensions, in order to sample initial conditions for the two dimers, A2 and B2. All other species have fixed initial conditions, with $gA = 1$ and $gB = 1$ while all other species are equal to zero. 
 
 \begin{algorithm}[htbp]
 \caption{Parameter scan algorithm}
@@ -243,7 +243,7 @@ A total of 1000 parameter sets were sampled. Out of these, 56\% were monostable,
 \centering
 \begin{minipage}[c]{1\textwidth}
 \centering
-    \includegraphics[width=1.2\textwidth]{../../chapters/chapterABCSysBio/images/param_scan_combo.pdf}
+    \includegraphics[width=1.2\textwidth]{../../chapters/chapterABCSysBio/images/param_scan_combo.png}
     \caption[Distributions of the parameters resulting in each stability obtained by the parameter scan]{The distribution of parameter values that resulted in monostable and bistable switches in the parameter scan. }
     \label{fig:scan ode param hist}
 \end{minipage}
@@ -254,11 +254,11 @@ From Figure~\ref{fig:scan ode param hist} it can be seen that the parameter for 
 
 \subsection{Toggle switch parameter inference}
 \label{sec:param_inf}
-In this section, I extend the analysis carried out in Section~\ref{sec:paramscan} to study the problem of how to rationally design a synthetic biological system to perform a behaviour of choice.  In order to address this question I use a Bayesian approach, known as \acrlong{abc} and described in Section(XXX), implemented in a software package, ABC-SysBio~\autocite{Liepe:2010eg}. 
+In this section, I extend the analysis carried out in Section~\ref{sec:paramscan} to study the problem of how to rationally design a synthetic biological system to perform a behaviour of choice.  In order to address this question I use a Bayesian approach, known as \acrlong{abc} and described in Section~\ref{sec:abc}, implemented in a software package, ABC-SysBio~\autocite{Liepe:2010eg}. 
 
 This approach is capable of approximating the posterior distribution that gives rise to the behaviour of choice~\autocite{Toni:2009tr}. By simulating the model in question, this approach can identify an approximate posterior distribution via a series of intermediate distributions. This method can be used for the rational design of synthetic biological systems by defining some design objectives to which the model is fitted to~\autocite{Barnes:2011hh}. By specifying the inputs to the system and the outputs required, the posterior of the model that can produce this behaviour can be identified. 
 
-Here I use ABC-SysBio to fit a model to the design objectives of a switch-like behaviour. I extend the model used in Section~\ref{sec:paramscan} by adding two inducers to the system, S and R. S removes the A homodimer (AA) from the system by binding to it thus removing the repression on gene B. R removes BB from the system with the same mechanism. These inducers represent the stimuli that will turn the switch ON and OFF in a biological setting. The following equations are added to the existing set of equations for the mass action switch: 
+Here I use ABC-SysBio to fit a model to the design objectives of a switch-like behaviour. I extend the model used in Section~\ref{sec:paramscan} by adding two inducers to the system, S and R. S removes the A homodimer (A2) from the system by binding to it thus removing the repression on gene B. R removes B2 from the system with the same mechanism. These inducers represent the stimuli that will turn the switch ON and OFF in a biological setting. The following equations are added to the existing set of equations for the mass action switch: 
 
 \begin{table}[htbp]
 \centering
@@ -400,7 +400,7 @@ I used the PyDSTool~\autocite{Clewley:2012kj} in order to determine whether each
 
 % A bifurcation analysis, when all other parameters are kept constant and only $k$ varied, shows that  even small values of $k$ destroy bistability. This is shown in Figure~\ref{fig:Gard_neg}C.
 
-On the other hand, negative autoregulation was not consistent with bistable behaviour for the parameter values used here. The vector plot of the switch with single negative autoregulation show that there is one stable steady state when the levels of the unregulated protein are high and the levels of the negatively regulated protein low. The vector plot for the switch with double negative autoregulation shows one stable steady state when the levels of both proteins are low. A bifurcation plot of the switch with single positive autoregulation highlights this result; the switch is bistable for only very small amounts of $ka1$, the parameter for negative autoregulation. This is shown in Figure~\ref{fig:Gard_neg}.
+On the other hand, negative autoregulation was not consistent with bistable behaviour for the parameter values used here. The vector plot of the switch with single negative autoregulation show that there is one stable steady state when the levels of the unregulated protein are high and the levels of the negatively regulated protein low. The vector plot for the switch with double negative autoregulation shows one stable steady state when the levels of both proteins are low. A bifurcation plot of the switch with single positive autoregulation highlights this result; the switch is bistable for only very small amounts of $ka_1$, the parameter for negative autoregulation. This is shown in Figure~\ref{fig:Gard_neg}.
 
 Negative autoregulation occurs when the protein binds to its own promoter and represses production. Therefore the protein levels rise to a lower level than what would be expected for an unregulated system~\autocite{Alon:2007}. In the case of the double negative autoregulation, the concentration levels of either protein would therefore not be sufficient to dominate over the other and create bistability. In the case of the single negative autoregulation, only the protein without autoregulation is able to reach sufficient levels to dominate the system, and thus the only steady state of the system is when the unregulated protein is high.
 
@@ -421,7 +421,7 @@ The models shown here to be capable of bistable behaviour will be used in the fo
 
 \subsection{\acrshort{abc} for model selection}
 
-In Section~\ref{sec:param_inf} I used ABC SMC to infer the parameters of a model that can produce the desired behaviour. In this Section I extend the analysis by asking which  model, out of the 5 candidate models shown above, can produce the desired behaviour. Bayesian model selection can be used to rank models according to their posterior distributions. 
+In Section~\ref{sec:param_inf} I used ABC SMC to infer the parameters of a model that can produce the desired behaviour. In this Section I extend the analysis by asking which model, out of the 5 candidate models shown above, can best produce the desired behaviour. Bayesian model selection can be used to rank models according to their posterior distributions. 
 
 ABC SMC model selection works by treating each model as another 'parameter'. ABC SMC then proceeds to approximate the posterior distribution over the joint space of all models~\autocite{Toni:2009tr}. The marginal posterior distribution (also known as model evidence) for each model ($m$) can then be used to rank all the models ($M$). 
 
@@ -454,11 +454,11 @@ Here I apply ABC SMC model selection using the package ABC-SysBio~\autocite{Liep
 \begin{tabular}{@{}ll@{}}
 \toprule
 Equations                                                                              & Description             \\ \midrule
-\multicolumn{2}{c}{ Positive autoregulation A}                                                                 \\
+\multicolumn{2}{c}{ Positive autoregulation A}                                                                 \\\midrule
 $\textrm{A2} + \textrm{gA} \stackrel{\textrm{aut\_1}}{\longrightarrow} \textrm{A2gA}$  & dimer self-association  \\
 $\textrm{A2gA} \stackrel{\textrm{aut\_2}}{\longrightarrow} \textrm{A} + \textrm{A2gA}$ & self-induced expression \\
-$\textrm{A2gA} \stackrel{\textrm{aut\_3}}{\longrightarrow} \textrm{A2}+ \textrm{gA}$   & dimer self-dissociation \\
-\multicolumn{2}{c}{Positive autoregulation B}                                                                    \\
+$\textrm{A2gA} \stackrel{\textrm{aut\_3}}{\longrightarrow} \textrm{A2}+ \textrm{gA}$   & dimer self-dissociation \\\midrule
+\multicolumn{2}{c}{Positive autoregulation B}                                                                    \\\midrule
 $\textrm{B2} + \textrm{gB} \stackrel{\textrm{aut\_1}}{\longrightarrow} \textrm{B2gB}$  & dimer self-association  \\
 $\textrm{B2gB} \stackrel{\textrm{aut\_2}}{\longrightarrow} \textrm{B} + \textrm{B2gB}$ & self-induced expression \\
 $\textrm{B2gB} \stackrel{\textrm{aut\_3}}{\longrightarrow} \textrm{B2}+ \textrm{gB}$   & dimer self-dissociation \\ \bottomrule
@@ -520,7 +520,7 @@ Given the models shown above and the parameter priors shown in Table~\ref{tab:mo
 \begin{figure*}[htbp]
 	\centerfloat
 \includegraphics[scale=0.75]{../../chapters/chapterABCSysBio/images/model_sel_res-01.png}
-\caption[ABC model selection resulting posterior distribution]{\label{fig:model_sel_res}: (A) The toggle switch models considered. Interactions denoted by a circular arrow head can be positive of zero. (B) The toggle switch with positive autoregulation on A was found to be the most robust to parameter fluctuations. Three repeats of the model selection were carried out, and the median values are shown here. Upper and lower quartile error bars are included but are too small to be visible. (C) The posterior distribution of the toggle switch with positive autoregulation on A and B.}
+\caption[ABC model selection resulting posterior distribution]{\label{fig:model_sel_res}: (A) The simulated time course of the last population of the switch with double positive autoregulation. (B) The toggle switch with positive autoregulation on both nodes was found to be the most robust to parameter fluctuations. Three repeats of the model selection were carried out, and the median values are shown here. Upper and lower quartile error bars are included but are too small to be visible. (C) The posterior distribution of the toggle switch with positive autoregulation on A and B.}
 
 
 \end{figure*}

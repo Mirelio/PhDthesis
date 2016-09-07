@@ -3,39 +3,40 @@
 \select@language {british}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {table}{\numberline {2.1}{\ignorespaces Summary of stability for the CS and DP switches found via different modelling approaches\relax }}{30}{table.caption.7}
-\contentsline {table}{\numberline {2.2}{\ignorespaces Examples of common genetic coupled chemical reactions. $p$ stands for promoter, and $A$ represents a protein. $A_2$ is the dimer of protein $A$. \relax }}{32}{table.caption.8}
-\contentsline {table}{\numberline {2.3}{\ignorespaces Predator-prey chemical reactions\relax }}{36}{table.caption.12}
-\contentsline {table}{\numberline {2.4}{\ignorespaces Defining reaction hazards\relax }}{40}{table.caption.14}
-\contentsline {table}{\numberline {2.5}{\ignorespaces Bayes factor evidence interpretation. Modified from~\textcite {Kass:1995eh}\relax }}{49}{table.caption.16}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Summary of stability for the CS and DP switches found via different modelling approaches\relax }}{28}{table.caption.7}
+\contentsline {table}{\numberline {2.2}{\ignorespaces Examples of common genetic coupled chemical reactions. $p$ stands for promoter, and $A$ represents a protein. $A_2$ is the dimer of protein $A$. \relax }}{30}{table.caption.8}
+\contentsline {table}{\numberline {2.3}{\ignorespaces Predator-prey chemical reactions\relax }}{34}{table.caption.12}
+\contentsline {table}{\numberline {2.4}{\ignorespaces Defining reaction hazards\relax }}{38}{table.caption.14}
+\contentsline {table}{\numberline {2.5}{\ignorespaces Bayes factor evidence interpretation. Modified from~\textcite {Kass:1995eh}\relax }}{47}{table.caption.16}
 \addvspace {10pt}
-\contentsline {table}{\numberline {3.1}{\ignorespaces Toggle switch model reactions under mass action kinetics\relax }}{55}{table.caption.19}
-\contentsline {table}{\numberline {3.2}{\ignorespaces Simple mass action switch reactions\relax }}{58}{table.caption.21}
-\contentsline {table}{\numberline {3.3}{\ignorespaces Toggle switch inducer equations\relax }}{62}{table.caption.25}
-\contentsline {table}{\numberline {3.4}{\ignorespaces The prior distributions used for the standard toggle switch parameter inference. The values indicate the lower and upper limits (inclusive) of a uniform distribution.\relax }}{63}{table.caption.26}
-\contentsline {table}{\numberline {3.5}{\ignorespaces Autoregulated switches additional equations\relax }}{73}{table.caption.33}
-\contentsline {table}{\numberline {3.6}{\ignorespaces The prior distributions used for model selection. The values indicate the lower and upper limits of a uniform distribution.\relax }}{73}{table.caption.34}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Toggle switch model reactions under mass action kinetics\relax }}{53}{table.caption.19}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Simple mass action switch reactions\relax }}{56}{table.caption.21}
+\contentsline {table}{\numberline {3.3}{\ignorespaces Toggle switch inducer equations\relax }}{60}{table.caption.25}
+\contentsline {table}{\numberline {3.4}{\ignorespaces The prior distributions used for the standard toggle switch parameter inference. The values indicate the lower and upper limits (inclusive) of a uniform distribution.\relax }}{61}{table.caption.26}
+\contentsline {table}{\numberline {3.5}{\ignorespaces Autoregulated switches additional equations\relax }}{71}{table.caption.33}
+\contentsline {table}{\numberline {3.6}{\ignorespaces The prior distributions used for model selection. The values indicate the lower and upper limits of a uniform distribution.\relax }}{71}{table.caption.34}
 \addvspace {10pt}
-\contentsline {table}{\numberline {4.1}{\ignorespaces Gardner switch priors in the deterministic and stochastic cases\relax }}{95}{table.caption.39}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Priors of the classical (\acrshort {cs-lu}), single positive (\acrshort {sp-lu}) and double positive (\acrshort {dp-lu}) models.\relax }}{101}{table.caption.44}
-\contentsline {table}{\numberline {4.3}{\ignorespaces Priors used in the three-node switch\relax }}{109}{table.caption.49}
-\contentsline {table}{\numberline {4.4}{\ignorespaces Design principles of the stochastic MA bistable and tristable switches\relax }}{117}{table.caption.54}
-\contentsline {table}{\numberline {4.5}{\ignorespaces Priors used for studying the effect of priors to robustness\relax }}{120}{table.caption.56}
-\contentsline {table}{\numberline {4.6}{\ignorespaces Bayes factors of the \acrshort {dp-ma} against the \acrshort {cs-ma} model using different volumes of priors\relax }}{123}{table.caption.58}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Gardner switch priors in the deterministic and stochastic cases\relax }}{93}{table.caption.39}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Priors of the classical (\acrshort {cs-lu}), single positive (\acrshort {sp-lu}) and double positive (\acrshort {dp-lu}) models.\relax }}{99}{table.caption.44}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Priors used in the three-node switch\relax }}{107}{table.caption.49}
+\contentsline {table}{\numberline {4.4}{\ignorespaces The priors used in the simple (S) and double positive (DP) mass action deterministic and stochastic models \relax }}{110}{table.caption.51}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Design principles of the stochastic MA bistable and tristable switches\relax }}{115}{table.caption.55}
+\contentsline {table}{\numberline {4.6}{\ignorespaces Priors used for studying the effect of priors to robustness\relax }}{118}{table.caption.57}
+\contentsline {table}{\numberline {4.7}{\ignorespaces Bayes factors of the \acrshort {dp-ma} against the \acrshort {cs-ma} model using different volumes of priors\relax }}{121}{table.caption.59}
 \addvspace {10pt}
-\contentsline {table}{\numberline {5.1}{\ignorespaces The priors used for the 1D and 2D ABC-Flow model fitting to simulated data\relax }}{151}{table.caption.74}
-\contentsline {table}{\numberline {5.2}{\ignorespaces The parameters inferred from simulated data\relax }}{151}{table.caption.75}
-\contentsline {table}{\numberline {5.3}{\ignorespaces \acrshort {pcr} recipe\relax }}{155}{table.caption.77}
-\contentsline {table}{\numberline {5.4}{\ignorespaces Thermocycling conditions\relax }}{156}{table.caption.78}
-\contentsline {table}{\numberline {5.5}{\ignorespaces Digestion recipe\relax }}{156}{table.caption.79}
-\contentsline {table}{\numberline {5.6}{\ignorespaces Ligation controls\relax }}{157}{table.caption.80}
-\contentsline {table}{\numberline {5.7}{\ignorespaces Colony \acrshort {pcr} master mix recipe\relax }}{158}{table.caption.81}
-\contentsline {table}{\numberline {5.8}{\ignorespaces Thermocycling conditions for colony \acrshort {pcr}\relax }}{159}{table.caption.82}
-\contentsline {table}{\numberline {5.9}{\ignorespaces Concentrations used for flow cytometry assay\relax }}{161}{table.caption.83}
-\contentsline {table}{\numberline {5.10}{\ignorespaces Inferred values from the Hill equations in \acrshort {atc} and \acrshort {iptg} inductions\relax }}{165}{table.caption.88}
-\contentsline {table}{\numberline {5.11}{\ignorespaces The priors used for the 1D and 2D ABC-Flow model fitting to flow cytometry data\relax }}{175}{table.caption.94}
-\contentsline {table}{\numberline {5.12}{\ignorespaces The inferred parameter values of the toggle switch post-\acrshort {atc} induction\relax }}{177}{table.caption.97}
-\contentsline {table}{\numberline {5.13}{\ignorespaces The inferred parameter values of the toggle switch post-\acrshort {iptg} induction\relax }}{184}{table.caption.100}
+\contentsline {table}{\numberline {5.1}{\ignorespaces The priors used for the 1D and 2D ABC-Flow model fitting to simulated data\relax }}{144}{table.caption.71}
+\contentsline {table}{\numberline {5.2}{\ignorespaces The parameters inferred from simulated data\relax }}{145}{table.caption.75}
+\contentsline {table}{\numberline {5.3}{\ignorespaces \acrshort {pcr} recipe\relax }}{152}{table.caption.77}
+\contentsline {table}{\numberline {5.4}{\ignorespaces Thermocycling conditions\relax }}{153}{table.caption.78}
+\contentsline {table}{\numberline {5.5}{\ignorespaces Digestion recipe\relax }}{153}{table.caption.79}
+\contentsline {table}{\numberline {5.6}{\ignorespaces Ligation controls\relax }}{154}{table.caption.80}
+\contentsline {table}{\numberline {5.7}{\ignorespaces Colony \acrshort {pcr} master mix recipe\relax }}{155}{table.caption.81}
+\contentsline {table}{\numberline {5.8}{\ignorespaces Thermocycling conditions for colony \acrshort {pcr}\relax }}{156}{table.caption.82}
+\contentsline {table}{\numberline {5.9}{\ignorespaces Concentrations used for flow cytometry assay\relax }}{158}{table.caption.83}
+\contentsline {table}{\numberline {5.10}{\ignorespaces Inferred values from the Hill equations in \acrshort {atc} and \acrshort {iptg} inductions\relax }}{162}{table.caption.88}
+\contentsline {table}{\numberline {5.11}{\ignorespaces The priors used for the 1D and 2D ABC-Flow model fitting to flow cytometry data\relax }}{172}{table.caption.94}
+\contentsline {table}{\numberline {5.12}{\ignorespaces The inferred parameter values of the toggle switch post-\acrshort {atc} induction\relax }}{174}{table.caption.97}
+\contentsline {table}{\numberline {5.13}{\ignorespaces The inferred parameter values of the toggle switch post-\acrshort {iptg} induction\relax }}{182}{table.caption.100}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}

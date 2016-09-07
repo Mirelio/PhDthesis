@@ -6,7 +6,7 @@ In this chapter I aim to fit the toggle switch model to experimental data. This 
 %In this chapter, I aim to study the genetic toggle switch experimentally.  This chapter is organised as follows: In the first section I provide an overview of the circuit used and then outline the methods used for the experiments carried out. In the subsequent section I investigate the effect that the switch has on the growth rate of the bacteria. Then I examine the concentrations of the inducers and the time needed to flip the switch. 
 \section{Contributions to this Chapter}
 
-The R code used to pre-process the flow cytometry obtained was provided by Alex J. Fedorec. The R code to fit the Hill function to the flow cytometry concentration assays was adapted from code provided by David T. Gonzales. 
+The R code used to pre-process the flow cytometry data was provided by Alex J. Fedorec. The R code to fit the Hill function to the flow cytometry concentration assays was adapted from code provided by David T. Gonzales. 
 
 \section{Flow cytometry}
 Flow cytometry detects the fluorescent intensity levels in individual cells. It can also provide physical information about the size and granularity of a cell via the forward and side scattering respectively. An overview of flow cytometry is shown in Figure~\ref{fig:flow_overv}. A laser excites the fluorochrome present in the bacterial cells. The fluorochromes emit a signal that is detected by channels in the optics. The signals are then all collected and analysed. A sample typically consists single cell measurements of $10^4$-$10^5$ cells. %Typically the cell populations are separated from the noise in the experiment via expert manual gating. Advances in flow cytometry technology has increased both the number of the dimensions of the datasets and the number of samples obtained, thus promoting the development for automated methods~\autocite{Johnsson:2016fd, Chen:2015bp, ONeill:2013cs}.
@@ -338,73 +338,7 @@ h_4 &= \frac{a2 l2}{1+l2+u^{γ}} \label{eq:eg4},
 
 In addition the system included a fluorescence intensity model. Each fluorescent molecule was assumed to emit a fluorescent signal, and the signal was assumed to be normally distributed around a mean μ and standard deviation σ. The fluorescent signal emitted by each molecule was described using Equation~\ref{eq:intens}. There was also a background fluorescence signal added to each calculation. This represents the intensity signal detected by flow cytometers when no fluorescent proteins are present~\autocite{Lillacci:2013hu}. The background fluorescence can be measured using control samples~\autocite{Lillacci:2013hu}, but in the case of the simulated data it was set to 0.01 (a.u.).  
 
-\subsection{Parameter inference for simulated flow cytometry data}
-Using the time course data generated for one of the fluorescent proteins in the system, $u$, I used ABC-Flow to fit the model shown above, using priors centred around the parameter values used to produce the data, shown in Table~\ref{tab:priors_model}. The resulting fit is shown in Figure~\ref{fig:1d-sim-res}A. In order to determine whether this is a good fit to the data, QQ plots are produced for each time point (Figure~\ref{fig:1d-sim-res}B). A QQ-plot is a plot where the quantiles of two distributions are plotted against each other. If the distributions are similar, the points will lie on the 45\textdegree{} line x = y line~\autocite{Wilk:1968ts}. 
 
-By examining the data and the fitted models shown in Figure~\ref{fig:1d-sim-res}, we see that at \textepsilon = 0.08, there is a good fit of the model to the data using ABC-Flow. The model parameters, as well as the intensity parameters, have been fitted to simulated flow cytometry data. This is highlighted in the QQ plots in Figure~\ref{fig:1d-sim-res}B, where the results lie in the x=y line. 
-
-\begin{figure}[htbp]
-\centering
-	\includegraphics[scale=0.9]{../../chapters/chapterABCFlow/images/1D_sim_res.png}
-	\caption[Applying ABC-Flow to 1D simulated data]{\label{fig:1d-sim-res} (A) 1D ABC-Flow fit (shown in blue) to data (shown in red) produced by simulating the same model. (B) QQ-plot of each time point fit. The quantile of the two distributions are plotted against each other. If the distributions are similar, the points would lie on the 45\textdegree{} line x = y, shown in red. }
-\end{figure}
-
-I further tested ABC-Flow by using 2D data to fit two species of the model simultaneously. The same data was used as was used in the 1D case, but this time both species $u$ and $v$ were taken into account. This represents both sides of the switch model used. 
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[scale=0.7]{../../chapters/chapterABCFlow/images/2D_toy_e3.png}
-\caption[Applying ABC-Flow to 2D simulated data]{\label{fig:2d-sim-res}2D ABC-Flow fit (shown in blue) to data (shown in red) produced by simulating the same model. }
-\end{figure}
-
-%
-%I further investigate whether using the 1D or 2D data results in a better fit. The 1D data represents one of the marginal distributions of the data sets. I use the marginal distribution of $u$ and the bivariate distribution of $u$ and $v$ in order to determine which one produces a better fit to the data. The resulting timecourse of the data as well as the 1D and 2D fit are shown in Figure~\ref{fig:1d2dcomp}.
-%
-%
-%\begin{figure}[htbp]
-%\centering
-%\includegraphics[scale=0.3]{../../chapters/chapterABCFlow/images/normal_sigma_example.png}
-%\caption[LoF caption]{\label{fig:1d2dsketch} The marginal (1D) versus the bivariate (2D) distribution of the data.}
-%\end{figure}
-%
-
-
-
-%\begin{figure}[htbp]
-%\centering
-%\includegraphics[scale=0.8]{../../chapters/chapterABCFlow/images/1d2dfit.png}
-%\caption[LoF caption]{\label{fig:1d2dcomp}Comparing the fits obtained by using the 1D or 2D data. }
-%\end{figure}
-%\clearpage
-
-
-The posterior distributions obtained from each fit are shown in Figure~\ref{fig:1d-sim-post} and~\ref{fig:2d-sim-post}. We find similar posterior ranges for both the 1D and 2D fits. Both fits inferred the parameters necessary to produce the simulated data. From the posteriors we find that the most identifiable parameters in this model are parameters $β$ and $γ$, the parameters representing the cooperativity of the repressors. We also find that α, the parameter representing the increased degradation of $v$ due to the addition of an inducer, is well inferred. Further, we find μ and σ, the parameters representing the mean and standard deviation of the fluorescence intensity emitted by each fluorescent molecule to be inferred well. 
-
-\begin{figure}[htbp]
-\centering
-	\includegraphics[scale=0.6]{../../chapters/chapterABCFlow/images/toy_model_posteriors.png}
-	\caption[Posterior distributions of inferred parameters from 1D simulated data]{\label{fig:1d-sim-post}The posterior distributions of the 1D fits to simulated data. The parameters used to produce the simulated data set were well inferred in both cases. The parameter values used to produce the data are marked on the marginal posterior distributions as a black line.}
-\end{figure}
-
-\begin{figure}[htbp]
-\centering
-	\includegraphics[scale=0.6]{../../chapters/chapterABCFlow/images/toy_model_posterior_2d.png}
-	\caption[Posterior distributions of inferred parameters from the 2D simulated data]{\label{fig:2d-sim-post}The posterior distributions of the 2D fits to simulated data. The parameters used to produce the simulated data set were well inferred in both cases. The parameter values used to produce the data are marked on the marginal posterior distributions as a black line.}
-\end{figure}
-
-%\begin{figure}[htbp]
-%\centering%
-%	\includegraphics[scale=0.6]{../../chapters/ch	apterABCFlow/images/1d_sim_post.png}%
-%	\caption[LoF caption]{\label{fig:1d-sim-post}}
-%\end{figure}
-
-
-
-%\begin{figure}[htbp]
-%\centering
-%	\includegraphics[scale=0.6]{../../chapters/chapterABCFlow/images/2D_sim_res.png}
-%	\caption[LoF caption]{\label{fig:2d-sim-res}}
-%\end{figure}
 \begin{table}[tb]
 \centering
 \caption{The priors used for the 1D and 2D ABC-Flow model fitting to simulated data}
@@ -436,40 +370,116 @@ v                    & 90 - 110               & 90 - 110               \\ \midru
 
 
 
-\begin{table}[tb]
+\subsection{Parameter inference for simulated flow cytometry data}
+
+The model given in Equations~\ref{eq:eg1}-\ref{eq:eg4} was simulated in order to obtain the a time course for the two fluoscent molecules in the system, $u$ and $v$. The  time course data, the model and the prior distributions shown in Table~\ref{tab:priors_model} were supplied to ABC-Flow. ABC-Flow was then used to infer the parameters that gave rise to the data using one (1D) or both (2D) fluorescent molecule time courses to fit to the data. We can therefore determine whether there is an added benefit on fitting both fluorescent proteins to the data. In order to compare the 1D and 2D fits, equivalent epsilon distance values were used. These were set to 0.27 for the 1D fit and 2.82 for the 2D fit.
+
+The fit resulting from the 1D fit is shown in Figure~\ref{fig:1d-sim-res}A, together with QQ plots to assess the fit to the data. A QQ-plot is a plot where the quantiles of two distributions are plotted against each other. If the distributions are the same then the points will lie on the 45\textdegree{} line x = y line~\autocite{Wilk:1968ts}. The fit resulting from the 2D fit is shown in Figure~\ref{fig:2d-sim-res}, while the posterior distributions obtained from both fits are shown in Figure~\ref{fig:1d2d-sim-post} and Table~\ref{tab:inf_params_sim}. Comparing the 1D and 2D fits, we find that both fits inferred the parameters necessary to produce the simulated data. From the posteriors we find that the most identifiable parameters in this model are parameters $β$ and $γ$, the parameters representing the cooperativity of the repressors. We find that the 2D fit resulted in a better inference of the parameter values. This is most prominent in parameters $β$, $γ$ and $α$ as can be seen in Table~\ref{tab:inf_params_sim}. Parameters $a2$ and $l2$ remained unidentifiable for both fits. For a system involving two fluorescent proteins, like the toggle switch, it would therefore be beneficial to use a two-dimensional fit to the data. The 2D fit performed better in the simulated test used here, with priors centred closely around known parameter values and clean data. This will become more evident when ABC-Flow is used on real experimental data where less information is known for the priors. Furthermore, the 1D fits do not fit intensity parameters for the both fluorescent proteins. This means that the 2D time course of the model using inferred parameters cannot be examined to assess the fit for both proteins. Therefore, a system involving two fluorescent proteins should be fit using the 2D fit in ABC-Flow. The 1D fit should be used in cases where there is only one fluorescent protein of interest in the system. 
+
+%By examining the data and the fitted models shown in Figure~\ref{fig:1d-sim-res}, we see that at ε = 0.27, there is a good fit of the model to the data using ABC-Flow. The model parameters, as well as the intensity parameters, have been fitted to simulated flow cytometry data. This is highlighted in the QQ plots in Figure~\ref{fig:1d-sim-res}B, where the results lie in the x=y line. 
+
+\begin{figure}[htbp]
 \centering
+	\includegraphics[scale=0.9]{../../chapters/chapterABCFlow/images/1D_sim_res.png}
+	\caption[Applying ABC-Flow to 1D simulated data]{\label{fig:1d-sim-res} (A) 1D ABC-Flow fit (shown in blue) to data (shown in red) produced by simulating the same model. (B) QQ-plot of each time point fit. The quantile of the two distributions are plotted against each other. If the distributions are similar, the points would lie on the 45\textdegree{} line x = y, shown in red. }
+\end{figure}
+
+
+
+
+
+
+%We also find that α, the parameter representing the increased degradation of $v$ due to the addition of an inducer, is well inferred. %Further, we find μ and σ, the parameters representing the mean and standard deviation of the fluorescence intensity emitted by each fluorescent molecule to be inferred well.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.7]{../../chapters/chapterABCFlow/images/2D_toy_e3.png}
+\caption[Applying ABC-Flow to 2D simulated data]{\label{fig:2d-sim-res}2D ABC-Flow fit (shown in blue) to data (shown in red) produced by simulating the same model. }
+\end{figure}
+
+%
+%I further investigate whether using the 1D or 2D data results in a better fit. The 1D data represents one of the marginal distributions of the data sets. I use the marginal distribution of $u$ and the bivariate distribution of $u$ and $v$ in order to determine which one produces a better fit to the data. The resulting timecourse of the data as well as the 1D and 2D fit are shown in Figure~\ref{fig:1d2dcomp}.
+%
+%
+%\begin{figure}[htbp]
+%\centering
+%\includegraphics[scale=0.3]{../../chapters/chapterABCFlow/images/normal_sigma_example.png}
+%\caption[LoF caption]{\label{fig:1d2dsketch} The marginal (1D) versus the bivariate (2D) distribution of the data.}
+%\end{figure}
+%
+
+
+
+%\begin{figure}[htbp]
+%\centering
+%\includegraphics[scale=0.8]{../../chapters/chapterABCFlow/images/1d2dfit.png}
+%\caption[LoF caption]{\label{fig:1d2dcomp}Comparing the fits obtained by using the 1D or 2D data. }
+%\end{figure}
+%\clearpage
+
+
+ 
+
+\begin{figure}[htbp]
+\centering
+	\includegraphics[scale=0.7]{../../chapters/chapterABCFlow/images/toy_model_posteriors.png}
+	\caption[Posterior distributions of inferred parameters from 1D (red) and 2D (blue) simulated data]{\label{fig:1d2d-sim-post}The posterior distributions of the 1D fits to simulated data. The parameters used to produce the simulated data set were well inferred in both cases. The parameter values used to produce the data are marked on the marginal posterior distributions as a black line.}
+\end{figure}
+
+%\begin{figure}[htbp]
+%\centering
+%	\includegraphics[scale=0.6]{../../chapters/chapterABCFlow/images/toy_model_posterior_2d.png}
+%	\caption[Posterior distributions of inferred parameters from the 2D simulated data]{\label{fig:2d-sim-post}The posterior distributions of the 2D fits to simulated data. The parameters used to produce the simulated data set were well inferred in both cases. The parameter values used to produce the data are marked on the marginal posterior distributions as a black line.}
+%\end{figure}
+
+%\begin{figure}[htbp]
+%\centering%
+%	\includegraphics[scale=0.6]{../../chapters/ch	apterABCFlow/images/1d_sim_post.png}%
+%	\caption[LoF caption]{\label{fig:1d-sim-post}}
+%\end{figure}
+
+
+
+%\begin{figure}[htbp]
+%\centering
+%	\includegraphics[scale=0.6]{../../chapters/chapterABCFlow/images/2D_sim_res.png}
+%	\caption[LoF caption]{\label{fig:2d-sim-res}}
+%\end{figure}
+
+
+
+\begin{table}[tb]
+\centerfloat
 \caption{The parameters inferred from simulated data}
 \label{tab:inf_params_sim}
-\begin{tabular}{@{}l|ll|ll|ll@{}}
-\toprule
-Parameters & \multicolumn{2}{l|}{0.025} & \multicolumn{2}{l|}{Median} & \multicolumn{2}{l}{0.975} \\ \midrule
- & 1D & 2D & 1D & 2D & 1D & 2D \\ \midrule
-a1 & 80.634 & 80.893 & 87.137 & 86.347 & 117.321 & 94.721 \\
-β & 1.989 & 1.970 & 2.00 & 2.029 & 2.071 & 2.0768 \\
-l1 & 768.766 & 756.374 & 792.559 & 800.802 & 824.195 & 845.458 \\
-a2 & 85.719 & 80.407 & 94.811 & 86.098 & 101.096 & 95.349 \\
-γ & 1.929 & 1.802 & 2.125 & 1.97 & 2.129 & 2.106 \\
-l2 & 759.927 & 752.516 & 814.455 & 776.947 & 838.038 & 813.676 \\
-α & 0.551 & 0.535 & 0.587 & 0.757 & 0.649 & 1.095 \\
-μ fp\textsubscript{u}  & 1.865 & 1.776 & 1.941 & 1.906 & 1.995 & 1.998 \\
-μ fp\textsubscript{v}  &  & 1.049 &  & 1.259 &  & 1.369 \\
-σ fp\textsubscript{u} & 4.015 & 4.000 & 4.070 & 4.053 & 4.146 & 4.121 \\
-σ fp\textsubscript{v} &  & 4.005 &  & 4.211 &  & 4.396 \\ \bottomrule
+\begin{tabular}{ll|llllll}
+\multirow{3}{*}{Parameters} & \multirow{3}{*}{True value} & \multicolumn{6}{c}{Posterior 95\% CI} \\ \cline{3-8} 
+ &  & 0.025 &  & Median &  & 0.975 &  \\ \cline{3-8} 
+ &  & 1D & 2D & 1D & \multicolumn{1}{l|}{2D} & 1D & 2D \\ \hline
+a1 & 100 & 83.507 & \multicolumn{1}{l|}{80.064} & 96.586 & \multicolumn{1}{l|}{93.539} & 114.485 & 104.940 \\
+β & 2 & 1.873 & \multicolumn{1}{l|}{1.926} & 2.003 & \multicolumn{1}{l|}{2.063} & 2.167 & 2.131 \\
+l1 & 800 & 755.923 & \multicolumn{1}{l|}{761.972} & 807.885 & \multicolumn{1}{l|}{791.912} & 836.913 & 840.872 \\
+a2 & 100 & 80.162 & \multicolumn{1}{l|}{83.362} & 98.570 & \multicolumn{1}{l|}{93.726} & 108.148 & 109.974 \\
+γ & 2 & 1.195 & \multicolumn{1}{l|}{1.679} & 1.642 & \multicolumn{1}{l|}{1.93} & 2.163 & 2.233 \\
+l2 & 800 & 752.757 & \multicolumn{1}{l|}{758.759} & 801.021 & \multicolumn{1}{l|}{803.549} & 838.058 & 845.507 \\
+α & 1 & 0.495 & \multicolumn{1}{l|}{0.607} & 1.055 & \multicolumn{1}{l|}{0.932} & 1.507 & 1.359 \\
+μ fp\textsubscript{u} & 1.5 & 1.126 & \multicolumn{1}{l|}{1.762} & 1.749 & \multicolumn{1}{l|}{2.164} & 2.542 & 2.546 \\
+μ fp\textsubscript{v} & 1.5 &  & \multicolumn{1}{l|}{0.826} &  & \multicolumn{1}{l|}{1.067} &  & 1.413 \\
+σ fp\textsubscript{u} & 4 & 3.086 & \multicolumn{1}{l|}{3.028} & 3.786 & \multicolumn{1}{l|}{4.053} & 5.712 & 4.121 \\
+σ fp\textsubscript{v} & 4 &  & \multicolumn{1}{l|}{4.005} &  & \multicolumn{1}{l|}{4.211} &  & 4.396 \\ \hline
 \end{tabular}
 \end{table}
-
-
-
+\clearpage
 These results demonstrate that ABC-Flow can successfully fit a computational model to flow cytometry data. It can identify the parameter values necessary to produce the observed behaviour. ABC-Flow can now be confidently applied to real flow cytometry data of the genetic toggle switch. This allows the inference of the parameter values of toggle switch model producing the data observed. %In the following Section I outline the methods used to obtain the experimental data necessary and the results obtained.
 
-\clearpage
+
 \section{Toggle switch data collection}
 
 In this section I describe the collection of experimental data on the genetic toggle switch. Using flow cytometry and the necessary inducers to flip the switch I study the switch flipping over time as well as over different inducer concentrations. 
 
 \subsection{Circuit overview}
 
-The toggle switch plasmid I used here was provided by ~\textcite{Litcofsky:2012gr}. All the switch components were contained in one plasmid, pKDL071. An overview of the plasmid is shown in Figure~\ref{fig:pKDL071map}A and the sequence given in Appendix (XXX). The circuit consists of two promoters, Ptrc2 and PLtetO-1~\autocite{Lutz:1997ti}. Ptrc2 is a constitutive promoter, repressible by LacI. PLtetO-1 is also a constitutive promoter, repressible by TetR, as shown in Figure~\ref{fig:pKDL071map}B. mCherry~\autocite{Shaner:2004vy} and \acrshort{gfp}~\autocite{SHIMOMURA:1962va} are fluorescent proteins, that were added under the control of the same promoters as the repressors, and thus reflect the levels of TetR and LacI in the system. The plasmid contains kanamycin antibiotic resistance and is high copy (ColE1 origin of replication).
+The toggle switch plasmid I used here was provided by ~\textcite{Litcofsky:2012gr}. All the switch components were contained in one plasmid, pKDL071. An overview of the plasmid is shown in Figure~\ref{fig:pKDL071map}A. The circuit consists of two promoters, P\textsubscript{trc2} and P\textsubscript{LtetO-1}~\autocite{Lutz:1997ti}. P\textsubscript{trc2} is a constitutive promoter, repressible by LacI. P\textsubscript{LtetO-1} is also a constitutive promoter, repressible by TetR, as shown in Figure~\ref{fig:pKDL071map}B. mCherry~\autocite{Shaner:2004vy} and \acrshort{gfp}~\autocite{SHIMOMURA:1962va} are fluorescent proteins, that were added under the control of the same promoters as the repressors, and thus reflect the levels of TetR and LacI in the system. The plasmid contains kanamycin antibiotic resistance and is high copy (ColE1 origin of replication).
 
 This system is capable of two states, GFP high/mCherry low and GFP low/mCherry high. When \acrshort{iptg} is added to the system, it represses the repression of TetR and mCherry and thus the cells transition to the mCherry high state. When \acrshort{atc} is added to the system, it represses the repression of LacI and GFP and thus the cells transition to the GFP high state. If no inducer is added to the system it will randomly go to the GFP high or mCherry high states.
 
@@ -961,7 +971,10 @@ The inferred parameters, and the 95\% credible intervals, are given in Table~\re
 	t_{\frac{1}{2}} = \frac{ln(2)}{k}
 \end{align*}
 
-\noindent where $k$ is the decay rate of the protein. The half-life of GFP was estimated to be (7.788, 43.322) hours which is consistent with the \textgreater 24 hours half life that has been previously reported for the variant of GFP used here, GFPmut3b~\autocite{Andersen:1998tn}. The half-life for mCherry was estimated to be (9.242, 31.507) hours which is consistent with the long half-life of mCherry, reported to be more than 24 hours~\autocite{Shaner:2004vy}. We find that the inferred parameter for GFP gene expression, R\textsubscript{u} is (1.055, 1.979) molecules h\textsuperscript{-1}, whereas the parameter for gene expression of mCherry (R\textsubscript{v}) was inferred to (8.970, 42.611) molecules h\textsuperscript{-1}. These values correspond to the promoter strengths of P\textsubscript{LtetO-1} and P\textsubscript{trc2} respectively. This is in agreement with characterization data on the strength of these two promoters, which report that there is a difference in strengths, P\textsubscript{trc2} being a stronger promoter than P\textsubscript{LtetO-1}~\autocite{Litcofsky:2012gr}.  %There is an indication of the difference in strengths in the inferred values here, but the value of R\textsubscript{v} has not been inferred as well as R\textsubscript{u} to draw a strong conclusion.
+\noindent where $k$ is the decay rate of the protein. The half-life of GFP was estimated to be (7.788, 43.322) hours which is consistent with the \textgreater 24 hours half life that has been previously reported for the variant of GFP used here, GFPmut3b~\autocite{Andersen:1998tn}. The half-life for mCherry was estimated to be (9.242, 31.507) hours which is consistent with the long half-life of mCherry, reported to be more than 24 hours~\autocite{Shaner:2004vy}. We find that the inferred parameter for GFP gene expression, R\textsubscript{u} is (1.055, 1.979) molecules h\textsuperscript{-1}, whereas the parameter for gene expression of mCherry (R\textsubscript{v}) was inferred to (8.970, 42.611) molecules h\textsuperscript{-1}. These values correspond to the promoter strengths of P\textsubscript{LtetO-1} and P\textsubscript{trc2} respectively. This is in agreement with characterization data on the strength of these two promoters, which report that there is a difference in strengths, P\textsubscript{trc2} being a stronger promoter than P\textsubscript{LtetO-1}~\autocite{Litcofsky:2012gr}. Further, we find that the values of the intensity parameters μ and σ, which represent the settings on the flow cytometer, to be inferred better for GFP than for mCherry. 
+
+
+ %There is an indication of the difference in strengths in the inferred values here, but the value of R\textsubscript{v} has not been inferred as well as R\textsubscript{u} to draw a strong conclusion.
 
 
 \begin{table}[htb]

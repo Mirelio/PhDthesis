@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.10.1)  6 SEP 2016 22:39
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.10.1)  7 SEP 2016 23:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2697,48 +2697,49 @@ LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
 (Font)              scaled to size 12.05603pt on input line 4.
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/bx/n' will be
 (Font)              scaled to size 10.1931pt on input line 4.
- [7]
+
 Overfull \hbox (16.13411pt too wide) in paragraph at lines 42--42
  [][] [][][]\EU1/LinuxLibertineO(0)/m/n/10.95 Derivation of model parametric robustness defined via Bayesian 
  []
 
+[7]
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/sc' will be
-(Font)              scaled to size 11.00111pt on input line 59.
-[8] [9] [10]) [11] [12
+(Font)              scaled to size 11.00111pt on input line 86.
+ [8] [9]) [10] (./central.lof [11
 
-] (./central.lof [13]
+]
 Overfull \hbox (24.71678pt too wide) in paragraph at lines 37--37
  [][] [][][]\EU1/LinuxLibertineO(0)/m/n/10.95 The three-node mutual repression model, with added positive auto-regulation 
  []
 
-[14]) [15] [16
+[12]) [13] [14
 
-] (./central.lot [17])
+] (./central.lot [15])
 
 Package glossaries Warning: Deprecated command \glossarystyle.
- I recommend you switch to \setglossarystyle unless you want to maintain backward compatibility on input line 37.
+ I recommend you switch to \setglossarystyle unless you want to maintain backward compatibility on input line 39.
 
-(./central.acr [18] [19
+(./central.acr [16] [17
 
 
-]) [20] [21
+]) [18] [19
 
-] [22
+] [20
 
-] (../../chapters/chapterIntroduction/ChIntro_introduction.tex [23
+] (../../chapters/chapterIntroduction/ChIntro_introduction.tex [21
 
-] [24]
+] [22]
 Overfull \hbox (4.37955pt too wide) in paragraph at lines 41--42
 \EU1/LinuxLibertineO(0)/m/n/10.95 view of the mathematical methods that formed the basis of the methods used through-
  []
 
-[25]) [26] (../../chapters/chapterBackgr/ChBackground.tex
+[23]) [24] (../../chapters/chapterBackgr/ChBackground.tex
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
 (Font)              scaled to size 14.46722pt on input line 9.
- [27
+ [25
 
 
-] [28] [29] [30] [31
+] [26] [27] [28] [29
 
 ]
 Package microtype Info: Loading generic settings for font family
@@ -2746,26 +2747,21 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\acrfull' on input line 158.
-
-
 Overfull \hbox (0.69873pt too wide) in paragraph at lines 160--161
 \EU1/LinuxLibertineO(0)/m/n/10.95 The [][][]Systems Biology Markup Language[][] ([][][]SBML[][]) was developed by []Hucka et al. ([][]2004[][])
  []
 
-[32] [33]
+[30] [31]
 File: ../../chapters/chapterBackgr/images/hill_both-01.png Graphic file (type QTm)
  <use  "../../chapters/chapterBackgr/images/hill_both-01.png" >
 File: ../../chapters/chapterBackgr/images/shea-ackers.png Graphic file (type QTm)
- <use  "../../chapters/chapterBackgr/images/shea-ackers.png" > [34]
+ <use  "../../chapters/chapterBackgr/images/shea-ackers.png" > [32]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[35] [36]
+[33] [34]
 File: ../../chapters/chapterBackgr/images/pp-phaseplane.pdf Graphic file (type QTm)
- <use  "../../chapters/chapterBackgr/images/pp-phaseplane.pdf" > [37]
+ <use  "../../chapters/chapterBackgr/images/pp-phaseplane.pdf" > [35]
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
 (Font)              scaled to size 8.03735pt on input line 308.
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
@@ -2782,12 +2778,12 @@ LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(1)/bx/n' will be
 (Font)              scaled to size 7.44714pt on input line 324.
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(1)/bx/n' will be
 (Font)              scaled to size 5.58536pt on input line 324.
- [38] [39] [40]
+ [36] [37] [38]
 Overfull \hbox (1.5192pt too wide) in paragraph at lines 382--383
 \EU1/LinuxLibertineO(0)/m/n/10.95 ing ([]Kirkpatrick, C D Gelatt, & Vecchi [][]1983[][]) and evolutionary algorithms ([]Onbaşoğlu
  []
 
-[41]
+[39]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\acrfull' on input line 478.
@@ -2795,7 +2791,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 489.
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/n' will be
 (Font)              scaled to size 9.04202pt on input line 493.
-[42]
+[40]
 
 LaTeX Warning: Command \textgreater invalid in math mode on input line 517.
 
@@ -2805,14 +2801,14 @@ LaTeX Warning: Command \textgreater invalid in math mode on input line 518.
 
 LaTeX Warning: Command \textgreater invalid in math mode on input line 520.
 
-[43]
+[41]
 
 LaTeX Warning: Command \texttheta invalid in math mode on input line 547.
 
 
 LaTeX Warning: Command \texttheta invalid in math mode on input line 547.
 
-[44]
+[42]
 
 LaTeX Warning: Command \textgreater invalid in math mode on input line 561.
 
@@ -2820,11 +2816,11 @@ LaTeX Warning: Command \textgreater invalid in math mode on input line 561.
 LaTeX Warning: Command \textgreater invalid in math mode on input line 561.
 
 File: ../../chapters/chapterIntroduction/images/abcsmc_ex.pdf Graphic file (type QTm)
-<use  "../../chapters/chapterIntroduction/images/abcsmc_ex.pdf" > [45] [46] [47
+<use  "../../chapters/chapterIntroduction/images/abcsmc_ex.pdf" > [43] [44] [45
 
-] [48]) [49] [50
+] [46]) [47] [48
 
-] (../../chapters/chapterABCSysBio/ChAbcSys_introduction.tex [51
+] (../../chapters/chapterABCSysBio/ChAbcSys_introduction.tex [49
 
 ]
 
@@ -2836,32 +2832,32 @@ either increase the head height or redesign the header
 
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
- [52]
+ [50]
 File: ../../chapters/chapterABCSysBio/images/shea-ackers-cs.png Graphic file (type QTm)
- <use  "../../chapters/chapterABCSysBio/images/shea-ackers-cs.png" > [53]
+ <use  "../../chapters/chapterABCSysBio/images/shea-ackers-cs.png" > [51]
 File: ../../chapters/chapterABCSysBio/images/Gard_CS.pdf Graphic file (type QTm)
  <use  "../../chapters/chapterABCSysBio/images/Gard_CS.pdf" >
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
- [54] [55
+ [52] [53
 
 ]
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
- [56]
+ [54]
 File: ../../chapters/chapterABCSysBio/images/ma-switch-diagram.png Graphic file (type QTm)
- <use  "../../chapters/chapterABCSysBio/images/ma-switch-diagram.png" > [57]
+ <use  "../../chapters/chapterABCSysBio/images/ma-switch-diagram.png" > [55]
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
- [58]
+ [56]
 File: ../../chapters/chapterABCSysBio/images/LHS.png Graphic file (type QTm)
- <use  "../../chapters/chapterABCSysBio/images/LHS.png" > [59
+ <use  "../../chapters/chapterABCSysBio/images/LHS.png" > [57
 
 ]
 File: ../../chapters/chapterABCSysBio/images/phase_plots_param_scan.png Graphic file (type QTm)
  <use  "../../chapters/chapterABCSysBio/images/phase_plots_param_scan.png" >
-File: ../../chapters/chapterABCSysBio/images/param_scan_combo.pdf Graphic file (type QTm)
- <use  "../../chapters/chapterABCSysBio/images/param_scan_combo.pdf" >
+File: ../../chapters/chapterABCSysBio/images/param_scan_combo.png Graphic file (type QTm)
+ <use  "../../chapters/chapterABCSysBio/images/param_scan_combo.png" >
 Overfull \hbox (73.97603pt too wide) in paragraph at lines 246--247
  [][] 
  []
@@ -2869,12 +2865,12 @@ Overfull \hbox (73.97603pt too wide) in paragraph at lines 246--247
 
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
- [60] [61]
+ [58] [59]
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
- [62]
+ [60]
 File: ../../chapters/chapterABCSysBio/images/behaviour.png Graphic file (type QTm)
- <use  "../../chapters/chapterABCSysBio/images/behaviour.png" > [63]
+ <use  "../../chapters/chapterABCSysBio/images/behaviour.png" > [61]
 File: ../../chapters/chapterABCSysBio/images/param_inf_res.png Graphic file (type QTm)
  <use  "../../chapters/chapterABCSysBio/images/param_inf_res.png" >
 Overfull \hbox (21.69531pt too wide) in paragraph at lines 334--336
@@ -2884,19 +2880,19 @@ Overfull \hbox (21.69531pt too wide) in paragraph at lines 334--336
 
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
- [64] [65]
+ [62] [63]
 File: ../../chapters/chapterABCSysBio/images/shea-ackers_autoreg.png Graphic file (type QTm)
  <use  "../../chapters/chapterABCSysBio/images/shea-ackers_autoreg.png" >
 File: ../../chapters/chapterABCSysBio/images/toggle_switch_designs.png Graphic file (type QTm)
  <use  "../../chapters/chapterABCSysBio/images/toggle_switch_designs.png" >
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
- [66
+ [64
 
-] [67]
+] [65]
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
- [68]
+ [66]
 File: ../../chapters/chapterABCSysBio/images/gard_pos.pdf Graphic file (type QTm)
  <use  "../../chapters/chapterABCSysBio/images/gard_pos.pdf" >
 Overfull \hbox (26.31041pt too wide) in paragraph at lines 396--397
@@ -2904,12 +2900,12 @@ Overfull \hbox (26.31041pt too wide) in paragraph at lines 396--397
  []
 
 File: ../../chapters/chapterABCSysBio/images/gard_neg.pdf Graphic file (type QTm)
-<use  "../../chapters/chapterABCSysBio/images/gard_neg.pdf" > [69
+<use  "../../chapters/chapterABCSysBio/images/gard_neg.pdf" > [67
 
 ]
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
- [70] [71]
+ [68] [69]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\acrshort' on input line 422.
@@ -2917,147 +2913,147 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
- [72
+ [70
 
 ]
 File: ../../chapters/chapterABCSysBio/images/model_sel_res-01.png Graphic file (type QTm)
- <use  "../../chapters/chapterABCSysBio/images/model_sel_res-01.png" > [73]
+ <use  "../../chapters/chapterABCSysBio/images/model_sel_res-01.png" > [71]
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
- [74] [75
+ [72] [73
 
 ]
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
- [76]) [77] [78
+ [74]) [75] [76
 
-] (../../chapters/chapterStabilityFinder/ChSF_introduction.tex [79
+] (../../chapters/chapterStabilityFinder/ChSF_introduction.tex [77
 
-] [80]
+] [78]
 File: ../../chapters/chapterStabilityFinder/images/SF_algo_overv.png Graphic file (type QTm)
  <use  "../../chapters/chapterStabilityFinder/images/SF_algo_overv.png" >
-Overfull \hbox (84.76144pt too wide) in paragraph at lines 141--142
+Overfull \hbox (84.76144pt too wide) in paragraph at lines 143--144
  [] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[81] [82]
-Overfull \hbox (13.23909pt too wide) in paragraph at lines 179--180
+[79] [80]
+Overfull \hbox (13.23909pt too wide) in paragraph at lines 181--182
 \EU1/LinuxLibertineO(0)/m/n/10.95 In StabilityFinder, latin hypercube sampling is used to sample initial conditions ([]McKay,
  []
 
-[83
+[81
 
 ]
-Overfull \hbox (8.36925pt too wide) in paragraph at lines 201--202
+Overfull \hbox (8.36925pt too wide) in paragraph at lines 203--204
 []\EU1/LinuxLibertineO(0)/m/n/10.95 Steady states of stochastic models are clustered using the K-means clustering ([]Lloyd
  []
 
-[84
+[82
 
-] [85] [86] [87
+] [83] [84] [85
 
-] [88] [89] [90
+] [86] [87] [88
 
 ]
 File: ../../chapters/chapterStabilityFinder/images/ex1_sum.png Graphic file (type QTm)
  <use  "../../chapters/chapterStabilityFinder/images/ex1_sum.png" >
-File: ../../chapters/chapterStabilityFinder/images/ex4_summ.png Graphic file (type QTm)
- <use  "../../chapters/chapterStabilityFinder/images/ex4_summ.png" > [91] [92] [93] [94
+File: ../../chapters/chapterStabilityFinder/images/Example4_summ.png Graphic file (type QTm)
+ <use  "../../chapters/chapterStabilityFinder/images/Example4_summ.png" > [89] [90] [91] [92
 
 ]
 File: ../../chapters/chapterStabilityFinder/images/gardner_model.png Graphic file (type QTm)
  <use  "../../chapters/chapterStabilityFinder/images/gardner_model.png" >
 File: ../../chapters/chapterStabilityFinder/images/gardner_posteriors.png Graphic file (type QTm)
- <use  "../../chapters/chapterStabilityFinder/images/gardner_posteriors.png" > [95] [96] [97]
+ <use  "../../chapters/chapterStabilityFinder/images/gardner_posteriors.png" > [93] [94] [95]
 Overfull \hbox (0.10652pt too wide) in paragraph at lines 488--489
 \EU1/LinuxLibertineO(0)/m/n/10.95 Next I analyzed an extension of the Gardner switch model developed by []Lu, Onuchic,
  []
 
 File: ../../chapters/chapterStabilityFinder/images/lu_bifurc.png Graphic file (type QTm)
-<use  "../../chapters/chapterStabilityFinder/images/lu_bifurc.png" > [98
+<use  "../../chapters/chapterStabilityFinder/images/lu_bifurc.png" > [96
 
-] [99]
+] [97]
 File: ../../chapters/chapterStabilityFinder/images/LU_diagrams.png Graphic file (type QTm)
- <use  "../../chapters/chapterStabilityFinder/images/LU_diagrams.png" > [100
+ <use  "../../chapters/chapterStabilityFinder/images/LU_diagrams.png" > [98
 
 ]
 File: ../../chapters/chapterStabilityFinder/images/lu_paper_phase.png Graphic file (type QTm)
- <use  "../../chapters/chapterStabilityFinder/images/lu_paper_phase.png" > [101] [102]
+ <use  "../../chapters/chapterStabilityFinder/images/lu_paper_phase.png" > [99] [100]
 File: ../../chapters/chapterStabilityFinder/images/lu_paper_post.png Graphic file (type QTm)
  <use  "../../chapters/chapterStabilityFinder/images/lu_paper_post.png" >
 
 LaTeX Warning: Float too large for page by 117.57281pt on input line 587.
 
-[103]
+[101]
 File: ../../chapters/chapterStabilityFinder/images/Lu_234.png Graphic file (type QTm)
  <use  "../../chapters/chapterStabilityFinder/images/Lu_234.png" >
 
 LaTeX Warning: Float too large for page by 8.70015pt on input line 612.
 
-[104
+[102
 
 
-] [105] [106]
+] [103] [104]
 File: ../../chapters/chapterStabilityFinder/images/LU-234-phase-all.png Graphic file (type QTm)
- <use  "../../chapters/chapterStabilityFinder/images/LU-234-phase-all.png" > [107] [108]
+ <use  "../../chapters/chapterStabilityFinder/images/LU-234-phase-all.png" > [105] [106]
 File: ../../chapters/chapterStabilityFinder/images/lu_6ss.png Graphic file (type QTm)
  <use  "../../chapters/chapterStabilityFinder/images/lu_6ss.png" >
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[109
+[107
 
-] [110] [111
+] [108] [109
 
 ]
 File: ../../chapters/chapterStabilityFinder/images/MA-cs-dp-phase.png Graphic file (type QTm)
- <use  "../../chapters/chapterStabilityFinder/images/MA-cs-dp-phase.png" >
+ <use  "../../chapters/chapterStabilityFinder/images/MA-cs-dp-phase.png" > [110]
 File: ../../chapters/chapterStabilityFinder/images/MA_sym_post.png Graphic file (type QTm)
- <use  "../../chapters/chapterStabilityFinder/images/MA_sym_post.png" > [112] [113] [114]
+ <use  "../../chapters/chapterStabilityFinder/images/MA_sym_post.png" > [111] [112] [113]
 File: ../../chapters/chapterStabilityFinder/images/qssa-cs-sym.png Graphic file (type QTm)
- <use  "../../chapters/chapterStabilityFinder/images/qssa-cs-sym.png" > [115] [116] [117
+ <use  "../../chapters/chapterStabilityFinder/images/qssa-cs-sym.png" > [114] [115
 
 ]
 File: ../../chapters/chapterStabilityFinder/images/MA_stoch_design_princ.png Graphic file (type QTm)
  <use  "../../chapters/chapterStabilityFinder/images/MA_stoch_design_princ.png" >
 
-LaTeX Warning: Float too large for page by 64.40863pt on input line 804.
+LaTeX Warning: Float too large for page by 64.40863pt on input line 828.
 
-[118] [119] [120
+[116] [117] [118
 
 ]
 File: ../../chapters/chapterStabilityFinder/images/priors_matter.png Graphic file (type QTm)
  <use  "../../chapters/chapterStabilityFinder/images/priors_matter.png" >
-Overfull \hbox (73.97603pt too wide) in paragraph at lines 836--837
+Overfull \hbox (73.97603pt too wide) in paragraph at lines 860--861
  [] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[121]
+[119]
 File: ../../chapters/chapterStabilityFinder/images/priors_matter_2.png Graphic file (type QTm)
- <use  "../../chapters/chapterStabilityFinder/images/priors_matter_2.png" > [122]
+ <use  "../../chapters/chapterStabilityFinder/images/priors_matter_2.png" > [120]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[123] [124] [125
+[121] [122] [123
 
 ]
-Overfull \hbox (1.83095pt too wide) in paragraph at lines 900--901
+Overfull \hbox (1.83095pt too wide) in paragraph at lines 924--925
 []\EU1/LinuxLibertineO(0)/m/n/10.95 StabilityFinder can also be used to study the topology of more complex multistable
  []
 
-[126]) [127] [128
+[124]) [125] [126
 
-] (../../chapters/chapterABCFlow/ChFlow_and_exp_new_str.tex [129
+] (../../chapters/chapterABCFlow/ChFlow_and_exp_new_str.tex [127
 
 ]
 File: ../../chapters/chapterBackgr/images/flow-overview.png Graphic file (type QTm)
- <use  "../../chapters/chapterBackgr/images/flow-overview.png" > [130] [131]
+ <use  "../../chapters/chapterBackgr/images/flow-overview.png" > [128] [129]
 File: ../../chapters/chapterABCFlow/images/abc-flow-overv.png Graphic file (type QTm)
  <use  "../../chapters/chapterABCFlow/images/abc-flow-overv.png" >
 
@@ -3066,9 +3062,9 @@ LaTeX Warning: Float too large for page by 45.54958pt on input line 80.
 
 LaTeX Warning: Command \textgreater invalid in math mode on input line 127.
 
-[132] [133] [134]
+[130] [131] [132]
 File: ../../chapters/chapterABCFlow/images/intensity_calc.png Graphic file (type QTm)
- <use  "../../chapters/chapterABCFlow/images/intensity_calc.png" > [135
+ <use  "../../chapters/chapterABCFlow/images/intensity_calc.png" > [133
 
 ]
 File: ../../chapters/chapterABCFlow/images/old_distance.png Graphic file (type QTm)
@@ -3077,7 +3073,7 @@ Overfull \hbox (54.87045pt too wide) in paragraph at lines 170--171
  [][] 
  []
 
-[136
+[134
 
 ]
 File: ../../chapters/chapterABCFlow/images/mus_sigmas-01.png Graphic file (type QTm)
@@ -3086,138 +3082,130 @@ Overfull \hbox (33.47517pt too wide) in paragraph at lines 194--195
  [][] 
  []
 
-[137]
+[135]
 File: ../../chapters/chapterABCFlow/images/multimodal_musd.png Graphic file (type QTm)
  <use  "../../chapters/chapterABCFlow/images/multimodal_musd.png" >
 Overfull \hbox (4.97685pt too wide) in paragraph at lines 203--204
  [][] 
  []
 
-[138]
+[136]
 File: ../../chapters/chapterABCFlow/images/multimodal_v_normal.png Graphic file (type QTm)
- <use  "../../chapters/chapterABCFlow/images/multimodal_v_normal.png" > [139]
+ <use  "../../chapters/chapterABCFlow/images/multimodal_v_normal.png" > [137]
 File: ../../chapters/chapterABCFlow/images/epsilon_uniform_musd_KS2sam.png Graphic file (type QTm)
- <use  "../../chapters/chapterABCFlow/images/epsilon_uniform_musd_KS2sam.png" > [140]
+ <use  "../../chapters/chapterABCFlow/images/epsilon_uniform_musd_KS2sam.png" > [138]
 Overfull \hbox (4.70134pt too wide) in paragraph at lines 250--251
 \EU1/LinuxLibertineO(0)/m/n/10.95 For the 2D case the distance was calculated by using the multivariate Wald-Wolfowitz
  []
 
-[141]
+[139]
 File: ../../chapters/chapterABCFlow/images/mu_diff.png Graphic file (type QTm)
  <use  "../../chapters/chapterABCFlow/images/mu_diff.png" >
 File: ../../chapters/chapterABCFlow/images/epsilon_same_box.png Graphic file (type QTm)
- <use  "../../chapters/chapterABCFlow/images/epsilon_same_box.png" > [142] [143] [144] [145
+ <use  "../../chapters/chapterABCFlow/images/epsilon_same_box.png" > [140] [141] [142] [143
 
-]
+] [144]
 File: ../../chapters/chapterABCFlow/images/1D_sim_res.png Graphic file (type QTm)
  <use  "../../chapters/chapterABCFlow/images/1D_sim_res.png" >
-Overfull \hbox (9.0953pt too wide) in paragraph at lines 348--349
+Overfull \hbox (9.0953pt too wide) in paragraph at lines 383--384
  [][] 
  []
 
 File: ../../chapters/chapterABCFlow/images/2D_toy_e3.png Graphic file (type QTm)
 <use  "../../chapters/chapterABCFlow/images/2D_toy_e3.png" >
-Overfull \hbox (41.90665pt too wide) in paragraph at lines 356--357
+Overfull \hbox (41.90665pt too wide) in paragraph at lines 396--397
  [][] 
- []
-
-
-Overfull \hbox (3.67545pt too wide) in paragraph at lines 381--382
-[]\EU1/LinuxLibertineO(0)/m/n/10.95 The posterior distributions obtained from each fit are shown in Figure [][]5.13[][] and [][]5.14[][].
  []
 
 File: ../../chapters/chapterABCFlow/images/toy_model_posteriors.png Graphic file (type QTm)
 <use  "../../chapters/chapterABCFlow/images/toy_model_posteriors.png" >
-File: ../../chapters/chapterABCFlow/images/toy_model_posterior_2d.png Graphic file (type QTm)
- <use  "../../chapters/chapterABCFlow/images/toy_model_posterior_2d.png" > [146] [147] [148] [149] [150] [151]
+
+LaTeX Warning: Float too large for page by 46.68214pt on input line 427.
+
+[145] [146] [147] [148]
 File: ../../chapters/chapterABCFlow/images/pKDL071_overview.png Graphic file (type QTm)
- <use  "../../chapters/chapterABCFlow/images/pKDL071_overview.png" > [152
+ <use  "../../chapters/chapterABCFlow/images/pKDL071_overview.png" > [149
 
-] [153]
+] [150]
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/it' will be
-(Font)              scaled to size 12.05603pt on input line 489.
- [154
+(Font)              scaled to size 12.05603pt on input line 499.
+ [151
 
-] [155] [156]
-Overfull \hbox (2.95178pt too wide) in paragraph at lines 607--608
+] [152] [153]
+Overfull \hbox (2.95178pt too wide) in paragraph at lines 617--618
 \EU1/LinuxLibertineO(0)/m/n/10.95 Thermocompetent \EU1/LinuxLibertineO(0)/m/it/10.95 E.coli \EU1/LinuxLibertineO(0)/m/n/10.95 Dh5α was transformed with the constructed plasmids. Each
  []
 
-[157]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\acrshort' on input line 613.
-
-[158] [159] [160] [161]
+[154] [155] [156] [157] [158]
 File: ../../chapters/chapterABCFlow/images/pKDL071-YFP.png Graphic file (type QTm)
- <use  "../../chapters/chapterABCFlow/images/pKDL071-YFP.png" > [162]
+ <use  "../../chapters/chapterABCFlow/images/pKDL071-YFP.png" > [159]
 File: ../../chapters/chapterABCFlow/images/plasmids_constructed.png Graphic file (type QTm)
- <use  "../../chapters/chapterABCFlow/images/plasmids_constructed.png" > [163]
+ <use  "../../chapters/chapterABCFlow/images/plasmids_constructed.png" > [160]
 File: ../../chapters/chapterABCFlow/images/growth_curves.png Graphic file (type QTm)
- <use  "../../chapters/chapterABCFlow/images/growth_curves.png" > [164]
-Overfull \hbox (14.93602pt too wide) in paragraph at lines 752--753
+ <use  "../../chapters/chapterABCFlow/images/growth_curves.png" > [161]
+Overfull \hbox (14.93602pt too wide) in paragraph at lines 762--763
 \EU1/LinuxLibertineO(0)/m/n/10.95 I carried out a concentration assay using flow cytometry, as described in Section [][]5.7.2.15[][].
  []
 
 File: ../../chapters/chapterABCFlow/images/pKDL071_concentrations_2d1d.png Graphic file (type QTm)
 <use  "../../chapters/chapterABCFlow/images/pKDL071_concentrations_2d1d.png" >
 
-LaTeX Warning: Float too large for page by 17.44165pt on input line 759.
+LaTeX Warning: Float too large for page by 17.44165pt on input line 769.
 
 File: ../../chapters/chapterABCFlow/images/pKDL071_concentrations_ATc-01.png Graphic file (type QTm)
-<use  "../../chapters/chapterABCFlow/images/pKDL071_concentrations_ATc-01.png" > [165
+<use  "../../chapters/chapterABCFlow/images/pKDL071_concentrations_ATc-01.png" > [162
 
-] [166]
+] [163]
 File: ../../chapters/chapterABCFlow/images/pKDL071_concentrations_model_fit-01.png Graphic file (type QTm)
- <use  "../../chapters/chapterABCFlow/images/pKDL071_concentrations_model_fit-01.png" > [167] [168]
+ <use  "../../chapters/chapterABCFlow/images/pKDL071_concentrations_model_fit-01.png" > [164] [165]
 File: ../../chapters/chapterABCFlow/images/pKDL071_atc_time.png Graphic file (type QTm)
  <use  "../../chapters/chapterABCFlow/images/pKDL071_atc_time.png" >
 
-LaTeX Warning: Float too large for page by 9.74365pt on input line 836.
+LaTeX Warning: Float too large for page by 9.74365pt on input line 846.
 
 File: ../../chapters/chapterABCFlow/images/pKDL071_iptg_time.png Graphic file (type QTm)
 <use  "../../chapters/chapterABCFlow/images/pKDL071_iptg_time.png" >
 
-LaTeX Warning: Float too large for page by 20.5359pt on input line 844.
+LaTeX Warning: Float too large for page by 20.5359pt on input line 854.
 
-[169] [170] [171]
+[166] [167] [168]
 File: ../../chapters/chapterABCFlow/images/shea-ackers_flow.png Graphic file (type QTm)
- <use  "../../chapters/chapterABCFlow/images/shea-ackers_flow.png" > [172
+ <use  "../../chapters/chapterABCFlow/images/shea-ackers_flow.png" > [169
 
-] [173]
+] [170]
 
-LaTeX Warning: Float too large for page by 11.80434pt on input line 930.
+LaTeX Warning: Float too large for page by 11.80434pt on input line 940.
 
-[174] [175]
+[171] [172]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\acrshort' on input line 935.
+(hyperref)                removing `\acrshort' on input line 945.
 
 File: ../../chapters/chapterABCFlow/images/2D_real_res-01.png Graphic file (type QTm)
 <use  "../../chapters/chapterABCFlow/images/2D_real_res-01.png" >
 
-LaTeX Warning: Float too large for page by 103.35164pt on input line 944.
+LaTeX Warning: Float too large for page by 103.35164pt on input line 954.
 
 File: ../../chapters/chapterABCFlow/images/posterior_atc.png Graphic file (type QTm)
-<use  "../../chapters/chapterABCFlow/images/posterior_atc.png" > [176
+<use  "../../chapters/chapterABCFlow/images/posterior_atc.png" > [173
 
-]
+] [174]
 File: ../../chapters/chapterABCFlow/images/promoter_strengths.png Graphic file (type QTm)
- <use  "../../chapters/chapterABCFlow/images/promoter_strengths.png" > [177] [178] [179] [180]
+ <use  "../../chapters/chapterABCFlow/images/promoter_strengths.png" > [175] [176] [177] [178]
 File: ../../chapters/chapterABCFlow/images/2D_real_res_IPTG-01.png Graphic file (type QTm)
  <use  "../../chapters/chapterABCFlow/images/2D_real_res_IPTG-01.png" >
 
-LaTeX Warning: Float too large for page by 110.31166pt on input line 1012.
+LaTeX Warning: Float too large for page by 110.31166pt on input line 1025.
 
 File: ../../chapters/chapterABCFlow/images/posterior_iptg.png Graphic file (type QTm)
-<use  "../../chapters/chapterABCFlow/images/posterior_iptg.png" > [181
+<use  "../../chapters/chapterABCFlow/images/posterior_iptg.png" > [179
 
-] [182] [183] [184]
-Overfull \hbox (8.67273pt too wide) in paragraph at lines 1067--1068
+] [180] [181] [182]
+Overfull \hbox (8.67273pt too wide) in paragraph at lines 1080--1081
 []\EU1/LinuxLibertineO(0)/m/n/10.95 Here I also developed a Bayesian framework, ABC-Flow, that is used to fit stochastic
  []
 
-[185] [186]) [187] [188
+[183] [184]) [185] [186
 
 ] (../../chapters/chapterDesignSwitches/ChDesSw_introduction.tex
 File: ../../chapters/chapterDesignSwitches/images/switches_cloning_big.png Graphic file (type QTm)
@@ -3226,15 +3214,15 @@ Overfull \hbox (43.76157pt too wide) in paragraph at lines 15--16
  [] 
  []
 
-[189
+[187
 
-] [190]
+] [188]
 File: ../../chapters/chapterDesignSwitches/images/final-plasmids.pdf Graphic file (type QTm)
  <use  "../../chapters/chapterDesignSwitches/images/final-plasmids.pdf" >
 File: ../../chapters/chapterDesignSwitches/images/stage1_cloning.pdf Graphic file (type QTm)
- <use  "../../chapters/chapterDesignSwitches/images/stage1_cloning.pdf" > [191
+ <use  "../../chapters/chapterDesignSwitches/images/stage1_cloning.pdf" > [189
 
-] [192] [193]
+] [190] [191]
 Overfull \hbox (6.33759pt too wide) in paragraph at lines 62--63
 []\EU1/LinuxLibertineO(0)/m/n/10.95 First, the P$[]$ promoter is synthesised. The reverse complement of BBa_K934024
  []
@@ -3249,11 +3237,11 @@ Overfull \hbox (3.04735pt too wide) in paragraph at lines 65--67
 \EU1/LinuxLibertineO(0)/m/n/10.95 TATCACTGATAGGGAGTAAACCTGTACGATCCTACAGGTAACGTTCGGCCG -3’
  []
 
-[194
+[192
 
 ]
 File: ../../chapters/chapterDesignSwitches/images/stage2_cloning.pdf Graphic file (type QTm)
- <use  "../../chapters/chapterDesignSwitches/images/stage2_cloning.pdf" > [195]
+ <use  "../../chapters/chapterDesignSwitches/images/stage2_cloning.pdf" > [193]
 Overfull \hbox (19.38408pt too wide) in paragraph at lines 87--88
 \EU1/LinuxLibertineO(0)/m/n/10.95 product produced above of pTD103aiiA_Cm with BsGI flanking sequences and pKDL071-
  []
@@ -3264,13 +3252,13 @@ Overfull \hbox (16.18147pt too wide) in paragraph at lines 92--93
  [] 
  []
 
-[196] [197]) [198
+[194] [195]) [196
 
 
-] (../../chapters/chapterConclusions/ChConc.tex) [199
+] (../../chapters/chapterConclusions/ChConc.tex [197
 
 
-] [200
+] [198]) [199] [200
 
 ] [201] [202] [203] [204] [205] [206] [207] [208]
 Missing character: There is no 􏱗 in font Linux Libertine O Italic/OT:script=latn;language=DFLT;mapping=tex-text;+liga;mapping=tex-text;!
@@ -3367,7 +3355,7 @@ File: ../../appendices/posterior-DP-asym.pdf Graphic file (type QTm)
 Class memoir Warning: The material used in the headers is too large
 (27.2pt) for the given head height (13.6pt), it is recommended to
 either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 134.
+(in both cases you will find help in the memoir manual). on input line 136.
 
 
 Package caption Warning: Unused \captionsetup[subfigure] on input line 198.
@@ -3382,11 +3370,11 @@ See the caption package documentation for explanation.
 \tf@lot=\write13
 \openout13 = `central.lot'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 134.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 134.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 136.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 136.
 (./central.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 134.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 134.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 136.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 136.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -3399,10 +3387,10 @@ Package logreq Info: Writing requests to 'central.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 67371 strings out of 493706
- 1240951 string characters out of 6145769
- 1925931 words of memory out of 5000000
- 69744 multiletter control sequences out of 15000+600000
+ 67363 strings out of 493706
+ 1240753 string characters out of 6145769
+ 1926089 words of memory out of 5000000
+ 69737 multiletter control sequences out of 15000+600000
  12081 words of font info for 91 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  73i,24n,109p,10434b,3237s stack positions out of 5000i,500n,10000p,200000b,80000s

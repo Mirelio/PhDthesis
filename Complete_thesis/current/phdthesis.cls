@@ -167,7 +167,7 @@
 
 % section depth
 \setsecnumdepth{subsubsection}
-\maxtocdepth{subsubsection}
+\maxtocdepth{subsection}
 
 %-------------------------------------------------------------------------------
 % Figures and captions
