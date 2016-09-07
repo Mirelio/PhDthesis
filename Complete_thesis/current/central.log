@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.10.1)  5 SEP 2016 23:39
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.10.1)  6 SEP 2016 22:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2584,7 +2584,15 @@ Package biblatex Info: Data encoding 'utf8' specified.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'central.bbl' found.
- (./central.bbl)
+ (./central.bbl
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Kass:1995eh
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+)
 Package biblatex Info: Reference section=0 on input line 17.
 Package biblatex Info: Reference segment=0 on input line 17.
  ABD: EveryShipout initializing macros
@@ -3030,9 +3038,9 @@ Overfull \hbox (73.97603pt too wide) in paragraph at lines 836--837
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[121] [122]
+[121]
 File: ../../chapters/chapterStabilityFinder/images/priors_matter_2.png Graphic file (type QTm)
- <use  "../../chapters/chapterStabilityFinder/images/priors_matter_2.png" >
+ <use  "../../chapters/chapterStabilityFinder/images/priors_matter_2.png" > [122]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -3113,45 +3121,48 @@ Overfull \hbox (41.90665pt too wide) in paragraph at lines 356--357
  [][] 
  []
 
+
+Overfull \hbox (3.67545pt too wide) in paragraph at lines 381--382
+[]\EU1/LinuxLibertineO(0)/m/n/10.95 The posterior distributions obtained from each fit are shown in Figure [][]5.13[][] and [][]5.14[][].
+ []
+
 File: ../../chapters/chapterABCFlow/images/toy_model_posteriors.png Graphic file (type QTm)
 <use  "../../chapters/chapterABCFlow/images/toy_model_posteriors.png" >
-
-LaTeX Warning: Float too large for page by 20.20734pt on input line 387.
-
-[146] [147] [148] [149] [150]
+File: ../../chapters/chapterABCFlow/images/toy_model_posterior_2d.png Graphic file (type QTm)
+ <use  "../../chapters/chapterABCFlow/images/toy_model_posterior_2d.png" > [146] [147] [148] [149] [150] [151]
 File: ../../chapters/chapterABCFlow/images/pKDL071_overview.png Graphic file (type QTm)
- <use  "../../chapters/chapterABCFlow/images/pKDL071_overview.png" > [151
+ <use  "../../chapters/chapterABCFlow/images/pKDL071_overview.png" > [152
 
-] [152]
+] [153]
 LaTeX Font Info:    Font shape `EU1/LinuxLibertineO(0)/m/it' will be
-(Font)              scaled to size 12.05603pt on input line 456.
- [153
+(Font)              scaled to size 12.05603pt on input line 489.
+ [154
 
-] [154] [155]
-Overfull \hbox (2.95178pt too wide) in paragraph at lines 574--575
+] [155] [156]
+Overfull \hbox (2.95178pt too wide) in paragraph at lines 607--608
 \EU1/LinuxLibertineO(0)/m/n/10.95 Thermocompetent \EU1/LinuxLibertineO(0)/m/it/10.95 E.coli \EU1/LinuxLibertineO(0)/m/n/10.95 Dh5α was transformed with the constructed plasmids. Each
  []
 
-[156]
+[157]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\acrshort' on input line 580.
+(hyperref)                removing `\acrshort' on input line 613.
 
-[157] [158] [159] [160]
+[158] [159] [160] [161]
 File: ../../chapters/chapterABCFlow/images/pKDL071-YFP.png Graphic file (type QTm)
- <use  "../../chapters/chapterABCFlow/images/pKDL071-YFP.png" > [161]
+ <use  "../../chapters/chapterABCFlow/images/pKDL071-YFP.png" > [162]
 File: ../../chapters/chapterABCFlow/images/plasmids_constructed.png Graphic file (type QTm)
- <use  "../../chapters/chapterABCFlow/images/plasmids_constructed.png" > [162]
+ <use  "../../chapters/chapterABCFlow/images/plasmids_constructed.png" > [163]
 File: ../../chapters/chapterABCFlow/images/growth_curves.png Graphic file (type QTm)
- <use  "../../chapters/chapterABCFlow/images/growth_curves.png" > [163] [164]
-Overfull \hbox (14.93602pt too wide) in paragraph at lines 719--720
+ <use  "../../chapters/chapterABCFlow/images/growth_curves.png" > [164]
+Overfull \hbox (14.93602pt too wide) in paragraph at lines 752--753
 \EU1/LinuxLibertineO(0)/m/n/10.95 I carried out a concentration assay using flow cytometry, as described in Section [][]5.7.2.15[][].
  []
 
 File: ../../chapters/chapterABCFlow/images/pKDL071_concentrations_2d1d.png Graphic file (type QTm)
 <use  "../../chapters/chapterABCFlow/images/pKDL071_concentrations_2d1d.png" >
 
-LaTeX Warning: Float too large for page by 17.44165pt on input line 726.
+LaTeX Warning: Float too large for page by 17.44165pt on input line 759.
 
 File: ../../chapters/chapterABCFlow/images/pKDL071_concentrations_ATc-01.png Graphic file (type QTm)
 <use  "../../chapters/chapterABCFlow/images/pKDL071_concentrations_ATc-01.png" > [165
@@ -3162,53 +3173,51 @@ File: ../../chapters/chapterABCFlow/images/pKDL071_concentrations_model_fit-01.p
 File: ../../chapters/chapterABCFlow/images/pKDL071_atc_time.png Graphic file (type QTm)
  <use  "../../chapters/chapterABCFlow/images/pKDL071_atc_time.png" >
 
-LaTeX Warning: Float too large for page by 9.74365pt on input line 803.
+LaTeX Warning: Float too large for page by 9.74365pt on input line 836.
 
 File: ../../chapters/chapterABCFlow/images/pKDL071_iptg_time.png Graphic file (type QTm)
 <use  "../../chapters/chapterABCFlow/images/pKDL071_iptg_time.png" >
 
-LaTeX Warning: Float too large for page by 20.5359pt on input line 811.
+LaTeX Warning: Float too large for page by 20.5359pt on input line 844.
 
-[169] [170] [171] [172
+[169] [170] [171]
+File: ../../chapters/chapterABCFlow/images/shea-ackers_flow.png Graphic file (type QTm)
+ <use  "../../chapters/chapterABCFlow/images/shea-ackers_flow.png" > [172
 
-]
+] [173]
 
-LaTeX Warning: Float too large for page by 13.72954pt on input line 918.
+LaTeX Warning: Float too large for page by 11.80434pt on input line 930.
 
-[173] [174]
+[174] [175]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\acrshort' on input line 935.
+
 File: ../../chapters/chapterABCFlow/images/2D_real_res-01.png Graphic file (type QTm)
- <use  "../../chapters/chapterABCFlow/images/2D_real_res-01.png" >
+<use  "../../chapters/chapterABCFlow/images/2D_real_res-01.png" >
 
-LaTeX Warning: Float too large for page by 89.75163pt on input line 932.
+LaTeX Warning: Float too large for page by 103.35164pt on input line 944.
 
-File: ../../chapters/chapterABCFlow/images/real_data_stuff/posterior2D_pop10_100p.pdf Graphic file (type QTm)
-<use  "../../chapters/chapterABCFlow/images/real_data_stuff/posterior2D_pop10_100p.pdf" > [175
+File: ../../chapters/chapterABCFlow/images/posterior_atc.png Graphic file (type QTm)
+<use  "../../chapters/chapterABCFlow/images/posterior_atc.png" > [176
 
 ]
 File: ../../chapters/chapterABCFlow/images/promoter_strengths.png Graphic file (type QTm)
- <use  "../../chapters/chapterABCFlow/images/promoter_strengths.png" > [176] [177] [178] [179]
+ <use  "../../chapters/chapterABCFlow/images/promoter_strengths.png" > [177] [178] [179] [180]
 File: ../../chapters/chapterABCFlow/images/2D_real_res_IPTG-01.png Graphic file (type QTm)
  <use  "../../chapters/chapterABCFlow/images/2D_real_res_IPTG-01.png" >
 
-LaTeX Warning: Float too large for page by 110.31166pt on input line 992.
+LaTeX Warning: Float too large for page by 110.31166pt on input line 1012.
 
-[180
+File: ../../chapters/chapterABCFlow/images/posterior_iptg.png Graphic file (type QTm)
+<use  "../../chapters/chapterABCFlow/images/posterior_iptg.png" > [181
 
-] [181]
-File: ../../chapters/chapterABCFlow/images/real_data_stuff/posterior2D_pop9_100p-IPTG.pdf Graphic file (type QTm)
- <use  "../../chapters/chapterABCFlow/images/real_data_stuff/posterior2D_pop9_100p-IPTG.pdf" > [182]
-Overfull \hbox (8.67273pt too wide) in paragraph at lines 1048--1049
+] [182] [183] [184]
+Overfull \hbox (8.67273pt too wide) in paragraph at lines 1067--1068
 []\EU1/LinuxLibertineO(0)/m/n/10.95 Here I also developed a Bayesian framework, ABC-Flow, that is used to fit stochastic
  []
 
-[183
-
-]
-Overfull \hbox (7.66516pt too wide) in paragraph at lines 1067--1068
-\EU1/LinuxLibertineO(0)/m/n/10.95 to produce systems with well-defined functions ([]Chin [][]2006[][]) and reliable operation ([]Lu,
- []
-
-[184]) [185] [186
+[185] [186]) [187] [188
 
 ] (../../chapters/chapterDesignSwitches/ChDesSw_introduction.tex
 File: ../../chapters/chapterDesignSwitches/images/switches_cloning_big.png Graphic file (type QTm)
@@ -3217,15 +3226,15 @@ Overfull \hbox (43.76157pt too wide) in paragraph at lines 15--16
  [] 
  []
 
-[187
+[189
 
-] [188]
+] [190]
 File: ../../chapters/chapterDesignSwitches/images/final-plasmids.pdf Graphic file (type QTm)
  <use  "../../chapters/chapterDesignSwitches/images/final-plasmids.pdf" >
 File: ../../chapters/chapterDesignSwitches/images/stage1_cloning.pdf Graphic file (type QTm)
- <use  "../../chapters/chapterDesignSwitches/images/stage1_cloning.pdf" > [189
+ <use  "../../chapters/chapterDesignSwitches/images/stage1_cloning.pdf" > [191
 
-] [190] [191]
+] [192] [193]
 Overfull \hbox (6.33759pt too wide) in paragraph at lines 62--63
 []\EU1/LinuxLibertineO(0)/m/n/10.95 First, the P$[]$ promoter is synthesised. The reverse complement of BBa_K934024
  []
@@ -3240,11 +3249,11 @@ Overfull \hbox (3.04735pt too wide) in paragraph at lines 65--67
 \EU1/LinuxLibertineO(0)/m/n/10.95 TATCACTGATAGGGAGTAAACCTGTACGATCCTACAGGTAACGTTCGGCCG -3’
  []
 
-[192
+[194
 
 ]
 File: ../../chapters/chapterDesignSwitches/images/stage2_cloning.pdf Graphic file (type QTm)
- <use  "../../chapters/chapterDesignSwitches/images/stage2_cloning.pdf" > [193]
+ <use  "../../chapters/chapterDesignSwitches/images/stage2_cloning.pdf" > [195]
 Overfull \hbox (19.38408pt too wide) in paragraph at lines 87--88
 \EU1/LinuxLibertineO(0)/m/n/10.95 product produced above of pTD103aiiA_Cm with BsGI flanking sequences and pKDL071-
  []
@@ -3255,18 +3264,18 @@ Overfull \hbox (16.18147pt too wide) in paragraph at lines 92--93
  [] 
  []
 
-[194] [195]) [196
+[196] [197]) [198
 
 
-] (../../chapters/chapterConclusions/ChConc.tex) [197
+] (../../chapters/chapterConclusions/ChConc.tex) [199
 
 
-] [198
+] [200
 
-] [199] [200] [201] [202] [203] [204] [205] [206]
+] [201] [202] [203] [204] [205] [206] [207] [208]
 Missing character: There is no 􏱗 in font Linux Libertine O Italic/OT:script=latn;language=DFLT;mapping=tex-text;+liga;mapping=tex-text;!
 Missing character: There is no 􏱈 in font Linux Libertine O/OT:script=latn;language=DFLT;mapping=tex-text;+liga;mapping=tex-text;!
- [207] [208] [209] [210] (../../appendices/appendix_ODEs.tex
+ [209] [210] [211] [212] (../../appendices/appendix_ODEs.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\acrlong' on input line 1.
@@ -3281,39 +3290,39 @@ Overfull \hbox (85.45616pt too wide) detected at line 66
 []
  []
 
-[211
+[213
 
 ]
 Overfull \hbox (103.6349pt too wide) detected at line 112
 []
  []
 
-[212]
+[214]
 Overfull \hbox (85.45616pt too wide) detected at line 131
 []
  []
 
-[213]
+[215]
 Overfull \hbox (106.3211pt too wide) detected at line 184
 []
  []
 
-[214]
+[216]
 Overfull \hbox (85.45616pt too wide) detected at line 203
 []
  []
 
-[215]
+[217]
 Overfull \hbox (108.05199pt too wide) detected at line 253
 []
  []
 
-[216]
+[218]
 Overfull \hbox (91.66763pt too wide) detected at line 284
 []
  []
 
-[217]
+[219]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\acrshort' on input line 287.
@@ -3323,7 +3332,7 @@ Overfull \hbox (68.93121pt too wide) detected at line 324
 []
  []
 
-[218] [219] [220]
+[220] [221]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\acrshort' on input line 372.
@@ -3333,17 +3342,17 @@ Overfull \hbox (99.85979pt too wide) detected at line 421
 []
  []
 
-[221] [222]
+[222] [223]
 Overfull \vbox (6.1609pt too high) has occurred while \output is active []
 
- [223] [224]) [225] [226
-
-] (../../appendices/appendix_primers.tex
+ [224] [225]) [226] (../../appendices/appendix_primers.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\acrshort' on input line 1.
 
-) [227] [228
+) [227
+
+] [228
 
 ] (../../appendices/appendix_algos.tex [229] [230]) [231
 
@@ -3390,10 +3399,10 @@ Package logreq Info: Writing requests to 'central.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 67363 strings out of 493706
- 1240778 string characters out of 6145769
- 1924311 words of memory out of 5000000
- 69737 multiletter control sequences out of 15000+600000
+ 67371 strings out of 493706
+ 1240951 string characters out of 6145769
+ 1925931 words of memory out of 5000000
+ 69744 multiletter control sequences out of 15000+600000
  12081 words of font info for 91 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  73i,24n,109p,10434b,3237s stack positions out of 5000i,500n,10000p,200000b,80000s

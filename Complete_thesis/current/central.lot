@@ -20,27 +20,28 @@
 \contentsline {table}{\numberline {4.2}{\ignorespaces Priors of the classical (\acrshort {cs-lu}), single positive (\acrshort {sp-lu}) and double positive (\acrshort {dp-lu}) models.\relax }}{101}{table.caption.44}
 \contentsline {table}{\numberline {4.3}{\ignorespaces Priors used in the three-node switch\relax }}{109}{table.caption.49}
 \contentsline {table}{\numberline {4.4}{\ignorespaces Design principles of the stochastic MA bistable and tristable switches\relax }}{117}{table.caption.54}
-\contentsline {table}{\numberline {4.5}{\ignorespaces Priors used for studying the effect of priors to robustness\relax }}{121}{table.caption.56}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Priors used for studying the effect of priors to robustness\relax }}{120}{table.caption.56}
 \contentsline {table}{\numberline {4.6}{\ignorespaces Bayes factors of the \acrshort {dp-ma} against the \acrshort {cs-ma} model using different volumes of priors\relax }}{123}{table.caption.58}
 \addvspace {10pt}
-\contentsline {table}{\numberline {5.1}{\ignorespaces The priors used for the 1D and 2D ABC-FLow model fitting to simulated data\relax }}{150}{table.caption.73}
-\contentsline {table}{\numberline {5.2}{\ignorespaces \acrshort {pcr} recipe\relax }}{154}{table.caption.75}
-\contentsline {table}{\numberline {5.3}{\ignorespaces Thermocycling conditions\relax }}{155}{table.caption.76}
-\contentsline {table}{\numberline {5.4}{\ignorespaces Digestion recipe\relax }}{155}{table.caption.77}
-\contentsline {table}{\numberline {5.5}{\ignorespaces Ligation controls\relax }}{156}{table.caption.78}
-\contentsline {table}{\numberline {5.6}{\ignorespaces Colony \acrshort {pcr} master mix recipe\relax }}{157}{table.caption.79}
-\contentsline {table}{\numberline {5.7}{\ignorespaces Thermocycling conditions for colony \acrshort {pcr}\relax }}{158}{table.caption.80}
-\contentsline {table}{\numberline {5.8}{\ignorespaces Concentrations used for flow cytometry assay\relax }}{160}{table.caption.81}
-\contentsline {table}{\numberline {5.9}{\ignorespaces Inferred values from the Hill equations in \acrshort {atc} and \acrshort {iptg} inductions\relax }}{165}{table.caption.86}
-\contentsline {table}{\numberline {5.10}{\ignorespaces The priors used for the 1D and 2D ABC-FLow model fitting to flow cytometry data\relax }}{174}{table.caption.91}
-\contentsline {table}{\numberline {5.11}{\ignorespaces The inferred parameter values of the toggle switch post-\acrshort {atc} induction\relax }}{176}{table.caption.94}
-\contentsline {table}{\numberline {5.12}{\ignorespaces The inferred parameter values of the toggle switch post-\acrshort {iptg} induction\relax }}{180}{table.caption.97}
+\contentsline {table}{\numberline {5.1}{\ignorespaces The priors used for the 1D and 2D ABC-Flow model fitting to simulated data\relax }}{151}{table.caption.74}
+\contentsline {table}{\numberline {5.2}{\ignorespaces The parameters inferred from simulated data\relax }}{151}{table.caption.75}
+\contentsline {table}{\numberline {5.3}{\ignorespaces \acrshort {pcr} recipe\relax }}{155}{table.caption.77}
+\contentsline {table}{\numberline {5.4}{\ignorespaces Thermocycling conditions\relax }}{156}{table.caption.78}
+\contentsline {table}{\numberline {5.5}{\ignorespaces Digestion recipe\relax }}{156}{table.caption.79}
+\contentsline {table}{\numberline {5.6}{\ignorespaces Ligation controls\relax }}{157}{table.caption.80}
+\contentsline {table}{\numberline {5.7}{\ignorespaces Colony \acrshort {pcr} master mix recipe\relax }}{158}{table.caption.81}
+\contentsline {table}{\numberline {5.8}{\ignorespaces Thermocycling conditions for colony \acrshort {pcr}\relax }}{159}{table.caption.82}
+\contentsline {table}{\numberline {5.9}{\ignorespaces Concentrations used for flow cytometry assay\relax }}{161}{table.caption.83}
+\contentsline {table}{\numberline {5.10}{\ignorespaces Inferred values from the Hill equations in \acrshort {atc} and \acrshort {iptg} inductions\relax }}{165}{table.caption.88}
+\contentsline {table}{\numberline {5.11}{\ignorespaces The priors used for the 1D and 2D ABC-Flow model fitting to flow cytometry data\relax }}{175}{table.caption.94}
+\contentsline {table}{\numberline {5.12}{\ignorespaces The inferred parameter values of the toggle switch post-\acrshort {atc} induction\relax }}{177}{table.caption.97}
+\contentsline {table}{\numberline {5.13}{\ignorespaces The inferred parameter values of the toggle switch post-\acrshort {iptg} induction\relax }}{184}{table.caption.100}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {table}{\numberline {A.1}{\ignorespaces CS-MA stoichiometry matrix\relax }}{220}{table.caption.108}
-\contentsline {table}{\numberline {A.2}{\ignorespaces DP-MA stoichiometry matrix\relax }}{224}{table.caption.109}
+\contentsline {table}{\numberline {A.1}{\ignorespaces CS-MA stoichiometry matrix\relax }}{222}{table.caption.111}
+\contentsline {table}{\numberline {A.2}{\ignorespaces DP-MA stoichiometry matrix\relax }}{225}{table.caption.112}
 \addvspace {10pt}
-\contentsline {table}{\numberline {B.1}{\ignorespaces List of primers used for PCR amplification\relax }}{227}{table.caption.110}
+\contentsline {table}{\numberline {B.1}{\ignorespaces List of primers used for PCR amplification\relax }}{227}{table.caption.113}
 \addvspace {10pt}
 \addvspace {10pt}

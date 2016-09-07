@@ -547,28 +547,6 @@
       \field{pages}{e1000268\bibrangedash e1000268}
       \range{pages}{-1}
     \endentry
-    \entry{Chin:2006fb}{article}{}
-      \name{author}{1}{}{%
-        {{hash=f5127506d3e64154d3e4a252b3caaaae}{Chin}{C\bibinitperiod}{Jason\bibnamedelima W}{J\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{f5127506d3e64154d3e4a252b3caaaae}
-      \strng{fullhash}{f5127506d3e64154d3e4a252b3caaaae}
-      \field{sortinit}{C}
-      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
-      \field{labelyear}{2006}
-      \field{labelmonth}{08}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Current Opinion in Structural Biology}
-      \field{month}{08}
-      \field{number}{4}
-      \field{title}{{Programming and engineering biological networks}}
-      \field{volume}{16}
-      \field{year}{2006}
-      \field{pages}{551\bibrangedash 556}
-      \range{pages}{6}
-    \endentry
     \entry{Choi:2014gb}{article}{}
       \name{author}{10}{}{%
         {{hash=551e1b3147645d7a864f86982ec4223d}{Choi}{C\bibinitperiod}{Su-Lim}{S\bibinithyphendelim L\bibinitperiod}{}{}{}{}}%
@@ -1580,29 +1558,6 @@
       \field{title}{Understanding nonlinear dynamics}
       \field{year}{1995}
     \endentry
-    \entry{Kass:1995eh}{article}{}
-      \name{author}{2}{}{%
-        {{hash=4c753f839bb4d337c2f86c88f6fd0184}{Kass}{K\bibinitperiod}{Robert\bibnamedelima E}{R\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
-        {{hash=0451cbcfdf7af3838441abe600b2a495}{Raftery}{R\bibinitperiod}{Adrian\bibnamedelima E}{A\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{9625d018e2c3e4acec55b8e65a1018d6}
-      \strng{fullhash}{9625d018e2c3e4acec55b8e65a1018d6}
-      \field{sortinit}{K}
-      \field{sortinithash}{a7d5b3aec5a0890aae7baf85a209abfc}
-      \field{labelyear}{1995}
-      \field{labelmonth}{06}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of the American Statistical Association}
-      \field{month}{06}
-      \field{number}{430}
-      \field{title}{{Bayes Factors}}
-      \field{volume}{90}
-      \field{year}{1995}
-      \field{pages}{773\bibrangedash 795}
-      \range{pages}{23}
-    \endentry
     \entry{Kelly:2009bj}{article}{}
       \name{author}{10}{}{%
         {{hash=74ea9436c188b71bde450069e0beb7c2}{Kelly}{K\bibinitperiod}{Jason\bibnamedelima R}{J\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
@@ -1890,6 +1845,28 @@
       \field{pages}{867\bibrangedash 870}
       \range{pages}{4}
     \endentry
+    \entry{LeNovere:2015dp}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d60fa3dea34041e3e38ecfd703c5c786}{Le\bibnamedelima Novère}{L\bibinitperiod\bibinitdelim N\bibinitperiod}{Nicolas}{N\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{d60fa3dea34041e3e38ecfd703c5c786}
+      \strng{fullhash}{d60fa3dea34041e3e38ecfd703c5c786}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelyear}{2015}
+      \field{labelmonth}{03}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature Reviews Genetics}
+      \field{month}{03}
+      \field{number}{3}
+      \field{title}{{Quantitative and logic modelling of molecular and gene networks.}}
+      \field{volume}{16}
+      \field{year}{2015}
+      \field{pages}{146\bibrangedash 158}
+      \range{pages}{13}
+    \endentry
     \entry{LeNovere:2006ep}{article}{}
       \name{author}{12}{}{%
         {{hash=d60fa3dea34041e3e38ecfd703c5c786}{Le\bibnamedelima Novère}{L\bibinitperiod\bibinitdelim N\bibinitperiod}{Nicolas}{N\bibinitperiod}{}{}{}{}}%
@@ -1938,6 +1915,47 @@
       \field{journaltitle}{Quarterly of applied mathematics}
       \field{title}{{A method for the solution of certain non-linear problems in least squares}}
       \field{year}{1944}
+    \endentry
+    \entry{Li:2010kt}{article}{}
+      \name{author}{21}{}{%
+        {{hash=137297e0019ba55bca6f9b200782ae52}{Li}{L\bibinitperiod}{Peter}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=72fdb56dc536b69e5b214398fd4babab}{Dada}{D\bibinitperiod}{Joseph\bibnamedelima O}{J\bibinitperiod\bibinitdelim O\bibinitperiod}{}{}{}{}}%
+        {{hash=128839f008b2f45d7f6cfa7726946932}{Jameson}{J\bibinitperiod}{Daniel}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=aec38a543be5a4c7b94ff8b94235aee4}{Spasic}{S\bibinitperiod}{Irena}{I\bibinitperiod}{}{}{}{}}%
+        {{hash=0aac9a14ced965329094c170b899ca5b}{Swainston}{S\bibinitperiod}{Neil}{N\bibinitperiod}{}{}{}{}}%
+        {{hash=c5cef9e6454af1daa8e0700f1e66f266}{Carroll}{C\bibinitperiod}{Kathleen}{K\bibinitperiod}{}{}{}{}}%
+        {{hash=b07479282a7244993fb3b0ed528177d0}{Dunn}{D\bibinitperiod}{Warwick}{W\bibinitperiod}{}{}{}{}}%
+        {{hash=880816d8298e4fbb2e1b132e0ed13c33}{Khan}{K\bibinitperiod}{Farid}{F\bibinitperiod}{}{}{}{}}%
+        {{hash=77e78679e5e711747ca1d79e477d78af}{Malys}{M\bibinitperiod}{Naglis}{N\bibinitperiod}{}{}{}{}}%
+        {{hash=2a7e6b85ee6236f1f5a36ff22a1c0017}{Messiha}{M\bibinitperiod}{Hanan\bibnamedelima L}{H\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{hash=2ae1bd04de84e039c47a9fb528ee8bec}{Simeonidis}{S\bibinitperiod}{Evangelos}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=bf7c2bfdf9eb6252f7381b7efe721fac}{Weichart}{W\bibinitperiod}{Dieter}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=f846fae4503e6a3ffd2c28e3ac583a8a}{Winder}{W\bibinitperiod}{Catherine}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=dff4d8c0f761c5f06e69ca1eb229bea2}{Wishart}{W\bibinitperiod}{Jill}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=732f7596f99b3c250a7009a904ba8cfe}{Broomhead}{B\bibinitperiod}{David\bibnamedelima S}{D\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{hash=652a9381c1f13038b2b845d0040f925e}{Goble}{G\bibinitperiod}{Carole\bibnamedelima A}{C\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=84450164749a47f5a59de79d869d2c4c}{Gaskell}{G\bibinitperiod}{Simon\bibnamedelima J}{S\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=d9b8a97ca6475a724c752469b314275e}{Kell}{K\bibinitperiod}{Douglas\bibnamedelima B}{D\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
+        {{hash=e6d1963f970f9c7627df764caba49851}{Westerhoff}{W\bibinitperiod}{Hans\bibnamedelima V}{H\bibinitperiod\bibinitdelim V\bibinitperiod}{}{}{}{}}%
+        {{hash=075686383394e8aa7ef64f9716c609c6}{Mendes}{M\bibinitperiod}{Pedro}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=e2a468a34fbf8c23ad09b6f5a5c38e09}{Paton}{P\bibinitperiod}{Norman\bibnamedelima W}{N\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{47a69ac3344ccce27517b11c8f447fb0}
+      \strng{fullhash}{972b2bc8f3d480ad5b29a20853f811cf}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelyear}{2010}
+      \field{labelmonth}{01}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{BMC Bioinformatics}
+      \field{month}{01}
+      \field{title}{{Systematic integration of experimental data and models in systems biology.}}
+      \field{volume}{11}
+      \field{year}{2010}
+      \field{pages}{582\bibrangedash 582}
+      \range{pages}{1}
     \endentry
     \entry{Liepe:2010eg}{article}{}
       \name{author}{7}{}{%
@@ -2709,10 +2727,19 @@
       \strng{fullhash}{ec5556f4032ee99919a01a312a0c9504}
       \field{sortinit}{R}
       \field{sortinithash}{c7387613477035a752d935acfc3e3ea2}
-      \field{labelyear}{nodate}
+      \field{labelyear}{2006}
+      \field{labelmonth}{07}
+      \field{datelabelsource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{{A Fluctuation Method to Quantify In Vivo Fluorescence Data}}
+      \field{journaltitle}{Biophysj}
+      \field{month}{07}
+      \field{number}{2}
+      \field{title}{{A fluctuation method to quantify in vivo fluorescence data.}}
+      \field{volume}{91}
+      \field{year}{2006}
+      \field{pages}{759\bibrangedash 766}
+      \range{pages}{8}
     \endentry
     \entry{Salis:2009gk}{article}{}
       \name{author}{3}{}{%
@@ -3513,6 +3540,7 @@
       \range{pages}{3}
     \endentry
   \endsortlist
+  \missing{Kass:1995eh}
 \endrefsection
 \endinput
 

@@ -120,7 +120,7 @@ Transcription & $p  \xrightarrow{k_1} p + RNA$ \\
 Dimerization & $2A \xrightleftharpoons[k_3]{k_2} A_2$ \\
 Promoter repression & $A_2 + p \xrightleftharpoons[k_5]{k_4} p\bullet A_2$ \\
 Activation & $A_2 + p \xrightarrow{k_6} p\bullet A_2 + RNA$ \\
-Degradation & $A \xrightarrow{k_7}\oslash $ \\ \bottomrule
+Degradation & $A \xrightarrow{k_7}\varnothing $ \\ \bottomrule
 \end{tabular}
 \end{table}
 
@@ -226,7 +226,7 @@ There are two main ways of simulating a system, deterministically and stochastic
 Name & Reaction & Rate \\ \midrule
 prey birth & $x \xrightarrow{k_1} 2x$ & $k_{1}x$ \\
 predation & $x + y \xrightarrow{k_2} 2y$ & $k_{2}xy$ \\
-predator death & $y \xrightarrow{k_3} \oslash$ & $k_{3}y$ \\ \bottomrule
+predator death & $y \xrightarrow{k_3} \varnothing$ & $k_{3}y$ \\ \bottomrule
 \end{tabular}
 \end{table}
 
@@ -365,7 +365,7 @@ Here I will consider the predator-prey system introduced in Section~\ref{sec:pre
 \begin{tabular}{@{}lll@{}}
 \toprule
 Order & Reaction & Hazard \\ \midrule
-Zeroth & $\oslash \xrightarrow{c_i}X $ & $h_i(x, c_i) = c_i$ \\
+Zeroth & $\varnothing \xrightarrow{c_i}X $ & $h_i(x, c_i) = c_i$ \\
 First & $X_j \xrightarrow{c_i} ? $ & $h_i(x, c_i) = c_{i}x_j$ \\
 Second & $X_j + X_k \xrightarrow{c_i} ? $ & $h_i(x, c_i) = c_{i}x_{j}x_k$ \\
 Dimerization & $X_j + X_j \xrightarrow{c_i} X_{2j} $ & $h_i(x, c_i) = c_{i}\frac{x_{j}(x_{j}-1)}{2}$ \\ \bottomrule

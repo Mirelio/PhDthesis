@@ -80,7 +80,7 @@
 \BOOKMARK [3][-]{subsubsection.4.6.3.2}{Bayes\040factors\040depend\040on\040the\040choice\040of\040priors}{subsection.4.6.3}% 80
 \BOOKMARK [1][-]{section.4.7}{Discussion}{chapter.4}% 81
 \BOOKMARK [1][-]{section.4.8}{Summary}{chapter.4}% 82
-\BOOKMARK [0][-]{chapter.5}{Bayesian\040model\040fitting\040applied\040to\040flow\040cytometry\040data}{}% 83
+\BOOKMARK [0][-]{chapter.5}{Bayesian\040model\040fitting\040for\040flow\040cytometry\040data}{}% 83
 \BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 84
 \BOOKMARK [1][-]{section.5.2}{Contributions\040to\040this\040Chapter}{chapter.5}% 85
 \BOOKMARK [1][-]{section.5.3}{Flow\040cytometry}{chapter.5}% 86
@@ -93,7 +93,7 @@
 \BOOKMARK [3][-]{subsubsection.5.5.2.3}{Wald-Wolfowitz\040distance}{subsection.5.5.2}% 93
 \BOOKMARK [1][-]{section.5.6}{ABC-Flow\040model\040fitting\040to\040simulated\040data\040}{chapter.5}% 94
 \BOOKMARK [2][-]{subsection.5.6.1}{Toggle\040switch\040model\040development}{section.5.6}% 95
-\BOOKMARK [2][-]{subsection.5.6.2}{Parameter\040inference\040resulting\040from\040simulated\040data}{section.5.6}% 96
+\BOOKMARK [2][-]{subsection.5.6.2}{Parameter\040inference\040for\040simulated\040flow\040cytometry\040data}{section.5.6}% 96
 \BOOKMARK [1][-]{section.5.7}{Toggle\040switch\040data\040collection}{chapter.5}% 97
 \BOOKMARK [2][-]{subsection.5.7.1}{Circuit\040overview}{section.5.7}% 98
 \BOOKMARK [2][-]{subsection.5.7.2}{Methods}{section.5.7}% 99
@@ -120,8 +120,8 @@
 \BOOKMARK [3][-]{subsubsection.5.7.3.4}{Toggle\040switch\040concentration\040assays}{subsection.5.7.3}% 120
 \BOOKMARK [3][-]{subsubsection.5.7.3.5}{Toggle\040switch\040time\040course\040assay}{subsection.5.7.3}% 121
 \BOOKMARK [1][-]{section.5.8}{ABC-Flow\040used\040on\040experimental\040data}{chapter.5}% 122
-\BOOKMARK [2][-]{subsection.5.8.1}{Toggle\040switch\040model\040developed\040to\040fit\040to\040experimental\040data}{section.5.8}% 123
-\BOOKMARK [2][-]{subsection.5.8.2}{Model\040fitting\040to\040the\040genetic\040toggle\040switch\040post\040ATc\040induction}{section.5.8}% 124
+\BOOKMARK [2][-]{subsection.5.8.1}{Toggle\040switch\040model\040developed\040to\040fit\040to\040flow\040cytometry\040data}{section.5.8}% 123
+\BOOKMARK [2][-]{subsection.5.8.2}{Model\040fitting\040to\040the\040genetic\040toggle\040switch\040post\040atc\040induction}{section.5.8}% 124
 \BOOKMARK [2][-]{subsection.5.8.3}{Model\040fitting\040to\040the\040genetic\040toggle\040switch\040post\040IPTG\040induction}{section.5.8}% 125
 \BOOKMARK [1][-]{section.5.9}{Discussion}{chapter.5}% 126
 \BOOKMARK [1][-]{section.5.10}{Summary}{chapter.5}% 127
@@ -138,7 +138,7 @@
 \BOOKMARK [0][-]{chapter.7}{Conclusions}{}% 138
 \BOOKMARK [1][-]{section.7.1}{Evaluation}{chapter.7}% 139
 \BOOKMARK [1][-]{section.7.2}{Future\040perspectives}{chapter.7}% 140
-\BOOKMARK [0][-]{section*.105}{Bibliography}{}% 141
+\BOOKMARK [0][-]{section*.108}{Bibliography}{}% 141
 \BOOKMARK [0][-]{appendix.A}{Biochemical\040kinetic\040models}{}% 142
 \BOOKMARK [1][-]{section.A.1}{odes}{appendix.A}% 143
 \BOOKMARK [2][-]{subsection.A.1.1}{Standard\040toggle\040switch\040with\040inducers}{section.A.1}% 144
