@@ -60,10 +60,9 @@ I further study the system by conducting a bifurcation analysis, where all param
 \begin{figure*}[htbp]
 \centerfloat
 \includegraphics[scale=0.7]{../../chapters/chapterABCSysBio/images/Gard_CS.pdf}
-\caption[Phase space and bifurcation analysis of the Gardner toggle switch]{\label{fig:Gard_CS}The \textcite{Gardner:2000vha} toggle switch is capable of bistable behaviour given $a_1$ and $a_2$ = 10, and β, γ = 2. (A) The time course of the simulated model using multiple initial conditions. (B) The vector plot of the Gardner switch shows there are two stable steady states. (C) A bifurcation diagram shows that the system is bistable when 5 \ge{} $a_1$ \le{} 31.}
+\caption[Phase space and bifurcation analysis of the Gardner toggle switch]{\label{fig:Gard_CS}The \textcite{Gardner:2000vha} toggle switch is capable of bistable behaviour given $a_1$ and $a_2$ = 10, and β, γ = 2. (A) The time course of the simulated model using multiple initial conditions for $v$. (B) The vector plot of the Gardner switch shows there are two stable steady states at (u, v) = (4.791, 0.208) and (u, v) = (0.208, 4.791). (C) A bifurcation diagram shows that the system is bistable when 5 \ge{} $a_1$ \le{} 31.}
 \end{figure*}
 \clearpage
-
 
 
 \subsection{The quasi steady state approximation and the genetic toggle switch}
@@ -141,7 +140,7 @@ Using mass action, this changes the two-equation system used in Equations~\ref{e
 \begin{figure*}[tb]
 	\begin{center}
 \includegraphics[scale=0.6]{../../chapters/chapterABCSysBio/images/ma-switch-diagram.png}
-\caption[Toggle switch model used in the parameter scan]{\label{fig:Gard_MA}An illustration of the model used in the parameter scan. }
+\caption[An illustration of the toggle switch model used in the parameter scan.]{\label{fig:Gard_MA}An illustration of the toggle switch model used in the parameter scan. }
 \end{center}
 \end{figure*}
 
@@ -225,7 +224,7 @@ The bifurcation analysis carried out in Section~\ref{sec:bifurc} can give us the
 \begin{figure*}[ht]
 \begin{center}
 \includegraphics[scale=0.5]{../../chapters/chapterABCSysBio/images/LHS.png}
-\caption[Latin Hypercube sampling]{\label{fig:lhs}Latin hypercube sampling ensures that the whole space is sampled evenly. For the two species concerned, A and B, we assume uniform distributions, shown in grey. The joint space of the two distributions is divided into smaller equal parts and a random sample is drawn from within each subspace.  }
+\caption[Latin Hypercube sampling]{\label{fig:lhs}Latin hypercube sampling ensures that the whole space is sampled evenly. For the two species concerned, A and B, we assume uniform distributions, shown in grey. The joint space of the two distributions is divided into smaller equal parts and a random sample is drawn from within each subspace. Diagram adapted from~\textcite{Youssef:2013jv}.}
 \end{center}
 \end{figure*}
 
@@ -234,7 +233,7 @@ The roots of each particle for each initial condition were found using the Pytho
 \begin{figure*}[htbp]
 \centering
 \includegraphics[width=0.7\textwidth]{../../chapters/chapterABCSysBio/images/phase_plots_param_scan.png}
-\caption[Phase space examples of a monostable and a bistable switch]{\label{fig:stab exampl}An example for each type of switch found during the parameter scan. Each graph represents the steady state values of one dimer plotted against8the other, from one parameter set and 100 initial conditions.}
+\caption[Phase space examples of a monostable and a bistable switch]{\label{fig:stab exampl}An example for each type of switch found during the parameter scan. Each graph represents the steady state values of one dimer plotted against the other, from one parameter set and 100 initial conditions.}
 \end{figure*}
 
 A total of 1000 parameter sets were sampled. Out of these, 56\% were monostable, 35.2\% did not reach steady state and 8.8\% where bistable. The distributions of the parameters that produced each stability are shown in Figure~\ref{fig:scan ode param hist}. 
@@ -308,7 +307,7 @@ The following were defined as the design specifications for a bistable genetic t
 \begin{figure*}[htbp]
 	\begin{center}
 \includegraphics[scale=0.7]{../../chapters/chapterABCSysBio/images/behaviour.png}
-\caption[Design specification for ABC parameter inference]{\label{fig:abc_behav}Design specification for ABC parameter inference. The input to the system consists of an event turning on the stimulus (S) at t=20 and another turning on the repressor (R) at t=70. The output specification is the response to the switch to these stimuli.}
+\caption[Design specification for ABC SMC parameter inference]{\label{fig:abc_behav}Design specification for ABC SMC parameter inference. The input to the system consists of an event turning on the stimulus (S) at t = 20mins and another turning on the repressor (R) at t = 70mins. The output specification is the response to the switch to these stimuli.}
 \end{center}
 \end{figure*}
 
@@ -333,7 +332,7 @@ The results of the parameter inference of the toggle switch are shown in Figure~
     \centering
     \hspace*{-1cm}
     \includegraphics[scale=0.7]{../../chapters/chapterABCSysBio/images/param_inf_res.png}
-    \caption[Posterior distribution of the switch obtained from ABC system design]{(A) The time series of the final population (for final $\epsilon$ = 2 ) of the standard toggle switch ABC-SMC parameter inference. The stimulus, that represses A2, is added at t=20 and the repressor, that represses B2 is added at t=70. (B) The posterior distribution of the toggle switch.}
+    \caption[Posterior distribution of the switch obtained from ABC system design]{(A) The time series of the final population (for final ε = 2 ) of the standard toggle switch ABC-SMC parameter inference. The stimulus, that represses A2, is added at t = 20mins and the repressor, that represses B2 is added at t = 70mins. (B) The posterior distribution of the toggle switch. The one-dimensional marginal distribution of each parameter is plotted on the diagonal and the the two-dimensional marginal distributions are on the off-diagonal.}
     \label{fig:stand_abc_timeseries}
 \end{figure}
 \clearpage
@@ -379,7 +378,7 @@ Both positive and negative feedback loops were considered. Therefore 7 models we
 \begin{figure*}[tb]
 	\begin{center}
 \includegraphics[width=\textwidth]{../../chapters/chapterABCSysBio/images/toggle_switch_designs.png}
-\caption[Model designs considered for model selection.]{\label{fig:toggle_switch_designs}Toggle switch designs considered for model selection. 7 models were used: The simple toggle switch (A), the switches with positive autoregulation on either or both nodes (B, C, D) and the switches with negative autoregulation on either or both nodes (E, F, G)}
+\caption[Model designs considered for model selection.]{\label{fig:toggle_switch_designs}Toggle switch designs considered for model selection. A and B are the two protein species involved in the switch, S is the stimulus inducer turning the switch ON and R the repressor turning the switch OFF. 7 models were used: (A) The simple toggle switch (B-D) the switches with positive autoregulation on either or both nodes and (E-G) the switches with negative autoregulation on either or both nodes.}
 \end{center}
 \end{figure*}
 \clearpage
@@ -394,7 +393,7 @@ I used the PyDSTool~\autocite{Clewley:2012kj} in order to determine whether each
 \begin{figure*}[htbp]
 	\begin{center}
 \includegraphics[scale=0.6]{../../chapters/chapterABCSysBio/images/gard_pos.pdf}
-\caption[Phase plane analysis of the switch with positive autoregulation]{\label{fig:Gard_pos}Both single and positive autoregulation are consistent with bistable behaviour.  (A) Single positive autoregulation. Two stable steady states are found in the single positive autoregilation model at (u, v) = (9.89, 0.55) and (u, v) = (4.36, 0.1). (B) Double positive autoregulation. The model with double positive autoregulation has two stable steady states at (u, v) = (0.051, 9.89) and (u,v) = (9.89, 0.051).}
+\caption[Phase plane analysis of the switches with positive autoregulation]{\label{fig:Gard_pos}Both single and double positive autoregulation are consistent with bistable behaviour.  (A) Single positive autoregulation. Two stable steady states are found in the single positive autoregilation model at (u, v) = (9.89, 0.55) and (u, v) = (0.1, 4.36). (B) Double positive autoregulation. The model with double positive autoregulation has two stable steady states at (u, v) = (0.051, 9.89) and (u, v) = (9.89, 0.051).}
 \end{center}
 \end{figure*}
 
@@ -410,7 +409,7 @@ Negative autoregulation occurs when the protein binds to its own promoter and re
 \begin{figure*}[htbp]
 \centerfloat
 \includegraphics[scale=0.7]{../../chapters/chapterABCSysBio/images/gard_neg.pdf}
-\caption[Phase plane and bifurcation analysis of the switch with negative autoregulation]{\label{fig:Gard_neg}(A) Time course of the single negative autoregulation switch, when $k_u$=2 with varying initial conditions. The system is monostable. (B) Bifurcation diagram with respect to parameter $ka_1$ of the switch with single negative autoregulation. The system is bistable only for very small amounts of $ka_1$. (C) One stable steady state is found for the single negative autoregulation switch when $k_u$ = 2 at u = 0.208 and v = 4.79. (C) The vector plot of the switch with double negative autoregulation has one steady state at u = 1.346 and v=1.346.}
+\caption[Phase plane and bifurcation analysis of the switch with negative autoregulation]{\label{fig:Gard_neg}(A) Time course of the single negative autoregulation switch, when $k_u$ = 2 with varying initial conditions. The system is monostable. (B) Bifurcation diagram with respect to parameter $ka_1$ of the switch with single negative autoregulation. The system is bistable only for very small amounts of $ka_1$. (C) One stable steady state is found for the single negative autoregulation switch when $k_u$ = 2 at u = 0.208 and v = 4.79. (C) The vector plot of the switch with double negative autoregulation has one steady state at u = 1.346 and v = 1.346.}
 
 \end{figure*}
 \clearpage
@@ -420,7 +419,7 @@ The models shown here to be capable of bistable behaviour will be used in the fo
 %the rational comparison of models under parameter uncertainty using Bayesian model selection, which automatically accounts for model complexity (number of parameters) and robustness to parameter uncertaint
 
 
-\subsection{\acrshort{abc} for model selection}
+\subsection{\acrshort{abc} \acrshort{smc} for model selection}
 
 In Section~\ref{sec:param_inf} I used ABC SMC to infer the parameters of a model that can produce the desired behaviour. In this Section I extend the analysis by asking which model, out of the 5 candidate models shown above, can best produce the desired behaviour. Bayesian model selection can be used to rank models according to their posterior distributions. 
 
@@ -521,7 +520,7 @@ Given the models shown above and the parameter priors shown in Table~\ref{tab:mo
 \begin{figure*}[htbp]
 	\centerfloat
 \includegraphics[scale=0.75]{../../chapters/chapterABCSysBio/images/model_sel_res-01.png}
-\caption[ABC model selection resulting posterior distribution]{\label{fig:model_sel_res}: (A) The simulated time course of the last population of the switch with double positive autoregulation. (B) The toggle switch with positive autoregulation on both nodes was found to be the most robust to parameter fluctuations. Three repeats of the model selection were carried out, and the median values are shown here. Upper and lower quartile error bars are included but are too small to be visible. (C) The posterior distribution of the toggle switch with positive autoregulation on A and B.}
+\caption[ABC model selection resulting posterior distribution]{\label{fig:model_sel_res}(A) The simulated time course of the last population of the switch with double positive autoregulation. (B) The toggle switch with positive autoregulation on both nodes was found to be the most robust to parameter fluctuations. Three repeats of the model selection were carried out, and the median values are shown here. Upper and lower quartile error bars are included but are too small to be visible. (C) The posterior distribution of the toggle switch with positive autoregulation on A and B.}
 
 
 \end{figure*}

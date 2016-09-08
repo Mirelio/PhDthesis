@@ -11,17 +11,17 @@
 \addvspace {10pt}
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Simple toggle switch model using the Shea-Ackers formalism}}{51}{figure.caption.17}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Phase space and bifurcation analysis of the Gardner toggle switch}}{52}{figure.caption.18}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Toggle switch model used in the parameter scan}}{56}{figure.caption.20}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces An illustration of the toggle switch model used in the parameter scan.}}{56}{figure.caption.20}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Latin Hypercube sampling}}{58}{figure.caption.22}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Phase space examples of a monostable and a bistable switch}}{58}{figure.caption.23}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Distributions of the parameters resulting in each stability obtained by the parameter scan}}{59}{figure.caption.24}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Design specification for ABC parameter inference}}{61}{figure.caption.27}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Posterior distribution of the switch obtained from ABC system design}}{63}{figure.caption.28}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Toggle switch models with autoregulation using the Shea-Ackers formalism}}{65}{figure.caption.29}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Model designs considered for model selection.}}{66}{figure.caption.30}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Phase plane analysis of the switch with positive autoregulation}}{68}{figure.caption.31}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Phase plane and bifurcation analysis of the switch with negative autoregulation}}{69}{figure.caption.32}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces ABC model selection resulting posterior distribution}}{72}{figure.caption.35}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Design specification for ABC SMC parameter inference}}{62}{figure.caption.27}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Posterior distribution of the switch obtained from ABC system design}}{64}{figure.caption.28}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Toggle switch models with autoregulation using the Shea-Ackers formalism}}{66}{figure.caption.29}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Model designs considered for model selection.}}{67}{figure.caption.30}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Phase plane analysis of the switches with positive autoregulation}}{69}{figure.caption.31}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Phase plane and bifurcation analysis of the switch with negative autoregulation}}{70}{figure.caption.32}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces ABC model selection resulting posterior distribution}}{73}{figure.caption.35}
 \addvspace {10pt}
 \contentsline {figure}{\numberline {4.1}{\ignorespaces StabilityFinder algorithm overview}}{80}{figure.caption.36}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Robustness analysis of case study 1}}{90}{figure.caption.37}
@@ -35,7 +35,7 @@
 \contentsline {figure}{\numberline {4.10}{\ignorespaces Design principles of multistable switches}}{104}{figure.caption.47}
 \contentsline {figure}{\numberline {4.11}{\ignorespaces Phase plots of multistable switches}}{106}{figure.caption.48}
 \contentsline {figure}{\numberline {4.12}{\ignorespaces The three-node mutual repression model, with added positive auto-regulation on each node.}}{108}{figure.caption.50}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces The mass action togge switches and phase plots}}{110}{figure.caption.52}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces The mass action toggle switches and phase plots}}{110}{figure.caption.52}
 \contentsline {figure}{\numberline {4.14}{\ignorespaces Robustness comparison of the \acrshort {cs-ma} and \acrshort {dp-ma} switches}}{112}{figure.caption.53}
 \contentsline {figure}{\numberline {4.15}{\ignorespaces Testing the QSSA assumptions on the mass action models}}{115}{figure.caption.54}
 \contentsline {figure}{\numberline {4.16}{\ignorespaces Multistability in the stochastic mass action models}}{118}{figure.caption.56}
@@ -50,10 +50,10 @@
 \contentsline {figure}{\numberline {5.6}{\ignorespaces Distance value ranges of bimodal distributions using the kernel distance}}{136}{figure.caption.66}
 \contentsline {figure}{\numberline {5.7}{\ignorespaces Distance value ranges of bimodal and uniform distributions using the kernel distance}}{137}{figure.caption.67}
 \contentsline {figure}{\numberline {5.8}{\ignorespaces Range of distance values using the Kolmogorov-Smirnov distance}}{139}{figure.caption.68}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Rangel of distance values obtained using the Wald-Wolfowitz distance}}{141}{figure.caption.69}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Range of distance values obtained using the Wald-Wolfowitz distance}}{141}{figure.caption.69}
 \contentsline {figure}{\numberline {5.10}{\ignorespaces Distance calculation expected error using the KS and Wald-Wolfowitz distances}}{142}{figure.caption.70}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Applying ABC-Flow to 1D simulated data}}{146}{figure.caption.72}
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Applying ABC-Flow to 2D simulated data}}{147}{figure.caption.73}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces ABC-Flow parameter inference for 1D simulated data}}{146}{figure.caption.72}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces ABC-Flow parameter inference for 2D simulated data}}{147}{figure.caption.73}
 \contentsline {figure}{\numberline {5.13}{\ignorespaces Posterior distributions of inferred parameters from 1D and 2D simulated data}}{148}{figure.caption.74}
 \contentsline {figure}{\numberline {5.14}{\ignorespaces pKDL071 plasmid map and diagram of interactions}}{150}{figure.caption.76}
 \contentsline {figure}{\numberline {5.15}{\ignorespaces pKDL071-YFP plasmid map }}{160}{figure.caption.84}
@@ -67,7 +67,7 @@
 \contentsline {figure}{\numberline {5.23}{\ignorespaces pKDL071 switch model using the Shea-Ackers formalism}}{170}{figure.caption.93}
 \contentsline {figure}{\numberline {5.24}{\ignorespaces ABC-Flow fit to post-\acrshort {atc} time course data}}{176}{figure.caption.95}
 \contentsline {figure}{\numberline {5.25}{\ignorespaces Posterior distribution of inferred parameters for post-\acrshort {atc} induction of the toggle switch}}{177}{figure.caption.96}
-\contentsline {figure}{\numberline {5.26}{\ignorespaces The inferred parameter values produce a switch}}{178}{figure.caption.98}
+\contentsline {figure}{\numberline {5.26}{\ignorespaces Changing the parameter values affects the behaviour of the switch }}{178}{figure.caption.98}
 \contentsline {figure}{\numberline {5.27}{\ignorespaces ABC-Flow fit to post-\acrshort {atc} time course data}}{180}{figure.caption.99}
 \contentsline {figure}{\numberline {5.28}{\ignorespaces Posterior distribution of inferred parameters for post-IPTG induction of the toggle switch}}{181}{figure.caption.101}
 \addvspace {10pt}

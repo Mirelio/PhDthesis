@@ -1,0 +1,188 @@
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.backends.backend_pdf import PdfPages
+import seaborn as sns
+from flowDist import get_kd_distance1D
+from flowDist import get_kd_distance2D
+
+
+def plot_epsilon(title, distances1d, distances2d, n):
+    sns.set(style="white", palette="muted", color_codes=True)
+    pp = PdfPages(title)
+
+
+    mu1 = round(np.median(distances1d), 3)
+    sigma1 = round(np.std(distances1d), 3)
+    lm = sns.distplot(distances1d, color="b", hist_kws={"alpha": 0.5}, label='1D sigma=%s' % sigma1)
+    sns.despine()
+    #lm.axvline(x=np.median(distances1d), ymin=0, ymax=11, linewidth=3, color='b', linestyle='dotted')
+    #lm.text(mu1+0.03, 5.5, '1D median=%s' % mu1, color='b')
+    #lm.text(mu1+0.03, 5, '1D sigma=%s' % sigma1, color='b')
+
+
+    mu2 = round(np.median(distances2d), 3)
+    sigma2 = round(np.std(distances2d), 3)
+    lm = sns.distplot(distances2d, color="g", hist_kws={"alpha": 0.5}, label='2D sigma=%s' % sigma2)
+    sns.despine()
+    #lm.axvline(x=np.median(distances2d), ymin=0, ymax=11, linewidth=3, color='g',  linestyle='dotted')
+    #lm.text(mu2+0.03, 4.5, '2D median=%s' % mu2, color='g')
+    #lm.text(mu2+0.03, 4, '2D sigma=%s' % sigma2, color='g')
+
+    #print '1D median=%s' % (mu1/n)
+    print '1D sigma=%s' % (sigma1/n)
+    #print '2D median=%s' % (mu2/n)
+    print '2D sigma=%s' % (sigma2/n)
+
+    #lm.set(xlim=(-0.2, 0.5))
+    pp.savefig()
+    plt.close()
+    pp.close()
+    return
+
+
+def set_up():
+
+    nsim = 1000
+    n = 1000
+    ngr = 3
+
+    mu = 0
+    sigma = 0.5
+    distances1d = []
+    for j in range(nsim):
+        sim = np.random.normal(mu, sigma, n)
+        dat = np.random.normal(mu, sigma, n)
+        dist = get_kd_distance1D(dat, sim, ngrid=ngr)
+        distances1d.append(dist)
+
+
+    sns.set(style="white", palette="muted", color_codes=True)
+    pp = PdfPages("1D_example_distribution_f_var.pdf")
+
+    lm = sns.distplot(sim, color="b", hist_kws={"alpha": 0.5})
+    sns.despine()
+    lm.axvline(x=np.median(sim), ymin=0, ymax=11, linewidth=3, color='b', linestyle='dotted')
+    mu1 = round(np.median(sim), 3)
+    sigma1 = round(np.std(sim), 3)
+    lm.text(0.1, 10, '1D median=%s' % mu1, color='b')
+    lm.text(0.1, 9, '1D sigma=%s' % sigma1, color='b')
+    lm = sns.distplot(dat, color="g", hist_kws={"alpha": 0.5})
+    sns.despine()
+    lm.axvline(x=np.median(dat), ymin=0, ymax=11, linewidth=3, color='g', linestyle='dotted')
+    mu2 = round(np.median(dat), 3)
+    sigma2 = round(np.std(dat), 3)
+    lm.text(0.3, 10, '2D median=%s' % mu2, color='g')
+    lm.text(0.3, 9, '2D sigma=%s' % sigma2, color='g')
+    lm.set(xlim=(-2, 3))
+    pp.savefig()
+    plt.close()
+    pp.close()
+
+
+    distances2d = []
+
+    mean = [0, 0]
+    cov = [[0.5, 0], [0, 0.5]]
+
+    for j in range(nsim):
+        dat2 = np.random.multivariate_normal(mean, cov, n)
+        sim2 = np.random.multivariate_normal(mean, cov, n)
+        dist2 = get_kd_distance2D(dat2, sim2, ngrid=ngr)
+        distances2d.append(dist2)
+
+    mu1 = round(np.median(distances1d), 3)
+    sigma1 = round(np.std(distances1d), 3)
+
+    mu2 = round(np.median(distances2d), 3)
+    sigma2 = round(np.std(distances2d), 3)
+
+    print '1D median=%s' % (mu1)
+    print '1D sigma=%s' % sigma1
+    print '2D median=%s' % (mu2)
+    print '2D sigma=%s' % sigma2
+
+    sns.set(style="white", palette="muted", color_codes=True)
+    pp = PdfPages("2D_example_distribution_f_var.pdf")
+
+    ax = sns.kdeplot(sim2, cmap="Blues", shade=True, shade_lowest=False, kde_kws={"alpha": 0.4})
+    ax = sns.kdeplot(dat2, cmap="Greens", shade=True, shade_lowest=False, kde_kws={"alpha": 0.4})
+
+    ax.set(xlim=(-2, 2))
+    pp.savefig()
+    plt.close()
+    pp.close()
+
+    #plot_epsilon('epsilon_distr_f_var.pdf', distances1d, distances2d,n)
+    ##########################################################
+    ##########################################################
+    sns.set(style="white", palette="muted", color_codes=True)
+    #sns.despine()
+    pp = PdfPages("epsilon_hist.pdf")
+
+    #mu1 = round(np.median(distances1d), 3)
+    #sigma1 = round(np.std(distances1d), 3)
+    #lm = sns.distplot(distances1d, color="b", hist_kws={"alpha": 0.5}, label='1D sigma=%s' % sigma1)
+    #sns.distplot(distances1d, color="b", hist_kws={"alpha": 0.5})
+    #plt.hist(distances1d, color="b", alpha=0.5)
+    sns.despine()
+
+    #mu2 = round(np.median(distances2d), 3)
+    #sigma2 = round(np.std(distances2d), 3)
+    #sns.distplot(distances2d, color="b", hist_kws={"alpha": 0.5})
+    #lm = sns.distplot(distances2d, color="g", hist_kws={"alpha": 0.5}, label='2D sigma=%s' % sigma2)
+    #plt.hist(distances2d, color="g", alpha=0.5)
+    #plt.show()
+    #sns.despine()
+    #pp.savefig()
+    #plt.close()
+    #pp.close()
+
+
+    bins = np.linspace(-1, 1, 10000)
+
+    plt.hist(distances1d, bins, alpha=0.4, label='1D')
+    plt.hist(distances2d, bins, alpha=0.4, label='2D')
+    plt.yscale('log', nonposy='clip')
+    plt.ylim([0, 1000])
+    plt.xlim([0, 0.05])
+    plt.legend(loc='upper right')
+    pp.savefig()
+    plt.close()
+    pp.close()
+
+    return sigma1, sigma2
+set_up()
+
+
+def main():
+
+    #ns = [3,5,6,7,8,9,10,15,20,25,30,35,50,60,70,80,90,100,150,200,250,500,750,1000,5000,10000]
+    ngr = [1,2,3,4,5,6,7,8,9,10,15,20,25,30,35,40,45,50,60, 70, 80, 90, 100,110,120,130,140,150,160,170,180,190,200,250,300,350,400]
+    #var = [0.001, 0.005, 0.01, 0.05, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.5, 2, 2.5, 5, 10]
+    sigma1s = []
+    sigma2s = []
+    for n in ngr:
+        sigma1, sigma2 = set_up(n)
+        sigma1s.append(sigma1)
+        sigma2s.append(sigma2)
+
+    pp = PdfPages("epsilon_ngrid2.pdf")
+    f, ax = plt.subplots(figsize=(7, 7))
+    ax.set(xscale="log")
+    ax.set_yscale('symlog')
+    #ax.set_xscale('symlog')
+    #sns.regplot("x", "y", data, ax=ax, scatter_kws={"s": 100})
+    sns.set(style="white", palette="muted", color_codes=True)
+
+    plt.plot(ngr, sigma1s, 'bs', color='b', label='1D')
+    plt.plot(ngr, sigma2s, 'ro', color='g', label='2D')
+    #plt.ylim([0.00001, 10000])
+    #plt.xlim([0.0008, 11])
+    plt.xlabel('Ngrid')
+    plt.ylabel('Epsilon variance')
+    plt.legend(loc='upper right')
+    pp.savefig()
+    plt.close()
+    pp.close()
+
+#main()

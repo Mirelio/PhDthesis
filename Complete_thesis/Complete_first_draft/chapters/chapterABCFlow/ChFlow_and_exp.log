@@ -1,0 +1,196 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdftex 2015.10.2)  4 AUG 2016 12:11
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapters/chapterABCFlow/ChFlow_and_exp.tex
+(/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapters/chapterABCFlow/ChFlow_and_exp.tex
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapters/chapterABCFlow/ChFlow_and_exp.tex:1: Undefined control sequence.
+l.1 \section
+            {Introduction}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapters/chapterABCFlow/ChFlow_and_exp.tex:5: Undefined control sequence.
+l.5 \section
+            {Flow cytometry and model fitting}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapters/chapterABCFlow/ChFlow_and_exp.tex:7: Undefined control sequence.
+l.7 ...w of flow cytometry is shown in Figure~\ref
+                                                  {fig:flow_overv}. A laser ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapters/chapterABCFlow/ChFlow_and_exp.tex:7: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.7 ...cytometry is shown in Figure~\ref{fig:flow_
+                                                  overv}. A laser excites th...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapters/chapterABCFlow/ChFlow_and_exp.tex:7: Extra }, or forgotten $.
+l.7 ...try is shown in Figure~\ref{fig:flow_overv}
+                                                  . A laser excites the fluo...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapters/chapterABCFlow/ChFlow_and_exp.tex:7: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   ^
+l.7 ...y consists single cell measurements of $10^
+                                                  4$-$10^5$ cells. %Typicall...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (747.43951pt too wide) in paragraph at lines 7--8
+\tenrm of flow cy-tom-e-try is shown in Fig-ure fig:flow$[]\teni verv:Alaserexcitesthefluorochromepresentinthebacterialcells:Thefluorochromesemitasignalthatisdetectedbychannelsintheoptics:Thesignalsarethenallcollectedandanalysed:Asampletypicallyconsistssinglecellmeasurementsof$\tenrm 10$[]$-|
+
+\hbox(8.14003+1.94444)x469.75499, glue set - 1.0
+.\tenrm o
+.\tenrm f
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.\tenrm ^^M (ligature fl)
+.\tenrm o
+.etc.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapters/chapterABCFlow/ChFlow_and_exp.tex:11: Undefined control sequence.
+l.11 \begin
+           {figure*}[tb]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapters/chapterABCFlow/ChFlow_and_exp.tex:12: Undefined control sequence.
+l.12 	\begin
+            {center}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapters/chapterABCFlow/ChFlow_and_exp.tex:13: Undefined control sequence.
+l.13 		\includegraphics
+                       [scale=0.9]{chapterABCFlow/images/flow-overview.png}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapters/chapterABCFlow/ChFlow_and_exp.tex:14: Undefined control sequence.
+l.14 	\caption
+              [LoF caption]{\label{fig:flow_overv}: Flow cytometry. A laser ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapters/chapterABCFlow/ChFlow_and_exp.tex:14: Undefined control sequence.
+l.14 	\caption[LoF caption]{\label
+                                  {fig:flow_overv}: Flow cytometry. A laser ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapters/chapterABCFlow/ChFlow_and_exp.tex:14: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.14 	\caption[LoF caption]{\label{fig:flow_
+                                            overv}: Flow cytometry. A laser ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapters/chapterABCFlow/ChFlow_and_exp.tex:14: Extra }, or forgotten $.
+l.14 	\caption[LoF caption]{\label{fig:flow_overv}
+                                                  : Flow cytometry. A laser ...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapters/chapterABCFlow/ChFlow_and_exp.tex:14: Extra }, or forgotten $.
+l.14 ... (FSC) and side scatter (SSC) detectors. }
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+/Users/miriam/work/PhD/Manuscripts/PhDthesis/chapters/chapterABCFlow/ChFlow_and_exp.tex:15: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \end 
+l.15 	\end
+          {center}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (297.53555pt too wide) in paragraph at lines 11--15
+\teni Flowcytometry:Alaserexcitesthefluorescentproteinspresentineachcell:Thecytometerhasupto\tenrm 4\teni lasers; violet\tenrm (\teni V\tenrm )\teni ; red\tenrm (\teni R\tenrm )\teni ; yellow\tenrm (\teni Y\tenrm )\teni andblue\tenrm (\teni B\tenrm )\teni :Thedetectorsintheoptics; FL\tenrm 1 \tensy ^^@|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\teni F
+.\kern1.3889
+.\teni l
+.\kern0.19678
+.\teni o
+.etc.
+
+
+Overfull \hbox (136.51678pt too wide) in paragraph at lines 11--15
+\tenrm 4\teni pickupthesignals:Thecytometeralsopicksupsizeandgranularityinformationviatheforwardscatter\tenrm (\teni FSC\tenrm )\teni andsidescatter\tenrm (\teni SSC\tenrm )\teni detectors:$ |
+
+\hbox(7.5+2.5)x469.75499
+.\tenrm 4
+.\teni p
+.\teni i
+.\teni c
+.\teni k
+.etc.
+
+[1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] )
+(\end occurred inside a group at level 3)
+
+### simple group (level 3) entered at line 14 ({)
+### simple group (level 2) entered at line 14 ({)
+### simple group (level 1) entered at line 7 ({)
+### bottom level</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on ChFlow_and_exp.pdf (1 page, 57413 bytes).
+PDF statistics:
+ 28 PDF objects out of 1000 (max. 8388607)
+ 19 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,0 +1,137 @@
+\documentclass[]{phdthesis}
+\addbibresource{../../references/thesis_n.bib}
+
+\degree{Doctor of Philosophy}
+\university{University College London}
+\title{Computational design and\\[0.2em]characterisation of synthetic\\[0.2em] genetic switches}
+\author{Miriam Leon}
+\primarysupervisor{Dr. Chris P Barnes}
+\secondarysupervisor{Prof. Geraint MH Thomas}
+
+%%  Abbreviations entries  -----------------%%
+%\acrlong{ } whole phrase, \acrshort{ } acronym, \acrfull{ } both
+\makeglossaries
+\input{../../glossary.tex}
+
+%%---------------------------------------------------%%
+\begin{document}
+% front matter
+\maketitle
+
+
+\begin{abstract}
+Genetic toggle switches consist of two mutually repressing transcription factors. The switch motif forms the basis of epigenetic memory and is found in natural decision making systems, such as cell fate determination in developmental pathways. A synthetic genetic switch can be used for a variety of applications, like recording the presence of different environmental signals, for changing phenotype using synthetic inputs and as building blocks for higher-level sequential logic circuits. 
+
+In this thesis, the genetic toggle switch was studied computationally and experimentally. Bayesian model selection methods were used to compare competing model designs of the genetic toggle switch. It was found that the addition of positive feedback loops to the genetic toggle switch increases the parametric robustness of the system.
+
+A computational tool based on Bayesian statistics was developed, that can identify regions of parameter space capable of producing multistable behaviour while handling parameter and initial conditions uncertainty. A collection of models of genetic switches were examined, ranging from the deterministic simplified toggle switch to stochastic models containing different positive feedback connections. The design principles behind making a bistable switch were uncovered, as well as those necessary to make a tristable or quadristable switch.
+
+Flow Cytometry was used to characterise a known toggle switch plasmid. A computational tool was developed which uses Bayesian statistics to infer model parameter values from flow cytometry data. This tool was used to characterise the toggle switch plasmid and fit a stochastic computational model to experimental data.
+
+The work presented here suggests ways in which the construction of genetic switches can be enhanced. The algorithms developed were shown to be useful in synthetic system design as well as parameter inference. The tools developed here can enhance our understanding of biological systems and constitute an important addition to the systems approach to synthetic biology engineering. 
+
+
+\end{abstract}
+
+\tableofcontents*
+\listoffigures
+\listoftables
+\glossarystyle{list}
+
+\printglossary[type=\acronymtype, title=Abbreviations, toctitle=List of abbreviations]
+
+%\printglossary[type=\acronymtype, title=Abbreviations, toctitle=Abbreviations]
+
+\begin{acknowledgements}
+blabla
+\end{acknowledgements}
+
+%% --------------------------------------------------------------
+%% CHAPTERS
+%% --------------------------------------------------------------
+
+%% Introduction -------------------------------------%%
+\mainmatter*
+\chapter{Introduction}
+\label{ch:Intro}
+\input{../../chapters/chapterIntroduction/ChIntro_introduction}
+
+%% Background -------------------------------------%%
+\mainmatter*
+\chapter{Background}
+\label{ch:backg}
+\input{../../chapters/chapterBackgr/ChBackground}
+
+
+%% Switch literature -------------------------------------%%
+%\mainmatter*
+%\chapter{Current understanding of% the genetic toggle switch}
+%\label{ch:swlit}
+%\input{../../chapters/chapterLiterature/ChSwitch}
+
+%% ABC-SysBio ---------------------------------------%%
+\mainmatter*
+\chapter{Postive feedback loops can increase the robustness of a genetic toggle switch}
+\label{ch:abcsysbio}
+\input{../../chapters/chapterABCSysBio/ChAbcSys_introduction}
+
+
+%% StabilityFinder ----------------------------------%%
+\mainmatter*
+ 
+\chapter{Dynamics of multi-stable switches}
+\label{ch:SF}
+\input{../../chapters/chapterStabilityFinder/ChSF_introduction}
+%\input{chapterStabilityFinder/methods}
+%\input{chapterStabilityFinder/results}
+%\input{chapterStabilityFinder/Lu_switches/lu_switches_summary}
+%\input{chapterStabilityFinder/mass_action_switches/mass_action_switch_summary}
+%\input{chapterStabilityFinder/discussion}
+
+
+%%  Characterising the toggle switch -----------------%%
+\mainmatter*
+\chapter{Bayesian model fitting for flow cytometry data}
+\label{ch:Flow}
+\input{../../chapters/chapterABCFlow/ChFlow_and_exp_new_str}
+%\input{../chapters/chapterCharacterisation/ChChar_introduction}
+%\input{../chapters/chapterABCFlow/ChFlow_introduction}
+
+%% Designing new switches ---------------------------%%
+\mainmatter*
+\chapter{Designing new switches}
+\label{ch:desSw}
+\input{../../chapters/chapterDesignSwitches/ChDesSw_introduction}
+
+%% Chapter-6 Conclusions --------------------------------------%%
+\mainmatter*
+\chapter{Conclusions}
+\label{ch:Conc}
+\input{../../chapters/chapterConclusions/ChConc}
+
+\printbibliography
+
+%% --------------------------------------------------------------
+%% APPENDIX
+%% --------------------------------------------------------------
+
+%\addcontentsline{toc}{chapter}{Appendices}
+\appendix
+\chapter{Biochemical kinetic models}
+\label{ap:ODEs}
+\input{../../appendices/appendix_ODEs}
+
+\chapter{Primers}
+\label{ap:Prim}
+\input{../../appendices/appendix_primers}
+
+\chapter{Algorithms}
+\label{ap:Alg}
+\input{../../appendices/appendix_algos}
+
+\chapter{Additional posterior distributions}
+\label{ap:figures}
+\input{../../appendices/appendix_posteriors}
+
+\end{document}
+

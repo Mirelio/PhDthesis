@@ -133,7 +133,7 @@ All models are simulated stochastically using the Gillespie algorithm~\autocite{
   \end{algorithmic}
 \end{algorithm}
 \clearpage
-\subsection{Intensity calculation}
+\subsection{Intensity Calculation}
 
 The units of the result of the stochastic simulations is in arbitrary units. On the other hand, flow cytometry data units are in the form of fluorescence intensity. For ABC-Flow, the simulation results are converted to intensity in order to be able to compare the data to the simulations. In order to do this two additional parameters are defined, intensity μ and intensity σ, for each fluorescent protein used. To convert the number of fluorescent proteins to intensity, random samples are drawn from a normal distribution:
 
@@ -145,11 +145,11 @@ where $nFP$ is the number of fluorescent proteins. These parameters are estimate
 \begin{figure*}[tb]
 	\begin{center}
 		\includegraphics[scale=0.5]{../../chapters/chapterABCFlow/images/intensity_calc.png}
-		\caption[Converting the number of fluorescent proteins to intensity]{\label{fig:intensity_calc}Converting the number of fluorescent proteins to the intensity (iFP) is done by drawing from a normal distribution, as shown in Equation~\ref{eq:intens}.}
+		\caption[Converting the number of fluorescent proteins to intensity]{\label{fig:intensity_calc}Converting the number of fluorescent proteins (nFP) to the intensity (iFP) is done by drawing from a normal distribution, as shown in Equation~\ref{eq:intens}.}
 	\end{center}
 \end{figure*}
 \clearpage
-\subsection{Distance Calculations}
+\subsection{Distance Calculation}
 
 In order to compare the flow cytometry data to the model generated data, I developed a distance measure. This distance measure should be able to determine whether two datasets are sufficiently close to each other to be able to be assume that they have been drawn from the same distribution. The measure should also give an estimate of how different the two data sets are, and thus get increasingly larger as two data sets are drawn from increasingly different distributions. %Finally the distance measure should be applicable to one and two dimensional distributions, and be comparable between the two. 
 
@@ -169,7 +169,7 @@ where $fD_i$ is the kernel of the flow data at each value of x and $fS_i$ the ke
 \begin{figure}[tb]
 \centering
 \includegraphics[scale=0.8]{../../chapters/chapterABCFlow/images/old_distance.png}
-\caption[Kernel distance]{\label{fig:old_dist}Calculating the distance between two distributions in (A) 1D and (B) 2D. }
+\caption[Kernel distance]{\label{fig:old_dist}Calculating the distance between two distributions using the kernel distance in (A) 1D and (B) 2D. }
 \end{figure}
 
 
@@ -193,7 +193,7 @@ Before incorporating this distance calculation in ABC-Flow, it was tested to det
 \begin{figure}[htb]
 \centering
 \includegraphics[scale=0.7]{../../chapters/chapterABCFlow/images/mus_sigmas-01.png}
-\caption[Range of distance values using the kernel distance]{\label{fig:epsilon_mu_s_diff}(A) The range by which distance varies as the difference between the mean of the distributions increases. (B) The median of the distance distributions varies by a small amount with increasing difference in the standard deviation of the distributions.}
+\caption[Range of distance values using the kernel distance]{\label{fig:epsilon_mu_s_diff}(A) The range by which distance varies as the difference between the means of the distributions increases. (B) The median of the distance distributions varies by a small amount with increasing difference in the standard deviation of the distributions.}
 \end{figure}
 
 From Figure~\ref{fig:epsilon_mu_s_diff} we see that the distance value decreases with increasing mean difference of the two distributions. As the difference between the means increases, the distance value reaches a peak when the difference is at 3. From that point, as the mean difference increases, distance values decrease until they reach a plateau at epsilon = 0.38 in the 1D case and epsilon = 0.14 in the 2D case. Next I tested the distance calculation by comparing bimodal distributions. Two bimodal distributions are generated with increasingly different mean, in 1D and 2D. 
@@ -202,7 +202,7 @@ From Figure~\ref{fig:epsilon_mu_s_diff} we see that the distance value decreases
 \begin{figure}[tb]
 \centering
 \includegraphics[scale=0.7]{../../chapters/chapterABCFlow/images/multimodal_musd.png}
-\caption[Distance value ranges of bimodal distributions using the kernel distance]{\label{fig:multimodal_musd}Comparing the 1D and 2D distances between bimodal distributions. (A) and (B) show samples of the bimodal distributions compared in 1D and 2D respectively with a mean difference of 4 between simulations and data. (C) The range by which the distance median and variance varies as the difference between the mean of the distributions increases. (D) The difference between the distances calculated in 1D and 2D is not constant.}
+\caption[Distance value ranges of bimodal distributions using the kernel distance]{\label{fig:multimodal_musd}Comparing the 1D and 2D distances between bimodal distributions. (A) and (B) show samples of the bimodal distributions compared in 1D and 2D respectively with a mean difference of 4 between simulations and data. (C) The range by which the distance median varies as the difference between the mean of the distributions increases. (D) The difference between the distances calculated in 1D and 2D is not constant.}
 
 \end{figure}
 
@@ -273,7 +273,7 @@ To further study the distance calculation used in ABC-Flow, two normal distribut
 \begin{figure}[tb]
 \centerfloat
 \includegraphics[scale=0.8]{../../chapters/chapterABCFlow/images/mu_diff.png}
-\caption[Rangel of distance values obtained using the Wald-Wolfowitz distance]{\label{fig:epsilon_mud}The distance calculation for data sets drawn from increasingly different distributions. Two examples are shown of distributions compared in (A) 1D and (B) 2D. (C) As the difference between the means of the two 1D distributions increases, the KS distance calculation increases until it plateaus at 1. (D) In the 2D case the distance plateaus at 140.}
+\caption[Range of distance values obtained using the Wald-Wolfowitz distance]{\label{fig:epsilon_mud}The distance calculation for data sets drawn from increasingly different distributions. Two examples are shown of distributions compared in (A) 1D and (B) 2D. (C) As the difference between the means of the two 1D distributions increases, the KS distance calculation increases until it plateaus at 1. (D) In the 2D case the distance plateaus at 140.}
 \label{fig:normal_example}
 \end{figure}
 
@@ -281,7 +281,7 @@ To further study the distance calculation used in ABC-Flow, two normal distribut
 \begin{figure}[tb]
 \centering
 \includegraphics[scale=0.7]{../../chapters/chapterABCFlow/images/epsilon_same_box.png}
-\caption[Distance calculation expected error using the KS and Wald-Wolfowitz distances]{\label{fig:epsilon_boxplt}The distance between two data sets drawn from the same distribution are compared using (A) the Kolmogorov-Smirnov in 1D and (B) the Wald-Wolfowitz distance in 2D. (C) The distance is calculated for 1000 data sets. A larger variation of values is found for the 2D distance calculation, but still small relative to the overall range of values. (D) As the number of samples in the datasets increase the distance calculation becomes more accurate in the 1D case. It has no effect on the 2D case.}
+\caption[Distance calculation expected error using the KS and Wald-Wolfowitz distances]{\label{fig:epsilon_boxplt}The distance between two data sets drawn from the same distribution are compared using (A) the Kolmogorov-Smirnov in 1D and (B) the Wald-Wolfowitz distance in 2D. (C) The distance is calculated for 1000 data sets. A larger variation of values is found for the 2D distance calculation, but still small relative to the overall range of values that the 2D distance can take. (D) As the number of samples in the datasets increase the distance calculation becomes more accurate in the 1D case. It has no effect on the 2D case.}
 \end{figure}
 
 
@@ -382,7 +382,7 @@ The fit resulting from the 1D fit is shown in Figure~\ref{fig:1d-sim-res}A, toge
 \begin{figure}[htbp]
 \centering
 	\includegraphics[scale=0.9]{../../chapters/chapterABCFlow/images/1D_sim_res.png}
-	\caption[Applying ABC-Flow to 1D simulated data]{\label{fig:1d-sim-res} (A) 1D ABC-Flow fit (shown in blue) to data (shown in red) produced by simulating the same model. (B) QQ-plot of each time point fit. The quantile of the two distributions are plotted against each other. If the distributions are similar, the points would lie on the 45\textdegree{} line x = y, shown in red. }
+	\caption[ABC-Flow parameter inference for 1D simulated data]{\label{fig:1d-sim-res} (A) Time course produced by the 1D ABC-Flow fit (shown in blue) to data (shown in red) produced by simulating the same model. (B) QQ-plot of each time point fit. The quantile of the two distributions are plotted against each other. If the distributions are identical, the points would lie on the 45\textdegree{} line x = y, shown in red. }
 \end{figure}
 
 
@@ -395,7 +395,7 @@ The fit resulting from the 1D fit is shown in Figure~\ref{fig:1d-sim-res}A, toge
 \begin{figure}[htbp]
 \centering
 \includegraphics[scale=0.7]{../../chapters/chapterABCFlow/images/2D_toy_e3.png}
-\caption[Applying ABC-Flow to 2D simulated data]{\label{fig:2d-sim-res}2D ABC-Flow fit (shown in blue) to data (shown in red) produced by simulating the same model. }
+\caption[ABC-Flow parameter inference for 2D simulated data]{\label{fig:2d-sim-res}2D ABC-Flow fit (shown in blue) to data (shown in red) produced by simulating the same model. }
 \end{figure}
 
 %
@@ -487,7 +487,7 @@ This system is capable of two states, GFP high/mCherry low and GFP low/mCherry h
 \begin{figure*}[tb]
 	\begin{center}
 		\includegraphics[scale=0.55]{../../chapters/chapterABCFlow/images/pKDL071_overview.png}
-	\caption[pKDL071 plasmid map and diagram of interactions]{\label{fig:pKDL071map}: The genetic toggle switch circuit used in this chapter. (A) The plasmid map of pKDL071, the plasmid containing the genetic toggle switch used in~\textcite{Litcofsky:2012gr} (B) The interactions between each element of the circuit.}
+	\caption[pKDL071 plasmid map and diagram of interactions]{\label{fig:pKDL071map}The genetic toggle switch circuit used in this chapter. (A) The plasmid map of pKDL071, the plasmid containing the genetic toggle switch used in~\textcite{Litcofsky:2012gr} (B) The interactions between each element of the circuit.}
 	\end{center}
 \end{figure*}
 \clearpage
@@ -722,7 +722,7 @@ In order to alter the switch construct to be able to detect both sides, the mChe
 \begin{figure*}[tb]
 	\begin{center}
 		\includegraphics[scale=0.3]{../../chapters/chapterABCFlow/images/pKDL071-YFP.png}
-		\caption[pKDL071-YFP plasmid map ]{\label{fig:pkdl071yfp}: pKDL071-YFP plasmid map.  }
+		\caption[pKDL071-YFP plasmid map ]{\label{fig:pkdl071yfp} pKDL071-YFP plasmid map.  }
 	\end{center}
 \end{figure*}
 
@@ -750,7 +750,7 @@ I carried out a growth rate analysis to determine whether the \acrshort{atc} or 
 \begin{figure*}[htbp]
 	\begin{center}
 		\includegraphics[scale=0.6]{../../chapters/chapterABCFlow/images/growth_curves.png}
-		\caption[Growth rate curves of cultures with and without inducers]{\label{fig:growth_curve}: Growth rate analysis of \textit{E. coli} K-12 MG1655 pKDL071 and \textit{E. coli} Dh5α pSEVA281G cultures with and without inducers. The inducers do not affect the growth of the bacteria. }
+		\caption[Growth rate curves of cultures with and without inducers]{\label{fig:growth_curve} Growth rate analysis of \textit{E. coli} K-12 MG1655 pKDL071 and \textit{E. coli} Dh5α pSEVA281G cultures with and without inducers. The inducers do not affect the growth of the bacteria. }
 	\end{center}
 \end{figure*}
 
@@ -765,7 +765,7 @@ I carried out a concentration assay using flow cytometry, as described in Sectio
 \begin{figure*}[htbp]
 	\begin{center}
 \includegraphics[scale=0.7]{../../chapters/chapterABCFlow/images/pKDL071_concentrations_2d1d.png}
-\caption[Inducer concentration assay of pKDL071]{\label{fig:switch_concent2d1d}: (A) \acrshort{atc} induction at various concentrations (B) \acrshort{iptg} induction at various concentrations. }
+\caption[Inducer concentration assay of pKDL071]{\label{fig:switch_concent2d1d}(A) \acrshort{atc} induction at various concentrations (B) \acrshort{iptg} induction at various concentrations. }
 \end{center}
 \end{figure*}
 
@@ -810,7 +810,7 @@ fold change & 84.1 & 2.94 & 9.97 & 94.15 \\ \bottomrule
 \begin{figure*}[tb]
 	\begin{center}
 \includegraphics[width=\textwidth]{../../chapters/chapterABCFlow/images/pKDL071_concentrations_ATc-01.png}
-\caption[Characterisation of pKDL071 after \acrshort{atc} induction]{\label{fig:switch_concentrations_model_atc} (A) Flow cytometry density plots of the logged GFP fluorescence obtained for each \acrshort{atc} induction. (B) There is an 84.1 fold increase in GFP fluorescence with increasing \acrshort{atc} concentration. (C) Flow cytometry density plots of the logged mCherry fluorescence obtained for each \acrshort{atc} induction. The medians of the flow cytometry densities of the triplicates of \acrshort{atc} induction. We observe a decrease in mCherry fluorescence. (D) Characterization curve of mCherry fluorescence decrease with increasing \acrshort{atc} concentration.}
+\caption[Characterisation of pKDL071 after \acrshort{atc} induction]{\label{fig:switch_concentrations_model_atc} (A) Flow cytometry density plots of the logged GFP fluorescence obtained for each \acrshort{atc} induction. (B) There is an 84.1 fold increase in GFP fluorescence with increasing \acrshort{atc} concentration. (C) Flow cytometry density plots of the logged mCherry fluorescence obtained for each \acrshort{atc} induction. (D) The medians of the flow cytometry densities of the triplicates of \acrshort{atc} induction. We observe a decrease in mCherry fluorescence.}
 \end{center}
 \end{figure*}
 
@@ -823,7 +823,7 @@ For the case of the \acrshort{atc} induction we observe a sharp switch between t
 \begin{figure*}[tb]
 	\begin{center}
 \includegraphics[width=\textwidth]{../../chapters/chapterABCFlow/images/pKDL071_concentrations_model_fit-01.png}
-\caption[Characterisation of pKDL071 after \acrshort{iptg} induction]{\label{fig:switch_concentrations_model} (A) Flow cytometry density plots of the logged mCherry fluorescence obtained for each IPTG induction. (B) There is a 94.5 fold increase in mCherry fluorescence with increasing \acrshort{iptg} concentration. (C) Flow cytometry density plots of the logged GFP fluorescence obtained for each IPTG induction. The medians of the flow cytometry densities of the triplicates of IPTG induction. We observe a decrease in GFP fluorescence. (D) Characterization curve of GFP fluorescence decrease with increasing IPTG concentration.}
+\caption[Characterisation of pKDL071 after \acrshort{iptg} induction]{\label{fig:switch_concentrations_model} (A) Flow cytometry density plots of the logged mCherry fluorescence obtained for each IPTG induction. (B) There is a 94.5 fold increase in mCherry fluorescence with increasing \acrshort{iptg} concentration. (C) Flow cytometry density plots of the logged GFP fluorescence obtained for each IPTG induction. (D) The medians of the flow cytometry densities of the triplicates of IPTG induction. We observe a decrease in GFP fluorescence.}
 \end{center}
 \end{figure*}
 
@@ -872,7 +872,7 @@ In the next section I use ABC-Flow to fit a computational model to the time cour
 %\end{figure*}
 %\clearpage
 
-\section{ABC-Flow used on experimental data}
+\section{ABC-Flow parameter inference for experimental data}
  
 In this section I apply ABC-Flow to the experimental flow cytometry data collected in Section~\ref{sec:ts_time}. The data set is comprised of time course data of the~\textcite{Litcofsky:2012gr} toggle switch. The two states of the switch are represented by the levels of GFP and mCherry intensity in each bacterial cell. Using \acrshort{atc} inducer, each cell transitions from a GFP low/mCherry high state to a GFP high/mCherry low state and using \acrshort{iptg} each cell transitions from a GFP high/mCherry low state to an GFP high/mCherry high state. 
 
@@ -1009,7 +1009,7 @@ The value of R\textsubscript{u} represents the strength of the promoter driving 
 \begin{figure}[htb]
 \centerfloat
 	\includegraphics[width=\textwidth]{../../chapters/chapterABCFlow/images/promoter_strengths.png}
-	\caption[The inferred parameter values produce a switch]{\label{fig:prom_str} (A) Increasing the initial condition value of mCherry does not affect the state of the system. (B) Decreasing the initial condition value of GFP destabilises the switch. (C) Decreasing parameter R\textsubscript{u} to a value outside the 95\% credible region stops the model from behaving like a switch. (D) Increasing the value of R\textsubscript{u}, the rate representing the transcription factor of GFP, causes GFP to reach higher levels. (E) increasing  the value of KR\textsubscript{u}, the parameter representing the mCherry-induced GFP repression rate causes the switch to happen at a later time point and not all stochastic trajectories switch state. (F) If the value of KR\textsubscript{u} is set to larger than the 95\% credible region, the system does not switch states. For all plots, a solid line depicts the median value of the trajectories and the dotted line depict 0.025 and 0.975 quartiles.}
+	\caption[Changing the parameter values affects the behaviour of the switch ]{\label{fig:prom_str} (A) Increasing the initial condition value of mCherry does not affect the state of the system. (B) Decreasing the initial condition value of GFP destabilises the switch. (C) Decreasing parameter R\textsubscript{u} to a value outside the 95\% credible region stops the model from behaving like a switch. (D) Increasing the value of R\textsubscript{u}, the rate representing the transcription factor of GFP, causes GFP to reach higher levels. (E) Increasing  the value of KR\textsubscript{u}, the parameter representing the mCherry-induced GFP repression rate causes the switch to happen at a later time point and not all stochastic trajectories switch state. (F) If the value of KR\textsubscript{u} is set to larger than the 95\% credible region, the system does not switch states. For all plots, a solid line depicts the median value of the trajectories and the dotted line depict 0.025 and 0.975 quartiles.}
 \end{figure}
 
 
@@ -1057,7 +1057,7 @@ The posterior density obtained from by ABC-Flow is given in Figure~\ref{fig:1atc
 \begin{figure}[htbp]
 \centerfloat
 	\includegraphics[width=1.1\textwidth]{../../chapters/chapterABCFlow/images/posterior_iptg.png}
-	\caption[Posterior distribution of inferred parameters for post-IPTG induction of the toggle switch]{\label{fig:1atc-post} The posterior distribution obtained from ABC-Flow for the post-IPTG time course data. The parameter for GFP expression was found to be the most well inferred.}
+	\caption[Posterior distribution of inferred parameters for post-IPTG induction of the toggle switch]{\label{fig:1atc-post} The posterior distribution obtained from ABC-Flow for the post-IPTG time course data. The parameter for GFP expression (R\textsubscript{u}) was found to be the most well inferred.}
 \end{figure}
 
 The two fits obtained from the post-\acrshort{atc} and post-IPTG induction represent the different sides of the switch from the same genetic system and should thus be considered together. Comparing the fits we find a good agreement for the inferred parameters R\textsubscript{u} and KD\textsubscript{u}. On the other hand we find that the inferred values for KR\textsubscript{u} and KD\textsubscript{v} do not agree. This could be caused by the fact that the switch is not perfectly symmetric on the two sides, as can be seen from the experimental data. The system responds to \acrshort{atc} faster than to IPTG. This difference in the data could lead to difference values inferred for the underlying parameters. In the future this could be incorporated in to ABC-Flow to improve the accuracy of the inference.

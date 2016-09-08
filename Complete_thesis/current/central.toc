@@ -3,7 +3,7 @@
 \select@language {british}
 \contentsline {chapter}{List of Figures}{11}{section*.2}
 \contentsline {chapter}{List of Tables}{15}{section*.3}
-\contentsline {chapter}{List of abbreviations}{17}{section*.4}
+\contentsline {chapter}{List of Abbreviations}{17}{section*.4}
 \contentsline {chapter}{\chapternumberline {1}Introduction}{21}{chapter.1}
 \contentsline {section}{\numberline {1.1}Introduction to synthetic biology}{21}{section.1.1}
 \contentsline {section}{\numberline {1.2}Quantitative modelling in synthetic biology}{21}{section.1.2}
@@ -40,7 +40,7 @@
 \contentsline {subsubsection}{\numberline {2.3.1.4}Weight calculation}{43}{subsubsection.2.3.1.4}
 \contentsline {subsubsection}{\numberline {2.3.1.5}ABC SMC algorithm example}{43}{subsubsection.2.3.1.5}
 \contentsline {subsection}{\numberline {2.3.2}Derivation of model parametric robustness defined via Bayesian statistics}{45}{subsection.2.3.2}
-\contentsline {chapter}{\chapternumberline {3}Postive feedback loops can increase the robustness of a genetic toggle switch}{49}{chapter.3}
+\contentsline {chapter}{\chapternumberline {3}Positive feedback loops can increase the robustness of a genetic toggle switch}{49}{chapter.3}
 \contentsline {section}{\numberline {3.1}Introduction}{49}{section.3.1}
 \contentsline {section}{\numberline {3.2}Motivation}{49}{section.3.2}
 \contentsline {section}{\numberline {3.3}The bistable genetic toggle switch}{50}{section.3.3}
@@ -50,15 +50,15 @@
 \contentsline {subsection}{\numberline {3.4.1}Development of the mass action model for the genetic toggle switch}{55}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}Parameter scan for model stability}{57}{subsection.3.4.2}
 \contentsline {subsection}{\numberline {3.4.3}Toggle switch parameter inference}{60}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}Design specifications}{61}{subsection.3.4.4}
-\contentsline {subsubsection}{\numberline {3.4.4.1}Distance function}{61}{subsubsection.3.4.4.1}
-\contentsline {subsection}{\numberline {3.4.5}Results}{62}{subsection.3.4.5}
-\contentsline {section}{\numberline {3.5}Designing a more robust genetic toggle switch}{64}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Models of the genetic toggle switch}{64}{subsection.3.5.1}
-\contentsline {subsubsection}{\numberline {3.5.1.1}Autoregulation switches phase space and bifurcation analysis}{67}{subsubsection.3.5.1.1}
-\contentsline {subsection}{\numberline {3.5.2}\acrshort {abc} for model selection}{70}{subsection.3.5.2}
-\contentsline {section}{\numberline {3.6}Discussion}{73}{section.3.6}
-\contentsline {section}{\numberline {3.7}Summary}{75}{section.3.7}
+\contentsline {subsection}{\numberline {3.4.4}Design specifications}{60}{subsection.3.4.4}
+\contentsline {subsubsection}{\numberline {3.4.4.1}Distance function}{62}{subsubsection.3.4.4.1}
+\contentsline {subsection}{\numberline {3.4.5}Results}{63}{subsection.3.4.5}
+\contentsline {section}{\numberline {3.5}Designing a more robust genetic toggle switch}{65}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Models of the genetic toggle switch}{65}{subsection.3.5.1}
+\contentsline {subsubsection}{\numberline {3.5.1.1}Autoregulation switches phase space and bifurcation analysis}{68}{subsubsection.3.5.1.1}
+\contentsline {subsection}{\numberline {3.5.2}\acrshort {abc} \acrshort {smc} for model selection}{71}{subsection.3.5.2}
+\contentsline {section}{\numberline {3.6}Discussion}{74}{section.3.6}
+\contentsline {section}{\numberline {3.7}Summary}{76}{section.3.7}
 \contentsline {chapter}{\chapternumberline {4}Dynamics of multi-stable switches}{77}{chapter.4}
 \contentsline {section}{\numberline {4.1}Introduction}{77}{section.4.1}
 \contentsline {section}{\numberline {4.2}Contributions to this Chapter}{77}{section.4.2}
@@ -89,8 +89,8 @@
 \contentsline {section}{\numberline {5.3}Flow cytometry}{127}{section.5.3}
 \contentsline {section}{\numberline {5.4}Flow cytometry and model fitting}{128}{section.5.4}
 \contentsline {section}{\numberline {5.5}ABC-Flow algorithm development}{129}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Intensity calculation}{133}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}Distance Calculations}{134}{subsection.5.5.2}
+\contentsline {subsection}{\numberline {5.5.1}Intensity Calculation}{133}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Distance Calculation}{134}{subsection.5.5.2}
 \contentsline {subsubsection}{\numberline {5.5.2.1}Kernel distance}{134}{subsubsection.5.5.2.1}
 \contentsline {subsubsection}{\numberline {5.5.2.2}Kolmogorov-Smirnov distance}{138}{subsubsection.5.5.2.2}
 \contentsline {subsubsection}{\numberline {5.5.2.3}Wald-Wolfowitz distance}{139}{subsubsection.5.5.2.3}
@@ -122,7 +122,7 @@
 \contentsline {subsubsection}{\numberline {5.7.3.3}Growth rate investigation}{160}{subsubsection.5.7.3.3}
 \contentsline {subsubsection}{\numberline {5.7.3.4}Toggle switch concentration assays}{162}{subsubsection.5.7.3.4}
 \contentsline {subsubsection}{\numberline {5.7.3.5}Toggle switch time course assay}{166}{subsubsection.5.7.3.5}
-\contentsline {section}{\numberline {5.8}ABC-Flow used on experimental data}{169}{section.5.8}
+\contentsline {section}{\numberline {5.8}ABC-Flow parameter inference for experimental data}{169}{section.5.8}
 \contentsline {subsection}{\numberline {5.8.1}Toggle switch model developed to fit to flow cytometry data}{169}{subsection.5.8.1}
 \contentsline {subsection}{\numberline {5.8.2}Model fitting to the genetic toggle switch post \acrshort {atc} induction}{173}{subsection.5.8.2}
 \contentsline {subsection}{\numberline {5.8.3}Model fitting to the genetic toggle switch post IPTG induction}{179}{subsection.5.8.3}

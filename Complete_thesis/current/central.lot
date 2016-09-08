@@ -11,10 +11,10 @@
 \addvspace {10pt}
 \contentsline {table}{\numberline {3.1}{\ignorespaces Toggle switch model reactions under mass action kinetics\relax }}{53}{table.caption.19}
 \contentsline {table}{\numberline {3.2}{\ignorespaces Simple mass action switch reactions\relax }}{56}{table.caption.21}
-\contentsline {table}{\numberline {3.3}{\ignorespaces Toggle switch inducer equations\relax }}{60}{table.caption.25}
-\contentsline {table}{\numberline {3.4}{\ignorespaces The prior distributions used for the standard toggle switch parameter inference. The values indicate the lower and upper limits (inclusive) of a uniform distribution.\relax }}{61}{table.caption.26}
-\contentsline {table}{\numberline {3.5}{\ignorespaces Autoregulated switches additional equations\relax }}{71}{table.caption.33}
-\contentsline {table}{\numberline {3.6}{\ignorespaces The prior distributions used for model selection. The values indicate the lower and upper limits of a uniform distribution.\relax }}{71}{table.caption.34}
+\contentsline {table}{\numberline {3.3}{\ignorespaces Toggle switch inducer equations\relax }}{61}{table.caption.25}
+\contentsline {table}{\numberline {3.4}{\ignorespaces The prior distributions used for the standard toggle switch parameter inference. The values indicate the lower and upper limits (inclusive) of a uniform distribution.\relax }}{62}{table.caption.26}
+\contentsline {table}{\numberline {3.5}{\ignorespaces Autoregulated switches additional equations\relax }}{72}{table.caption.33}
+\contentsline {table}{\numberline {3.6}{\ignorespaces The prior distributions used for model selection. The values indicate the lower and upper limits of a uniform distribution.\relax }}{72}{table.caption.34}
 \addvspace {10pt}
 \contentsline {table}{\numberline {4.1}{\ignorespaces Gardner switch priors in the deterministic and stochastic cases\relax }}{93}{table.caption.39}
 \contentsline {table}{\numberline {4.2}{\ignorespaces Priors of the classical (\acrshort {cs-lu}), single positive (\acrshort {sp-lu}) and double positive (\acrshort {dp-lu}) models.\relax }}{99}{table.caption.44}

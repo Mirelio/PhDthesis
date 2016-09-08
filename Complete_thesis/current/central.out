@@ -1,6 +1,6 @@
 \BOOKMARK [0][-]{section*.2}{List\040of\040Figures}{}% 1
 \BOOKMARK [0][-]{section*.3}{List\040of\040Tables}{}% 2
-\BOOKMARK [0][-]{section*.4}{List\040of\040abbreviations}{}% 3
+\BOOKMARK [0][-]{section*.4}{List\040of\040Abbreviations}{}% 3
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 4
 \BOOKMARK [1][-]{section.1.1}{Introduction\040to\040synthetic\040biology}{chapter.1}% 5
 \BOOKMARK [1][-]{section.1.2}{Quantitative\040modelling\040in\040synthetic\040biology}{chapter.1}% 6
@@ -19,7 +19,7 @@
 \BOOKMARK [1][-]{section.2.3}{The\040Bayesian\040solution\040to\040parameter\040inference\040and\040system\040design}{chapter.2}% 19
 \BOOKMARK [2][-]{subsection.2.3.1}{abc}{section.2.3}% 20
 \BOOKMARK [2][-]{subsection.2.3.2}{Derivation\040of\040model\040parametric\040robustness\040defined\040via\040Bayesian\040statistics}{section.2.3}% 21
-\BOOKMARK [0][-]{chapter.3}{Postive\040feedback\040loops\040can\040increase\040the\040robustness\040of\040a\040genetic\040toggle\040switch}{}% 22
+\BOOKMARK [0][-]{chapter.3}{Positive\040feedback\040loops\040can\040increase\040the\040robustness\040of\040a\040genetic\040toggle\040switch}{}% 22
 \BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 23
 \BOOKMARK [1][-]{section.3.2}{Motivation}{chapter.3}% 24
 \BOOKMARK [1][-]{section.3.3}{The\040bistable\040genetic\040toggle\040switch}{chapter.3}% 25
@@ -33,7 +33,7 @@
 \BOOKMARK [2][-]{subsection.3.4.5}{Results}{section.3.4}% 33
 \BOOKMARK [1][-]{section.3.5}{Designing\040a\040more\040robust\040genetic\040toggle\040switch}{chapter.3}% 34
 \BOOKMARK [2][-]{subsection.3.5.1}{Models\040of\040the\040genetic\040toggle\040switch}{section.3.5}% 35
-\BOOKMARK [2][-]{subsection.3.5.2}{abc\040for\040model\040selection}{section.3.5}% 36
+\BOOKMARK [2][-]{subsection.3.5.2}{abc\040smc\040for\040model\040selection}{section.3.5}% 36
 \BOOKMARK [1][-]{section.3.6}{Discussion}{chapter.3}% 37
 \BOOKMARK [1][-]{section.3.7}{Summary}{chapter.3}% 38
 \BOOKMARK [0][-]{chapter.4}{Dynamics\040of\040multi-stable\040switches}{}% 39
@@ -61,8 +61,8 @@
 \BOOKMARK [1][-]{section.5.3}{Flow\040cytometry}{chapter.5}% 61
 \BOOKMARK [1][-]{section.5.4}{Flow\040cytometry\040and\040model\040fitting}{chapter.5}% 62
 \BOOKMARK [1][-]{section.5.5}{ABC-Flow\040algorithm\040development}{chapter.5}% 63
-\BOOKMARK [2][-]{subsection.5.5.1}{Intensity\040calculation}{section.5.5}% 64
-\BOOKMARK [2][-]{subsection.5.5.2}{Distance\040Calculations}{section.5.5}% 65
+\BOOKMARK [2][-]{subsection.5.5.1}{Intensity\040Calculation}{section.5.5}% 64
+\BOOKMARK [2][-]{subsection.5.5.2}{Distance\040Calculation}{section.5.5}% 65
 \BOOKMARK [1][-]{section.5.6}{ABC-Flow\040model\040fitting\040to\040simulated\040data\040}{chapter.5}% 66
 \BOOKMARK [2][-]{subsection.5.6.1}{Toggle\040switch\040model\040development}{section.5.6}% 67
 \BOOKMARK [2][-]{subsection.5.6.2}{Parameter\040inference\040for\040simulated\040flow\040cytometry\040data}{section.5.6}% 68
@@ -70,7 +70,7 @@
 \BOOKMARK [2][-]{subsection.5.7.1}{Circuit\040overview}{section.5.7}% 70
 \BOOKMARK [2][-]{subsection.5.7.2}{Methods}{section.5.7}% 71
 \BOOKMARK [2][-]{subsection.5.7.3}{Results}{section.5.7}% 72
-\BOOKMARK [1][-]{section.5.8}{ABC-Flow\040used\040on\040experimental\040data}{chapter.5}% 73
+\BOOKMARK [1][-]{section.5.8}{ABC-Flow\040parameter\040inference\040for\040experimental\040data}{chapter.5}% 73
 \BOOKMARK [2][-]{subsection.5.8.1}{Toggle\040switch\040model\040developed\040to\040fit\040to\040flow\040cytometry\040data}{section.5.8}% 74
 \BOOKMARK [2][-]{subsection.5.8.2}{Model\040fitting\040to\040the\040genetic\040toggle\040switch\040post\040atc\040induction}{section.5.8}% 75
 \BOOKMARK [2][-]{subsection.5.8.3}{Model\040fitting\040to\040the\040genetic\040toggle\040switch\040post\040IPTG\040induction}{section.5.8}% 76
