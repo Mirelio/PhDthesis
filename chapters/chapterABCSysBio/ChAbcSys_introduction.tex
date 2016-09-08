@@ -5,7 +5,7 @@ In this chapter I examine whether adding feedback loops to the genetic toggle sw
 Structurally this chapter is organised as follows: In the first section I examine the genetic toggle switch with no added feedback loops. I use a parameter scan to find the parameter values that make it bistable and then use \acrshort{abc} \acrshort{smc} for parameter inference for a switch-like behaviour. In the subsequent section I examine the effect that the addition of feedback loops to the genetic toggle switch has on its stability, and select the switch architectures that are capable of bistable behaviour. Finally, I use ABC-SysBio model selection to select the most robust model out of the bistable switches.
 
 
-\section{Background}
+\section{Motivation}
 
 
 Creating synthetic devices that are robust to changing cellular contexts will be key to the success of synthetic biology. Unknown initial conditions and parameter values as well as the variability of the cellular environment, extracellular noise and crosstalk makes the majority of synthetic genetic devices non-functional~\autocite{Chen:2009ea}. Designing devices robust to this environment will lead to reliable behaviour of the systems.
@@ -34,7 +34,7 @@ The synthetic genetic toggle switch consists of two mutually repressing transcri
 \end{figure*}
 
 
-The model can thus also be described by the following \acrshort{ode}s:
+\noindent The model can thus also be described by the following \acrshort{ode}s:
 
 \begin{align}\label{eq:gards_sa}
 \frac{du}{dt} &= \frac{a_1  l_1}{1 + l_1 + k_1  v^{\beta}} - u \\\label{eq:gards2_sa}
@@ -60,7 +60,7 @@ I further study the system by conducting a bifurcation analysis, where all param
 \begin{figure*}[htbp]
 \centerfloat
 \includegraphics[scale=0.7]{../../chapters/chapterABCSysBio/images/Gard_CS.pdf}
-\caption[Phase space and bifurcation analysis of the Gardner toggle switch]{\label{fig:Gard_CS}The \textcite{Gardner:2000vha} toggle switch is capable of bistable behaviour given $a_1$ and $a_2$ = 10, and β, γ = 2. (A) The timecourse of the simulated model using multiple initial conditions. (B) The vector plot of the Gardner switch shows there are two stable steady states. (C) A bifurcation diagram shows that the system is bistable when 5 \ge{} $a_1$ \le{} 31.}
+\caption[Phase space and bifurcation analysis of the Gardner toggle switch]{\label{fig:Gard_CS}The \textcite{Gardner:2000vha} toggle switch is capable of bistable behaviour given $a_1$ and $a_2$ = 10, and β, γ = 2. (A) The time course of the simulated model using multiple initial conditions. (B) The vector plot of the Gardner switch shows there are two stable steady states. (C) A bifurcation diagram shows that the system is bistable when 5 \ge{} $a_1$ \le{} 31.}
 \end{figure*}
 \clearpage
 
@@ -244,7 +244,7 @@ A total of 1000 parameter sets were sampled. Out of these, 56\% were monostable,
 \begin{minipage}[c]{1\textwidth}
 \centering
     \includegraphics[width=1.2\textwidth]{../../chapters/chapterABCSysBio/images/param_scan_combo.png}
-    \caption[Distributions of the parameters resulting in each stability obtained by the parameter scan]{The distribution of parameter values that resulted in monostable and bistable switches in the parameter scan. }
+    \caption[Distributions of the parameters resulting in each stability obtained by the parameter scan]{The distribution of parameter values that resulted in monostable and bistable switches in the parameter scan. The one-dimensional marginal distribution of each parameter is plotted on the diagonal and the the two-dimensional marginal distributions are on the off-diagonal. }
     \label{fig:scan ode param hist}
 \end{minipage}
 \end{figure}
@@ -361,19 +361,19 @@ Both positive and negative feedback loops were considered. Therefore 7 models we
 
 
 
-Double negative autoregulation: 
+\noindent Double negative autoregulation: 
 \begin{align}\label{eq:gards_neg}
 \frac{du}{dt} &= \frac{a_1  l_1}{1+l_1+k_1  v^{\beta} + ka_{1}  u^{2}} - u \\
 \frac{dv}{dt} &= \frac{a_2  l_2}{1+l_2+k_2  u^{\gamma }+ ka_{2}  v^{2}} - v,
 \end{align}
 
-Double positive autoregulation: 
+\noindent Double positive autoregulation: 
 \begin{align}\label{eq:gards_pos}
 \frac{du}{dt} &= \frac{a_1  (l_1 + ka_{1}  u^{2}) }{1+l_1 + k_1  v^{\beta} + ka_{1}  u^{2}} - u \\
 \frac{dv}{dt} &= \frac{a_2  (l_2 + ka_{2}  v^{2}) }{1+l_2 + k_2  u^{\gamma} + ka_{2}  v^{2}} - v,
 \end{align}
 
-\noindent where $k$ represents the effective binding of the transcription factor to its own promoter and γ represents the polymerisation of the bound transcription factor. 
+\noindent where $k$ represents the effective binding of the transcription factor to its own promoter and β, γ represent the polymerisation of the bound transcription factors. 
 
 
 \begin{figure*}[tb]
@@ -394,9 +394,10 @@ I used the PyDSTool~\autocite{Clewley:2012kj} in order to determine whether each
 \begin{figure*}[htbp]
 	\begin{center}
 \includegraphics[scale=0.6]{../../chapters/chapterABCSysBio/images/gard_pos.pdf}
-\caption[Phase plane analysis of the switch with positive autoregulation]{\label{fig:Gard_pos}Both single and positive autoregulation is consistent with bistable behaviour.  (A) Single positive autoregulation. Two stable steady states are found in the single positive autoregilation model at (u, v) = (0.069, 11.94) and (u, v) = (9.85,0.122). (B) Double positive autoregulation. The model with double positive autoregulation has two stable steady states at (u, v)=(0.122, 9.85) and (u,v)=(11.94, 0.069).}
+\caption[Phase plane analysis of the switch with positive autoregulation]{\label{fig:Gard_pos}Both single and positive autoregulation are consistent with bistable behaviour.  (A) Single positive autoregulation. Two stable steady states are found in the single positive autoregilation model at (u, v) = (9.89, 0.55) and (u, v) = (4.36, 0.1). (B) Double positive autoregulation. The model with double positive autoregulation has two stable steady states at (u, v) = (0.051, 9.89) and (u,v) = (9.89, 0.051).}
 \end{center}
 \end{figure*}
+
 
 % A bifurcation analysis, when all other parameters are kept constant and only $k$ varied, shows that  even small values of $k$ destroy bistability. This is shown in Figure~\ref{fig:Gard_neg}C.
 
@@ -409,7 +410,7 @@ Negative autoregulation occurs when the protein binds to its own promoter and re
 \begin{figure*}[htbp]
 \centerfloat
 \includegraphics[scale=0.7]{../../chapters/chapterABCSysBio/images/gard_neg.pdf}
-\caption[Phase plane and bifurcation analysis of the switch with negative autoregulation]{\label{fig:Gard_neg}:(A) Timecourse of the single negative autoregulation switch, when $k_u$=2 with varying initial conditions. The system is monostable. (B) One stable steady state is found for the single negative autoregulation switch when $k_u$=2 at u=0.099 and v=9.903. (C) The vector plot of the switch with double negative autoregulation has one steady state at u=1.699 and v=1.699.}
+\caption[Phase plane and bifurcation analysis of the switch with negative autoregulation]{\label{fig:Gard_neg}(A) Time course of the single negative autoregulation switch, when $k_u$=2 with varying initial conditions. The system is monostable. (B) Bifurcation diagram with respect to parameter $ka_1$ of the switch with single negative autoregulation. The system is bistable only for very small amounts of $ka_1$. (C) One stable steady state is found for the single negative autoregulation switch when $k_u$ = 2 at u = 0.208 and v = 4.79. (C) The vector plot of the switch with double negative autoregulation has one steady state at u = 1.346 and v=1.346.}
 
 \end{figure*}
 \clearpage

@@ -1,20 +1,19 @@
 [0] Config.pm:324> INFO - This is Biber 2.1
 [0] Config.pm:327> INFO - Logfile is '/Users/miriam/work/PhD/Manuscripts/PhDthesis/Complete_thesis/current/central.blg'
-[29] biber-darwin:276> INFO - === Wed Sep  7, 2016, 23:08:57
-[29] Biber.pm:333> INFO - Reading '/Users/miriam/work/PhD/Manuscripts/PhDthesis/Complete_thesis/current/central.bcf'
-[108] Biber.pm:645> INFO - Found 154 citekeys in bib section 0
-[122] Biber.pm:2977> INFO - Processing section 0
-[131] Biber.pm:3115> INFO - Looking for bibtex format file '../../references/thesis_n.bib' for section 0
-[144] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
-[156] bibtex.pm:895> INFO - Found BibTeX data source '../../references/thesis_n.bib'
-[165] Utils.pm:146> WARN - Duplicate entry key: 'Niwa:2005fz' in file '../../references/thesis_n.bib', skipping ...
-[170] Utils.pm:146> WARN - Duplicate entry key: 'Wilkinson:2006td' in file '../../references/thesis_n.bib', skipping ...
-[171] Utils.pm:146> WARN - Duplicate entry key: 'Finney:2003vk' in file '../../references/thesis_n.bib', skipping ...
-[296] Utils.pm:146> WARN - I didn't find a database entry for 'Kass:1995eh' (section 0)
-[1415] UCollate.pm:66> INFO - Overriding locale 'en-GB' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1416] UCollate.pm:66> INFO - Overriding locale 'en-GB' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1416] Biber.pm:2854> INFO - Sorting list 'nyt' of type 'entry' with scheme 'nyt' and locale 'en-GB'
-[1416] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-GB'
-[1825] bbl.pm:505> INFO - Writing '/Users/miriam/work/PhD/Manuscripts/PhDthesis/Complete_thesis/current/central.bbl' with encoding 'UTF-8'
-[1838] bbl.pm:596> INFO - Output to /Users/miriam/work/PhD/Manuscripts/PhDthesis/Complete_thesis/current/central.bbl
-[1839] Biber.pm:106> INFO - WARNINGS: 4
+[30] biber-darwin:276> INFO - === Thu Sep  8, 2016, 12:56:28
+[30] Biber.pm:333> INFO - Reading '/Users/miriam/work/PhD/Manuscripts/PhDthesis/Complete_thesis/current/central.bcf'
+[113] Biber.pm:645> INFO - Found 153 citekeys in bib section 0
+[128] Biber.pm:2977> INFO - Processing section 0
+[138] Biber.pm:3115> INFO - Looking for bibtex format file '../../references/thesis_n.bib' for section 0
+[150] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
+[162] bibtex.pm:895> INFO - Found BibTeX data source '../../references/thesis_n.bib'
+[170] Utils.pm:146> WARN - Duplicate entry key: 'Niwa:2005fz' in file '../../references/thesis_n.bib', skipping ...
+[176] Utils.pm:146> WARN - Duplicate entry key: 'Wilkinson:2006td' in file '../../references/thesis_n.bib', skipping ...
+[176] Utils.pm:146> WARN - Duplicate entry key: 'Finney:2003vk' in file '../../references/thesis_n.bib', skipping ...
+[1312] UCollate.pm:66> INFO - Overriding locale 'en-GB' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1312] UCollate.pm:66> INFO - Overriding locale 'en-GB' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1312] Biber.pm:2854> INFO - Sorting list 'nyt' of type 'entry' with scheme 'nyt' and locale 'en-GB'
+[1312] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-GB'
+[1727] bbl.pm:505> INFO - Writing '/Users/miriam/work/PhD/Manuscripts/PhDthesis/Complete_thesis/current/central.bbl' with encoding 'UTF-8'
+[1738] bbl.pm:596> INFO - Output to /Users/miriam/work/PhD/Manuscripts/PhDthesis/Complete_thesis/current/central.bbl
+[1739] Biber.pm:106> INFO - WARNINGS: 3

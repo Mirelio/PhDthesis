@@ -21,7 +21,7 @@
 \BOOKMARK [2][-]{subsection.2.3.2}{Derivation\040of\040model\040parametric\040robustness\040defined\040via\040Bayesian\040statistics}{section.2.3}% 21
 \BOOKMARK [0][-]{chapter.3}{Postive\040feedback\040loops\040can\040increase\040the\040robustness\040of\040a\040genetic\040toggle\040switch}{}% 22
 \BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 23
-\BOOKMARK [1][-]{section.3.2}{Background}{chapter.3}% 24
+\BOOKMARK [1][-]{section.3.2}{Motivation}{chapter.3}% 24
 \BOOKMARK [1][-]{section.3.3}{The\040bistable\040genetic\040toggle\040switch}{chapter.3}% 25
 \BOOKMARK [2][-]{subsection.3.3.1}{Phase\040space\040and\040bifurcation\040analysis}{section.3.3}% 26
 \BOOKMARK [2][-]{subsection.3.3.2}{The\040quasi\040steady\040state\040approximation\040and\040the\040genetic\040toggle\040switch}{section.3.3}% 27
@@ -39,7 +39,7 @@
 \BOOKMARK [0][-]{chapter.4}{Dynamics\040of\040multi-stable\040switches}{}% 39
 \BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 40
 \BOOKMARK [1][-]{section.4.2}{Contributions\040to\040this\040Chapter}{chapter.4}% 41
-\BOOKMARK [1][-]{section.4.3}{Background}{chapter.4}% 42
+\BOOKMARK [1][-]{section.4.3}{Motivation}{chapter.4}% 42
 \BOOKMARK [1][-]{section.4.4}{StabilityFinder\040algorithm}{chapter.4}% 43
 \BOOKMARK [2][-]{subsection.4.4.1}{Algorithm\040overview}{section.4.4}% 44
 \BOOKMARK [2][-]{subsection.4.4.2}{Initial\040condition\040sampling}{section.4.4}% 45

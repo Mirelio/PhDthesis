@@ -68,7 +68,7 @@ The algorithm of ABC-Flow is based on the same ABC algorithm as ABC-SysBio and S
 ABC-Flow uses stochastic dynamics to simulated the model under consideration. Gene regulation is known to exhibit stochastic dynamics~\autocite{Elowitz:2002wq} due to the often low number of protein molecules involved. This can cause genetically identical cells to exhibit different phenotype and behaviour~\autocite{Weinberger:2005uv}. Therefore, ABC-Flow uses stochastic dynamics to account for this variability observed in single cell behaviour. Just as the same genetic code can produce different phenotypes in different individual cells, the same parameter values in the model will be able to produce a different behaviour due to the added intrinsic noise to the system. The assumption is made that the cells are in identical conditions and have the same genetic code, thus extrinsic noise is not taken into consideration here.  
 
 
-All models are simulated stochastically using the Gillespie algorithm~\autocite{Gillespie:1977ww}. ABC-Flow simulations are implemented on \acrshort{gpu}s. 
+All models are simulated stochastically using the Gillespie algorithm~\autocite{Gillespie:1977ww}. ABC-Flow simulations are implemented on \acrshort{gpu}s. The user provides an SBML model file and an input file to specify the information needed to run ABC-Flow, such as the final epsilon threshold and the priors to the parameters. The user must also provide a data file containing the flow cytometry data to which the model will be fitted. The data files used here were generated from .fcs files, which is the standard output of flow cytometers, using the R bioconductor packages flowCore~\autocite{flowCore:man}. ABC-Flow is available as a Python package, and can be downloaded from \url{https://github.com/ucl-cssb/ABC-Flow.git}. 
 
 
 
@@ -79,7 +79,7 @@ All models are simulated stochastically using the Gillespie algorithm~\autocite{
 	\end{center}
 \end{figure*}
 
-The user provides an SBML model file and an input file to specify the information needed to run ABC-Flow, such as the epsilon schedule and the priors to the parameters. The user must also provide a data file containing the flow cytometry data to which the model will be fitted. The data files used here were generated from .fcs files, which is the standard output of flow cytometers, using the R bioconductor packages flowCore~\autocite{flowCore:man}. ABC-Flow is available as a Python package, and can be downloaded from \url{https://github.com/ucl-cssb/ABC-Flow.git}. 
+
 
 
 
@@ -104,13 +104,14 @@ The user provides an SBML model file and an input file to specify the informatio
 % 	\EndIf
  	
  	%\If{ABC-SMC}
-	\State Initialise $\epsilon$ 
+	\State Initialise ε
 	\Let{population p}{1}
 	\If{p $= 1$}
-		\State Sample particles ($\theta$) from priors
+		\State Sample particles (θ) from priors
 		\Else
 			\State Sample particles from previous population
-			\State Perturb each particle by $\pm$ half the range of the previous population (j) to obtain new perturbed population (i).
+			\State Perturb each particle θ* using perturbation kernel $K_t$ to obtain perturbed particle θ** %, by $\pm$ half the range of the previous population (j) to obtain new perturbed population (i).
+
 	\EndIf
 	\State Simulate model using the Gillespie algorithm.
 	\State Convert signal to intensity: 
@@ -128,7 +129,7 @@ The user provides an SBML model file and an input file to specify the informatio
     \State Calculate weight for each accepted $\theta$
 	\State $w_{t}^{(i)} = \begin{cases} 1, & \mbox{if } p = 0 \\\frac{\pi(\theta_{t}^{(i)})}{\sum_{j=1}^N w_{t-1}^{(j)} K_{t}(\theta_{t-1}^{(j)}, \theta_{t}^{(i)})}, & \mbox{if } p \geq  0. \end{cases}$
 	\State Normalise weights
-	\State Repeat steps 3 - 15 until $\epsilon \leq \epsilon_T$	%EndIf
+	\State Repeat steps 3 - 15 until $ε \leq ε_T$	%EndIf
   \end{algorithmic}
 \end{algorithm}
 \clearpage
@@ -150,7 +151,7 @@ where $nFP$ is the number of fluorescent proteins. These parameters are estimate
 \clearpage
 \subsection{Distance Calculations}
 
-In order to compare the flow cytometry data to the model generated data, I developed a distance measure. This distance measure should be able to determine whether two datasets are sufficiently close to each other to be able to be assume that they have been drawn from the same distribution. The measure should also give an estimate of how different the two data sets are, and thus get increasingly larger as two data sets are drawn from increasingly different distributions. Finally the distance measure should be applicable to one and two dimensional distributions, and be comparable between the two. 
+In order to compare the flow cytometry data to the model generated data, I developed a distance measure. This distance measure should be able to determine whether two datasets are sufficiently close to each other to be able to be assume that they have been drawn from the same distribution. The measure should also give an estimate of how different the two data sets are, and thus get increasingly larger as two data sets are drawn from increasingly different distributions. %Finally the distance measure should be applicable to one and two dimensional distributions, and be comparable between the two. 
 
 
 \label{sec:dist}
@@ -187,7 +188,7 @@ where $fD_i$ is the kernel of the flow data at each value of x and $fS_i$ the ke
   \end{algorithmic}
 \end{algorithm}
 
-Before incorporating this distance calculation in ABC-Flow, it was tested to determine whether it is an appropriate distance to use when comparing distributions. This was done by drawing samples form two uniform distributions with varying mean and standard deviation. Algorithm~\ref{alg:dist} was then used to calculate the distance between the different distributions. First, Algorithm~\ref{alg:dist} was tested by drawing samples from two distributions with an increasingly different mean. This is done to determine the dynamical range of the distance calculation.
+Before incorporating this distance calculation in ABC-Flow, it was tested to determine whether it is an appropriate distance to use when comparing distributions. This was done by drawing samples from two uniform distributions with varying mean and standard deviation. Algorithm~\ref{alg:dist} was then used to calculate the distance between the different distributions. First, Algorithm~\ref{alg:dist} was tested by drawing samples from two distributions with an increasingly different mean. This is done to determine the dynamical range of the distance calculation.
 
 \begin{figure}[htb]
 \centering
@@ -272,7 +273,7 @@ To further study the distance calculation used in ABC-Flow, two normal distribut
 \begin{figure}[tb]
 \centerfloat
 \includegraphics[scale=0.8]{../../chapters/chapterABCFlow/images/mu_diff.png}
-\caption[Rangel of distance values obtained using the Wald-Wolfowitz distance]{\label{fig:epsilon_mud}The distance calculation for data sets drawn from increasingly different distributions. Two examples are shown of distributions compared in (A) 1D and (B) 2D. (C) As the difference between the means of the two distributions increases, the distance calculation, epsilon, increases. In the 2D case (shown in green) the distance plateaus at 2.3 and in the 1D case (shown in blue) the distance calculation plateaus at 1.}
+\caption[Rangel of distance values obtained using the Wald-Wolfowitz distance]{\label{fig:epsilon_mud}The distance calculation for data sets drawn from increasingly different distributions. Two examples are shown of distributions compared in (A) 1D and (B) 2D. (C) As the difference between the means of the two 1D distributions increases, the KS distance calculation increases until it plateaus at 1. (D) In the 2D case the distance plateaus at 140.}
 \label{fig:normal_example}
 \end{figure}
 
@@ -280,7 +281,7 @@ To further study the distance calculation used in ABC-Flow, two normal distribut
 \begin{figure}[tb]
 \centering
 \includegraphics[scale=0.7]{../../chapters/chapterABCFlow/images/epsilon_same_box.png}
-\caption[LoF caption]{\label{fig:epsilon_boxplt}The distance between two data sets drawn from the same distribution are compared using (A) the Kolmogorov-Smirnov in 1D and (B)the Wald-Wolfowitz distance in 2D. (C) The distance is calculated for 1000 data sets. A larger variation of values is found for the 2D distance calculation, but still small relative to the overall range of values. (D) As the number of samples in the datasets increase the distance calculation becomes more accurate in the 1D case. It has no effect on the 2D case.}
+\caption[Distance calculation expected error using the KS and Wald-Wolfowitz distances]{\label{fig:epsilon_boxplt}The distance between two data sets drawn from the same distribution are compared using (A) the Kolmogorov-Smirnov in 1D and (B) the Wald-Wolfowitz distance in 2D. (C) The distance is calculated for 1000 data sets. A larger variation of values is found for the 2D distance calculation, but still small relative to the overall range of values. (D) As the number of samples in the datasets increase the distance calculation becomes more accurate in the 1D case. It has no effect on the 2D case.}
 \end{figure}
 
 
@@ -326,7 +327,7 @@ Using the Wald-Wolfowitz test the distance value increased with increasing dista
 In this section I apply ABC-Flow to simulated data, where the parameter values used to produce the data are known. This analysis will serve as a verification test for ABC-Flow. 
 
 \subsection{Toggle switch model development}
-The model used to produce the simulated data is an extension of the~\textcite{Gardner:2000vha} switch. The model consists of two mutually repressing transcription factors. The model used here has additional parameters allowing for gene expression to be leaky as well as include repression from an external stimulus. In order to produce the simulated data set the model was simulated stochastically using the Gillespie algorithm~\autocite{Gillespie:1977ww}. The model used is defined by the following hazards:
+The model used to produce the simulated data is an extension of the~\textcite{Gardner:2000vha} switch. The model consists of two mutually repressing transcription factors. The model used here has additional parameters allowing for gene expression to be leaky as well as include repression from an external stimulus. In order to produce the data set the model was simulated stochastically using the Gillespie algorithm~\autocite{Gillespie:1977ww}. The model used is defined by the following hazards:
 
 \begin{align}
 h_1 &= u \label{eq:eg1}\\
@@ -334,7 +335,7 @@ h_2 &= \frac{a1  l1	}{1+l1+v^{β}} \label{eq:eg2}\\
 h_3 &= (1 + α) v \label{eq:eg3}\\
 h_4 &= \frac{a2 l2}{1+l2+u^{γ}} \label{eq:eg4},
 \end{align}
-\noindent where $u$ and $v$ are the two proteins in the system, $a1$ and $a2$ represent the effective gene expression of $u$ and $v$ respectively, $β$ and $γ$ represent the cooperativity of $u$ and $v$ respectively. $l1$ and $l2$ represent the leakiness of the promoters for each species. Parameter α simulates the addition of an inducer molecule that binds to repressor $v$, effectively increasing its degradation. This has been used previously to successfully represent the addition of the IPTG repressor to system~\autocite{Lillacci:2013hu}.
+\noindent where $u$ and $v$ are the two proteins in the system, $a1$ and $a2$ represent the effective gene expression of $u$ and $v$ respectively, $β$ and $γ$ represent the cooperativity of $u$ and $v$ respectively. $l1$ and $l2$ represent the leakiness of the promoters for each species. Parameter α represents the addition of an inducer molecule that binds to repressor $v$, effectively increasing its degradation. This has been used previously to successfully represent the addition of the IPTG repressor to system~\autocite{Lillacci:2013hu}.
 
 In addition the system included a fluorescence intensity model. Each fluorescent molecule was assumed to emit a fluorescent signal, and the signal was assumed to be normally distributed around a mean μ and standard deviation σ. The fluorescent signal emitted by each molecule was described using Equation~\ref{eq:intens}. There was also a background fluorescence signal added to each calculation. This represents the intensity signal detected by flow cytometers when no fluorescent proteins are present~\autocite{Lillacci:2013hu}. The background fluorescence can be measured using control samples~\autocite{Lillacci:2013hu}, but in the case of the simulated data it was set to 0.01 (a.u.).  
 
@@ -372,7 +373,7 @@ v                    & 90 - 110               & 90 - 110               \\ \midru
 
 \subsection{Parameter inference for simulated flow cytometry data}
 
-The model given in Equations~\ref{eq:eg1}-\ref{eq:eg4} was simulated in order to obtain the a time course for the two fluoscent molecules in the system, $u$ and $v$. The  time course data, the model and the prior distributions shown in Table~\ref{tab:priors_model} were supplied to ABC-Flow. ABC-Flow was then used to infer the parameters that gave rise to the data using one (1D) or both (2D) fluorescent molecule time courses to fit to the data. We can therefore determine whether there is an added benefit on fitting both fluorescent proteins to the data. In order to compare the 1D and 2D fits, equivalent epsilon distance values were used. These were set to 0.27 for the 1D fit and 2.82 for the 2D fit.
+The model given in Equations~\ref{eq:eg1}-\ref{eq:eg4} was simulated in order to obtain the time course for the two fluoscent molecules in the system, $u$ and $v$. The  time course data, the model and the prior distributions shown in Table~\ref{tab:priors_model} were supplied to ABC-Flow. ABC-Flow was then used to infer the parameters that gave rise to the data using one (1D) or both (2D) fluorescent molecule time courses to fit to the data. We can therefore determine whether there is an added benefit on fitting both fluorescent proteins to the data. In order to compare the 1D and 2D fits, equivalent epsilon distance values were used. These were set to 0.27 for the 1D fit and 2.82 for the 2D fit.
 
 The fit resulting from the 1D fit is shown in Figure~\ref{fig:1d-sim-res}A, together with QQ plots to assess the fit to the data. A QQ-plot is a plot where the quantiles of two distributions are plotted against each other. If the distributions are the same then the points will lie on the 45\textdegree{} line x = y line~\autocite{Wilk:1968ts}. The fit resulting from the 2D fit is shown in Figure~\ref{fig:2d-sim-res}, while the posterior distributions obtained from both fits are shown in Figure~\ref{fig:1d2d-sim-post} and Table~\ref{tab:inf_params_sim}. Comparing the 1D and 2D fits, we find that both fits inferred the parameters necessary to produce the simulated data. From the posteriors we find that the most identifiable parameters in this model are parameters $β$ and $γ$, the parameters representing the cooperativity of the repressors. We find that the 2D fit resulted in a better inference of the parameter values. This is most prominent in parameters $β$, $γ$ and $α$ as can be seen in Table~\ref{tab:inf_params_sim}. Parameters $a2$ and $l2$ remained unidentifiable for both fits. For a system involving two fluorescent proteins, like the toggle switch, it would therefore be beneficial to use a two-dimensional fit to the data. The 2D fit performed better in the simulated test used here, with priors centred closely around known parameter values and clean data. This will become more evident when ABC-Flow is used on real experimental data where less information is known for the priors. Furthermore, the 1D fits do not fit intensity parameters for the both fluorescent proteins. This means that the 2D time course of the model using inferred parameters cannot be examined to assess the fit for both proteins. Therefore, a system involving two fluorescent proteins should be fit using the 2D fit in ABC-Flow. The 1D fit should be used in cases where there is only one fluorescent protein of interest in the system. 
 
@@ -423,7 +424,7 @@ The fit resulting from the 1D fit is shown in Figure~\ref{fig:1d-sim-res}A, toge
 \begin{figure}[htbp]
 \centering
 	\includegraphics[scale=0.7]{../../chapters/chapterABCFlow/images/toy_model_posteriors.png}
-	\caption[Posterior distributions of inferred parameters from 1D (red) and 2D (blue) simulated data]{\label{fig:1d2d-sim-post}The posterior distributions of the 1D fits to simulated data. The parameters used to produce the simulated data set were well inferred in both cases. The parameter values used to produce the data are marked on the marginal posterior distributions as a black line.}
+	\caption[Posterior distributions of inferred parameters from 1D and 2D simulated data]{\label{fig:1d2d-sim-post} Posterior distributions of inferred parameters from (A) 1D and (B) 2D simulated data. The parameters used to produce the simulated data set were well inferred in both cases. The parameter values used to produce the data are marked on the marginal posterior distributions as a black line.}
 \end{figure}
 
 %\begin{figure}[htbp]
@@ -897,8 +898,8 @@ h_2 &= 60  \frac{R_u KL_u}{1 + KL_u + KR_u  mCherry^2}\\
 h_3 &= KD_v  (1 + KI_v)  mCherry\\
 h_4 &= 60  \frac{R_v  KL_v}{1+ KL_v + KR_v  GFP^2},
 \end{align}    
-    
-\noindent where GFP and mCherry represent the two fluorescent proteins in the system. The cooperativity of the repressors (GFP and mCherry) is assumed in the model as well as the dimerization of the inducers. KI\textsubscript{u} and KI\textsubscript{v} KL\textsubscript{u} KL\textsubscript{v} KD\textsubscript{u} KD\textsubscript{v} KR\textsubscript{u} KR\textsubscript{v}, parameters KI\textsubscript{u} and KI\textsubscript{v} increase the degradation of one of the species, and simulates the addition of a repressor, IPTG or \acrshort{atc} respectively. When using this model to fit to the post-\acrshort{atc} induction time course data, KI\textsubscript{v} was set to 0. KI\textsubscript{u} was set to 0, until t = 0.01h where the prior distribution was used. This was done to simulate the addition of the inducer. When using this model to fit the post-IPTG induction time course, KI\textsubscript{u} was set to 0 and KI\textsubscript{v} sampled from the prior after t = 0.01h. 
+     %KI\textsubscript{u} and KI\textsubscript{v} KL\textsubscript{u} KL\textsubscript{v} KD\textsubscript{u} KD\textsubscript{v} KR\textsubscript{u} KR\textsubscript{v},
+\noindent where GFP and mCherry represent the two fluorescent proteins in the system. The cooperativity of the repressors (GFP and mCherry) is assumed in the model as well as the dimerization of the inducers. Parameters KI\textsubscript{u} and KI\textsubscript{v} increase the degradation of one of the species, and simulates the addition of a repressor, IPTG or \acrshort{atc} respectively. When using this model to fit to the post-\acrshort{atc} induction time course data, KI\textsubscript{v} was set to 0. KI\textsubscript{u} was set to 0, until t = 0.01h where the prior distribution was used. This was done to simulate the addition of the inducer. When using this model to fit the post-IPTG induction time course, KI\textsubscript{u} was set to 0 and KI\textsubscript{v} sampled from the prior after t = 0.01h. 
 
 The two production hazards, $h2$ and $h4$ are multiplied by 60 to reflect the copy number of the toggle switch plasmid in each cell. The plasmid containing the toggle switch used here, pKDL071, contains the ColE1 origin of replication, and thus 50-70 copies of the plasmid are present in each cell~\autocite{Milo:2010cz}. The priors used in ABC-Flow for this model are given in Table~\ref{tab:priors_model_real}. All priors given assume a uniform distribution. The values of the prior were chosen in agreement with~\autocite{Lillacci:2013hu} and in reference to \url{http://bionumbers.hms.harvard.edu/}, the database of useful biological numbers~\autocite{Milo:2010cz}. 
 
@@ -950,7 +951,7 @@ The priors shown in Table~\ref{tab:priors_model_real}, the hazard functions defi
 \begin{figure}[tb]
 \centerfloat
 	\includegraphics[width=1.2\textwidth]{../../chapters/chapterABCFlow/images/2D_real_res-01.png}
-	\caption[ABC-Flow fit to post-\acrshort{atc} time course data]{\label{fig:1d-real-res} (A) The post-\acrshort{atc} induction flow cytometry time course data (blue) and the resulting model fit from ABC-Flow (red). (B) The model simulation using parameters sampled from the posterior distribution shows that this model behaves like a switch. (C) The particle acceptance rate from ABC-Flow (D) The progression of epsilon threshold values at each population.}
+	\caption[ABC-Flow fit to post-\acrshort{atc} time course data]{\label{fig:1d-real-res} (A) The post-\acrshort{atc} induction flow cytometry time course data (blue) and the resulting model fit from ABC-Flow (red). (B) The model simulation using parameters sampled from the posterior distribution shows that this model behaves like a switch. A solid line depicts the median value of the trajectories and the dotted line depict 0.025 and 0.975 quartiles. (C) The particle acceptance rate from ABC-Flow (D) The progression of epsilon threshold values at each population.}
 \end{figure}
 
 
@@ -1008,7 +1009,7 @@ The value of R\textsubscript{u} represents the strength of the promoter driving 
 \begin{figure}[htb]
 \centerfloat
 	\includegraphics[width=\textwidth]{../../chapters/chapterABCFlow/images/promoter_strengths.png}
-	\caption[The inferred parameter values produce a switch]{\label{fig:prom_str} (A) Increasing the initial condition value of mCherry does not affect the state of the system. (B) Decreasing the initial condition value of GFP destabilises the switch. (C) Decreasing parameter R\textsubscript{u} to a value outside the 95\% credible region stops the model from behaving like a switch. (D) Increasing the value of R\textsubscript{u}, the rate representing the transcription factor of GFP, causes GFP to reach higher levels. (E) increasing  the value of KR\textsubscript{u}, the parameter representing the mCherry-induced GFP repression rate causes the switch to happen at a later time point and not all stochastic trajectories switch state. (F) If the value of KR\textsubscript{u} is set to larger than the 95\% credible region, the system does not switch states.}
+	\caption[The inferred parameter values produce a switch]{\label{fig:prom_str} (A) Increasing the initial condition value of mCherry does not affect the state of the system. (B) Decreasing the initial condition value of GFP destabilises the switch. (C) Decreasing parameter R\textsubscript{u} to a value outside the 95\% credible region stops the model from behaving like a switch. (D) Increasing the value of R\textsubscript{u}, the rate representing the transcription factor of GFP, causes GFP to reach higher levels. (E) increasing  the value of KR\textsubscript{u}, the parameter representing the mCherry-induced GFP repression rate causes the switch to happen at a later time point and not all stochastic trajectories switch state. (F) If the value of KR\textsubscript{u} is set to larger than the 95\% credible region, the system does not switch states. For all plots, a solid line depicts the median value of the trajectories and the dotted line depict 0.025 and 0.975 quartiles.}
 \end{figure}
 
 
@@ -1024,7 +1025,7 @@ ABC-Flow was further used to fit the experimental time course obtained from the 
 	\caption[ABC-Flow fit to post-\acrshort{atc} time course data]{\label{fig:1d-real-res-iptg} (A) The time course data obtained of the post-IPTG induced toggle switch is shown in blue and the resulting fit from ABC-Flow is shown in red. (B) The model was simulated by using parameter sampled from the posterior distribution. The resulting model did not behave like a switch. (C) The particle acceptance rate from ABC-Flow (D) The progression of epsilon threshold values at each population.  }
 \end{figure}
 
-The median values of the marginal posterior distribution of each parameter was used to simulate the model without the conversion to fluorescent intensity in order to confirm that the model behaved like a switch. As can be seen in Figure~\ref{fig:1d-real-res-iptg}B, the model does not behave like a switch within the timeframe given from the experimental data (0 - 6 hours). We find a rapid decay of GFP without an increase in mCherry fluorescence as would be expected. This could be attributed to the experimental time course obtained. As shown in Figure~\ref{fig:1d-real-res-iptg}A, over a period of 6 hours post induction there is a decrease in GFP fluorescence. mCherry can be seen increasing after two hours post induction but then not maintaining that high level. Over the 6 hours, there is no overall increase in mCherry fluorescence. This time course is challenging to fit using the model used here as it does not behave like a switch as expected. The epsilon progression of the fit for the IPTG induction of the switch further confirms that the fit to the data is not as good as expected. Epsilon reduction levels off at a high epsilon value compared to the \acrshort{atc} induction, while the acceptance rate is very low. This indicates that continuing with the fit of the above model to the IPTG induction data will not produce a better fit.   
+The median values of the marginal posterior distribution of each parameter were used to simulate the model without the conversion to fluorescent intensity in order to confirm that the model behaved like a switch. As can be seen in Figure~\ref{fig:1d-real-res-iptg}B, the model does not behave like a switch within the timeframe given from the experimental data (0 - 6 hours). We find a rapid decay of GFP without an increase in mCherry fluorescence as would be expected. This could be attributed to the experimental time course obtained. As shown in Figure~\ref{fig:1d-real-res-iptg}A, over a period of 6 hours post induction there is a decrease in GFP fluorescence. mCherry can be seen increasing after two hours post induction but then not maintaining that high level. Over the 6 hours, there is no overall increase in mCherry fluorescence. This time course is challenging to fit using the model used here as it does not behave like a switch as expected. The epsilon progression of the fit for the IPTG induction of the switch further confirms that the fit to the data is not as good as expected. Epsilon reduction levels off at a high epsilon value compared to the \acrshort{atc} induction, while the acceptance rate is very low. This indicates that continuing with the fit of the above model to the IPTG induction data will not produce a better fit.   
 
 
 \begin{table}[tb]
@@ -1059,7 +1060,7 @@ The posterior density obtained from by ABC-Flow is given in Figure~\ref{fig:1atc
 	\caption[Posterior distribution of inferred parameters for post-IPTG induction of the toggle switch]{\label{fig:1atc-post} The posterior distribution obtained from ABC-Flow for the post-IPTG time course data. The parameter for GFP expression was found to be the most well inferred.}
 \end{figure}
 
-The two fits obtained from the post-\acrshort{atc} and post-IPTG induction represent the different sides of the switch from the same genetic system and should thus be considered together. Comparing the fits we find a good agreement for the inferred parameters R\textsubscript{u} and KD\textsubscript{u}. On the other hand we find that the inferred values for KR\textsubscript{u} and KD\textsubscript{v} do not agree. This could be caused by the fact that the switch's is not perfectly symmetric on the two sides, as can be seen from the experimental data. The system responds to \acrshort{atc} faster than to IPTG. This difference in the data could lead to difference values inferred for the underlying parameters. In the future this could be incorporated in to ABC-Flow to improve the accuracy of the inference.
+The two fits obtained from the post-\acrshort{atc} and post-IPTG induction represent the different sides of the switch from the same genetic system and should thus be considered together. Comparing the fits we find a good agreement for the inferred parameters R\textsubscript{u} and KD\textsubscript{u}. On the other hand we find that the inferred values for KR\textsubscript{u} and KD\textsubscript{v} do not agree. This could be caused by the fact that the switch is not perfectly symmetric on the two sides, as can be seen from the experimental data. The system responds to \acrshort{atc} faster than to IPTG. This difference in the data could lead to difference values inferred for the underlying parameters. In the future this could be incorporated in to ABC-Flow to improve the accuracy of the inference.
 
 
 
@@ -1069,7 +1070,7 @@ The two fits obtained from the post-\acrshort{atc} and post-IPTG induction repre
 %	\caption[Epsilon and acceptance rate of ABC-Flow inference]{\label{fig:epsilon_accept}(A) The progression of epsilons over the populations in ABC-Flow for ATc (green) and IPTG (red) induction. (B) The acceptance rate decreases rapidly with every population.}
 %\end{figure}
 
-In this section I used ABC-Flow to fit a toggle switch model to experimental flow cytometry data. Both sides of the switch were examined, ATc induction which flips the switch from mCherry high to GFP high and IPTG induction, which flips the switch from GFP high/mCherry low to GFP low/mCherry high. The model was successfully fit to the data set obtained from the ATc induction of the switch but less so to the data obtained from the IPTG induction of the switch. 
+In this section I used ABC-Flow to fit a toggle switch model to experimental flow cytometry data. Both sides of the switch were examined, \acrshort{atc} induction which flips the switch from mCherry high to GFP high and IPTG induction, which flips the switch from GFP high/mCherry low to GFP low/mCherry high. The model was successfully fit to the data set obtained from the ATc induction of the switch but less so to the data obtained from the IPTG induction of the switch. 
 %\clearpage
 \section{Discussion}
 

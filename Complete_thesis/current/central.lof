@@ -6,7 +6,7 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces A graphical representation of a biochemical system}}{30}{figure.caption.9}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Hill formalism example}}{32}{figure.caption.10}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Shea-Ackers formalism example}}{33}{figure.caption.11}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Phase plane analysis}}{35}{figure.caption.13}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Phase plane analysis}}{36}{figure.caption.13}
 \contentsline {figure}{\numberline {2.5}{\ignorespaces \acrshort {abc} \acrshort {smc} parameter inference example}}{44}{figure.caption.15}
 \addvspace {10pt}
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Simple toggle switch model using the Shea-Ackers formalism}}{51}{figure.caption.17}
@@ -35,12 +35,12 @@
 \contentsline {figure}{\numberline {4.10}{\ignorespaces Design principles of multistable switches}}{104}{figure.caption.47}
 \contentsline {figure}{\numberline {4.11}{\ignorespaces Phase plots of multistable switches}}{106}{figure.caption.48}
 \contentsline {figure}{\numberline {4.12}{\ignorespaces The three-node mutual repression model, with added positive auto-regulation on each node.}}{108}{figure.caption.50}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces The mass action togge switches and phase plots}}{111}{figure.caption.52}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces The mass action togge switches and phase plots}}{110}{figure.caption.52}
 \contentsline {figure}{\numberline {4.14}{\ignorespaces Robustness comparison of the \acrshort {cs-ma} and \acrshort {dp-ma} switches}}{112}{figure.caption.53}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Testing the QSSA assumptions on the mass action models}}{114}{figure.caption.54}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Multistability in the stochastic mass action models}}{117}{figure.caption.56}
-\contentsline {figure}{\numberline {4.17}{\ignorespaces The volume of the priors has an effect on the posterior distribution obtained.}}{120}{figure.caption.58}
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Changing the priors in both models affects the robustness measure.}}{122}{figure.caption.60}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Testing the QSSA assumptions on the mass action models}}{115}{figure.caption.54}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Multistability in the stochastic mass action models}}{118}{figure.caption.56}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces The volume of the priors has an effect on the posterior distribution obtained.}}{121}{figure.caption.58}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Changing the priors in both models affects the robustness measure.}}{123}{figure.caption.60}
 \addvspace {10pt}
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Flow cytometry experimental setup}}{128}{figure.caption.61}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces ABC-Flow algorithm overview}}{131}{figure.caption.62}
@@ -51,10 +51,10 @@
 \contentsline {figure}{\numberline {5.7}{\ignorespaces Distance value ranges of bimodal and uniform distributions using the kernel distance}}{137}{figure.caption.67}
 \contentsline {figure}{\numberline {5.8}{\ignorespaces Range of distance values using the Kolmogorov-Smirnov distance}}{139}{figure.caption.68}
 \contentsline {figure}{\numberline {5.9}{\ignorespaces Rangel of distance values obtained using the Wald-Wolfowitz distance}}{141}{figure.caption.69}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces LoF caption}}{142}{figure.caption.70}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Distance calculation expected error using the KS and Wald-Wolfowitz distances}}{142}{figure.caption.70}
 \contentsline {figure}{\numberline {5.11}{\ignorespaces Applying ABC-Flow to 1D simulated data}}{146}{figure.caption.72}
 \contentsline {figure}{\numberline {5.12}{\ignorespaces Applying ABC-Flow to 2D simulated data}}{147}{figure.caption.73}
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Posterior distributions of inferred parameters from 1D (red) and 2D (blue) simulated data}}{148}{figure.caption.74}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Posterior distributions of inferred parameters from 1D and 2D simulated data}}{148}{figure.caption.74}
 \contentsline {figure}{\numberline {5.14}{\ignorespaces pKDL071 plasmid map and diagram of interactions}}{150}{figure.caption.76}
 \contentsline {figure}{\numberline {5.15}{\ignorespaces pKDL071-YFP plasmid map }}{160}{figure.caption.84}
 \contentsline {figure}{\numberline {5.16}{\ignorespaces pSEVA281G and pSEVA281C plasmid map}}{161}{figure.caption.85}

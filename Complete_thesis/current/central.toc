@@ -26,8 +26,8 @@
 \contentsline {subsubsection}{\numberline {2.2.3.2}Assumptions of deterministic modelling}{34}{subsubsection.2.2.3.2}
 \contentsline {subsection}{\numberline {2.2.4}Nonlinear dynamical modelling}{35}{subsection.2.2.4}
 \contentsline {subsubsection}{\numberline {2.2.4.1}Phase plane analysis}{35}{subsubsection.2.2.4.1}
-\contentsline {subsubsection}{\numberline {2.2.4.2}Steady states}{36}{subsubsection.2.2.4.2}
-\contentsline {subsubsection}{\numberline {2.2.4.3}Steady state stability}{36}{subsubsection.2.2.4.3}
+\contentsline {subsubsection}{\numberline {2.2.4.2}Steady states}{35}{subsubsection.2.2.4.2}
+\contentsline {subsubsection}{\numberline {2.2.4.3}Steady state stability}{35}{subsubsection.2.2.4.3}
 \contentsline {subsection}{\numberline {2.2.5}Stochastic modelling of dynamical systems}{37}{subsection.2.2.5}
 \contentsline {subsubsection}{\numberline {2.2.5.1}Simulating stochastic models}{37}{subsubsection.2.2.5.1}
 \contentsline {subsubsection}{\numberline {2.2.5.2}The Gillespie algorithm}{38}{subsubsection.2.2.5.2}
@@ -42,7 +42,7 @@
 \contentsline {subsection}{\numberline {2.3.2}Derivation of model parametric robustness defined via Bayesian statistics}{45}{subsection.2.3.2}
 \contentsline {chapter}{\chapternumberline {3}Postive feedback loops can increase the robustness of a genetic toggle switch}{49}{chapter.3}
 \contentsline {section}{\numberline {3.1}Introduction}{49}{section.3.1}
-\contentsline {section}{\numberline {3.2}Background}{49}{section.3.2}
+\contentsline {section}{\numberline {3.2}Motivation}{49}{section.3.2}
 \contentsline {section}{\numberline {3.3}The bistable genetic toggle switch}{50}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Phase space and bifurcation analysis}{51}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}The quasi steady state approximation and the genetic toggle switch}{53}{subsection.3.3.2}
@@ -62,7 +62,7 @@
 \contentsline {chapter}{\chapternumberline {4}Dynamics of multi-stable switches}{77}{chapter.4}
 \contentsline {section}{\numberline {4.1}Introduction}{77}{section.4.1}
 \contentsline {section}{\numberline {4.2}Contributions to this Chapter}{77}{section.4.2}
-\contentsline {section}{\numberline {4.3}Background}{77}{section.4.3}
+\contentsline {section}{\numberline {4.3}Motivation}{77}{section.4.3}
 \contentsline {section}{\numberline {4.4}StabilityFinder algorithm}{79}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}Algorithm overview}{79}{subsection.4.4.1}
 \contentsline {subsection}{\numberline {4.4.2}Initial condition sampling}{81}{subsection.4.4.2}
@@ -79,10 +79,10 @@
 \contentsline {subsubsection}{\numberline {4.6.2.2}Multistability in the Lu models}{102}{subsubsection.4.6.2.2}
 \contentsline {subsubsection}{\numberline {4.6.2.3}Extending the Lu switch to three nodes}{107}{subsubsection.4.6.2.3}
 \contentsline {subsection}{\numberline {4.6.3}StabilityFinder used on the more general mass action switches}{109}{subsection.4.6.3}
-\contentsline {subsubsection}{\numberline {4.6.3.1}Multistability in the stochastic mass action switches}{115}{subsubsection.4.6.3.1}
-\contentsline {subsubsection}{\numberline {4.6.3.2}Bayes factors depend on the choice of priors}{118}{subsubsection.4.6.3.2}
-\contentsline {section}{\numberline {4.7}Discussion}{123}{section.4.7}
-\contentsline {section}{\numberline {4.8}Summary}{124}{section.4.8}
+\contentsline {subsubsection}{\numberline {4.6.3.1}Multistability in the stochastic mass action switches}{116}{subsubsection.4.6.3.1}
+\contentsline {subsubsection}{\numberline {4.6.3.2}Bayes factors depend on the choice of priors}{119}{subsubsection.4.6.3.2}
+\contentsline {section}{\numberline {4.7}Discussion}{124}{section.4.7}
+\contentsline {section}{\numberline {4.8}Summary}{125}{section.4.8}
 \contentsline {chapter}{\chapternumberline {5}Bayesian model fitting for flow cytometry data}{127}{chapter.5}
 \contentsline {section}{\numberline {5.1}Introduction}{127}{section.5.1}
 \contentsline {section}{\numberline {5.2}Contributions to this Chapter}{127}{section.5.2}

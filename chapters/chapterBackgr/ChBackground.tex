@@ -7,7 +7,7 @@
 One of the most common devices used in synthetic biology is the genetic toggle switch. A toggle switch consists of a set of transcription factors that mutually repress each other~\autocite{Gardner:2000vha}. Genetic switches play a major role in binary cell fate decisions like stem cell differentiation, as they are capable of exhibiting bistable behaviour. Bistability of a system is defined by the existence of two distinct phenotypic states but no intermediate state. Bistability is a property that is important in nature and a valuable resource to tap into in synthetic biology. It allows cells to alter their response to environmental cues and increases the overall population fitness by 'hedge-betting' the response of the population \autocite{Veening:2008da}. 
 
 \subsection{The genetic toggle switch in natural systems}
-In developmental processes, bistability ensures that the differentiating cell will follow one pathway, or the other, with no possible intermediate phenotypes. This is vital for the correct development of a cell in a specific pathway. One example is the trophectoderm differentiation pathway, in which a mutually inhibitory toggle switch exists between Oct3/4 and Cdx2. This determines whether an Embryonic Stem cell will differentiate into a Trophectoderm cell, if Cdx2 dominates the system, or an Inner Cell Mass cell if Oct3/4 dominates~\autocite{Niwa:2005fz}. Bistability is critical in this system as a cell must differentiate into either a trophectoderm cell or an inner cell mass cell, thus the signal to do so must be straightforward. 
+In developmental processes, bistability ensures that the differentiating cell will follow one pathway, or the other, with no possible intermediate phenotypes. This is vital for the correct development of a cell in a specific pathway. One example is the trophectoderm differentiation pathway, in which a mutually inhibitory toggle switch exists between Oct3/4 and Cdx2. This determines whether an embryonic stem cell will differentiate into a trophectoderm cell, if Cdx2 dominates the system, or an inner cell mass cell if Oct3/4 dominates~\autocite{Niwa:2005fz}. Bistability is critical in this system as a cell must differentiate into either a trophectoderm cell or an inner cell mass cell, thus the signal to do so must be straightforward. 
 
 In the case of the GATA1 and PU.1 toggle switch, the transcription factor pair controls the fate of the common myeloid progenitors, and the two possible differentiation paths are erythroid and myeloid blood cells~\autocite{Chickarmane:2009by}. The double-negative feedback loop created by the mutually repressive pair of transcription factors sustains the system in balance until an external stimulus causes one of the two transcription factors to increase in concentration. The increased concentration of one transcription factor causes the increased repression of the production of the antagonistic transcription factor, tipping the balance towards the dominance of the first transcription factor. The double negative feedback loop reinforces this dynamic and the system remains in the same state, until an external stimulus disturbs it~\autocite{FerrellJr:2002fh}.
 
@@ -28,7 +28,7 @@ In another study, \textcite{Ma:2012dt} found that the stochastic fluctuations in
 \begin{table}[t]
 \centering
 
-\caption{Summary of stability for the CS and DP switches found via different modelling approaches}
+\caption{Summary of stabilities for the classical switch and the switch with double positive feedback found via different modelling approaches}
 \label{tab:refs}
 \rotatebox{90}{
 \begin{tabular}{@{}llll@{}}
@@ -201,7 +201,7 @@ The Shea-Ackers formalism developed by~\textcite{Ackers:1982tq} uses a statistic
     \label{fig:shea_ack_ex}
 \end{figure*}
 
-The partition function is thus given by 
+\noindent The partition function is given by 
 
 \begin{align}
 	P_{T} = \alpha \frac{k_1 + k_{3}A^2}{1 + k_1 + k_{2}R^2 + k_{3}A^2}
@@ -276,12 +276,12 @@ Two key assumptions are made when modelling a biochemical system using \acrshort
 \subsection{Nonlinear dynamical modelling}
 
 \subsubsection{Phase plane analysis}
-An alternative to studying the trajectory of a dynamical system over time is to study its behaviour in the phase plane. During a phase plane analysis the dependent variables $x$ and $y$ are plotted against eachother, as shown in Figure~\ref{fig:pp_phase}.
+An alternative to studying the trajectory of a dynamical system over time is to study its behaviour in the phase plane. During a phase plane analysis the dependent variables $x$ and $y$ are plotted against each other. An example of a phase plane analysis of the predator-prey model given in Equations~\ref{eq:predator-prey} is shown in Figure~\ref{fig:pp_phase}B.
 
 \begin{figure*}[htb]
 \centerfloat
-    \includegraphics[scale=0.7]{../../chapters/chapterBackgr/images/pp-phaseplane.pdf}
-    \caption[Phase plane analysis]{(A) The predator-prey system of equations as defined in Section~\ref{sec:predator_prey_odes} trajectory over time (B) Phase plane plot of the predator-prey system of equations. The parameters used here are $k_1=2$, $k_2=1$ and $k_3=1$.}
+    \includegraphics[scale=0.7]{../../chapters/chapterBackgr/images/phas_plane_example.png}
+    \caption[Phase plane analysis]{The predator-prey system is defined by Equations~\ref{eq:predator-prey}. (A) The trajectory over time (B) Phase plane plot of the predator-prey system of equations. The parameters used here are $k_1=2$, $k_2=1$ and $k_3=1$.}
     \label{fig:pp_phase}
 \end{figure*}
 
@@ -399,7 +399,7 @@ Bayesian approaches to parameter inference have been shown to work well in biolo
 \noindent where $\displaystyle \int p(x|θ)p(θ)dθ$ is the evidence. It is often not possible to obtain analytical expressions of the posterior, but methods to approximate it numerically have been developed~\autocite{Barnes:2011bk}. One such class of algorithms are the \acrfull{abc} methods. These are described in more detail in Section~\ref{sec:abc}.
 
 
-Parameter estimation problems typically involve a set of observed data and a mathematical model describing the biological system. Oftentimes there are a number of competing models under consideration. The challenge then is to fit the model, and model parameters in order to reconstruct the observed data~\autocite{Ma:2009ig}. In system design a different but related problem must be addressed; Instead of experimental data the researcher has an idea of what the system output should be, a set of design objectives~\autocite{Barnes:2011bk}. A set of carefully selected design objectives can then be used as substitute data ($x_s$), representing data one would like to observe, in the Bayesian inference problem~\autocite{Barnes:2011bk}. This method has been successfully applied in synthetic biology system design~\autocite{Barnes:2011hh, Woods:2016eh}. 
+Parameter estimation problems typically involve a set of observed data and a mathematical model describing the biological system. Oftentimes there are a number of competing models under consideration. The challenge then is to fit the model, and model parameters in order to reconstruct the observed data~\autocite{Ma:2009ig}. In system design a different but related problem must be addressed; Instead of experimental data the researcher has an idea of what the system output should be~\autocite{Barnes:2011bk}. A set of carefully selected design objectives can then be used as substitute data ($x_s$), representing data one would like to observe, in the Bayesian inference problem~\autocite{Barnes:2011bk}. This method has been successfully applied in synthetic biology system design~\autocite{Barnes:2011hh, Woods:2016eh}. 
 
 %These optimization methods can largely be separated into two categories: frequentist and Bayesian. Frequentist methods provide point estimates of the inferred parameters, with associated confidence intervals. On the other hand Bayesian methods offer probability distributions over the values of the inferred parameters. These are especially suited for use in synthetic biology problems, where the  
 %In this section I aim to discuss the use of Bayesian methods for parameter inference and system design.  
@@ -505,7 +505,7 @@ An alternative method developed by~\textcite{Toni:2009tr} takes advantage of \ac
 %The desired behaviour of the system is used as the data to which the candidate model output is compared to \cite{Barnes:2011hh}. 
 %Given a set of competing models, their associated prior estimates of their parameters and the design specifications, the algorithm is able to rank the models according to how well they describe the data and the posterior probabilities of the parameters \cite{Barnes:2011hh}. 
 
-ABC SMC can identify the parameter values within a predefined range of values that can achieve the desired behaviour. It works by first sampling at random from the initial range set by the researcher, i.e. form the prior distribution of values. Each sample from the priors is called a particle. It then simulates the model given those values and compares that to the target behaviour. If the distance between the simulation and the target behaviour is greater than a predefined threshold distance \textepsilon{}, then the parameter values that produced that simulation are rejected. This is repeated for a predefined number of samples which are collectively referred to as a population. Each particle in a population has a weight associated with it, which represents the probability of it producing the desired behaviour. At subsequent iterations the new samples are obtained from the previous populations and the \textepsilon{} is set to smaller value, thus eventually reaching the desired behaviour. The algorithm proceeds as follows:
+ABC SMC can identify the parameter values within a predefined range of values that can achieve the desired behaviour. It works by first sampling at random from the initial range set by the researcher, i.e. form the prior distribution of values. Each sample from the priors is called a particle. It then simulates the model given those values and compares that to the target behaviour. If the distance between the simulation and the target behaviour is greater than a predefined threshold distance ε, then the parameter values that produced that simulation are rejected. This is repeated for a predefined number of samples which are collectively referred to as a population. Each particle in a population has a weight associated with it, which represents the probability of it producing the desired behaviour. At subsequent iterations the new samples are obtained from the previous populations and the ε is set to smaller value, thus eventually reaching the desired behaviour. The algorithm proceeds as follows:
 
 \begin{algorithm}[H]
 
@@ -513,12 +513,12 @@ ABC SMC can identify the parameter values within a predefined range of values th
 	\label{alg:ABC-SMC}
  \begin{algorithmic}[1]
     \Statex
-    \State Select \textepsilon{} and set population t = 0
-	\State Sample particles (\texttheta). If t = 0, sample from prior distributions (P). If t $\textgreater$ 0, sample particles from previous population.
-	\State If t $\textgreater$ 0: Perturb each particle by $\pm$ half the range of the previous population (j) to obtain new perturbed population (i).
+    \State Select ε and set population t = 0
+	\State Sample particles (θ). If t = 0, sample from prior distributions (P). If t $\textgreater$ 0, sample particles from previous population to obtain θ*.
+	\State If t $\textgreater$ 0: Perturb each particle θ* using perturbation kernel $K_t$ to obtain perturbed particle θ** %, by $\pm$ half the range of the previous population (j) to obtain new perturbed population (i).
 	\State Simulate each particle to obtain time course.
-	\State Reject particles if d $\textgreater$ \textepsilon{}.
-	\State Calculate the weight for each accepted particle. At the first population assign a weight equal to 1 for all particles. In subsequent populations the weight of a particle is equal to the probability of observing that particle divided by the sum of the probabilities of the particle arising from each of the particles in the previous population:
+	\State Reject particles if d $\textgreater$ ε.
+	\State Calculate the weight $w$ for each accepted particle. At the first population assign a weight equal to 1 for all particles. In subsequent populations the weight of a particle is equal to the probability of observing that particle divided by the sum of the probabilities of the particle arising from each of the particles in the previous population:
 
 	\State $w_{t}^{(i)} = \begin{cases} 1, & \mbox{if } n = 0 \\\frac{P(\theta_{t}^{(i)})}{\sum_{j=1}^N w_{t-1}^{(j)} K_{t}(\theta_{t-1}^{(j)}, \theta_{t}^{(i)})}, & \mbox{if } n $\textgreater$  0. \end{cases}$
 
@@ -537,14 +537,14 @@ For the first population, particles are sampled from the prior, which consists o
 Each sampled particle is perturbed by a kernel defined by the distribution of the previous population, as developed by~\textcite{Toni:2009tr}. 
 
 \begin{align}
-K_p(\theta|\theta^* ) = \theta^* + U(+s_p, -s_p),
+K_t(\theta|\theta^* ) = \theta^* + U(+s_p, -s_p),
 \end{align}
 \noindent  where
 \begin{align}
 s_p = \frac{1}{2} \big (max(\theta_{p-1}) - min(\theta_{p-1}) \big )
 \end{align}
 
-\noindent If the $\texttheta^*$ falls out of the limits of the priors then the perturbation is rejected and repeated until an acceptable $\texttheta^*$ is obtained. This method is successful in perturbing the particles by a small amount in order to explore the parameter space, but can be slow to complete. 
+\noindent If the θ** falls out of the limits of the priors then the perturbation is rejected and repeated until an acceptable θ** is obtained. This method is successful in perturbing the particles by a small amount in order to explore the parameter space, but can be slow to complete. 
 
 \subsubsection{Particle simulation}
 \label{sec:sim}
@@ -584,9 +584,7 @@ Figure~\ref{fig:myABC true 1} illustrates the use of \acrshort{abc} \acrshort{sm
 
 \subsection{Derivation of model parametric robustness defined via Bayesian statistics}
 \label{sec:rob_back}
-During this thesis I use the term robustness in its parametric meaning, i.e. as the ability of a system to retain its function despite parameter perturbations~\autocite{Stelling:2004wo}.  
-
-The robustness of biological systems has been studied extensively~\autocite{Barkai:1997cd, Stelling:2004wo, Prill:2005fq, Kim:2006uk, Kitano:2007cp, Hafner:2009ct, Shinar:2010dd, ZamoraSillero:2011jw, Woods:2016eh}. and it is well known that feedback loops can increase the robustness of a system~\autocite{Becskei:2000ft,	 DOYLE:2005ul}. Below I show that the robustness of a model can be calculated by dividing the volume of its functional region by the volume of its priors. Starting with Bayes' rule that:
+During this thesis I use the term robustness in its parametric meaning, i.e. as the ability of a system to retain its function despite parameter perturbations~\autocite{Stelling:2004wo}. The robustness of biological systems has been studied extensively~\autocite{Barkai:1997cd, Stelling:2004wo, Prill:2005fq, Kim:2006uk, Kitano:2007cp, Hafner:2009ct, Shinar:2010dd, ZamoraSillero:2011jw, Woods:2016eh}. and it is well known that feedback loops can increase the robustness of a system~\autocite{Becskei:2000ft,	 DOYLE:2005ul}. Below I show that the robustness of a model can be calculated by dividing the volume of its functional region by the volume of its priors. Starting with Bayes' rule that:
 
 \begin{align}
 	f(\theta|x) &= \frac{f(\theta)f(x|\theta)}{\int p(x|\theta)p(\theta)d\theta}
@@ -639,7 +637,7 @@ where |P| is the volume of the prior P and |F| the volume of the functional regi
 
 \begin{align}
 p(O|D_1) &= \frac{1}{|P|}\iiint_{\underline{\theta}}f(\underline{\theta};\mu,\Sigma)d\underline{\theta} \\%, & \parbox[c]{\Sigma = \det(\text{covariance matrix})} \\
-\therefore p(O|D_1) &= \frac{1}{|P|}\underbrace{\frac{2\pi^{\frac{k}{2}}}{k\Gamma(\frac{k}{2})} \Big[ \chi _{k}^{2}(\alpha) \Big]^{\frac{k}{2}} |\Sigma|^\frac{1}{2}} \\
+\therefore p(O|D_1) &= \frac{1}{|P|}\underbrace{\frac{2\pi^{\frac{k}{2}}}{k\Gamma(\frac{k}{2})} \Big[ \chi _{k}^{2}(\alpha) \Big]^{\frac{k}{2}} |\Sigma|^\frac{1}{2}}_{\text{The volume of an ellipsoid}} \\
 \therefore p(O|D_1) &= \frac{|F|}{|P|},
 \end{align}
 
@@ -654,7 +652,7 @@ p(O|D_1) &= \frac{1}{|P|}\iiint_{\underline{\theta}}f(\underline{\theta};\mu,\Si
  B_{12} &= \frac{p(X|M_a)}{p(X|M_b)}, \label{eq:final_bayes1}
 \end{align}	
 
-\noindent which represents the fraction of the evidence supported by model $a$ over the evidence supported by model $b$. The evidence against model $M_b$, and thus in favour of $M_a$, the Bayes factor, can be interpreted as shown in Table~\ref{tab:BAYES_FACTS}. For a comprehensive review on the use of Bayes factors see~\textcite{Kass:1995eh}.
+\noindent which represents the fraction of the evidence supported by model $a$ over the evidence supported by model $b$. The evidence against model $M_b$, and thus in favour of $M_a$, the Bayes factor, can be interpreted as shown in Table~\ref{tab:BAYES_FACTS}. For a comprehensive review on the use of Bayes factors see~\textcite{Kass:1995vb}.
 
 
 In a system design model, the Bayes factor is used to determine which design, $D_1$ or $D_2$ can fulfil the design objective O better. Therefore,
@@ -670,7 +668,7 @@ B_{12} &= \frac{\displaystyle \int p(x|\theta, D_1)p(\theta, D_1)d\theta}{\displ
 
 \begin{table}[tb]
 \centering
-\caption{Bayes factor evidence interpretation. Modified from~\textcite{Kass:1995eh}}
+\caption{Bayes factor evidence interpretation. Modified from~\textcite{Kass:1995vb}}
 \label{tab:BAYES_FACTS}
 \begin{tabular}{@{}ll@{}}
 \toprule

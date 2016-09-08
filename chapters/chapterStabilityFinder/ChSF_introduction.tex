@@ -1,13 +1,13 @@
 \section{Introduction}
 
-In this chapter, I aim to uncover the underlying principles that govern the stability of a given switch. To do this, I developed an algorithm, called StabilityFinder, that can find the parameter value ranges that can produce the desired stability in a given model. I use this algorithm to examine a variety of switch architectures using different modelling abstractions.
+In this chapter, I aim to uncover the underlying principles that govern the stability of a given switch. To do this, I developed an algorithm, called StabilityFinder, that can identify the parameter value ranges that can produce the desired stability in a given model. I use this algorithm to examine a variety of switch architectures using different modelling abstractions.
 
 Structurally, this chapter is organised as follows: In the first section I examine the current understanding of the stability landscape of the genetic toggle switch. Then, I discuss the development of StabilityFinder, justify the choices made and the drawbacks of this method. In the sections following I apply StabilityFinder to a variety of models and finally I discuss the implications these findings have to the overall understanding of the toggle switch stability. 
 
 \section{Contributions to this Chapter}
-The phase plots of the Lu switch steady states and the characterization of their steady states shown in Figure~\ref{fig:lu_bifurc} was carried out by Mae Woods, PhD.
+The phase plots of the Lu switch and the characterization of their steady states shown in Figure~\ref{fig:lu_bifurc} was carried out by Mae Woods, PhD.
 
-\section{Background}
+\section{Motivation}
 %A circuit must be robust to a fluctuating cellular environment and its response and sensitivity must be able to be fine tuned in order to orchestrate a network of circuits that function together. A robust circuit can tolerate the compound stochasticity that a chain of circuits brings, and fine tuning of its response and sensitivity enables the researcher to make it sensitive to an upstream signal as well as influence a downstream subsystem. %
 
 Synthetic biology puts an emphasis on creating modular, standardized parts that can be used to create larger systems~\autocite{Agapakis:2009bt}. When faced with the creation of a new model design, the researcher can select the appropriate parts from the BioBrick registry~\autocite{Muller:2011bp} and combine them to create the system of choice. Synthetic circuit design presents a challenge as the collection of assembled parts have to work together to create the target behaviour~\autocite{Nielsen:2013hs}. Parts can be fine tuned by developing component libraries~\autocite{Lu:2009ez}, but this will be of little use if the required parameter ranges for parts to make a functional system are unknown, and will only perpetuate the cycles of trial-and-error. A computational method to find the range of parameter values that will produce the behaviour of choice is crucial to the design process by enabling the informed selection of appropriate parts from the libraries. For example, if it is known that gene expression must be low for a given stability, one can select a weak promoter or a low copy plasmid for the desired construct. 
@@ -208,7 +208,7 @@ The method used for clustering can be altered by the user if he/she wants to add
 \label{sec:dist}
  The distance function is used to compare the desired behaviour to the behaviour observed in each particle~\autocite{Toni:2009tr}. In StabilityFinder the distance function consists of three distances. The first one is the difference between the number of desired clusters and the number of clusters observed in the phase plot. For this distance metric the number of clusters in the phase plot must be calculated. The clustering methods used are outlined in Section~\ref{Clustering methods}.
  
- The other two distance metrics used in StabilityFinder are the variance within each cluster and the overall, between cluster, variance. The within cluster variance ensures that the clusters are tight, and the between cluster variance is used to ensure the clusters are far apart from each other. In the context of this thesis, the ideal behaviour of a system is tight, widely separated clusters. This means that the genetic system has distinct steady states, and the difference in the protein levels between each steady state is observable.
+ The other two distance metrics used in StabilityFinder are the variance within each cluster and the overall (between cluster) variance. The within cluster variance ensures that the clusters are tight, and the between cluster variance is used to ensure the clusters are far apart from each other. In the context of this thesis, the ideal behaviour of a system is tight, widely separated clusters. This means that the genetic system has distinct steady states, and the difference in the protein levels between each steady state is observable.
 
 \begin{align}
 	d_1 &= C = M_c \label{eq:dist1}\\
@@ -331,7 +331,7 @@ To validate these methods I compare them to ABC-SysBio model selection~\autocite
 
  \begin{algorithmic}[1]
  	\Let{k}{number of parameters}
- 	\Let{i}{prior for each parameter}
+ 	\Let{i}{marginal prior distribution of each parameter}
     \Statex
 		\For{each model $m$ of $M$}
 		\State Prior$\sim U(a, b)$
@@ -463,7 +463,7 @@ I next applied StabilityFinder to the case of the Gardner switch under stochasti
 \begin{figure*}[htbp]
 \begin{center}
 	\includegraphics[scale=0.8]{../../chapters/chapterStabilityFinder/images/gardner_model.png}
-	\caption[StabilityFinder used on the Gardner toggle switch]{\label{fig:gard_mod} The Gardner switch model used to test StabilityFinder. The Gardner model (A) consists of two mutually repressing transcription factors. It can be reduced to a two-equation system (B) , where $u$ and $v$ are the two transcription factors, $a_1$,$a_2$ are their effective rates of synthesis, $u$,$v$ are their concentrations and $\beta$, $\gamma$ represent the cooperativity of each promoter. (C) Two samples of deterministic simulated timecourses of the Gardner switch and (D) The resulting phase plot. (E) Two samples of timecourses of the stochastic simulations and (F) the resulting stationary distributions.}
+	\caption[StabilityFinder used on the Gardner toggle switch]{\label{fig:gard_mod} The Gardner switch model used to test StabilityFinder. The Gardner model (A) consists of two mutually repressing transcription factors. It can be reduced to a two-equation system (B) , where $u$ and $v$ are the two transcription factors, $a_1$,$a_2$ are their effective rates of synthesis, $u$, $v$ are their concentrations and $\beta$, $\gamma$ represent the cooperativity of each promoter. (C) Two samples of deterministic simulated timecourses of the Gardner switch and (D) The resulting phase plot. (E) Two samples of timecourses of the stochastic simulations and (F) the resulting stationary distributions.}
 \end{center}
 \end{figure*}
 
@@ -608,7 +608,7 @@ Using StabilityFinder a more complex picture of the parameter space that can pro
 \begin{figure*}[htbp]
 	\centerfloat
 		\includegraphics[width=1.2\textwidth]{../../chapters/chapterStabilityFinder/images/Lu_234.png}
-		\caption[ Design principles of multistable switches]{ \label{fig:lu_234}: Design principles of multistable switches. (A) Using the Lu model with added positive autoregulation we uncover the design principles dictating if a switch will be bistable, tristable, or will have 4 steady states. (B-D) By considering the bivariate distributions of the parameters we can uncover the differences in the parameters of a bistable switch compared to a tristable switch, compared to a quadristable switch . The posterior distribution of the bistable switch is shown in purple, of the tristable switch in pink and of a quadristable in green. The bivariate distributions for which a difference is observed between the stabilities are in black boxes. An example of a phase plot from each behaviour is shown next to the corresponding posterior distribution.}
+		\caption[ Design principles of multistable switches]{ \label{fig:lu_234}Design principles of multistable switches. (A) Using the Lu model with added positive autoregulation we uncover the design principles dictating if a switch will be bistable, tristable, or will have 4 steady states. (B-D) By considering the bivariate distributions of the parameters we can uncover the differences in the parameters of a bistable switch compared to a tristable switch, compared to a quadristable switch . The posterior distribution of the bistable switch is shown in purple, of the tristable switch in pink and of a quadristable in green. The bivariate distributions for which a difference is observed between the stabilities are in black boxes. An example of a phase plot from each behaviour is shown next to the corresponding posterior distribution.}
 \end{figure*}
 
 
@@ -639,7 +639,7 @@ This same principle can be seen in the bistable and the tristable switches. In t
 \begin{figure*}[bp]
 	\begin{center}
 		\includegraphics[width=\textwidth]{../../chapters/chapterStabilityFinder/images/LU-234-phase-all.png}
-		\caption[Phase plots of multistable switches]{ \label{fig:lu_234_phase}: The phase plots from 100 particles from each posterior. (A) The \\acrshort{cs-lu} (B) \acrshort{sp-lu} and (C) \acrshort{dp-lu}. Each particle is represented by a different shade of blue. There is a strong conservation on the location of the steady states between particles.  }
+		\caption[Phase plots of multistable switches]{ \label{fig:lu_234_phase}The phase plots from 100 particles from each posterior. (A) The \\acrshort{cs-lu} (B) \acrshort{sp-lu} and (C) \acrshort{dp-lu}. Each particle is represented by a different shade of blue. There is a strong conservation on the location of the steady states between particles.  }
 	\end{center}
 \end{figure*}
 
@@ -676,7 +676,7 @@ Transcription rate fold change & lxx       & 8-12    \\ \bottomrule
 \begin{figure*}[h]
 \begin{center}
 \includegraphics[scale=0.6]{../../chapters/chapterStabilityFinder/images/lu_6ss.png}
-\caption[The three-node mutual repression model, with added positive auto-regulation on each node.]{ \label{fig:fig8}: The three-node mutual repression model, with added positive auto-regulation on each node. (A) The model. The model is studied in two dimensions using StabilityFinder, for nodes $X$ and $Y$. (B) The phase plot of 100 particles from the posterior found by StabilityFinder. There are 6 steady states. (C) The posterior distribution of the 6-steady state three-node system. Parameters $kx$ and $nxy$ are the most constrained.}
+\caption[The three-node mutual repression model, with added positive auto-regulation on each node.]{ \label{fig:fig8}The three-node mutual repression model, with added positive auto-regulation on each node. (A) The model. The model is studied in two dimensions using StabilityFinder, for nodes $X$ and $Y$. (B) The phase plot of 100 particles from the posterior found by StabilityFinder. (C) An example phase plot from one particle. There are 6 steady states. (D) The posterior distribution of the 6-steady state three-node system. Parameters $kx$ and $nxy$ are the most constrained.}
 \end{center}
 \end{figure*}
 
@@ -711,25 +711,25 @@ $$
 \end{array}
 $$
 
-For the model with added double positive autoregulation (model \acrshort{dp-ma}) the following equations are added to the system: 
+\noindent For the model with added double positive autoregulation (model \acrshort{dp-ma}) the following equations are added to the system: 
 
 $$
 \begin{array}{cccc} 
-    \textrm{A2} + \textrm{gA} \stackrel{\textrm{aut 1}}{\longrightarrow} \textrm{A2gA} \\
-    \textrm{A2gA} \stackrel{\textrm{aut 2}}{\longrightarrow} \textrm{A} + \textrm{A2gA}\\
-    \textrm{A2gA} \stackrel{\textrm{aut 3}}{\longrightarrow} \textrm{A2}+ \textrm{gA}  \\
-    \textrm{B2} + \textrm{gB} \stackrel{\textrm{aut 1}}{\longrightarrow} \textrm{B2gB} \\
-    \textrm{B2gB} \stackrel{\textrm{aut 2}}{\longrightarrow} \textrm{B} + \textrm{B2gB}\\
-    \textrm{B2gB} \stackrel{\textrm{aut 3}}{\longrightarrow} \textrm{B2}+ \textrm{gB}  \\
+    \textrm{A2} + \textrm{gA} \stackrel{\textrm{aut\_1}}{\longrightarrow} \textrm{A2gA} \\
+    \textrm{A2gA} \stackrel{\textrm{aut\_2}}{\longrightarrow} \textrm{A} + \textrm{A2gA}\\
+    \textrm{A2gA} \stackrel{\textrm{aut\_3}}{\longrightarrow} \textrm{A2}+ \textrm{gA}  \\
+    \textrm{B2} + \textrm{gB} \stackrel{\textrm{aut\_1}}{\longrightarrow} \textrm{B2gB} \\
+    \textrm{B2gB} \stackrel{\textrm{aut\_2}}{\longrightarrow} \textrm{B} + \textrm{B2gB}\\
+    \textrm{B2gB} \stackrel{\textrm{aut\_3}}{\longrightarrow} \textrm{B2}+ \textrm{gB}  \\
 \end{array}
 $$
 
-The \acrshort{ode}s describing the above switches are shown in Appendix~\ref{ap:ODEs}. These models are too complex to be solved analytically and I use StabilityFinder to fit the models to a bistable behaviour using the prior distributions shown in Table~\ref{tab:MA_priors}. The prior values were chosen using the parameter scan used in Chapter~\ref{ch:abcsysbio}. The two models used and the resulting phase plots are shown in Figure~\ref{fig:ma-cs-dp-phase} and the posterior distributions obtained are shown in Figure~\ref{fig:ma-sym-det-post}. 
+\noindent The \acrshort{ode}s describing the above switches are shown in Appendix~\ref{ap:ODEs}. These models are too complex to be solved analytically and I use StabilityFinder to fit the models to a bistable behaviour using the prior distributions shown in Table~\ref{tab:MA_priors}. The prior values were chosen using the parameter scan used in Chapter~\ref{ch:abcsysbio}. All priors given assume a uniform distribution. The two models used and the resulting phase plots are shown in Figure~\ref{fig:ma-cs-dp-phase} and the posterior distributions obtained are shown in Figure~\ref{fig:ma-sym-det-post}. 
 
 
 \begin{table}[htpb]
 \centering
-\caption{The priors used in the simple (S) and double positive (DP) mass action deterministic and stochastic models }
+\caption{The priors used in the classic (CS) and double positive (DP) mass action deterministic and stochastic models }
 \label{tab:MA_priors}
 \rotatebox{90}{
 \begin{tabular}{@{}llllllll@{}}
@@ -831,7 +831,7 @@ As can be seen in Figure~\ref{fig:fig7}, differences in the parameter values are
 
 \subsubsection{Bayes factors depend on the choice of priors}
 
-An important aspect of Bayes factors, and thus robustness, that must be investigated is its dependence on the prior distributions. From Equation~\ref{eq:final_bayes} we can expect that the measure for robustness will depend on the size of the prior. The prior distributions for model comparison are ideally chosen by using related data that can inform the choice. But this situation can be rare and priors are selected by using information from the literature in combination with rough guesses~\autocite{Kass:1995eh}. Often simplifications are made and the choice of large prior ranges can seem like like an attractive option, as to impose less bias to the priors. Nevertheless this can have an effect on the Bayes factors calculated. The choice of improper, or very large priors can skew Equation~\ref{eq:final_bayes} to favour one model over the other~\autocite{Kass:1995eh}. In this section I demonstrate that the choice of priors for the toggle switch models has a significant effect on the calculated robustness of the models. This has to be taken under consideration when analysing candidate models for use in synthetic biology applications, as a poor choice of priors can skew the robustness analysis in favour of one model over the other, when no such robustness gain will be observed \textit{in vivo}.    
+An important aspect of Bayes factors, and thus robustness, that must be investigated is its dependence on the prior distributions. From Equation~\ref{eq:final_bayes} we can expect that the measure for robustness will depend on the size of the prior. The prior distributions for model comparison are ideally chosen by using related data that can inform the choice. But this situation can be rare and priors are selected by using information from the literature in combination with rough guesses~\autocite{Kass:1995vb}. Often simplifications are made and the choice of large prior ranges can seem like like an attractive option, as to impose less bias to the priors. Nevertheless this can have an effect on the Bayes factors calculated. The choice of improper, or very large priors can skew Equation~\ref{eq:final_bayes} to favour one model over the other~\autocite{Kass:1995vb}. In this section I demonstrate that the choice of priors for the toggle switch models has a significant effect on the calculated robustness of the models. This has to be taken under consideration when analysing candidate models for use in synthetic biology applications, as a poor choice of priors can skew the robustness analysis in favour of one model over the other, when no such robustness gain will be observed \textit{in vivo}.    
 
 In order to demonstrate the effect of prior choice on robustness, I use the \acrshort{cs-ma} model. I use StabilityFinder to approximate the posterior distribution that makes this model bistable using two ranges of prior distributions. The two sets of prior distributions used here are denoted as very narrow (VN2) and wide (W) in Table~\ref{tab:prior_study}. The posterior distributions obtained corresponding to the VN priors and W priors are shown in Figure~\ref{fig:priors_matter}A and B respectively. It can be seen that the posterior distribution of the model with VN2 priors is more constrained that the model with W priors. This indicates that if one of the parameters is able to have a larger value, then the constraints on the rest of the parameters are not necessary any more. This results in the unconstrained posterior distribution observed in Figure~\ref{fig:priors_matter}B.
 
@@ -868,7 +868,7 @@ In Section~\ref{sec:ma_sw} we found that the \acrshort{dp-ma} is more robust tha
 
 %The Bayes factors, corresponding to the ratio of the robustness measure of \acrshort{dp-ma} to the robustness measure of \acrshort{cs-ma} is given relative to the difference in the volumes of the priors of the two models in Figure~\ref{fig:priors_matter2}B.
 
-We find that the robustness measure changed as the priors of the models changed. When both models have very narrow or when both models have wide priors then their robustness measures are very similar. When both models have vary narrow priors the Bayes factor is equal to 1.32 and when the priors are wide the Bayes factor is equal to 1.06. In both these cases the Bayes factor is less than 3.2, and therefore is considered not significant~\autocite{Kass:1995vb}. When the priors for both models are narrow, the Bayes factor is equal to 2.25, which is still considered not significant. Most notably, when the priors for the \acrshort{cs-ma} model are very narrow and the priors of the \acrshort{dp-ma} model are narrow, the Bayes' factor is at 9.14. The Bayes factor is now greater than 3.2, but less than 10, and is thus considered substantial~\autocite{Kass:1995eh}.  These results are summarised in Table~\ref{tab:bayes_vols}.
+We find that the robustness measure changed as the priors of the models changed. When both models have very narrow or when both models have wide priors then their robustness measures are very similar. When both models have vary narrow priors the Bayes factor is equal to 1.32 and when the priors are wide the Bayes factor is equal to 1.06. In both these cases the Bayes factor is less than 3.2, and therefore is considered not significant~\autocite{Kass:1995vb}. When the priors for both models are narrow, the Bayes factor is equal to 2.25, which is still considered not significant. Most notably, when the priors for the \acrshort{cs-ma} model are very narrow and the priors of the \acrshort{dp-ma} model are narrow, the Bayes' factor is at 9.14. The Bayes factor is now greater than 3.2, but less than 10, and is thus considered substantial~\autocite{Kass:1995vb}.  These results are summarised in Table~\ref{tab:bayes_vols}.
 
 \begin{table}[tb]
 \centering
@@ -931,9 +931,7 @@ In this chapter I discussed the algorithm I developed and demonstrated how it ca
 
 I first tested StabilityFinder on a known switch and then proceeded to apply it to more complex models. I uncovered the design principles that make the Lu switch bistable, tristable or quadristable. I extended the Lu models to a three-node switch and showed how it can achieve 6 steady states. 
 
-Furthermore, I built two novel models of the toggle switch which do not use the \acrshort{qssa} and showed that the \acrshort{qssa} cannot be justified in these models. Using these models I studied the effect positive autoregulation has on the robustness of a model. I also studied the effect the priors have on the posteriors and on the robustness of a model. Finally, using stochastic modelling I showed that these switch models are capable of both bistable and tristable behaviour. 
-
-In the next chapter I study the genetic toggle switch in the lab and fit the toggle switch models used here to experimental data. 
+Furthermore, I built two novel models of the toggle switch which do not use the \acrshort{qssa} and showed that the \acrshort{qssa} cannot be justified in these models. Using these models I studied the effect positive autoregulation has on the robustness of a model. I also studied the effect the priors have on the posteriors and on the robustness of a model. Finally, using stochastic modelling I showed that these switch models are capable of both bistable and tristable behaviour. In the next chapter I study the genetic toggle switch in the lab and fit the toggle switch models used here to experimental data. 
 
 
 

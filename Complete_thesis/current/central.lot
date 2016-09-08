@@ -3,11 +3,11 @@
 \select@language {british}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {table}{\numberline {2.1}{\ignorespaces Summary of stability for the CS and DP switches found via different modelling approaches\relax }}{28}{table.caption.7}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Summary of stabilities for the classical switch and the switch with double positive feedback found via different modelling approaches\relax }}{28}{table.caption.7}
 \contentsline {table}{\numberline {2.2}{\ignorespaces Examples of common genetic coupled chemical reactions. $p$ stands for promoter, and $A$ represents a protein. $A_2$ is the dimer of protein $A$. \relax }}{30}{table.caption.8}
 \contentsline {table}{\numberline {2.3}{\ignorespaces Predator-prey chemical reactions\relax }}{34}{table.caption.12}
 \contentsline {table}{\numberline {2.4}{\ignorespaces Defining reaction hazards\relax }}{38}{table.caption.14}
-\contentsline {table}{\numberline {2.5}{\ignorespaces Bayes factor evidence interpretation. Modified from~\textcite {Kass:1995eh}\relax }}{47}{table.caption.16}
+\contentsline {table}{\numberline {2.5}{\ignorespaces Bayes factor evidence interpretation. Modified from~\textcite {Kass:1995vb}\relax }}{47}{table.caption.16}
 \addvspace {10pt}
 \contentsline {table}{\numberline {3.1}{\ignorespaces Toggle switch model reactions under mass action kinetics\relax }}{53}{table.caption.19}
 \contentsline {table}{\numberline {3.2}{\ignorespaces Simple mass action switch reactions\relax }}{56}{table.caption.21}
@@ -19,10 +19,10 @@
 \contentsline {table}{\numberline {4.1}{\ignorespaces Gardner switch priors in the deterministic and stochastic cases\relax }}{93}{table.caption.39}
 \contentsline {table}{\numberline {4.2}{\ignorespaces Priors of the classical (\acrshort {cs-lu}), single positive (\acrshort {sp-lu}) and double positive (\acrshort {dp-lu}) models.\relax }}{99}{table.caption.44}
 \contentsline {table}{\numberline {4.3}{\ignorespaces Priors used in the three-node switch\relax }}{107}{table.caption.49}
-\contentsline {table}{\numberline {4.4}{\ignorespaces The priors used in the simple (S) and double positive (DP) mass action deterministic and stochastic models \relax }}{110}{table.caption.51}
-\contentsline {table}{\numberline {4.5}{\ignorespaces Design principles of the stochastic MA bistable and tristable switches\relax }}{115}{table.caption.55}
-\contentsline {table}{\numberline {4.6}{\ignorespaces Priors used for studying the effect of priors to robustness\relax }}{118}{table.caption.57}
-\contentsline {table}{\numberline {4.7}{\ignorespaces Bayes factors of the \acrshort {dp-ma} against the \acrshort {cs-ma} model using different volumes of priors\relax }}{121}{table.caption.59}
+\contentsline {table}{\numberline {4.4}{\ignorespaces The priors used in the classic (CS) and double positive (DP) mass action deterministic and stochastic models \relax }}{111}{table.caption.51}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Design principles of the stochastic MA bistable and tristable switches\relax }}{116}{table.caption.55}
+\contentsline {table}{\numberline {4.6}{\ignorespaces Priors used for studying the effect of priors to robustness\relax }}{120}{table.caption.57}
+\contentsline {table}{\numberline {4.7}{\ignorespaces Bayes factors of the \acrshort {dp-ma} against the \acrshort {cs-ma} model using different volumes of priors\relax }}{122}{table.caption.59}
 \addvspace {10pt}
 \contentsline {table}{\numberline {5.1}{\ignorespaces The priors used for the 1D and 2D ABC-Flow model fitting to simulated data\relax }}{144}{table.caption.71}
 \contentsline {table}{\numberline {5.2}{\ignorespaces The parameters inferred from simulated data\relax }}{145}{table.caption.75}
