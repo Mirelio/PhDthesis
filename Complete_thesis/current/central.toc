@@ -1,9 +1,9 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
 \select@language {british}
-\contentsline {chapter}{List of Figures}{11}{section*.2}
-\contentsline {chapter}{List of Tables}{15}{section*.3}
-\contentsline {chapter}{List of Abbreviations}{17}{section*.4}
+\contentsline {chapter}{List of Figures}{13}{section*.3}
+\contentsline {chapter}{List of Tables}{17}{section*.4}
+\contentsline {chapter}{List of Abbreviations}{19}{section*.5}
 \contentsline {chapter}{\chapternumberline {1}Introduction}{21}{chapter.1}
 \contentsline {section}{\numberline {1.1}Introduction to synthetic biology}{21}{section.1.1}
 \contentsline {section}{\numberline {1.2}Quantitative modelling in synthetic biology}{21}{section.1.2}
@@ -21,7 +21,7 @@
 \contentsline {subsection}{\numberline {2.2.2}Transcriptional binding kinetics}{31}{subsection.2.2.2}
 \contentsline {subsubsection}{\numberline {2.2.2.1}Hill formalism}{31}{subsubsection.2.2.2.1}
 \contentsline {subsubsection}{\numberline {2.2.2.2}Shea-Ackers formalism}{32}{subsubsection.2.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Simulation of dynamical systems}{33}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.3}Simulation of deterministic dynamical systems}{33}{subsection.2.2.3}
 \contentsline {subsubsection}{\numberline {2.2.3.1}Deterministic mass action kinetics}{33}{subsubsection.2.2.3.1}
 \contentsline {subsubsection}{\numberline {2.2.3.2}Assumptions of deterministic modelling}{34}{subsubsection.2.2.3.2}
 \contentsline {subsection}{\numberline {2.2.4}Nonlinear dynamical modelling}{35}{subsection.2.2.4}
@@ -30,14 +30,14 @@
 \contentsline {subsubsection}{\numberline {2.2.4.3}Steady state stability}{35}{subsubsection.2.2.4.3}
 \contentsline {subsection}{\numberline {2.2.5}Stochastic modelling of dynamical systems}{37}{subsection.2.2.5}
 \contentsline {subsubsection}{\numberline {2.2.5.1}Simulating stochastic models}{37}{subsubsection.2.2.5.1}
-\contentsline {subsubsection}{\numberline {2.2.5.2}The Gillespie algorithm}{38}{subsubsection.2.2.5.2}
+\contentsline {subsubsection}{\numberline {2.2.5.2}The Gillespie algorithm}{37}{subsubsection.2.2.5.2}
 \contentsline {subsubsection}{\numberline {2.2.5.3}Stochastic mass action kinetics}{38}{subsubsection.2.2.5.3}
-\contentsline {section}{\numberline {2.3}The Bayesian solution to parameter inference and system design}{39}{section.2.3}
+\contentsline {section}{\numberline {2.3}The Bayesian approach to parameter inference and system design}{39}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}\acrfull {abc}}{40}{subsection.2.3.1}
 \contentsline {subsubsection}{\numberline {2.3.1.1}Particle sampling}{42}{subsubsection.2.3.1.1}
 \contentsline {subsubsection}{\numberline {2.3.1.2}Perturbation}{42}{subsubsection.2.3.1.2}
-\contentsline {subsubsection}{\numberline {2.3.1.3}Particle simulation}{43}{subsubsection.2.3.1.3}
-\contentsline {subsubsection}{\numberline {2.3.1.4}Weight calculation}{43}{subsubsection.2.3.1.4}
+\contentsline {subsubsection}{\numberline {2.3.1.3}Particle simulation}{42}{subsubsection.2.3.1.3}
+\contentsline {subsubsection}{\numberline {2.3.1.4}Weight calculation}{42}{subsubsection.2.3.1.4}
 \contentsline {subsubsection}{\numberline {2.3.1.5}ABC SMC algorithm example}{43}{subsubsection.2.3.1.5}
 \contentsline {subsection}{\numberline {2.3.2}Derivation of model parametric robustness defined via Bayesian statistics}{45}{subsection.2.3.2}
 \contentsline {chapter}{\chapternumberline {3}Positive feedback loops can increase the robustness of a genetic toggle switch}{49}{chapter.3}
@@ -49,16 +49,16 @@
 \contentsline {section}{\numberline {3.4}Designing a simple synthetic switch}{55}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Development of the mass action model for the genetic toggle switch}{55}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}Parameter scan for model stability}{57}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Toggle switch parameter inference}{60}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}Design specifications}{60}{subsection.3.4.4}
-\contentsline {subsubsection}{\numberline {3.4.4.1}Distance function}{62}{subsubsection.3.4.4.1}
-\contentsline {subsection}{\numberline {3.4.5}Results}{63}{subsection.3.4.5}
-\contentsline {section}{\numberline {3.5}Designing a more robust genetic toggle switch}{65}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Models of the genetic toggle switch}{65}{subsection.3.5.1}
-\contentsline {subsubsection}{\numberline {3.5.1.1}Autoregulation switches phase space and bifurcation analysis}{68}{subsubsection.3.5.1.1}
-\contentsline {subsection}{\numberline {3.5.2}\acrshort {abc} \acrshort {smc} for model selection}{71}{subsection.3.5.2}
-\contentsline {section}{\numberline {3.6}Discussion}{74}{section.3.6}
-\contentsline {section}{\numberline {3.7}Summary}{76}{section.3.7}
+\contentsline {subsection}{\numberline {3.4.3}Toggle switch parameter inference}{59}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Design specifications}{61}{subsection.3.4.4}
+\contentsline {subsubsection}{\numberline {3.4.4.1}Distance function}{61}{subsubsection.3.4.4.1}
+\contentsline {subsection}{\numberline {3.4.5}Results}{62}{subsection.3.4.5}
+\contentsline {section}{\numberline {3.5}Designing a more robust genetic toggle switch}{64}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Models of the genetic toggle switch}{64}{subsection.3.5.1}
+\contentsline {subsubsection}{\numberline {3.5.1.1}Autoregulatory switches phase space and bifurcation analysis}{67}{subsubsection.3.5.1.1}
+\contentsline {subsection}{\numberline {3.5.2}\acrshort {abc} \acrshort {smc} for model selection}{70}{subsection.3.5.2}
+\contentsline {section}{\numberline {3.6}Discussion}{73}{section.3.6}
+\contentsline {section}{\numberline {3.7}Summary}{75}{section.3.7}
 \contentsline {chapter}{\chapternumberline {4}Dynamics of multi-stable switches}{77}{chapter.4}
 \contentsline {section}{\numberline {4.1}Introduction}{77}{section.4.1}
 \contentsline {section}{\numberline {4.2}Contributions to this Chapter}{77}{section.4.2}

@@ -15,13 +15,13 @@
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Latin Hypercube sampling}}{58}{figure.caption.22}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Phase space examples of a monostable and a bistable switch}}{58}{figure.caption.23}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Distributions of the parameters resulting in each stability obtained by the parameter scan}}{59}{figure.caption.24}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Design specification for ABC SMC parameter inference}}{62}{figure.caption.27}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Posterior distribution of the switch obtained from ABC system design}}{64}{figure.caption.28}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Toggle switch models with autoregulation using the Shea-Ackers formalism}}{66}{figure.caption.29}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Model designs considered for model selection.}}{67}{figure.caption.30}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Phase plane analysis of the switches with positive autoregulation}}{69}{figure.caption.31}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Phase plane and bifurcation analysis of the switch with negative autoregulation}}{70}{figure.caption.32}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces ABC model selection resulting posterior distribution}}{73}{figure.caption.35}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Design specification for ABC SMC parameter inference}}{61}{figure.caption.27}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Posterior distribution of the switch obtained from ABC system design}}{63}{figure.caption.28}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Model designs considered for model selection.}}{65}{figure.caption.29}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Toggle switch models with autoregulation using the Shea-Ackers formalism}}{66}{figure.caption.30}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Phase plane analysis of the switches with positive autoregulation}}{68}{figure.caption.31}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Phase plane and bifurcation analysis of the switch with negative autoregulation}}{69}{figure.caption.32}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces ABC model selection resulting posterior distribution}}{72}{figure.caption.35}
 \addvspace {10pt}
 \contentsline {figure}{\numberline {4.1}{\ignorespaces StabilityFinder algorithm overview}}{80}{figure.caption.36}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Robustness analysis of case study 1}}{90}{figure.caption.37}
@@ -39,7 +39,7 @@
 \contentsline {figure}{\numberline {4.14}{\ignorespaces Robustness comparison of the \acrshort {cs-ma} and \acrshort {dp-ma} switches}}{112}{figure.caption.53}
 \contentsline {figure}{\numberline {4.15}{\ignorespaces Testing the QSSA assumptions on the mass action models}}{115}{figure.caption.54}
 \contentsline {figure}{\numberline {4.16}{\ignorespaces Multistability in the stochastic mass action models}}{118}{figure.caption.56}
-\contentsline {figure}{\numberline {4.17}{\ignorespaces The volume of the priors has an effect on the posterior distribution obtained.}}{121}{figure.caption.58}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces The volume of the priors has an effect on the posterior distribution obtained.}}{122}{figure.caption.58}
 \contentsline {figure}{\numberline {4.18}{\ignorespaces Changing the priors in both models affects the robustness measure.}}{123}{figure.caption.60}
 \addvspace {10pt}
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Flow cytometry experimental setup}}{128}{figure.caption.61}

@@ -162,9 +162,6 @@
       \range{pages}{11}
     \endentry
     \entry{Anonymous:2015tj}{manual}{}
-      \list{organization}{1}{%
-        {Thermo Fisher Scientific}%
-      }
       \field{sortinit}{A}
       \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
       \field{labelyear}{2015}
@@ -467,30 +464,6 @@
       \field{year}{2005}
       \field{pages}{496\bibrangedash 498}
       \range{pages}{3}
-    \endentry
-    \entry{Canton:2008fv}{article}{}
-      \name{author}{3}{}{%
-        {{hash=b4d08056b58dbc7971eed4ac4c0638ca}{Canton}{C\bibinitperiod}{Barry}{B\bibinitperiod}{}{}{}{}}%
-        {{hash=d0283c6dc4c0510cb49d943cbfb1bab9}{Labno}{L\bibinitperiod}{Anna}{A\bibinitperiod}{}{}{}{}}%
-        {{hash=56bcc611788a8cec916f128ba7c4f04b}{Endy}{E\bibinitperiod}{Drew}{D\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{bdebb415e5cee92e987e7f94df7373dc}
-      \strng{fullhash}{bdebb415e5cee92e987e7f94df7373dc}
-      \field{sortinit}{C}
-      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
-      \field{labelyear}{2008}
-      \field{labelmonth}{06}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Nature Biotechnology}
-      \field{month}{06}
-      \field{number}{7}
-      \field{title}{{Refinement and standardization of synthetic biological parts and devices.}}
-      \field{volume}{26}
-      \field{year}{2008}
-      \field{pages}{787\bibrangedash 793}
-      \range{pages}{7}
     \endentry
     \entry{Chen:2009ea}{article}{}
       \name{author}{3}{}{%
@@ -1222,6 +1195,30 @@
       \field{pages}{S7}
       \range{pages}{-1}
     \endentry
+    \entry{Gilks96}{book}{}
+      \name{author}{3}{}{%
+        {{hash=fbe51cc5647cac7e62043e8490f7d028}{Gilks}{G\bibinitperiod}{W.\bibnamedelimi R.}{W\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+        {{hash=523a560db2b7d808a6d9f2a57a41a8d2}{Richardson}{R\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=6864535ec061243cbefd13497e15ceb9}{Spiegelhalter}{S\bibinitperiod}{D.\bibnamedelimi J.}{D\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {London}%
+      }
+      \list{publisher}{2}{%
+        {Chapman}%
+        {Hall}%
+      }
+      \strng{namehash}{d24ce055aeb7b9ffa7f44cb0c7ee194e}
+      \strng{fullhash}{d24ce055aeb7b9ffa7f44cb0c7ee194e}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelyear}{1996 (ISBN: 0-412-05551-1)}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Markov Chain Monte Carlo in Practice}
+      \field{year}{1996 (ISBN: 0-412-05551-1)}
+    \endentry
     \entry{Gillespie:1977ww}{article}{}
       \name{author}{1}{}{%
         {{hash=871a7dbf8fa6b3d378a1969060d05205}{Gillespie}{G\bibinitperiod}{D\bibnamedelima T}{D\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
@@ -1360,6 +1357,26 @@
       \field{pages}{2790\bibrangedash 2799}
       \range{pages}{10}
     \endentry
+    \entry{Hill:1910vo}{article}{}
+      \name{author}{1}{}{%
+        {{hash=8e0fd52564de03e560c7d55454dc720e}{Hill}{H\bibinitperiod}{A\bibnamedelima V}{A\bibinitperiod\bibinitdelim V\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{8e0fd52564de03e560c7d55454dc720e}
+      \strng{fullhash}{8e0fd52564de03e560c7d55454dc720e}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelyear}{1910}
+      \field{labelmonth}{01}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the Physiological society}
+      \field{month}{01}
+      \field{title}{{The possible effects of the aggregation of the molecules of haemoglobin on its dissociation curves}}
+      \field{year}{1910}
+      \field{pages}{4\bibrangedash 7}
+      \range{pages}{4}
+    \endentry
     \entry{Holtz:2010bm}{article}{}
       \name{author}{2}{}{%
         {{hash=69100e6fb1df267017669b586f77fedc}{Holtz}{H\bibinitperiod}{William\bibnamedelima J}{W\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
@@ -1445,6 +1462,70 @@
       \field{year}{2004}
       \field{pages}{41\bibrangedash 53}
       \range{pages}{13}
+    \endentry
+    \entry{Hucka:2003wg}{article}{}
+      \name{author}{43}{}{%
+        {{hash=b815ed5912efce36d6966309f612406b}{Hucka}{H\bibinitperiod}{M}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=1f376e491733fc48bdf3616089b5394b}{Finney}{F\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=1aeecd737c196487af71055aa393e148}{Sauro}{S\bibinitperiod}{H\bibnamedelima M}{H\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{hash=5bc676b6622ab9f27ba77a8f5ce9d17a}{Bolouri}{B\bibinitperiod}{H}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=62dc118c5c232f0673135eac97ef38d3}{Doyle}{D\bibinitperiod}{J\bibnamedelima C}{J\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+        {{hash=b524b91ba10309ab4bc17202de3f683a}{Kitano}{K\bibinitperiod}{H}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=d5826fcbd0bd1dc14828371849c7b73f}{Arkin}{A\bibinitperiod}{A\bibnamedelima P}{A\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+        {{hash=75ae7dae75c889f0a32a2b4e348461e1}{Bornstein}{B\bibinitperiod}{B\bibnamedelima J}{B\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=d967c984fc8d86e74608866eacb22d37}{Bray}{B\bibinitperiod}{D}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=d4f9cb312410033fdae99dc9241ac8bf}{Cornish-Bowden}{C\bibinithyphendelim B\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=a43ecf690a530867a59c73e5835696c1}{Cuellar}{C\bibinitperiod}{A\bibnamedelima A}{A\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=a16be28f78b61de1556d345380a9c07a}{Dronov}{D\bibinitperiod}{S}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=96effc31fb0cc6f2a029319d6f333c36}{Gilles}{G\bibinitperiod}{E\bibnamedelima D}{E\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{hash=7f089cd1b7865d3f0fc3acbb7e8ae5ae}{Ginkel}{G\bibinitperiod}{M}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=4281dbaa2586d64dae840de64bd78639}{Gor}{G\bibinitperiod}{V}{V\bibinitperiod}{}{}{}{}}%
+        {{hash=174ee3f44dc94394f154da19b429fadb}{Goryanin}{G\bibinitperiod}{I\bibnamedelima I}{I\bibinitperiod\bibinitdelim I\bibinitperiod}{}{}{}{}}%
+        {{hash=359fc36c26f1e5f3708c60e7b5d4b15d}{Hedley}{H\bibinitperiod}{W\bibnamedelima J}{W\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=53f75314fc24185debef6f60e13c3c82}{Hodgman}{H\bibinitperiod}{T\bibnamedelima C}{T\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+        {{hash=faea0730333f02f3ab0d9846c3e06705}{Hofmeyr}{H\bibinitperiod}{J-H}{J\bibinithyphendelim H\bibinitperiod}{}{}{}{}}%
+        {{hash=023e8925d914fafa69c499916f47d5cf}{Hunter}{H\bibinitperiod}{P\bibnamedelima J}{P\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=252773eeb303f62a2e779048c7aca94a}{Juty}{J\bibinitperiod}{N\bibnamedelima S}{N\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{hash=666edb38c6ffb83f21233b72c3c5f467}{Kasberger}{K\bibinitperiod}{J\bibnamedelima L}{J\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{hash=e11e62cb228a1d68240c7b9876a103b7}{Kremling}{K\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=d2a868fa9837fcefbe25c9b0a32087be}{Kummer}{K\bibinitperiod}{U}{U\bibinitperiod}{}{}{}{}}%
+        {{hash=c018506d79b6fcc2fc6f13117556d260}{Le\bibnamedelima Novere}{L\bibinitperiod\bibinitdelim N\bibinitperiod}{N}{N\bibinitperiod}{}{}{}{}}%
+        {{hash=00a9ed6d9967fa06ce388985e2572bfb}{Loew}{L\bibinitperiod}{L\bibnamedelima M}{L\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{hash=ccb0db6024a2c6cb83a6c160613d4d9e}{Lucio}{L\bibinitperiod}{D}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=15bad006371671ec5a577b7cbfb38d27}{Mendes}{M\bibinitperiod}{P}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=0e8be824f2ec3e9f36cca162b042a9e9}{Minch}{M\bibinitperiod}{E}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=506e5c8659d81097c9334a4d326a9cc4}{Mjolsness}{M\bibinitperiod}{E\bibnamedelima D}{E\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{hash=7f834c4bcf8181bb5bddc5d72942bf40}{Nakayama}{N\bibinitperiod}{Y}{Y\bibinitperiod}{}{}{}{}}%
+        {{hash=f35da70806349171d21fad2c687afb84}{Nelson}{N\bibinitperiod}{M\bibnamedelima R}{M\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+        {{hash=9fb9ca0b518606bbf9011af98aacbbcb}{Nielsen}{N\bibinitperiod}{P\bibnamedelima F}{P\bibinitperiod\bibinitdelim F\bibinitperiod}{}{}{}{}}%
+        {{hash=99259b91fc59cba7863481844ceb53a5}{Sakurada}{S\bibinitperiod}{T}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=5f417f25ca7676529c19d3c66651218e}{Schaff}{S\bibinitperiod}{J\bibnamedelima C}{J\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+        {{hash=e606e04e20838abd747366246fe8ff8e}{Shapiro}{S\bibinitperiod}{B\bibnamedelima E}{B\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{hash=4f4fd01366ec93d9ff96833350020a8b}{Shimizu}{S\bibinitperiod}{T\bibnamedelima S}{T\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{hash=71f42e8edcd63efd34678ed0d9697a37}{Spence}{S\bibinitperiod}{H\bibnamedelima D}{H\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{hash=793936a767ec080b6115f8ca168e6eef}{Stelling}{S\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=e8bc87fd9a78a7d5203999be8022da4c}{Takahashi}{T\bibinitperiod}{K}{K\bibinitperiod}{}{}{}{}}%
+        {{hash=14bee8d336130f88e263ebbe3c7d5433}{Tomita}{T\bibinitperiod}{M}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=f7e8e8b463eb9f6c33faebd6367a9696}{Wagner}{W\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=3702f1c146e64a6c91fc47b81ea59fc7}{Wang}{W\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{2ed354b93cd2fb46c6d5aef4a2899c6f}
+      \strng{fullhash}{cbfa1c27e1fd762357d268c828505961}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelyear}{2003}
+      \field{labelmonth}{03}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Bioinformatics (Oxford, England)}
+      \field{month}{03}
+      \field{number}{4}
+      \field{title}{{The systems biology markup language (SBML): a medium for representation and exchange of biochemical network models.}}
+      \field{volume}{19}
+      \field{year}{2003}
+      \field{pages}{524\bibrangedash 531}
+      \range{pages}{8}
     \endentry
     \entry{Finney:2003vk}{misc}{}
       \name{author}{13}{}{%

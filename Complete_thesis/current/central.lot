@@ -11,10 +11,10 @@
 \addvspace {10pt}
 \contentsline {table}{\numberline {3.1}{\ignorespaces Toggle switch model reactions under mass action kinetics\relax }}{53}{table.caption.19}
 \contentsline {table}{\numberline {3.2}{\ignorespaces Simple mass action switch reactions\relax }}{56}{table.caption.21}
-\contentsline {table}{\numberline {3.3}{\ignorespaces Toggle switch inducer equations\relax }}{61}{table.caption.25}
-\contentsline {table}{\numberline {3.4}{\ignorespaces The prior distributions used for the standard toggle switch parameter inference. The values indicate the lower and upper limits (inclusive) of a uniform distribution.\relax }}{62}{table.caption.26}
-\contentsline {table}{\numberline {3.5}{\ignorespaces Autoregulated switches additional equations\relax }}{72}{table.caption.33}
-\contentsline {table}{\numberline {3.6}{\ignorespaces The prior distributions used for model selection. The values indicate the lower and upper limits of a uniform distribution.\relax }}{72}{table.caption.34}
+\contentsline {table}{\numberline {3.3}{\ignorespaces Toggle switch inducer equations\relax }}{60}{table.caption.25}
+\contentsline {table}{\numberline {3.4}{\ignorespaces The prior distributions used for the standard toggle switch parameter inference. The values indicate the lower and upper limits (inclusive) of a uniform distribution.\relax }}{61}{table.caption.26}
+\contentsline {table}{\numberline {3.5}{\ignorespaces Autoregulated switches additional equations\relax }}{71}{table.caption.33}
+\contentsline {table}{\numberline {3.6}{\ignorespaces The prior distributions used for model selection. The values indicate the lower and upper limits of a uniform distribution.\relax }}{71}{table.caption.34}
 \addvspace {10pt}
 \contentsline {table}{\numberline {4.1}{\ignorespaces Gardner switch priors in the deterministic and stochastic cases\relax }}{93}{table.caption.39}
 \contentsline {table}{\numberline {4.2}{\ignorespaces Priors of the classical (\acrshort {cs-lu}), single positive (\acrshort {sp-lu}) and double positive (\acrshort {dp-lu}) models.\relax }}{99}{table.caption.44}
@@ -22,7 +22,7 @@
 \contentsline {table}{\numberline {4.4}{\ignorespaces The priors used in the classic (CS) and double positive (DP) mass action deterministic and stochastic models \relax }}{111}{table.caption.51}
 \contentsline {table}{\numberline {4.5}{\ignorespaces Design principles of the stochastic MA bistable and tristable switches\relax }}{116}{table.caption.55}
 \contentsline {table}{\numberline {4.6}{\ignorespaces Priors used for studying the effect of priors to robustness\relax }}{120}{table.caption.57}
-\contentsline {table}{\numberline {4.7}{\ignorespaces Bayes factors of the \acrshort {dp-ma} against the \acrshort {cs-ma} model using different volumes of priors\relax }}{122}{table.caption.59}
+\contentsline {table}{\numberline {4.7}{\ignorespaces Bayes factors of the \acrshort {dp-ma} against the \acrshort {cs-ma} model using different volumes of priors\relax }}{121}{table.caption.59}
 \addvspace {10pt}
 \contentsline {table}{\numberline {5.1}{\ignorespaces The priors used for the 1D and 2D ABC-Flow model fitting to simulated data\relax }}{144}{table.caption.71}
 \contentsline {table}{\numberline {5.2}{\ignorespaces The parameters inferred from simulated data\relax }}{145}{table.caption.75}

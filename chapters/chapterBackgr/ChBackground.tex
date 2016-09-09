@@ -4,10 +4,10 @@
 
 \section{Current understanding of the genetic toggle switch}
 
-One of the most common devices used in synthetic biology is the genetic toggle switch. A toggle switch consists of a set of transcription factors that mutually repress each other~\autocite{Gardner:2000vha}. Genetic switches play a major role in binary cell fate decisions like stem cell differentiation, as they are capable of exhibiting bistable behaviour. Bistability of a system is defined by the existence of two distinct phenotypic states but no intermediate state. Bistability is a property that is important in nature and a valuable resource to tap into in synthetic biology. It allows cells to alter their response to environmental cues and increases the overall population fitness by 'hedge-betting' the response of the population \autocite{Veening:2008da}. 
+One of the most common devices used in synthetic biology is the genetic toggle switch. A toggle switch consists of a set of transcription factors that mutually repress each other~\autocite{Gardner:2000vha}. Genetic switches play a major role in binary cell fate decisions like stem cell differentiation, as they are capable of exhibiting bistable behaviour. Bistability of a system is defined by the existence of two distinct phenotypic states but no intermediate state. Bistability is a property that is important in nature and a valuable resource to exploit in synthetic biology. It allows cells to alter their response to environmental cues and increases the overall population fitness by 'hedge-betting' the response of the population \autocite{Veening:2008da}. 
 
 \subsection{The genetic toggle switch in natural systems}
-In developmental processes, bistability ensures that the differentiating cell will follow one pathway, or the other, with no possible intermediate phenotypes. This is vital for the correct development of a cell in a specific pathway. One example is the trophectoderm differentiation pathway, in which a mutually inhibitory toggle switch exists between Oct3/4 and Cdx2. This determines whether an embryonic stem cell will differentiate into a trophectoderm cell, if Cdx2 dominates the system, or an inner cell mass cell if Oct3/4 dominates~\autocite{Niwa:2005fz}. Bistability is critical in this system as a cell must differentiate into either a trophectoderm cell or an inner cell mass cell, thus the signal to do so must be straightforward. 
+In developmental processes, bistability ensures that the differentiating cell will follow one pathway, or the other, with no possible intermediate phenotypes. This is vital for the correct development of a cell in a specific pathway. One example is the trophectoderm differentiation pathway, in which a mutually inhibitory toggle switch exists between Oct3/4 and Cdx2. This determines whether an embryonic stem cell will differentiate into a trophectoderm cell, if Cdx2 dominates the system, or an inner cell mass cell if Oct3/4 dominates~\autocite{Niwa:2005fz}. Bistability is critical in this system as a cell must differentiate into either a trophectoderm cell or an inner cell mass cell and there should not be any intermediate signals. 
 
 In the case of the GATA1 and PU.1 toggle switch, the transcription factor pair controls the fate of the common myeloid progenitors, and the two possible differentiation paths are erythroid and myeloid blood cells~\autocite{Chickarmane:2009by}. The double-negative feedback loop created by the mutually repressive pair of transcription factors sustains the system in balance until an external stimulus causes one of the two transcription factors to increase in concentration. The increased concentration of one transcription factor causes the increased repression of the production of the antagonistic transcription factor, tipping the balance towards the dominance of the first transcription factor. The double negative feedback loop reinforces this dynamic and the system remains in the same state, until an external stimulus disturbs it~\autocite{FerrellJr:2002fh}.
 
@@ -99,36 +99,36 @@ A transcription network can be represented in a number of ways. A network can be
 
 \subsubsection{Coupled chemical reactions and the law of mass action}
 
-Coupled chemical reactions are often used to describe transcription networks in systems biology. They have the advantage of describing a system concisely while they can be used subsequently used for a variety of different simulation methods, each with their associated interpretation of chemical kinetics~\autocite{Wilkinson:2006td}. Coupled chemical reactions take the form
+Coupled chemical reactions are often used to describe transcription networks in systems biology. They have the advantage of describing a system concisely while they can be used subsequently for a variety of different simulation methods, each with their associated interpretation of chemical kinetics~\autocite{Wilkinson:2006td}. Coupled chemical reactions take the form
 
 
 \begin{align}
-	R_a + R_b \xrightarrow{k} P, \label{eq:example_eq}
+	Ra + Rb \xrightarrow{k} P, \label{eq:example_eq}
 \end{align}
 
-\noindent where $R$ represents a reactant and $P$ a product. Each reaction has an associated rate $k$. A biological transcription network can be represented using the above notations. Some common examples of coupled chemical reactions used in a biological network are given in Table~\ref{tab:chem_reac_ex}. A double headed arrow represents a reversible reaction. 
+\noindent where $Ra$ represents reactant A, $Rb$ reactant B and $P$ a product. Each reaction has an associated rate constant $k$. A biological transcription network can be represented using the above notations. Some common examples of coupled chemical reactions used in a biological network are given in Table~\ref{tab:chem_reac_ex}. A double headed arrow represents a reversible reaction. 
 
 
 \begin{table}[tb]
 \centering
 \caption{Examples of common genetic coupled chemical reactions. $p$ stands for promoter, and $A$ represents a protein. $A_2$ is the dimer of protein $A$.  }
 \label{tab:chem_reac_ex}
-\begin{tabular}{@{}ll@{}}
+\begin{tabular}{@{}lll@{}}
 \toprule
-Event & Coupled chemical reaction \\ \midrule
-Transcription & $p  \xrightarrow{k_1} p + RNA$ \\
-Dimerization & $2A \xrightleftharpoons[k_3]{k_2} A_2$ \\
-Promoter repression & $A_2 + p \xrightleftharpoons[k_5]{k_4} p\bullet A_2$ \\
-Activation & $A_2 + p \xrightarrow{k_6} p\bullet A_2 + RNA$ \\
-Degradation & $A \xrightarrow{k_7}\varnothing $ \\ \bottomrule
+Event & Coupled chemical reaction & Rates\\ \midrule
+Transcription & $p  \xrightarrow{k_1} p + RNA$ & $k_1[p]$\\
+Dimerization & $2A \xrightleftharpoons[k_3]{k_2} A_2$&$ k_2[A][A]$, $ k_3[A_2]$\\
+Promoter repression & $A_2 + p \xrightleftharpoons[k_5]{k_4} p\bullet A_2$& $ k_4[A_2][p]$, $ k_5[p\bullet A_2]$ \\
+Activation & $A_2 + p \xrightarrow{k_6} p\bullet A_2 + RNA$ & $ k_6[A_2][p]$\\
+Degradation & $A \xrightarrow{k_7}\varnothing $ &$k_7[A]$\\ \bottomrule
 \end{tabular}
 \end{table}
 
-The law of mass action allows us to derive these reaction rates $k_1$-$k_7$ from the coupled chemical reactions. The assumption made in the law of mass action is that the system exists in a well mixed solution. The law of mass action states that the reaction rate is proportional to the concentration of the reactants. So for a given chemical equation as the one shown in Equation~\ref{eq:example_eq}, the rate of the reaction $k$ is defined by:
+The law of mass action allows one to derive these reaction rates $k_1$-$k_7$ from the coupled chemical reactions. The assumption made in the law of mass action is that the system exists in a well mixed solution and in dynamic equilibrium. The law of mass action states that the reaction rate is proportional to the concentration of the reactants. So for a given chemical equation as the one shown in Equation~\ref{eq:example_eq}, the rate of the reaction is defined by:
 \begin{align*}
-	k = [R_a][R_b]
+	rate = k[R_a][R_b],
 \end{align*}
-
+\noindent where $k$ is the rate constant.
 
 
 \subsubsection{Graphical representation of biochemical systems}
@@ -157,7 +157,7 @@ It is common to represent coupled biochemical reactions graphically. In a graph,
 
 \subsubsection{\acrfull{sbml}}
 
-The \acrfull{sbml} was developed by~\textcite{Hucka:2004wh} in order to allow for the exchange of biochemical models between software. It is an extension of the XML encoding~\autocite{DuCharme:1999} with additional fields specific to biochemical models. Software like Copasi~\autocite{Hoops:2006gy} can be used to convert a set of coupled chemical reactions to an SBML model. SBML models have been key resource for model sharing within the systems biology community~\autocite{Wilkinson:2006td} in databases like the BioModels database~\autocite{LeNovere:2006ep}. 
+The \acrfull{sbml} was developed by~\textcite{Hucka:2003wg} in order to allow for the exchange of biochemical models between software. It is an extension of the XML encoding~\autocite{DuCharme:1999} with additional fields specific to biochemical models. Software like Copasi~\autocite{Hoops:2006gy} can be used to convert a set of coupled chemical reactions to an SBML model. SBML models have been key resource for model sharing within the systems biology community~\autocite{Wilkinson:2006td} in databases like the BioModels database~\autocite{LeNovere:2006ep}. 
 
 \subsection{Transcriptional binding kinetics}
 
@@ -165,15 +165,15 @@ The processes of transcription regulation in prokaryotes is complex and there ha
 
 \subsubsection{Hill formalism}
 \label{sec:hill}
-The Hill formalism is often used to describe a biochemical system where an activator or repressor is present~\autocite{Alon:2007}. The Hill function is often represented as
+The Hill formalism is often used to describe a biochemical system where an activator or repressor is present~\autocite{Hill:1910vo}. The Hill function is often represented as
 
 \begin{align*}
 	\frac{dP}{dt} = V_{max}\frac{x^n}{1 + x^n},
 \end{align*}
-\noindent if activation is being modelled. Parameter $n$ is the Hill coefficient and $K$ the Hill constant. $V{max}$ is the maximum amount of product and $x = \frac{S}{K}$, where S is the substrate concentration. The Hill constant represent the substrate concentration that results in half of the response and the Hill coefficient affects the steepness of the function and represents the cooperativity of the binding to the promoter~\autocite{Alon:2007}. If repression is being modelled, the Hill function is represented as
+\noindent if activation is being modelled. Parameter $n$ is the Hill coefficient and $K$ the dissociation constant. $V{max}$ is the maximum amount of product and $x = \frac{S}{K}$, where S is the substrate concentration. $K$ represents the substrate concentration that results in half of the response and the Hill coefficient affects the steepness of the function and represents the cooperativity of the binding to the promoter~\autocite{Alon:2007}. If repression is being modelled, the Hill function is represented as
 
 \begin{align*}
-	\frac{dP}{dt} = V_{max}\frac{1}{1 + x^n}
+	\frac{dP}{dt} = V_{max}\frac{1}{1 + x^n}.
 \end{align*}
 
 
@@ -192,7 +192,7 @@ The Hill formalism is often used to describe a biochemical system where an activ
 
 \subsubsection{Shea-Ackers formalism}
 \label{sec:shea-ackers}
-The Shea-Ackers formalism developed by~\textcite{Ackers:1982tq} uses a statistical thermodynamic model to represent the bindinf of transcription factors to their promoters. A system is described by the various states the promoter can have. An exampled of possible states is given in Figure~\ref{fig:shea_ack_ex}. Each state has an associated term, or weight, and the probability of transcription is given by the ration of the producing states over all possible states. This is referred to as the partition function. 
+The Shea-Ackers formalism developed by~\textcite{Ackers:1982tq} uses a statistical thermodynamic model to represent the binding of transcription factors to their promoters. A system is described by the various states the promoter can have. An exampled of possible states is given in Figure~\ref{fig:shea_ack_ex}. Each state has an associated term, or weight, and the probability of transcription is given by the ratio of the producing states over all possible states. This is referred to as the partition function. 
 
 \begin{figure*}[htb]
 \centerfloat
@@ -201,20 +201,19 @@ The Shea-Ackers formalism developed by~\textcite{Ackers:1982tq} uses a statistic
     \label{fig:shea_ack_ex}
 \end{figure*}
 
-\noindent The partition function is given by 
 
 \begin{align}
-	P_{T} = \alpha \frac{k_1 + k_{3}A^2}{1 + k_1 + k_{2}R^2 + k_{3}A^2}
+	P_{T} = \alpha \frac{k_1 + k_{3}A^2}{1 + k_1 + k_{2}R^2 + k_{3}A^2}.
 \end{align}
 Here I assume that repression and activation is cooperative, thus two transcription factors must bind to the promoter to repress or activate it. 
 \newpage
-\subsection{Simulation of dynamical systems}
+\subsection{Simulation of deterministic dynamical systems}
 
-There are two main ways of simulating a system, deterministically and stochastically: Deterministic modelling utilises \acrshort{ode} and models the concentrations of the species (proteins or other molecules) by time-dependent variables~\autocite{deJong:2002ft}. Rate equations are used to model gene regulation where the rate of production of a species is a function of the concentrations of the other species~\autocite{deJong:2002ft}. 
+There are two main ways of simulating a system, deterministically and stochastically: Deterministic modelling utilises \acrshort{ode}s and models the concentrations of the species (proteins or other molecules) by time-dependent variables~\autocite{deJong:2002ft}. Rate equations are used to model gene regulation where the rate of production of a species is a function of the concentrations of the other species~\autocite{deJong:2002ft}. 
 
 \subsubsection{Deterministic mass action kinetics}
 \label{sec:predator_prey_odes}
-\acrshort{ode}s are used to represent the quantitative dynamics of a biochemical network. The \acrshort{ode}s describing a system can be derived from the coupled chemical reactions descibing the system as well as their associated rates. This will be illustrated using a simple example, the Lotka-Voltera predator-prey model~\autocite{lotka:voltera}. This system describes the dynamics between two interacting species, a predator and a prey. The chemical reactions describing the system are given in Table~\ref{tab:pp_reac}. The rates of the system are organised to vector form:
+\acrshort{ode}s are used to represent the quantitative dynamics of a biochemical network. The \acrshort{ode}s describing a system can be derived from the coupled chemical reactions descibing the system as well as their associated rates. This will be illustrated using a simple example, the Lotka-Voltera predator-prey model~\autocite{lotka:voltera}. This system describes the dynamics between two interacting species, a predator and a prey. The chemical reactions describing the system are given in Table~\ref{tab:pp_reac}. The rates of the system are organised in vector form,
 
 
 \begin{table}[h]
@@ -238,12 +237,12 @@ h =
 	 k_{3}y 
 \end{pmatrix}
 \end{align*}
-The stoichiometry matrix of the system is $m\times n$ matrix, where $m$ is the number of species and $n$ the number of reactions and it summarises the stoichiometries of the system.  
+The stoichiometry matrix of the system is an $m\times n$ matrix, where $m$ is the number of species and $n$ the number of reactions and it summarises the stoichiometries of the system, 
 \begin{align}
 S = \begin{pmatrix}
 	1 & -1& 0\\
 	0&1&-1 
-\end{pmatrix}
+\end{pmatrix}.
 \end{align}
 The \acrshort{ode}s can then be constructed by multiplying the stoichiometry matrix $S$ by the matrix containing the rates $h$. Therefore
 \begin{align}
@@ -257,13 +256,13 @@ y
 k_1[x]\\
 k_2[x][y]\\
 k_3[y] 
-\end{pmatrix}
+\end{pmatrix},
 \end{align}
 and thus we get the two \acrshort{ode}s describing the system as
 
 \begin{align}
 \frac{dx}{dt} &= k_1x - k_2xy\\ \label{eq:predator-prey}
-\frac{dy}{dt} &= k_2xy - k_3y
+\frac{dy}{dt} &= k_2xy - k_3y.
 \end{align}
 
 \noindent These differential equations can be simulated numerically over time using software packages like Mathematica~\autocite{mathematica:2016} and Python.
@@ -320,14 +319,14 @@ A stable steady state is defined as a fixed point whose nearby points approach t
 \noindent The eigenvalues λ are given by
 
 \begin{align}
-\det(\mathbf{J} - λ\mathbf{I})
+\det(\mathbf{J} - λ\mathbf{I}),
 \end{align}
 
 \noindent where det is the determinant and \textbf{I} the identity matrix. If both eigenvalues are real and negative or imaginary with a negative real part then the steady state is stable. If both eigenvalues have a positive real part then the steady state is unstable and if one has a positive and one has a negative fixed part the steady state is an unstable saddle node. If both eigenvalues are purely imaginary, the system oscillates around the fixed point. Solving the above for the fixed points in the predator-prey system, we find one stable steady state and one oscillatory fixed point. 
 
 \subsection{Stochastic modelling of dynamical systems}
 
-The assumptions that have to be made to model a system deterministically cannot always be met. This can occur when the molecule numbers in the system are low or the solution cannot be assumed to be well mixed. When this is the case, stochastic dynamics are more appropriate to model dynamical system. In stochastic modelling species are measured in discrete amounts rather than concentrations and a joint probability distribution is used to express the probability that at time \textit{t} the cell contains a number of molecules of each species~\autocite{deJong:2002ft,khamash_iglesias:2010}. It takes uncertainty into account and does not assume a well mixed solution. 
+The assumptions that have to be made to model a system deterministically cannot always be met. This can occur when the molecule numbers in the system are low. When this is the case, stochastic dynamics are more appropriate to model the dynamical system. In stochastic modelling species are measured in discrete amounts rather than concentrations and a joint probability distribution is used to express the probability that at time \textit{t} the cell contains a number of molecules of each species~\autocite{deJong:2002ft,khamash_iglesias:2010}. It takes probabilistic effects into account. 
 
 Biological processes are well known to include randomness. The source of this randomness originates from the random collisions between molecules that govern biological reactions~\autocite{khamash_iglesias:2010}. This randomness affects downstream events and affect the phenotypic behaviour of cells. This is known as cellular noise and it is known to be key for various cellular processes~\autocite{Eldar:2010kk}. Cellular noise can be classified into two categories, intrinsic noise and extrinsic noise. Intrinsic noise originates from the inherently random collisions between the species of the system under consideration. Extrinsic noise originates from fluctuations in the environment within which the system of interest resides, like the number of available RNA polymerases or other protein numbers~\autocite{khamash_iglesias:2010}. The noisiness of biological processes often make stochastic dynamics more appropriate for modelling cellular systems.  
 
@@ -346,7 +345,7 @@ Stochastic models are often analytically intractable but can be studied using nu
 %What type of random numbers are generated for each of these? How does the time-step one work? (i.e. is there a limit on the length of timestep that can be produced?)
 \begin{enumerate}
 \item Initialise time $t$ and number of species $s$ and state of system $x$
-\item Draw a sample timestep τ from the distribution of time $Τ$
+\item Draw a sample time step τ from the (exponential) distribution of time $Τ$
 \item Draw a sample reaction from all reactions $R$
 \item Update time by $t = t + τ$ and state of system by $x = x + s_μ$
 \item Repeat from Step 2 until total simulation time reached
@@ -355,7 +354,7 @@ Stochastic models are often analytically intractable but can be studied using nu
 \noindent This algorithm results in one trajectory of the system. It has to be repeated a number of times to obtain enough realisations of the trajectory to compute appropriate summary statistics.
 
 \subsubsection{Stochastic mass action kinetics}
-Here I will consider the predator-prey system introduced in Section~\ref{sec:predator_prey_odes}. A set of reactions is defined, as shown in Table~\ref{tab:pp_reac}, and each one has an associated stochastic rate constant $c_i$. The rate constant, or hazard function, of each reaction i is defined as $h_i(x, c_i)$, where x is the current state of each species in the system.The form of each hazard function is defined by the order of the given reaction~\autocite{Wilkinson:2006td}, as shown in Table~\ref{tab:hazards}. 
+Here I will consider the predator-prey system introduced in Section~\ref{sec:predator_prey_odes}. A set of reactions is defined, as shown in Table~\ref{tab:pp_reac}, and each one has an associated stochastic rate constant $c_i$. The rate constant, or hazard function, of each reaction i is defined as $h_i(x, c_i)$, where x is the current state of each species in the system. The form of each hazard function is defined by the order of the given reaction~\autocite{Wilkinson:2006td}, as shown in Table~\ref{tab:hazards}. 
 
 
 \begin{table}[h]
@@ -374,10 +373,10 @@ Dimerization & $X_j + X_j \xrightarrow{c_i} X_{2j} $ & $h_i(x, c_i) = c_{i}\frac
 
 \noindent Therefore, when simulating a stochastic system using the Gillespie algorithm, the state of the system $x$ is defined as the sum of all the reaction hazards, namely $h_0(x, c) = \sum_{i=1}^{n}h_{i}(x, c_i)$~\autocite{Wilkinson:2006td}. 
 
-\section{The Bayesian solution to parameter inference and system design}
+\section{The Bayesian approach to parameter inference and system design}
 
 %For a model to be used in a systems biology setting the parameters must first be defined. 
-The parameters of a model represent the biochemical rates that are involved in the system under study, like degradation rates, transcription rates and polymerization rates. These rates cannot always be measured experimentally and taking generalised estimates from existing literature can be inaccurate. In order to make useful predictions about the biological system under consideration, the model parameters must be estimated~\autocite{Zheng:2010bp}. 
+The parameters of a model represent the biochemical rates that are involved in the system under study, like degradation rates, transcription rates and polymerization rates. These rates cannot often be measured \textit{in vitro} and taking generalised estimates from existing literature can be inaccurate. In order to make useful predictions about the biological system under consideration, the model parameters must be estimated~\autocite{Zheng:2010bp}. 
 
 To address this challenge, statistical optimization methods have been developed. These methods aim to infer the parameters of the model that can give rise to some experimentally observed behaviour. Parameter inference methods have the same general structure: there is a cost function that compares the model data to the experimental data and an optimization function that aims to optimize the cost function~\autocite{Toni:2010}. There is a wide range of such optimization algorithms that can be used like gradient decent~\autocite{Levenberg:1944we, Marquardt:1963wr}, simulated annealing~\autocite{Kirkpatrick:1983kv} and evolutionary algorithms~\autocite{Onbasoglu:2001um, Wood:2002uo}.  
 
@@ -396,7 +395,7 @@ Bayesian approaches to parameter inference have been shown to work well in biolo
 \end{align}
 
 
-\noindent where $\displaystyle \int p(x|θ)p(θ)dθ$ is the evidence. It is often not possible to obtain analytical expressions of the posterior, but methods to approximate it numerically have been developed~\autocite{Barnes:2011bk}. One such class of algorithms are the \acrfull{abc} methods. These are described in more detail in Section~\ref{sec:abc}.
+\noindent where $\displaystyle \int p(x|θ)p(θ)dθ$ is the evidence. It is often not possible to obtain analytical expressions of the posterior, but methods to approximate it numerically have been developed~\autocite{Barnes:2011bk}. One such class of algorithms are the Markov Chain Monte Carlo methods~\autocite{Gilks96}. These are described in more detail in Section~\ref{sec:abc}.
 
 
 Parameter estimation problems typically involve a set of observed data and a mathematical model describing the biological system. Oftentimes there are a number of competing models under consideration. The challenge then is to fit the model, and model parameters in order to reconstruct the observed data~\autocite{Ma:2009ig}. In system design a different but related problem must be addressed; Instead of experimental data the researcher has an idea of what the system output should be~\autocite{Barnes:2011bk}. A set of carefully selected design objectives can then be used as substitute data ($x_s$), representing data one would like to observe, in the Bayesian inference problem~\autocite{Barnes:2011bk}. This method has been successfully applied in synthetic biology system design~\autocite{Barnes:2011hh, Woods:2016eh}. 
@@ -483,7 +482,7 @@ Parameter estimation problems typically involve a set of observed data and a mat
 
 ABC methods are used for inferring the posterior distribution in cases where it is too computationally expensive to evaluate the likelihood function. Instead of calculating the likelihood, ABC methods simulate the data and then compare the simulated and observed data through a distance function~\autocite{Toni:2009tr}. Given the prior distribution $p(\theta)$ we can approximate the posterior distribution, $p(\theta\mid x)\propto p(x\mid\theta)p(\theta)$, where $p(x\mid\theta)$ is the likelihood of a parameter, $\theta$, given the data, $x$. There are a number of different variations of the ABC algorithm depending on how the the approximate posterior distribution is sampled. 
 
-The simplest \acrshort{abc} algorithm is the \acrshort{abc} rejection sampler~\autocite{Pritchard:1999td}. In this method, parameters are sampled from the prior and data simulated through the data generating model. For each simulated data set, a distance from that of the desired behaviour is calculated, and if greater than a threshold, \textepsilon{}, the sample is rejected, otherwise it is accepted. 
+The simplest \acrshort{abc} algorithm is the \acrshort{abc} rejection sampler~\autocite{Pritchard:1999td}. In this method, parameters are sampled from the prior and data simulated through the data generating model. For each simulated data set, a distance from that of the data is calculated, and if greater than a threshold, \textepsilon{}, the sample is rejected, otherwise it is accepted. 
 \begin{algorithm}[H]
 
   \caption{ABC rejection algorithm}
@@ -505,7 +504,7 @@ An alternative method developed by~\textcite{Toni:2009tr} takes advantage of \ac
 %The desired behaviour of the system is used as the data to which the candidate model output is compared to \cite{Barnes:2011hh}. 
 %Given a set of competing models, their associated prior estimates of their parameters and the design specifications, the algorithm is able to rank the models according to how well they describe the data and the posterior probabilities of the parameters \cite{Barnes:2011hh}. 
 
-ABC SMC can identify the parameter values within a predefined range of values that can achieve the desired behaviour. It works by first sampling at random from the initial range set by the researcher, i.e. form the prior distribution of values. Each sample from the priors is called a particle. It then simulates the model given those values and compares that to the target behaviour. If the distance between the simulation and the target behaviour is greater than a predefined threshold distance ε, then the parameter values that produced that simulation are rejected. This is repeated for a predefined number of samples which are collectively referred to as a population. Each particle in a population has a weight associated with it, which represents the probability of it producing the desired behaviour. At subsequent iterations the new samples are obtained from the previous populations and the ε is set to smaller value, thus eventually reaching the desired behaviour. The algorithm proceeds as follows:
+ABC SMC can identify the parameter values within a predefined range of values that can give rise to the data. It works by first sampling at random from the initial range set by the researcher, i.e. from the prior distribution of values. Each sample is called a particle. It then simulates the model given those values and compares that to the target behaviour. If the distance between the simulation and the target behaviour is greater than a predefined threshold distance ε, then the parameter values that produced that simulation are rejected. This is repeated for a predefined number of samples which are collectively referred to as a population. Each particle in a population has a weight associated with it, which represents the probability of it producing the desired behaviour. At subsequent iterations the new samples are obtained from the previous populations and the ε is set to smaller value, thus eventually reaching the desired behaviour. The algorithm proceeds as follows:
 
 \begin{algorithm}[H]
 
@@ -530,7 +529,7 @@ ABC SMC can identify the parameter values within a predefined range of values th
 
 \subsubsection{Particle sampling}
 \label{sec:part_samp}
-For the first population, particles are sampled from the prior, which consists of the boundaries of a distribution for each parameter defined by the user. For subsequent populations particles are sampled from the previous population. The weight of each particle in the previous population dictates the probability of it being sampled. The number of samples to be drawn is specified by the user.  
+For the first population, particles are sampled from the prior, which consists of the boundaries of a distribution for each parameter defined by the user based on biochemical knowledge or literature. For subsequent populations particles are sampled from the previous population. The weight of each particle in the previous population dictates the probability of it being sampled. The number of samples to be drawn is specified by the user.  
 
 \subsubsection{Perturbation}
 \label{sec:pertub}
@@ -557,7 +556,7 @@ For the first population the weights are all given a value of 1, and then normal
 
 
 \begin{align}
-w_{t}^{(i)} = \frac{P(\theta_{t}^{(i)})}{\sum_{j=1}^N w_{t-1}^{(j)} K_{t}(\theta_{t-1}^{(j)}, \theta_{t}^{(i)})} \text{ for n $\textgreater$  0}
+w_{t}^{(i)} = \frac{P(\theta_{t}^{(i)})}{\sum_{j=1}^N w_{t-1}^{(j)} K_{t}(\theta_{t-1}^{(j)}, \theta_{t}^{(i)})} \text{ for n $\textgreater$  0}.
 \end{align}
 	
 	
@@ -566,10 +565,10 @@ This algorithm is implemented on a simple example for illustration. A simple mod
 
 \begin{align}
 \frac{d[B]}{dt} &= p[A] \\ 
-\frac{d[A]}{dt} &= -p[A] 
+\frac{d[A]}{dt} &= -p[A]. 
 \end{align}
 
-The priors were set to $p \sim U(0, 10)nM s^{-1}$. Initial conditions for $A$ and $B$ were set to 1 and 0 respectively. The data to which the model was compared to was generated by simulating the same model with the parameter set to 1, as shown in Figure~\ref{fig:myABC true 1}.
+\noindent The priors were set to $p \sim U(0, 10)nM s^{-1}$. Initial conditions for $A$ and $B$ were set to 1 and 0 respectively. The data to which the model was compared to was generated by simulating the same model with the parameter set to 1, as shown in Figure~\ref{fig:myABC true 1}.
 
 \begin{figure*}[htbp]
     \begin{center}
@@ -587,32 +586,32 @@ Figure~\ref{fig:myABC true 1} illustrates the use of \acrshort{abc} \acrshort{sm
 During this thesis I use the term robustness in its parametric meaning, i.e. as the ability of a system to retain its function despite parameter perturbations~\autocite{Stelling:2004wo}. The robustness of biological systems has been studied extensively~\autocite{Barkai:1997cd, Stelling:2004wo, Prill:2005fq, Kim:2006uk, Kitano:2007cp, Hafner:2009ct, Shinar:2010dd, ZamoraSillero:2011jw, Woods:2016eh}. and it is well known that feedback loops can increase the robustness of a system~\autocite{Becskei:2000ft,	 DOYLE:2005ul}. Below I show that the robustness of a model can be calculated by dividing the volume of its functional region by the volume of its priors. Starting with Bayes' rule that:
 
 \begin{align}
-	f(\theta|x) &= \frac{f(\theta)f(x|\theta)}{\int p(x|\theta)p(\theta)d\theta}
+	f(\theta|x) &= \frac{f(\theta)f(x|\theta)}{\int p(x|\theta)p(\theta)d\theta},
 \end{align}
 
-\noindent where $x$ is the data, $p(x|\theta)$ is the likelihood, $p(\theta)$ is the prior, and $\displaystyle \int p(x|\theta)p(\theta)d\theta$ is the evidence. The evidence is the normalisation constant so that the distribution integrates to 1. For a given model design D and objective O we define the functional region $F$ as the region within the prior where O is satisfied. So within the prior we can assign 1 to any region that falls within $F$ and 0 to any region outside that. 
+\noindent where $x$ is the data, $p(x|\theta)$ is the likelihood, $p(\theta)$ is the prior, and $\displaystyle \int p(x|\theta)p(\theta)d\theta$ is the evidence. The evidence is the normalisation constant so that the distribution integrates to 1. For a given model design $D_1$ and objective O we define the functional region $F$ as the region within the prior where O is satisfied. So within the prior we can assign 1 to any region that falls within $F$ and 0 to any region outside that. 
 
 \begin{align}
 p(O|D_1) = \int p(O|\theta,D_1)p(\theta|D_1)d\theta,
 \end{align}
 
-\noindent For a design with three parameters this becomes:
+\noindent for a design with three parameters this becomes:
 
 \begin{align}
 p(O|D_1) &= \displaystyle \iiint_{\underline{\theta}} p(O|\underline{\theta})p(\underline{\theta}|D_1)d\underline{\theta},
 \end{align}
 
-\noindent where $\underline{\theta}$ is a vector containing the three parameters $ = (\theta_1, \theta_2,\theta_3)$, and $\theta \in \mathbb{R} $ . To calculate the robustness, or model evidence, we integrate this with respect to $\underline{\theta}$. We assume  all parameters $\theta_1, \theta_2,\theta_3$ have uniform prior, $p(\underline{\theta}|D_1) \sim U(a, b)$. If we assume a = 0 this integral becomes:
+\noindent where $\underline{\theta}$ is a vector containing the three parameters $ = (\theta_1, \theta_2,\theta_3)$, and each $\theta_i \in \mathbb{R} $ . To calculate the robustness, or model evidence, we integrate this with respect to $\underline{\theta}$. We assume  all parameters $\theta_1, \theta_2,\theta_3$ have uniform prior, $p(\underline{\theta}|D_1) \sim U(a, b)$. If we assume a = 0 this integral becomes:
 
 \begin{align}
 p(O|D_1) &= \displaystyle \iiint_{\underline{\theta}} p(O|\underline{\theta})\frac{1}{b_1}\frac{1}{b_2}\frac{1}{b_3}d\underline{\Theta} \text{ , and }\\
-p(O|D_1) &= \frac{1}{b_1}\frac{1}{b_2}\frac{1}{b_3} \displaystyle \iiint_{\underline{\theta}}p(O|\underline{\theta})d\underline{\theta} \label{eq:1.6}
+p(O|D_1) &= \frac{1}{b_1}\frac{1}{b_2}\frac{1}{b_3} \displaystyle \iiint_{\underline{\theta}}p(O|\underline{\theta})d\underline{\theta}, \label{eq:1.6}
 \end{align}
 
-\noindent since $\frac{1}{b_1}\frac{1}{b_2}\frac{1}{b_3} $ is a constant. Then assuming that the likelihood is uniform Equation~\ref{eq:1.6} becomes:
+\noindent since $\frac{1}{b_1}\frac{1}{b_2}\frac{1}{b_3} $ is a constant. Then assuming that the likelihood is uniform Equation~\ref{eq:1.6} becomes
 
 \begin{align}
-p(O|D_1) &= \frac{1}{b_1}\frac{1}{b_2}\frac{1}{b_3} \bigg[\displaystyle \iiint_{\underline{\theta}_F} 1 d\underline{\theta} +\cancelto{0}{\displaystyle \iiint_{\underline{\theta}_{\cancel{F} }} 0 d\underline{\theta}}\bigg]  
+p(O|D_1) &= \frac{1}{b_1}\frac{1}{b_2}\frac{1}{b_3} \bigg[\displaystyle \iiint_{\underline{\theta}_F} 1 d\underline{\theta} +\cancelto{0}{\displaystyle \iiint_{\underline{\theta}_{\cancel{F} }} 0 d\underline{\theta}}\bigg],  
 \end{align}
 
 \noindent since we assign 1 to any region within $F$ and 0 to any region outside it. This becomes:
@@ -638,7 +637,7 @@ where |P| is the volume of the prior P and |F| the volume of the functional regi
 \begin{align}
 p(O|D_1) &= \frac{1}{|P|}\iiint_{\underline{\theta}}f(\underline{\theta};\mu,\Sigma)d\underline{\theta} \\%, & \parbox[c]{\Sigma = \det(\text{covariance matrix})} \\
 \therefore p(O|D_1) &= \frac{1}{|P|}\underbrace{\frac{2\pi^{\frac{k}{2}}}{k\Gamma(\frac{k}{2})} \Big[ \chi _{k}^{2}(\alpha) \Big]^{\frac{k}{2}} |\Sigma|^\frac{1}{2}}_{\text{The volume of an ellipsoid}} \\
-\therefore p(O|D_1) &= \frac{|F|}{|P|},
+\therefore p(O|D_1) &= \frac{|F|}{|P|}.
 \end{align}
 
 %\begin{align}
@@ -660,7 +659,7 @@ In a system design model, the Bayes factor is used to determine which design, $D
 
 \begin{align}
 B_{12} &= \frac{\displaystyle \int p(x|\theta, D_1)p(\theta, D_1)d\theta}{\displaystyle \int p(x|\theta, D_2)p(\theta, D_2)d\theta} = \frac{p(O|D_1)}{p(O|D_2)}\\
-\therefore B_{12} &= \frac{|F_1|}{|P_1|} / \frac{|F_2|}{|P_2|} \label{eq:final_bayes}
+\therefore B_{12} &= \frac{|F_1|}{|P_1|} / \frac{|F_2|}{|P_2|}. \label{eq:final_bayes}
 \end{align}
 
 \noindent We can thus use the ratio of the two robustness measures to calculate the Bayes factor. If two models have a different number of parameters, the robustness of the system will only increase if |F| increases by more than the proportion by which |P| increased~\autocite{Woods:2016eh}. A model is be penalised for an additional parameter if it does not increase the volume of the functional region by more than the volume that the added parameter added to the prior. This is also true for nested models, where one model is wholly contained in the other. 

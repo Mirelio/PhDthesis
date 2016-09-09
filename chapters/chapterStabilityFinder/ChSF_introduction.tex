@@ -462,16 +462,15 @@ I next applied StabilityFinder to the case of the Gardner switch under stochasti
 
 \begin{figure*}[htbp]
 \begin{center}
-	\includegraphics[scale=0.8]{../../chapters/chapterStabilityFinder/images/gardner_model.png}
+	\includegraphics[scale=0.8]{../../chapters/chapterStabilityFinder/images/gardner_poste.pdf}
 	\caption[StabilityFinder used on the Gardner toggle switch]{\label{fig:gard_mod} The Gardner switch model used to test StabilityFinder. The Gardner model (A) consists of two mutually repressing transcription factors. (B) It can be reduced to a two-equation system, where $u$ and $v$ are the two transcription factors, $a_1$,$a_2$ are their effective rates of synthesis, $u$, $v$ are their concentrations and $\beta$, $\gamma$ represent the cooperativity of each promoter. (C) Two samples of deterministic simulated time courses of the Gardner switch and (D) The resulting phase plot. (E) Two samples of time courses of the stochastic simulations and (F) the resulting stationary distributions.}
 \end{center}
 \end{figure*}
 
 \begin{figure*}[htbp]
-\begin{center}
-	\includegraphics[scale=0.8]{../../chapters/chapterStabilityFinder/images/gardner_posterior_w.png}
+\centerfloat
+	\includegraphics[width=0.8\textwidth]{../../chapters/chapterStabilityFinder/images/gardner_posterior_w.pdf}
 	\caption[The posterior distributions of the bistable Gardner toggle switch]{\label{fig:gard_post} Elucidating the stability of the Gardner switch. The Gardner model has four parameters, for which I want to find the values for which this system is bistable. I use StabilityFinder to find the posterior distribution of the bistable Gardner switch, deterministically (A) and stochastically (B). The posterior distributions are shown as the density plots of each parameter as well as each one plotted against the other.  }
-\end{center}
 \end{figure*}
 \clearpage
 %\begin{figure*}[h]
@@ -581,7 +580,7 @@ Parameter                                            & Symbol & \acrshort{cs-lu}
 
 \begin{figure*}[p]
 \centerfloat
-\includegraphics[width=1.3\textwidth]{../../chapters/chapterStabilityFinder/images/lu_paper_post_w.png}
+\includegraphics[width=1.3\textwidth]{../../chapters/chapterStabilityFinder/images/lu_paper_post_w.pdf}
 \caption[Posterior distributions of the Lu switches]{ \label{fig:fig3}The three variants of the Lu models. (A) The \acrshort{cs-lu} switch is bistable. The most restricted parameters for this behaviour are $kx$ and $ky$ which both have to be high relative to the prior. (B) The extended Lu model with a single positive autoregulation on $X$. This model is bistable when $gx$ is small, but the net production of protein is equal for the two nodes. (C) The Lu model with double positive autoregulaiton is tristable, and its posterior distribution shown here. }
 
 \end{figure*}
@@ -607,11 +606,11 @@ Using StabilityFinder a more complex picture of the parameter space that can pro
 
 \begin{figure*}[htbp]
 	\centerfloat
-		\includegraphics[width=1.2\textwidth]{../../chapters/chapterStabilityFinder/images/Lu_234_w.png}
+		\includegraphics[width=1.2\textwidth]{../../chapters/chapterStabilityFinder/images/Lu_234_w.pdf}
 		\caption[ Design principles of multistable switches]{ \label{fig:lu_234}Design principles of multistable switches. (A) Using the Lu model with added positive autoregulation we uncover the design principles dictating if a switch will be bistable, tristable, or will have 4 steady states. (B-D) By considering the bivariate distributions of the parameters we can uncover the differences in the parameters of a bistable switch compared to a tristable switch, compared to a quadristable switch . The posterior distribution of the bistable switch is shown in purple, of the tristable switch in red and of a quadristable in green. The bivariate distributions for which a difference is observed between the stabilities are in black boxes. An example of a phase plot from each behaviour is shown next to the corresponding posterior distribution.}
 \end{figure*}
 
-
+    
 
  Using StabilityFinder, the posterior distributions for bistable, tristable and quadristable behaviours in the \acrshort{dp-lu} model were obtained and then the posterior parameter distributions compared (Figure~\ref{fig:lu_234}). Upon examination of the posterior distributions for all three switches we observe that a subset of the posterior parameter values is different under the three behaviours. Differences are found in the univariate distribution of the parameters for gene expression, $gx$, as highlighted in Figure~\ref{fig:lu_234}, box 1. This parameter must be small for a quadristable switch to occur but there are no such restraints for a bistable or a tristable switch. Furthermore, parameter $xXX$ must be small for three and four steady states to be achieved but there are no such restraints for a bistable switch, as can be seen in Figure~\ref{fig:lu_234}, box 2. Parameter $xXX$ represents the Hill threshold concentration, and is equivalent to to the Hill constant described in Section~\ref{sec:hill}. This parameter dictates the substrate concentration at which the switch occurs. We find that the Hill constant has to be small in order to observe three or four steady states.
 
@@ -675,7 +674,7 @@ Transcription rate fold change & lxx       & 8-12    \\ \bottomrule
 
 \begin{figure*}[h]
 \begin{center}
-\includegraphics[scale=0.6]{../../chapters/chapterStabilityFinder/images/lu_6ss_w.png}
+\includegraphics[scale=0.6]{../../chapters/chapterStabilityFinder/images/lu_6ss_w.pdf}
 \caption[The three-node mutual repression model, with added positive auto-regulation on each node.]{ \label{fig:fig8}The three-node mutual repression model, with added positive auto-regulation on each node. (A) The model. The model is studied in two dimensions using StabilityFinder, for nodes $X$ and $Y$. (B) The phase plot of 100 particles from the posterior found by StabilityFinder. (C) An example phase plot from one particle. There are 6 steady states. (D) The posterior distribution of the 6-steady state three-node system. Parameters $kx$ and $nxy$ are the most constrained.}
 \end{center}
 \end{figure*}
@@ -762,7 +761,7 @@ Dimer promoter self-dissociation & aut \_3 &  & 1-5 &  &  & 0-10 & 0-10 \\ \bott
 
 \begin{figure*}[htbp]
 \centerfloat
-\includegraphics[width=1.1\textwidth]{../../chapters/chapterStabilityFinder/images/MA_sym_post_w.png}
+\includegraphics[width=1.1\textwidth]{../../chapters/chapterStabilityFinder/images/MA_sym_post_w.pdf}
 \caption[Robustness comparison of the \acrshort{cs-ma} and \acrshort{dp-ma} switches]{ \label{fig:ma-sym-det-post}(A) Robustness comparison of the \acrshort{cs-ma} and \acrshort{dp-ma} switches. The Bayes factor of $\frac{p(B|CS)}{p(B|DP)}$ was found to be 9.14. The posterior distributions of (B) \acrshort{cs-ma} and (C) \acrshort{dp-ma} switches. }
 \end{figure*}
 
@@ -778,7 +777,7 @@ The models used in the above analysis assume the parameters for equivalent react
 I further study the asymmetric mass action models by examining the \acrshort{qssa}. As stated in Section~\ref{sec:qssa}, the \acrshort{qssa} is a common analytical tool for model simplification. By examining the posterior distributions of the \acrshort{cs-ma} we can determine whether the \acrshort{qssa} is justified in these models. As stated in Section~\ref{sec:qssa}, the assumption that has to be made for the \acrshort{qssa} to hold is that the rate of binding and unbinding of the transcription factors to the promoters is very fast. The rates have to be much faster than the rates of their production and decay in the system in order to justify that the reaction take place in separate time scales and can thus be assumed to always be at steady state. The \acrshort{qssa} is also made for the dimerization of the transcription factors. Therefore, for the \acrshort{qssa} to be justified in the toggle switch, the rates for association ($rep$) and dissociation ($rep\_r$) of the transcription factors to the promoters, as well as the rates for dimerization ($dim$) and monomerization ($dim\_r$) of the transcription factors have to be much larger than any other rate.
 
 
-In order to determine whether this is the case here, I plot the marginal distributions of each of the parameters assumed to be very large ($rep$, $rep\_r$, $dim$, $dim\_r$) against each of the parameters involved in the expression and decay of the proteins. This is shown in Figure~\ref{fig:ma_qssa}. We find that the \acrshort{qssa} can be justified only with respect to the rate of degradation of the transcription factor dimers ($deg\_dim$). All parameters under consideration for the \acrshort{qssa} ($rep$, $rep\_r$, $dim$, $dim\_r$) are found to be much larger than $deg\_dim$. On the other hand, the \acrshort{qssa} cannot be justified with respect to gene expression ($ge$) or protein degradation ($deg$). It is seen in Figure~\ref{fig:ma_qssa} that the rates under consideration for the \acrshort{qssa} are not much larger than the rates of protein production and decay, and thus it cannot be assumed that they are always at steasdy state. This means that the CS-MA model functions as a switch even when the \acrshort{qssa} does not hold. These assumptions, necessary for the reduction of the model, are therefore not always justified in this case. 
+In order to determine whether this is the case here, I plot the marginal distributions of each of the parameters assumed to be very large ($rep$, $rep\_r$, $dim$, $dim\_r$) against each of the parameters involved in the expression and decay of the proteins. This is shown in Figure~\ref{fig:ma_qssa}. We find that the \acrshort{qssa} can be justified only with respect to the rate of degradation of the transcription factor dimers ($deg\_dim$). All parameters under consideration for the \acrshort{qssa} ($rep$, $rep\_r$, $dim$, $dim\_r$) are found to be much larger than $deg\_dim$. On the other hand, the \acrshort{qssa} cannot be justified with respect to gene expression ($ge$) or protein degradation ($deg$). It is seen in Figure~\ref{fig:ma_qssa} that the rates under consideration for the \acrshort{qssa} are not much larger than the rates of protein production and decay, and thus it cannot be assumed that they are always at steady state. This means that the CS-MA model functions as a switch even when the \acrshort{qssa} does not hold. These assumptions, necessary for the reduction of the model, are therefore not always justified in real systems. 
 
 % If $rep$, $rep_r$, $dim$ and $dim_r$ are much larger than the rates for production and decay of the proteins, the distribution will be  
 
@@ -833,7 +832,7 @@ As can be seen in Figure~\ref{fig:fig7}, differences in the parameter values are
 
 An important aspect of Bayes factors, and thus robustness, that must be investigated is its dependence on the prior distributions. From Equation~\ref{eq:final_bayes} we can expect that the measure for robustness will depend on the size of the prior. The prior distributions for model comparison are ideally chosen by using related data that can inform the choice. But this situation can be rare and priors are selected by using information from the literature in combination with rough guesses~\autocite{Kass:1995vb}. Often simplifications are made and the choice of large prior ranges can seem like like an attractive option, as to impose less bias to the priors. Nevertheless this can have an effect on the Bayes factors calculated. The choice of improper, or very large priors can skew Equation~\ref{eq:final_bayes} to favour one model over the other~\autocite{Kass:1995vb}. In this section I demonstrate that the choice of priors for the toggle switch models has a significant effect on the calculated robustness of the models. This has to be taken under consideration when analysing candidate models for use in synthetic biology applications, as a poor choice of priors can skew the robustness analysis in favour of one model over the other, when no such robustness gain will be observed \textit{in vivo}.    
 
-In order to demonstrate the effect of prior choice on robustness, I use the \acrshort{cs-ma} model. I use StabilityFinder to approximate the posterior distribution that makes this model bistable using two ranges of prior distributions. The two sets of prior distributions used here are denoted as very narrow (VN2) and wide (W) in Table~\ref{tab:prior_study}. The posterior distributions obtained corresponding to the VN priors and W priors are shown in Figure~\ref{fig:priors_matter}A and B respectively. It can be seen that the posterior distribution of the model with VN2 priors is more constrained that the model with W priors. This indicates that if one of the parameters is able to have a larger value, then the constraints on the rest of the parameters are not necessary any more. This results in the unconstrained posterior distribution observed in Figure~\ref{fig:priors_matter}B.
+In order to demonstrate the effect of prior choice on robustness, I use the \acrshort{cs-ma} model. I use StabilityFinder to approximate the posterior distribution that makes this model bistable using two ranges of prior distributions. The two sets of prior distributions used here are denoted as very narrow (VN2) and wide (W) in Table~\ref{tab:prior_study}. The posterior distributions obtained corresponding to the VN priors and W priors are shown in Figure~\ref{fig:priors_matter}A and B respectively. It can be seen that the posterior distribution of the model with VN2 priors is more constrained than the model with W priors. This indicates that if one of the parameters is able to have a larger value, then the constraints on the rest of the parameters are not necessary any more. This results in the unconstrained posterior distribution observed in Figure~\ref{fig:priors_matter}B.
 
 \begin{table}[tb]
 \centering
@@ -857,7 +856,7 @@ Furthermore, I test the effect of the prior range to the robustness of the model
 
 \begin{figure*}[h]
 \centerfloat
-\includegraphics[width=1.2\textwidth]{../../chapters/chapterStabilityFinder/images/priors_matter_w.png}
+\includegraphics[width=1.2\textwidth]{../../chapters/chapterStabilityFinder/images/priors_matter_w.pdf}
 \caption[The volume of the priors has an effect on the posterior distribution obtained.]{ \label{fig:priors_matter}The volume of the priors has an effect on the posterior distribution obtained. (A) The \acrshort{cs-ma} model with VN2 priors and (B) the \acrshort{cs-ma} with W priors. (C) The increase in robustness seen is due to the gene expression parameter prior being wide while the functional region remains constrained.}
 
 \end{figure*}
@@ -885,7 +884,7 @@ W & W & 1.06 \\ \bottomrule
 \end{tabular}
 \end{table}
 
-It is evident that the robustness measure depends on the prior volume. It is therefore useful to think of the Bayes factor in terms of the difference in the volume of the priors of the models that are being compared. I carry out this analysis for the above priors and the results are shown in Figure~\ref{fig:priors_matter2}B. Here we see that even though the prior difference is within the same order of magnitude, the Bayes factor increases significantly. This point corresponds to the case where the priors of \acrshort{cs-ma} are very narrow and the priors of \acrshort{dp-ma} are narrow, and that is where we see the Bayes factor between the two models maximise. %We can take advantage of this observation to design a switch with double positive autoregulation that is significantly more robust than the Gardner toggle switch. By choosing the parameter values carefully we can maximise the gain of robustness that adding two positive feedback loops gives. 
+It is evident that the robustness measure depends on the prior volume. It is therefore useful to think of the Bayes factor in terms of the difference in the volume of the priors of the models that are being compared. I carry out this analysis for the above priors and the results are shown in Figure~\ref{fig:priors_matter2}B. Here we see that even though the prior difference is within the same order of magnitude, the Bayes factor increases significantly. This point corresponds to the case where the priors of \acrshort{cs-ma} are very narrow and the priors of \acrshort{dp-ma} are narrow, and that is where we see the Bayes factor between the two models is maximised. %We can take advantage of this observation to design a switch with double positive autoregulation that is significantly more robust than the Gardner toggle switch. By choosing the parameter values carefully we can maximise the gain of robustness that adding two positive feedback loops gives. 
 
 \begin{figure*}[h]
 \begin{center}
@@ -905,11 +904,11 @@ These results highlight the importance of choosing the ranges of priors for the 
   
  %This is critical to the design of novel synthetic switches, where the stability of a system has to be well defined and predictable.
  
- Here I developed a novel framework, StabilityFinder, that can be used to infer parameter values that can produce a desired behaviour. The novelty in the framework I developed over existing methodology is that complex models can be analyzed assuming either deterministic or stochastic dynamics. I have used StabilityFinder to uncover the design principles of a bistable, a tristable and a quadristable switch. I found key parameters that are important in determining the number of steady states a system is capable of. This is important to the design of novel synthetic switches, where the genetic parts chosen, with their corresponding reaction rates can have an effect on the stability of the system. A bistable, a tristable or a quadristable switch could each be used for different functions within a synthetic system. 
+ Here I developed a novel framework, StabilityFinder, that can be used to infer parameter values that can produce a desired system multistable behaviour. The novelty in the framework I developed over existing methodology is that complex models can be analyzed assuming either deterministic or stochastic dynamics. I have used StabilityFinder to uncover the design principles of a bistable, a tristable and a quadristable switch. I found key parameters that are important in determining the number of steady states a system is capable of. This is important in the design of novel synthetic switches, where the genetic parts chosen, with their corresponding reaction rates can have an effect on the stability of the system. A bistable, a tristable or a quadristable switch could each be used for different functions within a synthetic system. 
   
    %This is especially true when multiple such systems are used together, and the success of the whole system depends on all the parts working as expected. 
    
-Being able to \textit{in silico} determine the stability a given system will aid in the design of novel synthetic circuits. In the future, by selecting the system components accordingly during sequence design, the parameter values can be selected \textit{in vivo}. For example, the parameter value corresponding to the translation initiation rate can be chosen by selecting the appropriate RBS sequence which given a nucleotide sequence will produce the desired rate~\autocite{Holtz:2010bm}, a method developed by~\textcite{Salis:2009gk}. Another method to tweak the parameter values \textit{in vivo} is to select the promoter to have the strength corresponding to the levels of gene expression and repression desired. Activity of each promoter can be measured and standardised~\autocite{Kelly:2009bj} making this process possible. For a system requiring more than one promoter, these can be efficiently selected from a promoter library using a genetic algorithm created by~\textcite{Wu:2011bq}. These standardised interchangeable components with known sequence and activity are what synthetic biology classes as BioBricks~\autocite{Kelly:2009bj,Canton:2008fv} and can be selected and used to construct a desired system.
+Being able to \textit{in silico} determine the stability a given system will aid in the design of novel synthetic circuits. In the future, by selecting the system components accordingly during sequence design, the parameter values can be selected \textit{in vivo}. For example, the parameter value corresponding to the translation initiation rate can be chosen by selecting the appropriate RBS sequence which given a nucleotide sequence will produce the desired rate~\autocite{Holtz:2010bm}, a method developed by~\textcite{Salis:2009gk}. Another method to tweak the parameter values \textit{in vivo} is to select the promoter to have the strength corresponding to the levels of gene expression and repression desired. Activity of each promoter can be measured and standardised~\autocite{Kelly:2009bj} making this process possible. For a system requiring more than one promoter, these can be efficiently selected from a promoter library using a genetic algorithm created by~\textcite{Wu:2011bq}. These standardised interchangeable components with known sequence and activity constitute the ultimate goal of synthetic biology..
 
  Nevertheless, it is important to note that StabilityFinder predicts the stability of a system in isolation. Recent body of work has shown that modules like the one studied here are not independent of downstream processes~\autocite{DelVecchio:2008gy, Ventura:2010ew, Jiang:2011ch, Lyons:2014iq}.~\textcite{Lyons:2014iq} showed that adding a downstream load to the genetic toggle switch can render it monostable. In order for multi-module systems to be successful, the effect of downstream loads to the system under study will have to be considered. Therefore extrapolation of the conclusions of StabilityFinder for a given module would not be justified when the module is part of a larger system of modules working in tandem.        
     
