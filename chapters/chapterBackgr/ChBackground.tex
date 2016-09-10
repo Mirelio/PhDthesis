@@ -4,7 +4,7 @@
 
 \section{Current understanding of the genetic toggle switch}
 
-One of the most common devices used in synthetic biology is the genetic toggle switch. A toggle switch consists of a set of transcription factors that mutually repress each other~\autocite{Gardner:2000vha}. Genetic switches play a major role in binary cell fate decisions like stem cell differentiation, as they are capable of exhibiting bistable behaviour. Bistability of a system is defined by the existence of two distinct phenotypic states but no intermediate state. Bistability is a property that is important in nature and a valuable resource to exploit in synthetic biology. It allows cells to alter their response to environmental cues and increases the overall population fitness by 'hedge-betting' the response of the population \autocite{Veening:2008da}. 
+One of the first successfully constructed synthetic devices is the genetic toggle switch. A toggle switch consists of a set of transcription factors that mutually repress each other~\autocite{Gardner:2000vha}. Genetic switches play a major role in binary cell fate decisions like stem cell differentiation, as they are capable of exhibiting bistable behaviour. Bistability of a system is defined by the existence of two distinct phenotypic states but no intermediate state. Bistability is a property that is important in nature and a valuable resource to exploit in synthetic biology. It allows cells to alter their response to environmental cues and increases the overall population fitness by 'hedge-betting' the response of the population \autocite{Veening:2008da}. 
 
 \subsection{The genetic toggle switch in natural systems}
 In developmental processes, bistability ensures that the differentiating cell will follow one pathway, or the other, with no possible intermediate phenotypes. This is vital for the correct development of a cell in a specific pathway. One example is the trophectoderm differentiation pathway, in which a mutually inhibitory toggle switch exists between Oct3/4 and Cdx2. This determines whether an embryonic stem cell will differentiate into a trophectoderm cell, if Cdx2 dominates the system, or an inner cell mass cell if Oct3/4 dominates~\autocite{Niwa:2005fz}. Bistability is critical in this system as a cell must differentiate into either a trophectoderm cell or an inner cell mass cell and there should not be any intermediate signals. 
@@ -12,7 +12,7 @@ In developmental processes, bistability ensures that the differentiating cell wi
 In the case of the GATA1 and PU.1 toggle switch, the transcription factor pair controls the fate of the common myeloid progenitors, and the two possible differentiation paths are erythroid and myeloid blood cells~\autocite{Chickarmane:2009by}. The double-negative feedback loop created by the mutually repressive pair of transcription factors sustains the system in balance until an external stimulus causes one of the two transcription factors to increase in concentration. The increased concentration of one transcription factor causes the increased repression of the production of the antagonistic transcription factor, tipping the balance towards the dominance of the first transcription factor. The double negative feedback loop reinforces this dynamic and the system remains in the same state, until an external stimulus disturbs it~\autocite{FerrellJr:2002fh}.
 
 \subsection{Uses in synthetic biology}
-Despite their simplicity, toggle switches can be powerful building blocks with which to create complex responses in a synthetic network. They can be used in isolation or in tandem to create complex networks and signalling cascades. The toggle switch has been used for the regulation of mammalian gene expression~\autocite{Deans:2007cy, Kramer:2004kq}. Other synthetic applications of the toggle switch include the construction of a synthetic genetic clock~\autocite{Atkinson:2003tu}, of a predictable genetic timer~\autocite{Ellis:2009hka}, and the formation of biofilms in response to engineered stimuli~\autocite{Kobayashi:2004cv}. 
+Despite their simplicity, toggle switches can be powerful building blocks with which to create complex responses in a synthetic network~\autocite{Lu:2009ez}. They can be used in isolation and have the potential to be used tandem to create complex networks and signalling cascades~\autocite{Lu:2009ez}. The toggle switch has been used for the regulation of mammalian gene expression~\autocite{Deans:2007cy, Kramer:2004kq}. Other synthetic applications of the toggle switch include the construction of a synthetic genetic clock~\autocite{Atkinson:2003tu}, of a predictable genetic timer~\autocite{Ellis:2009hka}, and the formation of biofilms in response to engineered stimuli~\autocite{Kobayashi:2004cv}. 
 
 These applications are modifications of the classical toggle switch~\autocite{Gardner:2000vha}, but an application made of a cascade or collection of the switch would be more challenging. This would make more complex applications possible and could be used to solve real-life problems. For example, an analog-to-digital converter to translate external stimuli like the concentration of an inducer into an internal digital response, or programmable bacteria to move from point to point up different chemical gradients~\autocite{Lu:2009ez}. For a review on current circuits see~\autocite{Khalil:2010hm} and for possible future applications see~\autocite{Lu:2009ez}. This leap will be difficult to achieve before first being able to build robust and well characterised individual switches.
 
@@ -124,7 +124,7 @@ Degradation & $A \xrightarrow{k_7}\varnothing $ &$k_7[A]$\\ \bottomrule
 \end{tabular}
 \end{table}
 
-The law of mass action allows one to derive these reaction rates $k_1$-$k_7$ from the coupled chemical reactions. The assumption made in the law of mass action is that the system exists in a well mixed solution and in dynamic equilibrium. The law of mass action states that the reaction rate is proportional to the concentration of the reactants. So for a given chemical equation as the one shown in Equation~\ref{eq:example_eq}, the rate of the reaction is defined by:
+The law of mass action allows one to derive these reaction rates from the coupled chemical reactions. The assumption made in the law of mass action is that the system exists in a well mixed solution and in dynamic equilibrium. The law of mass action states that the reaction rate is equal to the concentration of the reactants multiplied by a rate constant. So for a given chemical equation as the one shown in Equation~\ref{eq:example_eq}, the rate of the reaction is defined by:
 \begin{align*}
 	rate = k[R_a][R_b],
 \end{align*}
@@ -170,7 +170,7 @@ The Hill formalism is often used to describe a biochemical system where an activ
 \begin{align*}
 	\frac{dP}{dt} = V_{max}\frac{x^n}{1 + x^n},
 \end{align*}
-\noindent if activation is being modelled. Parameter $n$ is the Hill coefficient and $K$ the dissociation constant. $V{max}$ is the maximum amount of product and $x = \frac{S}{K}$, where S is the substrate concentration. $K$ represents the substrate concentration that results in half of the response and the Hill coefficient affects the steepness of the function and represents the cooperativity of the binding to the promoter~\autocite{Alon:2007}. If repression is being modelled, the Hill function is represented as
+\noindent if activation is being modelled. This is an increasing S-shaped function. Parameter $n$ is the Hill coefficient and $K$ the dissociation constant. $V_{max}$ is the maximum amount of product and $x = \frac{S}{K}$, where S is the substrate concentration. The Hill function reaches a plateau at high substrate concentrations, as is often seen in biological reactions~\autocite{Alon:2007}. $K$ represents the substrate concentration that results in half of the response and the Hill coefficient affects the steepness of the function and represents the cooperativity of the binding to the promoter~\autocite{Alon:2007}. If repression is being modelled, the Hill function is represented as
 
 \begin{align*}
 	\frac{dP}{dt} = V_{max}\frac{1}{1 + x^n}.
@@ -178,7 +178,7 @@ The Hill formalism is often used to describe a biochemical system where an activ
 
 
 
-\noindent An example of the effect that the value of $n$ has on the shape of the Hill function in both activation and repression is given in Figure~\ref{fig:hill_ex}.
+\noindent An example of the effect that the value of the Hill coefficient $n$ has on the shape of the Hill function in both activation and repression is given in Figure~\ref{fig:hill_ex}. The higher the value of $n$, the more step-like the function becomes~\autocite{Alon:2007}. 
 \newpage
 
 \begin{figure*}[htb]
@@ -208,8 +208,7 @@ The Shea-Ackers formalism developed by~\textcite{Ackers:1982tq} uses a statistic
 Here I assume that repression and activation is cooperative, thus two transcription factors must bind to the promoter to repress or activate it. 
 \newpage
 \subsection{Simulation of deterministic dynamical systems}
-
-There are two main ways of simulating a system, deterministically and stochastically: Deterministic modelling utilises \acrshort{ode}s and models the concentrations of the species (proteins or other molecules) by time-dependent variables~\autocite{deJong:2002ft}. Rate equations are used to model gene regulation where the rate of production of a species is a function of the concentrations of the other species~\autocite{deJong:2002ft}. 
+Deterministic modelling utilises \acrshort{ode}s and models the concentrations of the species (proteins or other molecules) by time-dependent variables~\autocite{deJong:2002ft}. Rate equations are used to model gene regulation where the rate of production of a species is a function of the concentrations of the other species~\autocite{deJong:2002ft}. 
 
 \subsubsection{Deterministic mass action kinetics}
 \label{sec:predator_prey_odes}
@@ -235,7 +234,7 @@ h =
 	k_{1}x \\
 	 k_{2}xy \\
 	 k_{3}y 
-\end{pmatrix}
+\end{pmatrix}.
 \end{align*}
 The stoichiometry matrix of the system is an $m\times n$ matrix, where $m$ is the number of species and $n$ the number of reactions and it summarises the stoichiometries of the system, 
 \begin{align}
@@ -269,7 +268,7 @@ and thus we get the two \acrshort{ode}s describing the system as
 
 \subsubsection{Assumptions of deterministic modelling}
 
-Two key assumptions are made when modelling a biochemical system using \acrshort{ode}s. Firstly, the species present in the system are measured continuously rather than discreetly. This means that the species are measured in concentration over time and not number of molecules over time. This assumption requires at least 1000 molecules to be present in order to be met~\autocite{iglesias:2010}. The second assumption made is that the reactants are in a well mixed solution. This means that the species in the system can interact each other constantly and freely. 
+Two key assumptions are made when modelling a biochemical system using \acrshort{ode}s. Firstly, the species present in the system are measured continuously rather than discreetly. This means that the species are measured in concentration over time and not number of molecules over time. This assumption requires a large number of molecules to be present in order to be met~\autocite{iglesias:2010}. The second assumption made is that the reactants are in a well mixed solution. This means that the species in the system can interact each other constantly and freely. 
 
 
 \subsection{Nonlinear dynamical modelling}
@@ -323,6 +322,30 @@ A stable steady state is defined as a fixed point whose nearby points approach t
 \end{align}
 
 \noindent where det is the determinant and \textbf{I} the identity matrix. If both eigenvalues are real and negative or imaginary with a negative real part then the steady state is stable. If both eigenvalues have a positive real part then the steady state is unstable and if one has a positive and one has a negative fixed part the steady state is an unstable saddle node. If both eigenvalues are purely imaginary, the system oscillates around the fixed point. Solving the above for the fixed points in the predator-prey system, we find one stable steady state and one oscillatory fixed point. 
+
+
+\subsubsection{Bifurcation analysis}
+
+A bifurcation analysis is carried out in order to study the effect that parameters have on the dynamical behaviour of the system~\autocite{Strogatz:1994}. In order to create a bifurcation diagram, all the parameters in the system remain constant while one parameter's value is varied. We can then observe any changes in the number and stability of the steady states of the system, for example whether a stable equilibrium in the system becomes unstable. The point where a major change occurs in the steady states of the system is called a bifurcation point~\autocite{iglesias:2010}. The stability of the steady state as well as its position is depicted on a bifurcation digram. By convention, the unstable branches are denoted by a dotted line and the stable branches by a solid line~\autocite{Strogatz:1994}. 
+
+One example of a bifurcation, is the saddle-node bifurcation. This occurs when two stable states come closer together until they collide and destroy each other~\autocite{Strogatz:1994}. This can be illustrated using a simple example from \textcite{Strogatz:1994}. Consider the following system 
+
+\begin{align*}
+	\frac{dx}{dt} = r + x^2.
+\end{align*}
+
+\noindent A bifurcation diagram of the above can be constructed by varying the value of parameter $r$. This gives the below bifurcation diagram, shown in Figure~\ref{fig:exampl_bifurc}. This system has two steady states when $r$ \textless 0, one unstable steady state and one stable. When $r = 0$ these collapse into one steady state which then disappears when $r$ \textgreater 0. 
+\newpage
+\begin{figure*}[h]
+    \begin{center}
+    \includegraphics[scale=0.5]{../../chapters/chapterBackgr/images/example_bifurc.png}
+    \caption[Example of a saddle-node bifurcation diagram]{An example of a saddle-node bifurcation diagram. Figure adapted from~\textcite{Strogatz:1994}.}
+    \label{fig:exampl_bifurc}
+    \end{center}
+\end{figure*}
+
+
+
 
 \subsection{Stochastic modelling of dynamical systems}
 
@@ -504,7 +527,9 @@ An alternative method developed by~\textcite{Toni:2009tr} takes advantage of \ac
 %The desired behaviour of the system is used as the data to which the candidate model output is compared to \cite{Barnes:2011hh}. 
 %Given a set of competing models, their associated prior estimates of their parameters and the design specifications, the algorithm is able to rank the models according to how well they describe the data and the posterior probabilities of the parameters \cite{Barnes:2011hh}. 
 
-ABC SMC can identify the parameter values within a predefined range of values that can give rise to the data. It works by first sampling at random from the initial range set by the researcher, i.e. from the prior distribution of values. Each sample is called a particle. It then simulates the model given those values and compares that to the target behaviour. If the distance between the simulation and the target behaviour is greater than a predefined threshold distance ε, then the parameter values that produced that simulation are rejected. This is repeated for a predefined number of samples which are collectively referred to as a population. Each particle in a population has a weight associated with it, which represents the probability of it producing the desired behaviour. At subsequent iterations the new samples are obtained from the previous populations and the ε is set to smaller value, thus eventually reaching the desired behaviour. The algorithm proceeds as follows:
+ABC SMC can identify the parameter values within a predefined range of values that can give rise to the data. It works by first sampling at random from the initial range set by the researcher, i.e. from the prior distribution of values. Each sample is called a particle. It then simulates the model given those values and compares that to the target behaviour. If the distance between the simulation and the target behaviour is greater than a predefined threshold distance ε, then the parameter values that produced that simulation are rejected. This is repeated for a predefined number of samples which are collectively referred to as a population. Each particle in a population has a weight associated with it, which represents the probability of it producing the desired behaviour. At subsequent iterations the new samples are obtained from the previous populations and the ε is set to smaller value, thus eventually reaching the desired behaviour. The algorithm uses an automated epsilon schedule, where the threshold of the next iteration is chosen from the range of values of the current population~\autocite{Silk:2013bi}. 
+
+The algorithm proceeds as follows:
 
 \begin{algorithm}[H]
 
@@ -534,7 +559,6 @@ For the first population, particles are sampled from the prior, which consists o
 \subsubsection{Perturbation}
 \label{sec:pertub}
 Each sampled particle is perturbed by a kernel defined by the distribution of the previous population, as developed by~\textcite{Toni:2009tr}. 
-
 \begin{align}
 K_t(\theta|\theta^* ) = \theta^* + U(+s_p, -s_p),
 \end{align}
@@ -547,7 +571,7 @@ s_p = \frac{1}{2} \big (max(\theta_{p-1}) - min(\theta_{p-1}) \big )
 
 \subsubsection{Particle simulation}
 \label{sec:sim}
-Each particle is simulated using cuda-sim~\autocite{Zhou:2011hp}. The model is provided by the user in SBML format and is converted into CUDA\textsuperscript{\textregistered} code by cuda-sim. The model in CUDA\textsuperscript{\textregistered} code format can then be run on NVIDIA\textsuperscript{\textregistered}. CUDA\textsuperscript{\textregistered}. \acrshort{gpu}s. This allows the user to take advantage of the speed of parallelised simulations without any CUDA\textsuperscript{\textregistered} knowledge. 
+Each particle is simulated using cuda-sim~\autocite{Zhou:2011hp}. The model is provided by the user in SBML format and is converted into CUDA\textsuperscript{\textregistered} code by cuda-sim. The model in CUDA\textsuperscript{\textregistered} code format can then be run on NVIDIA\textsuperscript{\textregistered} \acrshort{gpu}s. This allows the user to take advantage of the speed of parallelised simulations without any CUDA\textsuperscript{\textregistered} knowledge. 
 
 
 \subsubsection{Weight calculation}
@@ -572,14 +596,41 @@ This algorithm is implemented on a simple example for illustration. A simple mod
 
 \begin{figure*}[htbp]
     \begin{center}
-    \includegraphics[scale=0.6]{../../chapters/chapterIntroduction/images/abc_smc_example.png}
+    \includegraphics[scale=0.6]{../../chapters/chapterIntroduction/images/abc_smc_example.pdf}
     \caption[\acrshort{abc} \acrshort{smc} parameter inference example]{ABC SMC parameter inference. The true parameter value is equal to 1 and its time course shown in red in the top left panel. The blue time course is that of the final population, green is the upper quartile and red is the lower quartile range of values. The progress of the selection process can be seen the as the ε schedule proceeds from the top left to the bottom right. The bottom far right panel is a weighted density plot of the posterior distribution of p at ε = 0.01.}
     \label{fig:myABC true 1}
     \end{center}
 \end{figure*}
-\clearpage
+
 
 Figure~\ref{fig:myABC true 1} illustrates the use of \acrshort{abc} \acrshort{smc}, using a simple example. During the course of 7 populations, the accepted distance ε of the simulated particles to the data is incrementally decreased. This leads to a final population where the distance of the data to the particles is very small, and there is a good agreement between the two. The algorithm concludes with a set of parameter values that produced this behaviour, which approximate the posterior distribution. The posterior distribution found in this model is in good agreement with the parameter value used to generate the data. 
+
+\clearpage
+\subsubsection{Visualising posterior distributions}
+
+The posterior distribution has as many dimensions are there are parameters, thus can be challenging to visualise for models containing more than two parameters. In order to visualise the multi-dimensional posterior distributions in this thesis, the one and two dimensional marginal distributions of the parameters will be shown. An example of such a plot is shown in Figure~\ref{fig:exampl_post}. 
+
+The data shown in Figure~\ref{fig:exampl_post} consists of 5000 random samples drawn from a three-dimensional multivariate normal distribution, of mean = 0 for all dimensions and variance σ
+\begin{align*}
+σ = \begin{bmatrix}
+1 &1  &0 \\ 
+ 0& 1 &0 \\ 
+0 & 0 & 1
+\end{bmatrix}.
+\end{align*}
+\noindent The three-dimensional distribution is plotted as shown in Figure~\ref{fig:exampl_post}.
+
+\begin{figure*}[h]
+    \begin{center}
+    \includegraphics[scale=0.43]{../../chapters/chapterBackgr/images/example_posterior.pdf}
+    \caption[Example of a posterior distribution plot]{Visualising a three-dimensional distribution. A three-dimensional multivariate normal can be visualised by plotting the one-dimensional marginal distributions on the diagonal and the the two-dimensional marginal distributions are on the off-diagonal. Correlation can be visualised using the 2D marginal distributions.}
+    \label{fig:exampl_post}
+    \end{center}
+\end{figure*}
+
+
+	
+
 
 \subsection{Derivation of model parametric robustness defined via Bayesian statistics}
 \label{sec:rob_back}

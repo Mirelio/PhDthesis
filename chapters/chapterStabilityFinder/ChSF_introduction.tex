@@ -5,7 +5,7 @@ In this chapter, I aim to uncover the underlying principles that govern the stab
 Structurally, this chapter is organised as follows: In the first section I examine the current understanding of the stability landscape of the genetic toggle switch. Then, I discuss the development of StabilityFinder, justify the choices made and the drawbacks of this method. In the sections following I apply StabilityFinder to a variety of models and finally I discuss the implications these findings have to the overall understanding of the toggle switch stability. 
 
 \section{Contributions to this Chapter}
-The phase plots of the Lu switch and the characterization of their steady states shown in Figure~\ref{fig:lu_bifurc} was carried out by Mae Woods, PhD.
+The phase plots of the Lu switch and the characterisation of their steady states shown in Figure~\ref{fig:lu_bifurc} was carried out by Mae Woods, PhD.
 
 \section{Motivation}
 %A circuit must be robust to a fluctuating cellular environment and its response and sensitivity must be able to be fine tuned in order to orchestrate a network of circuits that function together. A robust circuit can tolerate the compound stochasticity that a chain of circuits brings, and fine tuning of its response and sensitivity enables the researcher to make it sensitive to an upstream signal as well as influence a downstream subsystem. %
@@ -696,17 +696,17 @@ $$
 \begin{array}{cccc}
       \textrm{gA}\stackrel{\textrm{geA}}{\longrightarrow}\textrm{gA} + \textrm{A} \\
       \textrm{gB}\stackrel{\textrm{geB}}{\longrightarrow}\textrm{gB} + \textrm{B} \\
-      \textrm{A} + \textrm{A} \stackrel{\textrm{dim}}{\longrightarrow}\textrm{A2} \\
-      \textrm{A2} \stackrel{\textrm{dim r}}{\longrightarrow}\textrm{A} + \textrm{A} \\
-      \textrm{B} + \textrm{B} \stackrel{\textrm{dim}}{\longrightarrow} \textrm{B2} \\
-      \textrm{B2} \stackrel{\textrm{dim\_r}}{\longrightarrow}\textrm{B} + \textrm{B} \\
-      \textrm{gA} + \textrm{B2} \stackrel{\textrm{repA}}{\longrightarrow}\textrm{B2gA} \\
-      \textrm{B2gA} \stackrel{\textrm{rep\_r}}{\longrightarrow}\textrm{B} + \textrm{gA} \\
-      \textrm{gB} + \textrm{A2} \stackrel{\textrm{repB}}{\longrightarrow}\textrm{A2gB} \\
-      \textrm{A2gB} \stackrel{\textrm{rep\_r}}{\longrightarrow}\textrm{A2} + \textrm{gB} \\
+      \textrm{A} + \textrm{A} \stackrel{\textrm{dim}}{\longrightarrow}\textrm{A\textsubscript{2}} \\
+      \textrm{A\textsubscript{2}} \stackrel{\textrm{dim r}}{\longrightarrow}\textrm{A} + \textrm{A} \\
+      \textrm{B} + \textrm{B} \stackrel{\textrm{dim}}{\longrightarrow} \textrm{B\textsubscript{2}} \\
+      \textrm{B\textsubscript{2}} \stackrel{\textrm{dim\_r}}{\longrightarrow}\textrm{B} + \textrm{B} \\
+      \textrm{gA} + \textrm{B\textsubscript{2}} \stackrel{\textrm{repA}}{\longrightarrow}\textrm{B\textsubscript{2}gA} \\
+      \textrm{B\textsubscript{2}gA} \stackrel{\textrm{rep\_r}}{\longrightarrow}\textrm{B} + \textrm{gA} \\
+      \textrm{gB} + \textrm{A\textsubscript{2}} \stackrel{\textrm{repB}}{\longrightarrow}\textrm{A\textsubscript{2}gB} \\
+      \textrm{A\textsubscript{2}gB} \stackrel{\textrm{rep\_r}}{\longrightarrow}\textrm{A\textsubscript{2}} + \textrm{gB} \\
       \textrm{A} \stackrel{\textrm{deg}}{\longrightarrow}\varnothing\\
-      \textrm{A2} \stackrel{\textrm{deg\_dim}}{\longrightarrow} \varnothing\\
-      \textrm{B2} \stackrel{\textrm{deg\_dim}}{\longrightarrow}\varnothing\\
+      \textrm{A\textsubscript{2}} \stackrel{\textrm{deg\_dim}}{\longrightarrow} \varnothing\\
+      \textrm{B\textsubscript{2}} \stackrel{\textrm{deg\_dim}}{\longrightarrow}\varnothing\\
 \end{array}
 $$
 
@@ -714,12 +714,12 @@ $$
 
 $$
 \begin{array}{cccc} 
-    \textrm{A2} + \textrm{gA} \stackrel{\textrm{aut\_1}}{\longrightarrow} \textrm{A2gA} \\
-    \textrm{A2gA} \stackrel{\textrm{aut\_2}}{\longrightarrow} \textrm{A} + \textrm{A2gA}\\
-    \textrm{A2gA} \stackrel{\textrm{aut\_3}}{\longrightarrow} \textrm{A2}+ \textrm{gA}  \\
-    \textrm{B2} + \textrm{gB} \stackrel{\textrm{aut\_1}}{\longrightarrow} \textrm{B2gB} \\
-    \textrm{B2gB} \stackrel{\textrm{aut\_2}}{\longrightarrow} \textrm{B} + \textrm{B2gB}\\
-    \textrm{B2gB} \stackrel{\textrm{aut\_3}}{\longrightarrow} \textrm{B2}+ \textrm{gB}  \\
+    \textrm{A\textsubscript{2}} + \textrm{gA} \stackrel{\textrm{aut\_1}}{\longrightarrow} \textrm{A\textsubscript{2}gA} \\
+    \textrm{A\textsubscript{2}gA} \stackrel{\textrm{aut\_2}}{\longrightarrow} \textrm{A} + \textrm{A\textsubscript{2}gA}\\
+    \textrm{A\textsubscript{2}gA} \stackrel{\textrm{aut\_3}}{\longrightarrow} \textrm{A\textsubscript{2}}+ \textrm{gA}  \\
+    \textrm{B\textsubscript{2}} + \textrm{gB} \stackrel{\textrm{aut\_1}}{\longrightarrow} \textrm{B\textsubscript{2}gB} \\
+    \textrm{B\textsubscript{2}gB} \stackrel{\textrm{aut\_2}}{\longrightarrow} \textrm{B} + \textrm{B\textsubscript{2}gB}\\
+    \textrm{B\textsubscript{2}gB} \stackrel{\textrm{aut\_3}}{\longrightarrow} \textrm{B\textsubscript{2}}+ \textrm{gB}  \\
 \end{array}
 $$
 
@@ -908,9 +908,9 @@ These results highlight the importance of choosing the ranges of priors for the 
   
    %This is especially true when multiple such systems are used together, and the success of the whole system depends on all the parts working as expected. 
    
-Being able to \textit{in silico} determine the stability a given system will aid in the design of novel synthetic circuits. In the future, by selecting the system components accordingly during sequence design, the parameter values can be selected \textit{in vivo}. For example, the parameter value corresponding to the translation initiation rate can be chosen by selecting the appropriate RBS sequence which given a nucleotide sequence will produce the desired rate~\autocite{Holtz:2010bm}, a method developed by~\textcite{Salis:2009gk}. Another method to tweak the parameter values \textit{in vivo} is to select the promoter to have the strength corresponding to the levels of gene expression and repression desired. Activity of each promoter can be measured and standardised~\autocite{Kelly:2009bj} making this process possible. For a system requiring more than one promoter, these can be efficiently selected from a promoter library using a genetic algorithm created by~\textcite{Wu:2011bq}. These standardised interchangeable components with known sequence and activity constitute the ultimate goal of synthetic biology..
+Being able to \textit{in silico} determine the stability a given system will aid in the design of novel synthetic circuits. In the future, by selecting the system components accordingly during sequence design, the parameter values can be selected \textit{in vivo}. For example, the parameter value corresponding to the translation initiation rate can be chosen by selecting the appropriate RBS sequence which given a nucleotide sequence will produce the desired rate~\textcite{Salis:2009gk}. Another method to tweak the parameter values \textit{in vivo} is to select the promoter to have the strength corresponding to the levels of gene expression and repression desired. Activity of each promoter can be measured and standardised~\autocite{Kelly:2009bj} making this process possible. For a system requiring more than one promoter, these can be efficiently selected from a promoter library using a genetic algorithm created by~\textcite{Wu:2011bq}. These standardised interchangeable components with known sequence and activity constitute the ultimate goal of synthetic biology.
 
- Nevertheless, it is important to note that StabilityFinder predicts the stability of a system in isolation. Recent body of work has shown that modules like the one studied here are not independent of downstream processes~\autocite{DelVecchio:2008gy, Ventura:2010ew, Jiang:2011ch, Lyons:2014iq}.~\textcite{Lyons:2014iq} showed that adding a downstream load to the genetic toggle switch can render it monostable. In order for multi-module systems to be successful, the effect of downstream loads to the system under study will have to be considered. Therefore extrapolation of the conclusions of StabilityFinder for a given module would not be justified when the module is part of a larger system of modules working in tandem.        
+ Nevertheless, it is important to note that the work carried out here using StabilityFinder predicts the stability of the toggle switch in isolation. Recent body of work has shown that modules like the one studied here are not independent of downstream processes~\autocite{DelVecchio:2008gy, Ventura:2010ew, Jiang:2011ch, Lyons:2014iq}.~\textcite{Lyons:2014iq} showed that adding a downstream load to the genetic toggle switch can render it monostable. In order for multi-module systems to be successful, the effect of downstream loads to the system under study will have to be considered. The system including additional loads should be studied using StabilityFinder in order to determine the stability it is capable of. Therefore extrapolation of the conclusions of StabilityFinder for a given module studied in isolation would not be justified when the module is part of a larger system of modules working in tandem.          
     
  %THIS IS ALL WORD FOR WORD FROM BACKGROUND OF CHAPTER ABC-SYSBIO CHANGE ONE OF THEM ASAP
 % Tools that can identify parameter regions that give rise to specific behaviours will be key for the success of synthetic biology. In the future, by selecting the system components accordingly, the parameter values can be adjusted \textit{in vivo}. For example, the desired level of gene expression can be accomplished by selecting the appropriate RBS sequence~\autocite{Salis:2009gk}. Another method to modify the parameter values \textit{in vivo} is to select the promoter to have the strength corresponding to the levels of gene expression and repression desired. Activity of each promoter can be measured and standardised~\autocite{Kelly:2009bj} making this process possible. For a system requiring more than one promoter, these can be efficiently selected from a promoter library using a genetic algorithm~\autocite{Wu:2011bq}. These standardised interchangeable components with known sequence and activity~\autocite{Kelly:2009bj,Canton:2008fv} can be selected and used to construct a desired system and replicate the parameter values found using StabilityFinder.

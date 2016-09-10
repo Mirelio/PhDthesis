@@ -23,8 +23,8 @@
 \BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 23
 \BOOKMARK [1][-]{section.3.2}{Motivation}{chapter.3}% 24
 \BOOKMARK [1][-]{section.3.3}{The\040bistable\040genetic\040toggle\040switch}{chapter.3}% 25
-\BOOKMARK [2][-]{subsection.3.3.1}{Phase\040space\040and\040bifurcation\040analysis}{section.3.3}% 26
-\BOOKMARK [2][-]{subsection.3.3.2}{The\040quasi\040steady\040state\040approximation\040and\040the\040genetic\040toggle\040switch}{section.3.3}% 27
+\BOOKMARK [2][-]{subsection.3.3.1}{The\040quasi\040steady\040state\040approximation\040and\040the\040genetic\040toggle\040switch}{section.3.3}% 26
+\BOOKMARK [2][-]{subsection.3.3.2}{Phase\040space\040and\040bifurcation\040analysis}{section.3.3}% 27
 \BOOKMARK [1][-]{section.3.4}{Designing\040a\040simple\040synthetic\040switch}{chapter.3}% 28
 \BOOKMARK [2][-]{subsection.3.4.1}{Development\040of\040the\040mass\040action\040model\040for\040the\040genetic\040toggle\040switch}{section.3.4}% 29
 \BOOKMARK [2][-]{subsection.3.4.2}{Parameter\040scan\040for\040model\040stability}{section.3.4}% 30
@@ -87,7 +87,7 @@
 \BOOKMARK [1][-]{section.6.4}{Discussion}{chapter.6}% 87
 \BOOKMARK [1][-]{section.6.5}{Summary}{chapter.6}% 88
 \BOOKMARK [0][-]{chapter.7}{Conclusions}{}% 89
-\BOOKMARK [0][-]{section*.108}{Bibliography}{}% 90
+\BOOKMARK [0][-]{section*.110}{Bibliography}{}% 90
 \BOOKMARK [0][-]{appendix.A}{Biochemical\040kinetic\040models}{}% 91
 \BOOKMARK [1][-]{section.A.1}{odes}{appendix.A}% 92
 \BOOKMARK [2][-]{subsection.A.1.1}{Standard\040toggle\040switch\040with\040inducers}{section.A.1}% 93
