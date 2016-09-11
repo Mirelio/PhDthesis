@@ -273,7 +273,7 @@ To further study the distance calculation used in ABC-Flow, two normal distribut
  
 \begin{figure}[tb]
 \centerfloat
-\includegraphics[scale=0.8]{../../chapters/chapterABCFlow/images/mu_diff.png}
+\includegraphics[scale=0.8]{../../chapters/chapterABCFlow/images/mu_diff.pdf}
 \caption[Range of distance values obtained using the Wald-Wolfowitz distance]{\label{fig:epsilon_mud}The distance calculation for data sets drawn from increasingly different distributions. Two examples are shown of distributions compared in (A) 1D and (B) 2D. (C) As the difference between the means of the two 1D distributions increases, the KS distance calculation increases until it plateaus at 1. (D) In the 2D case the distance plateaus at 140.}
 \label{fig:normal_example}
 \end{figure}
@@ -346,25 +346,25 @@ In addition, the system included a fluorescence intensity model. Each fluorescen
 \caption{The priors used for the 1D and 2D ABC-Flow model fitting to simulated data}
 \label{tab:priors_model}
 
-\begin{tabular}{@{}ccc@{}}
+\begin{tabular}{@{}cccc@{}}
 \toprule
-\multicolumn{3}{c}{Parameters}                                         \\ \midrule
-\multicolumn{1}{c}{} & \multicolumn{1}{c}{1D} & \multicolumn{1}{c}{2D} \\ \midrule
-a\textsubscript{1}                   & 80 - 120               & 80 - 120               \\
-β                   & 1 - 4                  & 1 - 4                  \\
-l\textsubscript{1}                  & 750 - 850              & 750 - 850              \\
-a\textsubscript{2}                  & 80 - 120               & 80 - 120               \\
-γ                   & 1 - 5                  & 1 - 4                  \\
-l\textsubscript{2}                   & 750 - 850              & 750 - 850              \\
-α                   & 1 - 4                  & 1 - 4                  \\ \midrule
+\multicolumn{4}{c}{Parameters}                                         \\ \midrule
+\multicolumn{1}{c}{} & Units  &\multicolumn{1}{c}{1D} & \multicolumn{1}{c}{2D} \\ \midrule
+a\textsubscript{1}       &     h\textsuperscript{-1}        & 80 - 120               & 80 - 120               \\
+β                   & molecules\textsuperscript{-1} h\textsuperscript{-1} &1 - 4                  & 1 - 4                  \\
+l\textsubscript{1}   &    h\textsuperscript{-1}           & 750 - 850              & 750 - 850              \\
+a\textsubscript{2}    &  h\textsuperscript{-1}               & 80 - 120               & 80 - 120               \\
+γ                &molecules\textsuperscript{-1} h\textsuperscript{-1}   & 1 - 5                  & 1 - 4                  \\
+l\textsubscript{2}       &    h\textsuperscript{-1}             & 750 - 850              & 750 - 850              \\
+α                  &    h\textsuperscript{-1} μM\textsuperscript{-1} & 1 - 4                  & 1 - 4                  \\ \midrule
 \multicolumn{3}{c}{Species}                                            \\ \midrule
-u                    & 9 - 11                 & 9 - 11                 \\
-v                    & 90 - 110               & 90 - 110               \\ \midrule
+u                 &   & 9 - 11                 & 9 - 11                 \\
+v                 &   & 90 - 110               & 90 - 110               \\ \midrule
 \multicolumn{3}{c}{Intensity parameters}                               \\ \midrule
-μ fp\textsubscript{u}             & 0 - 2                  & 0 - 2                  \\
-μ fp\textsubscript{v}             &                   & 0 - 2                  \\
-σ fp\textsubscript{u}            & 4 - 6                  & 4 - 6                  \\
-σ fp\textsubscript{v}            &                   & 4 - 6                  \\ \bottomrule
+μ fp\textsubscript{u}    &AU         & 0 - 2                  & 0 - 2                  \\
+μ fp\textsubscript{v}     &AU        &                   & 0 - 2                  \\
+σ fp\textsubscript{u}     &AU       & 4 - 6                  & 4 - 6                  \\
+σ fp\textsubscript{v}     &AU       &                   & 4 - 6                  \\ \bottomrule
 \end{tabular}
 
 \end{table}
@@ -374,9 +374,9 @@ v                    & 90 - 110               & 90 - 110               \\ \midru
 
 \subsection{Parameter inference for simulated flow cytometry data}
 
-The model given in Equations~\ref{eq:eg1}-\ref{eq:eg4} was simulated in order to obtain the time course for the two fluoscent molecules in the system, $u$ and $v$. The  time course data, the model and the prior distributions shown in Table~\ref{tab:priors_model} were supplied to ABC-Flow. ABC-Flow was then used to infer the parameters that gave rise to the data using one (1D) or both (2D) fluorescent molecule time courses to fit to the data. We can therefore determine whether there is an added benefit on fitting both fluorescent proteins to the data. In order to compare the 1D and 2D fits, equivalent epsilon distance values were used. These were set to 0.27 for the 1D fit and 2.82 for the 2D fit.
+The model given in Equations~\ref{eq:eg1}-\ref{eq:eg4} was simulated in order to obtain the time course for the two fluoscent molecules in the system, $u$ and $v$. The  time course data, the model and the prior distributions shown in Table~\ref{tab:priors_model} were supplied to ABC-Flow. ABC-Flow was then used to infer the parameters that gave rise to the data using one (1D) or both (2D) fluorescent molecule time courses to fit to the data. We can therefore determine whether there is an added benefit on fitting both fluorescent proteins to the data. In order to compare the 1D and 2D fits, equivalent epsilon distance values were used. These were determined by comparing the distance value obtained when measuring the distance between two 1D distributions with distance value obtained when measuring the distance between two 2D distributions using the appropriate distance measure for each one. This was done using the distance values shown in Figure~\ref{fig:epsilon_mud} for the 1D and 2D case, for distributions where the difference in the means is 0.2 or less. Therefore they were set to 0.27 for the 1D fit and 2.82 for the 2D fit.t
 
-The fit resulting from the 1D fit is shown in Figure~\ref{fig:1d-sim-res}A, together with Q-Q plots to assess the fit to the data. A Q-Qplot is a plot where the quantiles of two distributions are plotted against each other. If the distributions are the same then the points will lie on the x = y line~\autocite{Wilk:1968ts}. The fit resulting from the 2D fit is shown in Figure~\ref{fig:2d-sim-res}, while the posterior distributions obtained from both fits are shown in Figure~\ref{fig:1d2d-sim-post} and Table~\ref{tab:inf_params_sim}. Comparing the 1D and 2D fits, we find that both fits inferred the parameters necessary to produce the simulated data. From the posteriors we find that the most identifiable parameters in this model are parameters $β$ and $γ$, the parameters representing the cooperativity of the repressors. We find that the 2D fit resulted in a better inference of the parameter values. This is most prominent in parameters $β$, $γ$ and $α$ as can be seen in Table~\ref{tab:inf_params_sim}. Parameters $a2$ and $l2$ remained unidentifiable for both fits. For a system involving two fluorescent proteins, like the toggle switch, it would therefore be beneficial to use a two-dimensional fit to the data. The 2D fit performed better in the simulated test used here, with priors centred closely around known parameter values and clean data. This will become more evident when ABC-Flow is used on real experimental data where less information is known for the priors. Furthermore, the 1D fits do not fit intensity parameters for the both fluorescent proteins. This means that the 2D time course of the model using inferred parameters cannot be examined to assess the fit for both proteins. Therefore, a system involving two fluorescent proteins should be fit using the 2D fit in ABC-Flow. The 1D fit should be used in cases where there is only one fluorescent protein of interest in the system. 
+The fit resulting from the 1D fit is shown in Figure~\ref{fig:1d-sim-res}A, together with Q-Q plots to assess the fit to the data. A Q-Qplot is a plot where the quantiles of two distributions are plotted against each other. If the distributions are the same then the points will lie on the x = y line~\autocite{Wilk:1968ts}. The fit resulting from the 2D fit is shown in Figure~\ref{fig:2d-sim-res}, while the posterior distributions obtained from both fits are shown in Figure~\ref{fig:1d2d-sim-post} and Table~\ref{tab:inf_params_sim}. Comparing the 1D and 2D fits, we find that both fits inferred the parameters necessary to produce the simulated data. From the posteriors we find that the most identifiable parameters in this model are parameters $β$ and $γ$, the parameters representing the cooperativity of the repressors. We find that the 2D fit resulted in a better inference of the parameter values. This is most prominent in parameters $β$, $γ$ and $α$ as can be seen in Table~\ref{tab:inf_params_sim}. Parameters $l_1$ and $l_2$, the parameters representing the leakiness of the promoters,  remained unidentifiable for both fits. For a system involving two fluorescent proteins, like the toggle switch, it would therefore be beneficial to use a two-dimensional fit to the data. The 2D fit performed better in the simulated test used here, with priors centred closely around known parameter values and clean data. This will become more evident when ABC-Flow is used on real experimental data where less information is known for the priors. Therefore, a system involving two fluorescent proteins should be fit using the 2D fit in ABC-Flow. The 1D fit should be used in cases where there is only one fluorescent protein of interest in the system. 
 
 %By examining the data and the fitted models shown in Figure~\ref{fig:1d-sim-res}, we see that at ε = 0.27, there is a good fit of the model to the data using ABC-Flow. The model parameters, as well as the intensity parameters, have been fitted to simulated flow cytometry data. This is highlighted in the QQ plots in Figure~\ref{fig:1d-sim-res}B, where the results lie in the x=y line. 
 
@@ -716,7 +716,7 @@ Time course assays were carried out to measure the time it takes for the switch 
 \subsubsection{pKDL071 plasmid alteration}
 
 
-The pKDL071 plasmid contains all the elements of the switch. The two states of the switch are LacI high and TetR high. These are detected by using the fluorescent proteins that are controlled by the same promoters, and thus mirror the levels of LacI and TetR. The concentration of LacI can be estimated by GFP intensity and TetR concentration by mCherry intensity. In order to detect GFP and mCherry levels within each cell simultaneously, flow cytometry can be used. The lasers needed to excite GFP and mCherry are \SI{488}{\nano\meter} blue and \SI{561}{\nano\meter} yellow respectively. Since the blue laser was not available for use in the BD Accuri\textsuperscript{TM} C6 or the BD LSRII\textsuperscript{TM} (Becton, Dickinson and Company) flow cytometers available, an alternative construct had to be made in order to be able to detect the levels of both sides of the switch. 
+The pKDL071 plasmid contains all the elements of the switch. The two states of the switch are LacI high and TetR high. These are detected by using the fluorescent proteins that are controlled by the same promoters, and thus mirror the levels of LacI and TetR. The concentration of LacI can be estimated by GFP intensity and TetR concentration by mCherry intensity. In order to detect GFP and mCherry levels within each cell simultaneously, flow cytometry can be used. The lasers needed to excite GFP and mCherry are \SI{488}{\nano\meter} blue and \SI{561}{\nano\meter} yellow respectively. Since the yellow laser was not available for use in the BD Accuri\textsuperscript{TM} C6 or the BD LSRII\textsuperscript{TM} (Becton, Dickinson and Company) flow cytometers available, an alternative construct had to be made in order to be able to detect the levels of both sides of the switch. 
 
 In order to alter the switch construct to be able to detect both sides, the mCherry gene was swapped for the YFP gene. The yellow fluorescent protein is excited by the blue laser and could thus be detected using the equipment available. The YFP gene was available from BioBrick registry of standard biological parts as BBa\_K592101. PCR cloning was used to introduce the flanking sequences of EcoRV and KasI restriction enzymes in the 5' and 3' ends respectively. The primers used are given in Appendix~\ref{ap:Prim} . A double digest was performed on plasmids pKDL071 and BBa\_K592101, as well as positive and negative controls. Following gel extraction and ligation, the pKDL071-YFP plasmid was complete. The plasmid map is shown in Figure~\ref{fig:pkdl071yfp}.
 
@@ -736,26 +736,24 @@ pSEVA281G was constructed by digesting pKDL071 and pSEVA281 using the protocol o
 
 pSEVA281C was constructed via \acrshort{pcr} cloning. \acrshort{pcr} was carried out using the pKDL071 plasmid as a template \acrshort{dna} using the protocol outlined in Section~\ref{sec:pcr}. Primers were chosen so that Ptrc2 and mCherry were copied and a Hind\RNum{3} restriction enzyme recognition sequence added to the fragment. The rest of the cloning procedure followed as per plasmid pSEVA281G.
 
-\begin{figure*}[tb]
-	\begin{center}
+\begin{figure*}[p]
+	\centerfloat
 		\includegraphics[width=\textwidth]{../../chapters/chapterABCFlow/images/plasmids_constructed.png}
 		\caption[pSEVA281G and pSEVA281C plasmid map]{\label{fig:psevas}: The plasmids used to calibrate GFP and mCherry fluorescence. (A) pSEVA281G plasmid map (B) pSEVA281C plasmid map.  }
-	\end{center}
-\end{figure*}
 
+%\end{figure*}
+
+%\begin{figure*}[htb]
+	%\begin{center}
+		\includegraphics[scale=0.6]{../../chapters/chapterABCFlow/images/growth_curves.png}
+		\caption[Growth rate curves of cultures with and without inducers]{\label{fig:growth_curve} Growth rate analysis of \textit{E. coli} K-12 MG1655 pKDL071 and \textit{E. coli} DH5α pSEVA281G cultures with and without inducers. The inducers do not affect the growth of the bacteria. }
+	%\end{center}
+\end{figure*}
 
 \subsubsection{Growth rate investigation}
 
-I carried out a growth rate analysis to determine whether the \acrshort{atc} or \acrshort{iptg} added to pKDL071 or pSEVA281G \textit{E. coli} cultures affected the growth of the bacteria. Cultures were grown without any inducer overnight as described in Section~\ref{sec:growth_meth}. Assays for the cultures were ran with and without added inducers. As can be seen in Figure~\ref{fig:growth_curve}, there is no difference between the conditions. The addition of either \acrshort{atc} or \acrshort{iptg} does not affect the growth rate of \textit{E. coli} K-12 MG1655. Additionally, \acrshort{atc} does not affect the growth rate of \textit{E. coli} DH5α. Since the addition of \acrshort{atc} flips the switch to the GFP high state, and \acrshort{iptg} to the mCherry high state, we can also conclude that the growth rate of the chassis is not affected by which side of the switch is in the high state. The growth rate of \textit{E. coli} DH5α was consistently lower than that of \textit{E. coli} K-12 MG1655.
+I carried out a growth rate analysis to determine whether the \acrshort{atc} or \acrshort{iptg} added to pKDL071 or pSEVA281G \textit{E. coli} cultures affected the growth of the bacteria. Cultures were grown without any inducer overnight as described in Section~\ref{sec:growth_meth}. Assays for the cultures were ran with and without added inducers. As can be seen in Figure~\ref{fig:growth_curve}, there is no difference between the conditions. The addition of either \acrshort{atc} or \acrshort{iptg} does not affect the growth rate of \textit{E. coli} K-12 MG1655. Additionally, \acrshort{atc} does not affect the growth rate of \textit{E. coli} DH5α. Since the addition of \acrshort{atc} flips the switch to the GFP high state, and \acrshort{iptg} to the mCherry high state, we can also conclude that the growth rate of the chassis is not affected by which side of the switch is in the high state. The growth rate of \textit{E. coli} DH5α was consistently lower than that of \textit{E. coli} K-12 MG1655. Growth curves can be fitted u
 
-\begin{figure*}[htbp]
-	\begin{center}
-		\includegraphics[scale=0.6]{../../chapters/chapterABCFlow/images/growth_curves.png}
-		\caption[Growth rate curves of cultures with and without inducers]{\label{fig:growth_curve} Growth rate analysis of \textit{E. coli} K-12 MG1655 pKDL071 and \textit{E. coli} DH5α pSEVA281G cultures with and without inducers. The inducers do not affect the growth of the bacteria. }
-	\end{center}
-\end{figure*}
-
-\clearpage
 
 
 
@@ -792,7 +790,7 @@ I carried out a concentration assay using flow cytometry, as described in Sectio
 %\end{tabular}
 %\end{table}
 
-\begin{table}[htbp]
+\begin{table}[tb]
 \centering
 \caption{Inferred values from the Hill equations in \acrshort{atc} and \acrshort{iptg} inductions}
 \label{tab:hill_initial}
@@ -800,8 +798,8 @@ I carried out a concentration assay using flow cytometry, as described in Sectio
 \toprule
 \multirow{2}{*}{Parameters} & \multicolumn{2}{l}{\acrshort{atc} induction} & \multicolumn{2}{l}{IPTG induction} \\ \cmidrule(l){2-5} 
  & GFP & mCherry & GFP & mCherry \\ \midrule
-pmin & 18.3 & 330.45 & 139.69 & 7.3 \\
-pmax & 1541.3 & 974.46 & 1392.822 & 687.3 \\
+P\textsubscript{min} & 18.3 & 330.45 & 139.69 & 7.3 \\
+P\textsubscript{max} & 1541.3 & 974.46 & 1392.822 & 687.3 \\
 kd & 0.097 & 0.09917 & 0.000019 & 0.00012\\
 n & 56.7 & 135.006 & 2.59 & 0.98\\ 
 fold change & 84.1 & 2.94 & 9.97 & 94.15 \\ \bottomrule
@@ -833,7 +831,7 @@ During IPTG induction we observe an increase in mCherry fluorescence, as seen in
 
 Figures~\ref{fig:switch_concentrations_model_atc} and~\ref{fig:switch_concentrations_model} demonstrate that the genetic toggle switch present on the pKDL071 plasmid is capable of behaving like a switch. By adding the appropriate inducers at increasing concentrations I observed the switch flipping between its two states, GFP high/mCherry low and GFP low/mCherry high. I observed a bigger fold increase in fluorescence in mCherry during IPTG inductions compared to GFP during \acrshort{atc} inductions. Both inductions resulted in a large overall change in fluorescence for the two fluorescent proteins GFP and mCherry. 
 
-
+\clearpage
 \subsubsection{Toggle switch time course assay}
 \label{sec:ts_time}
 I further analysed the pKDL071 toggle switch by investigating the time it takes for it to switch from one high state to the other. To do that I used the method outlined in Section~\ref{sec:flo_time}. I obtained separate time courses for the \acrshort{iptg} and \acrshort{atc} inductions. 
@@ -920,12 +918,12 @@ The model also included a fluorescence intensity part. The fluorescent signal em
 \multicolumn{5}{c}{Parameters} \\ \midrule
 \multicolumn{1}{c}{Description} & \multicolumn{1}{c}{Symbol} & Units & \multicolumn{1}{c}{\acrshort{atc} induction} & IPTG induction \\ \midrule
 IPTG-induced mCherry degradation rate & KI\textsubscript{u} &  h\textsuperscript{−1} μM\textsuperscript{−1}&  & 1 - 100 \\
-GFP transcription rate & R\textsubscript{u} & molecules h\textsuperscript{−1} & 1 - 50 & 1 - 50 \\
-GFP translation rate & KL\textsubscript{u} & h\textsuperscript{−1} & 1 - 50 & 1 - 50 \\
+GFP transcription rate & R\textsubscript{u} &  h\textsuperscript{−1} & 1 - 50 & 1 - 50 \\
+GFP promoter leakiness & KL\textsubscript{u} &  h\textsuperscript{−1} & 1 - 50 & 1 - 50 \\
 GFP degradation & KD\textsubscript{u} & h\textsuperscript{−1} & 0.001 - 0.1 & 0.001 - 0.1 \\
 mCherry-induced GFP repression rate & KR\textsubscript{u} &  molecules\textsuperscript{−1} h\textsuperscript{−1} & 0.016 - 1.2 & 0.016 - 1.2 \\
-mCherry transcription rate & R\textsubscript{v} & molecules h\textsuperscript{−1} & 1 - 50 & 1 - 50 \\
-mCherry translation rate & KL\textsubscript{v} & h\textsuperscript{−1} & 1 - 50 & 1 - 50 \\
+mCherry transcription rate & R\textsubscript{v} &  h\textsuperscript{−1} & 1 - 50 & 1 - 50 \\
+mCherry promoter leakiness & KL\textsubscript{v} &   h\textsuperscript{−1} & 1 - 50 & 1 - 50 \\
 GFP-induced mCherry repression rate & KR\textsubscript{v} & molecules\textsuperscript{−1} h\textsuperscript{−1} & 0.016 - 1.2 & 0.016 - 1.2 \\
 mCherry degradation & KD\textsubscript{v} & h\textsuperscript{−1} & 0.1 - 2 & 0.1 - 2 \\
 \acrshort{atc}-induced GFP degradation rate & KI\textsubscript{v} & h\textsuperscript{−1} μM\textsuperscript{−1} & 1 - 100 &  \\ \midrule
@@ -973,7 +971,7 @@ The inferred parameters, and the 95\% credible intervals, are given in Table~\re
 	t_{\frac{1}{2}} = \frac{ln(2)}{k}
 \end{align*}
 
-\noindent where $k$ is the decay rate of the protein. The half-life of GFP was estimated to be (7.788, 43.322) hours which is consistent with the \textgreater 24 hours half life that has been previously reported for the variant of GFP used here, GFPmut3b~\autocite{Andersen:1998tn}. The half-life for mCherry was estimated to be (9.242, 31.507) hours which is consistent with the long half-life of mCherry, reported to be more than 24 hours~\autocite{Shaner:2004vy}. We find that the inferred parameter for GFP gene expression, R\textsubscript{u} is (1.055, 1.979) molecules h\textsuperscript{-1}, whereas the parameter for gene expression of mCherry (R\textsubscript{v}) was inferred to (8.970, 42.611) molecules h\textsuperscript{-1}. These values correspond to the promoter strengths of P\textsubscript{LtetO-1} and P\textsubscript{trc2} respectively. This is in agreement with characterisation data on the strength of these two promoters, which report that there is a difference in strengths, P\textsubscript{trc2} being a stronger promoter than P\textsubscript{LtetO-1}~\autocite{Litcofsky:2012gr}. Further, we find that the values of the intensity parameters μ and σ, which represent the settings on the flow cytometer, to be inferred better for GFP than for mCherry. 
+\noindent where $k$ is the decay rate of the protein. The half-life of GFP was estimated to be (7.788, 43.322) hours which is consistent with the \textgreater 24 hours half life that has been previously reported for the variant of GFP used here, GFPmut3b~\autocite{Andersen:1998tn}. The half-life for mCherry was estimated to be (9.242, 31.507) hours which is consistent with the long half-life of mCherry, reported to be more than 24 hours~\autocite{Shaner:2004vy}. We find that the inferred parameter for GFP gene expression, R\textsubscript{u} is (1.055, 1.979) molecules h\textsuperscript{-1}, whereas the parameter for gene expression of mCherry (R\textsubscript{v}) was inferred to (8.970, 42.611) molecules h\textsuperscript{-1}. These values correspond to the promoter strengths of P\textsubscript{LtetO-1} and P\textsubscript{trc2} respectively. This is in agreement with characterisation data on the strength of these two promoters, which report that there is a difference in strengths, P\textsubscript{trc2} being a stronger promoter than P\textsubscript{LtetO-1}~\autocite{Litcofsky:2012gr}. By simulating the system using the median inferred values of the system, we find that when the switch is in the GFP high state, there are approximately 600 GFP molecules in the cell. Further, we find that the values of the intensity parameters μ and σ, which represent the settings on the flow cytometer, to be inferred better for GFP than for mCherry. 
 
 
  %There is an indication of the difference in strengths in the inferred values here, but the value of R\textsubscript{v} has not been inferred as well as R\textsubscript{u} to draw a strong conclusion.
@@ -986,15 +984,13 @@ The inferred parameters, and the 95\% credible intervals, are given in Table~\re
 \begin{tabular}{@{}lllll@{}}
 \toprule
 Parameter & Units &0.025 & Median & 0.975 \\ \midrule
-R\textsubscript{u} &molecules h\textsuperscript{-1}& 1.055 & 1.298 & 1.979 \\
-KL\textsubscript{u} &h\textsuperscript{-1}& 0.022 & 0.043 & 0.075 \\
-KI\textsubscript{v} &h\textsuperscript{-1}& 19.606 & 40.466 & 49.138 \\
-KD\textsubscript{u} &h\textsuperscript{-1}& 0.022 & 0.043 & 0.075 \\
-KI\textsubscript{v} &h\textsuperscript{-1}& 0.016 & 0.0834 & 0.089 \\
-KR\textsubscript{u} &molecules h\textsuperscript{-1}& 0.006 & 0.013 & 0.093 \\
-R\textsubscript{v} &molecules h\textsuperscript{-1}& 8.970 & 31.057 & 42.611 \\
+R\textsubscript{u} & h\textsuperscript{-1}& 1.055 & 1.298 & 1.979 \\
+KL\textsubscript{u} &h\textsuperscript{-1}& 19.606 & 40.466 & 49.138 \\
+KD\textsubscript{u} &h\textsuperscript{-1}& 0.016 & 0.0834 & 0.089 \\
+KR\textsubscript{u} &molecules\textsuperscript{-1} h\textsuperscript{-1}& 0.006 & 0.013 & 0.093 \\
+R\textsubscript{v} & h\textsuperscript{-1}& 8.970 & 31.057 & 42.611 \\
 KL\textsubscript{v} &h\textsuperscript{-1}& 5.807 & 35.396 & 38.333 \\
-KR\textsubscript{v} &molecules h\textsuperscript{-1}& 0.095 & 0.386 & 0.947 \\
+KR\textsubscript{v} &molecules\textsuperscript{-1} h\textsuperscript{-1}& 0.095 & 0.386 & 0.947 \\
 KD\textsubscript{v} &h\textsuperscript{-1}& 0.022 & 0.043 & 0.075 \\
 KI\textsubscript{v} &h\textsuperscript{-1} μM\textsuperscript{-1}& 21.690 & 54.214 & 89.937 \\
 μ\textsubscript{GFP} &AU& 53.424 & 76.229 & 84.055 \\
@@ -1012,7 +1008,7 @@ The value of R\textsubscript{u} represents the strength of the promoter driving 
 \begin{figure}[htb]
 \centerfloat
 	\includegraphics[width=\textwidth]{../../chapters/chapterABCFlow/images/promoter_strengths.pdf}
-	\caption[Changing the parameter values affects the behaviour of the switch ]{\label{fig:prom_str} (A) Increasing the initial condition value of mCherry does not affect the state of the system. (B) Decreasing the initial condition value of GFP destabilises the switch. (C) Decreasing parameter R\textsubscript{u} to a value outside the 95\% credible region stops the model from behaving like a switch. (D) Increasing the value of R\textsubscript{u}, the rate representing the transcription factor of GFP, causes GFP to reach higher levels. (E) Increasing  the value of KR\textsubscript{u}, the parameter representing the mCherry-induced GFP repression rate causes the switch to happen at a later time point and not all stochastic trajectories switch state. (F) If the value of KR\textsubscript{u} is set to larger than the 95\% credible region, the system does not switch states. For all plots, a solid line depicts the median value of the trajectories and the dotted line depict 0.025 and 0.975 quartiles.}
+	\caption[Changing the parameter values affects the behaviour of the switch ]{\label{fig:prom_str} (A) Increasing the initial condition value of mCherry does not affect the state of the system. (B) When the initial condition value of GFO is decreased, the system no longer exhibits a high and low state for GFP and mCherry. (C) Decreasing parameter R\textsubscript{u} to a value outside the 95\% credible region stops the model from behaving like a switch. (D) Increasing the value of R\textsubscript{u}, the rate representing the transcription factor of GFP, causes GFP to reach higher levels. (E) Increasing  the value of KR\textsubscript{u}, the parameter representing the mCherry-induced GFP repression rate causes the switch to happen at a later time point and not all stochastic trajectories switch state. (F) If the value of KR\textsubscript{u} is set to larger than the 95\% credible region, the system does not switch states. For all plots, a solid line depicts the median value of the trajectories and the dotted line depict 0.025 and 0.975 quartiles.}
 \end{figure}
 
 
@@ -1039,13 +1035,13 @@ The median values of the marginal posterior distribution of each parameter were 
 \toprule
 Parameter & Units &0.025 & Median & 0.975 \\ \midrule
 KI\textsubscript{u} &h\textsuperscript{-1}μM\textsuperscript{-1}& 11.767 & 33.094 & 59.814 \\
-R\textsubscript{u} &molecules h\textsuperscript{-1}& 1.057 & 1.818 & 9.707 \\
+R\textsubscript{u} & h\textsuperscript{-1}& 1.057 & 1.818 & 9.707 \\
 KL\textsubscript{u} &h\textsuperscript{-1}& 1.161 & 4.986 & 28.258 \\
 KD\textsubscript{u} &h\textsuperscript{-1}& 0.015 & 0.031 & 0.083 \\
-KR\textsubscript{u} &molecules h\textsuperscript{-1}& 0.146 & 0.839 & 1.183 \\
-R\textsubscript{v} &molecules h\textsuperscript{-1}& 1.119 & 3.223 & 21.715 \\
+KR\textsubscript{u} &molecules\textsuperscript{-1} h\textsuperscript{-1}& 0.146 & 0.839 & 1.183 \\
+R\textsubscript{v} & h\textsuperscript{-1}& 1.119 & 3.223 & 21.715 \\
 KL\textsubscript{v} &h\textsuperscript{-1}& 1.396 & 11.515 & 33.369 \\
-KR\textsubscript{v} &molecules h\textsuperscript{-1}& 0.461 & 0.758 & 1.136 \\
+KR\textsubscript{v} &molecules\textsuperscript{-1} h\textsuperscript{-1}& 0.461 & 0.758 & 1.136 \\
 KD\textsubscript{v} &h\textsuperscript{-1}& 0.009 & 0.061 & 0.091 \\
 μ\textsubscript{GFP} &AU& 19.371 & 34.634 & 46.499 \\
 μ\textsubscript{mCherry} &AU& 17.082 & 34.943 & 138.208\\
@@ -1086,9 +1082,9 @@ Here I also developed a Bayesian framework, ABC-Flow, that is used to fit stocha
 I have used ABC-Flow to fit the toggle switch model to simulated flow cytometry data in one and two dimensions. This demonstrated the effectiveness of ABC-Flow in parameter identifiability of intensity data. Further, I used ABC-Flow to fit a stochastic computational model to flow cytometry time course data obtained by inducing the genetic toggle switch to its two states. This was done using both sides of the switch, GFP high/mCherry low to GFP low/mCherry high using IPTG and vice versa using \acrshort{atc}. The model parameters were inferred from the data obtained via \acrshort{atc} induction, representing the flip from GFP low/mCherry high to GFP high/mCherry low. The inferred parameter values were used to make predictions on the behaviour of the toggle switch system under different initial conditions, promoter and repression strengths. The parameters were not inferred as well for the data obtained via IPTG induction. This could be attributed to the experimental data obtained. Post-IPTG induction we observed a decrease in GFP but the increase in mCherry was not as prominent. This result could be improved by a repetition of the time course experiment, which was not carried out due to time constraints.
 
 
-The model fits to experimental data presented here could be improved by a number of ways in the future. Firstly, the toggle switch model used here was a simplified version of the system. The model consisted of two proteins, GFP and mCherry and used the Shea-Ackers formalism. A more flexible and detailed model, like one built using mass action kinetics and including LacI and TetR could lead to more accurate inference. It would also allow to test more aspects of the system via simulations using the inferred parameters. It must  be noted that the intensity model used here assumes a normal distribution without any correlation. It does not include the correlation between GFP and mCherry and the two intensity normals are inferred independently. This is not the case in the experimental data collected, where a correlation between the two is observed. In addition, the model fits would be improved if the flow cytometry data was further pre-processed by calibration using commercially available calibration beads. Computational methods like FlowCal, developed by~\textcite{Tabor:2009bz} can be used to convert fluorescence arbitrary units (a.u.) to MEFs (molecules of equivalent fluorophore). This can account for instrument gain settings as well as day to day instrument variability. Future improvements on ABC-Flow could also include the simultaneous fitting of the toggle switch model to both time courses, post-\acrshort{atc} and post-IPTG induction. Both of these time courses are obtained from the same genetic system, and the accurate characterisation of said system would have to include both functions. This would allow us to obtain parameter estimates for components that can respond to both inducers. ABC-Flow could be also be further developed to be able to fit computational models to more fluorophores simultaneously. This would enable the effective characterisation of more complex systems.
+The model fits to experimental data presented here could be improved by a number of ways in the future. Firstly, the toggle switch model used here was a simplified version of the system. The model consisted of two proteins, GFP and mCherry and used the Shea-Ackers formalism. A more flexible and detailed model, like one built using mass action kinetics and including LacI and TetR, as well as mRNA and and the maturation of GFP could lead to more accurate inference. It would also allow the testing of more aspects of the system via simulations using the inferred parameters. In addition, the model fits would be improved if the flow cytometry data was further pre-processed by calibration using commercially available calibration beads. Computational methods like FlowCal, developed by~\textcite{Tabor:2009bz} can be used to convert fluorescence arbitrary units (a.u.) to MEFs (molecules of equivalent fluorophore). This can account for instrument gain settings as well as day to day instrument variability. Future improvements on ABC-Flow could also include the simultaneous fitting of the toggle switch model to both time courses, post-\acrshort{atc} and post-IPTG induction. Both of these time courses are obtained from the same genetic system, and the accurate characterisation of said system would have to include both functions. This would allow us to obtain parameter estimates for components that can respond to both inducers. ABC-Flow could be also be further developed to be able to fit computational models to more fluorophores simultaneously. This would enable the effective characterisation of more complex systems.
 
-
+% It must  be noted that the intensity model used here assumes a normal distribution without any correlation. It does not include the correlation between GFP and mCherry and the two intensity normals are inferred independently. This is not the case in the experimental data collected, where a correlation between the two is observed if compe.
 
  %I also find that which state the switch is on has no effect on the growth rate of the bacteria. In order for this toggle switch to be used in a synthetic biology application, it is important that both sides of the switch have an equivalent burden onto the chassis. If one of the steady states creates a larger burden and slows down the growth of the bacteria, this can create an imbalance in the population. If the toggle switch-bearing bacterial population exists in an environment with competing bacteria, for example the gut microbiome, and one of the two states creates a larger burden, this would cause the switch-bearing population to become less competitive compared to the non switch-bearing population. It is therefore crucial that the state of the switch does not affect the competitiveness of the chassis.  
 

@@ -448,10 +448,12 @@ In this section I apply StabilityFinder to toggle switch models in order to find
 \label{tab:gard_det_stoch}
 \begin{tabular}{@{}cccccc@{}}
 \toprule
-\multicolumn{4}{c}{Parameters (time\textsuperscript{-1})}                          & \multicolumn{2}{c}{Species (μM)} \\ \cmidrule(lr){1-4}
+\multicolumn{4}{c}{Parameters}                          & \multicolumn{2}{c}{Species (μM)} \\ \cmidrule(lr){1-4}
 \cmidrule(lr){5-6}
+
 $a_1$ & $\beta$ & $a_2$ & \multicolumn{1}{c}{$\gamma$} & $s_1$        & $s_2$        \\
-0-60  & 0-5     & 0-60  & 0-5                           & 0-100        & 0-100        \\ \bottomrule
+0-60  & 0-5     & 0-60  & 0-5                           & 0-100        & 0-100        \\ 
+time\textsuperscript{-1}&μΜ\textsuperscript{-1} time\textsuperscript{-1}&time\textsuperscript{-1}&μM\textsuperscript{-1} time\textsuperscript{-1}&&\\\bottomrule
 \end{tabular}
 \end{table}
 
@@ -551,7 +553,7 @@ Using StabilityFinder with priors centred around the parameter values used in th
 Parameter                                            & Symbol & \acrshort{cs-lu}        & \acrshort{sp-lu}         & \acrshort{dp-lu}       \\ \midrule
 \multirow{2}{4cm}{Production rate (Proteins/Minute)}                & gx        & 30-50   & 1-2       & 1-100    \\
                                                 & gy        & 30-50   & 20-25     & 1-100    \\[4pt]
-\multirow{2}{4cm}{Degradation rate (Minute-1)}               & kx        & 0-0.5   & 50-55     & 0-1      \\
+\multirow{2}{4cm}{Degradation rate (Minute\textsubscript{-1})}               & kx        & 0-0.5   & 50-55     & 0-1      \\
                                                 & ky        & 0-0.5   & 48-52     & 0-1      \\[4pt]
 \multirow{2}{4cm}{Hill coefficient}               & nxy       & 1-5     & 30-35     & 0-10     \\
                                                 & nyx       & 1-5     & 0.1-0.2   & 0-10     \\[4pt]

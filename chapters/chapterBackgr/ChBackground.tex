@@ -377,7 +377,8 @@ Stochastic models are often analytically intractable but can be studied using nu
 \noindent This algorithm results in one trajectory of the system. It has to be repeated a number of times to obtain enough realisations of the trajectory to compute appropriate summary statistics.
 
 \subsubsection{Stochastic mass action kinetics}
-Here I will consider the predator-prey system introduced in Section~\ref{sec:predator_prey_odes}. A set of reactions is defined, as shown in Table~\ref{tab:pp_reac}, and each one has an associated stochastic rate constant $c_i$. The rate constant, or hazard function, of each reaction i is defined as $h_i(x, c_i)$, where x is the current state of each species in the system. The form of each hazard function is defined by the order of the given reaction~\autocite{Wilkinson:2006td}, as shown in Table~\ref{tab:hazards}. 
+Here I will consider the predator-prey system introduced in Section~\ref{sec:predator_prey_odes}. A set of reactions is defined, as shown in Table~\ref{tab:pp_reac}, and each one has an associated stochastic rate constant $c_i$. The rate constant, or hazard function, of each reaction i is defined as $h_i(x, c_i)$, where x is the current state of each species in the system. The form of each hazard function is defined by the order of the given reaction~\autocite{Wilkinson:2006td}, as shown in Table~\ref{tab:hazards}. When simulating a stochastic system using the Gillespie algorithm, the state of the system $x$ is defined as the sum of all the reaction hazards, namely $h_0(x, c) = \sum_{i=1}^{n}h_{i}(x, c_i)$~\autocite{Wilkinson:2006td}. 
+
 
 
 \begin{table}[h]
@@ -388,13 +389,12 @@ Here I will consider the predator-prey system introduced in Section~\ref{sec:pre
 \toprule
 Order & Reaction & Hazard \\ \midrule
 Zeroth & $\varnothing \xrightarrow{c_i}X $ & $h_i(x, c_i) = c_i$ \\
-First & $X_j \xrightarrow{c_i} ? $ & $h_i(x, c_i) = c_{i}x_j$ \\
-Second & $X_j + X_k \xrightarrow{c_i} ? $ & $h_i(x, c_i) = c_{i}x_{j}x_k$ \\
-Dimerization & $X_j + X_j \xrightarrow{c_i} X_{2j} $ & $h_i(x, c_i) = c_{i}\frac{x_{j}(x_{j}-1)}{2}$ \\ \bottomrule
+First & $X_a \xrightarrow{c_i} ? $ & $h_i(x, c_i) = c_{i}x_a$ \\
+Second & $X_a + X_b \xrightarrow{c_i} ? $ & $h_i(x, c_i) = c_{i}x_{a}x_b$ \\
+Dimerization & $X_a + X_a \xrightarrow{c_i} X_{2a} $ & $h_i(x, c_i) = c_{i}\frac{x_{a}(x_{a}-1)}{2}$ \\ \bottomrule
 \end{tabular}
 \end{table}
 
-\noindent Therefore, when simulating a stochastic system using the Gillespie algorithm, the state of the system $x$ is defined as the sum of all the reaction hazards, namely $h_0(x, c) = \sum_{i=1}^{n}h_{i}(x, c_i)$~\autocite{Wilkinson:2006td}. 
 
 \section{The Bayesian approach to parameter inference and system design}
 
@@ -512,7 +512,7 @@ The simplest \acrshort{abc} algorithm is the \acrshort{abc} rejection sampler~\a
  	\label{alg:ABC}
  \begin{algorithmic}[1]
     \Statex
-	\State Sample a parameter vector \texttheta{} from prior $\pi(\theta)$
+	\State Sample a parameter vector \texttheta{} from prior $p(\theta)$
 	\State Simulate the model given \texttheta{}
     \State Compare the simulated data with the desired data, using a distance function d and tolerance \textepsilon{}. if d $\leq$ \textepsilon{}, accept \texttheta{} 
    
@@ -527,9 +527,7 @@ An alternative method developed by~\textcite{Toni:2009tr} takes advantage of \ac
 %The desired behaviour of the system is used as the data to which the candidate model output is compared to \cite{Barnes:2011hh}. 
 %Given a set of competing models, their associated prior estimates of their parameters and the design specifications, the algorithm is able to rank the models according to how well they describe the data and the posterior probabilities of the parameters \cite{Barnes:2011hh}. 
 
-ABC SMC can identify the parameter values within a predefined range of values that can give rise to the data. It works by first sampling at random from the initial range set by the researcher, i.e. from the prior distribution of values. Each sample is called a particle. It then simulates the model given those values and compares that to the target behaviour. If the distance between the simulation and the target behaviour is greater than a predefined threshold distance ε, then the parameter values that produced that simulation are rejected. This is repeated for a predefined number of samples which are collectively referred to as a population. Each particle in a population has a weight associated with it, which represents the probability of it producing the desired behaviour. At subsequent iterations the new samples are obtained from the previous populations and the ε is set to smaller value, thus eventually reaching the desired behaviour. The algorithm uses an automated epsilon schedule, where the threshold of the next iteration is chosen from the range of values of the current population~\autocite{Silk:2013bi}. 
-
-The algorithm proceeds as follows:
+ABC SMC can identify the parameter values within a predefined range of values that can give rise to the data. It works by first sampling at random from the initial range set by the researcher, i.e. from the prior distribution of values. Each sample is called a particle. It then simulates the model given those values and compares that to the target behaviour. If the distance between the simulation and the target behaviour is greater than a predefined threshold distance ε, then the parameter values that produced that simulation are rejected. This is repeated for a predefined number of samples which are collectively referred to as a population. Each particle in a population has a weight associated with it, which represents the probability of it producing the desired behaviour. At subsequent iterations the new samples are obtained from the previous populations and the ε is set to smaller value, thus eventually reaching the desired behaviour. The algorithm proceeds as follows:
 
 \begin{algorithm}[H]
 
@@ -538,13 +536,13 @@ The algorithm proceeds as follows:
  \begin{algorithmic}[1]
     \Statex
     \State Select ε and set population t = 0
-	\State Sample particles (θ). If t = 0, sample from prior distributions (P). If t $\textgreater$ 0, sample particles from previous population to obtain θ*.
+	\State Sample particles (θ). If t = 0, sample from prior distributions (p). If t $\textgreater$ 0, sample particles from previous population to obtain θ*.
 	\State If t $\textgreater$ 0: Perturb each particle θ* using perturbation kernel $K_t$ to obtain perturbed particle θ** %, by $\pm$ half the range of the previous population (j) to obtain new perturbed population (i).
 	\State Simulate each particle to obtain time course.
 	\State Reject particles if d $\textgreater$ ε.
 	\State Calculate the weight $w$ for each accepted particle. At the first population assign a weight equal to 1 for all particles. In subsequent populations the weight of a particle is equal to the probability of observing that particle divided by the sum of the probabilities of the particle arising from each of the particles in the previous population:
 
-	\State $w_{t}^{(i)} = \begin{cases} 1, & \mbox{if } n = 0 \\\frac{P(\theta_{t}^{(i)})}{\sum_{j=1}^N w_{t-1}^{(j)} K_{t}(\theta_{t-1}^{(j)}, \theta_{t}^{(i)})}, & \mbox{if } n $\textgreater$  0. \end{cases}$
+	\State $w_{t}^{(i)} = \begin{cases} 1, & \mbox{if } n = 0 \\\frac{p(\theta_{t}^{(i)})}{\sum_{j=1}^N w_{t-1}^{(j)} K_{t}(\theta_{t-1}^{(j)}, \theta_{t}^{(i)})}, & \mbox{if } n $\textgreater$  0. \end{cases}$
 
   \end{algorithmic}
 \end{algorithm}
@@ -569,6 +567,10 @@ s_p = \frac{1}{2} \big (max(\theta_{p-1}) - min(\theta_{p-1}) \big )
 
 \noindent If the θ** falls out of the limits of the priors then the perturbation is rejected and repeated until an acceptable θ** is obtained. This method is successful in perturbing the particles by a small amount in order to explore the parameter space, but can be slow to complete. 
 
+
+\subsubsection{Epsilon schedule}
+The algorithm uses an automated epsilon schedule, where the threshold of the next iteration is chosen from the range of values of the current population. This method is the quantile method. Another approach to the epsilon schedule is to use an adaptive epsilon schedule which is efficient in avoiding local minima~\autocite{Silk:2013bi}. Throughout this thesis the quantile method was used with a tight quantile (0.3) to avoid the problem of local minima. 
+
 \subsubsection{Particle simulation}
 \label{sec:sim}
 Each particle is simulated using cuda-sim~\autocite{Zhou:2011hp}. The model is provided by the user in SBML format and is converted into CUDA\textsuperscript{\textregistered} code by cuda-sim. The model in CUDA\textsuperscript{\textregistered} code format can then be run on NVIDIA\textsuperscript{\textregistered} \acrshort{gpu}s. This allows the user to take advantage of the speed of parallelised simulations without any CUDA\textsuperscript{\textregistered} knowledge. 
@@ -580,7 +582,7 @@ For the first population the weights are all given a value of 1, and then normal
 
 
 \begin{align}
-w_{t}^{(i)} = \frac{P(\theta_{t}^{(i)})}{\sum_{j=1}^N w_{t-1}^{(j)} K_{t}(\theta_{t-1}^{(j)}, \theta_{t}^{(i)})} \text{ for n $\textgreater$  0}.
+w_{t}^{(i)} = \frac{p(\theta_{t}^{(i)})}{\sum_{j=1}^N w_{t-1}^{(j)} K_{t}(\theta_{t-1}^{(j)}, \theta_{t}^{(i)})} \text{ for n $\textgreater$  0}.
 \end{align}
 	
 	
@@ -610,20 +612,19 @@ Figure~\ref{fig:myABC true 1} illustrates the use of \acrshort{abc} \acrshort{sm
 
 The posterior distribution has as many dimensions are there are parameters, thus can be challenging to visualise for models containing more than two parameters. In order to visualise the multi-dimensional posterior distributions in this thesis, the one and two dimensional marginal distributions of the parameters will be shown. An example of such a plot is shown in Figure~\ref{fig:exampl_post}. 
 
-The data shown in Figure~\ref{fig:exampl_post} consists of 5000 random samples drawn from a three-dimensional multivariate normal distribution, of mean = 0 for all dimensions and variance σ
+The data shown in Figure~\ref{fig:exampl_post} consists of 10000 random samples drawn from a bivariate normal distribution, of mean = 0 for all dimensions and variance σ
 \begin{align*}
 σ = \begin{bmatrix}
-1 &1  &0 \\ 
- 0& 1 &0 \\ 
-0 & 0 & 1
+1 &0.5 \\ 
+ 0.5& 1  
 \end{bmatrix}.
 \end{align*}
-\noindent The three-dimensional distribution is plotted as shown in Figure~\ref{fig:exampl_post}.
+\noindent The two-dimensional distribution is plotted as shown in Figure~\ref{fig:exampl_post}.
 
 \begin{figure*}[h]
     \begin{center}
-    \includegraphics[scale=0.43]{../../chapters/chapterBackgr/images/example_posterior.pdf}
-    \caption[Example of a posterior distribution plot]{Visualising a three-dimensional distribution. A three-dimensional multivariate normal can be visualised by plotting the one-dimensional marginal distributions on the diagonal and the the two-dimensional marginal distributions are on the off-diagonal. Correlation can be visualised using the 2D marginal distributions.}
+    \includegraphics[width=1.1\textwidth]{../../chapters/chapterBackgr/images/example_posterior.pdf}
+    \caption[Example of a posterior distribution plot]{Visualising a two-dimensional distribution. (A) A bivariate normal distribution plotted in 3D. (B) A two-dimensional multivariate normal can be visualised by plotting the one-dimensional marginal distributions on the diagonal and the the two-dimensional marginal distributions are on the off-diagonal. Correlation can be visualised using the 2D marginal distributions.}
     \label{fig:exampl_post}
     \end{center}
 \end{figure*}
