@@ -1,21 +1,21 @@
 [0] Config.pm:324> INFO - This is Biber 2.1
 [0] Config.pm:327> INFO - Logfile is '/Users/miriam/Desktop/HERE/PhDthesis/Complete_thesis/current/central.blg'
-[28] biber-darwin:276> INFO - === Sun Sep 11, 2016, 17:26:10
-[28] Biber.pm:333> INFO - Reading '/Users/miriam/Desktop/HERE/PhDthesis/Complete_thesis/current/central.bcf'
-[104] Biber.pm:645> INFO - Found 160 citekeys in bib section 0
-[119] Biber.pm:2977> INFO - Processing section 0
-[128] Biber.pm:3115> INFO - Looking for bibtex format file '../../references/thesis_n.bib' for section 0
-[141] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
-[154] bibtex.pm:895> INFO - Found BibTeX data source '../../references/thesis_n.bib'
-[162] Utils.pm:146> WARN - Duplicate entry key: 'Niwa:2005fz' in file '../../references/thesis_n.bib', skipping ...
-[168] Utils.pm:146> WARN - Duplicate entry key: 'Wilkinson:2006td' in file '../../references/thesis_n.bib', skipping ...
-[168] Utils.pm:146> WARN - Duplicate entry key: 'Finney:2003vk' in file '../../references/thesis_n.bib', skipping ...
-[169] Utils.pm:146> WARN - Duplicate entry key: 'Atkinson:2003tu' in file '../../references/thesis_n.bib', skipping ...
-[169] Utils.pm:146> WARN - Duplicate entry key: 'Anonymous:2015tj' in file '../../references/thesis_n.bib', skipping ...
-[1273] UCollate.pm:66> INFO - Overriding locale 'en-GB' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1273] UCollate.pm:66> INFO - Overriding locale 'en-GB' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1274] Biber.pm:2854> INFO - Sorting list 'nyt' of type 'entry' with scheme 'nyt' and locale 'en-GB'
-[1274] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-GB'
-[1717] bbl.pm:505> INFO - Writing '/Users/miriam/Desktop/HERE/PhDthesis/Complete_thesis/current/central.bbl' with encoding 'UTF-8'
-[1731] bbl.pm:596> INFO - Output to /Users/miriam/Desktop/HERE/PhDthesis/Complete_thesis/current/central.bbl
-[1731] Biber.pm:106> INFO - WARNINGS: 5
+[29] biber-darwin:276> INFO - === Sun Sep 11, 2016, 18:42:32
+[29] Biber.pm:333> INFO - Reading '/Users/miriam/Desktop/HERE/PhDthesis/Complete_thesis/current/central.bcf'
+[103] Biber.pm:645> INFO - Found 160 citekeys in bib section 0
+[117] Biber.pm:2977> INFO - Processing section 0
+[126] Biber.pm:3115> INFO - Looking for bibtex format file '../../references/thesis_n.bib' for section 0
+[139] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
+[152] bibtex.pm:895> INFO - Found BibTeX data source '../../references/thesis_n.bib'
+[160] Utils.pm:146> WARN - Duplicate entry key: 'Niwa:2005fz' in file '../../references/thesis_n.bib', skipping ...
+[166] Utils.pm:146> WARN - Duplicate entry key: 'Wilkinson:2006td' in file '../../references/thesis_n.bib', skipping ...
+[166] Utils.pm:146> WARN - Duplicate entry key: 'Finney:2003vk' in file '../../references/thesis_n.bib', skipping ...
+[166] Utils.pm:146> WARN - Duplicate entry key: 'Atkinson:2003tu' in file '../../references/thesis_n.bib', skipping ...
+[167] Utils.pm:146> WARN - Duplicate entry key: 'Anonymous:2015tj' in file '../../references/thesis_n.bib', skipping ...
+[1267] UCollate.pm:66> INFO - Overriding locale 'en-GB' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1267] UCollate.pm:66> INFO - Overriding locale 'en-GB' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1267] Biber.pm:2854> INFO - Sorting list 'nyt' of type 'entry' with scheme 'nyt' and locale 'en-GB'
+[1267] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-GB'
+[1709] bbl.pm:505> INFO - Writing '/Users/miriam/Desktop/HERE/PhDthesis/Complete_thesis/current/central.bbl' with encoding 'UTF-8'
+[1722] bbl.pm:596> INFO - Output to /Users/miriam/Desktop/HERE/PhDthesis/Complete_thesis/current/central.bbl
+[1723] Biber.pm:106> INFO - WARNINGS: 5

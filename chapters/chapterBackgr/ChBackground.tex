@@ -9,7 +9,7 @@ One of the first successfully constructed synthetic devices is the genetic toggl
 \subsection{The genetic toggle switch in natural systems}
 In developmental processes, bistability ensures that the differentiating cell will follow one pathway, or the other, with no possible intermediate phenotypes. This is vital for the correct development of a cell in a specific pathway. One example is the trophectoderm differentiation pathway, in which a mutually inhibitory toggle switch exists between Oct3/4 and Cdx2. This determines whether an embryonic stem cell will differentiate into a trophectoderm cell, if Cdx2 dominates the system, or an inner cell mass cell if Oct3/4 dominates~\autocite{Niwa:2005fz}. Bistability is critical in this system as a cell must differentiate into either a trophectoderm cell or an inner cell mass cell and there should not be any intermediate signals. 
 
-In the case of the GATA1 and PU.1 toggle switch, the transcription factor pair controls the fate of the common myeloid progenitors, and the two possible differentiation paths are erythroid and myeloid blood cells~\autocite{Chickarmane:2009by}. The double-negative feedback loop created by the mutually repressive pair of transcription factors sustains the system in balance until an external stimulus causes one of the two transcription factors to increase in concentration. The increased concentration of one transcription factor causes the increased repression of the production of the antagonistic transcription factor, tipping the balance towards the dominance of the first transcription factor. The double negative feedback loop reinforces this dynamic and the system remains in the same state, until an external stimulus disturbs it~\autocite{FerrellJr:2002fh}.
+In the case of the GATA1 and PU.1 toggle switch, the transcription factor pair controls the fate of the common myeloid progenitors, and the two possible differentiation paths are erythroid and myeloid blood cells~\autocite{Liew:2006cd}. The double-negative feedback loop created by the mutually repressive pair of transcription factors sustains the system in balance until an external stimulus causes one of the two transcription factors to increase in concentration. The increased concentration of one transcription factor causes the increased repression of the production of the antagonistic transcription factor, tipping the balance towards the dominance of the first transcription factor. The double negative feedback loop reinforces this dynamic and the system remains in the same state, until an external stimulus disturbs it~\autocite{FerrellJr:2002fh}.
 
 \subsection{Uses in synthetic biology}
 Despite their simplicity, toggle switches can be powerful building blocks with which to create complex responses in a synthetic network~\autocite{Lu:2009ez}. They can be used in isolation and have the potential to be used tandem to create complex networks and signalling cascades~\autocite{Lu:2009ez}. The toggle switch has been used for the regulation of mammalian gene expression~\autocite{Deans:2007cy, Kramer:2004kq}. Other synthetic applications of the toggle switch include the construction of a synthetic genetic clock~\autocite{Atkinson:2003tu}, of a predictable genetic timer~\autocite{Ellis:2009hka}, and the formation of biofilms in response to engineered stimuli~\autocite{Kobayashi:2004cv}. 
@@ -22,7 +22,7 @@ These applications are modifications of the classical toggle switch~\autocite{Ga
 
 The toggle switch motif has been studied extensively and there are numerous studies based on a number of different methods of modelling and analysis of the dynamics, including both deterministic and stochastic approaches. The conclusions drawn about the stability and robustness of the toggle switch vary between the different modelling approaches. Numerous studies have concluded that cooperativity is a necessary condition for bistability to arise~\autocite{Gardner:2000vha, Walczak:2005ds, Warren:2004baa, Warren:2005kea, Cherry:2000wi}. However, ~\textcite{Lipshtat:2006wb} found that stochastic effects can give rise to bistability even without cooperativity in three kinds of switch; the exclusive switch, in which there can only be one repressor bound at any one time, a switch in which there is degradation of bound repressors, and the switch in which free repressor proteins can form a complex, which renders them inactive as transcription factors~\autocite{Lipshtat:2006wb}. 
 
-In another study, \textcite{Ma:2012dt} found that the stochastic fluctuations in a system involving such a small number of molecules, like the toggle switch, uncovers effects that can not be predicted by the fully deterministic case~\autocite{Ma:2012dt}. In their system, the toggle switch was found to be tristable, as small number effects render the third unstable steady state stable. \textcite{Biancalani:2015vya} identified multiplicative noise as the source of bistability in the stochastic case~\autocite{Biancalani:2015vya}. ~\textcite{Warren:2005kea} concluded that the exclusive switch is always more robust than the general switch, since the free energy barrier is higher~\autocite{Warren:2005kea}. A summary of the toggle switch models is shown in Table~\ref{tab:refs}. As is clear from above, there is yet to exist a consensus on the stability a switch is capable of, and the most appropriate method of modelling it. Different methods arrive at different conclusions, creating confusion on which behaviour to be expected by the experimentalist for even a simple system like the toggle switch, consisting of just two genes. The toggle switch cannot be used as a building block of larger, more complex systems until its behaviour can be predicted accurately. Until then, designing systems with predictable behaviour will be near impossible.
+In another study, \textcite{Ma:2012dt} found that the stochastic fluctuations in a system involving such a small number of molecules, like the toggle switch, uncovers effects that cannot be predicted by the fully deterministic case~\autocite{Ma:2012dt}. In their system, the toggle switch was found to be tristable, as small number effects render the third unstable steady state stable. \textcite{Biancalani:2015vya} identified multiplicative noise as the source of bistability in the stochastic case~\autocite{Biancalani:2015vya}. ~\textcite{Warren:2005kea} concluded that the exclusive switch is always more robust than the general switch, since the free energy barrier is higher~\autocite{Warren:2005kea}. A summary of the toggle switch models is shown in Table~\ref{tab:refs}. As is clear from above, there is yet to exist a consensus on the stability a switch is capable of, and the most appropriate method of modelling it. Different methods arrive at different conclusions, creating confusion on which behaviour to be expected by the experimentalist for even a simple system like the toggle switch, consisting of just two genes. The toggle switch cannot be used as a building block of larger, more complex systems until its behaviour can be predicted accurately. Until then, designing systems with predictable behaviour will be near impossible.
 
 
 \begin{table}[t]
@@ -91,11 +91,11 @@ Quadristable &  &  & \autocite{Guantes:2008gs} \\ \bottomrule
 
 \section{Methods in biochemical modelling}
 
-Modelling attempts to describe the elements and dynamics of the biochemical system of interest. It is a tool used for integrating knowledge and experimental data as well as for making predictions about the behaviour of the system~\autocite{Wilkinson:2006td}. 
+Modelling attempts to describe the elements and dynamics of the biochemical system of interest. It is a tool used for integrating knowledge and experimental data as well as for predicting the behaviour of the system~\autocite{Wilkinson:2006td}. 
 
 
 \subsection{Representation of transcription networks}
-A transcription network can be represented in a number of ways. A network can be described by using a diagram with accompanying verbal explanations or a set of differential equations. A diagram with a lengthy verbal explanation risks the not providing sufficient clarity whereas a set of differential equations cannot easily be separated from the underlying assumptions made on the kinetics of the network. A convenient way of describing sufficient information about a system while avoiding the addition of the particular interpretation of the underlying kinetics is the use of coupled chemical reactions~\autocite{Wilkinson:2006td}. 
+A transcription network can be represented in a number of ways. A network can be described by using a diagram supplemented by verbal explanations or by a set of differential equations. A diagram with a lengthy verbal explanation risks the not providing sufficient clarity whereas a set of differential equations cannot easily be separated from the underlying assumptions made on the kinetics of the network. A convenient way of describing sufficient information about a system while avoiding the addition of the particular interpretation of the underlying kinetics is the use of coupled chemical reactions~\autocite{Wilkinson:2006td}. 
 
 \subsubsection{Coupled chemical reactions and the law of mass action}
 
@@ -103,10 +103,10 @@ Coupled chemical reactions are often used to describe transcription networks in 
 
 
 \begin{align}
-	Ra + Rb \xrightarrow{k} P, \label{eq:example_eq}
+	R_a + R_b \xrightarrow{k} P, \label{eq:example_eq}
 \end{align}
 
-\noindent where $Ra$ represents reactant A, $Rb$ reactant B and $P$ a product. Each reaction has an associated rate constant $k$. A biological transcription network can be represented using the above notations. Some common examples of coupled chemical reactions used in a biological network are given in Table~\ref{tab:chem_reac_ex}. A double headed arrow represents a reversible reaction. 
+\noindent where $R_a$ represents reactant A, $R_b$ reactant B and $P$ a product. Each reaction has an associated rate constant $k$. A biological transcription network can be represented using the above notations. Some common examples of coupled chemical reactions used in a biological network are given in Table~\ref{tab:chem_reac_ex}. A double headed arrow represents a reversible reaction. 
 
 
 \begin{table}[tb]
@@ -208,7 +208,7 @@ The Shea-Ackers formalism developed by~\textcite{Ackers:1982tq} uses a statistic
 Here I assume that repression and activation is cooperative, thus two transcription factors must bind to the promoter to repress or activate it. 
 \newpage
 \subsection{Simulation of deterministic dynamical systems}
-Deterministic modelling utilises \acrshort{ode}s and models the concentrations of the species (proteins or other molecules) by time-dependent variables~\autocite{deJong:2002ft}. Rate equations are used to model gene regulation where the rate of production of a species is a function of the concentrations of the other species~\autocite{deJong:2002ft}. 
+Deterministic modelling utilises \acrfull{ode}s and models the concentrations of the species (proteins or other molecules) by time-dependent variables~\autocite{deJong:2002ft}. Rate equations are used to model gene regulation where the rate of production of a species is a function of the concentrations of the other species~\autocite{deJong:2002ft}. 
 
 \subsubsection{Deterministic mass action kinetics}
 \label{sec:predator_prey_odes}
@@ -274,7 +274,7 @@ Two key assumptions are made when modelling a biochemical system using \acrshort
 \subsection{Nonlinear dynamical modelling}
 
 \subsubsection{Phase plane analysis}
-An alternative to studying the trajectory of a dynamical system over time is to study its behaviour in the phase plane. During a phase plane analysis the dependent variables $x$ and $y$ are plotted against each other. An example of a phase plane analysis of the predator-prey model given in Equations~\ref{eq:predator-prey} is shown in Figure~\ref{fig:pp_phase}B.
+An alternative to studying the trajectory of a dynamical system over time is to study its behaviour in the phase plane. During a phase plane analysis the dependent variables $x$ and $y$ are plotted against each other. An example of a phase plane analysis of the predator-prey model given in Equations~\ref{eq:predator-prey} is shown in Figure~\ref{fig:pp_phase}.
 
 \begin{figure*}[htb]
 \centerfloat
@@ -285,7 +285,7 @@ An alternative to studying the trajectory of a dynamical system over time is to 
 
 \subsubsection{Steady states}
 
-For a system $s$, any system satisfying $\frac{d}{dt}s(t) = 0$ is considered a fixed point, or steady state. At that point the dynamics of the system are considered in equilibrium and will not change with increasing time. Using the example of the predator-prey system, a steady state exists when the system of Equations~\ref{eq:predator-prey} are equal to 0: 
+For a system $s$, any point satisfying $\frac{d}{dt}s(t) = 0$ is considered a fixed point, or steady state. At that point the dynamics of the system are considered in equilibrium and will not change with increasing time. Using the example of the predator-prey system, a steady state exists when the system of Equations~\ref{eq:predator-prey} are equal to 0: 
  
 \begin{align}
 \frac{dx}{dt} &= f_x(x,y) = k_{1}x - k_{2}xy = 0\\
@@ -326,7 +326,7 @@ A stable steady state is defined as a fixed point whose nearby points approach t
 
 \subsubsection{Bifurcation analysis}
 
-A bifurcation analysis is carried out in order to study the effect that parameters have on the dynamical behaviour of the system~\autocite{Strogatz:1994}. In order to create a bifurcation diagram, all the parameters in the system remain constant while one parameter's value is varied. We can then observe any changes in the number and stability of the steady states of the system, for example whether a stable equilibrium in the system becomes unstable. The point where a major change occurs in the steady states of the system is called a bifurcation point~\autocite{iglesias:2010}. The stability of the steady state as well as its position is depicted on a bifurcation digram. By convention, the unstable branches are denoted by a dotted line and the stable branches by a solid line~\autocite{Strogatz:1994}. 
+A bifurcation analysis is carried out in order to study the effect that parameters have on the dynamical behaviour of the system~\autocite{Strogatz:1994}. In order to create a bifurcation diagram, all the parameters in the system remain constant while the value of one parameter is varied. We can then observe any changes in the number and stability of the steady states of the system, for example whether a stable equilibrium in the system becomes unstable. The point where a major change occurs in the steady states of the system is called a bifurcation point~\autocite{iglesias:2010}. The stability of the steady state as well as its position is depicted on a bifurcation digram. By convention, the unstable branches are denoted by a dashed line and the stable branches by a solid line~\autocite{Strogatz:1994}. 
 
 One example of a bifurcation, is the saddle-node bifurcation. This occurs when two stable states come closer together until they collide and destroy each other~\autocite{Strogatz:1994}. This can be illustrated using a simple example from \textcite{Strogatz:1994}. Consider the following system 
 
@@ -334,7 +334,7 @@ One example of a bifurcation, is the saddle-node bifurcation. This occurs when t
 	\frac{dx}{dt} = r + x^2.
 \end{align*}
 
-\noindent A bifurcation diagram of the above can be constructed by varying the value of parameter $r$. This gives the below bifurcation diagram, shown in Figure~\ref{fig:exampl_bifurc}. This system has two steady states when $r$ \textless 0, one unstable steady state and one stable. When $r = 0$ these collapse into one steady state which then disappears when $r$ \textgreater 0. 
+\noindent A bifurcation diagram of the above can be constructed by varying the value of parameter $r$. This gives the bifurcation diagram shown in Figure~\ref{fig:exampl_bifurc}. This system has two steady states when $r$ \textless 0, one unstable steady state and one stable. When $r = 0$ these collapse into one steady state which then disappears when $r$ \textgreater 0. 
 \newpage
 \begin{figure*}[h]
     \begin{center}
@@ -351,7 +351,7 @@ One example of a bifurcation, is the saddle-node bifurcation. This occurs when t
 
 The assumptions that have to be made to model a system deterministically cannot always be met. This can occur when the molecule numbers in the system are low. When this is the case, stochastic dynamics are more appropriate to model the dynamical system. In stochastic modelling species are measured in discrete amounts rather than concentrations and a joint probability distribution is used to express the probability that at time \textit{t} the cell contains a number of molecules of each species~\autocite{deJong:2002ft,khamash_iglesias:2010}. It takes probabilistic effects into account. 
 
-Biological processes are well known to include randomness. The source of this randomness originates from the random collisions between molecules that govern biological reactions~\autocite{khamash_iglesias:2010}. This randomness affects downstream events and affect the phenotypic behaviour of cells. This is known as cellular noise and it is known to be key for various cellular processes~\autocite{Eldar:2010kk}. Cellular noise can be classified into two categories, intrinsic noise and extrinsic noise. Intrinsic noise originates from the inherently random collisions between the species of the system under consideration. Extrinsic noise originates from fluctuations in the environment within which the system of interest resides, like the number of available RNA polymerases or other protein numbers~\autocite{khamash_iglesias:2010}. The noisiness of biological processes often make stochastic dynamics more appropriate for modelling cellular systems.  
+Biological processes are well known to include randomness. The source of this randomness originates from the random collisions between molecules that govern biological reactions~\autocite{khamash_iglesias:2010}. This randomness affects downstream events and the phenotypic behaviour of cells. This is known as cellular noise and it is known to be key for various cellular processes~\autocite{Eldar:2010kk}. Cellular noise can be classified into two categories, intrinsic noise and extrinsic noise. Intrinsic noise originates from the inherently random collisions between the species of the system under consideration. Extrinsic noise originates from fluctuations in the environment within which the system of interest resides, like the number of available RNA polymerases or other protein numbers~\autocite{khamash_iglesias:2010}. The noisiness of biological processes often makes stochastic dynamics more appropriate for modelling cellular systems.  
 
 
 %Stochastic modelling is used to describe systems that behave discretely and stochastically~\autocite{Wilkinson:2006td}. It takes into account the randomness in the behaviour of the species involved in a biochemical system, known as 'intrinsic' noise. The probability that a given species will have a certain number of molecules at time t is described by a stochastic simulation~\autocite{khamash_iglesias:2010}.   
@@ -377,7 +377,7 @@ Stochastic models are often analytically intractable but can be studied using nu
 \noindent This algorithm results in one trajectory of the system. It has to be repeated a number of times to obtain enough realisations of the trajectory to compute appropriate summary statistics.
 
 \subsubsection{Stochastic mass action kinetics}
-Here I will consider the predator-prey system introduced in Section~\ref{sec:predator_prey_odes}. A set of reactions is defined, as shown in Table~\ref{tab:pp_reac}, and each one has an associated stochastic rate constant $c_i$. The rate constant, or hazard function, of each reaction i is defined as $h_i(x, c_i)$, where x is the current state of each species in the system. The form of each hazard function is defined by the order of the given reaction~\autocite{Wilkinson:2006td}, as shown in Table~\ref{tab:hazards}. When simulating a stochastic system using the Gillespie algorithm, the state of the system $x$ is defined as the sum of all the reaction hazards, namely $h_0(x, c) = \sum_{i=1}^{n}h_{i}(x, c_i)$~\autocite{Wilkinson:2006td}. 
+Here I will consider the predator-prey system introduced in Section~\ref{sec:predator_prey_odes}. A set of reactions is defined, as shown in Table~\ref{tab:pp_reac}, and each one has an associated stochastic rate constant $c_i$. The rate constant, or hazard function, of each reaction $i$ is defined as $h_i(x, c_i)$, where x is the current state of each species in the system. The form of each hazard function is defined by the order of the given reaction~\autocite{Wilkinson:2006td}, as shown in Table~\ref{tab:hazards}. When simulating a stochastic system using the Gillespie algorithm, the state of the system $x$ is defined as the sum of all the reaction hazards, namely $h_0(x, c) = \sum_{i=1}^{n}h_{i}(x, c_i)$~\autocite{Wilkinson:2006td}. 
 
 
 

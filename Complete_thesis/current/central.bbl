@@ -512,30 +512,6 @@
       \field{pages}{117\bibrangedash 133}
       \range{pages}{17}
     \endentry
-    \entry{Chickarmane:2009by}{article}{}
-      \name{author}{3}{}{%
-        {{hash=2079252a9f9e1216da47586ca7d6d92f}{Chickarmane}{C\bibinitperiod}{Vijay}{V\bibinitperiod}{}{}{}{}}%
-        {{hash=95dd1b1267a448d3b936c448967a5e67}{Enver}{E\bibinitperiod}{Tariq}{T\bibinitperiod}{}{}{}{}}%
-        {{hash=ad87a70ecc77b218415882f256cc1c91}{Peterson}{P\bibinitperiod}{Carsten}{C\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{20615088659caa1defdad6c1376d7c91}
-      \strng{fullhash}{20615088659caa1defdad6c1376d7c91}
-      \field{sortinit}{C}
-      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
-      \field{labelyear}{2009}
-      \field{labelmonth}{01}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{PLoS Computational Biology}
-      \field{month}{01}
-      \field{number}{1}
-      \field{title}{{Computational modeling of the hematopoietic erythroid-myeloid switch reveals insights into cooperativity, priming, and irreversibility.}}
-      \field{volume}{5}
-      \field{year}{2009}
-      \field{pages}{e1000268\bibrangedash e1000268}
-      \range{pages}{-1}
-    \endentry
     \entry{Choi:2014gb}{article}{}
       \name{author}{10}{}{%
         {{hash=551e1b3147645d7a864f86982ec4223d}{Choi}{C\bibinitperiod}{Su-Lim}{S\bibinithyphendelim L\bibinitperiod}{}{}{}{}}%
@@ -2176,6 +2152,37 @@
       \field{pages}{439\bibrangedash 456}
       \range{pages}{18}
     \endentry
+    \entry{Liew:2006cd}{article}{}
+      \name{author}{10}{}{%
+        {{hash=aa6c8053dd1b97ca7ead485e9956a25e}{Liew}{L\bibinitperiod}{Chu\bibnamedelima Wai}{C\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+        {{hash=ff69f8994af0a62085091546321f04c3}{Rand}{R\bibinitperiod}{Kasper\bibnamedelima D}{K\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{hash=3aad0343a6fb1852cb018de74295d5d5}{Simpson}{S\bibinitperiod}{Raina\bibnamedelimb J\bibnamedelima Y}{R\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim Y\bibinitperiod}{}{}{}{}}%
+        {{hash=26b3740f83aa655c38e90c7c8c61eb0f}{Yung}{Y\bibinitperiod}{Wendy\bibnamedelima W}{W\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+        {{hash=7685b70b12142162b8dc5b02f49252f0}{Mansfield}{M\bibinitperiod}{Robyn\bibnamedelima E}{R\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{hash=f0ec471744a7d9023ea9809325aa58c5}{Crossley}{C\bibinitperiod}{Merlin}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=03a67d0640d72671b037afb2b0a5bddf}{Proetorius-Ibba}{P\bibinithyphendelim I\bibinitperiod}{Mette}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=238e57b2de36bf65c01409e05b9399a9}{Nerlov}{N\bibinitperiod}{Claus}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=007b54f8482723bafe878974315a22d4}{Poulsen}{P\bibinitperiod}{Flemming\bibnamedelima M}{F\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{hash=367573066e8227537522fb4b45f5f37c}{Mackay}{M\bibinitperiod}{Joel\bibnamedelima P}{J\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{43ced89c12709be4bc8f7f06f44fac23}
+      \strng{fullhash}{5b902c7fd846562523b8cfea63ba244a}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelyear}{2006}
+      \field{labelmonth}{09}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Biological Chemistry}
+      \field{month}{09}
+      \field{number}{38}
+      \field{title}{{Molecular analysis of the interaction between the hematopoietic master transcription factors GATA-1 and PU.1.}}
+      \field{volume}{281}
+      \field{year}{2006}
+      \field{pages}{28296\bibrangedash 28306}
+      \range{pages}{11}
+    \endentry
     \entry{Lillacci:2013hu}{article}{}
       \name{author}{2}{}{%
         {{hash=b22b0448905e8c81f524929de6b2b381}{Lillacci}{L\bibinitperiod}{Gabriele}{G\bibinitperiod}{}{}{}{}}%
@@ -2692,7 +2699,7 @@
       \field{datelabelsource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Methods in molecular biology (Clifton, N.J.)}
+      \field{journaltitle}{Methods in molecular biology}
       \field{month}{10}
       \field{title}{{Standardization in Synthetic Biology}}
       \field{volume}{813}
