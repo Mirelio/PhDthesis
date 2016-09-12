@@ -9,7 +9,7 @@ One of the first successfully constructed synthetic devices is the genetic toggl
 \subsection{The genetic toggle switch in natural systems}
 In developmental processes, bistability ensures that the differentiating cell will follow one pathway, or the other, with no possible intermediate phenotypes. This is vital for the correct development of a cell in a specific pathway. One example is the trophectoderm differentiation pathway, in which a mutually inhibitory toggle switch exists between Oct3/4 and Cdx2. This determines whether an embryonic stem cell will differentiate into a trophectoderm cell, if Cdx2 dominates the system, or an inner cell mass cell if Oct3/4 dominates~\autocite{Niwa:2005fz}. Bistability is critical in this system as a cell must differentiate into either a trophectoderm cell or an inner cell mass cell and there should not be any intermediate signals. 
 
-In the case of the GATA1 and PU.1 toggle switch, the transcription factor pair controls the fate of the common myeloid progenitors, and the two possible differentiation paths are erythroid and myeloid blood cells~\autocite{Liew:2006cd}. The double-negative feedback loop created by the mutually repressive pair of transcription factors sustains the system in balance until an external stimulus causes one of the two transcription factors to increase in concentration. The increased concentration of one transcription factor causes the increased repression of the production of the antagonistic transcription factor, tipping the balance towards the dominance of the first transcription factor. The double negative feedback loop reinforces this dynamic and the system remains in the same state, until an external stimulus disturbs it~\autocite{FerrellJr:2002fh}.
+In the case of the GATA1 and PU.1 toggle switch, the transcription factor pair controls the fate of the common myeloid progenitors, and the two possible differentiation paths are erythroid and myeloid blood cells~\autocite{Liew:2006cd}. The double-negative feedback loop created by the mutually repressive pair of transcription factors sustains the system in balance until an external stimulus causes one of the two transcription factors to increase in concentration. The increased concentration of one transcription factor causes the increased repression of the production of the antagonistic transcription factor, tipping the balance towards the dominance of the first transcription factor. The double negative feedback loop reinforces this dynamic and the system remains in the same state until an external stimulus disturbs it~\autocite{FerrellJr:2002fh}.
 
 \subsection{Uses in synthetic biology}
 Despite their simplicity, toggle switches can be powerful building blocks with which to create complex responses in a synthetic network~\autocite{Lu:2009ez}. They can be used in isolation and have the potential to be used tandem to create complex networks and signalling cascades~\autocite{Lu:2009ez}. The toggle switch has been used for the regulation of mammalian gene expression~\autocite{Deans:2007cy, Kramer:2004kq}. Other synthetic applications of the toggle switch include the construction of a synthetic genetic clock~\autocite{Atkinson:2003tu}, of a predictable genetic timer~\autocite{Ellis:2009hka}, and the formation of biofilms in response to engineered stimuli~\autocite{Kobayashi:2004cv}. 
@@ -22,7 +22,7 @@ These applications are modifications of the classical toggle switch~\autocite{Ga
 
 The toggle switch motif has been studied extensively and there are numerous studies based on a number of different methods of modelling and analysis of the dynamics, including both deterministic and stochastic approaches. The conclusions drawn about the stability and robustness of the toggle switch vary between the different modelling approaches. Numerous studies have concluded that cooperativity is a necessary condition for bistability to arise~\autocite{Gardner:2000vha, Walczak:2005ds, Warren:2004baa, Warren:2005kea, Cherry:2000wi}. However, ~\textcite{Lipshtat:2006wb} found that stochastic effects can give rise to bistability even without cooperativity in three kinds of switch; the exclusive switch, in which there can only be one repressor bound at any one time, a switch in which there is degradation of bound repressors, and the switch in which free repressor proteins can form a complex, which renders them inactive as transcription factors~\autocite{Lipshtat:2006wb}. 
 
-In another study, \textcite{Ma:2012dt} found that the stochastic fluctuations in a system involving such a small number of molecules, like the toggle switch, uncovers effects that cannot be predicted by the fully deterministic case~\autocite{Ma:2012dt}. In their system, the toggle switch was found to be tristable, as small number effects render the third unstable steady state stable. \textcite{Biancalani:2015vya} identified multiplicative noise as the source of bistability in the stochastic case~\autocite{Biancalani:2015vya}. ~\textcite{Warren:2005kea} concluded that the exclusive switch is always more robust than the general switch, since the free energy barrier is higher~\autocite{Warren:2005kea}. A summary of the toggle switch models is shown in Table~\ref{tab:refs}. As is clear from above, there is yet to exist a consensus on the stability a switch is capable of, and the most appropriate method of modelling it. Different methods arrive at different conclusions, creating confusion on which behaviour to be expected by the experimentalist for even a simple system like the toggle switch, consisting of just two genes. The toggle switch cannot be used as a building block of larger, more complex systems until its behaviour can be predicted accurately. Until then, designing systems with predictable behaviour will be near impossible.
+In another study, \textcite{Ma:2012dt} found that the stochastic fluctuations in a system involving such a small number of molecules, like the toggle switch, uncovers effects that cannot be predicted by the fully deterministic case~\autocite{Ma:2012dt}. In their system, the toggle switch was found to be tristable, as small number effects render the third unstable steady state stable. \textcite{Biancalani:2015vya} identified multiplicative noise as the source of bistability in the stochastic case~\autocite{Biancalani:2015vya}.~\textcite{Warren:2005kea} concluded that the exclusive switch is always more robust than the general switch since the free energy barrier is higher~\autocite{Warren:2005kea}. A summary of the toggle switch models is shown in Table~\ref{tab:refs}. As is clear from above, there is yet to exist a consensus on the stability a switch is capable of, and the most appropriate method of modelling it. Different methods arrive at different conclusions, creating confusion on which behaviour to be expected by the experimentalist for even a simple system like the toggle switch, consisting of just two genes. The toggle switch cannot be used as a building block of larger, more complex systems until its behaviour can be predicted accurately. Until then, designing systems with predictable behaviour will be near impossible.
 
 
 \begin{table}[t]
@@ -124,7 +124,7 @@ Degradation & $A \xrightarrow{k_7}\varnothing $ &$k_7[A]$\\ \bottomrule
 \end{tabular}
 \end{table}
 
-The law of mass action allows one to derive these reaction rates from the coupled chemical reactions. The assumption made in the law of mass action is that the system exists in a well mixed solution and in dynamic equilibrium. The law of mass action states that the reaction rate is equal to the concentration of the reactants multiplied by a rate constant. So for a given chemical equation as the one shown in Equation~\ref{eq:example_eq}, the rate of the reaction is defined by:
+The law of mass action allows one to derive these reaction rates from the coupled chemical reactions. The assumption made in the law of mass action is that the system exists in a well-mixed solution and in dynamic equilibrium. The law of mass action states that the reaction rate is equal to the concentration of the reactants multiplied by a rate constant. So for a given chemical equation as the one shown in Equation~\ref{eq:example_eq}, the rate of the reaction is defined by:
 \begin{align*}
 	rate = k[R_a][R_b],
 \end{align*}
@@ -157,11 +157,11 @@ It is common to represent coupled biochemical reactions graphically. In a graph,
 
 \subsubsection{\acrfull{sbml}}
 
-The \acrfull{sbml} was developed by~\textcite{Hucka:2003wg} in order to allow for the exchange of biochemical models between software. It is an extension of the XML encoding~\autocite{DuCharme:1999} with additional fields specific to biochemical models. Software like Copasi~\autocite{Hoops:2006gy} can be used to convert a set of coupled chemical reactions to an SBML model. SBML models have been key resource for model sharing within the systems biology community~\autocite{Wilkinson:2006td} in databases like the BioModels database~\autocite{LeNovere:2006ep}. 
+The \acrfull{sbml} was developed by~\textcite{Hucka:2003wg} in order to allow for the exchange of biochemical models between software. It is an extension of the XML encoding~\autocite{DuCharme:1999} with additional fields specific to biochemical models. Software like Copasi~\autocite{Hoops:2006gy} can be used to convert a set of coupled chemical reactions to an SBML model. SBML models have been a key resource for model sharing within the systems biology community~\autocite{Wilkinson:2006td} in databases like the BioModels database~\autocite{LeNovere:2006ep}. 
 
 \subsection{Transcriptional binding kinetics}
 
-The processes of transcription regulation in prokaryotes is complex and there have been a number of mathematical descriptions developed to approximate the dynamics observed. These include the Hill equation and the Shea-Ackers formalism. 
+The processes of transcription regulation in prokaryotes are complex and there have been a number of mathematical descriptions developed to approximate the dynamics observed. These include the Hill equation and the Shea-Ackers formalism. 
 
 \subsubsection{Hill formalism}
 \label{sec:hill}
@@ -192,7 +192,7 @@ The Hill formalism is often used to describe a biochemical system where an activ
 
 \subsubsection{Shea-Ackers formalism}
 \label{sec:shea-ackers}
-The Shea-Ackers formalism developed by~\textcite{Ackers:1982tq} uses a statistical thermodynamic model to represent the binding of transcription factors to their promoters. A system is described by the various states the promoter can have. An exampled of possible states is given in Figure~\ref{fig:shea_ack_ex}. Each state has an associated term, or weight, and the probability of transcription is given by the ratio of the producing states over all possible states. This is referred to as the partition function. 
+The Shea-Ackers formalism developed by~\textcite{Ackers:1982tq} uses a statistical thermodynamic model to represent the binding of transcription factors to their promoters. A system is described by the various states the promoter can have. An example of possible states is given in Figure~\ref{fig:shea_ack_ex}. Each state has an associated term, or weight, and the probability of transcription is given by the ratio of the producing states over all possible states. This is referred to as the partition function. 
 
 \begin{figure*}[htb]
 \centerfloat
@@ -212,7 +212,7 @@ Deterministic modelling utilises \acrfull{ode}s and models the concentrations of
 
 \subsubsection{Deterministic mass action kinetics}
 \label{sec:predator_prey_odes}
-\acrshort{ode}s are used to represent the quantitative dynamics of a biochemical network. The \acrshort{ode}s describing a system can be derived from the coupled chemical reactions descibing the system as well as their associated rates. This will be illustrated using a simple example, the Lotka-Voltera predator-prey model~\autocite{lotka:voltera}. This system describes the dynamics between two interacting species, a predator and a prey. The chemical reactions describing the system are given in Table~\ref{tab:pp_reac}. The rates of the system are organised in vector form,
+\acrshort{ode}s are used to represent the quantitative dynamics of a biochemical network. The \acrshort{ode}s describing a system can be derived from the coupled chemical reactions describing the system as well as their associated rates. This will be illustrated using a simple example, the Lotka-Voltera predator-prey model~\autocite{lotka:voltera}. This system describes the dynamics between two interacting species, a predator and a prey. The chemical reactions describing the system are given in Table~\ref{tab:pp_reac}. The rates of the system are organised in vector form,
 
 
 \begin{table}[h]
@@ -268,7 +268,7 @@ and thus we get the two \acrshort{ode}s describing the system as
 
 \subsubsection{Assumptions of deterministic modelling}
 
-Two key assumptions are made when modelling a biochemical system using \acrshort{ode}s. Firstly, the species present in the system are measured continuously rather than discreetly. This means that the species are measured in concentration over time and not number of molecules over time. This assumption requires a large number of molecules to be present in order to be met~\autocite{iglesias:2010}. The second assumption made is that the reactants are in a well mixed solution. This means that the species in the system can interact each other constantly and freely. 
+Two key assumptions are made when modelling a biochemical system using \acrshort{ode}s. Firstly, the species present in the system are measured continuously rather than discretely. This means that the species are measured in concentration over time and not the number of molecules over time. This assumption requires a large number of molecules to be present in order to be met~\autocite{iglesias:2010}. The second assumption made is that the reactants are in a well-mixed solution. This means that the species in the system can interact each other constantly and freely. 
 
 
 \subsection{Nonlinear dynamical modelling}
@@ -326,9 +326,9 @@ A stable steady state is defined as a fixed point whose nearby points approach t
 
 \subsubsection{Bifurcation analysis}
 
-A bifurcation analysis is carried out in order to study the effect that parameters have on the dynamical behaviour of the system~\autocite{Strogatz:1994}. In order to create a bifurcation diagram, all the parameters in the system remain constant while the value of one parameter is varied. We can then observe any changes in the number and stability of the steady states of the system, for example whether a stable equilibrium in the system becomes unstable. The point where a major change occurs in the steady states of the system is called a bifurcation point~\autocite{iglesias:2010}. The stability of the steady state as well as its position is depicted on a bifurcation digram. By convention, the unstable branches are denoted by a dashed line and the stable branches by a solid line~\autocite{Strogatz:1994}. 
+A bifurcation analysis is carried out in order to study the effect that parameters have on the dynamical behaviour of the system~\autocite{Strogatz:1994}. In order to create a bifurcation diagram, all the parameters in the system remain constant while the value of one parameter is varied. We can then observe any changes in the number and stability of the steady states of the system, for example, whether a stable equilibrium in the system becomes unstable. The point where a major change occurs in the steady states of the system is called a bifurcation point~\autocite{iglesias:2010}. The stability of the steady state, as well as its position, is depicted on a bifurcation diagram. By convention, the unstable branches are denoted by a dashed line and the stable branches by a solid line~\autocite{Strogatz:1994}. 
 
-One example of a bifurcation, is the saddle-node bifurcation. This occurs when two stable states come closer together until they collide and destroy each other~\autocite{Strogatz:1994}. This can be illustrated using a simple example from \textcite{Strogatz:1994}. Consider the following system 
+One example of a bifurcation is the saddle-node bifurcation. This occurs when two stable states come closer together until they collide and destroy each other~\autocite{Strogatz:1994}. This can be illustrated using a simple example from \textcite{Strogatz:1994}. Consider the following system 
 
 \begin{align*}
 	\frac{dx}{dt} = r + x^2.
@@ -364,7 +364,7 @@ Stochastic models are often analytically intractable but can be studied using nu
 
 
 \subsubsection{The Gillespie algorithm}
- In stochastic systems the Gillespie algorithm is widely used to simulate the time-evolution of the state of the system~\autocite{Wilkinson:2006td}. The algorithm, developed by~\textcite{Gillespie:1977ww} can be summarised in four steps:
+ In stochastic systems, the Gillespie algorithm is widely used to simulate the time-evolution of the state of the system~\autocite{Wilkinson:2006td}. The algorithm, developed by~\textcite{Gillespie:1977ww} can be summarised in four steps:
 %What type of random numbers are generated for each of these? How does the time-step one work? (i.e. is there a limit on the length of timestep that can be produced?)
 \begin{enumerate}
 \item Initialise time $t$ and number of species $s$ and state of system $x$
@@ -401,7 +401,7 @@ Dimerization & $X_a + X_a \xrightarrow{c_i} X_{2a} $ & $h_i(x, c_i) = c_{i}\frac
 %For a model to be used in a systems biology setting the parameters must first be defined. 
 The parameters of a model represent the biochemical rates that are involved in the system under study, like degradation rates, transcription rates and polymerization rates. These rates cannot often be measured \textit{in vitro} and taking generalised estimates from existing literature can be inaccurate. In order to make useful predictions about the biological system under consideration, the model parameters must be estimated~\autocite{Zheng:2010bp}. 
 
-To address this challenge, statistical optimization methods have been developed. These methods aim to infer the parameters of the model that can give rise to some experimentally observed behaviour. Parameter inference methods have the same general structure: there is a cost function that compares the model data to the experimental data and an optimization function that aims to optimize the cost function~\autocite{Toni:2010}. There is a wide range of such optimization algorithms that can be used like gradient decent~\autocite{Levenberg:1944we, Marquardt:1963wr}, simulated annealing~\autocite{Kirkpatrick:1983kv} and evolutionary algorithms~\autocite{Onbasoglu:2001um, Wood:2002uo}.  
+To address this challenge, statistical optimisation methods have been developed. These methods aim to infer the parameters of the model that can give rise to some experimentally observed behaviour. Parameter inference methods have the same general structure: there is a cost function that compares the model data to the experimental data and an optimisation function that aims to optimize the cost function~\autocite{Toni:2010}. There is a wide range of such optimisation algorithms that can be used like gradient descent~\autocite{Levenberg:1944we, Marquardt:1963wr}, simulated annealing~\autocite{Kirkpatrick:1983kv} and evolutionary algorithms~\autocite{Onbasoglu:2001um, Wood:2002uo}.  
 
 Bayesian approaches to parameter inference have been shown to work well in biological problems~\autocite{Barnes:2011hh, Toni:2010, Liepe:2014iw}. Bayesian approaches to parameter inference have the advantage of offering a range of values that give rise to the data, rather than point estimates. In Bayesian approaches the aim is to obtain the posterior distribution, which is dependent on the prior distribution, the prior knowledge about the system, and the likelihood, which is obtained from the data. At the core of Bayesian statistics lies Bayes' rule which states that, for a set of data $x$ and a model with a set of parameters $θ$:
 
@@ -423,9 +423,9 @@ Bayesian approaches to parameter inference have been shown to work well in biolo
 
 Parameter estimation problems typically involve a set of observed data and a mathematical model describing the biological system. Oftentimes there are a number of competing models under consideration. The challenge then is to fit the model, and model parameters in order to reconstruct the observed data~\autocite{Ma:2009ig}. In system design a different but related problem must be addressed; Instead of experimental data the researcher has an idea of what the system output should be~\autocite{Barnes:2011bk}. A set of carefully selected design objectives can then be used as substitute data ($x_s$), representing data one would like to observe, in the Bayesian inference problem~\autocite{Barnes:2011bk}. This method has been successfully applied in synthetic biology system design~\autocite{Barnes:2011hh, Woods:2016eh}. 
 
-%These optimization methods can largely be separated into two categories: frequentist and Bayesian. Frequentist methods provide point estimates of the inferred parameters, with associated confidence intervals. On the other hand Bayesian methods offer probability distributions over the values of the inferred parameters. These are especially suited for use in synthetic biology problems, where the  
+%These optimisation methods can largely be separated into two categories: frequentist and Bayesian. Frequentist methods provide point estimates of the inferred parameters, with associated confidence intervals. On the other hand Bayesian methods offer probability distributions over the values of the inferred parameters. These are especially suited for use in synthetic biology problems, where the  
 %In this section I aim to discuss the use of Bayesian methods for parameter inference and system design.  
-%All methods are comprised largely of a cost function that compares the model data to the experimental data and an optimization function that aims to optimize the cost function. There is a wide range of such optimization algorithms used like gradient decent(XXX), simulated annealing(XXX) and evolutionary algorithms(XXX). 
+%All methods are comprised largely of a cost function that compares the model data to the experimental data and an optimisation function that aims to optimize the cost function. There is a wide range of such optimisation algorithms used like gradient decent(XXX), simulated annealing(XXX) and evolutionary algorithms(XXX). 
 
 
 
@@ -503,7 +503,7 @@ Parameter estimation problems typically involve a set of observed data and a mat
 
 %Stability Finder is based on a statistical inference method which combines \acrshort{abc} with \acrfull{smc}~\autocite{Toni:2009tr}. This simulation-based method uses an iterative process to arrive at a distribution of parameter values that can give rise to observed data or a desired system behaviour~\autocite{Barnes:2011hh}.
 
-ABC methods are used for inferring the posterior distribution in cases where it is too computationally expensive to evaluate the likelihood function. Instead of calculating the likelihood, ABC methods simulate the data and then compare the simulated and observed data through a distance function~\autocite{Toni:2009tr}. Given the prior distribution $p(\theta)$ we can approximate the posterior distribution, $p(\theta\mid x)\propto p(x\mid\theta)p(\theta)$, where $p(x\mid\theta)$ is the likelihood of a parameter, $\theta$, given the data, $x$. There are a number of different variations of the ABC algorithm depending on how the the approximate posterior distribution is sampled. 
+ABC methods are used for inferring the posterior distribution in cases where it is too computationally expensive to evaluate the likelihood function. Instead of calculating the likelihood, ABC methods simulate the data and then compare the simulated and observed data through a distance function~\autocite{Toni:2009tr}. Given the prior distribution $p(\theta)$ we can approximate the posterior distribution, $p(\theta\mid x)\propto p(x\mid\theta)p(\theta)$, where $p(x\mid\theta)$ is the likelihood of a parameter, $\theta$, given the data, $x$. There are a number of different variations of the ABC algorithm depending on how the approximate posterior distribution is sampled. 
 
 The simplest \acrshort{abc} algorithm is the \acrshort{abc} rejection sampler~\autocite{Pritchard:1999td}. In this method, parameters are sampled from the prior and data simulated through the data generating model. For each simulated data set, a distance from that of the data is calculated, and if greater than a threshold, \textepsilon{}, the sample is rejected, otherwise it is accepted. 
 \begin{algorithm}[H]
@@ -527,7 +527,7 @@ An alternative method developed by~\textcite{Toni:2009tr} takes advantage of \ac
 %The desired behaviour of the system is used as the data to which the candidate model output is compared to \cite{Barnes:2011hh}. 
 %Given a set of competing models, their associated prior estimates of their parameters and the design specifications, the algorithm is able to rank the models according to how well they describe the data and the posterior probabilities of the parameters \cite{Barnes:2011hh}. 
 
-ABC SMC can identify the parameter values within a predefined range of values that can give rise to the data. It works by first sampling at random from the initial range set by the researcher, i.e. from the prior distribution of values. Each sample is called a particle. It then simulates the model given those values and compares that to the target behaviour. If the distance between the simulation and the target behaviour is greater than a predefined threshold distance ε, then the parameter values that produced that simulation are rejected. This is repeated for a predefined number of samples which are collectively referred to as a population. Each particle in a population has a weight associated with it, which represents the probability of it producing the desired behaviour. At subsequent iterations the new samples are obtained from the previous populations and the ε is set to smaller value, thus eventually reaching the desired behaviour. The algorithm proceeds as follows:
+ABC SMC can identify the parameter values within a predefined range of values that can give rise to the data. It works by first sampling at random from the initial range set by the researcher, i.e. from the prior distribution of values. Each sample is called a particle. It then simulates the model given those values and compares that to the target behaviour. If the distance between the simulation and the target behaviour is greater than a predefined threshold distance ε, then the parameter values that produced that simulation are rejected. This is repeated for a predefined number of samples which are collectively referred to as a population. Each particle in a population has a weight associated with it, which represents the probability of it producing the desired behaviour. At subsequent iterations, the new samples are obtained from the previous populations and the ε is set to a smaller value, thus eventually reaching the desired behaviour. The algorithm proceeds as follows:
 
 \begin{algorithm}[H]
 
@@ -536,13 +536,13 @@ ABC SMC can identify the parameter values within a predefined range of values th
  \begin{algorithmic}[1]
     \Statex
     \State Select ε and set population t = 0
-	\State Sample particles (θ). If t = 0, sample from prior distributions (p). If t $\textgreater$ 0, sample particles from previous population to obtain θ*.
+	\State Sample particles (θ). If t = 0, sample from prior distributions (p). If t $\textgreater$ 0, sample particles from the previous population to obtain θ*.
 	\State If t $\textgreater$ 0: Perturb each particle θ* using perturbation kernel $K_t$ to obtain perturbed particle θ** %, by $\pm$ half the range of the previous population (j) to obtain new perturbed population (i).
 	\State Simulate each particle to obtain time course.
 	\State Reject particles if d $\textgreater$ ε.
 	\State Calculate the weight $w$ for each accepted particle. At the first population assign a weight equal to 1 for all particles. In subsequent populations the weight of a particle is equal to the probability of observing that particle divided by the sum of the probabilities of the particle arising from each of the particles in the previous population:
 
-	\State $w_{t}^{(i)} = \begin{cases} 1, & \mbox{if } n = 0 \\\frac{p(\theta_{t}^{(i)})}{\sum_{j=1}^N w_{t-1}^{(j)} K_{t}(\theta_{t-1}^{(j)}, \theta_{t}^{(i)})}, & \mbox{if } n $\textgreater$  0. \end{cases}$
+	\State $w_{t}^{(i)} = \begin{cases} 1, & \mbox{if } t = 0 \\\frac{p(\theta_{t}^{(i)})}{\sum_{j=1}^N w_{t-1}^{(j)} K_{t}(\theta_{t-1}^{(j)}, \theta_{t}^{(i)})}, & \mbox{if } t $\textgreater$  0. \end{cases}$
 
   \end{algorithmic}
 \end{algorithm}
@@ -552,7 +552,7 @@ ABC SMC can identify the parameter values within a predefined range of values th
 
 \subsubsection{Particle sampling}
 \label{sec:part_samp}
-For the first population, particles are sampled from the prior, which consists of the boundaries of a distribution for each parameter defined by the user based on biochemical knowledge or literature. For subsequent populations particles are sampled from the previous population. The weight of each particle in the previous population dictates the probability of it being sampled. The number of samples to be drawn is specified by the user.  
+For the first population, particles are sampled from the prior, which consists of the boundaries of a distribution for each parameter defined by the user based on biochemical knowledge or literature. For subsequent populations, particles are sampled from the previous population. The weight of each particle in the previous population dictates the probability of it being sampled. The number of samples to be drawn is specified by the user.  
 
 \subsubsection{Perturbation}
 \label{sec:pertub}
@@ -569,7 +569,7 @@ s_p = \frac{1}{2} \big (max(\theta_{p-1}) - min(\theta_{p-1}) \big )
 
 
 \subsubsection{Epsilon schedule}
-The algorithm uses an automated epsilon schedule, where the threshold of the next iteration is chosen from the range of values of the current population. This method is the quantile method. Another approach to the epsilon schedule is to use an adaptive epsilon schedule which is efficient in avoiding local minima~\autocite{Silk:2013bi}. Throughout this thesis the quantile method was used with a tight quantile (0.3) to avoid the problem of local minima. 
+The algorithm uses an automated epsilon schedule, where the threshold of the next iteration is chosen from the range of values of the current population. This method is the quantile method. Another approach to the epsilon schedule is to use an adaptive epsilon schedule which is efficient in avoiding local minima~\autocite{Silk:2013bi}. Throughout this thesis, the quantile method was used with a tight quantile (0.3) to avoid the problem of local minima. 
 
 \subsubsection{Particle simulation}
 \label{sec:sim}
@@ -578,7 +578,7 @@ Each particle is simulated using cuda-sim~\autocite{Zhou:2011hp}. The model is p
 
 \subsubsection{Weight calculation}
 \label{sec:weight}
-For the first population the weights are all given a value of 1, and then normalised over the number of particles. For subsequent populations the weights of the particles are calculated by considering the weights of the previous population~\autocite{Toni:2009tr}. The weights are then normalised over the total number of particles. 
+For the first population the weights are all given a value of 1, and then normalised over the number of particles. For subsequent populations, the weights of the particles are calculated by considering the weights of the previous population~\autocite{Toni:2009tr}. The weights are then normalised over the total number of particles. 
 
 
 \begin{align}
@@ -599,7 +599,7 @@ This algorithm is implemented on a simple example for illustration. A simple mod
 \begin{figure*}[htbp]
     \begin{center}
     \includegraphics[scale=0.6]{../../chapters/chapterIntroduction/images/abc_smc_example.pdf}
-    \caption[\acrshort{abc} \acrshort{smc} parameter inference example]{ABC SMC parameter inference. The true parameter value is equal to 1 and its time course shown in red in the top left panel. The blue time course is that of the final population, green is the upper quartile and red is the lower quartile range of values. The progress of the selection process can be seen the as the ε schedule proceeds from the top left to the bottom right. The bottom far right panel is a weighted density plot of the posterior distribution of p at ε = 0.01.}
+    \caption[\acrshort{abc} \acrshort{smc} parameter inference example]{ABC SMC parameter inference. The true parameter value is equal to 1 and its time course is shown in red in the top left panel. The blue time course is that of the final population, green is the upper quartile and red is the lower quartile range of values. The progress of the selection process can be seen the as the ε schedule proceeds from the top left to the bottom right. The bottom far right panel is a weighted density plot of the posterior distribution of p at ε = 0.01.}
     \label{fig:myABC true 1}
     \end{center}
 \end{figure*}
@@ -610,9 +610,7 @@ Figure~\ref{fig:myABC true 1} illustrates the use of \acrshort{abc} \acrshort{sm
 \clearpage
 \subsubsection{Visualising posterior distributions}
 
-The posterior distribution has as many dimensions are there are parameters, thus can be challenging to visualise for models containing more than two parameters. In order to visualise the multi-dimensional posterior distributions in this thesis, the one and two dimensional marginal distributions of the parameters will be shown. An example of such a plot is shown in Figure~\ref{fig:exampl_post}. 
-
-The data shown in Figure~\ref{fig:exampl_post} consists of 10000 random samples drawn from a bivariate normal distribution, of mean = 0 for all dimensions and variance σ
+The posterior distribution has as many dimensions are there are parameters, thus can be challenging to visualise for models containing more than two parameters. In order to visualise the multi-dimensional posterior distributions in this thesis, the one and two-dimensional marginal distributions of the parameters will be shown. An example of such a plot is shown in Figure~\ref{fig:exampl_post}. The data shown in Figure~\ref{fig:exampl_post} consists of 10000 random samples drawn from a bivariate normal distribution, of mean = 0 for all dimensions and variance σ
 \begin{align*}
 σ = \begin{bmatrix}
 1 &0.5 \\ 
@@ -624,7 +622,7 @@ The data shown in Figure~\ref{fig:exampl_post} consists of 10000 random samples 
 \begin{figure*}[h]
     \begin{center}
     \includegraphics[width=1.1\textwidth]{../../chapters/chapterBackgr/images/example_posterior.pdf}
-    \caption[Example of a posterior distribution plot]{Visualising a two-dimensional distribution. (A) A bivariate normal distribution plotted in 3D. (B) A two-dimensional multivariate normal can be visualised by plotting the one-dimensional marginal distributions on the diagonal and the the two-dimensional marginal distributions are on the off-diagonal. Correlation can be visualised using the 2D marginal distributions.}
+    \caption[Example of a posterior distribution plot]{Visualising a two-dimensional distribution. (A) A bivariate normal distribution plotted in 3D. (B) A bivariate normal can be visualised by plotting the one-dimensional marginal distributions on the diagonal and the two-dimensional marginal distributions are on the off-diagonal. Correlation can be visualised using the 2D marginal distributions.}
     \label{fig:exampl_post}
     \end{center}
 \end{figure*}
@@ -635,8 +633,8 @@ The data shown in Figure~\ref{fig:exampl_post} consists of 10000 random samples 
 
 \subsection{Derivation of model parametric robustness defined via Bayesian statistics}
 \label{sec:rob_back}
-During this thesis I use the term robustness in its parametric meaning, i.e. as the ability of a system to retain its function despite parameter perturbations~\autocite{Stelling:2004wo}. The robustness of biological systems has been studied extensively~\autocite{Barkai:1997cd, Stelling:2004wo, Prill:2005fq, Kim:2006uk, Kitano:2007cp, Hafner:2009ct, Shinar:2010dd, ZamoraSillero:2011jw, Woods:2016eh}. and it is well known that feedback loops can increase the robustness of a system~\autocite{Becskei:2000ft,	 DOYLE:2005ul}. Below I show that the robustness of a model can be calculated by dividing the volume of its functional region by the volume of its priors. Starting with Bayes' rule that:
-
+During this thesis I use the term robustness in its parametric meaning, i.e. as the ability of a system to retain its function despite parameter perturbations~\autocite{Stelling:2004wo}. The robustness of biological systems has been studied extensively~\autocite{Barkai:1997cd, Stelling:2004wo, Prill:2005fq, Kim:2006uk, Kitano:2007cp, Hafner:2009ct, Shinar:2010dd, ZamoraSillero:2011jw, Woods:2016eh}. Below I show that the robustness of a model can be calculated by dividing the volume of its functional region by the volume of its priors. Starting with Bayes' rule that:
+%. and it is well known that feedback loops can increase the robustness of a system~\autocite{Becskei:2000ft,	 DOYLE:2005ul}. 
 \begin{align}
 	f(\theta|x) &= \frac{f(\theta)f(x|\theta)}{\int p(x|\theta)p(\theta)d\theta},
 \end{align}
@@ -647,13 +645,13 @@ During this thesis I use the term robustness in its parametric meaning, i.e. as 
 p(O|D_1) = \int p(O|\theta,D_1)p(\theta|D_1)d\theta,
 \end{align}
 
-\noindent for a design with three parameters this becomes:
+\noindent for a design with three parameters this becomes
 
 \begin{align}
 p(O|D_1) &= \displaystyle \iiint_{\underline{\theta}} p(O|\underline{\theta})p(\underline{\theta}|D_1)d\underline{\theta},
 \end{align}
 
-\noindent where $\underline{\theta}$ is a vector containing the three parameters $ = (\theta_1, \theta_2,\theta_3)$, and each $\theta_i \in \mathbb{R} $ . To calculate the robustness, or model evidence, we integrate this with respect to $\underline{\theta}$. We assume  all parameters $\theta_1, \theta_2,\theta_3$ have uniform prior, $p(\underline{\theta}|D_1) \sim U(a, b)$. If we assume a = 0 this integral becomes:
+\noindent where $\underline{\theta}$ is a vector containing the three parameters $ = (\theta_1, \theta_2,\theta_3)$, and each $\theta_i \in \mathbb{R} $. To calculate the robustness, or model evidence, we integrate this with respect to $\underline{\theta}$. We assume  all parameters $\theta_1, \theta_2,\theta_3$ have uniform prior, $p(\underline{\theta}|D_1) \sim U(a, b)$. If we assume a = 0 this integral becomes:
 
 \begin{align}
 p(O|D_1) &= \displaystyle \iiint_{\underline{\theta}} p(O|\underline{\theta})\frac{1}{b_1}\frac{1}{b_2}\frac{1}{b_3}d\underline{\Theta} \text{ , and }\\
@@ -714,7 +712,7 @@ B_{12} &= \frac{\displaystyle \int p(x|\theta, D_1)p(\theta, D_1)d\theta}{\displ
 \therefore B_{12} &= \frac{|F_1|}{|P_1|} / \frac{|F_2|}{|P_2|}. \label{eq:final_bayes}
 \end{align}
 
-\noindent We can thus use the ratio of the two robustness measures to calculate the Bayes factor. If two models have a different number of parameters, the robustness of the system will only increase if |F| increases by more than the proportion by which |P| increased~\autocite{Woods:2016eh}. A model is be penalised for an additional parameter if it does not increase the volume of the functional region by more than the volume that the added parameter added to the prior. This is also true for nested models, where one model is wholly contained in the other. 
+\noindent We can thus use the ratio of the two robustness measures to calculate the Bayes factor. If two models have a different number of parameters, the robustness of the system will only increase if |F| increases by more than the proportion by which |P| increased~\autocite{Woods:2016eh}. A model is penalised for an additional parameter if it does not increase the volume of the functional region by more than the volume that the added parameter added to the prior. This is also true for nested models, where one model is wholly contained in the other. 
 
 
 \begin{table}[tb]

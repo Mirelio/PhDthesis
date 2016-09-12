@@ -146,7 +146,7 @@ The StabilityFinder algorithm is summarised below. StabilityFinder is available 
 \end{figure*}
 \clearpage
 
-The user provides an SBML model file~\autocite{Finney:2003vk, Hucka:2004wh} and an input file that contains all the necessary information to run the algorithm, including the desired stability and the final tolerance, ε, for the distance from the desired behaviour necessary for the algorithm to terminate. The flow of execution is illustrated in Figure~\ref{fig:fig1}E. Since the algorithm is computationally intensive, all deterministic and stochastic simulations are performed using algorithms implemented on \acrfull{gpu}s, which are used for mutli-threaded computation~\autocite{Kirk:2010we}.
+The user provides an SBML model file~\autocite{Hucka:2003wg} and an input file that contains all the necessary information to run the algorithm, including the desired stability and the final tolerance, ε, for the distance from the desired behaviour necessary for the algorithm to terminate. The flow of execution is illustrated in Figure~\ref{fig:fig1}E. Since the algorithm is computationally intensive, all deterministic and stochastic simulations are performed using algorithms implemented on \acrfull{gpu}s, which are used for mutli-threaded computation~\autocite{Kirk:2010we}.
 
 
 %The user provides an SBML model file and an input file that contains all the necessary information to run the algorithm, including the desired stability and the final tolerance \textepsilon, for the distance from the desired behaviour necessary for the algorithm to terminate. The flow of execution is illustrated in Figure~\ref{fig:fig1}E. Since the algorithm is computationally intensive, all deterministic and stochastic simulations are parallelised and performed using algorithms implemented on \acrfull{gpu}s. 
@@ -281,7 +281,7 @@ A problem that can arise by using this method with stochastic simulations is tha
 		GoTo step 3
 	\Else
 	\State Calculate weight for each accepted $\theta^{i}_t$
-	\State $w_{t}^{(i)} = \begin{cases} 1, & \mbox{if } t = 1 \\\frac{\pi(\theta_{t}^{(i)})}{\sum_{j=1}^N w_{t-1}^{(j)} K_{t}(\theta_{t-1}^{(j)}, \theta_{t}^{(i)})}, & \mbox{if } p \geq  1. \end{cases}$
+	\State $w_{t}^{(i)} = \begin{cases} 1, & \mbox{if } t = 1 \\\frac{\pi(\theta_{t}^{(i)})}{\sum_{j=1}^N w_{t-1}^{(j)} K_{t}(\theta_{t-1}^{(j)}, \theta_{t}^{(i)})}, & \mbox{if } t \geq  1. \end{cases}$
 	\State Normalise weights
 	\State $t = t + 1$. 
 	\If{ $t \le N_t$} 
@@ -434,13 +434,13 @@ In this section I apply StabilityFinder to toggle switch models in order to find
 
 \subsection{StabilityFinder used on the Gardner toggle switch}
 \label{sec:gard}
-\textcite{Gardner:2000vha} constructed the first synthetic genetic toggle switch~\autocite{Gardner:2000vha}. Their model consisted of two mutually repressing transcription factors, as shown in Figure~\ref{fig:gard_mod}A, and in the deterministic case is defined by the following \acrshort{ode}s:
+\textcite{Gardner:2000vha} constructed the first synthetic genetic toggle switch~\autocite{Gardner:2000vha}. Their model consisted of two mutually repressing transcription factors, as shown in Figure~\ref{fig:gard_mod}, and in the deterministic case is defined by the following \acrshort{ode}s:
 
 \begin{align}
 \frac{du}{dt} &= \frac{a_1}{1+v^{\beta}} - u\\
 \frac{dv}{dt} &= \frac{a_2}{1+u^{\gamma }} - v,
 \end{align}
-\noindent where \textit{u} is the concentration of repressor 1, \textit{v} the concentration of repressor 2, $a_1$ and $a_2$ denote the effective rates of synthesis of repressors 1 and 2 respectively, β is the cooperativity of repression of promoter 1 and γ of repressor 2. \textcite{Gardner:2000vha} studied the deterministic case and concluded that there are two conditions for bistability for this model; that $a_1$ and $a_2$ are balanced and that β, γ \textgreater 1 \autocite{Gardner:2000vha}. I test StabilityFinder by using it to find the posterior distribution for which this model exhibits bistable behaviour. Therefore, the desired behaviour is set to two steady states, and using a wide range of values as priors as shown in Table~\ref{tab:gard_det_stoch}, I used StabilityFinder to find the parameter values necessary for bistability to occur. The posterior distribution calculated by StabilityFinder for the Gardner deterministic case is shown in Figure~\ref{fig:gard_post}A.
+\noindent where \textit{u} is the concentration of repressor 1, \textit{v} the concentration of repressor 2, $a_1$ and $a_2$ denote the effective rates of synthesis of repressors 1 and 2 respectively, β is the cooperativity of repression of promoter 1 and γ of repressor 2. \textcite{Gardner:2000vha} studied the deterministic case and concluded that there are two conditions for bistability for this model; that $a_1$ and $a_2$ are balanced and that β, γ \textgreater 1 \autocite{Gardner:2000vha}. I test StabilityFinder by using it to find the posterior distribution for which this model exhibits bistable behaviour. Therefore, the desired behaviour is set to two steady states, and using a wide range of values as priors as shown in Table~\ref{tab:gard_det_stoch}, I used StabilityFinder to find the parameter values necessary for bistability to occur. The posterior distribution calculated by StabilityFinder for the Gardner deterministic case is shown in Figure~\ref{fig:gard_post}.
 
 \begin{table}[htbp]
 \centering
@@ -448,12 +448,12 @@ In this section I apply StabilityFinder to toggle switch models in order to find
 \label{tab:gard_det_stoch}
 \begin{tabular}{@{}cccccc@{}}
 \toprule
-\multicolumn{4}{c}{Parameters}                          & \multicolumn{2}{c}{Species (μM)} \\ \cmidrule(lr){1-4}
+\multicolumn{4}{c}{Parameters}                          & \multicolumn{2}{c}{Species} \\ \cmidrule(lr){1-4}
 \cmidrule(lr){5-6}
 
 $a_1$ & $\beta$ & $a_2$ & \multicolumn{1}{c}{$\gamma$} & $s_1$        & $s_2$        \\
 0-60  & 0-5     & 0-60  & 0-5                           & 0-100        & 0-100        \\ 
-time\textsuperscript{-1}&μΜ\textsuperscript{-1} time\textsuperscript{-1}&time\textsuperscript{-1}&μM\textsuperscript{-1} time\textsuperscript{-1}&&\\\bottomrule
+μM time\textsuperscript{-1}&μΜ\textsuperscript{-1} time\textsuperscript{-1}&μM time\textsuperscript{-1}&μM\textsuperscript{-1} time\textsuperscript{-1}&(μM)&(μM)\\\bottomrule
 \end{tabular}
 \end{table}
 
@@ -464,7 +464,7 @@ I next applied StabilityFinder to the case of the Gardner switch under stochasti
 
 \begin{figure*}[htbp]
 \begin{center}
-	\includegraphics[scale=0.8]{../../chapters/chapterStabilityFinder/images/gardner_poste.pdf}
+	\includegraphics[scale=0.8]{../../chapters/chapterStabilityFinder/images/gardner_poster.pdf}
 	\caption[StabilityFinder used on the Gardner toggle switch]{\label{fig:gard_mod} The Gardner switch model used to test StabilityFinder. The Gardner model (A) consists of two mutually repressing transcription factors. (B) It can be reduced to a two-equation system, where $u$ and $v$ are the two transcription factors, $a_1$,$a_2$ are their effective rates of synthesis, $u$, $v$ are their concentrations and $\beta$, $\gamma$ represent the cooperativity of each promoter. (C) Two samples of deterministic simulated time courses of the Gardner switch and (D) The resulting phase plot. (E) Two samples of time courses of the stochastic simulations and (F) the resulting stationary distributions.}
 \end{center}
 \end{figure*}
@@ -609,7 +609,7 @@ Using StabilityFinder a more complex picture of the parameter space that can pro
 \begin{figure*}[htbp]
 	\centerfloat
 		\includegraphics[width=1.2\textwidth]{../../chapters/chapterStabilityFinder/images/Lu_234_w.pdf}
-		\caption[ Design principles of multistable switches]{ \label{fig:lu_234}Design principles of multistable switches. (A) Using the Lu model with added positive autoregulation we uncover the design principles dictating if a switch will be bistable, tristable, or will have 4 steady states. (B-D) By considering the bivariate distributions of the parameters we can uncover the differences in the parameters of a bistable switch compared to a tristable switch, compared to a quadristable switch . The posterior distribution of the bistable switch is shown in purple, of the tristable switch in red and of a quadristable in green. The bivariate distributions for which a difference is observed between the stabilities are in black boxes. An example of a phase plot from each behaviour is shown next to the corresponding posterior distribution.}
+		\caption[ Design principles of multistable switches]{ \label{fig:lu_234}Design principles of multistable switches. (A) Using the Lu model with added positive autoregulation we uncover the design principles dictating if a switch will be bistable, tristable, or will have 4 steady states. (B-D) By considering the bivariate distributions of the parameters we can uncover the differences in the parameters of a bistable switch compared to a tristable switch, compared to a quadristable switch . The posterior distribution of the bistable switch is shown in blue, of the tristable switch in red and of a quadristable in green. The bivariate distributions for which a difference is observed between the stabilities are in black boxes. An example of a phase plot from each behaviour is shown next to the corresponding posterior distribution.}
 \end{figure*}
 
     
@@ -703,7 +703,7 @@ $$
       \textrm{B} + \textrm{B} \stackrel{\textrm{dim}}{\longrightarrow} \textrm{B\textsubscript{2}} \\
       \textrm{B\textsubscript{2}} \stackrel{\textrm{dim\_r}}{\longrightarrow}\textrm{B} + \textrm{B} \\
       \textrm{gA} + \textrm{B\textsubscript{2}} \stackrel{\textrm{repA}}{\longrightarrow}\textrm{B\textsubscript{2}gA} \\
-      \textrm{B\textsubscript{2}gA} \stackrel{\textrm{rep\_r}}{\longrightarrow}\textrm{B} + \textrm{gA} \\
+      \textrm{B\textsubscript{2}gA} \stackrel{\textrm{rep\_r}}{\longrightarrow}\textrm{B\textsubscript{2}} + \textrm{gA} \\
       \textrm{gB} + \textrm{A\textsubscript{2}} \stackrel{\textrm{repB}}{\longrightarrow}\textrm{A\textsubscript{2}gB} \\
       \textrm{A\textsubscript{2}gB} \stackrel{\textrm{rep\_r}}{\longrightarrow}\textrm{A\textsubscript{2}} + \textrm{gB} \\
       \textrm{A} \stackrel{\textrm{deg}}{\longrightarrow}\varnothing\\
@@ -755,7 +755,7 @@ Dimer promoter self-dissociation & aut \_3 &  & 1-5 &  &  & 0-10 & 0-10 \\ \bott
 
 \begin{figure*}[htbp]
 \begin{center}
-\includegraphics[scale=0.7]{../../chapters/chapterStabilityFinder/images/MA-cs-dp-phase.png}
+\includegraphics[scale=0.7]{../../chapters/chapterStabilityFinder/images/MA-cs-dp-phase.pdf}
 \caption[The mass action toggle switches and phase plots]{ \label{fig:ma-cs-dp-phase} Illustrations of the two mass action switches I developed. (A) The simple switch \acrshort{cs-ma} (B) The switch with double positive autoregulation \acrshort{dp-ma}. (C, D) The phase plots of 100 particles simulated from the posterior distributions of the bistable mass action switches.}
 \end{center}
 \end{figure*}
@@ -890,7 +890,7 @@ It is evident that the robustness measure depends on the prior volume. It is the
 
 \begin{figure*}[h]
 \begin{center}
-\includegraphics[scale=0.7]{../../chapters/chapterStabilityFinder/images/priors_matter_2.png}
+\includegraphics[scale=0.7]{../../chapters/chapterStabilityFinder/images/priors_matter_2.pdf}
 \caption[Changing the priors in both models affects the robustness measure.]{ \label{fig:priors_matter2} Changing the priors in both models affects the robustness measure. (A) Using different prior ranges for the \acrshort{cs-ma} and the \acrshort{dp-ma} models yields different robustness for each. (B) The Bayes factor as a function of the prior volume difference. }
 \end{center}
 \end{figure*}
@@ -910,7 +910,7 @@ These results highlight the importance of choosing the ranges of priors for the 
   
    %This is especially true when multiple such systems are used together, and the success of the whole system depends on all the parts working as expected. 
    
-Being able to \textit{in silico} determine the stability a given system will aid in the design of novel synthetic circuits. In the future, by selecting the system components accordingly during sequence design, the parameter values can be selected \textit{in vivo}. For example, the parameter value corresponding to the translation initiation rate can be chosen by selecting the appropriate RBS sequence which given a nucleotide sequence will produce the desired rate~\textcite{Salis:2009gk}. Another method to tweak the parameter values \textit{in vivo} is to select the promoter to have the strength corresponding to the levels of gene expression and repression desired. Activity of each promoter can be measured and standardised~\autocite{Kelly:2009bj} making this process possible. For a system requiring more than one promoter, these can be efficiently selected from a promoter library using a genetic algorithm created by~\textcite{Wu:2011bq}. These standardised interchangeable components with known sequence and activity constitute the ultimate goal of synthetic biology.
+Being able to \textit{in silico} determine the stability a given system will aid in the design of novel synthetic circuits. In the future, by selecting the system components accordingly during sequence design, the parameter values can be selected \textit{in vivo}. For example, the parameter value corresponding to the translation initiation rate can be chosen by selecting the appropriate RBS sequence which given a nucleotide sequence will produce the desired rate~\autocite{Salis:2009gk}. Another method to tweak the parameter values \textit{in vivo} is to select the promoter to have the strength corresponding to the levels of gene expression and repression desired. Activity of each promoter can be measured and standardised~\autocite{Kelly:2009bj} making this process possible. For a system requiring more than one promoter, these can be efficiently selected from a promoter library using a genetic algorithm created by~\textcite{Wu:2011bq}. These standardised interchangeable components with known sequence and activity constitute the ultimate goal of synthetic biology.
 
  Nevertheless, it is important to note that the work carried out here using StabilityFinder predicts the stability of the toggle switch in isolation. Recent body of work has shown that modules like the one studied here are not independent of downstream processes~\autocite{DelVecchio:2008gy, Ventura:2010ew, Jiang:2011ch, Lyons:2014iq}.~\textcite{Lyons:2014iq} showed that adding a downstream load to the genetic toggle switch can render it monostable. In order for multi-module systems to be successful, the effect of downstream loads to the system under study will have to be considered. The system including additional loads should be studied using StabilityFinder in order to determine the stability it is capable of. Therefore extrapolation of the conclusions of StabilityFinder for a given module studied in isolation would not be justified when the module is part of a larger system of modules working in tandem.          
     

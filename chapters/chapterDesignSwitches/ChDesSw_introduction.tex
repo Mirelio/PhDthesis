@@ -56,10 +56,10 @@ Following that, PCR cloning will be used to clone  P\textsubscript{lac\_ara-1} a
 \label{sec:stage2}
 
 
-In order to construct the plasmid pKDL071-pluxtet-luxR, the P\textsubscript{Lux/tet} promoter is necessary. The P\textsubscript{Lux/tet} promoter is present in the BioBrick registry of standard biological parts as BBa\_K934024. P\textsubscript{Lux/tet} is a hybrid promoter activated by LuxR and repressed by TetR. This promoter will be added in exchange of P\textsubscript{LtetO-1} to the pKDL071 plasmid. The LuxR gene will also added upstream of LacI, in order to construct a switch with positive autoregulation on the LacI/GFP side. 
+In order to construct the plasmid pKDL071-pluxtet-luxR, the P\textsubscript{Lux/tet} promoter is necessary. The P\textsubscript{Lux/tet} promoter is present in the BioBrick registry of standard biological parts as BBa\_K934024. P\textsubscript{Lux/tet} is a hybrid promoter activated by LuxR and repressed by TetR. This promoter will be added in exchange of P\textsubscript{LtetO-1} to the pKDL071 plasmid. The LuxR gene will also be added upstream of LacI, in order to construct a switch with positive autoregulation on the LacI/GFP side. 
 
 %\subsubsection{pLux/tet synthesis}
-First, the P\textsubscript{Lux/tet} promoter is synthesised. The reverse complement of BBa\_K934024 with added flanking sequences of EcoO1091 and SphI on the 5' side and AclI and Eag1 at the 3' side. These are added to aid with further cloning steps. The sequence synthesised is given below:
+First, the P\textsubscript{Lux/tet} promoter is synthesised as the reverse complement of BBa\_K934024 with added flanking sequences of EcoO1091 and SphI on the 5' side and AclI and Eag1 at the 3' side. These are added to aid with further cloning steps. The sequence synthesised is given below:
 
 \vspace{3 mm}
 \noindent 5'- TTGGGACCTGCATGCTAATCTCTATCACTGATAGGGATAATACGAGTATCTC\\TATCACTGATAGGGAGTAAACCTGTACGATCCTACAGGTAACGTTCGGCCG -3'
@@ -112,7 +112,7 @@ Then, the plux/tet plasmid and the plasmid created above (pKDL071-plac/ara-araC-
 \section{Discussion}
 The switches described in this Chapter will enable the testing of the predictions on system robustness made in this thesis. Once the new toggle switches are constructed, they will be able to be characterised using ABC-Flow. This will allow the inference of the parameter values in the models describing these systems and ultimately a better understanding of the effect that adding positive autoregulation has to the switch. 
 
-I started implementing the experimental plan outlined above. In Stage 1 all the \acrshort{pcr}s and digestions described were completed successfully (data not shown). Transformation of the ligated products into thermocompetent \textit{E.coli} was carried out, but the transformation was not successful. In Stage 2 the P\textsubscript{Lux/tet} promoter was synthesised. Synthesis was carried out by Integrated DNA Technologies, Inc. (Leuven, Belgium, \url{http://eu.idtdna.com/CodonOpt}). \textit{E.coli} Dh5α was transformed with the synthesised plasmid. The method is outlined in Section~\ref{sec:transfection}. All subsequent \acrshort{pcr}s and digestions described in Section~\ref{sec:stage2} were carried out successfully. Due to time constraints, the rest of the experimental plan was not carried out.
+I started implementing the experimental plan outlined above. In Stage 1 all the \acrshort{pcr}s and digestions described were completed successfully (data not shown). Transformation of the ligated products into thermocompetent \textit{E.coli} was carried out, but the transformation was not successful. In Stage 2 the P\textsubscript{Lux/tet} promoter was synthesised. Synthesis was carried out by Integrated DNA Technologies, Inc. (Leuven, Belgium, \url{http://eu.idtdna.com/CodonOpt}). \textit{E.coli} DH5α was transformed with the synthesised plasmid. The method is outlined in Section~\ref{sec:transfection}. All subsequent \acrshort{pcr}s and digestions described in Section~\ref{sec:stage2} were carried out successfully. Due to time constraints, the rest of the experimental plan was not carried out.
 
 %Following ligation and transformation into thermocompetent \textit{E.coli} Dh5α, the resulting plasmid was sequenced, which proved the cloning to be unsuccessful. Due to 
 

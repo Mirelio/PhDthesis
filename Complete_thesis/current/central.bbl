@@ -370,29 +370,6 @@
       \field{pages}{e0150182}
       \range{pages}{-1}
     \endentry
-    \entry{Becskei:2000ft}{article}{}
-      \name{author}{2}{}{%
-        {{hash=787acb3a15a1d3ccbd7d2e6c88291e20}{Becskei}{B\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
-        {{hash=2369f4ed245a25bcdd3a1e3e9ac9e5ff}{Serrano}{S\bibinitperiod}{L}{L\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{a4beebbc833f29860615f8331499786d}
-      \strng{fullhash}{a4beebbc833f29860615f8331499786d}
-      \field{sortinit}{B}
-      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
-      \field{labelyear}{2000}
-      \field{labelmonth}{06}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Nature}
-      \field{month}{06}
-      \field{number}{6786}
-      \field{title}{{Engineering stability in gene networks by autoregulation.}}
-      \field{volume}{405}
-      \field{year}{2000}
-      \field{pages}{590\bibrangedash 593}
-      \range{pages}{4}
-    \endentry
     \entry{Biancalani:2015vya}{article}{}
       \name{author}{2}{}{%
         {{hash=7e38ac709410b916df15052a95ef58da}{Biancalani}{B\bibinitperiod}{Tommaso}{T\bibinitperiod}{}{}{}{}}%
@@ -756,29 +733,6 @@
       \field{year}{2010}
       \field{pages}{385\bibrangedash 407}
       \range{pages}{23}
-    \endentry
-    \entry{DOYLE:2005ul}{article}{}
-      \name{author}{2}{}{%
-        {{hash=a4bbf7067362e9d5d256d3db2494dedb}{Doyle}{D\bibinitperiod}{John}{J\bibinitperiod}{}{}{}{}}%
-        {{hash=40ea8c791ea84405120b0e36634df5a0}{Csete}{C\bibinitperiod}{Marie}{M\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{1b24fe5336c82ce0808c3c55ebb8ec12}
-      \strng{fullhash}{1b24fe5336c82ce0808c3c55ebb8ec12}
-      \field{sortinit}{D}
-      \field{sortinithash}{78f7c4753a2004675f316a80bdb31742}
-      \field{labelyear}{2005}
-      \field{labelmonth}{11}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{PLoS Biology}
-      \field{month}{11}
-      \field{number}{11}
-      \field{title}{{Motifs, Control, and Stability}}
-      \field{volume}{3}
-      \field{year}{2005}
-      \field{pages}{e392}
-      \range{pages}{-1}
     \endentry
     \entry{DuCharme:1999}{book}{}
       \name{author}{1}{}{%
@@ -1384,38 +1338,6 @@
       \field{pages}{3067\bibrangedash 3074}
       \range{pages}{8}
     \endentry
-    \entry{Hucka:2004wh}{article}{}
-      \name{author}{11}{}{%
-        {{hash=b815ed5912efce36d6966309f612406b}{Hucka}{H\bibinitperiod}{M}{M\bibinitperiod}{}{}{}{}}%
-        {{hash=1f376e491733fc48bdf3616089b5394b}{Finney}{F\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
-        {{hash=75ae7dae75c889f0a32a2b4e348461e1}{Bornstein}{B\bibinitperiod}{B\bibnamedelima J}{B\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
-        {{hash=16ff53bd8b93b42a4976427cd4c61e0a}{Keating}{K\bibinitperiod}{S\bibnamedelima M}{S\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
-        {{hash=e606e04e20838abd747366246fe8ff8e}{Shapiro}{S\bibinitperiod}{B\bibnamedelima E}{B\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
-        {{hash=bfae20ee430d9266f32b92f7120a5cb7}{Matthews}{M\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
-        {{hash=ac43bac34f41e4fe14fab6a2d5401cd5}{Kovitz}{K\bibinitperiod}{B\bibnamedelima L}{B\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
-        {{hash=fea1725c0f16b32cc20fb5b19046ab11}{Schilstra}{S\bibinitperiod}{M\bibnamedelima J}{M\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
-        {{hash=3572638a365ae0f640eed2fb30e4296a}{Funahashi}{F\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
-        {{hash=62dc118c5c232f0673135eac97ef38d3}{Doyle}{D\bibinitperiod}{J\bibnamedelima C}{J\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
-        {{hash=b524b91ba10309ab4bc17202de3f683a}{Kitano}{K\bibinitperiod}{H}{H\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{2ed354b93cd2fb46c6d5aef4a2899c6f}
-      \strng{fullhash}{b36b950b275be0f7721f8d87738bdd3e}
-      \field{sortinit}{H}
-      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
-      \field{labelyear}{2004}
-      \field{labelmonth}{06}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Systems Biology, IEE Proceedings}
-      \field{month}{06}
-      \field{number}{1}
-      \field{title}{{Evolving a lingua franca and associated software infrastructure for computational systems biology: the Systems Biology Markup Language (SBML) project.}}
-      \field{volume}{1}
-      \field{year}{2004}
-      \field{pages}{41\bibrangedash 53}
-      \range{pages}{13}
-    \endentry
     \entry{Hucka:2003wg}{article}{}
       \name{author}{43}{}{%
         {{hash=b815ed5912efce36d6966309f612406b}{Hucka}{H\bibinitperiod}{M}{M\bibinitperiod}{}{}{}{}}%
@@ -1479,33 +1401,6 @@
       \field{year}{2003}
       \field{pages}{524\bibrangedash 531}
       \range{pages}{8}
-    \endentry
-    \entry{Finney:2003vk}{misc}{}
-      \name{author}{13}{}{%
-        {{hash=46f3e48d5c3a1410b18eadac8585468d}{Hucka}{H\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
-        {{hash=e0b8455c0ba0641be0e88910ebb8c8ec}{Bergmann}{B\bibinitperiod}{Frank\bibnamedelima T}{F\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
-        {{hash=226ca405f7e7e806dead85aa92ec3c47}{Dräger}{D\bibinitperiod}{Andreas}{A\bibinitperiod}{}{}{}{}}%
-        {{hash=7c17ff2ceda28a19163a289c20805ca2}{Hoops}{H\bibinitperiod}{Stefan}{S\bibinitperiod}{}{}{}{}}%
-        {{hash=fc6413cfa002aaf5e450f20465b3b2ee}{Keating}{K\bibinitperiod}{Sarah\bibnamedelima M}{S\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
-        {{hash=d60fa3dea34041e3e38ecfd703c5c786}{Le\bibnamedelima Novère}{L\bibinitperiod\bibinitdelim N\bibinitperiod}{Nicolas}{N\bibinitperiod}{}{}{}{}}%
-        {{hash=0b33d6a556d3145bfbb2a2b37c7b1a88}{Myers}{M\bibinitperiod}{Chris\bibnamedelima J}{C\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
-        {{hash=355d828cec635071ead9ccb072cf8700}{Olivier}{O\bibinitperiod}{Brett\bibnamedelima G}{B\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
-        {{hash=d677a6f06b3e04ba7b1954e84ee7b874}{Sahle}{S\bibinitperiod}{Sven}{S\bibinitperiod}{}{}{}{}}%
-        {{hash=020d73ac09b9fd2796d80b0d2499e184}{Schaff}{S\bibinitperiod}{James\bibnamedelima C}{J\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
-        {{hash=265f276e9dc4f6c18638f1e6130ac971}{Smith}{S\bibinitperiod}{Lucian\bibnamedelima P}{L\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
-        {{hash=8590ecf55f43d8a0d8c55e5ea33f9c7d}{Waltemath}{W\bibinitperiod}{Dagmar}{D\bibinitperiod}{}{}{}{}}%
-        {{hash=5a41a64a82958680c4cc4bc9ed7ecb60}{Wilkinson}{W\bibinitperiod}{Darren\bibnamedelima J}{D\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{ddbca92be41eac37a62383003ea23d5f}
-      \strng{fullhash}{9856833e2ed23e257f921416444d98d8}
-      \field{sortinit}{H}
-      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
-      \field{labelyear}{2015}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{{Systems Biology Markup Language (SBML) Level 2 Version 5: Structures and Facilities for Model Definitions.}}
-      \field{year}{2015}
     \endentry
     \entry{Hutchison:2016gg}{article}{}
       \name{author}{23}{}{%
@@ -2918,6 +2813,28 @@
       \field{title}{A Genetic Switch: Phage lambda and Higher Organisms}
       \field{year}{1992}
     \endentry
+    \entry{R:2008}{book}{}
+      \name{author}{1}{}{%
+        {{hash=a902f7a1275f47f57554b7ea75ccd0bc}{{R\bibnamedelimb Core\bibnamedelimb Team}}{R\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {R Foundation for Statistical Computing}%
+      }
+      \strng{namehash}{a902f7a1275f47f57554b7ea75ccd0bc}
+      \strng{fullhash}{a902f7a1275f47f57554b7ea75ccd0bc}
+      \field{sortinit}{R}
+      \field{sortinithash}{c7387613477035a752d935acfc3e3ea2}
+      \field{labelyear}{2008}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{3-900051-07-0}
+      \field{title}{R: A language and environment for statistical computing.}
+      \field{year}{2008}
+      \verb{url}
+      \verb www.Rproject.org
+      \endverb
+    \endentry
     \entry{Ro:2006cl}{article}{}
       \name{author}{15}{}{%
         {{hash=cb6d2c151543eb6a243f3a3400012617}{Ro}{R\bibinitperiod}{Dae-Kyun}{D\bibinithyphendelim K\bibinitperiod}{}{}{}{}}%
@@ -3262,28 +3179,6 @@
       \field{year}{2009}
       \field{pages}{1272\bibrangedash 1281}
       \range{pages}{10}
-    \endentry
-    \entry{R:2008}{book}{}
-      \name{author}{1}{}{%
-        {{hash=616983f2ba14a1f8c933006442711e25}{Team}{T\bibinitperiod}{R\bibnamedelima Development\bibnamedelima Core}{R\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
-      }
-      \list{publisher}{1}{%
-        {R Foundation for Statistical Computing}%
-      }
-      \strng{namehash}{616983f2ba14a1f8c933006442711e25}
-      \strng{fullhash}{616983f2ba14a1f8c933006442711e25}
-      \field{sortinit}{T}
-      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
-      \field{labelyear}{2008}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{3-900051-07-0}
-      \field{title}{R: A language and environment for statistical computing.}
-      \field{year}{2008}
-      \verb{url}
-      \verb www.Rproject.org
-      \endverb
     \endentry
     \entry{Thomas:1995id}{article}{}
       \name{author}{3}{}{%
