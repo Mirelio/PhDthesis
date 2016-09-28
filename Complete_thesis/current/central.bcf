@@ -2555,4 +2555,66 @@
     <bcf:citekey order="277">flowCore:man</bcf:citekey>
     <bcf:citekey order="278">flowViz:man</bcf:citekey>
     <bcf:citekey order="279">ggplot2:bk</bcf:citekey>
-    <bcf:citekey order="280">Fedorec201
+    <bcf:citekey order="280">Fedorec2016</bcf:citekey>
+    <bcf:citekey order="281">Litcofsky:2012gr</bcf:citekey>
+    <bcf:citekey order="282">Litcofsky:2012gr</bcf:citekey>
+    <bcf:citekey order="283">Shapiro:1941</bcf:citekey>
+    <bcf:citekey order="284">R:2008</bcf:citekey>
+    <bcf:citekey order="285">Litcofsky:2012gr</bcf:citekey>
+    <bcf:citekey order="286">Ackers:1982tq</bcf:citekey>
+    <bcf:citekey order="287">Milo:2010cz</bcf:citekey>
+    <bcf:citekey order="288">Lillacci:2013hu</bcf:citekey>
+    <bcf:citekey order="289">Milo:2010cz</bcf:citekey>
+    <bcf:citekey order="290">Andersen:1998tn</bcf:citekey>
+    <bcf:citekey order="291">Shaner:2004vy</bcf:citekey>
+    <bcf:citekey order="292">Litcofsky:2012gr</bcf:citekey>
+    <bcf:citekey order="293">Shaner:2004vy</bcf:citekey>
+    <bcf:citekey order="293">Andersen:1998tn</bcf:citekey>
+    <bcf:citekey order="294">Litcofsky:2012gr</bcf:citekey>
+    <bcf:citekey order="295">Macdonald:2012el</bcf:citekey>
+    <bcf:citekey order="296">Cormack:1996gv</bcf:citekey>
+    <bcf:citekey order="297">Cormack:1996gv</bcf:citekey>
+    <bcf:citekey order="298">Kelwick:2014iy</bcf:citekey>
+    <bcf:citekey order="299">Lillacci:2013hu</bcf:citekey>
+    <bcf:citekey order="300">Tabor:2009bz</bcf:citekey>
+    <bcf:citekey order="301">LeNovere:2015dp</bcf:citekey>
+    <bcf:citekey order="302">Li:2010kt</bcf:citekey>
+    <bcf:citekey order="303">Litcofsky:2012gr</bcf:citekey>
+    <bcf:citekey order="304">Litcofsky:2012gr</bcf:citekey>
+    <bcf:citekey order="305">Lutz:1997ti</bcf:citekey>
+    <bcf:citekey order="306">Stricker:2008jqa</bcf:citekey>
+    <bcf:citekey order="307">Prindle:2012cj</bcf:citekey>
+    <bcf:citekey order="308">Agapakis:2009bt</bcf:citekey>
+    <bcf:citekey order="309">DelVecchio:2008gy</bcf:citekey>
+  </bcf:section>
+  <bcf:sortlist section="0" name="nyt" type="entry" sortscheme="nyt">
+  <bcf:sorting>
+    <bcf:sort order="1">
+      <bcf:sortitem order="1">presort</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="2" final="1">
+      <bcf:sortitem order="1">sortkey</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="3">
+      <bcf:sortitem order="1">sortname</bcf:sortitem>
+      <bcf:sortitem order="2">author</bcf:sortitem>
+      <bcf:sortitem order="3">editor</bcf:sortitem>
+      <bcf:sortitem order="4">translator</bcf:sortitem>
+      <bcf:sortitem order="5">sorttitle</bcf:sortitem>
+      <bcf:sortitem order="6">title</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="4">
+      <bcf:sortitem order="1">sortyear</bcf:sortitem>
+      <bcf:sortitem order="2">year</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="5">
+      <bcf:sortitem order="1">sorttitle</bcf:sortitem>
+      <bcf:sortitem order="2">title</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="6">
+      <bcf:sortitem order="1" pad_side="left" pad_width="4" pad_char="0">volume</bcf:sortitem>
+      <bcf:sortitem order="2">0000</bcf:sortitem>
+    </bcf:sort>
+  </bcf:sorting>
+  </bcf:sortlist>
+</bcf:controlfile>

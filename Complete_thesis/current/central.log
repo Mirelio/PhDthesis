@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.10.1)  12 SEP 2016 13:46
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.10.1)  12 SEP 2016 14:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2969,10 +2969,10 @@ Overfull \hbox (8.36925pt too wide) in paragraph at lines 203--204
 ] [88] [89] [90
 
 ]
-File: ../../chapters/chapterStabilityFinder/images/ex1_sum.png Graphic file (type QTm)
- <use  "../../chapters/chapterStabilityFinder/images/ex1_sum.png" >
-File: ../../chapters/chapterStabilityFinder/images/Example4_summ.png Graphic file (type QTm)
- <use  "../../chapters/chapterStabilityFinder/images/Example4_summ.png" > [91] [92] [93] [94
+File: ../../chapters/chapterStabilityFinder/images/ex1_sum.pdf Graphic file (type QTm)
+ <use  "../../chapters/chapterStabilityFinder/images/ex1_sum.pdf" >
+File: ../../chapters/chapterStabilityFinder/images/ex4_summ.pdf Graphic file (type QTm)
+ <use  "../../chapters/chapterStabilityFinder/images/ex4_summ.pdf" > [91] [92] [93] [94
 
 ]
 File: ../../chapters/chapterStabilityFinder/images/gardner_poster.pdf Graphic file (type QTm)
@@ -3188,3 +3188,225 @@ LaTeX Warning: Float too large for page by 20.5359pt on input line 855.
 
 ] [170] [171]
 File: ../../chapters/chapterABCFlow/images/shea-ackers_flow.png Graphic file (type QTm)
+ <use  "../../chapters/chapterABCFlow/images/shea-ackers_flow.png" > [172
+
+] [173]
+
+LaTeX Warning: Float too large for page by 11.80434pt on input line 941.
+
+[174] [175]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\acrshort' on input line 946.
+
+File: ../../chapters/chapterABCFlow/images/2D_real_res.png Graphic file (type QTm)
+<use  "../../chapters/chapterABCFlow/images/2D_real_res.png" >
+
+LaTeX Warning: Float too large for page by 53.82312pt on input line 955.
+
+File: ../../chapters/chapterABCFlow/images/posterior_atc.png Graphic file (type QTm)
+<use  "../../chapters/chapterABCFlow/images/posterior_atc.png" > [176
+
+] [177]
+File: ../../chapters/chapterABCFlow/images/promoter_strengths.pdf Graphic file (type QTm)
+ <use  "../../chapters/chapterABCFlow/images/promoter_strengths.pdf" > [178] [179] [180] [181]
+File: ../../chapters/chapterABCFlow/images/2D_real_res_IPTG.png Graphic file (type QTm)
+ <use  "../../chapters/chapterABCFlow/images/2D_real_res_IPTG.png" >
+
+LaTeX Warning: Float too large for page by 17.08101pt on input line 1026.
+
+File: ../../chapters/chapterABCFlow/images/posterior_iptg.png Graphic file (type QTm)
+<use  "../../chapters/chapterABCFlow/images/posterior_iptg.png" > [182
+
+] [183] [184] [185]
+Overfull \hbox (8.67273pt too wide) in paragraph at lines 1081--1082
+[]\EU1/LinuxLibertineO(0)/m/n/10.95 Here I also developed a Bayesian framework, ABC-Flow, that is used to fit stochastic
+ []
+
+[186] [187]) [188] (../../chapters/chapterDesignSwitches/ChDesSw_introduction.tex
+File: ../../chapters/chapterDesignSwitches/images/switches_cloning_big.png Graphic file (type QTm)
+ <use  "../../chapters/chapterDesignSwitches/images/switches_cloning_big.png" >
+Overfull \hbox (43.76157pt too wide) in paragraph at lines 15--16
+ [] 
+ []
+
+[189
+
+
+] [190]
+File: ../../chapters/chapterDesignSwitches/images/final-plasmids.pdf Graphic file (type QTm)
+ <use  "../../chapters/chapterDesignSwitches/images/final-plasmids.pdf" >
+File: ../../chapters/chapterDesignSwitches/images/stage1_cloning.pdf Graphic file (type QTm)
+ <use  "../../chapters/chapterDesignSwitches/images/stage1_cloning.pdf" > [191
+
+] [192] [193]
+Overfull \hbox (11.40668pt too wide) in paragraph at lines 62--63
+[]\EU1/LinuxLibertineO(0)/m/n/10.95 First, the P$[]$ promoter is synthesised as the reverse complement of BBa_K934024
+ []
+
+
+Overfull \hbox (7.07468pt too wide) in paragraph at lines 65--67
+\EU1/LinuxLibertineO(0)/m/n/10.95 5’- TTGGGACCTGCATGCTAATCTCTATCACTGATAGGGATAATACGAGTATCTC 
+ []
+
+
+Overfull \hbox (3.04735pt too wide) in paragraph at lines 65--67
+\EU1/LinuxLibertineO(0)/m/n/10.95 TATCACTGATAGGGAGTAAACCTGTACGATCCTACAGGTAACGTTCGGCCG -3’
+ []
+
+[194
+
+]
+File: ../../chapters/chapterDesignSwitches/images/stage2_cloning.pdf Graphic file (type QTm)
+ <use  "../../chapters/chapterDesignSwitches/images/stage2_cloning.pdf" > [195]
+Overfull \hbox (19.38408pt too wide) in paragraph at lines 85--86
+\EU1/LinuxLibertineO(0)/m/n/10.95 product produced above of pTD103aiiA_Cm with BsGI flanking sequences and pKDL071-
+ []
+
+File: ../../chapters/chapterDesignSwitches/images/stage3_cloning.pdf Graphic file (type QTm)
+<use  "../../chapters/chapterDesignSwitches/images/stage3_cloning.pdf" >
+Overfull \hbox (16.18147pt too wide) in paragraph at lines 90--91
+ [] 
+ []
+
+[196] [197]) [198
+
+
+] (../../chapters/chapterConclusions/ChConc.tex [199
+
+
+] [200]) [201] [202
+
+] [203] [204] [205] [206] [207] [208] [209] [210] [211] [212] [213] [214] [215] [216
+
+] (../../appendices/appendix_ODEs.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\acrlong' on input line 1.
+
+
+Overfull \hbox (104.38126pt too wide) detected at line 47
+[]
+ []
+
+
+Overfull \hbox (85.45616pt too wide) detected at line 66
+[]
+ []
+
+[217]
+Overfull \hbox (103.6349pt too wide) detected at line 112
+[]
+ []
+
+[218]
+Overfull \hbox (85.45616pt too wide) detected at line 131
+[]
+ []
+
+[219]
+Overfull \hbox (106.3211pt too wide) detected at line 184
+[]
+ []
+
+[220]
+Overfull \hbox (85.45616pt too wide) detected at line 203
+[]
+ []
+
+[221]
+Overfull \hbox (108.05199pt too wide) detected at line 253
+[]
+ []
+
+[222]
+Overfull \hbox (91.66763pt too wide) detected at line 284
+[]
+ []
+
+[223]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\acrshort' on input line 287.
+
+
+Overfull \hbox (68.93121pt too wide) detected at line 324
+[]
+ []
+
+[224] [225]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\acrshort' on input line 372.
+
+
+Overfull \hbox (99.85979pt too wide) detected at line 421
+[]
+ []
+
+[226] [227]
+Overfull \vbox (6.1609pt too high) has occurred while \output is active []
+
+ [228] [229]) [230] (../../appendices/appendix_primers.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\acrshort' on input line 1.
+
+) [231
+
+] [232
+
+] (../../appendices/appendix_algos.tex [233] [234]) [235
+
+] [236
+
+] (../../appendices/appendix_posteriors.tex
+File: ../../appendices/posterior_MACS_ASYM_weights.pdf Graphic file (type QTm)
+ <use  "../../appendices/posterior_MACS_ASYM_weights.pdf" >
+File: ../../appendices/posterior_MADP_ASYM_weights.pdf Graphic file (type QTm)
+ <use  "../../appendices/posterior_MADP_ASYM_weights.pdf" > [237] [238])
+
+Class memoir Warning: The material used in the headers is too large
+(27.2pt) for the given head height (13.6pt), it is recommended to
+either increase the head height or redesign the header
+(in both cases you will find help in the memoir manual). on input line 157.
+
+
+Package caption Warning: Unused \captionsetup[subfigure] on input line 198.
+See the caption package documentation for explanation.
+
+\tf@toc=\write11
+\openout11 = `central.toc'.
+
+\tf@lof=\write12
+\openout12 = `central.lof'.
+
+\tf@lot=\write13
+\openout13 = `central.lot'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 157.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 157.
+(./central.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 157.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 157.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package logreq Info: Writing requests to 'central.run.xml'.
+\openout1 = `central.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 67397 strings out of 493706
+ 1241551 string characters out of 6145769
+ 1927229 words of memory out of 5000000
+ 69768 multiletter control sequences out of 15000+600000
+ 12146 words of font info for 92 fonts, out of 8000000 for 9000
+ 1328 hyphenation exceptions out of 8191
+ 73i,32n,109p,10434b,3237s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on central.pdf (238 pages).
